@@ -10,7 +10,7 @@ from langgraph.types import Command, Send
 from langgraph.graph import START, END, StateGraph
 
 from open_deep_research.configuration import Configuration
-from open_deep_research.utils import get_config_value, tavily_search, duckduckgo_search
+from open_deep_research.utils import get_config_value, tavily_search, duckduckgo_search, set_openai_api_base
 from open_deep_research.prompts import SUPERVISOR_INSTRUCTIONS, RESEARCH_INSTRUCTIONS
 
 ## Tools factory - will be initialized based on configuration
@@ -108,6 +108,9 @@ async def supervisor(state: ReportState, config: RunnableConfig):
     # Get configuration
     configurable = Configuration.from_runnable_config(config)
     supervisor_model = get_config_value(configurable.supervisor_model)
+    
+    # 设置OpenAI API基础URL
+    set_openai_api_base()
     
     # Initialize the model
     llm = init_chat_model(model=supervisor_model)
@@ -221,6 +224,9 @@ async def research_agent(state: SectionState, config: RunnableConfig):
     # Get configuration
     configurable = Configuration.from_runnable_config(config)
     researcher_model = get_config_value(configurable.researcher_model)
+    
+    # 设置OpenAI API基础URL
+    set_openai_api_base()
     
     # Initialize the model
     llm = init_chat_model(model=researcher_model)

@@ -15,10 +15,15 @@ from langgraph.types import Command
 from open_deep_research.graph import builder
 from open_deep_research.multi_agent import supervisor_builder
 
+from open_deep_research.utils import set_openai_api_base
+from open_deep_research.multi_agent import graph as multi_agent_graph
+from open_deep_research.graph import graph as graph_agent
+
+# Structured output schema for evaluation
 class CriteriaGrade(BaseModel):
-    """Score the response against specific criteria."""
-    grade: bool = Field(description="Does the response meet the provided criteria?")
-    justification: str = Field(description="The justification for the grade and score, including specific examples from the response.")
+    accuracy: int = Field(description="A grade from 1-5 on the ACCURACY of the report content, where 1 is completely inaccurate and 5 is highly accurate and factual")
+    depth: int = Field(description="A grade from 1-5 on the DEPTH of the report, where 1 is extremely surface-level and 5 is thorough and comprehensive")
+    relevance: int = Field(description="A grade from 1-5 on the RELEVANCE of the content to the topic, where 1 is mostly irrelevant and 5 is perfectly on-topic")
 
 # Function to create evaluation LLM at test time
 def get_evaluation_llm(eval_model=None):
@@ -34,6 +39,9 @@ def get_evaluation_llm(eval_model=None):
     """
     # Use provided model, then environment variable, then default
     model_to_use = eval_model or os.environ.get("EVAL_MODEL", "openai:gpt-4-turbo")
+    
+    # 设置OpenAI API基础URL
+    set_openai_api_base()
     
     criteria_eval_llm = init_chat_model(model_to_use)
     return criteria_eval_llm.with_structured_output(CriteriaGrade)

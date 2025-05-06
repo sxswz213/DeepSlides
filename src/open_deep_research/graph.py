@@ -34,10 +34,48 @@ from open_deep_research.utils import (
     format_sections, 
     get_config_value, 
     get_search_params, 
-    select_and_execute_search
+    select_and_execute_search,
+    set_openai_api_base,
+    generate_image_caption
 )
 
 ## Nodes -- 
+
+async def process_image_input(state: ReportState, config: RunnableConfig):
+    """处理图像输入并生成描述文本。
+    
+    这个节点：
+    1. 检查状态中是否包含图像路径
+    2. 如果有图像，使用Vision API生成详细描述
+    3. 将描述作为额外上下文添加到后续步骤
+    
+    Args:
+        state: 当前图状态，包含可选的图像路径
+        config: 配置参数
+        
+    Returns:
+        包含图像描述的更新状态
+    """
+    # 检查是否提供了图像路径
+    image_path = state.get("image_path")
+    
+    # 如果没有提供图像路径，直接返回状态
+    if not image_path:
+        return {}
+    
+    # 确保设置了正确的API基础URL
+    set_openai_api_base()
+    
+    try:
+        # 生成图像描述
+        image_caption = await generate_image_caption(image_path)
+        print(f"caption: {image_caption}")
+        # 返回更新后的状态
+        return {"image_caption": image_caption}
+    except Exception as e:
+        print(f"处理图像时出错: {str(e)}")
+        # 返回错误信息作为caption
+        return {"image_caption": f"无法处理图像: {str(e)}"}
 
 async def generate_report_plan(state: ReportState, config: RunnableConfig):
     """Generate the initial report plan with sections.
@@ -59,6 +97,12 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     # Inputs
     topic = state["topic"]
     feedback = state.get("feedback_on_report_plan", None)
+    
+    # 添加图像描述作为额外上下文（如果有）
+    image_caption = state.get("image_caption")
+    if image_caption:
+        # 如果有图像描述，设置其为topic
+        topic = f"{image_caption}"
 
     # Get configuration
     configurable = Configuration.from_runnable_config(config)
@@ -103,6 +147,9 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     # Report planner instructions
     planner_message = """Generate the sections of the report. Your response must include a 'sections' field containing a list of sections. 
                         Each section must have: name, description, plan, research, and content fields."""
+
+    # Set OpenAI API Base URL
+    set_openai_api_base()
 
     # Run the planner
     if planner_model == "claude-3-7-sonnet-latest":
@@ -202,6 +249,9 @@ async def generate_queries(state: SectionState, config: RunnableConfig):
     configurable = Configuration.from_runnable_config(config)
     number_of_queries = configurable.number_of_queries
 
+    # Set OpenAI API Base URL
+    set_openai_api_base()
+
     # Generate queries 
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
@@ -286,6 +336,9 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
                                                              context=source_str, 
                                                              section_content=section.content)
 
+    # Set OpenAI API Base URL
+    set_openai_api_base()
+
     # Generate section  
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
@@ -312,6 +365,9 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     planner_provider = get_config_value(configurable.planner_provider)
     planner_model = get_config_value(configurable.planner_model)
     planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
+
+    # Set OpenAI API Base URL
+    set_openai_api_base()
 
     if planner_model == "claude-3-7-sonnet-latest":
         # Allocate a thinking budget for claude-3-7-sonnet-latest as the planner model
@@ -365,6 +421,9 @@ async def write_final_sections(state: SectionState, config: RunnableConfig):
     
     # Format system instructions
     system_instructions = final_section_writer_instructions.format(topic=topic, section_name=section.name, section_topic=section.description, context=completed_report_sections)
+
+    # Set OpenAI API Base URL
+    set_openai_api_base()
 
     # Generate section  
     writer_provider = get_config_value(configurable.writer_provider)
@@ -467,6 +526,7 @@ section_builder.add_edge("search_web", "write_section")
 
 # Add nodes
 builder = StateGraph(ReportState, input=ReportStateInput, output=ReportStateOutput, config_schema=Configuration)
+builder.add_node("process_image_input", process_image_input)
 builder.add_node("generate_report_plan", generate_report_plan)
 builder.add_node("human_feedback", human_feedback)
 builder.add_node("build_section_with_web_research", section_builder.compile())
@@ -475,7 +535,8 @@ builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
 
 # Add edges
-builder.add_edge(START, "generate_report_plan")
+builder.add_edge(START, "process_image_input")
+builder.add_edge("process_image_input", "generate_report_plan")
 builder.add_edge("generate_report_plan", "human_feedback")
 builder.add_edge("build_section_with_web_research", "gather_completed_sections")
 builder.add_conditional_edges("gather_completed_sections", initiate_final_section_writing, ["write_final_sections"])

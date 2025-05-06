@@ -6,6 +6,7 @@ import concurrent
 import aiohttp
 import httpx
 import time
+import base64
 from typing import List, Optional, Dict, Any, Union
 from urllib.parse import unquote
 
@@ -23,7 +24,105 @@ from langchain_core.tools import tool
 from langsmith import traceable
 
 from open_deep_research.state import Section
+
+def set_openai_api_base():
+    """
+    设置OpenAI API的基础URL。
+    如果环境变量OPENAI_API_BASE存在，则将其设置为OpenAI API的基础URL。
     
+    这个函数应该在任何使用OpenAI API的代码之前调用。
+    """
+    openai_api_base = os.environ.get('OPENAI_API_BASE')
+    if openai_api_base:
+        try:
+            import openai
+            openai.api_base = openai_api_base
+            print(f"已设置OpenAI API基础URL: {openai_api_base}")
+        except ImportError:
+            print("未找到openai包，无法设置API基础URL")
+
+@traceable
+async def generate_image_caption(image_path: str) -> str:
+    """
+    使用OpenAI API直接对图像进行分析并生成描述。
+    
+    Args:
+        image_path (str): 图像文件的路径
+        
+    Returns:
+        str: 图像的描述文本
+    """
+    try:
+        # 确保设置了正确的API基础URL
+        set_openai_api_base()
+        api_base = os.environ.get('OPENAI_API_BASE', 'https://api.openai.com/v1')
+        api_key = os.environ.get('OPENAI_API_KEY')
+        
+        if not api_key:
+            raise ValueError("未设置OPENAI_API_KEY环境变量")
+        
+        # 使用asyncio.to_thread将同步文件IO移到单独线程执行，避免阻塞事件循环
+        async def read_and_encode_image(file_path):
+            def _read_file(path):
+                with open(path, "rb") as f:
+                    return f.read()
+            
+            # 在单独的线程中执行文件读取
+            file_content = await asyncio.to_thread(_read_file, file_path)
+            # 在主线程中执行base64编码（这是CPU密集型操作，非IO阻塞）
+            return base64.b64encode(file_content).decode('utf-8')
+        
+        # 读取图像文件并进行base64编码
+        image_data = await read_and_encode_image(image_path)
+        
+        # 构建请求
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        
+        payload = {
+            "model": "gpt-4o-mini",
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "You are a professional image analysis assistant. Please provide a detailed description of the content in the image, focusing on the main theme, key details, and potential research related content."
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text", 
+                            "text": "Please provide the most likely research topic for this image:"
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{image_data}",
+                                "detail": "high"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "temperature": 0
+        }
+        
+        # 发送请求
+        async with aiohttp.ClientSession() as session:
+            async with session.post(f"{api_base}/chat/completions", headers=headers, json=payload) as response:
+                if response.status != 200:
+                    error_text = await response.text()
+                    raise Exception(f"API请求失败，状态码: {response.status}, 错误: {error_text}")
+                
+                data = await response.json()
+                caption = data["choices"][0]["message"]["content"]
+                return caption
+                
+    except Exception as e:
+        print(f"生成图像caption时出错: {str(e)}")
+        return f"无法处理图像: {str(e)}"
+
 def get_config_value(value):
     """
     Helper function to handle string, dict, and enum cases of configuration values

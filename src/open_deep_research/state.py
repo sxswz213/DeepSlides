@@ -1,4 +1,4 @@
-from typing import Annotated, List, TypedDict, Literal
+from typing import Annotated, List, TypedDict, Literal, Optional
 from pydantic import BaseModel, Field
 import operator
 
@@ -39,12 +39,15 @@ class Feedback(BaseModel):
 
 class ReportStateInput(TypedDict):
     topic: str # Report topic
-    
+    image_path: Optional[str] # Optional path to input image
+
 class ReportStateOutput(TypedDict):
     final_report: str # Final report
 
 class ReportState(TypedDict):
     topic: str # Report topic    
+    image_path: Optional[str] # Optional path to input image
+    image_caption: Optional[str] # Optional caption generated from input image
     feedback_on_report_plan: str # Feedback on the report plan
     sections: list[Section] # List of report sections 
     completed_sections: Annotated[list, operator.add] # Send() API key
