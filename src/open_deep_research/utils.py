@@ -80,20 +80,35 @@ async def generate_image_caption(image_path: str) -> str:
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}"
         }
-        
+
         payload = {
             "model": "gpt-4o-mini",
+            "response_format": {"type": "json_object"},
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a professional image analysis assistant. Please provide a detailed description of the content in the image, focusing on the main theme, key details, and potential research related content."
+                    "content": (
+                        "您是一位具备深厚图像理解与研究主题分析经验的专家。用户会上传一张图像，这可能是来自科研论文、实验结果、数据图表或示意图的截图，目的是明确具体的研究方向或问题。\n\n"
+                        "请按以下步骤提供您的回答：\n\n"
+                        "第一步：图像详细描述\n"
+                        "- 从整体到局部详细描述图像中的内容、元素之间的关系、图示中标记的文本信息、图例以及任何可能表示研究目的的关键信息。\n"
+                        "- 特别注意图像中的实验设置、数值趋势、变量关系、标注、箭头指示、图表类型、模型结构或流程示意图等显著特征。\n\n"
+                        "第二步：用户意图分析（重点）\n"
+                        "根据图像的具体内容和学术背景，深入分析用户可能真正关心或希望深入研究的问题、领域或具体方向。请从以下维度分析：\n"
+                        "- 图像主要揭示或讨论的问题或现象是什么？\n"
+                        "- 图像背后可能存在的科学研究目标或关键问题是什么？\n"
+                        "- 用户通过此图像可能最希望获得或深入探讨哪些知识或成果？\n\n"
+                        "第三步：精炼研究主题描述\n"
+                        "基于上述分析，精准提取并用一段话描述最本质、最值得深入研究的主题或研究方向。这段话应准确代表图像传达的核心思想，并明确研究的意义或价值。\n\n"
+                        "请务必以严格的JSON格式输出，例如：{\"caption\": \"图像的详细描述内容\", \"user_intent\": \"用户可能关心的具体研究意图\", \"topic\": \"精准的研究主题描述\"}"
+                    )
                 },
                 {
                     "role": "user",
                     "content": [
                         {
-                            "type": "text", 
-                            "text": "Please provide the most likely research topic for this image:"
+                            "type": "text",
+                            "text": "请基于提供的图像进行详细描述，探究用户可能的意图，提取可能的研究主题，以严格的JSON格式返回。"
                         },
                         {
                             "type": "image_url",
@@ -114,11 +129,11 @@ async def generate_image_caption(image_path: str) -> str:
                 if response.status != 200:
                     error_text = await response.text()
                     raise Exception(f"API请求失败，状态码: {response.status}, 错误: {error_text}")
-                
+
                 data = await response.json()
                 caption = data["choices"][0]["message"]["content"]
                 return caption
-                
+
     except Exception as e:
         print(f"生成图像caption时出错: {str(e)}")
         return f"无法处理图像: {str(e)}"
@@ -1360,7 +1375,7 @@ async def duckduckgo_search(search_queries: List[str]):
         return "No valid search results found. Please try different search queries or use a different search API."
 
 @tool
-async def tavily_search(queries: List[str]) -> str:
+async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "general") -> str:
     """
     Fetches results from Tavily search API.
     
@@ -1373,8 +1388,8 @@ async def tavily_search(queries: List[str]) -> str:
     # Use tavily_search_async with include_raw_content=True to get content directly
     search_results = await tavily_search_async(
         queries,
-        max_results=5,
-        topic="general",
+        max_results=max_results,
+        topic=topic,
         include_raw_content=True
     )
 

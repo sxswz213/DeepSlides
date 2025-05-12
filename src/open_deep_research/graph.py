@@ -1,4 +1,5 @@
 from typing import Literal
+import json
 
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -48,19 +49,23 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
     1. 检查状态中是否包含图像路径
     2. 如果有图像，使用Vision API生成详细描述
     3. 将描述作为额外上下文添加到后续步骤
+    4. 如果未提供topic，则使用图像描述作为topic
     
     Args:
         state: 当前图状态，包含可选的图像路径
         config: 配置参数
         
     Returns:
-        包含图像描述的更新状态
+        包含图像描述和更新topic的状态
     """
     # 检查是否提供了图像路径
     image_path = state.get("image_path")
     
     # 如果没有提供图像路径，直接返回状态
     if not image_path:
+        # 确保topic存在，即使为空字符串
+        if "topic" not in state:
+            return {"topic": ""}
         return {}
     
     # 确保设置了正确的API基础URL
@@ -68,13 +73,23 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
     
     try:
         # 生成图像描述
-        image_caption = await generate_image_caption(image_path)
-        print(f"caption: {image_caption}")
-        # 返回更新后的状态
-        return {"image_caption": image_caption}
+        image_result = await generate_image_caption(image_path)
+        image_result = json.loads(image_result)
+        print(image_result)
+        caption, user_intent, topic = image_result["caption"], image_result["user_intent"], image_result["topic"]
+
+        # 检查是否提供了topic
+        if not state.get("topic"):
+            # 如果没有提供topic，使用提取出的图像topic
+            return {"caption": caption, "user_intent": user_intent, "topic": topic}
+        else:
+            # 如果已经提供了topic，只返回图像描述
+            return {"caption": caption, "user_intent": user_intent}
     except Exception as e:
         print(f"处理图像时出错: {str(e)}")
-        # 返回错误信息作为caption
+        # 返回错误信息作为caption，并确保topic存在
+        if "topic" not in state:
+            return {"image_caption": f"无法处理图像: {str(e)}", "topic": ""}
         return {"image_caption": f"无法处理图像: {str(e)}"}
 
 async def generate_report_plan(state: ReportState, config: RunnableConfig):
@@ -94,15 +109,9 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
         Dict containing the generated sections
     """
 
-    # Inputs
-    topic = state["topic"]
+    # 获取topic和反馈信息
+    topic = state["topic"]  # 现在我们可以安全地假设topic已存在
     feedback = state.get("feedback_on_report_plan", None)
-    
-    # 添加图像描述作为额外上下文（如果有）
-    image_caption = state.get("image_caption")
-    if image_caption:
-        # 如果有图像描述，设置其为topic
-        topic = f"{image_caption}"
 
     # Get configuration
     configurable = Configuration.from_runnable_config(config)
@@ -128,7 +137,7 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
 
     # Generate queries  
     results = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
-                                     HumanMessage(content="Generate search queries that will help with planning the sections of the report.")])
+                                     HumanMessage(content="生成有助于规划报告各部分的搜索查询。")])
 
     # Web search
     query_list = [query.search_query for query in results.queries]
@@ -145,8 +154,8 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
 
     # Report planner instructions
-    planner_message = """Generate the sections of the report. Your response must include a 'sections' field containing a list of sections. 
-                        Each section must have: name, description, plan, research, and content fields."""
+    planner_message = """生成报告的章节。您的回复必须包含一个'sections'字段，其中包含章节列表。
+                        每个章节必须有：name、description、plan、research和content字段。"""
 
     # Set OpenAI API Base URL
     set_openai_api_base()
@@ -204,9 +213,9 @@ def human_feedback(state: ReportState, config: RunnableConfig) -> Command[Litera
     )
 
     # Get feedback on the report plan from interrupt
-    interrupt_message = f"""Please provide feedback on the following report plan. 
+    interrupt_message = f"""请对以下报告计划提供反馈。
                         \n\n{sections_str}\n
-                        \nDoes the report plan meet your needs?\nPass 'true' to approve the report plan.\nOr, provide feedback to regenerate the report plan:"""
+                        \n此报告计划是否满足您的需求？\n传入'true'来批准报告计划。\n或者，提供反馈以重新生成报告计划："""
     
     feedback = interrupt(interrupt_message)
 
@@ -266,7 +275,7 @@ async def generate_queries(state: SectionState, config: RunnableConfig):
 
     # Generate queries  
     queries = await structured_llm.ainvoke([SystemMessage(content=system_instructions),
-                                     HumanMessage(content="Generate search queries on the provided topic.")])
+                                     HumanMessage(content="针对提供的主题生成搜索查询。")])
 
     return {"search_queries": queries.queries}
 
@@ -352,9 +361,9 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     section.content = section_content.content
 
     # Grade prompt 
-    section_grader_message = ("Grade the report and consider follow-up questions for missing information. "
-                              "If the grade is 'pass', return empty strings for all follow-up queries. "
-                              "If the grade is 'fail', provide specific search queries to gather missing information.")
+    section_grader_message = ("对报告进行评分并考虑针对缺失信息的后续问题。"
+                              "如果评分为'pass'，则所有后续查询返回空字符串。"
+                              "如果评分为'fail'，则提供具体的搜索查询以收集缺失信息。")
     
     section_grader_instructions_formatted = section_grader_instructions.format(topic=topic, 
                                                                                section_topic=section.description,
@@ -432,7 +441,7 @@ async def write_final_sections(state: SectionState, config: RunnableConfig):
     writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs) 
     
     section_content = await writer_model.ainvoke([SystemMessage(content=system_instructions),
-                                           HumanMessage(content="Generate a report section based on the provided sources.")])
+                                           HumanMessage(content="根据提供的资料生成报告章节。")])
     
     # Write content to section 
     section.content = section_content.content

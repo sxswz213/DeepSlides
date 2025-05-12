@@ -47,7 +47,8 @@ class ReportStateOutput(TypedDict):
 class ReportState(TypedDict):
     topic: str # Report topic    
     image_path: Optional[str] # Optional path to input image
-    image_caption: Optional[str] # Optional caption generated from input image
+    caption: Optional[str] # Optional caption generated from input image
+    user_intent: Optional[str] # Optional user intent generated from input image
     feedback_on_report_plan: str # Feedback on the report plan
     sections: list[Section] # List of report sections 
     completed_sections: Annotated[list, operator.add] # Send() API key

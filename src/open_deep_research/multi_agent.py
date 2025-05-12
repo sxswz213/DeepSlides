@@ -117,7 +117,7 @@ async def supervisor(state: ReportState, config: RunnableConfig):
     
     # If sections have been completed, but we don't yet have the final report, then we need to initiate writing the introduction and conclusion
     if state.get("completed_sections") and not state.get("final_report"):
-        research_complete_message = {"role": "user", "content": "Research is complete. Now write the introduction and conclusion for the report. Here are the completed main body sections: \n\n" + "\n\n".join([s.content for s in state["completed_sections"]])}
+        research_complete_message = {"role": "user", "content": "研究已完成。现在为报告撰写引言和结论。以下是已完成的主体章节内容：\n\n" + "\n\n".join([s.content for s in state["completed_sections"]])}
         messages = messages + [research_complete_message]
 
     # Get tools based on configuration
