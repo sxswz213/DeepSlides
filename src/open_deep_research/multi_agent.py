@@ -126,7 +126,7 @@ async def supervisor(state: ReportState, config: RunnableConfig):
     # Invoke
     return {
         "messages": [
-            await llm.bind_tools(supervisor_tool_list).ainvoke(
+            await llm.bind_tools(supervisor_tool_list, parallel_tool_calls=False).ainvoke(
                 [
                     {"role": "system",
                      "content": SUPERVISOR_INSTRUCTIONS,
