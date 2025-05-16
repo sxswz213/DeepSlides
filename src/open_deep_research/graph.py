@@ -37,7 +37,8 @@ from open_deep_research.utils import (
     get_search_params, 
     select_and_execute_search,
     set_openai_api_base,
-    generate_image_caption
+    generate_image_caption,
+    generate_image_caption_v2
 )
 
 ## Nodes -- 
@@ -72,8 +73,12 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
     set_openai_api_base()
     
     try:
+        if not state.get("topic"):
+            topic = "用户未给出主题"
+        else:
+            topic = state["topic"]
         # 生成图像描述
-        image_result = await generate_image_caption(image_path)
+        image_result = await generate_image_caption_v2(image_path, topic)
         image_result = json.loads(image_result)
         print(image_result)
         caption, user_intent, topic = image_result["caption"], image_result["user_intent"], image_result["topic"]
@@ -93,24 +98,27 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
         return {"image_caption": f"无法处理图像: {str(e)}"}
 
 async def generate_report_plan(state: ReportState, config: RunnableConfig):
-    """Generate the initial report plan with sections.
-    
+    """Generate the initial report plan with sections, including image caption and user intent.
+
     This node:
     1. Gets configuration for the report structure and search parameters
     2. Generates search queries to gather context for planning
     3. Performs web searches using those queries
     4. Uses an LLM to generate a structured plan with sections
-    
+    5. Includes image caption and user intent in planning
+
     Args:
-        state: Current graph state containing the report topic
+        state: Current graph state containing the report topic, image caption, and user intent
         config: Configuration for models, search APIs, etc.
-        
+
     Returns:
         Dict containing the generated sections
     """
 
-    # 获取topic和反馈信息
-    topic = state["topic"]  # 现在我们可以安全地假设topic已存在
+    # 获取topic、图片caption和用户意图
+    topic = state["topic"]
+    caption = state.get("image_caption", "")
+    user_intent = state.get("user_intent", "")
     feedback = state.get("feedback_on_report_plan", None)
 
     # Get configuration
@@ -118,56 +126,69 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     report_structure = configurable.report_structure
     number_of_queries = configurable.number_of_queries
     search_api = get_config_value(configurable.search_api)
-    search_api_config = configurable.search_api_config or {}  # Get the config dict, default to empty
-    params_to_pass = get_search_params(search_api, search_api_config)  # Filter parameters
+    search_api_config = configurable.search_api_config or {}
+    params_to_pass = get_search_params(search_api, search_api_config)
 
-    # Convert JSON object to string if necessary
     if isinstance(report_structure, dict):
         report_structure = str(report_structure)
 
-    # Set writer model (model used for query writing)
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs) 
+    writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
     structured_llm = writer_model.with_structured_output(Queries)
 
-    # Format system instructions
-    system_instructions_query = report_planner_query_writer_instructions.format(topic=topic, report_organization=report_structure, number_of_queries=number_of_queries)
+    # Format system instructions including caption and user intent
+    system_instructions_query = report_planner_query_writer_instructions.format(
+        topic=topic,
+        caption=caption,
+        user_intent=user_intent,
+        report_organization=report_structure,
+        number_of_queries=number_of_queries
+    )
 
-    # Generate queries  
-    results = await structured_llm.ainvoke([SystemMessage(content=system_instructions_query),
-                                     HumanMessage(content="生成有助于规划报告各部分的搜索查询。")])
+    results = await structured_llm.ainvoke([
+        SystemMessage(content=system_instructions_query),
+        HumanMessage(content="生成有助于规划报告各部分的搜索查询。")
+    ])
 
-    # Web search
     query_list = [query.search_query for query in results.queries]
 
-    # Search the web with parameters
     source_str = await select_and_execute_search(search_api, query_list, params_to_pass)
 
-    # Format system instructions
-    system_instructions_sections = report_planner_instructions.format(topic=topic, report_organization=report_structure, context=source_str, feedback=feedback)
+    image_path = state.get("image_path")
+    if image_path:
+        # 单独调用图片搜索API
+        image_search_result = await select_and_execute_search("image_search", [image_path], params_to_pass)
+        # 将图片搜索结果与之前的搜索结果合并
+        source_str += f"\n\n图片搜索结果:\n{image_search_result}"
 
-    # Set the planner
+    # Include caption and user intent in report planner instructions
+    system_instructions_sections = report_planner_instructions.format(
+        topic=topic,
+        caption=caption,
+        user_intent=user_intent,
+        report_organization=report_structure,
+        context=source_str,
+        feedback=feedback
+    )
+
     planner_provider = get_config_value(configurable.planner_provider)
     planner_model = get_config_value(configurable.planner_model)
     planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
 
-    # Report planner instructions
     planner_message = """生成报告的章节。您的回复必须包含一个'sections'字段，其中包含章节列表。
                         每个章节必须有：name、description、plan、research和content字段。"""
 
-    # Set OpenAI API Base URL
     set_openai_api_base()
 
-    # Run the planner
     if planner_model == "claude-3-7-sonnet-latest":
-        # Allocate a thinking budget for claude-3-7-sonnet-latest as the planner model
-        planner_llm = init_chat_model(model=planner_model, 
-                                      model_provider=planner_provider, 
-                                      max_tokens=20_000, 
-                                      thinking={"type": "enabled", "budget_tokens": 16_000})
-
+        planner_llm = init_chat_model(
+            model=planner_model,
+            model_provider=planner_provider,
+            max_tokens=20_000,
+            thinking={"type": "enabled", "budget_tokens": 16_000}
+        )
     else:
         # With other models, thinking tokens are not specifically allocated
         planner_llm = init_chat_model(model=planner_model, 
@@ -179,7 +200,6 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     report_sections = await structured_llm.ainvoke([SystemMessage(content=system_instructions_sections),
                                              HumanMessage(content=planner_message)])
 
-    # Get sections
     sections = report_sections.sections
 
     return {"sections": sections}

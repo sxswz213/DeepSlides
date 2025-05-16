@@ -7,8 +7,10 @@ import aiohttp
 import httpx
 import time
 import base64
+import socket
 from typing import List, Optional, Dict, Any, Union
 from urllib.parse import unquote
+from google.cloud import vision
 
 from exa_py import Exa
 from linkup import LinkupClient
@@ -137,6 +139,100 @@ async def generate_image_caption(image_path: str) -> str:
     except Exception as e:
         print(f"生成图像caption时出错: {str(e)}")
         return f"无法处理图像: {str(e)}"
+
+@traceable
+async def generate_image_caption_v2(image_path: str, topic: str) -> str:
+    """
+    使用OpenAI API直接对图像进行分析并生成描述，并结合用户提供的研究主题探究用户意图。
+
+    Args:
+        image_path (str): 图像文件的路径
+        topic (str): 用户提供的额外研究主题或关注点
+
+    Returns:
+        str: 图像的描述文本
+    """
+    try:
+        set_openai_api_base()
+        api_base = os.environ.get('OPENAI_API_BASE', 'https://api.openai.com/v1')
+        api_key = os.environ.get('OPENAI_API_KEY')
+
+        if not api_key:
+            raise ValueError("未设置OPENAI_API_KEY环境变量")
+
+        async def read_and_encode_image(file_path):
+            def _read_file(path):
+                with open(path, "rb") as f:
+                    return f.read()
+
+            file_content = await asyncio.to_thread(_read_file, file_path)
+            return base64.b64encode(file_content).decode('utf-8')
+
+        image_data = await read_and_encode_image(image_path)
+
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+
+        payload = {
+            "model": "gpt-4o-mini",
+            "response_format": {"type": "json_object"},
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "您是一位具备深厚图像理解与研究主题分析经验的专家。用户上传一张图像，可能来自科研论文、实验结果、数据图表或示意图，以明确具体的研究方向或问题。"
+                        f"\n用户明确指出的研究关注主题或背景为：{topic}。\n\n"
+                        "请按以下步骤提供您的回答：\n\n"
+                        "第一步：图像详细描述\n"
+                        "- 从整体到局部详细描述图像内容及元素关系、图示中标记文本、图例以及研究目的的关键信息。\n"
+                        "- 特别注意实验设置、数值趋势、变量关系、标注、箭头指示、图表类型、模型结构或流程示意图等显著特征。\n\n"
+                        "第二步：用户意图分析（重点）\n"
+                        "结合用户提供的研究主题背景，深入分析用户可能真正关心或希望深入研究的问题、领域或具体方向。请从以下维度分析：\n"
+                        "- 图像主要揭示或讨论的问题或现象是什么？\n"
+                        "- 图像背后可能存在的科学研究目标或关键问题是什么？\n"
+                        "- 用户通过此图像结合给定的研究主题可能最希望获得或深入探讨哪些知识或成果？\n\n"
+                        "第三步：精炼研究主题描述\n"
+                        "基于上述分析，精准提取并用一段话描述最本质、最值得深入研究的主题或研究方向。这段话应准确代表图像传达的核心思想，并明确研究的意义或价值。\n\n"
+                        "请务必以严格的JSON格式输出，例如：{\"caption\": \"图像的详细描述内容\", \"user_intent\": \"用户可能关心的具体研究意图\", \"topic\": \"精准的研究主题描述\"}"
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "请基于提供的图像及给出的研究主题进行详细描述，探究用户可能的意图，提取可能的研究主题，以严格的JSON格式返回。"
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{image_data}",
+                                "detail": "high"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "temperature": 0
+        }
+
+        async with aiohttp.ClientSession() as session:
+            async with session.post(f"{api_base}/chat/completions", headers=headers, json=payload) as response:
+                if response.status != 200:
+                    error_text = await response.text()
+                    raise Exception(f"API请求失败，状态码: {response.status}, 错误: {error_text}")
+
+                data = await response.json()
+                caption = data["choices"][0]["message"]["content"]
+                return caption
+
+    except Exception as e:
+        print(f"生成图像caption时出错: {str(e)}")
+        return f"无法处理图像: {str(e)}"
+
+
 
 def get_config_value(value):
     """
@@ -1460,6 +1556,76 @@ async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "
     else:
         return "No valid search results found. Please try different search queries or use a different search API."
 
+@traceable
+async def image_search_async(image_path: str):
+    """
+    Performs image search using Google Cloud Vision API's Web Detection feature and parses web page content.
+
+    Args:
+        image_path (str): Path to the user's image for search
+
+    Returns:
+        List[dict]: List containing parsed web detection results and page content
+    """
+
+    def vision_api_call(path):
+        client = vision.ImageAnnotatorClient()
+        with open(path, "rb") as image_file:
+            content = image_file.read()
+        image = vision.Image(content=content)
+        response = client.web_detection(image=image)
+        return response
+
+    response = await asyncio.to_thread(vision_api_call, image_path)
+    annotations = response.web_detection
+
+    results = []
+
+    if annotations.web_entities:
+        for entity in annotations.web_entities:
+            results.append({
+                "description": entity.description,
+                "score": entity.score
+            })
+
+    if annotations.pages_with_matching_images:
+        async with aiohttp.ClientSession() as session:
+            for page in annotations.pages_with_matching_images:
+                try:
+                    async with session.get(page.url) as resp:
+                        html = await resp.text()
+                        soup = BeautifulSoup(html, 'html.parser')
+                        text_content = soup.get_text(separator=' ', strip=True)
+                        results.append({
+                            "url": page.url,
+                            "page_title": page.page_title,
+                            "content": text_content
+                        })
+                except Exception as e:
+                    results.append({
+                        "url": page.url,
+                        "page_title": page.page_title,
+                        "error": str(e)
+                    })
+
+    if response.error.message:
+        raise Exception(response.error.message)
+
+    return [{
+        "query": image_path,
+        "results": [
+            {
+                "title": item.get("page_title") or item.get("description") or "No Title",
+                "url": item.get("url", ""),
+                "content": item.get("content", ""),
+                "score": item.get("score", None),
+                "raw_content": item.get("content", "")
+            } for item in results if "url" in item or "description" in item
+        ]
+    }]
+
+
+
 async def select_and_execute_search(search_api: str, query_list: list[str], params_to_pass: dict) -> str:
     """Select and execute the appropriate search API.
     
@@ -1500,6 +1666,12 @@ async def select_and_execute_search(search_api: str, query_list: list[str], para
         return deduplicate_and_format_sources(search_results, max_tokens_per_source=4000)
     elif search_api == "googlesearch":
         search_results = await google_search_async(query_list, **params_to_pass)
+        return deduplicate_and_format_sources(search_results, max_tokens_per_source=4000)
+    elif search_api == "image_search":
+        if not query_list:
+            raise ValueError("Image path not provided in query_list for image search.")
+        image_path = query_list[0]
+        search_results = await image_search_async(image_path)
         return deduplicate_and_format_sources(search_results, max_tokens_per_source=4000)
     else:
         raise ValueError(f"Unsupported search API: {search_api}")

@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.langgraph_api
+open_deep_research.egg-info
