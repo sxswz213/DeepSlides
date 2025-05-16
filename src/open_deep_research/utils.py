@@ -82,7 +82,7 @@ async def generate_image_caption(image_path: str) -> str:
         }
 
         payload = {
-            "model": "gpt-4o-mini",
+            "model": "gpt-4o",  # dtyxs TODO: make it configurable
             "response_format": {"type": "json_object"},
             "messages": [
                 {
@@ -163,7 +163,7 @@ def get_search_params(search_api: str, search_api_config: Optional[Dict[str, Any
     # Define accepted parameters for each search API
     SEARCH_API_PARAMS = {
         "exa": ["max_characters", "num_results", "include_domains", "exclude_domains", "subpages"],
-        "tavily": ["max_results", "topic"],
+        "tavily": ["max_results", "topic", "include_images", "include_image_descriptions"],
         "perplexity": [],  # Perplexity accepts no additional parameters
         "arxiv": ["load_max_docs", "get_full_documents", "load_all_available_meta"],
         "pubmed": ["top_k_results", "email", "api_key", "doc_content_chars_max"],
@@ -251,7 +251,14 @@ Content:
     return formatted_str
 
 @traceable
-async def tavily_search_async(search_queries, max_results: int = 5, topic: str = "general", include_raw_content: bool = True):
+async def tavily_search_async(
+    search_queries,
+    max_results: int = 5,
+    topic: str = "general",
+    include_raw_content: bool = True,
+    include_images: bool = False,
+    include_image_descriptions: bool = False
+):
     """
     Performs concurrent web searches with the Tavily API
 
@@ -285,7 +292,9 @@ async def tavily_search_async(search_queries, max_results: int = 5, topic: str =
                     query,
                     max_results=max_results,
                     include_raw_content=include_raw_content,
-                    topic=topic
+                    topic=topic,
+                    include_images=include_images,
+                    include_image_descriptions=include_image_descriptions
                 )
             )
 
@@ -1375,22 +1384,35 @@ async def duckduckgo_search(search_queries: List[str]):
         return "No valid search results found. Please try different search queries or use a different search API."
 
 @tool
-async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "general") -> str:
+async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "general", include_images: bool = False, include_image_descriptions: bool = False) -> str:
     """
     Fetches results from Tavily search API.
     
     Args:
         queries (List[str]): List of search queries
+        max_results (int): Maximum number of results to return
+        topic (str): Search topic
+        include_images (bool): Whether to include images in results
+        include_image_descriptions (bool): Whether to include image descriptions
         
     Returns:
         str: A formatted string of search results
     """
+    print(f"tavily_search函数接收到的参数:")
+    print(f"  queries: {queries}")
+    print(f"  max_results: {max_results}")
+    print(f"  topic: {topic}")
+    print(f"  include_images: {include_images}")
+    print(f"  include_image_descriptions: {include_image_descriptions}")
+    
     # Use tavily_search_async with include_raw_content=True to get content directly
     search_results = await tavily_search_async(
         queries,
         max_results=max_results,
         topic=topic,
-        include_raw_content=True
+        include_raw_content=True,
+        include_images=include_images,
+        include_image_descriptions=include_image_descriptions
     )
 
     # Format the search results directly using the raw_content already provided
@@ -1413,6 +1435,26 @@ async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "
             formatted_output += f"FULL CONTENT:\n{result['raw_content'][:30000]}"  # Limit content size
         formatted_output += "\n\n" + "-" * 80 + "\n"
     
+    # 添加图像结果处理
+    if include_images:
+        formatted_output += "\n\n--- IMAGES ---\n\n"
+        image_count = 0
+        for response in search_results:
+            if 'images' in response and response['images']:
+                for image in response['images']:
+                    image_count += 1
+                    formatted_output += f"IMAGE {image_count}:\n"
+                    formatted_output += f"URL: {image.get('url', 'No URL')}\n"
+                    if include_image_descriptions and 'description' in image:
+                        formatted_output += f"DESCRIPTION: {image.get('description', 'No description')}\n"
+                    formatted_output += "\n"
+        
+        if image_count == 0:
+            formatted_output += "No images found in search results.\n"
+        formatted_output += "-" * 80 + "\n"
+
+    print(formatted_output)
+
     if unique_results:
         return formatted_output
     else:
@@ -1433,8 +1475,11 @@ async def select_and_execute_search(search_api: str, query_list: list[str], para
         ValueError: If an unsupported search API is specified
     """
     if search_api == "tavily":
-        # Tavily search tool used with both workflow and agent 
-        return await tavily_search.ainvoke({'queries': query_list}, **params_to_pass)
+        # Tavily search tool used with both workflow and agent
+        all_params = {"queries": query_list}
+        all_params.update(params_to_pass)  # tavily_search.ainvoke({'queries': query_list}, **params_to_pass) is not work
+        print(f"调用tavily_search.ainvoke，合并后的参数: {all_params}")
+        return await tavily_search.ainvoke(all_params)
     elif search_api == "duckduckgo":
         # DuckDuckGo search tool used with both workflow and agent 
         return await duckduckgo_search.ainvoke({'search_queries': query_list})
