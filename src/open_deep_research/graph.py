@@ -190,19 +190,6 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
             thinking={"type": "enabled", "budget_tokens": 16_000}
         )
     else:
-<<<<<<< HEAD
-        planner_llm = init_chat_model(
-            model=planner_model,
-            model_provider=planner_provider,
-            model_kwargs=planner_model_kwargs
-        )
-
-    structured_llm = planner_llm.with_structured_output(Sections)
-    report_sections = await structured_llm.ainvoke([
-        SystemMessage(content=system_instructions_sections),
-        HumanMessage(content=planner_message)
-    ])
-=======
         # With other models, thinking tokens are not specifically allocated
         planner_llm = init_chat_model(model=planner_model, 
                                       model_provider=planner_provider,
@@ -212,7 +199,6 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     structured_llm = planner_llm.with_structured_output(Sections)
     report_sections = await structured_llm.ainvoke([SystemMessage(content=system_instructions_sections),
                                              HumanMessage(content=planner_message)])
->>>>>>> dev
 
     sections = report_sections.sections
 
