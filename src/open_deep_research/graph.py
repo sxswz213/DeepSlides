@@ -190,6 +190,7 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
             thinking={"type": "enabled", "budget_tokens": 16_000}
         )
     else:
+<<<<<<< HEAD
         planner_llm = init_chat_model(
             model=planner_model,
             model_provider=planner_provider,
@@ -201,6 +202,17 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
         SystemMessage(content=system_instructions_sections),
         HumanMessage(content=planner_message)
     ])
+=======
+        # With other models, thinking tokens are not specifically allocated
+        planner_llm = init_chat_model(model=planner_model, 
+                                      model_provider=planner_provider,
+                                      model_kwargs=planner_model_kwargs)
+
+    # Generate the report sections
+    structured_llm = planner_llm.with_structured_output(Sections)
+    report_sections = await structured_llm.ainvoke([SystemMessage(content=system_instructions_sections),
+                                             HumanMessage(content=planner_message)])
+>>>>>>> dev
 
     sections = report_sections.sections
 
@@ -356,16 +368,61 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     topic = state["topic"]
     section = state["section"]
     source_str = state["source_str"]
+    
+    # 提取图像信息
+    images_data = []
+    # dtyxs TODO: make it configurable
+    max_images = 6  # 最大图像数量限制
+    
+    if "--- IMAGES ---" in source_str:
+        try:
+            # 提取图像部分
+            images_section = source_str.split("--- IMAGES ---")[1].split("-" * 80)[0]
+            image_blocks = images_section.strip().split("IMAGE ")[1:]  # 跳过第一个空元素
+            
+            for i, block in enumerate(image_blocks):
+                lines = block.strip().split("\n")
+                image_url = ""
+                image_description = ""
+                
+                for line in lines:
+                    if line.startswith("URL:"):
+                        image_url = line.replace("URL:", "").strip()
+                    elif line.startswith("DESCRIPTION:"):
+                        image_description = line.replace("DESCRIPTION:", "").strip()
+                
+                if image_url:  # 只添加有URL的图像
+                    images_data.append({
+                        "index": i,
+                        "url": image_url,
+                        "description": image_description
+                    })
+        except Exception as e:
+            print(f"提取图像信息时出错: {str(e)}")
+
+    # 达到最大图像数量后停止处理
+    image_num_available = len(images_data)
+    if image_num_available >= max_images:
+        images_data = images_data[:max_images]
+
+    # 将图像数据格式化为JSON字符串
+    images_json = json.dumps(images_data, ensure_ascii=False, indent=2) if images_data else "[]"
+    
+    if images_data:
+        print(f"已提取 {image_num_available} 张图像（最大限制：{max_images}张）")
 
     # Get configuration
     configurable = Configuration.from_runnable_config(config)
 
     # Format system instructions
-    section_writer_inputs_formatted = section_writer_inputs.format(topic=topic, 
-                                                             section_name=section.name, 
-                                                             section_topic=section.description, 
-                                                             context=source_str, 
-                                                             section_content=section.content)
+    section_writer_inputs_formatted = section_writer_inputs.format(
+        topic=topic, 
+        section_name=section.name, 
+        section_topic=section.description, 
+        context=source_str, 
+        section_content=section.content,
+        images_data=images_json
+    )
 
     # Set OpenAI API Base URL
     set_openai_api_base()
@@ -376,11 +433,38 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
     writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs) 
 
+    # dtyxs TODO: Native image input
     section_content = await writer_model.ainvoke([SystemMessage(content=section_writer_instructions),
                                            HumanMessage(content=section_writer_inputs_formatted)])
     
+    # 处理返回的内容，提取图像选择信息
+    content = section_content.content
+    selected_image = None
+    
+    # 检查是否包含图像选择信息
+    if "```image_selection" in content and images_data:
+        try:
+            # 提取图像选择JSON
+            image_selection_text = content.split("```image_selection")[1].split("```")[0].strip()
+            image_selection = json.loads(image_selection_text)
+            
+            selected_index = image_selection.get("selected_image_index", -1)
+            if selected_index >= 0 and selected_index < len(images_data):
+                selected_image = images_data[selected_index]
+                selected_image["caption"] = image_selection.get("caption", "")
+                
+                # 从内容中移除图像选择部分
+                content = content.split("```image_selection")[0].strip()
+                
+                # 在内容末尾添加选中的图像
+                if selected_image:
+                    content += f"\n\n![{selected_image['caption']}]({selected_image['url']})\n"
+                    content += f"*{selected_image['caption']}*\n"
+        except Exception as e:
+            print(f"处理图像选择信息时出错: {str(e)}")
+    
     # Write content to the section object  
-    section.content = section_content.content
+    section.content = content
 
     # Grade prompt 
     section_grader_message = ("对报告进行评分并考虑针对缺失信息的后续问题。"
