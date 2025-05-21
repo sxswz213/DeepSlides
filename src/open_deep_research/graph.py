@@ -83,13 +83,8 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
         print(image_result)
         caption, user_intent, topic = image_result["caption"], image_result["user_intent"], image_result["topic"]
 
-        # 检查是否提供了topic
-        if not state.get("topic"):
-            # 如果没有提供topic，使用提取出的图像topic
-            return {"caption": caption, "user_intent": user_intent, "topic": topic}
-        else:
-            # 如果已经提供了topic，只返回图像描述
-            return {"caption": caption, "user_intent": user_intent}
+        return {"caption": caption, "user_intent": user_intent, "topic": topic}
+
     except Exception as e:
         print(f"处理图像时出错: {str(e)}")
         # 返回错误信息作为caption，并确保topic存在
@@ -158,10 +153,13 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
 
     image_path = state.get("image_path")
     if image_path:
-        # 单独调用图片搜索API
-        image_search_result = await select_and_execute_search("image_search", [image_path], params_to_pass)
-        # 将图片搜索结果与之前的搜索结果合并
-        source_str += f"\n\n图片搜索结果:\n{image_search_result}"
+        try:
+            # 单独调用图片搜索API
+            image_search_result = await select_and_execute_search("image_search", [image_path], params_to_pass)
+            # 将图片搜索结果与之前的搜索结果合并
+            source_str += f"\n\n图片搜索结果:\n{image_search_result}"
+        except Exception as e:
+            print(f"调用图片搜索API时出错: {str(e)}")
 
     # Include caption and user intent in report planner instructions
     system_instructions_sections = report_planner_instructions.format(
@@ -425,8 +423,7 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     
     # 处理返回的内容，提取图像选择信息
     content = section_content.content
-    selected_image = None
-    
+
     # 检查是否包含图像选择信息
     if "```image_selection" in content and images_data:
         try:
@@ -435,17 +432,34 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
             image_selection = json.loads(image_selection_text)
             
             selected_index = image_selection.get("selected_image_index", -1)
-            if selected_index >= 0 and selected_index < len(images_data):
+            if 0 <= selected_index < len(images_data):
                 selected_image = images_data[selected_index]
                 selected_image["caption"] = image_selection.get("caption", "")
                 
-                # 从内容中移除图像选择部分
-                content = content.split("```image_selection")[0].strip()
+                # 处理内容分割，保留标记前后的内容
+                before_image_selection = content.split("```image_selection")[0].strip()
+                after_image_selection = ""
+                if "```" in content.split("```image_selection")[1]:
+                    after_image_selection = content.split("```image_selection")[1].split("```", 1)[1].strip()
                 
-                # 在内容末尾添加选中的图像
-                if selected_image:
-                    content += f"\n\n![{selected_image['caption']}]({selected_image['url']})\n"
-                    content += f"*{selected_image['caption']}*\n"
+                # 重新组合内容，将图像选择部分替换为图像和标题标记
+                image_content = f"\n\n![{selected_image['caption']}]({selected_image['url']})\n*{selected_image['caption']}*\n"
+                if after_image_selection:
+                    content = f"{before_image_selection}\n\n{image_content}\n\n{after_image_selection}"
+                else:
+                    content = f"{before_image_selection}\n\n{image_content}"
+            else:
+                # selected_index不合法，移除图像选择部分
+                before_image_selection = content.split("```image_selection")[0].strip()
+                after_image_selection = ""
+                if "```" in content.split("```image_selection")[1]:
+                    after_image_selection = content.split("```image_selection")[1].split("```", 1)[1].strip()
+                
+                # 重新组合内容，移除图像选择部分但保留其前后内容
+                if after_image_selection:
+                    content = f"{before_image_selection}\n\n{after_image_selection}"
+                else:
+                    content = before_image_selection
         except Exception as e:
             print(f"处理图像选择信息时出错: {str(e)}")
     
