@@ -4,3 +4,5 @@ __pycache__/
 .env
 .langgraph_api
 open_deep_research.egg-info
+saves/
+tmp/

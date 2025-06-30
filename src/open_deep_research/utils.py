@@ -232,7 +232,110 @@ async def generate_image_caption_v2(image_path: str, topic: str) -> str:
         print(f"生成图像caption时出错: {str(e)}")
         return f"无法处理图像: {str(e)}"
 
+async def generate_image_caption_v3(image_path: str, topic: str) -> str:
+    """
+    使用 OpenAI 或 Azure OpenAI 接口分析图像并结合主题生成描述信息（caption + user_intent + topic）
+    """
+    try:
+        # 获取配置
+        api_base = os.environ.get("OPENAI_API_BASE", "https://api.openai.com/v1")
+        api_key = os.environ.get("OPENAI_API_KEY")
+        api_version = os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview")
+        deployment = os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o")
 
+        if not api_key:
+            raise ValueError("未设置 OPENAI_API_KEY 环境变量")
+
+        # 读取并编码图像
+        async def read_and_encode_image(file_path):
+            def _read(path):
+                with open(path, "rb") as f:
+                    return f.read()
+            content = await asyncio.to_thread(_read, file_path)
+            return base64.b64encode(content).decode('utf-8')
+
+        image_data = await read_and_encode_image(image_path)
+
+        # 判断是否为 Azure API
+        is_azure = "azure" in api_base.lower()
+
+        # 统一构造消息
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "您是一位具备深厚图像理解与研究主题分析经验的专家。用户上传一张图像，可能来自科研论文、实验结果、数据图表或示意图，以明确具体的研究方向或问题。"
+                    f"\n用户明确指出的研究关注主题或背景为：{topic}。\n\n"
+                    "请按以下步骤提供您的回答：\n\n"
+                    "第一步：图像详细描述\n"
+                    "- 从整体到局部详细描述图像内容及元素关系、图示中标记文本、图例以及研究目的的关键信息。\n"
+                    "- 特别注意实验设置、数值趋势、变量关系、标注、箭头指示、图表类型、模型结构或流程示意图等显著特征。\n\n"
+                    "第二步：用户意图分析（重点）\n"
+                    "结合用户提供的研究主题背景，深入分析用户可能真正关心或希望深入研究的问题、领域或具体方向。请从以下维度分析：\n"
+                    "- 图像主要揭示或讨论的问题或现象是什么？\n"
+                    "- 图像背后可能存在的科学研究目标或关键问题是什么？\n"
+                    "- 用户通过此图像结合给定的研究主题可能最希望获得或深入探讨哪些知识或成果？\n\n"
+                    "第三步：精炼研究主题描述\n"
+                    "基于上述分析，精准提取并用一段话描述最本质、最值得深入研究的主题或研究方向。这段话应准确代表图像传达的核心思想，并明确研究的意义或价值。\n\n"
+                    "请务必以严格的JSON格式输出，例如：{\"caption\": \"图像的详细描述内容\", \"user_intent\": \"用户可能关心的具体研究意图\", \"topic\": \"精准的研究主题描述\"}"
+                )
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "请基于提供的图像及给出的研究主题进行详细描述，探究用户可能的意图，提取可能的研究主题，以严格的JSON格式返回。"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{image_data}",
+                            "detail": "high"
+                        }
+                    }
+                ]
+            }
+        ]
+
+        # 构造 URL、headers、payload
+        if is_azure:
+            url = f"{api_base}/openai/deployments/{deployment}/chat/completions?api-version={api_version}"
+            headers = {
+                "Content-Type": "application/json",
+                "api-key": api_key
+            }
+            payload = {
+                "messages": messages,
+                "temperature": 0,
+                "response_format": "json_object"
+            }
+        else:
+            url = f"{api_base}/chat/completions"
+            headers = {
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {api_key}"
+            }
+            payload = {
+                "model": deployment,
+                "messages": messages,
+                "temperature": 0,
+                "response_format": "json_object"
+            }
+
+        # 发出请求
+        async with aiohttp.ClientSession() as session:
+            async with session.post(url, headers=headers, json=payload) as response:
+                if response.status != 200:
+                    error_text = await response.text()
+                    raise Exception(f"API 请求失败：状态码 {response.status}，错误信息：{error_text}")
+
+                data = await response.json()
+                return data["choices"][0]["message"]["content"]
+
+    except Exception as e:
+        print(f"生成图像caption时出错: {e}")
+        return f"无法处理图像: {e}"
 
 def get_config_value(value):
     """

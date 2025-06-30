@@ -58,11 +58,29 @@ class Configuration:
     number_of_queries: int = 2 # Number of search queries to generate per iteration
     max_search_depth: int = 2 # Maximum number of reflection + search iterations
     planner_provider: str = "openai"  # Defaults to Anthropic as provider
-    planner_model: str = "gpt-4.1-mini" # Defaults to claude-3-7-sonnet-latest
-    planner_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for planner_model
+    planner_model: str = "gpt-4o-mini" # Defaults to claude-3-7-sonnet-latest
+    # planner_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for planner_model
+    planner_model_kwargs = {
+        "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini"),
+        "openai_api_base": os.environ.get("OPENAI_API_BASE"),
+    }
     writer_provider: str = "openai" # Defaults to Anthropic as provider
-    writer_model: str = "gpt-4.1-mini" # Defaults to claude-3-5-sonnet-latest
-    writer_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for writer_model
+    writer_model: str = "gpt-4o-mini" # Defaults to claude-3-5-sonnet-latest
+    # writer_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for writer_model
+    writer_model_kwargs = {
+        "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini"),
+        "openai_api_base": os.environ.get("OPENAI_API_BASE"),
+    }
+
+    coder_provider: str = "openai" # Defaults to Anthropic as provider
+    coder_model: str = "gpt-4o" # Defaults to claude-3-5-sonnet-latest
+    coder_model_kwargs = {
+        "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o"),
+        "openai_api_base": os.environ.get("OPENAI_API_BASE"),
+    }
 
     # Multi-agent specific configuration
     supervisor_model: str = "openai:gpt-4.1" # Model for supervisor agent in multi-agent setup

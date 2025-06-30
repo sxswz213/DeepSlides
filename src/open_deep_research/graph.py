@@ -2,12 +2,30 @@ from typing import Literal
 import json
 
 from langchain.chat_models import init_chat_model
+from langchain_openai import AzureChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables import RunnableConfig
 
 from langgraph.constants import Send
 from langgraph.graph import START, END, StateGraph
 from langgraph.types import interrupt, Command
+
+import subprocess
+import os
+import datetime
+import asyncio
+import io
+import subprocess
+import httpx
+from urllib.parse import urlparse
+
+from pptx import Presentation
+from pptx.util import Inches, Pt
+from pptx.enum.text import PP_ALIGN
+
+
+import base64
+
 
 from open_deep_research.state import (
     ReportStateInput,
@@ -17,7 +35,15 @@ from open_deep_research.state import (
     SectionState,
     SectionOutputState,
     Queries,
-    Feedback
+    Feedback,
+    PPTSection,
+    PPTOutline,
+    PPTSections,
+    PPTSectionState,
+    PPTSlideState,
+    PPTSlide,
+    PPTSlideOutputState,
+    PPTSectionOutputState
 )
 
 from open_deep_research.prompts import (
@@ -27,7 +53,8 @@ from open_deep_research.prompts import (
     section_writer_instructions,
     final_section_writer_instructions,
     section_grader_instructions,
-    section_writer_inputs
+    section_writer_inputs,
+    query_writer4PPT_instructions
 )
 
 from open_deep_research.configuration import Configuration
@@ -38,7 +65,8 @@ from open_deep_research.utils import (
     select_and_execute_search,
     set_openai_api_base,
     generate_image_caption,
-    generate_image_caption_v2
+    generate_image_caption_v2,
+    generate_image_caption_v3
 )
 
 ## Nodes -- 
@@ -78,7 +106,7 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
         else:
             topic = state["topic"]
         # 生成图像描述
-        image_result = await generate_image_caption_v2(image_path, topic)
+        image_result = await generate_image_caption_v3(image_path, topic)
         image_result = json.loads(image_result)
         print(image_result)
         caption, user_intent, topic = image_result["caption"], image_result["user_intent"], image_result["topic"]
@@ -130,7 +158,15 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    writer_model = AzureChatOpenAI(
+        model=configurable.writer_model,
+        azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
+        deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
+        openai_api_version=writer_model_kwargs["openai_api_version"],  # Azure's API version
+        temperature=0,
+        max_tokens=2048
+    )
     structured_llm = writer_model.with_structured_output(Queries)
 
     # Format system instructions including caption and user intent
@@ -189,9 +225,17 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
         )
     else:
         # With other models, thinking tokens are not specifically allocated
-        planner_llm = init_chat_model(model=planner_model, 
-                                      model_provider=planner_provider,
-                                      model_kwargs=planner_model_kwargs)
+        # planner_llm = init_chat_model(model=planner_model, 
+        #                               model_provider=planner_provider,
+        #                               model_kwargs=planner_model_kwargs)
+        planner_llm = AzureChatOpenAI(
+            model=configurable.writer_model,
+            azure_endpoint=planner_model_kwargs["openai_api_base"],  # Azure's API base
+            deployment_name=planner_model_kwargs["azure_deployment"],  # Azure's deployment name
+            openai_api_version=planner_model_kwargs["openai_api_version"],  # Azure's API version
+            temperature=0,
+            max_tokens=2048
+        )
 
     # Generate the report sections
     structured_llm = planner_llm.with_structured_output(Sections)
@@ -283,7 +327,15 @@ async def generate_queries(state: SectionState, config: RunnableConfig):
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs) 
+    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    writer_model = AzureChatOpenAI(
+        model=configurable.writer_model,
+        azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
+        deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
+        openai_api_version=writer_model_kwargs["openai_api_version"],  # Azure's API version
+        temperature=0,
+        max_tokens=2048
+    )
     structured_llm = writer_model.with_structured_output(Queries)
 
     # Format system instructions
@@ -415,7 +467,15 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs) 
+    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    writer_model = AzureChatOpenAI(
+        model=configurable.writer_model,
+        azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
+        deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
+        openai_api_version=writer_model_kwargs["openai_api_version"],  # Azure's API version
+        temperature=0,
+        max_tokens=2048
+    )
 
     # dtyxs TODO: Native image input
     section_content = await writer_model.ainvoke([SystemMessage(content=section_writer_instructions),
@@ -465,6 +525,7 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     
     # Write content to the section object  
     section.content = content
+    section.source_str = source_str  # Store the source string in the section
 
     # Grade prompt 
     section_grader_message = ("对报告进行评分并考虑针对缺失信息的后续问题。"
@@ -491,8 +552,16 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
                                            max_tokens=20_000, 
                                            thinking={"type": "enabled", "budget_tokens": 16_000}).with_structured_output(Feedback)
     else:
-        reflection_model = init_chat_model(model=planner_model, 
-                                           model_provider=planner_provider, model_kwargs=planner_model_kwargs).with_structured_output(Feedback)
+        # reflection_model = init_chat_model(model=planner_model, 
+        #                                    model_provider=planner_provider, model_kwargs=planner_model_kwargs).with_structured_output(Feedback)
+        reflection_model = AzureChatOpenAI(
+            model=configurable.writer_model,
+            azure_endpoint=planner_model_kwargs["openai_api_base"],  # Azure's API base
+            deployment_name=planner_model_kwargs["azure_deployment"],  # Azure's deployment name
+            openai_api_version=planner_model_kwargs["openai_api_version"],  # Azure's API version
+            temperature=0,
+            max_tokens=2048
+        ).with_structured_output(Feedback)
     # Generate feedback
     feedback = await reflection_model.ainvoke([SystemMessage(content=section_grader_instructions_formatted),
                                         HumanMessage(content=section_grader_message)])
@@ -544,7 +613,15 @@ async def write_final_sections(state: SectionState, config: RunnableConfig):
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs) 
+    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    writer_model = AzureChatOpenAI(
+        model=configurable.writer_model,
+        azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
+        deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
+        openai_api_version=writer_model_kwargs["openai_api_version"],  # Azure's API version
+        temperature=0,
+        max_tokens=2048
+    )
     
     section_content = await writer_model.ainvoke([SystemMessage(content=system_instructions),
                                            HumanMessage(content="根据提供的资料生成报告章节。")])
@@ -624,6 +701,903 @@ def initiate_final_section_writing(state: ReportState):
         if not s.research
     ]
 
+async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Command[Literal["generate_ppt_sections"]]:
+    """
+    根据演讲时长先确定推荐的PPT页数，然后对报告的各个部分进行合理的页数分配，最后基于此生成PPT大纲。
+
+    Args:
+        state: 当前状态，包含 final_report 等信息
+        config: 配置参数
+
+    Returns:
+        包含PPT大纲的状态字典
+    """
+    configurable = Configuration.from_runnable_config(config)
+    planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
+
+    writer_model = AzureChatOpenAI(
+        model=configurable.planner_model,
+        azure_endpoint=planner_model_kwargs["openai_api_base"],
+        deployment_name=planner_model_kwargs["azure_deployment"],
+        openai_api_version=planner_model_kwargs["openai_api_version"],
+        temperature=0,
+        max_tokens=4096
+    )
+
+    # 提取所需信息
+    topic = state.get("topic", "未指定主题")
+    sections = state.get("sections", [])
+    section_titles = [section.name for section in sections]
+    presentation_minutes = state.get("presentation_minutes", "15")
+    style = state.get("style", "none")  
+
+    if style == "none":
+        prefix = "请根据演讲主题和章节结构推荐适合的风格和故事线。"
+    else:
+        prefix = f"用户期望的演讲风格：{style}'"
+        # 根据指定的style确定故事线
+    storyline_prompt = f"""
+    你是一位经验丰富的演讲专家，要制作一份演讲PPT，首先要确定PPT的故事线。
+    演讲主题：{topic}
+    演讲时长：{presentation_minutes}分钟
+    {prefix}
+
+    返回json格式：
+    {{
+        "style": "风格",
+        "storyline": "SCQA型"
+    }}
+    """
+    storyline_response = await writer_model.ainvoke([
+        SystemMessage(content=storyline_prompt),
+        HumanMessage(content="请推荐适合的故事线")
+    ])
+    style = json.loads(storyline_response.content)["style"]
+    storyline = json.loads(storyline_response.content)["storyline"]   
+
+    # 第一步：询问合适的PPT页数
+    ppt_length_prompt = f"""
+    你是一位经验丰富的演讲专家。
+
+    主题：{topic}
+    演讲时长：{presentation_minutes}分钟
+    章节结构：{', '.join(section_titles)}
+
+    请建议一个适合该演讲时长的PPT页数（每页内容适中，页面不拥挤，一页PPT大概对应1-2分钟的内容）。
+    请以JSON返回，如：{{"recommended_slides": 10}}
+    """
+
+    ppt_length_response = await writer_model.ainvoke([
+        SystemMessage(content=ppt_length_prompt),
+        HumanMessage(content="请提供推荐的PPT页数。")] 
+    )
+
+    recommended_slides = json.loads(ppt_length_response.content)["recommended_slides"]
+
+    # 第二步：对各个部分进行页数划分
+    ppt_section_distribution_prompt = f"""
+    报告主题：{topic}
+    推荐PPT总页数：{recommended_slides}
+
+    报告章节：{', '.join(section_titles)}
+
+    请合理地将PPT总页数分配给以上章节，并以JSON返回，例如：
+    {{
+      "section_distribution": {{
+        "引言": 2,
+        "方法论": 3,
+        "结果": 3,
+        "结论": 2
+      }}
+    }}
+    """
+
+    ppt_distribution_response = await writer_model.ainvoke([
+        SystemMessage(content=ppt_section_distribution_prompt),
+        HumanMessage(content="请分配各个章节的PPT页数。")
+    ])
+
+    section_distribution = json.loads(ppt_distribution_response.content)["section_distribution"]
+
+    # 第三步：基于划分生成PPT大纲
+    ppt_outline_prompt = f"""
+    你擅长设计演讲用的幻灯片大纲。
+
+    报告内容：
+    {state["final_report"]}
+
+    每个章节的PPT页数分配如下：
+    {json.dumps(section_distribution, ensure_ascii=False, indent=2)}
+
+    请生成符合上述页数划分的PPT大纲，每页应包含：
+    - 标题
+    - 最多3-4个关键点
+
+    请以以下JSON格式返回：
+    {{
+      "ppt_sections": [
+        {{
+          "name": "引言",
+          "allocated_slides": 2,
+          "slides": [{{"title": "引言", "points": ["背景介绍"]}}]
+        }}
+      ]
+    }}
+    """
+
+    ppt_outline_response = await writer_model.ainvoke([
+        SystemMessage(content=ppt_outline_prompt),
+        HumanMessage(content="生成PPT大纲。")
+    ])
+    ppt_sections_data = json.loads(ppt_outline_response.content)["ppt_sections"]
+    for section in ppt_sections_data:
+        for slide in section.get("slides", []):
+            if "codes" not in slide:
+                slide["codes"] = []
+            if "detail" not in slide:
+                slide["detail"] = ""
+            if "enriched_points" not in slide:
+                slide["enriched_points"] = ""
+            if "path" not in slide:
+                slide["path"] = ""
+
+    ppt_sections = [PPTSection(**section) for section in ppt_sections_data]
+
+    ppt_outline = PPTOutline(ppt_sections=PPTSections(sections=ppt_sections))
+
+    return Command(
+        update={
+            "recommended_ppt_slides": recommended_slides,
+            "section_distribution": section_distribution,
+            "ppt_outline": ppt_outline,
+            "ppt_sections": ppt_sections
+        },
+        goto=[
+            Send("generate_ppt_sections", {"topic": topic, "section": s, "ppt_section": ppt_section})
+            for s, ppt_section in zip(sections, ppt_sections)  # 将每个章节和对应的PPT部分配对
+        ]
+    )
+
+async def save_image_from_url(image_url, image_name, topic, ppt_section_name, slide_index):
+    """
+    异步下载图片并保存到本地，自动根据URL后缀决定图片类型。
+
+    Args:
+        image_url: 图片URL
+        image_name: 保存的图片名称
+        topic: 主题目录名称
+        ppt_section_name: PPT章节名称
+        slide_index: 幻灯片索引
+
+    Returns:
+        str: 图片保存路径或空字符串（失败时）
+    """
+    try:
+        # 异步网络请求下载图片
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.get(image_url)
+            response.raise_for_status()
+
+            # 提取图片后缀
+            parsed_url = urlparse(image_url)
+            ext = os.path.splitext(parsed_url.path)[-1].lower()
+
+            # 默认后缀为 .jpg，如果没有或后缀不标准时使用默认
+            if ext not in ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.tiff']:
+                ext = '.jpg'
+
+            # 异步创建目录（避免阻塞）
+            save_dir = os.path.join(
+                ".", "saves", topic, "images", ppt_section_name, f"slide_{slide_index+1}"
+            )
+            await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
+
+            # 构建完整图片路径
+            image_path = os.path.join(save_dir, f"{image_name}{ext}")
+
+            # 异步保存文件（避免阻塞）
+            await asyncio.to_thread(
+                lambda: open(image_path, 'wb').write(response.content)
+            )
+
+            print(f"图片成功保存到：{image_path}")
+            return image_path
+
+    except httpx.HTTPError as e:
+        print(f"HTTP请求错误: {str(e)}")
+        return ""
+    except Exception as e:
+        print(f"其他错误: {str(e)}")
+        return ""
+
+async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
+    """
+    第一部分：根据幻灯片的标题和要点生成详细的内容描述，并生成幻灯片布局描述。
+
+    Args:
+        state: 包含当前PPT幻灯片信息的状态。
+        config: 配置参数。
+
+    Returns:
+        Tuple: 包含生成的详细内容和幻灯片布局描述。
+    """
+    configurable = Configuration.from_runnable_config(config)
+    number_of_queries = configurable.number_of_queries
+    writer_model_kwargs = configurable.writer_model_kwargs or {}
+    
+    # 获取当前幻灯片信息
+    topic = state["topic"]
+    ppt_section = state["ppt_section"]
+    slide_index = state["slide_index"]
+    slide = ppt_section.slides[slide_index]
+    slide_title = slide.title
+    slide_points = slide.points
+
+    # 设置OpenAI API的基础URL
+    set_openai_api_base()
+
+    # 使用Azure模型生成查询语句
+    writer_model = AzureChatOpenAI(
+        model=configurable.writer_model,
+        azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure的API基础URL
+        deployment_name=writer_model_kwargs["azure_deployment"],  # Azure的部署名称
+        openai_api_version=writer_model_kwargs["openai_api_version"],  # Azure的API版本
+        temperature=0.7,
+        max_tokens=4096
+    )
+
+    # 使用结构化输出生成查询语句
+    structured_llm = writer_model.with_structured_output(Queries)
+
+    # 格式化系统指令
+    system_instructions = query_writer4PPT_instructions.format(
+        topic=topic,
+        section_topic=ppt_section.name,
+        slide_title=slide_title,
+        slide_points=", ".join(slide_points),
+        number_of_queries=number_of_queries
+    )
+
+    # 生成查询语句
+    query_response = await structured_llm.ainvoke([
+        SystemMessage(content=system_instructions),
+        HumanMessage(content="根据以上信息生成相关搜索查询")
+    ])
+
+    # 从返回的查询结果中提取查询语句
+    search_queries = [query.search_query for query in query_response.queries]
+
+    # 执行Web搜索
+    search_api = get_config_value(configurable.search_api)
+    search_api_config = configurable.search_api_config or {}
+    params_to_pass = get_search_params(search_api, search_api_config)
+
+    source_str = await select_and_execute_search(search_api, search_queries, params_to_pass)
+
+    # 提取图像信息
+    images_data = []
+    # dtyxs TODO: make it configurable
+    max_images = 6  # 最大图像数量限制
+    
+    if "--- IMAGES ---" in source_str:
+        try:
+            # 提取图像部分
+            images_section = source_str.split("--- IMAGES ---")[1].split("-" * 80)[0]
+            image_blocks = images_section.strip().split("IMAGE ")[1:]  # 跳过第一个空元素
+            
+            for i, block in enumerate(image_blocks):
+                lines = block.strip().split("\n")
+                image_url = ""
+                image_description = ""
+                
+                for line in lines:
+                    if line.startswith("URL:"):
+                        image_url = line.replace("URL:", "").strip()
+                    elif line.startswith("DESCRIPTION:"):
+                        image_description = line.replace("DESCRIPTION:", "").strip()
+                
+                if image_url:  # 只添加有URL的图像
+                    # 保存图像并获取保存路径
+                    image_path = await save_image_from_url(image_url, f"image_{i+1}", topic, ppt_section.name, slide_index)
+                    images_data.append({
+                        "index": i,
+                        "url": image_url,
+                        "description": image_description,
+                        "local_path": image_path  # 添加本地图片路径
+                    })
+        except Exception as e:
+            print(f"提取图像信息时出错: {str(e)}")
+
+    # 达到最大图像数量后停止处理
+    image_num_available = len(images_data)
+    if image_num_available >= max_images:
+        images_data = images_data[:max_images]
+
+    # 将图像数据格式化为JSON字符串
+    images_json = json.dumps(images_data, ensure_ascii=False, indent=2) if images_data else "[]"
+    
+    if images_data:
+        print(f"已提取 {image_num_available} 张图像（最大限制：{max_images}张）")
+
+    images_data = images_data[:max_images] if len(images_data) >= max_images else images_data
+    embedded_images = []
+    for img in images_data:
+        local_path = img.get("local_path", "")
+        if local_path and os.path.exists(local_path):
+            try:
+                img_bytes = await asyncio.to_thread(
+                    lambda path=local_path: open(path, "rb").read()
+                )
+
+                img_base64 = base64.b64encode(img_bytes).decode()
+                ext = os.path.splitext(local_path)[1].lower().replace('.', '')
+                mime_type = f'image/{ext if ext != "jpg" else "jpeg"}'
+
+                embedded_images.append({
+                    "index": img["index"],
+                    "path": local_path,
+                    "description": img["description"],
+                    # "base64": f"data:{mime_type};base64,{img_base64}"
+                })
+            except Exception as e:
+                print(f"加载图片时出错: {str(e)}")
+    
+    images_json_embedded = json.dumps(embedded_images, ensure_ascii=False, indent=2) if embedded_images else "[]"
+    
+    if embedded_images:
+        print(f"成功加载 {len(embedded_images)} 张图片为Base64格式。")
+
+    # 扩展幻灯片内容
+    content_enrichment_prompt = f"""
+    根据以下搜索结果和要点，请扩展幻灯片的内容。每个要点请写出详细描述，并确保内容与搜索结果相关联。
+
+    幻灯片标题：{slide_title}
+    要点：{', '.join(slide_points)}
+
+    搜索结果：{source_str}
+
+    请扩展并详细描述每个要点，适合用于演讲演示，确保语言简洁但内容详实，一般每点内容不宜超过100字。以JSON返回：
+
+    {{
+        "enriched_points": [
+            {{"point_title": "要点标题1", "expanded_content": "详细扩展后的内容1"}},
+            {{"point_title": "要点标题2", "expanded_content": "详细扩展后的内容2"}},
+            {{"point_title": "要点标题3", "expanded_content": "详细扩展后的内容3"}},
+            ...
+        ]
+    }}
+    """
+
+    enrichment_response = await writer_model.ainvoke([
+        SystemMessage(content=content_enrichment_prompt),
+        HumanMessage(content="请扩展幻灯片内容")
+    ])
+
+    enriched_points = json.loads(enrichment_response.content.replace("```json", "").replace("```", "").strip())["enriched_points"]
+
+    # 第二阶段：使用coder_model生成幻灯片布局描述
+    coder_model_kwargs = configurable.coder_model_kwargs or {}
+    coder_model = AzureChatOpenAI(
+        model=configurable.coder_model,
+        azure_endpoint=coder_model_kwargs["openai_api_base"],
+        deployment_name=coder_model_kwargs["azure_deployment"],
+        openai_api_version=coder_model_kwargs["openai_api_version"],
+        temperature=0.7,
+        max_tokens=4096
+    )
+
+    detail_prompt = f"""
+    你是一位资深的幻灯片设计师，负责设计幻灯片布局。
+    根据以下详细内容生成幻灯片页面布局描述，输出为JSON：
+
+    标题: {slide_title}
+    详细要点: {json.dumps(enriched_points, ensure_ascii=False)}
+
+    这里是一些可用的图片，你可以选择性地使用，放置在PPT中。
+    <图像列表>
+    {images_json_embedded}
+    </图像列表>
+
+    JSON格式：
+    {{
+        "layout": "布局类型",
+        "content_details": ["标题、详细内容、图片的位置布局、长宽、图片路径等"],
+        "design_style": "设计风格"
+    }}
+    """
+
+    detail_response = await coder_model.ainvoke([
+        SystemMessage(content=detail_prompt),
+        HumanMessage(content="请输出幻灯片布局的JSON")
+    ])
+
+    slide_detail = json.loads(detail_response.content.replace("```json", "").replace("```", "").strip())
+
+    return {"enriched_points": enriched_points, 
+            "slide_detail": slide_detail}
+
+
+async def generate_slide_code_and_execute(state: PPTSlideState, config: RunnableConfig):
+    enriched_points = state["enriched_points"]
+    slide_detail = state["slide_detail"]
+
+    configurable = Configuration.from_runnable_config(config)
+    coder_model_kwargs = configurable.coder_model_kwargs or {}
+
+    coder_model = AzureChatOpenAI(
+        model=configurable.coder_model,
+        azure_endpoint=coder_model_kwargs["openai_api_base"],
+        deployment_name=coder_model_kwargs["azure_deployment"],
+        openai_api_version=coder_model_kwargs["openai_api_version"],
+        temperature=0.2,
+        max_tokens=4096
+    )
+
+    topic = state["topic"]
+    ppt_section = state["ppt_section"]
+    slide_index = state["slide_index"]
+    slide_title = ppt_section.slides[slide_index].title
+    slide_points = ppt_section.slides[slide_index].points
+
+    save_dir = os.path.join(".", "saves", topic)
+    await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
+
+    error_message = ""
+    previous_code = ""
+    python_code = None
+    execution_successful = False
+
+    async def run_script(script_path):
+        def run():
+            try:
+                proc_result = subprocess.run(
+                    ["python", script_path],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                return proc_result.returncode, proc_result.stdout, proc_result.stderr
+            except subprocess.TimeoutExpired as e:
+                return -1, "", f"超时异常: {str(e)}"
+            except Exception as e:
+                return -1, "", f"其他异常: {str(e)}"
+        return await asyncio.to_thread(run)
+
+    # 保留循环5次重试逻辑
+    for attempt in range(5):
+        code_prompt = f"""
+        根据以下幻灯片详细描述，生成使用python-pptx库创建幻灯片的Python代码：
+
+        标题: {slide_title}
+        详细要点: {json.dumps(enriched_points, ensure_ascii=False)}
+        幻灯片描述：{json.dumps(slide_detail, ensure_ascii=False, indent=2)}
+
+        代码要求：
+        1. 导入必要库。
+        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（分辨率1920x1080，20英寸*11.25英寸）。
+        3. 根据详细描述在指定位置添加标题、要点和图片，设置字体和样式，确保明确设置每个元素的大小以防止重叠遮挡，注意设置文本的自动换行。
+        4. 幻灯片均使用空白布局，标题、内容、图片均作为普通元素放置。
+        5. 保存文件名为：\"{save_dir}/{ppt_section.name}_slide_{slide_index + 1}.pptx\"
+
+        {f"上一次的错误信息: {error_message}" if error_message else ""} 
+        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+
+        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+        """
+
+        code_response = await coder_model.ainvoke([
+            SystemMessage(content=code_prompt),
+            HumanMessage(content="生成完整Python代码")
+        ])
+
+        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+
+        script_path = os.path.join(save_dir, f"{ppt_section.name}_slide_{slide_index + 1}.py")
+
+        await asyncio.to_thread(
+            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
+        )
+
+        returncode, stdout, stderr = await run_script(script_path)
+
+        if returncode == 0:
+            execution_successful = True
+            break
+        else:
+            print(python_code)  # 输出用于排查错误
+            error_message = stderr
+            previous_code = python_code
+            print(f"代码执行失败，尝试第 {attempt + 1}/5 次，错误信息：{stderr}")
+
+    if not execution_successful:
+        # raise RuntimeError("代码生成执行失败，已达到最大尝试次数")
+        if state["retry_count"] + 1 >= state.get("max_retry_count", 3):
+            print("最大重试次数已达，停止进一步处理")
+            generated_slide = PPTSlide(
+                title=slide_title,
+                points=slide_points,
+                codes=[python_code],
+                enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
+                detail=json.dumps(slide_detail, ensure_ascii=False, indent=2),
+                path=os.path.abspath(os.path.join(save_dir, f"{ppt_section.name}_slide_{slide_index + 1}.pptx"))
+            )
+            return Command(
+                update={"completed_slides": [generated_slide]},
+                goto=END
+            )
+
+        return Command(
+            update={"layout_valid": False, "retry_count": state["retry_count"] + 1},
+            goto="enrich_slide_content"
+        )
+
+    return {
+        "codes": [python_code],
+        "path": os.path.abspath(os.path.join(save_dir, f"{ppt_section.name}_slide_{slide_index + 1}.pptx")),
+        "title": slide_title,
+        "points": slide_points,
+    }
+
+
+def ppt_to_image(slide_ppt_path, image_path):
+    """
+    使用 unoconv 将PPT幻灯片导出为图片
+    """
+    print(f"将幻灯片 {slide_ppt_path} 转换为图片 {image_path}")
+    
+    # 使用 unoconv 将 PPT 转换为 PNG 格式
+    # try:
+        # 使用 unoconv 命令行工具来将 ppt 文件转换为图片
+    command = [
+            "C:\\Windows\\unoconv.bat",  # 调用 unoconv 命令
+            "-f", "png",  # 转换为 png 格式
+            "-o", image_path,  # 输出路径
+            slide_ppt_path  # 输入的 PPT 文件路径
+    ]
+        
+        # 调用 unoconv 命令
+    subprocess.run(command, check=True)
+    print(f"转换成功：{slide_ppt_path} -> {image_path}")
+    
+    # except subprocess.CalledProcessError as e:
+    #     print(f"转换失败：{str(e)}")
+
+async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: RunnableConfig):
+    """
+    将生成的PPT幻灯片转换为图片，并使用大模型检查布局合理性。
+
+    Args:
+        state: 当前PPT幻灯片状态。
+        config: 配置参数。
+
+    Returns:
+        Command: 如果布局有效，返回Command继续执行；否则返回Command跳转到enrich_slide_content。
+    """
+    configurable = Configuration.from_runnable_config(config)
+    planner_model_kwargs = configurable.planner_model_kwargs or {}
+
+    planner_model = AzureChatOpenAI(
+        model=configurable.planner_model,
+        azure_endpoint=planner_model_kwargs["openai_api_base"],
+        deployment_name=planner_model_kwargs["azure_deployment"],
+        openai_api_version=planner_model_kwargs["openai_api_version"],
+        temperature=0,
+        max_tokens=2048
+    )
+
+    slide_ppt_path = state["path"]
+    codes = state["codes"]
+    title = state["title"]
+    points = state["points"]
+    enriched_points = state["enriched_points"]
+    slide_detail = state["slide_detail"]
+    max_retry_count = state.get("max_retry_count", 3)  # 默认 3 次重试
+    retry_count = state.get("retry_count", 0)
+
+    print("当前幻灯片:",slide_ppt_path,"当前重复次数:", retry_count, "最大重试次数:", max_retry_count)
+
+    if retry_count >= max_retry_count:
+        print("最大重试次数已达，停止进一步处理")
+        generated_slide = PPTSlide(
+            title=title,
+            points=points,
+            codes=codes,
+            enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
+            detail=json.dumps(slide_detail, ensure_ascii=False, indent=2)
+        )
+        return Command(
+            update={"completed_slides": [generated_slide]},
+            goto=END
+        )
+
+    output_folder = os.path.dirname(slide_ppt_path)
+    image_path = slide_ppt_path.replace(".pptx", ".png")
+    print(f"将幻灯片 {slide_ppt_path} 转换为图片 {image_path}")
+
+    # 使用 asyncio.to_thread 将 PowerPoint 操作移到单独的线程中
+    # await asyncio.to_thread(ppt_to_image, slide_ppt_path, image_path)
+    try:
+        # 直接调用同步的 ppt_to_image 函数（无异步操作）
+        await asyncio.to_thread(ppt_to_image, slide_ppt_path, image_path)
+    except Exception as e:
+        print(f"Error converting PPT to image: {e}")
+        return Command(
+            update={"conversion_failed": True},
+            goto="enrich_slide_content"
+        )
+    print(f"幻灯片转换为图片成功，保存路径：{image_path}")
+    # 将图片发送给大模型进行布局检查
+    # - 幻灯片内容布局均匀，不偏重于某一侧。
+    # - 文本之间没有遮挡。
+    # - 所有文本内容均位于页面范围内，没有超出。
+    # - 所有要点都清晰地展示。
+    validation_prompt = f"""
+    你是一位专业的幻灯片设计审查师，请检查以下幻灯片布局是否合理：
+
+    - 幻灯片内容布局均匀，不偏重于某一侧。
+    - 文本和图片之间没有遮挡。
+    - 所有内容均位于页面范围内，没有超出。
+
+    请根据以上规则进行检查，如果不存在以上情况，则返回pass；存在以上情况，返回retry。
+    """
+
+    image_content = await asyncio.to_thread(
+        lambda: open(image_path, "rb").read()
+    )
+
+    response = await planner_model.ainvoke([
+        SystemMessage(content=validation_prompt),
+        HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
+    ])
+    print(f"布局检查结果：{response.content}")
+    # 如果模型返回的结果中包含有效的布局检查信息（比如返回“yes”表示有效）
+    if "pass" in response.content.lower():
+        # 布局有效，生成幻灯片并返回
+        generated_slide = PPTSlide(
+            title=title,
+            points=points,
+            codes=codes,
+            enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
+            detail=json.dumps(slide_detail, ensure_ascii=False, indent=2)
+        )
+        return Command(
+            update={"completed_slides": [generated_slide]},
+            goto=END
+        )
+    else:
+        retry_count += 1
+
+        # 如果超过最大重试次数，结束流程
+        if retry_count >= max_retry_count:
+            generated_slide = PPTSlide(
+                title=title,
+                points=points,
+                codes=codes,
+                enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
+                detail=json.dumps(slide_detail, ensure_ascii=False, indent=2)
+            )
+            return Command(
+                update={"completed_slides": [generated_slide]},
+                goto=END
+            )
+        # 布局无效，返回到enrich_slide_content重新生成内容
+        return Command(
+            update={"layout_valid": False, "retry_count": retry_count},
+            goto="enrich_slide_content"
+        )
+
+
+
+
+
+async def generate_ppt_section_start(state: PPTSectionState):
+    """
+    为每个PPT章节开始生成幻灯片时，初始化一个空的幻灯片列表，并为每页PPT启动一个子图。
+
+    Args:
+        state: 包含章节信息、PPT章节信息的状态
+
+    Returns:
+        Dict: 包含空的 `generated_slides` 列表，并进入 `ppt_slide_subgraph`
+    """
+    # 从状态中获取章节信息和PPT章节信息
+    topic = state["topic"]  # 主题
+    section = state["section"]  # 章节信息
+    ppt_section = state["ppt_section"]  # PPT章节信息
+
+    # 初始化幻灯片列表，准备开始生成幻灯片
+    generated_slides = []
+
+    # 打印相关信息（用于调试）
+    print(f"开始生成PPT章节：{section.name}，对应的PPT部分：{ppt_section.name}")
+
+    # 获取该章节需要的页数
+    num_slides = ppt_section.allocated_slides  # 获取分配的页数
+    
+    # 为每一页PPT启动一个子图
+    return Command(
+        update={"generated_slides": generated_slides},
+        goto=[
+            Send("generate_slide", {
+                "topic": topic, 
+                "section": section, 
+                "ppt_section": ppt_section, 
+                "slide_index": slide_index  # 为每一页传递幻灯片的索引
+            })
+            for slide_index in range(num_slides)  # 根据分配的页数启动相应数量的子图
+        ]
+    )
+
+
+async def generate_ppt_section_end(state: PPTSectionState):
+    ppt_section = state["ppt_section"]
+    ppt_section.slides = state["completed_slides"]
+
+    return Command(
+        update={"completed_ppt_sections": [ppt_section]},
+        goto=END
+    )
+
+async def compile_ppt(state: ReportState):
+    """
+    异步方式合并所有生成的pptx文件到一个pptx文件中，按照章节和幻灯片顺序合并。
+    同时生成封面、章节封面、封底，并正确复制图片。
+
+    Args:
+        state: 当前状态，包含所有完成的幻灯片信息。
+
+    Returns:
+        Dict: 更新后的状态，包含最终合并的PPT路径。
+    """
+    topic = state["topic"]
+    ppt_sections = state["ppt_sections"]
+
+    save_dir = os.path.join(".", "saves", topic)
+    final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
+
+    def add_cover_slide(prs, title):
+        slide = prs.slides.add_slide(prs.slide_layouts[0])
+        title_shape = slide.shapes.title
+        title_shape.text = title
+        title_shape.text_frame.paragraphs[0].font.size = Pt(60)
+        title_shape.text_frame.paragraphs[0].alignment = PP_ALIGN.CENTER
+
+    def add_section_slide(prs, section_name):
+        slide = prs.slides.add_slide(prs.slide_layouts[5])
+        textbox = slide.shapes.add_textbox(Inches(5), Inches(4), Inches(10), Inches(2))
+        frame = textbox.text_frame
+        frame.text = section_name
+        frame.paragraphs[0].font.size = Pt(48)
+        frame.paragraphs[0].alignment = PP_ALIGN.CENTER
+
+    def add_end_slide(prs):
+        slide = prs.slides.add_slide(prs.slide_layouts[5])
+        textbox = slide.shapes.add_textbox(Inches(5), Inches(5), Inches(10), Inches(1))
+        frame = textbox.text_frame
+        frame.text = "谢谢观看！"
+        frame.paragraphs[0].font.size = Pt(40)
+        frame.paragraphs[0].alignment = PP_ALIGN.CENTER
+
+    def merge_ppts_sync():
+        final_presentation = Presentation()
+        final_presentation.slide_width = Inches(20)
+        final_presentation.slide_height = Inches(11.25)
+
+        # 添加封面
+        add_cover_slide(final_presentation, topic)
+
+        for section in ppt_sections:
+            # 添加章节封面
+            add_section_slide(final_presentation, section.name)
+
+            for slide_index, _ in enumerate(section.slides, start=1):
+                ppt_path = os.path.join(save_dir, f"{section.name}_slide_{slide_index}.pptx")
+                if not os.path.exists(ppt_path):
+                    continue
+
+                with open(ppt_path, "rb") as ppt_file:
+                    ppt_content = ppt_file.read()
+
+                presentation = Presentation(io.BytesIO(ppt_content))
+
+                for slide in presentation.slides:
+                    new_slide = final_presentation.slides.add_slide(final_presentation.slide_layouts[6])
+                    for shape in slide.shapes:
+                        if shape.shape_type == 13:  # 图片
+                            image_stream = io.BytesIO(shape.image.blob)
+                            new_slide.shapes.add_picture(
+                                image_stream, shape.left, shape.top, shape.width, shape.height
+                            )
+                        else:
+                            new_slide.shapes._spTree.insert_element_before(shape.element, 'p:extLst')
+
+        # 添加封底
+        add_end_slide(final_presentation)
+
+        final_presentation.save(final_ppt_path)
+
+    # 使用异步方式执行同步函数
+    await asyncio.to_thread(merge_ppts_sync)
+
+    return {"final_ppt_path": final_ppt_path}
+
+
+# async def compile_ppt(state: ReportState):
+#     """
+#     异步方式合并所有生成的pptx文件到一个pptx文件中，按照章节和幻灯片顺序合并。
+
+#     Args:
+#         state: 当前状态，包含所有完成的幻灯片信息。
+
+#     Returns:
+#         Dict: 更新后的状态，包含最终合并的PPT路径。
+#     """
+#     topic = state["topic"]
+#     ppt_sections = state["ppt_sections"]
+
+#     save_dir = os.path.join(".", "saves", topic)
+#     final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
+
+#     def merge_ppts_sync():
+#         final_presentation = Presentation()
+#         final_presentation.slide_width = Inches(20)
+#         final_presentation.slide_height = Inches(11.25)
+
+#         for section in ppt_sections:
+#             for slide_index, _ in enumerate(section.slides, start=1):
+#                 ppt_path = os.path.join(save_dir, f"{section.name}_slide_{slide_index}.pptx")
+#                 if not os.path.exists(ppt_path):
+#                     continue
+
+#                 with open(ppt_path, "rb") as ppt_file:
+#                     ppt_content = ppt_file.read()
+
+#                 presentation = Presentation(io.BytesIO(ppt_content))
+
+#                 for slide in presentation.slides:
+#                     slide_layout = final_presentation.slide_layouts[5]
+#                     new_slide = final_presentation.slides.add_slide(slide_layout)
+#                     for shape in slide.shapes:
+#                         new_slide.shapes._spTree.insert_element_before(shape.element, 'p:extLst')
+
+#         final_presentation.save(final_ppt_path)
+
+#     # 使用异步方式执行同步函数
+#     await asyncio.to_thread(merge_ppts_sync)
+
+#     return {"final_ppt_path": final_ppt_path}
+
+
+
+
+
+# PPT Slide sub-graph -- 
+ppt_slide_graph = StateGraph(PPTSlideState, output=PPTSlideOutputState)
+# ppt_slide_graph.add_node("generate_slide_content", generate_slide_content)
+ppt_slide_graph.add_node("enrich_slide_content", enrich_slide_content)
+ppt_slide_graph.add_node("generate_slide_code_and_execute", generate_slide_code_and_execute)
+ppt_slide_graph.add_node("ppt_slide_to_image_and_validate", ppt_slide_to_image_and_validate)
+
+ppt_slide_graph.add_edge(START, "enrich_slide_content")
+ppt_slide_graph.add_edge("enrich_slide_content", "generate_slide_code_and_execute")
+ppt_slide_graph.add_edge("generate_slide_code_and_execute", "ppt_slide_to_image_and_validate")
+# ppt_slide_graph.add_edge("generate_slide_content", END)
+
+ppt_slide_subgraph = ppt_slide_graph.compile()
+
+# PPT Sction sub-graph --
+ppt_section_graph = StateGraph(PPTSectionState,output=PPTSectionOutputState)
+ppt_section_graph.add_node("generate_ppt_section_start", generate_ppt_section_start)
+ppt_section_graph.add_node("generate_slide", ppt_slide_subgraph)
+ppt_section_graph.add_node("generate_ppt_section_end", generate_ppt_section_end)
+
+ppt_section_graph.add_edge(START, "generate_ppt_section_start")
+# ppt_section_graph.add_edge("generate_ppt_section_start", "generate_slide")
+ppt_section_graph.add_edge("generate_slide", "generate_ppt_section_end")
+# ppt_section_graph.add_edge("generate_ppt_section_end", END)
+
+ppt_section_subgraph = ppt_section_graph.compile()
+
 # Report section sub-graph -- 
 
 # Add nodes 
@@ -648,6 +1622,9 @@ builder.add_node("build_section_with_web_research", section_builder.compile())
 builder.add_node("gather_completed_sections", gather_completed_sections)
 builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
+builder.add_node("generate_ppt_outline", generate_ppt_outline)
+builder.add_node("generate_ppt_sections", ppt_section_subgraph)
+builder.add_node("compile_ppt", compile_ppt)
 
 # Add edges
 builder.add_edge(START, "process_image_input")
@@ -656,6 +1633,10 @@ builder.add_edge("generate_report_plan", "human_feedback")
 builder.add_edge("build_section_with_web_research", "gather_completed_sections")
 builder.add_conditional_edges("gather_completed_sections", initiate_final_section_writing, ["write_final_sections"])
 builder.add_edge("write_final_sections", "compile_final_report")
-builder.add_edge("compile_final_report", END)
+# builder.add_edge("compile_final_report", END)
+builder.add_edge("compile_final_report", "generate_ppt_outline")
+# builder.add_edge("generate_ppt_outline", "generate_ppt_sections")
+builder.add_edge("generate_ppt_sections", "compile_ppt")
+builder.add_edge("compile_ppt", END)
 
 graph = builder.compile()
