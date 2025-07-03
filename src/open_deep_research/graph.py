@@ -703,7 +703,7 @@ def initiate_final_section_writing(state: ReportState):
 
 async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Command[Literal["generate_ppt_sections"]]:
     """
-    根据演讲时长先确定推荐的PPT页数，然后对报告的各个部分进行合理的页数分配，最后基于此生成PPT大纲。
+    根据演讲时长确定推荐的PPT页数，根据风格和故事线重新生成章节划分，最后基于此生成PPT大纲。
 
     Args:
         state: 当前状态，包含 final_report 等信息
@@ -724,47 +724,55 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
         max_tokens=4096
     )
 
-    # 提取所需信息
     topic = state.get("topic", "未指定主题")
-    sections = state.get("sections", [])
-    section_titles = [section.name for section in sections]
     presentation_minutes = state.get("presentation_minutes", "15")
-    style = state.get("style", "none")  
+    style = state.get("style", "none")
 
     if style == "none":
-        prefix = "请根据演讲主题和章节结构推荐适合的风格和故事线。"
+        prefix = "可以参考的演讲风格：专业商务、科技现代、简约极简、创意活泼、学术严谨、故事化叙述、杂志视觉、插画卡通、复古怀旧、数据可视化。"
     else:
-        prefix = f"用户期望的演讲风格：{style}'"
-        # 根据指定的style确定故事线
+        prefix = f"用户期望的演讲风格：{style}"
+
     storyline_prompt = f"""
-    你是一位经验丰富的演讲专家，要制作一份演讲PPT，首先要确定PPT的故事线。
+    你是一位经验丰富的演讲专家，要制作一份演讲PPT，现在你要确定演讲的风格、故事线和主题色（主色+辅助色）。
     演讲主题：{topic}
     演讲时长：{presentation_minutes}分钟
     {prefix}
 
+    可以参考的故事线：
+    - 问题-解决方案型：明确指出一个核心问题，并提供清晰、具体的解决方案。
+    - 情境-冲突-解决-成果型：首先设定一个场景，描述面临的挑战，提供解决方法，最终呈现积极成果。
+    - SCQA（背景-冲突-问题-回答）型：提供背景信息，引入冲突，明确提出关键问题并给出解决方案。
+    - 时间线（过去-现在-未来）型：以时间顺序展示过去发生的事件，目前的状态，以及未来的目标。
+    - 对比型（现状-未来）：清晰对比当前存在的问题与理想的未来状态，突出如何实现转变。
+    - 金字塔型：从结论开始，自上而下逐层展开论据，以严谨清晰的逻辑强化核心观点。
+
     返回json格式：
     {{
         "style": "风格",
-        "storyline": "SCQA型"
+        "storyline": "故事线类型",
+        "main_color": "推荐的主色",
+        "accent_color": "推荐的辅助色"
     }}
     """
     storyline_response = await writer_model.ainvoke([
         SystemMessage(content=storyline_prompt),
         HumanMessage(content="请推荐适合的故事线")
     ])
-    style = json.loads(storyline_response.content)["style"]
-    storyline = json.loads(storyline_response.content)["storyline"]   
+    response_content = json.loads(storyline_response.content)
+    style = response_content["style"]
+    storyline = response_content["storyline"]
+    main_color = response_content["main_color"]
+    accent_color = response_content["accent_color"]
 
-    # 第一步：询问合适的PPT页数
     ppt_length_prompt = f"""
     你是一位经验丰富的演讲专家。
 
     主题：{topic}
     演讲时长：{presentation_minutes}分钟
-    章节结构：{', '.join(section_titles)}
 
     请建议一个适合该演讲时长的PPT页数（每页内容适中，页面不拥挤，一页PPT大概对应1-2分钟的内容）。
-    请以JSON返回，如：{{"recommended_slides": 10}}
+    JSON格式：{{"recommended_slides": 10}}
     """
 
     ppt_length_response = await writer_model.ainvoke([
@@ -774,14 +782,15 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
 
     recommended_slides = json.loads(ppt_length_response.content)["recommended_slides"]
 
-    # 第二步：对各个部分进行页数划分
     ppt_section_distribution_prompt = f"""
-    报告主题：{topic}
+    演讲主题：{topic}
+    风格：{style}
+    故事线：{storyline}
     推荐PPT总页数：{recommended_slides}
 
-    报告章节：{', '.join(section_titles)}
+    注意：不要生成“提问环节”或“结束语”章节。
 
-    请合理地将PPT总页数分配给以上章节，并以JSON返回，例如：
+    根据以上信息重新规划PPT章节结构，并分配每个章节的页数。以JSON格式返回，例如：
     {{
       "section_distribution": {{
         "引言": 2,
@@ -794,16 +803,18 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
 
     ppt_distribution_response = await writer_model.ainvoke([
         SystemMessage(content=ppt_section_distribution_prompt),
-        HumanMessage(content="请分配各个章节的PPT页数。")
+        HumanMessage(content="请规划章节结构并分配页数。")
     ])
 
     section_distribution = json.loads(ppt_distribution_response.content)["section_distribution"]
 
-    # 第三步：基于划分生成PPT大纲
     ppt_outline_prompt = f"""
     你擅长设计演讲用的幻灯片大纲。
+    演讲主题：{topic}
+    风格：{style}
+    故事线：{storyline}
 
-    报告内容：
+    演讲内容参考资料：
     {state["final_report"]}
 
     每个章节的PPT页数分配如下：
@@ -813,7 +824,7 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
     - 标题
     - 最多3-4个关键点
 
-    请以以下JSON格式返回：
+    JSON格式：
     {{
       "ppt_sections": [
         {{
@@ -830,19 +841,15 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
         HumanMessage(content="生成PPT大纲。")
     ])
     ppt_sections_data = json.loads(ppt_outline_response.content)["ppt_sections"]
+
     for section in ppt_sections_data:
         for slide in section.get("slides", []):
-            if "codes" not in slide:
-                slide["codes"] = []
-            if "detail" not in slide:
-                slide["detail"] = ""
-            if "enriched_points" not in slide:
-                slide["enriched_points"] = ""
-            if "path" not in slide:
-                slide["path"] = ""
+            slide.setdefault("codes", [])
+            slide.setdefault("detail", "")
+            slide.setdefault("enriched_points", "")
+            slide.setdefault("path", "")
 
     ppt_sections = [PPTSection(**section) for section in ppt_sections_data]
-
     ppt_outline = PPTOutline(ppt_sections=PPTSections(sections=ppt_sections))
 
     return Command(
@@ -850,11 +857,15 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
             "recommended_ppt_slides": recommended_slides,
             "section_distribution": section_distribution,
             "ppt_outline": ppt_outline,
-            "ppt_sections": ppt_sections
+            "ppt_sections": ppt_sections,
+            "storyline": storyline,
+            "style": style,
+            "main_color": main_color,  
+            "accent_color": accent_color
         },
         goto=[
-            Send("generate_ppt_sections", {"topic": topic, "section": s, "ppt_section": ppt_section})
-            for s, ppt_section in zip(sections, ppt_sections)  # 将每个章节和对应的PPT部分配对
+            Send("generate_ppt_sections", {"topic": topic, "ppt_section": ppt_section, "style": style, "main_color": main_color, "accent_color": accent_color})
+            for ppt_section in ppt_sections
         ]
     )
 
@@ -929,6 +940,9 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     topic = state["topic"]
     ppt_section = state["ppt_section"]
     slide_index = state["slide_index"]
+    style = state.get("style")
+    main_color = state.get("main_color")
+    accent_color = state.get("accent_color")
     slide = ppt_section.slides[slide_index]
     slide_title = slide.title
     slide_points = slide.points
@@ -1056,7 +1070,7 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
 
     搜索结果：{source_str}
 
-    请扩展并详细描述每个要点，适合用于演讲演示，确保语言简洁但内容详实，一般每点内容不宜超过100字。以JSON返回：
+    请扩展并详细描述每个要点，适合用于演讲演示，确保语言简洁但内容详实，一般每点内容不宜超过80字。以JSON返回：
 
     {{
         "enriched_points": [
@@ -1092,6 +1106,15 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
 
     标题: {slide_title}
     详细要点: {json.dumps(enriched_points, ensure_ascii=False)}
+    幻灯片风格: {style}
+    主色: {main_color}
+    辅助色: {accent_color}
+
+    一级标题字号：36
+    其他级别标题字号：20
+    正文字号：20
+    中文字体：微软雅黑
+    英文字体：Arial
 
     这里是一些可用的图片，你可以选择性地使用，放置在PPT中。
     <图像列表>
@@ -1136,6 +1159,9 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
     topic = state["topic"]
     ppt_section = state["ppt_section"]
     slide_index = state["slide_index"]
+    main_color = state.get("main_color")
+    accent_color = state.get("accent_color")
+    style = state.get("style")
     slide_title = ppt_section.slides[slide_index].title
     slide_points = ppt_section.slides[slide_index].points
 
@@ -1164,23 +1190,32 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
         return await asyncio.to_thread(run)
 
     # 保留循环5次重试逻辑
-    for attempt in range(5):
+    for attempt in range(3):
         code_prompt = f"""
         根据以下幻灯片详细描述，生成使用python-pptx库创建幻灯片的Python代码：
 
         标题: {slide_title}
         详细要点: {json.dumps(enriched_points, ensure_ascii=False)}
         幻灯片描述：{json.dumps(slide_detail, ensure_ascii=False, indent=2)}
+        幻灯片风格: {style}
+        主色: {main_color} 
+        辅助色: {accent_color}
+
+
+        一级标题字号：36
+        其他级别标题字号：20
+        正文字号：20
+        中文字体：微软雅黑
+        英文字体：Arial
 
         代码要求：
         1. 导入必要库。
-        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（分辨率1920x1080，20英寸*11.25英寸）。
+        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
         3. 根据详细描述在指定位置添加标题、要点和图片，设置字体和样式，确保明确设置每个元素的大小以防止重叠遮挡，注意设置文本的自动换行。
         4. 幻灯片均使用空白布局，标题、内容、图片均作为普通元素放置。
         5. 保存文件名为：\"{save_dir}/{ppt_section.name}_slide_{slide_index + 1}.pptx\"
 
-        {f"上一次的错误信息: {error_message}" if error_message else ""} 
-        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+
 
         请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
         """
@@ -1207,29 +1242,17 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
             print(python_code)  # 输出用于排查错误
             error_message = stderr
             previous_code = python_code
-            print(f"代码执行失败，尝试第 {attempt + 1}/5 次，错误信息：{stderr}")
+            print(f"代码执行失败，尝试第 {attempt + 1}/3 次，错误信息：{stderr}")
+    retry_count = state.get("retry_count", 0)
 
     if not execution_successful:
         # raise RuntimeError("代码生成执行失败，已达到最大尝试次数")
-        if state["retry_count"] + 1 >= state.get("max_retry_count", 3):
-            print("最大重试次数已达，停止进一步处理")
-            generated_slide = PPTSlide(
-                title=slide_title,
-                points=slide_points,
-                codes=[python_code],
-                enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
-                detail=json.dumps(slide_detail, ensure_ascii=False, indent=2),
-                path=os.path.abspath(os.path.join(save_dir, f"{ppt_section.name}_slide_{slide_index + 1}.pptx"))
-            )
-            return Command(
-                update={"completed_slides": [generated_slide]},
-                goto=END
-            )
-
-        return Command(
-            update={"layout_valid": False, "retry_count": state["retry_count"] + 1},
-            goto="enrich_slide_content"
-        )
+            return {
+                "codes": [python_code],
+                "path": "none",
+                "title": slide_title,
+                "points": slide_points,
+            }
 
     return {
         "codes": [python_code],
@@ -1251,6 +1274,8 @@ def ppt_to_image(slide_ppt_path, image_path):
     command = [
             "C:\\Windows\\unoconv.bat",  # 调用 unoconv 命令
             "-f", "png",  # 转换为 png 格式
+            "-e", "PixelWidth=1920",
+            "-e", "PixelHeight=1080",
             "-o", image_path,  # 输出路径
             slide_ppt_path  # 输入的 PPT 文件路径
     ]
@@ -1293,9 +1318,10 @@ async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: Runnable
     slide_detail = state["slide_detail"]
     max_retry_count = state.get("max_retry_count", 3)  # 默认 3 次重试
     retry_count = state.get("retry_count", 0)
+    path = state.get("path")
 
     print("当前幻灯片:",slide_ppt_path,"当前重复次数:", retry_count, "最大重试次数:", max_retry_count)
-
+    
     if retry_count >= max_retry_count:
         print("最大重试次数已达，停止进一步处理")
         generated_slide = PPTSlide(
@@ -1310,6 +1336,11 @@ async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: Runnable
             goto=END
         )
 
+    if path == "none":
+        return Command(
+            update={"layout_valid": False, "retry_count": retry_count + 1},
+            goto="enrich_slide_content"
+        )
     output_folder = os.path.dirname(slide_ppt_path)
     image_path = slide_ppt_path.replace(".pptx", ".png")
     print(f"将幻灯片 {slide_ppt_path} 转换为图片 {image_path}")
@@ -1332,13 +1363,12 @@ async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: Runnable
     # - 所有文本内容均位于页面范围内，没有超出。
     # - 所有要点都清晰地展示。
     validation_prompt = f"""
-    你是一位专业的幻灯片设计审查师，请检查以下幻灯片布局是否合理：
+    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
 
-    - 幻灯片内容布局均匀，不偏重于某一侧。
-    - 文本和图片之间没有遮挡。
-    - 所有内容均位于页面范围内，没有超出。
+    - 文本和图片之间没有遮挡或重叠现象。
+    - 所有内容均位于页面范围内，没有超出页面边界。
 
-    请根据以上规则进行检查，如果不存在以上情况，则返回pass；存在以上情况，返回retry。
+    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
     """
 
     image_content = await asyncio.to_thread(
@@ -1402,14 +1432,17 @@ async def generate_ppt_section_start(state: PPTSectionState):
     """
     # 从状态中获取章节信息和PPT章节信息
     topic = state["topic"]  # 主题
-    section = state["section"]  # 章节信息
+    # section = state["section"]  # 章节信息
     ppt_section = state["ppt_section"]  # PPT章节信息
+    style = state.get("style")
+    main_color = state.get("main_color")  # 主色
+    accent_color = state.get("accent_color")  # 辅助
 
     # 初始化幻灯片列表，准备开始生成幻灯片
     generated_slides = []
 
     # 打印相关信息（用于调试）
-    print(f"开始生成PPT章节：{section.name}，对应的PPT部分：{ppt_section.name}")
+    print(f"开始生成PPT章节：{ppt_section.name}")
 
     # 获取该章节需要的页数
     num_slides = ppt_section.allocated_slides  # 获取分配的页数
@@ -1420,9 +1453,12 @@ async def generate_ppt_section_start(state: PPTSectionState):
         goto=[
             Send("generate_slide", {
                 "topic": topic, 
-                "section": section, 
+                # "section": section, 
+                "style": style,
                 "ppt_section": ppt_section, 
-                "slide_index": slide_index  # 为每一页传递幻灯片的索引
+                "slide_index": slide_index,  # 为每一页传递幻灯片的索引
+                "main_color": main_color,
+                "accent_color": accent_color
             })
             for slide_index in range(num_slides)  # 根据分配的页数启动相应数量的子图
         ]
@@ -1438,10 +1474,313 @@ async def generate_ppt_section_end(state: PPTSectionState):
         goto=END
     )
 
-async def compile_ppt(state: ReportState):
+async def generate_cover_slide(state: ReportState, config: RunnableConfig):
+    """生成封面幻灯片，使用coder_model生成布局描述并据此生成Python代码，并保存代码再执行，最多循环3次"""
+    topic = state["topic"]
+    style = state.get("style", "none")
+    main_color = state.get("main_color", "#FFFFFF")
+    accent_color = state.get("accent_color", "#000000")
+
+    save_dir = os.path.join(".", "saves", topic)
+    cover_path = os.path.join(save_dir, "cover_slide.pptx")
+    script_path = os.path.join(save_dir, "cover_slide.py")
+
+    configurable = Configuration.from_runnable_config(config)
+    coder_model_kwargs = configurable.coder_model_kwargs or {}
+    coder_model = AzureChatOpenAI(
+        model=configurable.coder_model,
+        azure_endpoint=coder_model_kwargs["openai_api_base"],
+        deployment_name=coder_model_kwargs["azure_deployment"],
+        openai_api_version=coder_model_kwargs["openai_api_version"],
+        temperature=0.5,
+        max_tokens=4096
+    )
+
+    async def run_script(script_path):
+        def run():
+            try:
+                proc_result = subprocess.run(
+                    ["python", script_path],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                return proc_result.returncode, proc_result.stdout, proc_result.stderr
+            except subprocess.TimeoutExpired as e:
+                return -1, "", f"超时异常: {str(e)}"
+            except Exception as e:
+                return -1, "", f"其他异常: {str(e)}"
+        return await asyncio.to_thread(run)
+
+    error_message = ""
+    previous_code = ""
+
+    for attempt in range(3):
+        layout_prompt = f"""
+        请为幻灯片封面设计一个布局，标题为：{topic}
+        幻灯片风格: {style}
+        主色: {main_color}
+        辅助色: {accent_color}
+
+        幻灯片封面应包括标题、演讲者姓名、日期等关键信息。
+
+        请返回布局描述，包含元素位置、大小及字体信息。
+
+        {f"上一次的错误信息: {error_message}" if error_message else ""}
+        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+        """
+
+        layout_response = await coder_model.ainvoke([
+            {"role": "system", "content": layout_prompt},
+            {"role": "user", "content": "生成布局描述"}
+        ])
+
+        layout_description = layout_response.content.strip()
+
+        code_generation_prompt = f"""
+        根据以下布局描述生成一个使用python-pptx库制作封面幻灯片的完整Python代码：
+
+        布局描述：{layout_description}
+
+        代码要求：
+        1. 导入必要库。
+        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
+        3. 保存PPT文件到路径：{cover_path}
+
+        {f"上一次的错误信息: {error_message}" if error_message else ""}
+        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+
+        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+        """
+
+        code_response = await coder_model.ainvoke([
+            {"role": "system", "content": code_generation_prompt},
+            {"role": "user", "content": "生成Python代码"}
+        ])
+
+        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+
+        await asyncio.to_thread(
+            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
+        )
+
+        returncode, stdout, stderr = await run_script(script_path)
+
+        if returncode == 0:
+            return {"cover_slide_path": cover_path, "cover_layout_description": layout_description}
+        else:
+            error_message = stderr
+            previous_code = python_code
+            print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+
+    raise RuntimeError("生成封面幻灯片失败，已达到最大尝试次数")
+
+async def generate_section_cover_slides(state: ReportState, config: RunnableConfig):
+    """生成章节封面幻灯片，使用coder_model设计版式并据此生成Python代码，每个章节生成单独的pptx文件，最多循环3次"""
+    topic = state["topic"]
+    ppt_sections = state["ppt_sections"]
+    style = state.get("style", "none")
+    main_color = state.get("main_color", "#FFFFFF")
+    accent_color = state.get("accent_color", "#000000")
+
+    save_dir = os.path.join(".", "saves", topic)
+    script_path = os.path.join(save_dir, "section_cover_slide.py")
+
+    configurable = Configuration.from_runnable_config(config)
+    coder_model_kwargs = configurable.coder_model_kwargs or {}
+    coder_model = AzureChatOpenAI(
+        model=configurable.coder_model,
+        azure_endpoint=coder_model_kwargs["openai_api_base"],
+        deployment_name=coder_model_kwargs["azure_deployment"],
+        openai_api_version=coder_model_kwargs["openai_api_version"],
+        temperature=0.5,
+        max_tokens=4096
+    )
+
+    async def run_script(script_path):
+        def run():
+            try:
+                proc_result = subprocess.run(
+                    ["python", script_path],
+                    capture_output=True,
+                    text=True,
+                    timeout=120
+                )
+                return proc_result.returncode, proc_result.stdout, proc_result.stderr
+            except subprocess.TimeoutExpired as e:
+                return -1, "", f"超时异常: {str(e)}"
+            except Exception as e:
+                return -1, "", f"其他异常: {str(e)}"
+        return await asyncio.to_thread(run)
+
+    error_message = ""
+    previous_code = ""
+
+    chapters_list = [section.name for section in ppt_sections]
+
+    for attempt in range(3):
+        layout_prompt = f"""
+        请为幻灯片章节封面设计一个通用版式，适用于所有章节
+        幻灯片主题: {topic}
+        幻灯片风格: {style}
+        主色: {main_color}
+        辅助色: {accent_color}
+
+        请返回布局描述，包含元素位置、大小及字体信息。
+
+        {f"上一次的错误信息: {error_message}" if error_message else ""}
+        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+        """
+
+        layout_response = await coder_model.ainvoke([
+            {"role": "system", "content": layout_prompt},
+            {"role": "user", "content": "生成布局描述"}
+        ])
+
+        layout_description = layout_response.content.strip()
+
+        code_generation_prompt = f"""
+        根据以下布局描述生成一个使用python-pptx库制作章节封面幻灯片的Python脚本：
+
+        布局描述：{layout_description}
+
+        脚本要求：
+        1. 导入必要库。
+        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
+        3. 使用以下章节列表，为每个章节生成一个单独的pptx文件，文件保存路径为{save_dir}/section_slide_{{章节序号}}.pptx。
+
+        章节列表：{chapters_list}
+
+        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+        """
+
+        code_response = await coder_model.ainvoke([
+            {"role": "system", "content": code_generation_prompt},
+            {"role": "user", "content": "生成Python代码"}
+        ])
+
+        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+
+        await asyncio.to_thread(
+            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
+        )
+
+        returncode, stdout, stderr = await run_script(script_path)
+
+        if returncode == 0:
+            return {"section_slides_path": save_dir, "layout_description": layout_description}
+        else:
+            error_message = stderr
+            previous_code = python_code
+            print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+
+    raise RuntimeError("生成章节封面幻灯片失败，已达到最大尝试次数")
+
+
+async def generate_end_slide(state: ReportState, config: RunnableConfig):
+    """生成封底幻灯片，使用coder_model生成布局描述并据此生成Python代码，并保存代码再执行，最多循环3次"""
+    topic = state["topic"]
+    style = state.get("style", "专业商务")
+    main_color = state.get("main_color", "#FFFFFF")
+    accent_color = state.get("accent_color", "#000000")
+
+    save_dir = os.path.join(".", "saves", topic)
+    end_path = os.path.join(save_dir, "end_slide.pptx")
+    script_path = os.path.join(save_dir, "end_slide.py")
+
+    configurable = Configuration.from_runnable_config(config)
+    coder_model_kwargs = configurable.coder_model_kwargs or {}
+    coder_model = AzureChatOpenAI(
+        model=configurable.coder_model,
+        azure_endpoint=coder_model_kwargs["openai_api_base"],
+        deployment_name=coder_model_kwargs["azure_deployment"],
+        openai_api_version=coder_model_kwargs["openai_api_version"],
+        temperature=0.5,
+        max_tokens=4096
+    )
+
+    async def run_script(script_path):
+        def run():
+            try:
+                proc_result = subprocess.run(
+                    ["python", script_path],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                return proc_result.returncode, proc_result.stdout, proc_result.stderr
+            except subprocess.TimeoutExpired as e:
+                return -1, "", f"超时异常: {str(e)}"
+            except Exception as e:
+                return -1, "", f"其他异常: {str(e)}"
+        return await asyncio.to_thread(run)
+
+    error_message = ""
+    previous_code = ""
+
+    for attempt in range(3):
+        layout_prompt = f"""
+        请为幻灯片封底设计一个布局
+        幻灯片主题: {topic}
+        幻灯片风格: {style}
+        主色: {main_color}
+        辅助色: {accent_color}
+
+        请返回布局描述，包含元素内容、位置、大小及字体信息。
+
+        {f"上一次的错误信息: {error_message}" if error_message else ""}
+        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+        """
+
+        layout_response = await coder_model.ainvoke([
+            {"role": "system", "content": layout_prompt},
+            {"role": "user", "content": "生成布局描述"}
+        ])
+
+        layout_description = layout_response.content.strip()
+
+        code_generation_prompt = f"""
+        根据以下布局描述生成一个使用python-pptx库制作封底幻灯片的完整Python代码：
+
+        布局描述：{layout_description}
+
+        代码要求：
+        1. 导入必要库。
+        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
+        3. 保存PPT文件到路径：{end_path}
+
+        {f"上一次的错误信息: {error_message}" if error_message else ""}
+        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+
+        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+        """
+
+        code_response = await coder_model.ainvoke([
+            {"role": "system", "content": code_generation_prompt},
+            {"role": "user", "content": "生成Python代码"}
+        ])
+
+        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+
+        await asyncio.to_thread(
+            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
+        )
+
+        returncode, stdout, stderr = await run_script(script_path)
+
+        if returncode == 0:
+            return {"end_slide_path": end_path, "end_layout_description": layout_description}
+        else:
+            error_message = stderr
+            previous_code = python_code
+            print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+
+    raise RuntimeError("生成封底幻灯片失败，已达到最大尝试次数")
+
+
+async def compile_ppt(state: ReportState, config: RunnableConfig):
     """
-    异步方式合并所有生成的pptx文件到一个pptx文件中，按照章节和幻灯片顺序合并。
-    同时生成封面、章节封面、封底，并正确复制图片。
+    异步方式合并所有生成的pptx文件到一个pptx文件中，包含封面、章节封面和封底。
 
     Args:
         state: 当前状态，包含所有完成的幻灯片信息。
@@ -1455,71 +1794,46 @@ async def compile_ppt(state: ReportState):
     save_dir = os.path.join(".", "saves", topic)
     final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
 
-    def add_cover_slide(prs, title):
-        slide = prs.slides.add_slide(prs.slide_layouts[0])
-        title_shape = slide.shapes.title
-        title_shape.text = title
-        title_shape.text_frame.paragraphs[0].font.size = Pt(60)
-        title_shape.text_frame.paragraphs[0].alignment = PP_ALIGN.CENTER
-
-    def add_section_slide(prs, section_name):
-        slide = prs.slides.add_slide(prs.slide_layouts[5])
-        textbox = slide.shapes.add_textbox(Inches(5), Inches(4), Inches(10), Inches(2))
-        frame = textbox.text_frame
-        frame.text = section_name
-        frame.paragraphs[0].font.size = Pt(48)
-        frame.paragraphs[0].alignment = PP_ALIGN.CENTER
-
-    def add_end_slide(prs):
-        slide = prs.slides.add_slide(prs.slide_layouts[5])
-        textbox = slide.shapes.add_textbox(Inches(5), Inches(5), Inches(10), Inches(1))
-        frame = textbox.text_frame
-        frame.text = "谢谢观看！"
-        frame.paragraphs[0].font.size = Pt(40)
-        frame.paragraphs[0].alignment = PP_ALIGN.CENTER
-
     def merge_ppts_sync():
         final_presentation = Presentation()
-        final_presentation.slide_width = Inches(20)
-        final_presentation.slide_height = Inches(11.25)
+        final_presentation.slide_width = Inches(13.33)
+        final_presentation.slide_height = Inches(7.5)
 
-        # 添加封面
-        add_cover_slide(final_presentation, topic)
+        paths = ["cover_slide.pptx"]
+        for idx, section in enumerate(ppt_sections):
+            # 加入章节封面
+            paths.append(f"section_slide_{idx+1}.pptx")
+            # 加入该章节所有幻灯片
+            paths.extend([
+                f"{section.name}_slide_{slide_index}.pptx"
+                for slide_index, _ in enumerate(section.slides, start=1)
+            ])
+        paths.append("end_slide.pptx")
 
-        for section in ppt_sections:
-            # 添加章节封面
-            add_section_slide(final_presentation, section.name)
+        for ppt_file in paths:
+            ppt_path = os.path.join(save_dir, ppt_file)
+            if not os.path.exists(ppt_path):
+                continue
 
-            for slide_index, _ in enumerate(section.slides, start=1):
-                ppt_path = os.path.join(save_dir, f"{section.name}_slide_{slide_index}.pptx")
-                if not os.path.exists(ppt_path):
-                    continue
-
-                with open(ppt_path, "rb") as ppt_file:
-                    ppt_content = ppt_file.read()
-
-                presentation = Presentation(io.BytesIO(ppt_content))
-
-                for slide in presentation.slides:
-                    new_slide = final_presentation.slides.add_slide(final_presentation.slide_layouts[6])
-                    for shape in slide.shapes:
-                        if shape.shape_type == 13:  # 图片
-                            image_stream = io.BytesIO(shape.image.blob)
-                            new_slide.shapes.add_picture(
-                                image_stream, shape.left, shape.top, shape.width, shape.height
-                            )
-                        else:
-                            new_slide.shapes._spTree.insert_element_before(shape.element, 'p:extLst')
-
-        # 添加封底
-        add_end_slide(final_presentation)
+            presentation = Presentation(ppt_path)
+            for slide in presentation.slides:
+                new_slide = final_presentation.slides.add_slide(final_presentation.slide_layouts[6])
+                for shape in slide.shapes:
+                    if shape.shape_type == 13:  # 图片
+                        image_stream = io.BytesIO(shape.image.blob)
+                        new_slide.shapes.add_picture(
+                            image_stream, shape.left, shape.top, shape.width, shape.height
+                        )
+                    else:
+                        new_slide.shapes._spTree.insert_element_before(shape.element, 'p:extLst')
 
         final_presentation.save(final_ppt_path)
 
-    # 使用异步方式执行同步函数
     await asyncio.to_thread(merge_ppts_sync)
 
     return {"final_ppt_path": final_ppt_path}
+
+
 
 
 # async def compile_ppt(state: ReportState):
@@ -1624,6 +1938,9 @@ builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
 builder.add_node("generate_ppt_outline", generate_ppt_outline)
 builder.add_node("generate_ppt_sections", ppt_section_subgraph)
+builder.add_node("generate_cover_slide", generate_cover_slide)
+builder.add_node("generate_section_cover_slides", generate_section_cover_slides)
+builder.add_node("generate_end_slide", generate_end_slide)
 builder.add_node("compile_ppt", compile_ppt)
 
 # Add edges
@@ -1636,7 +1953,11 @@ builder.add_edge("write_final_sections", "compile_final_report")
 # builder.add_edge("compile_final_report", END)
 builder.add_edge("compile_final_report", "generate_ppt_outline")
 # builder.add_edge("generate_ppt_outline", "generate_ppt_sections")
-builder.add_edge("generate_ppt_sections", "compile_ppt")
+# builder.add_edge("generate_ppt_sections", "compile_ppt")
+builder.add_edge("generate_ppt_sections", "generate_cover_slide")
+builder.add_edge("generate_cover_slide", "generate_section_cover_slides")
+builder.add_edge("generate_section_cover_slides", "generate_end_slide")
+builder.add_edge("generate_end_slide", "compile_ppt")
 builder.add_edge("compile_ppt", END)
 
 graph = builder.compile()

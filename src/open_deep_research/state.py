@@ -106,6 +106,15 @@ class ReportState(TypedDict):
     ppt_generation_codes: Annotated[List[str], operator.add]
     final_ppt_path: Optional[str]  # Path to the final generated PowerPoint presentation
     style: Optional[str]  # Style of the report, if applicable
+    main_color: Optional[str]  # Main color for the PPT section, if applicable
+    accent_color: Optional[str]  # Accent color for the PPT section, if applicable
+    storyline: Optional[str]  # Storyline for the report, if applicable
+    cover_slide_path: Optional[str]  # Path to the cover slide image, if applicable
+    end_slide_path: Optional[str]  # Path to the end slide image, if applicable
+    section_slides_path: Optional[str]  # Path to the section slides directory, if applicable
+    cover_layout_description: Optional[str]  # Layout description for the cover slide
+    layout_description: Optional[str]  # Layout description for the main slides
+    end_layout_description: Optional[str]  # Layout description for the end slide
 
 
 class SectionState(TypedDict):
@@ -122,7 +131,7 @@ class SectionOutputState(TypedDict):
 
 class PPTSlideState(TypedDict):
     topic: str
-    section: Section
+    # section: Section
     ppt_section: PPTSection
     slide_index: int
     generated_slides: Annotated[List[PPTSlide], operator.add]
@@ -136,6 +145,9 @@ class PPTSlideState(TypedDict):
     max_retry_count: Optional[int]  # Maximum retry count for layout validation (defaults to 3)
     retry_count: Optional[int]  # The current retry count
     images_json: Optional[str]  # JSON string of images available for the slide
+    style: Optional[str]  # Style of the PPT section, if applicable
+    main_color: Optional[str]  # Main color for the PPT section, if applicable
+    accent_color: Optional[str]  # Accent color for the PPT section, if applicable
 
 class PPTSlideOutputState(TypedDict):
     completed_slides: List[PPTSlide]  # 已完成的幻灯片列表
@@ -143,11 +155,14 @@ class PPTSlideOutputState(TypedDict):
 
 class PPTSectionState(TypedDict):
     topic: str  # Report topic
-    section: Section
+    # section: Section
     ppt_section: PPTSection  # PPT section being generated
     completed_slides: Annotated[List[PPTSlide], operator.add]
+    style: Optional[str]  # Style of the PPT section, if applicable
     # generation_iterations: int  # Number of iterations in generating PPT content
     # completed_ppt_sections: Annotated[List[PPTSection], operator.add]  # Accumulated completed PPT sections
+    main_color: Optional[str]  # Main color for the PPT section, if applicable
+    accent_color: Optional[str]  # Accent color for the PPT section, if applicable
 
 class PPTSectionOutputState(TypedDict):
     completed_ppt_sections: List[PPTSection]  # 已完成的PPT章节列表
@@ -170,3 +185,4 @@ class PPTState(TypedDict):
     section_distribution: dict[str, int]
     ppt_sections: List[PPTSection]
     final_ppt_outline: str
+    style: Optional[str]  # Style of the PPT section, if applicable
