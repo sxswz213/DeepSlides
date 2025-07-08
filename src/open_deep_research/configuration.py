@@ -37,7 +37,7 @@ class Configuration:
     search_api: SearchAPI = SearchAPI.TAVILY # Default to TAVILY
     # For TAVILY, refer https://docs.tavily.com/documentation/api-reference/endpoint/search for the parameters.
     search_api_config: Optional[Dict[str, Any]] = field(default_factory=lambda: {
-        "max_results": 5,
+        "max_results": 3,
         "topic": "general",
         "include_images": True,
         "include_image_descriptions": True
@@ -75,10 +75,10 @@ class Configuration:
     }
 
     coder_provider: str = "openai" # Defaults to Anthropic as provider
-    coder_model: str = "gpt-4o" # Defaults to claude-3-5-sonnet-latest
+    coder_model: str = "o4-mini" # Defaults to claude-3-5-sonnet-latest
     coder_model_kwargs = {
         "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
-        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "o4-mini"),
         "openai_api_base": os.environ.get("OPENAI_API_BASE"),
     }
 

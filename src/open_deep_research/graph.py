@@ -24,6 +24,7 @@ from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
 
 
+
 import base64
 
 
@@ -921,6 +922,11 @@ async def save_image_from_url(image_url, image_name, topic, ppt_section_name, sl
         print(f"其他错误: {str(e)}")
         return ""
 
+async def truncate_by_characters(text, max_chars=250000):
+    if len(text) > max_chars:
+        return text[:max_chars]
+    return text
+
 async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     """
     第一部分：根据幻灯片的标题和要点生成详细的内容描述，并生成幻灯片布局描述。
@@ -1063,14 +1069,14 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
 
     # 扩展幻灯片内容
     content_enrichment_prompt = f"""
-    根据以下搜索结果和要点，请扩展幻灯片的内容。每个要点请写出详细描述，并确保内容与搜索结果相关联。
+    根据以下要点，请扩展幻灯片的内容。每个要点请写出详细描述，并确保内容与搜索结果相关联。
 
+    幻灯片主题：{topic}
+    幻灯片章节：{ppt_section.name}
     幻灯片标题：{slide_title}
     要点：{', '.join(slide_points)}
 
-    搜索结果：{source_str}
-
-    请扩展并详细描述每个要点，适合用于演讲演示，确保语言简洁但内容详实，一般每点内容不宜超过80字。以JSON返回：
+    请扩展并详细描述每个要点，适合用于演讲演示，确保语言简洁但内容详实，一般每点扩展后的内容不宜超过50字。以JSON格式返回，注意仅输出json，不要输出其他文字：
 
     {{
         "enriched_points": [
@@ -1096,8 +1102,9 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        temperature=0.7,
-        max_tokens=4096
+        # temperature=0.7,
+        # max_tokens=4096
+        max_completion_tokens=4096
     )
 
     detail_prompt = f"""
@@ -1121,7 +1128,7 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     {images_json_embedded}
     </图像列表>
 
-    JSON格式：
+    仅JSON格式，不要输出其他文字：
     {{
         "layout": "布局类型",
         "content_details": ["标题、详细内容、图片的位置布局、长宽、图片路径等"],
@@ -1152,8 +1159,9 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        temperature=0.2,
-        max_tokens=4096
+        # temperature=0.3,
+        # max_tokens=4096
+        max_completion_tokens=4096
     )
 
     topic = state["topic"]
@@ -1274,8 +1282,6 @@ def ppt_to_image(slide_ppt_path, image_path):
     command = [
             "C:\\Windows\\unoconv.bat",  # 调用 unoconv 命令
             "-f", "png",  # 转换为 png 格式
-            "-e", "PixelWidth=1920",
-            "-e", "PixelHeight=1080",
             "-o", image_path,  # 输出路径
             slide_ppt_path  # 输入的 PPT 文件路径
     ]
@@ -1353,7 +1359,7 @@ async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: Runnable
     except Exception as e:
         print(f"Error converting PPT to image: {e}")
         return Command(
-            update={"conversion_failed": True},
+            update={"conversion_failed": True, "retry_count": retry_count + 1},
             goto="enrich_slide_content"
         )
     print(f"幻灯片转换为图片成功，保存路径：{image_path}")
@@ -1458,7 +1464,9 @@ async def generate_ppt_section_start(state: PPTSectionState):
                 "ppt_section": ppt_section, 
                 "slide_index": slide_index,  # 为每一页传递幻灯片的索引
                 "main_color": main_color,
-                "accent_color": accent_color
+                "accent_color": accent_color,
+                "max_retry_count": 3,  # 设置最大重试次数
+                "retry_count": 0  # 初始化重试计数
             })
             for slide_index in range(num_slides)  # 根据分配的页数启动相应数量的子图
         ]
@@ -1475,7 +1483,7 @@ async def generate_ppt_section_end(state: PPTSectionState):
     )
 
 async def generate_cover_slide(state: ReportState, config: RunnableConfig):
-    """生成封面幻灯片，使用coder_model生成布局描述并据此生成Python代码，并保存代码再执行，最多循环3次"""
+    """生成封面幻灯片，包含布局检查步骤，最多循环3次"""
     topic = state["topic"]
     style = state.get("style", "none")
     main_color = state.get("main_color", "#FFFFFF")
@@ -1492,8 +1500,9 @@ async def generate_cover_slide(state: ReportState, config: RunnableConfig):
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        temperature=0.5,
-        max_tokens=4096
+        # temperature=0.3,
+        # max_tokens=4096
+        max_completion_tokens=4096
     )
 
     async def run_script(script_path):
@@ -1515,6 +1524,15 @@ async def generate_cover_slide(state: ReportState, config: RunnableConfig):
     error_message = ""
     previous_code = ""
 
+    validation_prompt = """
+    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
+
+    - 文本和图片之间没有遮挡或重叠现象。
+    - 所有内容均位于页面范围内，没有超出页面边界。
+
+    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
+    """
+
     for attempt in range(3):
         layout_prompt = f"""
         请为幻灯片封面设计一个布局，标题为：{topic}
@@ -1523,8 +1541,6 @@ async def generate_cover_slide(state: ReportState, config: RunnableConfig):
         辅助色: {accent_color}
 
         幻灯片封面应包括标题、演讲者姓名、日期等关键信息。
-
-        请返回布局描述，包含元素位置、大小及字体信息。
 
         {f"上一次的错误信息: {error_message}" if error_message else ""}
         {f"上一次生成的代码: {previous_code}" if previous_code else ""}
@@ -1545,7 +1561,8 @@ async def generate_cover_slide(state: ReportState, config: RunnableConfig):
         代码要求：
         1. 导入必要库。
         2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 保存PPT文件到路径：{cover_path}
+        3. 页面背景采用与页面大小相同的矩形设置，不要直接设置slide.background。
+        4. 保存PPT文件到路径：{cover_path}
 
         {f"上一次的错误信息: {error_message}" if error_message else ""}
         {f"上一次生成的代码: {previous_code}" if previous_code else ""}
@@ -1566,17 +1583,39 @@ async def generate_cover_slide(state: ReportState, config: RunnableConfig):
 
         returncode, stdout, stderr = await run_script(script_path)
 
-        if returncode == 0:
-            return {"cover_slide_path": cover_path, "cover_layout_description": layout_description}
-        else:
+        if returncode != 0:
             error_message = stderr
             previous_code = python_code
             print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+            continue
 
-    raise RuntimeError("生成封面幻灯片失败，已达到最大尝试次数")
+        image_path = cover_path.replace(".pptx", ".png")
+        try:
+            await asyncio.to_thread(ppt_to_image, cover_path, image_path)
+        except Exception as e:
+            print(f"幻灯片转图片失败: {e}")
+            continue
+
+        image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
+
+        response = await coder_model.ainvoke([
+            SystemMessage(content=validation_prompt),
+            HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
+        ])
+
+        if response.content.strip() == "pass":
+            print(f"布局检查通过，路径：{cover_path}")
+            return {"cover_slide_path": cover_path, "cover_layout_description": layout_description}
+        else:
+            error_message = "布局检查未通过"
+            previous_code = python_code
+            print(f"布局检查未通过，尝试重试：{attempt + 1}")
+
+    # raise RuntimeError("生成封面幻灯片失败，已达到最大尝试次数")
+    return {"cover_slide_path": cover_path, "cover_layout_description": layout_description}
 
 async def generate_section_cover_slides(state: ReportState, config: RunnableConfig):
-    """生成章节封面幻灯片，使用coder_model设计版式并据此生成Python代码，每个章节生成单独的pptx文件，最多循环3次"""
+    """生成章节封面幻灯片，仅检查第一个章节的布局有效性，最多循环3次"""
     topic = state["topic"]
     ppt_sections = state["ppt_sections"]
     style = state.get("style", "none")
@@ -1593,8 +1632,9 @@ async def generate_section_cover_slides(state: ReportState, config: RunnableConf
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        temperature=0.5,
-        max_tokens=4096
+        # temperature=0.3,
+        # max_tokens=4096
+        max_completion_tokens=4096
     )
 
     async def run_script(script_path):
@@ -1615,6 +1655,15 @@ async def generate_section_cover_slides(state: ReportState, config: RunnableConf
 
     error_message = ""
     previous_code = ""
+
+    validation_prompt = """
+    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
+
+    - 文本和图片之间没有遮挡或重叠现象。
+    - 所有内容均位于页面范围内，没有超出页面边界。
+
+    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
+    """
 
     chapters_list = [section.name for section in ppt_sections]
 
@@ -1647,7 +1696,8 @@ async def generate_section_cover_slides(state: ReportState, config: RunnableConf
         脚本要求：
         1. 导入必要库。
         2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 使用以下章节列表，为每个章节生成一个单独的pptx文件，文件保存路径为{save_dir}/section_slide_{{章节序号}}.pptx。
+        3. 代码中页面背景采用与页面大小相同的矩形设置，不要直接设置slide.background。
+        4. 使用以下章节列表，为每个章节生成一个单独的pptx文件，文件保存路径为{save_dir}/section_slide_{{章节序号}}.pptx。
 
         章节列表：{chapters_list}
 
@@ -1661,24 +1711,46 @@ async def generate_section_cover_slides(state: ReportState, config: RunnableConf
 
         python_code = code_response.content.replace("```python", "").replace("```", "").strip()
 
-        await asyncio.to_thread(
-            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
-        )
+        await asyncio.to_thread(lambda: open(script_path, "w", encoding="utf-8").write(python_code))
 
         returncode, stdout, stderr = await run_script(script_path)
 
-        if returncode == 0:
-            return {"section_slides_path": save_dir, "layout_description": layout_description}
-        else:
+        first_slide_path = os.path.join(save_dir, "section_slide_1.pptx")
+
+        if returncode != 0:
             error_message = stderr
             previous_code = python_code
             print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+            continue
 
-    raise RuntimeError("生成章节封面幻灯片失败，已达到最大尝试次数")
+        image_path = first_slide_path.replace(".pptx", ".png")
+        try:
+            await asyncio.to_thread(ppt_to_image, first_slide_path, image_path)
+        except Exception as e:
+            print(f"幻灯片转图片失败: {e}")
+            continue
+
+        image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
+
+        response = await coder_model.ainvoke([
+            SystemMessage(content=validation_prompt),
+            HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
+        ])
+
+        if response.content.strip() == "pass":
+            print(f"第一个章节布局检查通过，路径：{save_dir}")
+            return {"section_slides_path": save_dir, "layout_description": layout_description}
+        else:
+            error_message = "布局检查未通过"
+            previous_code = python_code
+            print(f"第一个章节布局检查未通过，尝试重试：{attempt + 1}")
+
+    # raise RuntimeError("生成章节封面幻灯片失败，已达到最大尝试次数")
+    return {"section_slides_path": save_dir, "layout_description": layout_description}
 
 
 async def generate_end_slide(state: ReportState, config: RunnableConfig):
-    """生成封底幻灯片，使用coder_model生成布局描述并据此生成Python代码，并保存代码再执行，最多循环3次"""
+    """生成封底幻灯片，包含布局检查步骤，最多循环3次"""
     topic = state["topic"]
     style = state.get("style", "专业商务")
     main_color = state.get("main_color", "#FFFFFF")
@@ -1695,8 +1767,9 @@ async def generate_end_slide(state: ReportState, config: RunnableConfig):
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        temperature=0.5,
-        max_tokens=4096
+        # temperature=0.3,
+        # max_tokens=4096
+        max_completion_tokens=4096
     )
 
     async def run_script(script_path):
@@ -1717,6 +1790,15 @@ async def generate_end_slide(state: ReportState, config: RunnableConfig):
 
     error_message = ""
     previous_code = ""
+
+    validation_prompt = """
+    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
+
+    - 文本和图片之间没有遮挡或重叠现象。
+    - 所有内容均位于页面范围内，没有超出页面边界。
+
+    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
+    """
 
     for attempt in range(3):
         layout_prompt = f"""
@@ -1747,7 +1829,8 @@ async def generate_end_slide(state: ReportState, config: RunnableConfig):
         代码要求：
         1. 导入必要库。
         2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 保存PPT文件到路径：{end_path}
+        3. 页面背景采用与页面大小相同的矩形设置，不要直接设置slide.background。
+        4. 保存PPT文件到路径：{end_path}
 
         {f"上一次的错误信息: {error_message}" if error_message else ""}
         {f"上一次生成的代码: {previous_code}" if previous_code else ""}
@@ -1768,14 +1851,36 @@ async def generate_end_slide(state: ReportState, config: RunnableConfig):
 
         returncode, stdout, stderr = await run_script(script_path)
 
-        if returncode == 0:
-            return {"end_slide_path": end_path, "end_layout_description": layout_description}
-        else:
+        if returncode != 0:
             error_message = stderr
             previous_code = python_code
             print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+            continue
 
-    raise RuntimeError("生成封底幻灯片失败，已达到最大尝试次数")
+        image_path = end_path.replace(".pptx", ".png")
+        try:
+            await asyncio.to_thread(ppt_to_image, end_path, image_path)
+        except Exception as e:
+            print(f"幻灯片转图片失败: {e}")
+            continue
+
+        image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
+
+        response = await coder_model.ainvoke([
+            SystemMessage(content=validation_prompt),
+            HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
+        ])
+
+        if response.content.strip() == "pass":
+            print(f"布局检查通过，路径：{end_path}")
+            return {"end_slide_path": end_path, "end_layout_description": layout_description}
+        else:
+            error_message = "布局检查未通过"
+            previous_code = python_code
+            print(f"布局检查未通过，尝试重试：{attempt + 1}")
+
+    # raise RuntimeError("生成封底幻灯片失败，已达到最大尝试次数")
+    return {"end_slide_path": end_path, "end_layout_description": layout_description}
 
 
 async def compile_ppt(state: ReportState, config: RunnableConfig):
@@ -1832,8 +1937,6 @@ async def compile_ppt(state: ReportState, config: RunnableConfig):
     await asyncio.to_thread(merge_ppts_sync)
 
     return {"final_ppt_path": final_ppt_path}
-
-
 
 
 # async def compile_ppt(state: ReportState):
