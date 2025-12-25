@@ -55,6 +55,9 @@ class PPTSlide(BaseModel):
     enriched_points: str = Field(
         description="Enriched content for the slide, including additional details or explanations." 
     )
+    layout: str = Field(
+        description="Layout type for the slide."
+    )
 
 
 class PPTSection(BaseModel):
@@ -83,6 +86,7 @@ class ReportStateInput(TypedDict):
     image_path: Optional[str] # Optional path to input image
     presentation_minutes: Optional[str] # Optional recommended PowerPoint slides based on the report
     style: Optional[str]  # Style of the report, if applicable
+    template: Optional[str]  # Template for the report, if applicable
 
 class ReportStateOutput(TypedDict):
     final_report: str # Final report
@@ -115,6 +119,12 @@ class ReportState(TypedDict):
     cover_layout_description: Optional[str]  # Layout description for the cover slide
     layout_description: Optional[str]  # Layout description for the main slides
     end_layout_description: Optional[str]  # Layout description for the end slide
+    template: Optional[str]  # Template for the report, if applicable
+    background_tone: Optional[str]  # Background tone for the PPT section, if applicable
+    heading_font_color: Optional[str]  # Heading font color for the PPT section, if applicable
+    body_font_color: Optional[str]  # Body font color for the PPT section, if applicable
+    style_summary: Optional[str]  # Summary of the style used in the presentation
+    font_name: Optional[str]
 
 
 class SectionState(TypedDict):
@@ -148,6 +158,18 @@ class PPTSlideState(TypedDict):
     style: Optional[str]  # Style of the PPT section, if applicable
     main_color: Optional[str]  # Main color for the PPT section, if applicable
     accent_color: Optional[str]  # Accent color for the PPT section, if applicable
+    background_tone: Optional[str]  # Background tone for the PPT section, if applicable
+    heading_font_color: Optional[str]  # Heading font color for the PPT section, if applicable
+    body_font_color: Optional[str]  # Body font color for the PPT section, if applicable
+    style_summary: Optional[str]  # Summary of the style used in the presentation
+    design_score: Optional[float]  # Design score for the slide
+    aesthetics_score: Optional[float]  # Aesthetics score for the slide
+    completeness_score: Optional[float]  # Completeness score for the slide
+    design_suggestions: Optional[str]  # Design improvement suggestions for the slide
+    aestheitcs_suggestions: Optional[str]  # Aesthetics improvement suggestions for the slide
+    completeness_suggestions: Optional[str]  # Completeness improvement suggestions for the slide
+    image_data: Optional[str]  # JSON string of image data embedded for the slide
+    font_name: Optional[str]
 
 class PPTSlideOutputState(TypedDict):
     completed_slides: List[PPTSlide]  # 已完成的幻灯片列表
@@ -163,6 +185,11 @@ class PPTSectionState(TypedDict):
     # completed_ppt_sections: Annotated[List[PPTSection], operator.add]  # Accumulated completed PPT sections
     main_color: Optional[str]  # Main color for the PPT section, if applicable
     accent_color: Optional[str]  # Accent color for the PPT section, if applicable
+    background_tone: Optional[str]  # Background tone for the PPT section, if applicable
+    heading_font_color: Optional[str]  # Heading font color for the PPT section, if applicable
+    body_font_color: Optional[str]  # Body font color for the PPT section, if applicable
+    style_summary: Optional[str]  # Summary of the style used in the presentation
+    font_name: Optional[str]
 
 class PPTSectionOutputState(TypedDict):
     completed_ppt_sections: List[PPTSection]  # 已完成的PPT章节列表

@@ -37,7 +37,7 @@ class Configuration:
     search_api: SearchAPI = SearchAPI.TAVILY # Default to TAVILY
     # For TAVILY, refer https://docs.tavily.com/documentation/api-reference/endpoint/search for the parameters.
     search_api_config: Optional[Dict[str, Any]] = field(default_factory=lambda: {
-        "max_results": 3,
+        "max_results": 5,
         "topic": "general",
         "include_images": True,
         "include_image_descriptions": True
@@ -56,30 +56,44 @@ class Configuration:
     # search_api_config: Optional[Dict[str, Any]] = None
     # Graph-specific configuration
     number_of_queries: int = 2 # Number of search queries to generate per iteration
-    max_search_depth: int = 2 # Maximum number of reflection + search iterations
+    number_of_queries_for_ppt: int = 1 # Number of search queries to generate per iteration for PPT
+    max_search_depth: int = 5 # Maximum number of reflection + search iterations
     planner_provider: str = "openai"  # Defaults to Anthropic as provider
-    planner_model: str = "gpt-4o-mini" # Defaults to claude-3-7-sonnet-latest
+    planner_model: str = "openai/gpt-4o-mini-2024-07-18" # Defaults to claude-3-7-sonnet-latest
     # planner_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for planner_model
     planner_model_kwargs = {
         "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
-        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o"),
         "openai_api_base": os.environ.get("OPENAI_API_BASE"),
     }
     writer_provider: str = "openai" # Defaults to Anthropic as provider
-    writer_model: str = "gpt-4o-mini" # Defaults to claude-3-5-sonnet-latest
+    writer_model: str = "openai/gpt-4o-mini-2024-07-18" # Defaults to claude-3-5-sonnet-latest
     # writer_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for writer_model
     writer_model_kwargs = {
         "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
-        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini"),
         "openai_api_base": os.environ.get("OPENAI_API_BASE"),
     }
-
+    openai_key: str = os.environ.get("OPENAI_API_KEY", "")
     coder_provider: str = "openai" # Defaults to Anthropic as provider
-    coder_model: str = "o4-mini" # Defaults to claude-3-5-sonnet-latest
+    coder_model: str = "anthropic/claude-haiku-4.5" # Defaults to claude-3-5-sonnet-latest
+    coder_base_url: str = os.environ.get("CODER_API_BASE", None)
+    # coder_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for coder_model
     coder_model_kwargs = {
         "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
-        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "o4-mini"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini"),
         "openai_api_base": os.environ.get("OPENAI_API_BASE"),
+        "reasoning_effort":"medium"
+    }
+    designer_provider: str = "openai" # Defaults to Anthropic as provider
+    designer_model: str = "anthropic/claude-haiku-4.5" # Defaults to claude-3-5-sonnet-latest
+    designer_base_url: str = os.environ.get("DESIGNER_API_BASE", None)
+    # designer_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for designer_model
+    designer_model_kwargs = {
+        "openai_api_version": os.environ.get("AZURE_OPENAI_API_VERSION", "2025-01-01-preview"),
+        "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini"),
+        "openai_api_base": os.environ.get("OPENAI_API_BASE"),
+        "reasoning_effort":"medium"
     }
 
     # Multi-agent specific configuration

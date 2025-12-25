@@ -6,3 +6,7 @@ __pycache__/
 open_deep_research.egg-info
 saves/
 tmp/
+data/
+saves_old/
+saves_data/
+saves*

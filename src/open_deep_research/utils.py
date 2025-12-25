@@ -11,6 +11,7 @@ import socket
 from typing import List, Optional, Dict, Any, Union
 from urllib.parse import unquote
 from google.cloud import vision
+from time import sleep
 
 from exa_py import Exa
 from linkup import LinkupClient
@@ -39,7 +40,7 @@ def set_openai_api_base():
         try:
             import openai
             openai.api_base = openai_api_base
-            print(f"已设置OpenAI API基础URL: {openai_api_base}")
+            # print(f"已设置OpenAI API基础URL: {openai_api_base}")
         except ImportError:
             print("未找到openai包，无法设置API基础URL")
 
@@ -264,20 +265,21 @@ async def generate_image_caption_v3(image_path: str, topic: str) -> str:
             {
                 "role": "system",
                 "content": (
-                    "您是一位具备深厚图像理解与研究主题分析经验的专家。用户上传一张图像，可能来自科研论文、实验结果、数据图表或示意图，以明确具体的研究方向或问题。"
-                    f"\n用户明确指出的研究关注主题或背景为：{topic}。\n\n"
-                    "请按以下步骤提供您的回答：\n\n"
-                    "第一步：图像详细描述\n"
-                    "- 从整体到局部详细描述图像内容及元素关系、图示中标记文本、图例以及研究目的的关键信息。\n"
-                    "- 特别注意实验设置、数值趋势、变量关系、标注、箭头指示、图表类型、模型结构或流程示意图等显著特征。\n\n"
-                    "第二步：用户意图分析（重点）\n"
-                    "结合用户提供的研究主题背景，深入分析用户可能真正关心或希望深入研究的问题、领域或具体方向。请从以下维度分析：\n"
-                    "- 图像主要揭示或讨论的问题或现象是什么？\n"
-                    "- 图像背后可能存在的科学研究目标或关键问题是什么？\n"
-                    "- 用户通过此图像结合给定的研究主题可能最希望获得或深入探讨哪些知识或成果？\n\n"
-                    "第三步：精炼研究主题描述\n"
-                    "基于上述分析，精准提取并用一段话描述最本质、最值得深入研究的主题或研究方向。这段话应准确代表图像传达的核心思想，并明确研究的意义或价值。\n\n"
-                    "请务必以严格的JSON格式输出，例如：{\"caption\": \"图像的详细描述内容\", \"user_intent\": \"用户可能关心的具体研究意图\", \"topic\": \"精准的研究主题描述\"}"
+                    "You are an expert with deep experience in image interpretation and research-topic analysis. "
+                    "The user has uploaded an image that may come from a scientific paper, experimental result, data chart, or schematic diagram to clarify a specific research direction or question."
+                    f"\nThe user-specified research focus or background is: {topic}.\n\n"
+                    "Please follow the steps below in your response:\n\n"
+                    "Step 1: Detailed Image Description\n"
+                    "- Describe the image thoroughly from overall view to details, including the relationships among elements, any labeled text in the figure, legends, and key information related to the research purpose.\n"
+                    "- Pay special attention to experimental setup, numerical trends, variable relationships, annotations, arrows, chart type, model structure, or flowchart features.\n\n"
+                    "Step 2: User Intent Analysis (Key)\n"
+                    "Based on the provided research background, analyze in depth what the user may truly care about or wish to investigate. Address the following dimensions:\n"
+                    "- What issue or phenomenon does the image mainly reveal or discuss?\n"
+                    "- What scientific research goal or key question may lie behind the image?\n"
+                    "- Given the image and the research topic, what knowledge or outcomes is the user most likely hoping to gain or explore?\n\n"
+                    "Step 3: Refined Research Topic Description\n"
+                    "Based on the above analysis, precisely extract and describe—within one paragraph—the essence of the most valuable research topic or direction worth deeper study. This paragraph should faithfully represent the core idea conveyed by the image and clarify the significance or value of the research.\n\n"
+                    'Be sure to output in strict JSON format, for example: {"caption": "Detailed description of the image", "user_intent": "Specific research intent the user may care about", "topic": "Precise research topic description"}'
                 )
             },
             {
@@ -285,7 +287,10 @@ async def generate_image_caption_v3(image_path: str, topic: str) -> str:
                 "content": [
                     {
                         "type": "text",
-                        "text": "请基于提供的图像及给出的研究主题进行详细描述，探究用户可能的意图，提取可能的研究主题，以严格的JSON格式返回。"
+                        "text": (
+                            "Based on the provided image and research topic, please give a detailed description, infer the user’s possible intent, and extract a potential research topic. "
+                            "Return your answer in strict JSON format."
+                        )
                     },
                     {
                         "type": "image_url",
@@ -297,6 +302,7 @@ async def generate_image_caption_v3(image_path: str, topic: str) -> str:
                 ]
             }
         ]
+
 
         # 构造 URL、headers、payload
         if is_azure:
@@ -1596,13 +1602,13 @@ async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "
         
     Returns:
         str: A formatted string of search results
-    """
-    print(f"tavily_search函数接收到的参数:")
-    print(f"  queries: {queries}")
-    print(f"  max_results: {max_results}")
-    print(f"  topic: {topic}")
-    print(f"  include_images: {include_images}")
-    print(f"  include_image_descriptions: {include_image_descriptions}")
+    # """
+    # print(f"tavily_search函数接收到的参数:")
+    # print(f"  queries: {queries}")
+    # print(f"  max_results: {max_results}")
+    # print(f"  topic: {topic}")
+    # print(f"  include_images: {include_images}")
+    # print(f"  include_image_descriptions: {include_image_descriptions}")
     
     # Use tavily_search_async with include_raw_content=True to get content directly
     search_results = await tavily_search_async(
@@ -1652,7 +1658,7 @@ async def tavily_search(queries: List[str], max_results: int = 5, topic: str = "
             formatted_output += "No images found in search results.\n"
         formatted_output += "-" * 80 + "\n"
 
-    print(formatted_output)
+    # print(formatted_output)
 
     if unique_results:
         return formatted_output
@@ -1747,7 +1753,7 @@ async def select_and_execute_search(search_api: str, query_list: list[str], para
         # Tavily search tool used with both workflow and agent
         all_params = {"queries": query_list}
         all_params.update(params_to_pass)  # tavily_search.ainvoke({'queries': query_list}, **params_to_pass) is not work
-        print(f"调用tavily_search.ainvoke，合并后的参数: {all_params}")
+        # print(f"调用tavily_search.ainvoke，合并后的参数: {all_params}")
         return await tavily_search.ainvoke(all_params)
     elif search_api == "duckduckgo":
         # DuckDuckGo search tool used with both workflow and agent 

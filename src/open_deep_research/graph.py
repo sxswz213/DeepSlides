@@ -5,7 +5,7 @@ from langchain.chat_models import init_chat_model
 from langchain_openai import AzureChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables import RunnableConfig
-
+# from goto import goto, label
 from langgraph.constants import Send
 from langgraph.graph import START, END, StateGraph
 from langgraph.types import interrupt, Command
@@ -15,17 +15,20 @@ import os
 import datetime
 import asyncio
 import io
-import subprocess
 import httpx
 from urllib.parse import urlparse
+import re
+import shutil
+import tempfile
 
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
-
-
+from pptx_tools.design2ppt import *
+from pathlib import Path
 
 import base64
+from typing import Optional, List, Dict, Any, TypedDict
 
 
 from open_deep_research.state import (
@@ -44,7 +47,8 @@ from open_deep_research.state import (
     PPTSlideState,
     PPTSlide,
     PPTSlideOutputState,
-    PPTSectionOutputState
+    PPTSectionOutputState,
+    SearchQuery
 )
 
 from open_deep_research.prompts import (
@@ -55,7 +59,16 @@ from open_deep_research.prompts import (
     final_section_writer_instructions,
     section_grader_instructions,
     section_writer_inputs,
-    query_writer4PPT_instructions
+    query_writer4PPT_instructions,
+    ppt_tools_prompt,
+    design_formatting_prompt,
+    evaluation_design,
+    evaluation_aesthetics,
+    evaluation_complete,
+    style_plan_prompt,
+    eval_cover,
+    color_examples_prompt,
+    code_prefix
 )
 
 from open_deep_research.configuration import Configuration
@@ -69,7 +82,8 @@ from open_deep_research.utils import (
     generate_image_caption_v2,
     generate_image_caption_v3
 )
-
+MODE="openai" # ["openai","azure"]
+COMP_MODE="llm" # ["llm","tools"] 
 ## Nodes -- 
 
 async def process_image_input(state: ReportState, config: RunnableConfig):
@@ -103,23 +117,23 @@ async def process_image_input(state: ReportState, config: RunnableConfig):
     
     try:
         if not state.get("topic"):
-            topic = "用户未给出主题"
+            topic = "The user did not provide a topic."
         else:
             topic = state["topic"]
         # 生成图像描述
         image_result = await generate_image_caption_v3(image_path, topic)
         image_result = json.loads(image_result)
-        print(image_result)
+        # print(image_result)
         caption, user_intent, topic = image_result["caption"], image_result["user_intent"], image_result["topic"]
 
         return {"caption": caption, "user_intent": user_intent, "topic": topic}
 
     except Exception as e:
-        print(f"处理图像时出错: {str(e)}")
+        print(f"Error processing image: {str(e)}")
         # 返回错误信息作为caption，并确保topic存在
         if "topic" not in state:
-            return {"image_caption": f"无法处理图像: {str(e)}", "topic": ""}
-        return {"image_caption": f"无法处理图像: {str(e)}"}
+            return {"image_caption": f"Unable to process image:{str(e)}", "topic": ""}
+        return {"image_caption": f"Unable to process image:{str(e)}"}
 
 async def generate_report_plan(state: ReportState, config: RunnableConfig):
     """Generate the initial report plan with sections, including image caption and user intent.
@@ -159,8 +173,10 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
-    writer_model = AzureChatOpenAI(
+    if MODE == "openai":
+        writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs={})
+    else:
+        writer_model = AzureChatOpenAI(
         model=configurable.writer_model,
         azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
         deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
@@ -181,11 +197,11 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
 
     results = await structured_llm.ainvoke([
         SystemMessage(content=system_instructions_query),
-        HumanMessage(content="生成有助于规划报告各部分的搜索查询。")
+        HumanMessage(content="Generate search queries that help plan each section of the report.")
     ])
 
-    query_list = [query.search_query for query in results.queries]
-
+    query_list = [query.search_query for query in results.queries][:number_of_queries]
+    print(query_list)
     source_str = await select_and_execute_search(search_api, query_list, params_to_pass)
 
     image_path = state.get("image_path")
@@ -194,9 +210,9 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
             # 单独调用图片搜索API
             image_search_result = await select_and_execute_search("image_search", [image_path], params_to_pass)
             # 将图片搜索结果与之前的搜索结果合并
-            source_str += f"\n\n图片搜索结果:\n{image_search_result}"
+            source_str += f"\n\nImage search results:\n{image_search_result}"
         except Exception as e:
-            print(f"调用图片搜索API时出错: {str(e)}")
+            print(f"Error calling the image-search API:{str(e)}")
 
     # Include caption and user intent in report planner instructions
     system_instructions_sections = report_planner_instructions.format(
@@ -212,8 +228,8 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
     planner_model = get_config_value(configurable.planner_model)
     planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
 
-    planner_message = """生成报告的章节。您的回复必须包含一个'sections'字段，其中包含章节列表。
-                        每个章节必须有：name、description、plan、research和content字段。"""
+    planner_message = """Generate the sections of the report. Your reply must contain a 'sections' field that lists the sections.  
+Each section must include: name, description, plan, research, and content fields."""
 
     set_openai_api_base()
 
@@ -226,16 +242,18 @@ async def generate_report_plan(state: ReportState, config: RunnableConfig):
         )
     else:
         # With other models, thinking tokens are not specifically allocated
-        # planner_llm = init_chat_model(model=planner_model, 
-        #                               model_provider=planner_provider,
-        #                               model_kwargs=planner_model_kwargs)
-        planner_llm = AzureChatOpenAI(
+        if MODE == "openai":
+            planner_llm = init_chat_model(model=planner_model, 
+                                      model_provider=planner_provider,
+                                      model_kwargs={})
+        else:
+            planner_llm = AzureChatOpenAI(
             model=configurable.writer_model,
             azure_endpoint=planner_model_kwargs["openai_api_base"],  # Azure's API base
             deployment_name=planner_model_kwargs["azure_deployment"],  # Azure's deployment name
             openai_api_version=planner_model_kwargs["openai_api_version"],  # Azure's API version
             temperature=0,
-            max_tokens=2048
+            max_tokens=4096
         )
 
     # Generate the report sections
@@ -275,29 +293,44 @@ def human_feedback(state: ReportState, config: RunnableConfig) -> Command[Litera
         for section in sections
     )
 
-    # Get feedback on the report plan from interrupt
-    interrupt_message = f"""请对以下报告计划提供反馈。
-                        \n\n{sections_str}\n
-                        \n此报告计划是否满足您的需求？\n传入'true'来批准报告计划。\n或者，提供反馈以重新生成报告计划："""
+    # # Get feedback on the report plan from interrupt
+    # interrupt_message = f"""Please provide feedback on the following report plan.\n\n{sections_str}\n
+    # Does this report plan meet your needs?\nPass in 'true' to approve the report plan.\nAlternatively, provide feedback to regenerate the report plan:"""
     
-    feedback = interrupt(interrupt_message)
-
-    # If the user approves the report plan, kick off section writing
-    if isinstance(feedback, bool) and feedback is True:
-        # Treat this as approve and kick off section writing
-        return Command(goto=[
-            Send("build_section_with_web_research", {"topic": topic, "section": s, "search_iterations": 0}) 
-            for s in sections 
-            if s.research
-        ])
+    # feedback_dict = interrupt(interrupt_message)
+    # if type(feedback_dict) == bool:
+    #     # If the feedback is a boolean, treat it as approval
+    #     feedback = feedback_dict
+    # else:
+    #     feedback = list(feedback_dict.values())[0]
+    # # print(feedback)
+    # # If the user approves the report plan, kick off section writing
+    # if isinstance(feedback, bool) and feedback is True:
+    #     # Treat this as approve and kick off section writing
+    #     return Command(goto=[
+    #         Send("build_section_with_web_research", {"topic": topic, "section": s, "search_iterations": 0}) 
+    #         for s in sections 
+    #         if s.research
+    #     ])
     
-    # If the user provides feedback, regenerate the report plan 
-    elif isinstance(feedback, str):
-        # Treat this as feedback
-        return Command(goto="generate_report_plan", 
-                       update={"feedback_on_report_plan": feedback})
-    else:
-        raise TypeError(f"Interrupt value of type {type(feedback)} is not supported.")
+    # # If the user provides feedback, regenerate the report plan 
+    # elif isinstance(feedback, str):
+    #     # Treat this as feedback
+    #     return Command(goto="generate_report_plan", 
+    #                    update={"feedback_on_report_plan": feedback})
+    # else:
+    #     raise TypeError(f"Interrupt value of type {type(feedback)} is not supported.")
+    # tooooooodoooooo 此处为忽略人类反馈直接进行下一步
+    return Command(
+        goto=[
+            Send(
+                "build_section_with_web_research",
+                {"topic": topic, "section": section, "search_iterations": 0},
+            )
+            for section in sections
+            if section.research
+        ]
+    )
     
 async def generate_queries(state: SectionState, config: RunnableConfig):
     """Generate search queries for researching a specific section.
@@ -328,8 +361,10 @@ async def generate_queries(state: SectionState, config: RunnableConfig):
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
-    writer_model = AzureChatOpenAI(
+    if MODE == "openai":
+        writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs={})
+    else:
+        writer_model = AzureChatOpenAI(
         model=configurable.writer_model,
         azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
         deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
@@ -344,10 +379,11 @@ async def generate_queries(state: SectionState, config: RunnableConfig):
                                                            section_topic=section.description, 
                                                            number_of_queries=number_of_queries)
 
-    # Generate queries  
+    # Generate queries
+      
     queries = await structured_llm.ainvoke([SystemMessage(content=system_instructions),
-                                     HumanMessage(content="针对提供的主题生成搜索查询。")])
-
+                                     HumanMessage(content="Generate search queries for the given topic.")])
+    print(queries)
     return {"search_queries": queries.queries}
 
 async def search_web(state: SectionState, config: RunnableConfig):
@@ -368,15 +404,16 @@ async def search_web(state: SectionState, config: RunnableConfig):
 
     # Get state
     search_queries = state["search_queries"]
-
     # Get configuration
+
     configurable = Configuration.from_runnable_config(config)
+    number_of_queries = configurable.number_of_queries
     search_api = get_config_value(configurable.search_api)
     search_api_config = configurable.search_api_config or {}  # Get the config dict, default to empty
     params_to_pass = get_search_params(search_api, search_api_config)  # Filter parameters
 
     # Web search
-    query_list = [query.search_query for query in search_queries]
+    query_list = [query.search_query for query in search_queries][:number_of_queries]
 
     # Search the web with parameters
     source_str = await select_and_execute_search(search_api, query_list, params_to_pass)
@@ -435,7 +472,7 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
                         "description": image_description
                     })
         except Exception as e:
-            print(f"提取图像信息时出错: {str(e)}")
+            print(f"Error extracting image information: {str(e)}")
 
     # 达到最大图像数量后停止处理
     image_num_available = len(images_data)
@@ -446,7 +483,8 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     images_json = json.dumps(images_data, ensure_ascii=False, indent=2) if images_data else "[]"
     
     if images_data:
-        print(f"已提取 {image_num_available} 张图像（最大限制：{max_images}张）")
+        # print(f"Extracted {image_num_available} images (maximum limit: {max_images})")
+        pass
 
     # Get configuration
     configurable = Configuration.from_runnable_config(config)
@@ -468,8 +506,10 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
-    writer_model = AzureChatOpenAI(
+    if MODE == "openai":
+        writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs={})
+    else:
+        writer_model = AzureChatOpenAI(
         model=configurable.writer_model,
         azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
         deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
@@ -522,16 +562,19 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
                 else:
                     content = before_image_selection
         except Exception as e:
-            print(f"处理图像选择信息时出错: {str(e)}")
+            print(f"Error processing image selection information: {str(e)}")
     
     # Write content to the section object  
     section.content = content
     section.source_str = source_str  # Store the source string in the section
 
     # Grade prompt 
-    section_grader_message = ("对报告进行评分并考虑针对缺失信息的后续问题。"
-                              "如果评分为'pass'，则所有后续查询返回空字符串。"
-                              "如果评分为'fail'，则提供具体的搜索查询以收集缺失信息。")
+    section_grader_message = (
+        "Grade the report and consider follow-up questions for any missing information. "
+        "If the grade is 'pass', all subsequent queries should return an empty string. "
+        "If the grade is 'fail', provide specific search queries to collect the missing information."
+    )
+
     
     section_grader_instructions_formatted = section_grader_instructions.format(topic=topic, 
                                                                                section_topic=section.description,
@@ -553,14 +596,16 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
                                            max_tokens=20_000, 
                                            thinking={"type": "enabled", "budget_tokens": 16_000}).with_structured_output(Feedback)
     else:
-        # reflection_model = init_chat_model(model=planner_model, 
-        #                                    model_provider=planner_provider, model_kwargs=planner_model_kwargs).with_structured_output(Feedback)
-        reflection_model = AzureChatOpenAI(
+        if MODE == "openai":
+            reflection_model = init_chat_model(model=planner_model, 
+                                            model_provider=planner_provider, model_kwargs={}).with_structured_output(Feedback)
+        else:
+            reflection_model = AzureChatOpenAI(
             model=configurable.writer_model,
             azure_endpoint=planner_model_kwargs["openai_api_base"],  # Azure's API base
             deployment_name=planner_model_kwargs["azure_deployment"],  # Azure's deployment name
             openai_api_version=planner_model_kwargs["openai_api_version"],  # Azure's API version
-            temperature=0,
+            # temperature=0,
             max_tokens=2048
         ).with_structured_output(Feedback)
     # Generate feedback
@@ -614,8 +659,10 @@ async def write_final_sections(state: SectionState, config: RunnableConfig):
     writer_provider = get_config_value(configurable.writer_provider)
     writer_model_name = get_config_value(configurable.writer_model)
     writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
-    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
-    writer_model = AzureChatOpenAI(
+    if MODE == "openai":
+        writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs={})
+    else:
+        writer_model = AzureChatOpenAI(
         model=configurable.writer_model,
         azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure's API base
         deployment_name=writer_model_kwargs["azure_deployment"],  # Azure's deployment name
@@ -625,7 +672,7 @@ async def write_final_sections(state: SectionState, config: RunnableConfig):
     )
     
     section_content = await writer_model.ainvoke([SystemMessage(content=system_instructions),
-                                           HumanMessage(content="根据提供的资料生成报告章节。")])
+                                           HumanMessage(content="Generate the report sections based on the provided information.")])
     
     # Write content to section 
     section.content = section_content.content
@@ -654,7 +701,7 @@ def gather_completed_sections(state: ReportState):
 
     return {"report_sections_from_research": completed_report_sections}
 
-def compile_final_report(state: ReportState):
+async def compile_final_report(state: ReportState):
     """Compile all sections into the final report.
     
     This node:
@@ -670,6 +717,7 @@ def compile_final_report(state: ReportState):
     """
 
     # Get sections
+    topic = state["topic"]
     sections = state["sections"]
     completed_sections = {s.name: s.content for s in state["completed_sections"]}
 
@@ -679,6 +727,20 @@ def compile_final_report(state: ReportState):
 
     # Compile final report
     all_sections = "\n\n".join([s.content for s in sections])
+
+    save_dir = os.path.join(".", "saves_test", topic)
+    await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
+    outline_path = os.path.join(save_dir, "final_report.md")
+
+
+    try:
+        await asyncio.to_thread(
+            lambda p=outline_path, d=all_sections: open(p, "w", encoding="utf-8").write(
+                json.dumps(d, ensure_ascii=False, indent=2)
+            )
+        )
+    except Exception as exc:
+        outline_path = ""
 
     return {"final_report": all_sections}
 
@@ -702,7 +764,7 @@ def initiate_final_section_writing(state: ReportState):
         if not s.research
     ]
 
-async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Command[Literal["generate_ppt_sections"]]:
+async def generate_ppt_outline(state: ReportState, config: RunnableConfig):
     """
     根据演讲时长确定推荐的PPT页数，根据风格和故事线重新生成章节划分，最后基于此生成PPT大纲。
 
@@ -715,8 +777,13 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
     """
     configurable = Configuration.from_runnable_config(config)
     planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
-
-    writer_model = AzureChatOpenAI(
+    writer_provider = get_config_value(configurable.writer_provider)
+    writer_model_name = get_config_value(configurable.writer_model)
+    writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
+    if MODE == "openai":
+        writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs={})
+    else:
+        writer_model = AzureChatOpenAI(
         model=configurable.planner_model,
         azure_endpoint=planner_model_kwargs["openai_api_base"],
         deployment_name=planner_model_kwargs["azure_deployment"],
@@ -725,150 +792,347 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig)-> Com
         max_tokens=4096
     )
 
-    topic = state.get("topic", "未指定主题")
-    presentation_minutes = state.get("presentation_minutes", "15")
+    topic = state.get("topic", "none")
+    presentation_minutes = state.get("presentation_minutes", "10")
     style = state.get("style", "none")
 
     if style == "none":
-        prefix = "可以参考的演讲风格：专业商务、科技现代、简约极简、创意活泼、学术严谨、故事化叙述、杂志视觉、插画卡通、复古怀旧、数据可视化。"
+        prefix = (
+            "Reference presentation styles: professional business, modern tech, minimalist, "
+            "creative lively, academically rigorous, storytelling narrative, magazine visual, "
+            "illustration cartoon, retro nostalgic, data visualization."
+        )
     else:
-        prefix = f"用户期望的演讲风格：{style}"
+        prefix = f"User's expected presentation style/storyline: {style}"
 
     storyline_prompt = f"""
-    你是一位经验丰富的演讲专家，要制作一份演讲PPT，现在你要确定演讲的风格、故事线和主题色（主色+辅助色）。
-    演讲主题：{topic}
-    演讲时长：{presentation_minutes}分钟
+    You are an experienced presentation expert tasked with creating a presentation PPT. Now you need to determine the presentation's storyline.
+    Presentation topic: {topic}
+    Presentation duration: {presentation_minutes} minutes
     {prefix}
 
-    可以参考的故事线：
-    - 问题-解决方案型：明确指出一个核心问题，并提供清晰、具体的解决方案。
-    - 情境-冲突-解决-成果型：首先设定一个场景，描述面临的挑战，提供解决方法，最终呈现积极成果。
-    - SCQA（背景-冲突-问题-回答）型：提供背景信息，引入冲突，明确提出关键问题并给出解决方案。
-    - 时间线（过去-现在-未来）型：以时间顺序展示过去发生的事件，目前的状态，以及未来的目标。
-    - 对比型（现状-未来）：清晰对比当前存在的问题与理想的未来状态，突出如何实现转变。
-    - 金字塔型：从结论开始，自上而下逐层展开论据，以严谨清晰的逻辑强化核心观点。
+    Reference storyline templates:
+    - Problem-Solution: Clearly identify a core problem and provide clear, specific solutions.
+    - Situation-Conflict-Resolution-Outcome: First set up a scene, describe the challenge, offer the solution, and finally present positive results.
+    - SCQA (Situation-Complication-Question-Answer): Provide background information, introduce the complication, state the key question clearly, and give the answer.
+    - Timeline (Past-Present-Future): Present past events, current status, and future goals in chronological order.
+    - Contrast (Current vs. Future): Clearly contrast existing problems with the ideal future state, highlighting how to achieve the transformation.
+    - Pyramid: Start with the conclusion and unfold arguments layer by layer from top to bottom, reinforcing the core idea with rigorous, clear logic.
+    - Research Report: Introduce the topic within its field background, systematically outline the current status, methods, and challenges, and finally present future research trends and directions.
 
-    返回json格式：
+    Return **only JSON format**:
+    ```json
     {{
-        "style": "风格",
-        "storyline": "故事线类型",
-        "main_color": "推荐的主色",
-        "accent_color": "推荐的辅助色"
+        "storyline": "Storyline type",
     }}
+    ```
     """
+
     storyline_response = await writer_model.ainvoke([
         SystemMessage(content=storyline_prompt),
-        HumanMessage(content="请推荐适合的故事线")
+        HumanMessage(content="Please recommend a suitable storyline.")
     ])
-    response_content = json.loads(storyline_response.content)
-    style = response_content["style"]
+    response_content = json.loads(storyline_response.content.split("```json")[-1].split('```')[0])
+    # style = response_content["style"]
     storyline = response_content["storyline"]
-    main_color = response_content["main_color"]
-    accent_color = response_content["accent_color"]
+    # main_color = response_content["main_color"]
+    # accent_color = response_content["accent_color"]
+    # background_tone = response_content["background_tone"]
+    # heading_font_color = response_content["heading_font_color"]
+    # body_font_color = response_content["body_font_color"]
+
+
+
 
     ppt_length_prompt = f"""
-    你是一位经验丰富的演讲专家。
+    You are an experienced presentation expert.
 
-    主题：{topic}
-    演讲时长：{presentation_minutes}分钟
+    Topic: {topic}
+    Presentation duration: {presentation_minutes} minutes
 
-    请建议一个适合该演讲时长的PPT页数（每页内容适中，页面不拥挤，一页PPT大概对应1-2分钟的内容）。
-    JSON格式：{{"recommended_slides": 10}}
+    Please suggest an appropriate number of PPT slides for this duration
+    (each slide should have a moderate amount of content, not overcrowded;
+    one slide generally corresponds to about 1-2 minutes of presentation time).
+
+    **OUTPUT ONLY JSON format**: 
+    ```json
+    {{\"recommended_slides\": 10}}
+    ```
     """
+
 
     ppt_length_response = await writer_model.ainvoke([
         SystemMessage(content=ppt_length_prompt),
-        HumanMessage(content="请提供推荐的PPT页数。")] 
+        HumanMessage(content="Please provide the recommended number of PPT slides.")] 
     )
-
-    recommended_slides = json.loads(ppt_length_response.content)["recommended_slides"]
+    print(f"PPT length response: {ppt_length_response.content}")
+    recommended_slides = json.loads(ppt_length_response.content.split("```json")[-1].split('```')[0])["recommended_slides"]
+    # print(f"Recommended number of slides: {recommended_slides}")
 
     ppt_section_distribution_prompt = f"""
-    演讲主题：{topic}
-    风格：{style}
-    故事线：{storyline}
-    推荐PPT总页数：{recommended_slides}
+    Presentation topic: {topic}
+    Style: {style}
+    Storyline: {storyline}
+    Recommended total slides: {recommended_slides}
 
-    注意：不要生成“提问环节”或“结束语”章节。
+    Attention: Do NOT create a "Q&A" or "Closing" section.
 
-    根据以上信息重新规划PPT章节结构，并分配每个章节的页数。以JSON格式返回，例如：
+    Based on the above information, re-plan the PPT section structure and allocate the number of slides for each section. Return in JSON format, for example:
     {{
-      "section_distribution": {{
-        "引言": 2,
-        "方法论": 3,
-        "结果": 3,
-        "结论": 2
-      }}
+        "section_distribution": {{
+            "Introduction": 2,
+            "Methodology": 3,
+            "Results": 3,
+            "Conclusion": 2
+        }}
     }}
     """
+
 
     ppt_distribution_response = await writer_model.ainvoke([
         SystemMessage(content=ppt_section_distribution_prompt),
-        HumanMessage(content="请规划章节结构并分配页数。")
+        HumanMessage(content="Please plan the section structure and allocate the number of pages.")
     ])
 
     section_distribution = json.loads(ppt_distribution_response.content)["section_distribution"]
-
+    # print(f"Section distribution: {section_distribution}")
     ppt_outline_prompt = f"""
-    你擅长设计演讲用的幻灯片大纲。
-    演讲主题：{topic}
-    风格：{style}
-    故事线：{storyline}
+    You excel at designing slide outlines for presentations.
+    Presentation topic: {topic}
+    Storyline: {storyline}
 
-    演讲内容参考资料：
+    Reference material for the presentation:
     {state["final_report"]}
 
-    每个章节的PPT页数分配如下：
+    The slide allocation for each section is as follows:
     {json.dumps(section_distribution, ensure_ascii=False, indent=2)}
 
-    请生成符合上述页数划分的PPT大纲，每页应包含：
-    - 标题
-    - 最多3-4个关键点
+    Please generate a PPT outline that adheres to the above slide allocation. Each slide should include:
+    - A title
+    - key points 
+    - Layout (single block / top-bottom / left-right / n horizontal blocks / card grid / ...); encourage diverse and innovative layouts. 
 
-    JSON格式：
+    Important: **Do NOT make every slide contain exactly 3 or 4 key points.**  
+    Ensure variety by creating some slides with **5** key points, and some with **6**.
+
+    JSON format:
+    Return JSON only, e.g.:
+    ```json
     {{
-      "ppt_sections": [
-        {{
-          "name": "引言",
-          "allocated_slides": 2,
-          "slides": [{{"title": "引言", "points": ["背景介绍"]}}]
-        }}
-      ]
+        "ppt_sections": [
+            {{
+            "name": "Introduction",
+            "allocated_slides": 2,
+            "slides": [
+                {{"title":"Sample 6-point slide","points":["A","B","C","D","E","F"],"layout":"..."}},
+                {{"title":"Sample 4-point slide","points":["A","B","C","D"],"layout":"..."}},
+                {{"title":"Sample 5-point slide","points":["A","B","C","D","E"],"layout":"..."}},
+                {{"title":"Sample 3-point slide","points":["A","B","C"],"layout":"..."}}
+            ]
+            }}
+        ]
     }}
+    ```
     """
+
 
     ppt_outline_response = await writer_model.ainvoke([
         SystemMessage(content=ppt_outline_prompt),
-        HumanMessage(content="生成PPT大纲。")
+        HumanMessage(content="Generate a PPT outline.")
     ])
-    ppt_sections_data = json.loads(ppt_outline_response.content)["ppt_sections"]
-
+    # print(f"PPT outline response: {ppt_outline_response.content}")
+    ppt_sections_data = json.loads(ppt_outline_response.content.split("```json")[-1].split('```')[0])["ppt_sections"]
+    # print(f"PPT outline sections: {ppt_sections_data}")
     for section in ppt_sections_data:
         for slide in section.get("slides", []):
             slide.setdefault("codes", [])
             slide.setdefault("detail", "")
             slide.setdefault("enriched_points", "")
             slide.setdefault("path", "")
+            
 
     ppt_sections = [PPTSection(**section) for section in ppt_sections_data]
     ppt_outline = PPTOutline(ppt_sections=PPTSections(sections=ppt_sections))
+    save_dir = os.path.join(".", "saves_test", "outlines", topic)
+    await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
+    outline_path = os.path.join(save_dir, "ppt_outline.json")
 
-    return Command(
-        update={
+    outline_payload = {
+        "recommended_slides": recommended_slides,
+        "section_distribution": section_distribution,
+        "ppt_outline": [section.model_dump() for section in ppt_sections],
+    }
+
+    try:
+        await asyncio.to_thread(
+            lambda p=outline_path, d=outline_payload: open(p, "w", encoding="utf-8").write(
+                json.dumps(d, ensure_ascii=False, indent=2)
+            )
+        )
+    except Exception as exc:
+        print(f"[WARN] Error saving PPT report: {exc}")
+        outline_path = ""
+    return {
             "recommended_ppt_slides": recommended_slides,
             "section_distribution": section_distribution,
             "ppt_outline": ppt_outline,
             "ppt_sections": ppt_sections,
             "storyline": storyline,
+        }
+    # return Command(
+    #     update={
+    #         "recommended_ppt_slides": recommended_slides,
+    #         "section_distribution": section_distribution,
+    #         "ppt_outline": ppt_outline,
+    #         "ppt_sections": ppt_sections,
+    #         "storyline": storyline,
+    #         "style": style,
+    #         "main_color": main_color,  
+    #         "accent_color": accent_color
+    #     },
+    #     goto=[
+    #         Send("generate_ppt_sections", {"topic": topic, "ppt_section": ppt_section, "style": style, "main_color": main_color, "accent_color": accent_color})
+    #         for ppt_section in ppt_sections
+    #     ]
+    # )
+
+async def generate_ppt_styles(state: ReportState, config: RunnableConfig):
+    """
+    根据PPT大纲生成整体风格建议，包括颜色搭配、字体选择、设计元素等。
+
+    Args:
+        state: 当前状态，包含 ppt_outline 等信息
+        config: 配置参数
+
+    Returns:
+        包含风格建议的状态字典
+    """
+    configurable = Configuration.from_runnable_config(config)
+    topic = state.get("topic", "none")
+    style = state.get("style", "none")
+    coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    coder_model_name = get_config_value(configurable.coder_model)
+    coder_provider = get_config_value(configurable.coder_provider)
+    coder_base_url = get_config_value(configurable.coder_base_url)
+
+    designer_model_kwargs = get_config_value(configurable.designer_model_kwargs or {})
+    designer_model_name = get_config_value(configurable.designer_model)
+    designer_provider = get_config_value(configurable.designer_provider)
+    designer_base_url = get_config_value(configurable.designer_base_url)
+    openai_key = os.getenv("OPENAI_API_KEY")
+    if MODE == "openai":
+        coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider, model_kwargs={})
+        designer_model = init_chat_model(model=designer_model_name, model_provider=designer_provider, model_kwargs={})
+    else:
+        coder_model = AzureChatOpenAI(
+        model=configurable.coder_model,
+        azure_endpoint=coder_model_kwargs["openai_api_base"],
+        deployment_name=coder_model_kwargs["azure_deployment"],
+        openai_api_version=coder_model_kwargs["openai_api_version"],
+        # temperature=0.7,
+        # max_tokens=4096
+        max_completion_tokens=40960,
+        reasoning_effort = coder_model_kwargs["reasoning_effort"]
+    )
+
+    style_prompt= f"""
+    You are an experienced presentation expert. You need to recommend a suitable style and color scheme for a presentation PPT.
+    Presentation topic: {topic}
+    User's expected presentation style: {style}
+    Please select the appropriate style and color scheme for the topic based on the provided information. And it is also important to ensure the harmony between the main color and the secondary color.
+{color_examples_prompt}
+Return **only JSON format**:
+    {{
+        "style": "Style",
+        "main_color": "Recommended primary color",
+        "accent_color": "Recommended accent color",
+        "background_tone": "light/dark dominated + background color description",
+        "heading_font_color": "recommended heading font color",
+        "body_font_color": "recommended body font color"
+        "font_name": "recommended font name"
+    }}
+"""
+    try:
+        style_response = await designer_model.ainvoke([
+            SystemMessage(content=style_prompt),
+            HumanMessage(content="Please recommend a suitable style and color scheme.")
+        ])
+    except Exception as e:
+        # Diagnostic logging to help identify misconfiguration (model id / base_url)
+        print(f"[WARN] designer_model.ainvoke failed: {e}")
+        try:
+            print(f"[DEBUG] designer_model_name={designer_model_name}, designer_provider={designer_provider}, designer_base_url={designer_base_url}")
+        except Exception:
+            pass
+
+        # Try a lightweight fallback using the OpenAI client wrapper if available
+        try:
+            from langchain_openai import ChatOpenAI
+            # Try to call OpenAI official API as a fallback (no custom base_url)
+            try:
+                openai_fallback = ChatOpenAI(
+                    model=designer_model_name,
+                    openai_api_key=os.getenv("OPENAI_API_KEY"),
+                    max_tokens=40960,
+                )
+                print("[INFO] Attempting fallback with ChatOpenAI (official API)")
+                style_response = await openai_fallback.ainvoke([
+                    SystemMessage(content=style_prompt),
+                    HumanMessage(content="Please recommend a suitable style and color scheme.")
+                ])
+            except Exception as e2:
+                print(f"[ERROR] ChatOpenAI fallback failed: {e2}")
+                raise
+        except Exception as e3:
+            # If fallback import or call fails, re-raise original exception for visibility
+            print(f"[ERROR] No fallback available or fallback failed: {e3}")
+            raise
+    style_content = json.loads(style_response.content.split("```json")[-1].split('```')[0])
+    style = style_content["style"]
+    main_color = style_content["main_color"]
+    accent_color = style_content["accent_color"]
+    background_tone = style_content["background_tone"]
+    heading_font_color = style_content["heading_font_color"]
+    body_font_color = style_content["body_font_color"]
+    font_name = style_content["font_name"]
+
+    return {            
             "style": style,
             "main_color": main_color,  
-            "accent_color": accent_color
-        },
+            "accent_color": accent_color,
+            "background_tone": background_tone,
+            "heading_font_color": heading_font_color,
+            "body_font_color": body_font_color,
+            "font_name": font_name
+            }
+
+
+async def manage_ppt_templates(state: ReportState, config: RunnableConfig)-> Command[Literal["generate_ppt_sections"]]:
+    template = state.get("template", "")
+    topic = state.get("topic", "none")
+    ppt_sections = state.get("ppt_sections", [])
+    style = state.get("style", "none")
+    main_color = state.get("main_color", "blue")
+    accent_color = state.get("accent_color", "orange")
+    background_tone = state.get("background_tone", "light")
+    heading_font_color = state.get("heading_font_color", "black")
+    body_font_color = state.get("body_font_color", "darkgray")
+    font_name = state.get("font_name", "Arial")
+    style_summary = state.get("style_summary", "")
+
+    # template是一个PPT模板文件路径，若为空，则先生成模板
+
+
+
+    return Command(
+
         goto=[
-            Send("generate_ppt_sections", {"topic": topic, "ppt_section": ppt_section, "style": style, "main_color": main_color, "accent_color": accent_color})
+            Send("generate_ppt_sections", {"topic": topic, "ppt_section": ppt_section, "style": style, "main_color": main_color, "accent_color": accent_color
+                                           , "background_tone": background_tone, "heading_font_color": heading_font_color, "body_font_color": body_font_color, "style_summary": style_summary, "font_name": font_name})
             for ppt_section in ppt_sections
         ]
     )
+
 
 async def save_image_from_url(image_url, image_name, topic, ppt_section_name, slide_index):
     """
@@ -900,7 +1164,7 @@ async def save_image_from_url(image_url, image_name, topic, ppt_section_name, sl
 
             # 异步创建目录（避免阻塞）
             save_dir = os.path.join(
-                ".", "saves", topic, "images", ppt_section_name, f"slide_{slide_index+1}"
+                ".", "saves_test", topic, "images", ppt_section_name, f"slide_{slide_index+1}"
             )
             await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
 
@@ -912,14 +1176,14 @@ async def save_image_from_url(image_url, image_name, topic, ppt_section_name, sl
                 lambda: open(image_path, 'wb').write(response.content)
             )
 
-            print(f"图片成功保存到：{image_path}")
+            # print(f"Image successfully saved to: {image_path}")
             return image_path
 
     except httpx.HTTPError as e:
-        print(f"HTTP请求错误: {str(e)}")
+        # print(f"HTTP request error: {str(e)}")
         return ""
     except Exception as e:
-        print(f"其他错误: {str(e)}")
+        print(f"Other error: {str(e)}")
         return ""
 
 async def truncate_by_characters(text, max_chars=250000):
@@ -939,7 +1203,7 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
         Tuple: 包含生成的详细内容和幻灯片布局描述。
     """
     configurable = Configuration.from_runnable_config(config)
-    number_of_queries = configurable.number_of_queries
+    number_of_queries = configurable.number_of_queries_for_ppt
     writer_model_kwargs = configurable.writer_model_kwargs or {}
     
     # 获取当前幻灯片信息
@@ -949,24 +1213,37 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     style = state.get("style")
     main_color = state.get("main_color")
     accent_color = state.get("accent_color")
+    background_tone = state.get("background_tone")
+    heading_font_color = state.get("heading_font_color")
+    body_font_color = state.get("body_font_color")
+    font_name = state.get("font_name")
+    style_summary = state.get("style_summary", "")
+    design_suggestions = state.get("design_suggestions", "")
+    aestheitcs_suggestions = state.get("aestheitcs_suggestions", "")
     slide = ppt_section.slides[slide_index]
     slide_title = slide.title
     slide_points = slide.points
+    slide_layout = slide.layout
 
     # 设置OpenAI API的基础URL
     set_openai_api_base()
 
     # 使用Azure模型生成查询语句
-    writer_model = AzureChatOpenAI(
+    writer_provider = get_config_value(configurable.writer_provider)
+    writer_model_name = get_config_value(configurable.writer_model)
+    writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
+    if MODE == "openai":
+        writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs={})
+    else:
+        writer_model = AzureChatOpenAI(
         model=configurable.writer_model,
         azure_endpoint=writer_model_kwargs["openai_api_base"],  # Azure的API基础URL
         deployment_name=writer_model_kwargs["azure_deployment"],  # Azure的部署名称
         openai_api_version=writer_model_kwargs["openai_api_version"],  # Azure的API版本
-        temperature=0.7,
-        max_tokens=4096
+        temperature=0,
+        max_tokens=4096,
+        # streaming=False
     )
-
-    # 使用结构化输出生成查询语句
     structured_llm = writer_model.with_structured_output(Queries)
 
     # 格式化系统指令
@@ -976,16 +1253,38 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
         slide_title=slide_title,
         slide_points=", ".join(slide_points),
         number_of_queries=number_of_queries
-    )
+     )#+ """
+# You must respond with a single valid JSON object that matches the following schema:
+
+# {
+#   "queries": [
+#     {
+#       // one SearchQuery object
+#       // fields must strictly follow the SearchQuery schema defined in the system
+#       // do not add extra fields
+#     },
+#     ...
+#   ]
+# }
+
+# Constraints:
+# - "queries" MUST be a JSON array.
+# - The length of "queries" MUST equal `number_of_queries` provided above.
+# - Do not add any commentary, explanation, or text outside the JSON object.
+# """
 
     # 生成查询语句
     query_response = await structured_llm.ainvoke([
         SystemMessage(content=system_instructions),
-        HumanMessage(content="根据以上信息生成相关搜索查询")
+        HumanMessage(content="Generate relevant search queries based on the information above.")
     ])
+    # print(f"Generated search queries response: {query_response}")
+    # data = json.loads(query_response.content)
+    # queries_obj = Queries.parse_obj(data)
 
     # 从返回的查询结果中提取查询语句
-    search_queries = [query.search_query for query in query_response.queries]
+    search_queries = [query.search_query for query in query_response.queries][:number_of_queries]
+    # search_queries: list[SearchQuery] = queries_obj.queries
 
     # 执行Web搜索
     search_api = get_config_value(configurable.search_api)
@@ -1026,7 +1325,7 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
                         "local_path": image_path  # 添加本地图片路径
                     })
         except Exception as e:
-            print(f"提取图像信息时出错: {str(e)}")
+            print(f"Error extracting image information: {str(e)}")
 
     # 达到最大图像数量后停止处理
     image_num_available = len(images_data)
@@ -1037,7 +1336,8 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     images_json = json.dumps(images_data, ensure_ascii=False, indent=2) if images_data else "[]"
     
     if images_data:
-        print(f"已提取 {image_num_available} 张图像（最大限制：{max_images}张）")
+        # print(f"Extracted {image_num_available} images (maximum limit: {max_images})")
+        pass
 
     images_data = images_data[:max_images] if len(images_data) >= max_images else images_data
     embedded_images = []
@@ -1057,135 +1357,326 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
                     "index": img["index"],
                     "path": local_path,
                     "description": img["description"],
+                    "height": img.get("height", ""),
+                    "width": img.get("width", ""),
                     # "base64": f"data:{mime_type};base64,{img_base64}"
                 })
             except Exception as e:
-                print(f"加载图片时出错: {str(e)}")
+                print(f"Error loading image: {str(e)}")
     
     images_json_embedded = json.dumps(embedded_images, ensure_ascii=False, indent=2) if embedded_images else "[]"
     
     if embedded_images:
-        print(f"成功加载 {len(embedded_images)} 张图片为Base64格式。")
-
-    # 扩展幻灯片内容
-    content_enrichment_prompt = f"""
-    根据以下要点，请扩展幻灯片的内容。每个要点请写出详细描述，并确保内容与搜索结果相关联。
-
-    幻灯片主题：{topic}
-    幻灯片章节：{ppt_section.name}
-    幻灯片标题：{slide_title}
-    要点：{', '.join(slide_points)}
-
-    请扩展并详细描述每个要点，适合用于演讲演示，确保语言简洁但内容详实，一般每点扩展后的内容不宜超过50字。以JSON格式返回，注意仅输出json，不要输出其他文字：
-
-    {{
-        "enriched_points": [
-            {{"point_title": "要点标题1", "expanded_content": "详细扩展后的内容1"}},
-            {{"point_title": "要点标题2", "expanded_content": "详细扩展后的内容2"}},
-            {{"point_title": "要点标题3", "expanded_content": "详细扩展后的内容3"}},
-            ...
-        ]
-    }}
-    """
-
-    enrichment_response = await writer_model.ainvoke([
-        SystemMessage(content=content_enrichment_prompt),
-        HumanMessage(content="请扩展幻灯片内容")
-    ])
-
-    enriched_points = json.loads(enrichment_response.content.replace("```json", "").replace("```", "").strip())["enriched_points"]
-
-    # 第二阶段：使用coder_model生成幻灯片布局描述
-    coder_model_kwargs = configurable.coder_model_kwargs or {}
-    coder_model = AzureChatOpenAI(
+        # print(f"Successfully loaded {len(embedded_images)} images in Base64 format.")
+        pass
+    
+    coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    coder_model_name = get_config_value(configurable.coder_model)
+    coder_provider = get_config_value(configurable.coder_provider)
+    coder_base_url = get_config_value(configurable.coder_base_url)
+    designer_model_kwargs = get_config_value(configurable.designer_model_kwargs or {})
+    designer_model_name = get_config_value(configurable.designer_model)
+    designer_provider = get_config_value(configurable.designer_provider)
+    designer_base_url = get_config_value(configurable.designer_base_url)
+    openai_key = os.getenv("OPENAI_API_KEY")
+    if MODE == "openai":
+        coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider, model_kwargs={})
+        designer_model = init_chat_model(model=designer_model_name, model_provider=designer_provider, model_kwargs={})
+    else:
+        coder_model = AzureChatOpenAI(
         model=configurable.coder_model,
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
         # temperature=0.7,
         # max_tokens=4096
-        max_completion_tokens=4096
+        max_completion_tokens=40960,
+        reasoning_effort = coder_model_kwargs["reasoning_effort"]
     )
+    # 扩展幻灯片内容
+    content_enrichment_prompt = f"""
+    Based on the following points, expand the slide content. Provide a detailed description for each point and ensure it is linked to the search results.
 
-    detail_prompt = f"""
-    你是一位资深的幻灯片设计师，负责设计幻灯片布局。
-    根据以下详细内容生成幻灯片页面布局描述，输出为JSON：
+    Slide topic: {topic}
+    Slide section: {ppt_section.name}
+    Slide title: {slide_title}
+    Points: {', '.join(slide_points)}
 
-    标题: {slide_title}
-    详细要点: {json.dumps(enriched_points, ensure_ascii=False)}
-    幻灯片风格: {style}
-    主色: {main_color}
-    辅助色: {accent_color}
+    Search results:
+    {source_str}
+    Please expand and describe each point in detail, suitable for a presentation. Keep the language concise yet informative—ideally, each expanded point should not exceed **10 words**. The shorter, the better. Return the result in JSON format only; do not output any other text:
 
-    一级标题字号：36
-    其他级别标题字号：20
-    正文字号：20
-    中文字体：微软雅黑
-    英文字体：Arial
-
-    这里是一些可用的图片，你可以选择性地使用，放置在PPT中。
-    <图像列表>
-    {images_json_embedded}
-    </图像列表>
-
-    仅JSON格式，不要输出其他文字：
     {{
-        "layout": "布局类型",
-        "content_details": ["标题、详细内容、图片的位置布局、长宽、图片路径等"],
-        "design_style": "设计风格"
+        "enriched_points": [
+            {{"point_title": "Point Title 1", "expanded_content": "Expanded content 1"}},
+            {{"point_title": "Point Title 2", "expanded_content": "Expanded content 2"}},
+            {{"point_title": "Point Title 3", "expanded_content": "Expanded content 3"}},
+            ...
+        ]
     }}
     """
 
-    detail_response = await coder_model.ainvoke([
-        SystemMessage(content=detail_prompt),
-        HumanMessage(content="请输出幻灯片布局的JSON")
+
+    enrichment_response = await writer_model.ainvoke([
+        SystemMessage(content=content_enrichment_prompt),
+        HumanMessage(content="Please expand the slide content. Only return Json, no additional text.")
+    ])
+    print("JSOOOOOOOOOOON")
+    # enriched_points = json.loads(enrichment_response.content.replace("```json", "").replace("```", "").strip())["enriched_points"]
+    enriched_points = enrichment_response.content
+
+    save_dir = os.path.join(".", "saves_test", "outlines", topic)
+    await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
+    safe_section_name = ppt_section.name.replace(" ", "_")
+    file_path = os.path.join(save_dir, f"{safe_section_name}_slide{slide_index+1}.json")
+
+    data_to_save = {
+        "query_results": source_str,
+        "enriched_points": enriched_points,
+    }
+
+    # try:
+    #     await asyncio.to_thread(
+    #         lambda p=file_path, d=data_to_save: open(p, "w", encoding="utf-8").write(
+    #             json.dumps(d, ensure_ascii=False, indent=2)
+    #         )
+    #     )
+    #     # print(f"[INFO] Saved query & enriched points to: {file_path}")
+    # except Exception as exc:
+    #     print(f"[WARN] Error saving output file: {exc}")
+    #     file_path = ""
+
+    # 用于收集数据的返回值，不生成完整的幻灯片，只生成内容 TOOOOOOOOCHANGE
+    # generated_slide = PPTSlide(
+    #         title=slide_title,
+    #         points=slide_points,
+    #         codes=['no code'],
+    #         enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
+    #         detail="no detail",
+    #     )
+    # return Command(
+    #         update={"completed_slides": [generated_slide]},
+    #         goto=END
+    # )
+
+    # 第二阶段：使用coder_model生成幻灯片布局描述
+    coder_model_kwargs = configurable.coder_model_kwargs or {}
+    # writer_provider = get_config_value(configurable.writer_provider)
+    # writer_model_name = get_config_value(configurable.writer_model)
+    # writer_model_kwargs = get_config_value(configurable.writer_model_kwargs or {})
+    # writer_model = init_chat_model(model=writer_model_name, model_provider=writer_provider, model_kwargs=writer_model_kwargs)
+    # coder_provider = get_config_value(configurable.coder_provider)
+    # coder_model_name = get_config_value(configurable.coder_model)
+    # coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    # if MODE == "openai":
+    #     coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider, model_kwargs={})
+    # else:
+    #     coder_model = AzureChatOpenAI(
+    #     model=configurable.coder_model,
+    #     azure_endpoint=coder_model_kwargs["openai_api_base"],
+    #     deployment_name=coder_model_kwargs["azure_deployment"],
+    #     openai_api_version=coder_model_kwargs["openai_api_version"],
+    #     # temperature=0.7,
+    #     # max_tokens=4096
+    #     max_completion_tokens=40960,
+    #     reasoning_effort = coder_model_kwargs["reasoning_effort"]
+    # )
+
+    # OpenAI官方API兜底
+    try:
+        from langchain_openai import ChatOpenAI
+        openai_model = ChatOpenAI(
+            model=configurable.coder_model,
+            api_key=os.getenv("OPENAI_API_KEY2"),
+            bsae_url = os.getenv("OPENAI_API_BASE2"),
+            max_tokens=40960,
+        )
+    except Exception:
+        openai_model = None
+
+    detail_prompt = f"""
+    You are a seasoned slide designer responsible for designing slide layouts.
+    Generate a slide layout description in JSON format based on the following details:
+
+    Title: {slide_title}
+    Detailed points: {enriched_points}
+    Slide style: {style}
+    Slide layout: {slide_layout}
+    Primary color: {main_color}
+    Accent color: {accent_color}
+    Background tone: {background_tone}
+    Heading font color: {heading_font_color}
+    Body font color: {body_font_color}
+    Font name: {font_name}
+    Style summary: {style_summary}
+
+    Here are some images you may optionally use in the PPT:
+    <Image list>
+    {images_json_embedded}
+    </Image list>
+
+    {design_formatting_prompt}
+
+    <Suggestions for improving design>
+    {design_suggestions}
+    {aestheitcs_suggestions}
+
+    """
+
+
+    try:
+        detail_response = await asyncio.wait_for(
+            designer_model.ainvoke([
+            SystemMessage(content=detail_prompt),
+            HumanMessage(content="Please output the JSON for the slide layout. Return JSON only, no additional text.")
+            ]),
+            timeout=300
+        )
+    except Exception as e:
+        print(f"[WARN] Azure coder_model failed: {e}, fallback to OpenAI API.")
+        if openai_model:
+            try:
+                detail_response = await asyncio.wait_for(
+                    openai_model.ainvoke([
+                    SystemMessage(content=detail_prompt),
+                    HumanMessage(content="Please output the JSON for the slide layout. Return JSON only, no additional text.")
+                    ]),
+                    timeout=300
+                )
+            except Exception as e2:
+                print(f"[ERROR] Both Azure and OpenAI failed: {e2}")
+                slide_detail = ""
+        else:
+            slide_detail = ""
+    else:
+        slide_detail = detail_response.content
+
+    design_prompt = f"""
+Requirements:
+    Title: {slide_title}
+    Detailed points: {enriched_points}
+    Slide style: {style}
+    Slide layout: {slide_layout}
+    Primary color: {main_color}
+    Accent color: {accent_color}
+    Background tone: {background_tone}
+    Heading font color: {heading_font_color}
+    Body font color: {body_font_color}
+    Font name: {font_name}
+    Style summary: {style_summary}
+
+Here are some images may optionally be used in the PPT:
+    <Image list>
+    {images_json_embedded}
+    </Image list>
+
+Agent's design:
+{slide_detail}    
+
+{evaluation_design}
+"""
+    planner_model_kwargs = configurable.planner_model_kwargs or {}
+    planner_provider = get_config_value(configurable.planner_provider)
+    planner_model_name = get_config_value(configurable.planner_model)
+    if MODE == "openai":
+        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+    else:
+        planner_model = AzureChatOpenAI(
+        model=configurable.planner_model,
+        azure_endpoint=planner_model_kwargs["openai_api_base"],
+        deployment_name=planner_model_kwargs["azure_deployment"],
+        openai_api_version=planner_model_kwargs["openai_api_version"],
+        max_tokens=4096
+    )
+    design_score =  await planner_model.ainvoke([
+        SystemMessage(content=design_prompt),
+        HumanMessage(content=f"Please evaluate its design quality.")
     ])
 
-    slide_detail = json.loads(detail_response.content.replace("```json", "").replace("```", "").strip())
+    design_score_value = design_score.content.strip().split("```json")[-1].split("```")[0]
+    design_socre = 0.0
+    try:
+        design_score_json = json.loads(design_score_value)
+        design_score = design_score_json.get("Total Score", 0)
+        design_suggestions = design_score_json.get("Suggestions", "")
+    except Exception as e:
+        print(f"[WARN] Error parsing design score JSON: {e}")
+
+
 
     return {"enriched_points": enriched_points, 
-            "slide_detail": slide_detail}
+            "slide_detail": slide_detail,
+            "design_score": design_score,
+            "design_suggestions": design_suggestions,
+            "image_data": images_json_embedded
+            }
 
 
 async def generate_slide_code_and_execute(state: PPTSlideState, config: RunnableConfig):
     enriched_points = state["enriched_points"]
     slide_detail = state["slide_detail"]
-
+    images_json_embedded = state["image_data"]
+    set_openai_api_base()
     configurable = Configuration.from_runnable_config(config)
     coder_model_kwargs = configurable.coder_model_kwargs or {}
-
-    coder_model = AzureChatOpenAI(
+    coder_provider = get_config_value(configurable.coder_provider)
+    coder_model_name = get_config_value(configurable.coder_model)
+    coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    coder_base_url = get_config_value(configurable.coder_base_url)
+    openai_key = os.getenv("OPENAI_API_KEY")
+    if MODE == "openai":
+        coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider, model_kwargs={})
+    else:
+        coder_model = AzureChatOpenAI(
         model=configurable.coder_model,
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        # temperature=0.3,
-        # max_tokens=4096
-        max_completion_tokens=4096
+        max_completion_tokens=40960,
+        reasoning_effort = coder_model_kwargs["reasoning_effort"]
     )
+
+    # OpenAI官方API兜底
+    try:
+        from langchain_openai import ChatOpenAI
+        openai_model = ChatOpenAI(
+            model=configurable.coder_model,
+            api_key=os.getenv("OPENAI_API_KEY2"),
+            base_url = os.getenv("OPENAI_API_BASE2"),
+            max_tokens=40960,
+        )
+    except Exception:
+        openai_model = None
 
     topic = state["topic"]
     ppt_section = state["ppt_section"]
     slide_index = state["slide_index"]
     main_color = state.get("main_color")
     accent_color = state.get("accent_color")
+    background_tone = state.get("background_tone")
+    heading_font_color = state.get("heading_font_color")
+    body_font_color = state.get("body_font_color")
+    font_name = state.get("font_name")
+    style_summary = state.get("style_summary", "")
     style = state.get("style")
+    completeness_score = state.get("completeness_score", 0.0)
     slide_title = ppt_section.slides[slide_index].title
     slide_points = ppt_section.slides[slide_index].points
 
-    save_dir = os.path.join(".", "saves", topic)
-    await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
+    # ✅ 使用 Path，避免 abspath/cwd；真正需要绝对路径时放到线程里 resolve
+    save_dir = Path("saves_test") / topic
+    await asyncio.to_thread(save_dir.mkdir, parents=True, exist_ok=True)
 
     error_message = ""
     previous_code = ""
     python_code = None
     execution_successful = False
 
-    async def run_script(script_path):
+    async def run_script(script_path: Path):
         def run():
             try:
                 proc_result = subprocess.run(
-                    ["python", script_path],
+                    ["python", str(script_path)],
                     capture_output=True,
                     text=True,
                     timeout=60
@@ -1197,117 +1688,299 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
                 return -1, "", f"其他异常: {str(e)}"
         return await asyncio.to_thread(run)
 
-    # 保留循环5次重试逻辑
-    for attempt in range(3):
-        code_prompt = f"""
-        根据以下幻灯片详细描述，生成使用python-pptx库创建幻灯片的Python代码：
-
-        标题: {slide_title}
-        详细要点: {json.dumps(enriched_points, ensure_ascii=False)}
-        幻灯片描述：{json.dumps(slide_detail, ensure_ascii=False, indent=2)}
-        幻灯片风格: {style}
-        主色: {main_color} 
-        辅助色: {accent_color}
-
-
-        一级标题字号：36
-        其他级别标题字号：20
-        正文字号：20
-        中文字体：微软雅黑
-        英文字体：Arial
-
-        代码要求：
-        1. 导入必要库。
-        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 根据详细描述在指定位置添加标题、要点和图片，设置字体和样式，确保明确设置每个元素的大小以防止重叠遮挡，注意设置文本的自动换行。
-        4. 幻灯片均使用空白布局，标题、内容、图片均作为普通元素放置。
-        5. 保存文件名为：\"{save_dir}/{ppt_section.name}_slide_{slide_index + 1}.pptx\"
-
-
-
-        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
-        """
-
-        code_response = await coder_model.ainvoke([
-            SystemMessage(content=code_prompt),
-            HumanMessage(content="生成完整Python代码")
-        ])
-
-        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
-
-        script_path = os.path.join(save_dir, f"{ppt_section.name}_slide_{slide_index + 1}.py")
-
-        await asyncio.to_thread(
-            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
-        )
-
-        returncode, stdout, stderr = await run_script(script_path)
-
-        if returncode == 0:
-            execution_successful = True
-            break
-        else:
-            print(python_code)  # 输出用于排查错误
-            error_message = stderr
-            previous_code = python_code
-            print(f"代码执行失败，尝试第 {attempt + 1}/3 次，错误信息：{stderr}")
-    retry_count = state.get("retry_count", 0)
-
-    if not execution_successful:
-        # raise RuntimeError("代码生成执行失败，已达到最大尝试次数")
+    if COMP_MODE == "tools":
+        path = f"{save_dir}/{ppt_section.name}_slide_{slide_index + 1}.pptx"
+        try:
+            # render_design_to_ppt(slide_detail, path=path)
+            prs = await asyncio.to_thread(
+                    render_design_to_ppt,
+                    slide_detail,
+                    path,    # 对应参数 path
+                )
+            assert await asyncio.to_thread(os.path.exists, path), "PPT file was not created."
             return {
-                "codes": [python_code],
+                "codes": ["Rendered with tools"],
+                "path": path,
+                "title": slide_title,
+                "points": slide_points,
+                "completeness_score": 5.0,
+            }
+        except Exception as e:
+            print(f"[ERROR] render_design_to_ppt failed: {e}")
+            return {
+                "codes": [],
                 "path": "none",
                 "title": slide_title,
                 "points": slide_points,
+                "completeness_score": 0.0,
+                "completeness_suggestions": f"render_design_to_ppt failed: {e}"
             }
+
+
+    for attempt in range(3):
+        code_prompt = f"""
+Generate Python code that creates slides using the python-pptx library based on the following detailed slide description:
+
+Title: {slide_title}
+Detailed bullet points: {enriched_points}
+Slide description: {slide_detail}
+Slide style: {style}
+Primary color: {main_color} 
+Accent color: {accent_color}
+Background tone: {background_tone}
+Heading font color: {heading_font_color}
+Body font color: {body_font_color}
+Font name: {font_name}
+Style summary: {style_summary}
+{images_json_embedded}
+
+{ppt_tools_prompt}
+
+Code requirements:
+1. Import the necessary libraries.
+2. Create the slides and ensure the widescreen standard aspect ratio: 16:9 (13.33 inches × 7.5 inches).
+3. According to the detailed description, add the title, bullet points, and images at specified positions; set fonts and styles; explicitly set the size of each element to prevent overlap/occlusion; ensure text wraps automatically. The font size of the main text should be **at least 16**.
+4. Only the provided image URLs can be used. Do not reserve any positions for any images that are not provided, and do not use text descriptions to fill the gaps. Or you can also manually create some flowcharts using various graphics, but don't just leave an empty space or just provide a textual description.
+5. All the text should be placed on the top layer.
+6. Save the file as: \"{save_dir}/{ppt_section.name}_slide_{slide_index + 1}.pptx\"
+
+Previous code and errors (if any):
+{previous_code}
+{error_message}
+
+Please provide complete, executable Python code based on this information. Note: output Python code only, do not output any other text.
+Code will be save in utf-8 encoding.
+        """
+
+        try:
+            code_response = await asyncio.wait_for(
+                coder_model.ainvoke([
+                SystemMessage(content=code_prompt),
+                HumanMessage(content="Generate complete Python code.")
+                ]),
+                timeout=300
+            )
+            python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+
+        except Exception as e:
+            print(f"[WARN] Azure coder_model code failed: {e}, fallback to OpenAI API.")
+            if openai_model:
+                try:
+                    code_response = await asyncio.wait_for(
+                        openai_model.ainvoke([
+                        SystemMessage(content=code_prompt),
+                        HumanMessage(content="Generate complete Python code.")
+                        ]),
+                    timeout=300
+                    )
+                    python_code = code_prefix + code_response.content.replace("```python", "").replace("```", "").strip()
+                except Exception as e2:
+                    print(f"[ERROR] Both Azure and OpenAI code failed: {e2}")
+                    error_message = f"Both Azure and OpenAI code generation failed: {e2}"
+                    continue
+            else:
+                error_message = f"Azure code generation failed: {e}, OpenAI API not available."
+                continue
+
+        # 保存生成的代码到文件
+        script_path = save_dir / f"{ppt_section.name}_slide_{slide_index + 1}_attempt_{attempt}.py"
+        try:
+            await asyncio.to_thread(
+                lambda: script_path.write_text(python_code, encoding="utf-8")
+            )
+            print(f"[INFO] Generated code saved to: {script_path}")
+        except Exception as e:
+            print(f"[ERROR] Failed to save code: {e}")
+            error_message = f"Failed to save generated code: {e}"
+            continue
+
+        # 执行脚本
+        print(f"[INFO] Executing script: {script_path}")
+        returncode, stdout, stderr = await run_script(script_path)
+
+        if returncode == 0:
+            print(f"[INFO] Script executed successfully on attempt {attempt + 1}")
+            execution_successful = True
+            previous_code = python_code
+            error_message = ""
+            break
+        else:
+            error_message = f"Execution failed (attempt {attempt + 1}): {stderr or stdout}"
+            print(f"[WARN] {error_message}")
+            previous_code = python_code
+
+    if not execution_successful:
+        print(f"[ERROR] Failed to generate and execute code after 3 attempts")
+        return {
+            "codes": [python_code] if python_code else [],
+            "path": "none",
+            "title": slide_title,
+            "points": slide_points,
+            "completeness_score": 0.0,
+        }
+
+    planner_model_kwargs = configurable.planner_model_kwargs or {}
+    planner_provider = get_config_value(configurable.planner_provider)
+    planner_model_name = get_config_value(configurable.planner_model)
+    if MODE == "openai":
+        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+    else:
+        planner_model = AzureChatOpenAI(
+        model=configurable.planner_model,
+        azure_endpoint=planner_model_kwargs["openai_api_base"],
+        deployment_name=planner_model_kwargs["azure_deployment"],
+        openai_api_version=planner_model_kwargs["openai_api_version"],
+        max_tokens=4096
+    )
+    completeness_prompt = f"""
+# Design:
+{slide_detail}
+
+# Code:
+{python_code}
+
+# Task:
+{evaluation_complete}"""
+    completeness_response = await planner_model.ainvoke([
+        SystemMessage(content=completeness_prompt),
+        HumanMessage(content="Please evaluate the completeness of the generated slide.")
+    ])
+    completeness_value = completeness_response.content.strip().split("```json")[-1].split("```")[0]
+    completeness_score = 0.0
+    completeness_suggestions = ""   
+    try:
+        completeness_json = json.loads(completeness_value)
+        completeness_score = completeness_json.get("Total Score", 0.0)
+        completeness_suggestions = completeness_json.get("Suggestions", "")
+    except Exception as e:
+        print(f"[WARN] Error parsing completeness score JSON: {e}")
+
+    pptx_path = save_dir / f"{ppt_section.name}_slide_{slide_index + 1}.pptx"
+    # ✅ 绝对路径解析（会触发 cwd），放在线程里执行以避免阻塞
+    pptx_abs = await asyncio.to_thread(lambda: str(pptx_path.resolve()))
 
     return {
         "codes": [python_code],
-        "path": os.path.abspath(os.path.join(save_dir, f"{ppt_section.name}_slide_{slide_index + 1}.pptx")),
+        "path": pptx_abs,
         "title": slide_title,
         "points": slide_points,
+        "completeness_score": completeness_score,
+        "completeness_suggestions": completeness_suggestions
     }
 
 
-def ppt_to_image(slide_ppt_path, image_path):
-    """
-    使用 unoconv 将PPT幻灯片导出为图片
-    """
-    print(f"将幻灯片 {slide_ppt_path} 转换为图片 {image_path}")
+# def ppt_to_image(slide_ppt_path, image_path):
+#     """
+#     使用 unoconv 将PPT幻灯片导出为图片
+#     """
+#     print(f"Convert the slide {slide_ppt_path} to an image {image_path}")
     
-    # 使用 unoconv 将 PPT 转换为 PNG 格式
-    # try:
-        # 使用 unoconv 命令行工具来将 ppt 文件转换为图片
-    command = [
-            "C:\\Windows\\unoconv.bat",  # 调用 unoconv 命令
-            "-f", "png",  # 转换为 png 格式
-            "-o", image_path,  # 输出路径
-            slide_ppt_path  # 输入的 PPT 文件路径
-    ]
+#     # 使用 unoconv 将 PPT 转换为 PNG 格式
+#     # try:
+#         # 使用 unoconv 命令行工具来将 ppt 文件转换为图片
+#     command = [
+#             "C:\\Windows\\unoconv.bat",  # 调用 unoconv 命令
+#             "-f", "png",  # 转换为 png 格式
+#             "-o", image_path,  # 输出路径
+#             slide_ppt_path  # 输入的 PPT 文件路径
+#     ]
         
-        # 调用 unoconv 命令
-    subprocess.run(command, check=True)
-    print(f"转换成功：{slide_ppt_path} -> {image_path}")
+#         # 调用 unoconv 命令
+#     subprocess.run(command, check=True)
+#     print(f"Conversion successful: {slide_ppt_path} -> {image_path}")
     
-    # except subprocess.CalledProcessError as e:
-    #     print(f"转换失败：{str(e)}")
+#     # except subprocess.CalledProcessError as e:
+#     #     print(f"转换失败：{str(e)}")
 
-async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: RunnableConfig):
+def ppt_to_image(slide_ppt_path, image_path, soffice_path=None, timeout=120):
     """
-    将生成的PPT幻灯片转换为图片，并使用大模型检查布局合理性。
-
-    Args:
-        state: 当前PPT幻灯片状态。
-        config: 配置参数。
-
-    Returns:
-        Command: 如果布局有效，返回Command继续执行；否则返回Command跳转到enrich_slide_content。
+    在 macOS (conda 环境) 使用 LibreOffice(soffice) 将 PPT/PPTX 导出为 PNG。
+    - 如果 PPT 仅 1 页 -> 生成 image_path 指定的 PNG。
+    - 如果 PPT 多页 -> 第 1 页用 image_path，其余页在同目录生成 *_slide_02.png、*_slide_03.png...
+    返回：保存的图片绝对路径列表（str）。
     """
+    slide_ppt_path = Path(slide_ppt_path).expanduser().resolve()
+    image_path = Path(image_path).expanduser()
+    image_dir = image_path.parent
+    image_stem = image_path.stem
+    image_dir.mkdir(parents=True, exist_ok=True)
+
+    # 优先级：函数参数 > 环境变量 > PATH 中的 soffice > 默认 App 路径
+    candidates = []
+    if soffice_path:
+        candidates.append(Path(soffice_path))
+    if os.environ.get("SOFFICE_PATH"):
+        candidates.append(Path(os.environ["SOFFICE_PATH"]))
+    which = shutil.which("soffice")
+    if which:
+        candidates.append(Path(which))
+    candidates.append(Path("/Applications/LibreOffice.app/Contents/MacOS/soffice"))
+
+    soffice_bin = next((p for p in candidates if p and p.exists()), None)
+    if soffice_bin is None:
+        raise FileNotFoundError(
+            "未找到 LibreOffice 的 'soffice' 可执行文件。请先安装 LibreOffice，"
+            "或设置环境变量 SOFFICE_PATH 指向 soffice。"
+        )
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmpdir = Path(tmpdir)
+        cmd = [
+            str(soffice_bin),
+            "--headless", "--norestore", "--invisible",
+            "--nodefault", "--nofirststartwizard", "--nolockcheck",
+            "--convert-to", "png:impress_png_Export",
+            "--outdir", str(tmpdir),
+            str(slide_ppt_path),
+        ]
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        if proc.returncode != 0:
+            raise RuntimeError(f"LibreOffice 转换失败：{proc.stderr or proc.stdout}")
+
+        generated = sorted(tmpdir.glob("*.png"))
+        if not generated:
+            raise FileNotFoundError("转换后未在临时目录发现 PNG 文件。")
+
+        saved = []
+        if len(generated) == 1:
+            dst = image_path
+            shutil.move(str(generated[0]), str(dst))
+            saved.append(str(dst.resolve()))
+        else:
+            # 多页：第 1 页用给定文件名，其他页自动编号
+            first_dst = image_path
+            shutil.move(str(generated[0]), str(first_dst))
+            saved.append(str(first_dst.resolve()))
+            for i, src in enumerate(generated[1:], start=2):
+                dst = image_dir / f"{image_stem}_slide_{i:02d}.png"
+                shutil.move(str(src), str(dst))
+                saved.append(str(dst.resolve()))
+
+    return saved
+
+async def ppt_slide_to_image_and_validate(state, config):
+    """
+    将生成的PPT幻灯片转换为图片，并使用大模型按新评分标准检查布局合理性。
+    评分阈值：Total Score 严格 > 60 通过，否则 retry；最多重试 max_retry_count 次。
+    """
+    SCORE_THRESHOLD = 5  # 严格 > 60 才通过
+
+    # ---- 新评分 Prompt ----
+    REVIEW_PROMPT = f"""
+{evaluation_aesthetics}
+"""
+
+    # ---- 配置 & 模型初始化 ----
     configurable = Configuration.from_runnable_config(config)
     planner_model_kwargs = configurable.planner_model_kwargs or {}
+    planner_provider = get_config_value(configurable.planner_provider)
+    planner_model = get_config_value(configurable.planner_model)
+    planner_model_kwargs = get_config_value(configurable.planner_model_kwargs or {})
+    if MODE == "openai":
+        planner_model = init_chat_model(model=planner_model, model_provider=planner_provider, model_kwargs={})
+    else:
 
-    planner_model = AzureChatOpenAI(
+        planner_model = AzureChatOpenAI(
         model=configurable.planner_model,
         azure_endpoint=planner_model_kwargs["openai_api_base"],
         deployment_name=planner_model_kwargs["azure_deployment"],
@@ -1316,112 +1989,116 @@ async def ppt_slide_to_image_and_validate(state: PPTSlideState, config: Runnable
         max_tokens=2048
     )
 
+    # ---- 读取状态 ----
     slide_ppt_path = state["path"]
     codes = state["codes"]
     title = state["title"]
     points = state["points"]
     enriched_points = state["enriched_points"]
     slide_detail = state["slide_detail"]
-    max_retry_count = state.get("max_retry_count", 3)  # 默认 3 次重试
+    layout = state.get("layout", "")
+    max_retry_count = state.get("max_retry_count", 3)
     retry_count = state.get("retry_count", 0)
     path = state.get("path")
+    design_score = state.get("design_score", 0.0)
+    completeness_score = state.get("completeness_score", 0.0)
 
-    print("当前幻灯片:",slide_ppt_path,"当前重复次数:", retry_count, "最大重试次数:", max_retry_count)
-    
+    print("Current Slide:", slide_ppt_path, " Current repetition count:", retry_count, "Max Retry:", max_retry_count)
+
+    # ---- 达到最大重试次数 ----
     if retry_count >= max_retry_count:
-        print("最大重试次数已达，停止进一步处理")
+        print("The maximum retry count has been reached. No further processing will be carried out.")
         generated_slide = PPTSlide(
             title=title,
             points=points,
             codes=codes,
-            enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
-            detail=json.dumps(slide_detail, ensure_ascii=False, indent=2)
+            enriched_points=enriched_points,
+            detail=slide_detail,
+            layout=layout
         )
-        return Command(
-            update={"completed_slides": [generated_slide]},
-            goto=END
-        )
+        return Command(update={"completed_slides": [generated_slide]}, goto=END)
 
+
+    # ---- 无有效路径 ----
     if path == "none":
-        return Command(
-            update={"layout_valid": False, "retry_count": retry_count + 1},
-            goto="enrich_slide_content"
-        )
+        return Command(update={"layout_valid": False, "retry_count": retry_count + 1}, goto="enrich_slide_content")
+
+    # ---- 转换为图片 ----
     output_folder = os.path.dirname(slide_ppt_path)
     image_path = slide_ppt_path.replace(".pptx", ".png")
-    print(f"将幻灯片 {slide_ppt_path} 转换为图片 {image_path}")
-
-    # 使用 asyncio.to_thread 将 PowerPoint 操作移到单独的线程中
-    # await asyncio.to_thread(ppt_to_image, slide_ppt_path, image_path)
+    print(f"Convert the slide {slide_ppt_path} to an image {image_path}")
     try:
-        # 直接调用同步的 ppt_to_image 函数（无异步操作）
         await asyncio.to_thread(ppt_to_image, slide_ppt_path, image_path)
     except Exception as e:
         print(f"Error converting PPT to image: {e}")
-        return Command(
-            update={"conversion_failed": True, "retry_count": retry_count + 1},
-            goto="enrich_slide_content"
-        )
-    print(f"幻灯片转换为图片成功，保存路径：{image_path}")
-    # 将图片发送给大模型进行布局检查
-    # - 幻灯片内容布局均匀，不偏重于某一侧。
-    # - 文本之间没有遮挡。
-    # - 所有文本内容均位于页面范围内，没有超出。
-    # - 所有要点都清晰地展示。
-    validation_prompt = f"""
-    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
+        return Command(update={"conversion_failed": True, "retry_count": retry_count + 1}, goto="enrich_slide_content")
+    print(f"The slide transition to image was successful. The saved path is: {image_path}")
 
-    - 文本和图片之间没有遮挡或重叠现象。
-    - 所有内容均位于页面范围内，没有超出页面边界。
+    # ---- 审查评分：>60 通过，否则 retry ----
+    def _extract_json_dict(text: str):
+        """从模型返回中提取JSON（兼容 ```json 代码块``` 或纯JSON）；失败时尽量解析 Total Score。"""
+        m = re.search(r"```json\s*(\{.*?\})\s*```", text, flags=re.S)
+        if m:
+            try:
+                return json.loads(m.group(1))
+            except Exception:
+                pass
+        try:
+            return json.loads(text)
+        except Exception:
+            pass
+        m = re.search(r'"Total Score"\s*:\s*"?(?P<num>\d+(\.\d+)?)', text)
+        if m:
+            return {"Total Score": m.group("num")}
+        return {}
 
-    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
-    """
-
-    image_content = await asyncio.to_thread(
-        lambda: open(image_path, "rb").read()
-    )
-
+    image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
     response = await planner_model.ainvoke([
-        SystemMessage(content=validation_prompt),
-        HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
+        SystemMessage(content=REVIEW_PROMPT),
+        HumanMessage(content=[{
+            "type": "image_url",
+            "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}
+        }])
     ])
-    print(f"布局检查结果：{response.content}")
-    # 如果模型返回的结果中包含有效的布局检查信息（比如返回“yes”表示有效）
-    if "pass" in response.content.lower():
-        # 布局有效，生成幻灯片并返回
+    print(f"[Review raw]: {response.content}")
+
+    result_dict = _extract_json_dict(response.content or "")
+    total_score_str = str(result_dict.get("Total Score", "-1"))
+    try:
+        total_score = float(re.search(r"(\d+(\.\d+)?)", total_score_str).group(1))
+    except Exception:
+        total_score = -1.0
+    print(f"[Parsed total score]: {total_score}")
+    aestheitcs_suggestions = ""
+    if "Suggestions" in result_dict:
+        aestheitcs_suggestions = result_dict['Suggestions']
+        print(f"[Suggestions]: {result_dict['Suggestions']}")
+    a=total_score
+    total_score = design_score + (completeness_score-1)/4 * (total_score-3)
+    print(f"[Final total score]: {total_score} (Design: {design_score} ; Completeness: {completeness_score} ; Aesthetics: {a})")
+    if a>=3.8 and total_score > SCORE_THRESHOLD:
         generated_slide = PPTSlide(
             title=title,
             points=points,
             codes=codes,
-            enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
-            detail=json.dumps(slide_detail, ensure_ascii=False, indent=2)
+            enriched_points=enriched_points,
+            detail=slide_detail,
+            layout=layout
         )
-        return Command(
-            update={"completed_slides": [generated_slide]},
-            goto=END
-        )
+        return Command(update={"completed_slides": [generated_slide]}, goto=END)
     else:
         retry_count += 1
-
-        # 如果超过最大重试次数，结束流程
         if retry_count >= max_retry_count:
             generated_slide = PPTSlide(
                 title=title,
                 points=points,
                 codes=codes,
-                enriched_points=json.dumps(enriched_points, ensure_ascii=False, indent=2),
-                detail=json.dumps(slide_detail, ensure_ascii=False, indent=2)
+                enriched_points=enriched_points,
+                detail=slide_detail,
+                layout=layout
             )
-            return Command(
-                update={"completed_slides": [generated_slide]},
-                goto=END
-            )
-        # 布局无效，返回到enrich_slide_content重新生成内容
-        return Command(
-            update={"layout_valid": False, "retry_count": retry_count},
-            goto="enrich_slide_content"
-        )
-
+            return Command(update={"completed_slides": [generated_slide]}, goto=END)
+        return Command(update={"layout_valid": False, "retry_count": retry_count, "aestheitcs_suggestions": aestheitcs_suggestions}, goto="enrich_slide_content")
 
 
 
@@ -1443,12 +2120,17 @@ async def generate_ppt_section_start(state: PPTSectionState):
     style = state.get("style")
     main_color = state.get("main_color")  # 主色
     accent_color = state.get("accent_color")  # 辅助
+    background_tone = state.get("background_tone")
+    heading_font_color = state.get("heading_font_color")
+    body_font_color = state.get("body_font_color")
+    font_name = state.get("font_name")
+    style_summary = state.get("style_summary", "")
 
     # 初始化幻灯片列表，准备开始生成幻灯片
     generated_slides = []
 
     # 打印相关信息（用于调试）
-    print(f"开始生成PPT章节：{ppt_section.name}")
+    # print(f"开始生成PPT章节：{ppt_section.name}")
 
     # 获取该章节需要的页数
     num_slides = ppt_section.allocated_slides  # 获取分配的页数
@@ -1465,6 +2147,11 @@ async def generate_ppt_section_start(state: PPTSectionState):
                 "slide_index": slide_index,  # 为每一页传递幻灯片的索引
                 "main_color": main_color,
                 "accent_color": accent_color,
+                "background_tone": background_tone,
+                "heading_font_color": heading_font_color,
+                "body_font_color": body_font_color,
+                "font_name": font_name,
+                "style_summary": style_summary,
                 "max_retry_count": 3,  # 设置最大重试次数
                 "retry_count": 0  # 初始化重试计数
             })
@@ -1482,28 +2169,84 @@ async def generate_ppt_section_end(state: PPTSectionState):
         goto=END
     )
 
-async def generate_cover_slide(state: ReportState, config: RunnableConfig):
-    """生成封面幻灯片，包含布局检查步骤，最多循环3次"""
+async def generate_cover_slide(state, config):
+    """生成封面幻灯片，包含布局评分检查，最多循环3次（Total Score > 60 通过）"""
+    # ----------------- helper: extract JSON dict from LLM output -----------------
+    def _extract_json_dict(text: str) -> Dict[str, Any]:
+        m = re.search(r"```json\s*(\{.*?\})\s*```", text, flags=re.S)
+        if m:
+            try:
+                return json.loads(m.group(1))
+            except Exception:
+                pass
+        try:
+            return json.loads(text)
+        except Exception:
+            pass
+        m = re.search(r'"Total Score"\s*:\s*"?(?P<num>\d+(\.\d+)?)', text)
+        if m:
+            return {"Total Score": m.group("num")}
+        return {}
+
+    # ----------------- review prompt -----------------
+
+    SCORE_THRESHOLD = 75  # strictly > 60 to pass
+
+    # ----------------- state -----------------
     topic = state["topic"]
     style = state.get("style", "none")
     main_color = state.get("main_color", "#FFFFFF")
     accent_color = state.get("accent_color", "#000000")
+    background_tone = state.get("background_tone", "Light")
+    heading_font_color = state.get("heading_font_color", "#000000")
+    body_font_color = state.get("body_font_color", "#000000")
+    font_name = state.get("font_name", "Arial")
 
-    save_dir = os.path.join(".", "saves", topic)
+    save_dir = os.path.join(".", "saves_test", topic)
     cover_path = os.path.join(save_dir, "cover_slide.pptx")
     script_path = os.path.join(save_dir, "cover_slide.py")
 
+    # ----------------- model init -----------------
     configurable = Configuration.from_runnable_config(config)
     coder_model_kwargs = configurable.coder_model_kwargs or {}
-    coder_model = AzureChatOpenAI(
+    coder_provider = get_config_value(configurable.coder_provider)
+    coder_model_name = get_config_value(configurable.coder_model)
+    coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    coder_base_url = get_config_value(configurable.coder_base_url)
+    designer_model_kwargs = configurable.designer_model_kwargs or {}
+    designer_provider = get_config_value(configurable.designer_provider)
+    designer_model_name = get_config_value(configurable.designer_model)
+    designer_base_url = get_config_value(configurable.designer_base_url)
+    planner_model_kwargs = configurable.planner_model_kwargs or {}
+    planner_provider = get_config_value(configurable.planner_provider)
+    planner_model_name = get_config_value(configurable.planner_model)
+    openai_key = os.getenv("OPENAI_API_KEY")
+    set_openai_api_base()
+
+    if MODE == "openai":
+        coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider,  model_kwargs={})
+        designer_model = init_chat_model(model=designer_model_name, model_provider=designer_provider, model_kwargs={})
+        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+    else:
+
+        coder_model = AzureChatOpenAI(
         model=configurable.coder_model,
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        # temperature=0.3,
-        # max_tokens=4096
-        max_completion_tokens=4096
+        max_completion_tokens=40960,
     )
+    # OpenAI官方API兜底
+    try:
+        from langchain_openai import ChatOpenAI
+        openai_model = ChatOpenAI(
+            model=configurable.coder_model,
+            api_key=os.getenv("OPENAI_API_KEY2"),
+            base_url = os.getenv("OPENAI_API_BASE2"),
+            max_tokens=40960,
+        )
+    except Exception:
+        openai_model = None
 
     async def run_script(script_path):
         def run():
@@ -1512,130 +2255,353 @@ async def generate_cover_slide(state: ReportState, config: RunnableConfig):
                     ["python", script_path],
                     capture_output=True,
                     text=True,
-                    timeout=60
+                    timeout=600
                 )
                 return proc_result.returncode, proc_result.stdout, proc_result.stderr
             except subprocess.TimeoutExpired as e:
-                return -1, "", f"超时异常: {str(e)}"
+                return -1, "", f"Timeout exception: {str(e)}"
             except Exception as e:
-                return -1, "", f"其他异常: {str(e)}"
+                return -1, "", f"Exception: {str(e)}"
         return await asyncio.to_thread(run)
 
     error_message = ""
     previous_code = ""
 
-    validation_prompt = """
-    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
+    style_plan = f"""
+You are a professional slide style designer. Your task is to create a comprehensive **style template** for an entire slide deck.
 
-    - 文本和图片之间没有遮挡或重叠现象。
-    - 所有内容均位于页面范围内，没有超出页面边界。
+Below is the basic information about the slides:
+Topic: {topic}
+Slide style: {style}
+Primary color: {main_color}
+Accent color: {accent_color}
+Background tone: {background_tone}
+Heading font color: {heading_font_color}
+Body font color: {body_font_color}
+Font name: {font_name}
 
-    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
-    """
+{style_plan_prompt}
+"""
+    # planner_model_kwargs = get_config_value(Configuration.from_runnable_config(config).planner_model_kwargs or {})
+    # planner_model = AzureChatOpenAI(
+    #     model=Configuration.from_runnable_config(config).planner_model,
+    #     azure_endpoint=planner_model_kwargs["openai_api_base"],
+    #     deployment_name=planner_model_kwargs["azure_deployment"],
+    #     openai_api_version=planner_model_kwargs["openai_api_version"],
+    #     max_tokens=4096
+    # )
+    style_response = await designer_model.ainvoke([
+        SystemMessage(content=style_plan),
+        HumanMessage(content="Please create a detailed slide style description.")
+    ])
+
+    style_summary = style_response.content.strip()
+    suggestions = ""
 
     for attempt in range(3):
+        # ----------------- ask model for layout description -----------------
         layout_prompt = f"""
-        请为幻灯片封面设计一个布局，标题为：{topic}
-        幻灯片风格: {style}
-        主色: {main_color}
-        辅助色: {accent_color}
+Please design a slide cover layout with the title: {topic}
+Slide style: {style}
+Primary color: {main_color}
+Accent color: {accent_color}
+Background tone: {background_tone}
+Heading font color: {heading_font_color}
+Body font color: {body_font_color}
+Font name: {font_name}
+Style summary: {style_summary}
 
-        幻灯片封面应包括标题、演讲者姓名、日期等关键信息。
+The slide cover should include the title, speaker name, and date as key information. 
+You can design some background patterns and borders for the page to enhance its appearance, making it more **visually appealing** and sophisticated.
+- Canvas: 13.33 × 7.5 inches (width × height)
+- All coordinates and sizes are in **inches**, with 2 decimal places
+- No elements may go out of bounds or overlap (except background textures/separators)
+- In the Layout layer, every block uses **absolute positioning**: top-left `(x, y)`, size `(w, h)`;  
+  `0 ≤ x ≤ 13.33`, `0 ≤ y ≤ 7.5`, `x + w ≤ 13.33`, `y + h ≤ 7.5`
+- **If there is no images provided, do not reference images in the design.**
+- Provide the layout description in JSON format.
 
-        {f"上一次的错误信息: {error_message}" if error_message else ""}
-        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+{suggestions}
+{f"Previous error message: {error_message}" if error_message else ""}
+{f"Previously generated code: {previous_code}" if previous_code else ""}
         """
+        try:
+            layout_response = await asyncio.wait_for(
+                designer_model.ainvoke([
+                    {"role": "system", "content": layout_prompt},
+                    {"role": "user", "content": "Generate a layout description"}
+                ]),
+                timeout=300
+            )
+            layout_description = layout_response.content.strip()
+        except Exception as e:
+            print(f"[WARN] Azure coder_model failed: {e}, fallback to OpenAI API.")
+            if openai_model:
+                try:
+                    layout_response = await asyncio.wait_for(
+                        openai_model.ainvoke([
+                            {"role": "system", "content": layout_prompt},
+                            {"role": "user", "content": "Generate a layout description"}
+                        ]),
+                        timeout=300
+                    )
+                    layout_description = layout_response.content.strip()
+                except Exception as e2:
+                    error_message = f"Both Azure and OpenAI layout failed: {e2}"
+                    print(f"[ERROR] Both Azure and OpenAI layout failed: {e2}")
+                    continue
+            else:
+                error_message = f"Azure layout failed: {e}, OpenAI API not available."
+                continue
+        
+        
+        if COMP_MODE == "tools":
+            try:
+                print("Cover comp start")
+                # render_design_to_ppt(layout_description, path=cover_path)
+                python_code = "None"
+                prs = await asyncio.to_thread(
+                    render_design_to_ppt,
+                    layout_description,
+                    cover_path,    # 对应参数 path
+                )
+                assert await asyncio.to_thread(os.path.exists, cover_path), "PPT file was not created."
+                # goto .convert
+                # return {
+                #     "cover_slide_path": cover_path, "cover_layout_description": layout_description, "style_summary": style_summary
+                # }
+            except Exception as e:
+                error_message = f"render_design_to_ppt failed: {e}"
+                print(e)
+                continue
+        # ----------------- ask model to generate python-pptx code -----------------
+        else:
+            code_generation_prompt = f"""
+Generate complete Python code using the python-pptx library to create a cover slide based on the following layout description:
 
-        layout_response = await coder_model.ainvoke([
-            {"role": "system", "content": layout_prompt},
-            {"role": "user", "content": "生成布局描述"}
-        ])
+Layout description: {layout_description}
+{ppt_tools_prompt}
+Code requirements:
+1. Import the necessary libraries.
+2. Create the slide and ensure the widescreen standard aspect ratio: 16:9 (13.33 inches × 7.5 inches).
+3. Use a rectangle the same size as the page to set the background; do not set slide.background directly.
+4. All the text should be placed on the top layer.
+5. Save the file to: {cover_path}
 
-        layout_description = layout_response.content.strip()
+{f"Previous error message: {error_message}" if error_message else ""}
+{f"Previously generated code: {previous_code}" if previous_code else ""}
 
-        code_generation_prompt = f"""
-        根据以下布局描述生成一个使用python-pptx库制作封面幻灯片的完整Python代码：
-
-        布局描述：{layout_description}
-
-        代码要求：
-        1. 导入必要库。
-        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 页面背景采用与页面大小相同的矩形设置，不要直接设置slide.background。
-        4. 保存PPT文件到路径：{cover_path}
-
-        {f"上一次的错误信息: {error_message}" if error_message else ""}
-        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
-
-        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+Please provide complete, executable Python code based on this information. Note: output Python code only, do not output any other text.
+Code will be save in utf-8 encoding.
         """
+            try:
+                code_response = await asyncio.wait_for(
+                    coder_model.ainvoke([
+                        {"role": "system", "content": code_generation_prompt},
+                        {"role": "user", "content": "Generate Python code"}
+                    ]),
+                    timeout=300
+                )
+                python_code = code_prefix + code_response.content.replace("```python", "").replace("```", "").strip()
+            except Exception as e:
+                print(f"[WARN] Azure coder_model code failed: {e}, fallback to OpenAI API.")
+                if openai_model:
+                    try:
+                        code_response = await asyncio.wait_for(
+                            openai_model.ainvoke([
+                                {"role": "system", "content": code_generation_prompt},
+                                {"role": "user", "content": "Generate Python code"}
+                            ]),
+                            timeout=300
+                        )
+                        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+                    except Exception as e2:
+                        error_message = f"Both Azure and OpenAI code failed: {e2}"
+                        print(f"[ERROR] Both Azure and OpenAI code failed: {e2}")
+                        continue
+                else:
+                    error_message = f"Azure code failed: {e}, OpenAI API not available."
+                    continue
 
-        code_response = await coder_model.ainvoke([
-            {"role": "system", "content": code_generation_prompt},
-            {"role": "user", "content": "生成Python代码"}
-        ])
+            await asyncio.to_thread(
+                lambda: open(script_path, "w", encoding="utf-8").write(python_code)
+            )
 
-        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
-
-        await asyncio.to_thread(
-            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
-        )
-
-        returncode, stdout, stderr = await run_script(script_path)
-
-        if returncode != 0:
-            error_message = stderr
-            previous_code = python_code
-            print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
-            continue
-
+            # ----------------- run script -----------------
+            returncode, stdout, stderr = await run_script(script_path)
+            if returncode != 0:
+                error_message = stderr
+                previous_code = python_code
+                print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+                continue
+            
+        
+        # ----------------- convert to image -----------------
         image_path = cover_path.replace(".pptx", ".png")
         try:
             await asyncio.to_thread(ppt_to_image, cover_path, image_path)
         except Exception as e:
             print(f"幻灯片转图片失败: {e}")
+            error_message = f"幻灯片转图片失败: {e}"
+            previous_code = python_code
             continue
 
+        # ----------------- review with scoring -----------------
+        REVIEW_PROMPT = f"""
+Topic: {topic}
+Slide style: {style}
+Primary color: {main_color}
+Accent color: {accent_color}
+Background tone: {background_tone}
+Heading font color: {heading_font_color}
+Body font color: {body_font_color}
+Font name: {font_name}
+Style summary: {style_summary}
+
+You are a Slide Review Expert. Please evaluate the cover slide design based on the following dimensions.
+{eval_cover}
+"""
         image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
-
-        response = await coder_model.ainvoke([
-            SystemMessage(content=validation_prompt),
-            HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
-        ])
-
-        if response.content.strip() == "pass":
-            print(f"布局检查通过，路径：{cover_path}")
-            return {"cover_slide_path": cover_path, "cover_layout_description": layout_description}
-        else:
-            error_message = "布局检查未通过"
+        try:
+            review = await asyncio.wait_for(
+                planner_model.ainvoke([
+                    SystemMessage(content=REVIEW_PROMPT),
+                    HumanMessage(content=[{
+                        "type": "image_url",
+                        "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}
+                    }])
+                ]),
+                timeout=300
+            )
+        except Exception as e:
+            print(f"[WARN] Azure coder_model review failed: {e}, fallback to OpenAI API.")
             previous_code = python_code
-            print(f"布局检查未通过，尝试重试：{attempt + 1}")
+            if openai_model:
+                try:
+                    review = await asyncio.wait_for(
+                        openai_model.ainvoke([
+                            SystemMessage(content=REVIEW_PROMPT),
+                            HumanMessage(content=[{
+                                "type": "image_url",
+                                "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}
+                            }])
+                        ]),
+                        timeout=300
+                    )
+                except Exception as e2:
+                    error_message = f"Both Azure and OpenAI review failed: {e2}"
+                    print(f"[ERROR] Both Azure and OpenAI review failed: {e2}")
+                    continue
+            else:
+                error_message = f"Azure review failed: {e}, OpenAI API not available."
+                continue
 
-    # raise RuntimeError("生成封面幻灯片失败，已达到最大尝试次数")
-    return {"cover_slide_path": cover_path, "cover_layout_description": layout_description}
+        print(f"[Cover Review raw] {review.content}")
 
-async def generate_section_cover_slides(state: ReportState, config: RunnableConfig):
-    """生成章节封面幻灯片，仅检查第一个章节的布局有效性，最多循环3次"""
+        result = _extract_json_dict(review.content or "")
+        total_score_str = str(result.get("Total Score", "-1"))
+        try:
+            total_score = float(re.search(r"(\d+(\.\d+)?)", total_score_str).group(1))
+        except Exception:
+            total_score = -1.0
+
+        print(f"[Parsed score] {total_score} / 100")
+        if "Suggestions" in result:
+            suggestions = result['Suggestions']
+            print(f"[Suggestions] {result['Suggestions']}")
+
+        if total_score > SCORE_THRESHOLD:
+            print(f"封面布局评分通过（{total_score}），路径：{cover_path}")
+            return {"cover_slide_path": cover_path, "cover_layout_description": layout_description, "style_summary": style_summary}
+        else:
+            error_message = f"评分未达阈值（{total_score} ≤ 60）"
+            previous_code = python_code
+            print(f"封面布局评分未通过，尝试重试：{attempt + 1}")
+
+    # 最终返回（达到最大次数仍未通过）
+    return {"cover_slide_path": cover_path, "cover_layout_description": layout_description, "style_summary": style_summary}
+
+
+
+async def generate_section_cover_slides(state, config):
+    """生成章节封面幻灯片，仅检查第一个章节的布局有效性，最多循环3次（Total Score > 60 通过）"""
+    SCORE_THRESHOLD = 75  # strictly > 60 to pass
+
+    def _extract_json_dict(text: str) -> Dict[str, Any]:
+        m = re.search(r"```json\s*(\{.*?\})\s*```", text, flags=re.S)
+        if m:
+            try:
+                return json.loads(m.group(1))
+            except Exception:
+                pass
+        try:
+            return json.loads(text)
+        except Exception:
+            pass
+        m = re.search(r'"Total Score"\s*:\s*"?(?P<num>\d+(\.\d+)?)', text)
+        if m:
+            return {"Total Score": m.group("num")}
+        return {}
+
+
+
+    # ---- state ----
     topic = state["topic"]
     ppt_sections = state["ppt_sections"]
     style = state.get("style", "none")
     main_color = state.get("main_color", "#FFFFFF")
     accent_color = state.get("accent_color", "#000000")
+    background_tone = state.get("background_tone", "Light")
+    heading_font_color = state.get("heading_font_color", "#000000")
+    body_font_color = state.get("body_font_color", "#000000")
+    font_name = state.get("font_name", "Arial")
+    style_summary = state.get("style_summary", "")
+    suggesstions = ""
 
-    save_dir = os.path.join(".", "saves", topic)
+    save_dir = os.path.join(".", "saves_test", topic)
+    # os.makedirs(save_dir, exist_ok=True)
     script_path = os.path.join(save_dir, "section_cover_slide.py")
 
+    # ---- model init ----
     configurable = Configuration.from_runnable_config(config)
     coder_model_kwargs = configurable.coder_model_kwargs or {}
-    coder_model = AzureChatOpenAI(
+    coder_provider = get_config_value(configurable.coder_provider)
+    coder_model_name = get_config_value(configurable.coder_model)
+    coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    coder_base_url = get_config_value(configurable.coder_base_url)
+    designer_model_kwargs = configurable.designer_model_kwargs or {}
+    designer_provider = get_config_value(configurable.designer_provider)
+    designer_model_name = get_config_value(configurable.designer_model)
+    designer_base_url = get_config_value(configurable.designer_base_url)
+    planner_model_kwargs = configurable.planner_model_kwargs or {}
+    planner_provider = get_config_value(configurable.planner_provider)
+    planner_model_name = get_config_value(configurable.planner_model)
+    if MODE == "openai":
+        coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider, model_kwargs={})
+        designer_model = init_chat_model(model=designer_model_name, model_provider=designer_provider, model_kwargs={})
+        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+    else:
+
+        coder_model = AzureChatOpenAI(
         model=configurable.coder_model,
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        # temperature=0.3,
-        # max_tokens=4096
-        max_completion_tokens=4096
+        max_completion_tokens=40960,
+        reasoning_effort = coder_model_kwargs["reasoning_effort"]
     )
+    openai_model = None
+    # OpenAI官方API兜底
+    try:
+        from langchain_openai import ChatOpenAI
+        openai_model = ChatOpenAI(
+            model=configurable.coder_model,
+            api_key=os.getenv("OPENAI_API_KEY2"),
+            base_url = os.getenv("OPENAI_API_BASE2"),
+            max_tokens=40960,
+        )
+    except Exception:
+        openai_model = None
 
     async def run_script(script_path):
         def run():
@@ -1656,121 +2622,293 @@ async def generate_section_cover_slides(state: ReportState, config: RunnableConf
     error_message = ""
     previous_code = ""
 
-    validation_prompt = """
-    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
-
-    - 文本和图片之间没有遮挡或重叠现象。
-    - 所有内容均位于页面范围内，没有超出页面边界。
-
-    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
-    """
-
     chapters_list = [section.name for section in ppt_sections]
 
     for attempt in range(3):
+        # ---- ask for a generic layout for all chapter covers ----
         layout_prompt = f"""
-        请为幻灯片章节封面设计一个通用版式，适用于所有章节
-        幻灯片主题: {topic}
-        幻灯片风格: {style}
-        主色: {main_color}
-        辅助色: {accent_color}
+    Please design a universal layout for slide chapter covers, applicable to all chapters. You can design some background patterns and borders for the page to enhance its appearance, making it more **visually appealing** and sophisticated.
+    Slide topic: {topic}
+    Slide style: {style}
+    Primary color: {main_color}
+    Accent color: {accent_color}
+    Background tone: {background_tone}
+    Heading font color: {heading_font_color}
+    Body font color: {body_font_color}
+    Font name: {font_name}
+    Style summary: {style_summary}
+- Canvas: 13.33 × 7.5 inches (width × height)
+- All coordinates and sizes are in **inches**, with 2 decimal places
+- No elements may go out of bounds or overlap (except background textures/separators)
+- In the Layout layer, every block uses **absolute positioning**: top-left `(x, y)`, size `(w, h)`;  
+  `0 ≤ x ≤ 13.33`, `0 ≤ y ≤ 7.5`, `x + w ≤ 13.33`, `y + h ≤ 7.5`
+- **If there is no images provided, do not reference images in the design.**
 
-        请返回布局描述，包含元素位置、大小及字体信息。
+Chapter list: {chapters_list}
+For one section cover page, there is one Chapter name.
+To ensure the integrity of the overall structure, you can initially use "{chapters_list[0]}" as the placeholder for the chapter title content.
 
-        {f"上一次的错误信息: {error_message}" if error_message else ""}
-        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+
+{suggesstions}
+
+- Provide the layout description in JSON format.
+
+    {f"Previous error message: {error_message}" if error_message else ""}
+    {f"Previously generated code: {previous_code}" if previous_code else ""}
         """
+        try:
+            layout_response = await designer_model.ainvoke([
+                {"role": "system", "content": layout_prompt},
+                {"role": "user", "content": "Generate a layout description"}
+            ])
+            layout_description = layout_response.content.strip()
+        except Exception as e:
+            print(f"[WARN] Azure coder_model layout failed: {e}, fallback to OpenAI API.")
+            if openai_model:
+                try:
+                    layout_response = await openai_model.ainvoke([
+                        {"role": "system", "content": layout_prompt},
+                        {"role": "user", "content": "Generate a layout description"}
+                    ])
+                    layout_description = layout_response.content.strip()
+                except Exception as e2:
+                    error_message = f"Both Azure and OpenAI layout failed: {e2}"
+                    print(f"[ERROR] Both Azure and OpenAI layout failed: {e2}")
+                    continue
+            else:
+                error_message = f"Azure layout failed: {e}, OpenAI API not available."
+                continue
+        if COMP_MODE == "tools":
+            try:
+                # render_design_to_ppt(layout_description, path=f"{save_dir}/section_slide_1.pptx")
+                prs = await asyncio.to_thread(
+                    render_design_to_ppt,
+                    layout_description,
+                    f"{save_dir}/section_slide_1.pptx",    # 对应参数 path
+                )
+                assert await asyncio.to_thread(os.path.exists, f"{save_dir}/section_slide_1.pptx"), "PPT file was not created."
+                for i in range(len(chapters_list)-1):
+                    layout_description.replace(chapters_list[i],chapters_list[i+1])
+                    # render_design_to_ppt(layout_description, path=f"{save_dir}/section_slide_{i+2}.pptx")
+                    prs = await asyncio.to_thread(
+                        render_design_to_ppt,
+                        layout_description,
+                        f"{save_dir}/section_slide_{i+2}.pptx",    # 对应参数 path
+                    )
+                # goto .convert_section
+            except Exception as e:
+                error_message = f"render_design_to_ppt failed: {e}"
+                continue
+        # ---- generate python script to create all chapter cover PPTX files ----
+        else:
+            code_generation_prompt = f"""
+    Generate a Python script using the python-pptx library to create chapter cover slides based on the following layout description:
 
-        layout_response = await coder_model.ainvoke([
-            {"role": "system", "content": layout_prompt},
-            {"role": "user", "content": "生成布局描述"}
-        ])
+    Layout description: {layout_description}
+    {ppt_tools_prompt}
+    Script requirements:
+    1. Import the necessary libraries.
+    2. Create slides and ensure the widescreen standard aspect ratio: 16:9 (13.33 inches × 7.5 inches).
+    3. Use a rectangle the same size as the page to set the background; do not set slide.background directly.
+    4. All the text should be placed on the top layer.
+    5. Using the chapter list below, generate a separate PPTX file for each chapter. Save each file to {save_dir}/section_slide_{{chapter_index}}.pptx.
 
-        layout_description = layout_response.content.strip()
+    Chapter list: {chapters_list}
 
-        code_generation_prompt = f"""
-        根据以下布局描述生成一个使用python-pptx库制作章节封面幻灯片的Python脚本：
-
-        布局描述：{layout_description}
-
-        脚本要求：
-        1. 导入必要库。
-        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 代码中页面背景采用与页面大小相同的矩形设置，不要直接设置slide.background。
-        4. 使用以下章节列表，为每个章节生成一个单独的pptx文件，文件保存路径为{save_dir}/section_slide_{{章节序号}}.pptx。
-
-        章节列表：{chapters_list}
-
-        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+    Please provide complete, executable Python code based on this information. Note: output Python code only; do not output any other text. Code will be save in utf-8 encoding.
         """
+            try:
+                code_response = await coder_model.ainvoke([
+                    {"role": "system", "content": code_generation_prompt},
+                    {"role": "user", "content": "Generate Python code"}
+                ])
+                python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+            except Exception as e:
+                print(f"[WARN] Azure coder_model code failed: {e}, fallback to OpenAI API.")
+                if openai_model:
+                    try:
+                        code_response = await openai_model.ainvoke([
+                            {"role": "system", "content": code_generation_prompt},
+                            {"role": "user", "content": "Generate Python code"}
+                        ])
+                        python_code = code_prefix + code_response.content.replace("```python", "").replace("```", "").strip()
+                    except Exception as e2:
+                        error_message = f"Both Azure and OpenAI code failed: {e2}"
+                        print(f"[ERROR] Both Azure and OpenAI code failed: {e2}")
+                        continue
+                else:
+                    error_message = f"Azure code failed: {e}, OpenAI API not available."
+                    continue
+            
+            await asyncio.to_thread(lambda: open(script_path, "w", encoding="utf-8").write(python_code))
 
-        code_response = await coder_model.ainvoke([
-            {"role": "system", "content": code_generation_prompt},
-            {"role": "user", "content": "生成Python代码"}
-        ])
-
-        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
-
-        await asyncio.to_thread(lambda: open(script_path, "w", encoding="utf-8").write(python_code))
-
-        returncode, stdout, stderr = await run_script(script_path)
-
+            # ---- run script to generate PPTs ----
+            returncode, stdout, stderr = await run_script(script_path)
+            if returncode != 0:
+                error_message = stderr
+                previous_code = python_code
+                print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+                continue
+            
+        # label .convert_section
+        # ---- validate ONLY the first chapter's PPT by scoring ----
         first_slide_path = os.path.join(save_dir, "section_slide_1.pptx")
-
-        if returncode != 0:
-            error_message = stderr
-            previous_code = python_code
-            print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
-            continue
-
         image_path = first_slide_path.replace(".pptx", ".png")
         try:
             await asyncio.to_thread(ppt_to_image, first_slide_path, image_path)
         except Exception as e:
             print(f"幻灯片转图片失败: {e}")
+            error_message = f"幻灯片转图片失败: {e}"
+            previous_code = python_code
             continue
+        REVIEW_PROMPT = f"""
+Topic: {topic}
+Slide style: {style}
+Primary color: {main_color}
+Accent color: {accent_color}
+Background tone: {background_tone}
+Heading font color: {heading_font_color}
+Body font color: {body_font_color}
+Font name: {font_name}
+Style summary: {style_summary}
+Chapter list: {chapters_list}
 
+You are a Slide Review Expert. Please evaluate the section cover slide design for the first chapter based on the following dimensions.
+
+{eval_cover}
+"""
         image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
+        try:
+            review = await planner_model.ainvoke([
+                SystemMessage(content=REVIEW_PROMPT),
+                HumanMessage(content=[{
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}
+                }])
+            ])
+        except Exception as e:
+            print(f"[WARN] Azure coder_model review failed: {e}, fallback to OpenAI API.")
+            previous_code = python_code
+            if openai_model:
+                try:
+                    review = await openai_model.ainvoke([
+                        SystemMessage(content=REVIEW_PROMPT),
+                        HumanMessage(content=[{
+                            "type": "image_url",
+                            "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}
+                        }])
+                    ])
+                except Exception as e2:
+                    error_message = f"Both Azure and OpenAI review failed: {e2}"
+                    print(f"[ERROR] Both Azure and OpenAI review failed: {e2}")
+                    continue
+            else:
+                error_message = f"Azure review failed: {e}, OpenAI API not available."
+                continue
 
-        response = await coder_model.ainvoke([
-            SystemMessage(content=validation_prompt),
-            HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
-        ])
+        print(f"[Section Cover Review raw] {review.content}")
 
-        if response.content.strip() == "pass":
-            print(f"第一个章节布局检查通过，路径：{save_dir}")
+        result = _extract_json_dict(review.content or "")
+        total_score_str = str(result.get("Total Score", "-1"))
+        try:
+            total_score = float(re.search(r"(\d+(\.\d+)?)", total_score_str).group(1))
+        except Exception:
+            total_score = -1.0
+
+        print(f"[Parsed score] {total_score} / 100")
+        if "Suggestions for Improvement" in result:
+            suggesstions = result['Suggestions for Improvement']
+            print(f"[Suggestions] {result['Suggestions for Improvement']}")
+
+        if total_score > SCORE_THRESHOLD:
+            print(f"第一个章节布局评分通过（{total_score}），目录：{save_dir}")
             return {"section_slides_path": save_dir, "layout_description": layout_description}
         else:
-            error_message = "布局检查未通过"
+            error_message = f"评分未达阈值（{total_score} ≤ 60）"
             previous_code = python_code
-            print(f"第一个章节布局检查未通过，尝试重试：{attempt + 1}")
+            print(f"第一个章节布局评分未通过，尝试重试：{attempt + 1}")
 
-    # raise RuntimeError("生成章节封面幻灯片失败，已达到最大尝试次数")
+    # 最终返回（达到最大次数仍未通过）
     return {"section_slides_path": save_dir, "layout_description": layout_description}
 
 
-async def generate_end_slide(state: ReportState, config: RunnableConfig):
-    """生成封底幻灯片，包含布局检查步骤，最多循环3次"""
+
+async def generate_end_slide(state, config):
+    """生成封底幻灯片，包含布局检查步骤，最多循环3次（评分>60通过，否则重试）"""
+    SCORE_THRESHOLD = 75  # 严格“>60”才通过
+
+    def _extract_json_dict(text: str) -> Dict[str, Any]:
+        m = re.search(r"```json\s*(\{.*?\})\s*```", text, flags=re.S)
+        if m:
+            try:
+                return json.loads(m.group(1))
+            except Exception:
+                pass
+        try:
+            return json.loads(text)
+        except Exception:
+            pass
+        m = re.search(r'"Total Score"\s*:\s*"?(?P<num>\d+(\.\d+)?)', text)
+        if m:
+            return {"Total Score": m.group("num")}
+        return {}
+
     topic = state["topic"]
     style = state.get("style", "专业商务")
     main_color = state.get("main_color", "#FFFFFF")
     accent_color = state.get("accent_color", "#000000")
+    background_tone = state.get("background_tone", "Light")
+    heading_font_color = state.get("heading_font_color", "#000000")
+    body_font_color = state.get("body_font_color", "#000000")
+    font_name = state.get("font_name", "Arial")
+    style_summary = state.get("style_summary", "")
+    suggestions = ""
 
-    save_dir = os.path.join(".", "saves", topic)
+    save_dir = os.path.join(".", "saves_test", topic)
+    # os.makedirs(save_dir, exist_ok=True)
     end_path = os.path.join(save_dir, "end_slide.pptx")
     script_path = os.path.join(save_dir, "end_slide.py")
 
     configurable = Configuration.from_runnable_config(config)
     coder_model_kwargs = configurable.coder_model_kwargs or {}
-    coder_model = AzureChatOpenAI(
+    coder_provider = get_config_value(configurable.coder_provider)
+    coder_model_name = get_config_value(configurable.coder_model)
+    coder_model_kwargs = get_config_value(configurable.coder_model_kwargs or {})
+    coder_base_url = get_config_value(configurable.coder_base_url)
+    designer_model_kwargs = configurable.designer_model_kwargs or {}
+    designer_provider = get_config_value(configurable.designer_provider)
+    designer_model_name = get_config_value(configurable.designer_model)
+    designer_base_url = get_config_value(configurable.designer_base_url)
+    planner_model_kwargs = configurable.planner_model_kwargs or {}
+    planner_provider = get_config_value(configurable.planner_provider)
+    planner_model_name = get_config_value(configurable.planner_model)
+    openai_key = os.getenv("OPENAI_API_KEY")
+    if MODE == "openai":
+        coder_model = init_chat_model(model=coder_model_name, model_provider=coder_provider, model_kwargs={})
+        designer_model = init_chat_model(model=designer_model_name, model_provider=designer_provider, model_kwargs={})
+        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+    else:
+
+        coder_model = AzureChatOpenAI(
         model=configurable.coder_model,
         azure_endpoint=coder_model_kwargs["openai_api_base"],
         deployment_name=coder_model_kwargs["azure_deployment"],
         openai_api_version=coder_model_kwargs["openai_api_version"],
-        # temperature=0.3,
-        # max_tokens=4096
-        max_completion_tokens=4096
+        max_completion_tokens=40960,
+        reasoning_effort = coder_model_kwargs["reasoning_effort"]
     )
+
+    # OpenAI官方API兜底
+    try:
+        from langchain_openai import ChatOpenAI
+        openai_model = ChatOpenAI(
+            model=configurable.coder_model,
+            api_key=os.getenv("OPENAI_API_KEY2"),
+            base_url = os.getenv("OPENAI_API_BASE2"),
+            max_tokens=40960,
+        )
+    except Exception:
+        openai_model = None
 
     async def run_script(script_path):
         def run():
@@ -1791,198 +2929,548 @@ async def generate_end_slide(state: ReportState, config: RunnableConfig):
     error_message = ""
     previous_code = ""
 
-    validation_prompt = """
-    你是一位专业的幻灯片设计审查师，请检查幻灯片布局：
-
-    - 文本和图片之间没有遮挡或重叠现象。
-    - 所有内容均位于页面范围内，没有超出页面边界。
-
-    请根据以上规则进行检查，如果不存在以上问题，则返回pass；如果存在以上任一问题，返回retry。
-    """
-
     for attempt in range(3):
         layout_prompt = f"""
-        请为幻灯片封底设计一个布局
-        幻灯片主题: {topic}
-        幻灯片风格: {style}
-        主色: {main_color}
-        辅助色: {accent_color}
+    Please design a layout for the slide's end (closing) page.
+    Slide topic: {topic}
+    Slide style: {style}
+    Primary color: {main_color}
+    Accent color: {accent_color}
+    Background tone: {background_tone}
+    Heading font color: {heading_font_color}
+    Body font color: {body_font_color}
+    Font name: {font_name}
+    Style summary: {style_summary}
 
-        请返回布局描述，包含元素内容、位置、大小及字体信息。
-
-        {f"上一次的错误信息: {error_message}" if error_message else ""}
-        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
+    {suggestions}
+    {f"Previous error message: {error_message}" if error_message else ""}
+    {f"Previously generated code: {previous_code}" if previous_code else ""}
         """
 
-        layout_response = await coder_model.ainvoke([
-            {"role": "system", "content": layout_prompt},
-            {"role": "user", "content": "生成布局描述"}
-        ])
+        try:
+            layout_response = await designer_model.ainvoke([
+                {"role": "system", "content": layout_prompt},
+                {"role": "user", "content": "Generate a layout description"}
+            ])
+            layout_description = layout_response.content.strip()
+        except Exception as e:
+            print(f"[WARN] Azure coder_model layout failed: {e}, fallback to OpenAI API.")
+            if openai_model:
+                try:
+                    layout_response = await openai_model.ainvoke([
+                        {"role": "system", "content": layout_prompt},
+                        {"role": "user", "content": "Generate a layout description"}
+                    ])
+                    layout_description = layout_response.content.strip()
+                except Exception as e2:
+                    error_message = f"Both Azure and OpenAI layout failed: {e2}"
+                    print(f"[ERROR] Both Azure and OpenAI layout failed: {e2}")
+                    continue
+            else:
+                error_message = f"Azure layout failed: {e}, OpenAI API not available."
+                continue
+        
+        if COMP_MODE == "tools":
+            try:
+                # render_design_to_ppt(layout_description, path=end_path)
+                prs = await asyncio.to_thread(
+                    render_design_to_ppt,
+                    layout_description,
+                    end_path,    # 对应参数 path
+                )
+                assert await asyncio.to_thread(os.path.exists, end_path), "PPT file was not created."
+                # goto .convert_end
+                # return {
+                #     "cover_slide_path": cover_path, "cover_layout_description": layout_description, "style_summary": style_summary
+                # }
+            except Exception as e:
+                error_message = f"render_design_to_ppt failed: {e}"
+                continue
+        else:
+            code_generation_prompt = f"""
+    Generate complete Python code using the python-pptx library to create the closing slide based on the following layout description:
 
-        layout_description = layout_response.content.strip()
+    Layout description: {layout_description}
+    {ppt_tools_prompt}
+    Code requirements:
+    1. Import the necessary libraries.
+    2. Create the slide and ensure the widescreen standard aspect ratio: 16:9 (13.33 inches × 7.5 inches).
+    3. Use a rectangle the same size as the page to set the background; do not set slide.background directly.
+    4. All the text should be placed on the top layer.
+    5. Save the file to: {end_path}
 
-        code_generation_prompt = f"""
-        根据以下布局描述生成一个使用python-pptx库制作封底幻灯片的完整Python代码：
+    {f"Previous error message: {error_message}" if error_message else ""}
+    {f"Previously generated code: {previous_code}" if previous_code else ""}
 
-        布局描述：{layout_description}
-
-        代码要求：
-        1. 导入必要库。
-        2. 创建幻灯片并确保采用宽屏标准比例: 16:9（13.33 英寸 × 7.5 英寸）。
-        3. 页面背景采用与页面大小相同的矩形设置，不要直接设置slide.background。
-        4. 保存PPT文件到路径：{end_path}
-
-        {f"上一次的错误信息: {error_message}" if error_message else ""}
-        {f"上一次生成的代码: {previous_code}" if previous_code else ""}
-
-        请根据这些信息提供完整、可执行的Python代码。注意：仅输出python代码，不要输出其他文字。
+    Please provide complete, executable Python code based on this information. Note: output Python code only, do not output any other text.Code will be save in utf-8 encoding.
         """
 
-        code_response = await coder_model.ainvoke([
-            {"role": "system", "content": code_generation_prompt},
-            {"role": "user", "content": "生成Python代码"}
-        ])
+            try:
+                code_response = await coder_model.ainvoke([
+                    {"role": "system", "content": code_generation_prompt},
+                    {"role": "user", "content": "Generate Python code"}
+                ])
+                python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+            except Exception as e:
+                print(f"[WARN] Azure coder_model code failed: {e}, fallback to OpenAI API.")
+                if openai_model:
+                    try:
+                        code_response = await openai_model.ainvoke([
+                            {"role": "system", "content": code_generation_prompt},
+                            {"role": "user", "content": "Generate Python code"}
+                        ])
+                        python_code = code_prefix + code_response.content.replace("```python", "").replace("```", "").strip()
+                    except Exception as e2:
+                        error_message = f"Both Azure and OpenAI code failed: {e2}"
+                        print(f"[ERROR] Both Azure and OpenAI code failed: {e2}")
+                        continue
+                else:
+                    error_message = f"Azure code failed: {e}, OpenAI API not available."
+                    continue
 
-        python_code = code_response.content.replace("```python", "").replace("```", "").strip()
+            await asyncio.to_thread(
+                lambda: open(script_path, "w", encoding="utf-8").write(python_code)
+            )
 
-        await asyncio.to_thread(
-            lambda: open(script_path, "w", encoding="utf-8").write(python_code)
-        )
-
-        returncode, stdout, stderr = await run_script(script_path)
-
-        if returncode != 0:
-            error_message = stderr
-            previous_code = python_code
-            print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
-            continue
-
+            returncode, stdout, stderr = await run_script(script_path)
+            if returncode != 0:
+                error_message = stderr
+                previous_code = python_code
+                print(f"尝试{attempt + 1}失败，错误信息：{stderr}")
+                continue
+        # label .convert_end
         image_path = end_path.replace(".pptx", ".png")
         try:
             await asyncio.to_thread(ppt_to_image, end_path, image_path)
         except Exception as e:
             print(f"幻灯片转图片失败: {e}")
+            error_message = f"幻灯片转图片失败: {e}"
+            previous_code = python_code
             continue
 
-        image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
+        # === 使用新的审查 Prompt 进行评分 ===
+        REVIEW_PROMPT = f"""
+Topic: {topic}
+Slide style: {style}
+Primary color: {main_color}
+Accent color: {accent_color}
+Background tone: {background_tone}
+Heading font color: {heading_font_color}
+Body font color: {body_font_color}
+Font name: {font_name}
+Style summary: {style_summary}
 
-        response = await coder_model.ainvoke([
-            SystemMessage(content=validation_prompt),
-            HumanMessage(content=[{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}}])
+You are a Slide Review Expert. Please evaluate the end slide design based on the following dimensions.
+
+{eval_cover}
+"""
+        image_content = await asyncio.to_thread(lambda: open(image_path, "rb").read())
+        review_response = await planner_model.ainvoke([
+            SystemMessage(content=REVIEW_PROMPT),
+            HumanMessage(content=[{
+                "type": "image_url",
+                "image_url": {"url": f"data:image/png;base64,{base64.b64encode(image_content).decode()}"}
+            }])
         ])
 
-        if response.content.strip() == "pass":
-            print(f"布局检查通过，路径：{end_path}")
+        print(f"[Review raw] {review_response.content}")
+
+        # 解析评分JSON（严格>60通过）
+        def _parse_total_score(payload: str) -> float:
+            d = _extract_json_dict(payload)
+            total_score_str = str(d.get("Total Score", "-1"))
+            try:
+                return float(re.search(r"(\d+(\.\d+)?)", total_score_str).group(1))
+            except Exception:
+                return -1.0
+
+        total_score = _parse_total_score(review_response.content)
+        print(f"[Parsed score] {total_score} / 100")
+        try:
+            if "Suggestions for Improvement" in review_response.content:
+                suggestions = _extract_json_dict(review_response.content).get("Suggestions for Improvement", "")
+                print(f"[Suggestions] {suggestions}")
+        except Exception:
+            pass
+
+        if total_score > SCORE_THRESHOLD:
+            print(f"布局评分通过（{total_score}），路径：{end_path}")
             return {"end_slide_path": end_path, "end_layout_description": layout_description}
         else:
-            error_message = "布局检查未通过"
+            error_message = f"评分未达阈值（{total_score} ≤ 60）"
             previous_code = python_code
-            print(f"布局检查未通过，尝试重试：{attempt + 1}")
+            print(f"布局评分未通过，第 {attempt + 1} 次，准备重试。")
 
-    # raise RuntimeError("生成封底幻灯片失败，已达到最大尝试次数")
     return {"end_slide_path": end_path, "end_layout_description": layout_description}
 
 
-async def compile_ppt(state: ReportState, config: RunnableConfig):
-    """
-    异步方式合并所有生成的pptx文件到一个pptx文件中，包含封面、章节封面和封底。
+import os
+import asyncio
 
-    Args:
-        state: 当前状态，包含所有完成的幻灯片信息。
-
-    Returns:
-        Dict: 更新后的状态，包含最终合并的PPT路径。
+# 仅替换这个函数；其余代码保持不变
+async def compile_ppt(state, config):
     """
+    异步方式合并所有生成的单页 PPTX 为一个 PPTX（保留源格式与复杂元素）。
+    依赖：pip install lxml
+    """
+    import re
+    import posixpath as P
+    from zipfile import ZipFile, ZIP_DEFLATED
+    from lxml import etree as ET
+
     topic = state["topic"]
     ppt_sections = state["ppt_sections"]
 
-    save_dir = os.path.join(".", "saves", topic)
+    save_dir = os.path.join(".", "saves_test", topic)
+    # os.makedirs(save_dir, exist_ok=True)
     final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
 
-    def merge_ppts_sync():
-        final_presentation = Presentation()
-        final_presentation.slide_width = Inches(13.33)
-        final_presentation.slide_height = Inches(7.5)
+    # ----------- 构建待合并的单页文件列表（严格按顺序） -----------
+    paths = ["cover_slide.pptx"]
+    for idx, section in enumerate(ppt_sections):
+        paths.append(f"section_slide_{idx+1}.pptx")
+        paths.extend(
+            [f"{section.name}_slide_{slide_index}.pptx"
+             for slide_index, _ in enumerate(section.slides, start=1)]
+        )
+    paths.append("end_slide.pptx")
 
-        paths = ["cover_slide.pptx"]
-        for idx, section in enumerate(ppt_sections):
-            # 加入章节封面
-            paths.append(f"section_slide_{idx+1}.pptx")
-            # 加入该章节所有幻灯片
-            paths.extend([
-                f"{section.name}_slide_{slide_index}.pptx"
-                for slide_index, _ in enumerate(section.slides, start=1)
-            ])
-        paths.append("end_slide.pptx")
+    input_files = [os.path.join(save_dir, p) for p in paths if os.path.exists(os.path.join(save_dir, p))]
+    if not input_files:
+        raise RuntimeError("未找到任何可合并的单页 PPTX。请确认生成流程是否已产出文件。")
 
-        for ppt_file in paths:
-            ppt_path = os.path.join(save_dir, ppt_file)
-            if not os.path.exists(ppt_path):
-                continue
+    # ------------------ Open XML 深度无损合并实现 ------------------
+    NS_CT = {"ct": "http://schemas.openxmlformats.org/package/2006/content-types"}
+    NS_REL = {"rel": "http://schemas.openxmlformats.org/package/2006/relationships"}
+    NS_P = {
+        "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
+        "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    }
 
-            presentation = Presentation(ppt_path)
-            for slide in presentation.slides:
-                new_slide = final_presentation.slides.add_slide(final_presentation.slide_layouts[6])
-                for shape in slide.shapes:
-                    if shape.shape_type == 13:  # 图片
-                        image_stream = io.BytesIO(shape.image.blob)
-                        new_slide.shapes.add_picture(
-                            image_stream, shape.left, shape.top, shape.width, shape.height
-                        )
-                    else:
-                        new_slide.shapes._spTree.insert_element_before(shape.element, 'p:extLst')
+    FALLBACK_CT = {
+        "ppt/slides": "application/vnd.openxmlformats-officedocument.presentationml.slide+xml",
+        "ppt/slideLayouts": "application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml",
+        "ppt/slideMasters": "application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml",
+        "ppt/theme": "application/vnd.openxmlformats-officedocument.theme+xml",
+        "ppt/charts": "application/vnd.openxmlformats-officedocument.drawingml.chart+xml",
+        "ppt/diagrams/data": "application/vnd.ms-office.drawingml.diagramData+xml",
+        "ppt/diagrams/layout": "application/vnd.ms-office.drawingml.diagramLayout+xml",
+        "ppt/diagrams/styles": "application/vnd.ms-office.drawingml.diagramStyle+xml",
+        "ppt/diagrams/colors": "application/vnd.ms-office.drawingml.diagramColors+xml",
+        "ppt/embeddings/ole": "application/vnd.openxmlformats-officedocument.oleObject",
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".gif": "image/gif",
+        ".bmp": "image/bmp",
+        ".tif": "image/tiff",
+        ".tiff": "image/tiff",
+        ".emf": "image/x-emf",
+        ".wmf": "image/x-wmf",
+        ".svg": "image/svg+xml",
+        ".mp4": "video/mp4",
+        ".mov": "video/quicktime",
+        ".m4a": "audio/mp4",
+        ".mp3": "audio/mpeg",
+        ".wav": "audio/wav",
+        ".bin": "application/vnd.openxmlformats-officedocument.oleObject",
+        ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        ".xml": "application/xml",
+    }
 
-        final_presentation.save(final_ppt_path)
+    def _read_zip_to_dict(path):
+        with ZipFile(path, "r") as zf:
+            return {name: zf.read(name) for name in zf.namelist()}
 
-    await asyncio.to_thread(merge_ppts_sync)
+    def _write_dict_to_zip(files_dict, out_path):
+        with ZipFile(out_path, "w", compression=ZIP_DEFLATED) as zf:
+            for name, data in files_dict.items():
+                zf.writestr(name, data)
 
+    def _parse_xml(byte_content):
+        return ET.fromstring(byte_content)
+
+    def _xml_to_bytes(elem):
+        return ET.tostring(elem, xml_declaration=True, encoding="UTF-8", standalone="yes")
+
+    def _get_ct_tree(files_dict):
+        return _parse_xml(files_dict["[Content_Types].xml"])
+
+    def _ensure_default_ct(ct_tree, ext, ctype):
+        exist = ct_tree.xpath(f'/ct:Types/ct:Default[@Extension="{ext.lstrip(".")}"]', namespaces=NS_CT)
+        if not exist:
+            node = ET.Element("{%s}Default" % NS_CT["ct"])
+            node.set("Extension", ext.lstrip("."))
+            node.set("ContentType", ctype)
+            ct_tree.append(node)
+
+    def _ensure_override_ct(ct_tree, part_name, ctype):
+        part_name = part_name if part_name.startswith("/") else "/" + part_name
+        exist = ct_tree.xpath(f'/ct:Types/ct:Override[@PartName="{part_name}"]', namespaces=NS_CT)
+        if not exist:
+            node = ET.Element("{%s}Override" % NS_CT["ct"])
+            node.set("PartName", part_name)
+            node.set("ContentType", ctype)
+            ct_tree.append(node)
+
+    def _src_content_type(src_ct_tree, part_name):
+        part_name = part_name if part_name.startswith("/") else "/" + part_name
+        ov = src_ct_tree.xpath(f'/ct:Types/ct:Override[@PartName="{part_name}"]', namespaces=NS_CT)
+        if ov:
+            return ov[0].get("ContentType")
+        ext = P.splitext(part_name)[1].lower()
+        if ext:
+            dv = src_ct_tree.xpath(f'/ct:Types/ct:Default[@Extension="{ext.lstrip(".")}"]', namespaces=NS_CT)
+            if dv:
+                return dv[0].get("ContentType")
+            if ext in FALLBACK_CT:
+                return FALLBACK_CT[ext]
+        return None
+
+    def _next_index(existing_names, folder, prefix, suffix=".xml"):
+        pat = re.compile(rf"^{re.escape(folder)}/{re.escape(prefix)}(\d+){re.escape(suffix)}$")
+        m = [int(pat.match(n).group(1)) for n in existing_names if pat.match(n)]
+        return (max(m) + 1) if m else 1
+
+    def _rels_path_for(part_path):
+        dirname = P.dirname(part_path)
+        base = P.basename(part_path)
+        return P.join(dirname, "_rels", base + ".rels")
+
+    class PptxDeepMerger:
+        def __init__(self, inputs, output):
+            self.inputs = inputs
+            self.output = output
+
+            # 以第一个源为基底
+            self.out_files = _read_zip_to_dict(self.inputs[0])
+            self.out_ct = _get_ct_tree(self.out_files)
+            self.out_pres = _parse_xml(self.out_files["ppt/presentation.xml"])
+            self.out_pres_rels = _parse_xml(self.out_files["ppt/_rels/presentation.xml.rels"])
+
+            names = set(self.out_files.keys())
+            self.idx = {
+                "slide": _next_index(names, "ppt/slides", "slide"),
+                "layout": _next_index(names, "ppt/slideLayouts", "slideLayout"),
+                "master": _next_index(names, "ppt/slideMasters", "slideMaster"),
+                "theme": _next_index(names, "ppt/theme", "theme"),
+                "chart": _next_index(names, "ppt/charts", "chart"),
+                "diagram_data": _next_index(names, "ppt/diagrams", "data"),
+                "diagram_layout": _next_index(names, "ppt/diagrams", "layout"),
+                "diagram_styles": _next_index(names, "ppt/diagrams", "quickStyle"),
+                "diagram_colors": _next_index(names, "ppt/diagrams", "colors"),
+                "media": _next_index(names, "ppt/media", "image", suffix=""),
+                "embed": _next_index(names, "ppt/embeddings", "oleObject", suffix=".bin"),
+            }
+
+            self.rid_base = self._max_rid(self.out_pres_rels) + 1
+            self.sld_id_base = self._max_sldid(self.out_pres) + 1
+            self.part_map = {}  # (src_zip_id, src_abs_part) -> tgt_abs_part
+
+        @staticmethod
+        def _max_rid(rels_tree):
+            rid_nums = []
+            for rel in rels_tree.xpath("/rel:Relationships/rel:Relationship", namespaces=NS_REL):
+                rid = rel.get("Id", "")
+                m = re.match(r"rId(\d+)$", rid)
+                if m:
+                    rid_nums.append(int(m.group(1)))
+            return max(rid_nums) if rid_nums else 0
+
+        @staticmethod
+        def _max_sldid(pres_tree):
+            ids = []
+            for sldId in pres_tree.xpath("//p:sldId", namespaces=NS_P):
+                try:
+                    ids.append(int(sldId.get("id")))
+                except Exception:
+                    pass
+            return max(ids) if ids else 255
+
+        def _alloc_path(self, kind, src_path):
+            if kind == "slide":
+                p = f"ppt/slides/slide{self.idx['slide']}.xml"; self.idx["slide"] += 1; return p
+            if kind == "layout":
+                p = f"ppt/slideLayouts/slideLayout{self.idx['layout']}.xml"; self.idx["layout"] += 1; return p
+            if kind == "master":
+                p = f"ppt/slideMasters/slideMaster{self.idx['master']}.xml"; self.idx["master"] += 1; return p
+            if kind == "theme":
+                p = f"ppt/theme/theme{self.idx['theme']}.xml"; self.idx["theme"] += 1; return p
+            if kind == "chart":
+                p = f"ppt/charts/chart{self.idx['chart']}.xml"; self.idx["chart"] += 1; return p
+            if kind == "diagram_data":
+                p = f"ppt/diagrams/data{self.idx['diagram_data']}.xml"; self.idx["diagram_data"] += 1; return p
+            if kind == "diagram_layout":
+                p = f"ppt/diagrams/layout{self.idx['diagram_layout']}.xml"; self.idx["diagram_layout"] += 1; return p
+            if kind == "diagram_styles":
+                p = f"ppt/diagrams/quickStyle{self.idx['diagram_styles']}.xml"; self.idx["diagram_styles"] += 1; return p
+            if kind == "diagram_colors":
+                p = f"ppt/diagrams/colors{self.idx['diagram_colors']}.xml"; self.idx["diagram_colors"] += 1; return p
+            if kind == "media":
+                ext = P.splitext(src_path)[1].lower()
+                p = f"ppt/media/image{self.idx['media']}{ext}"; self.idx["media"] += 1; return p
+            if kind == "embed":
+                p = f"ppt/embeddings/oleObject{self.idx['embed']}.bin"; self.idx["embed"] += 1; return p
+            return src_path  # 兜底
+
+        @staticmethod
+        def _classify(path):
+            if path.startswith("ppt/slides/"): return "slide"
+            if path.startswith("ppt/slideLayouts/"): return "layout"
+            if path.startswith("ppt/slideMasters/"): return "master"
+            if path.startswith("ppt/theme/"): return "theme"
+            if path.startswith("ppt/charts/"): return "chart"
+            if path.startswith("ppt/diagrams/data"): return "diagram_data"
+            if path.startswith("ppt/diagrams/layout"): return "diagram_layout"
+            if path.startswith("ppt/diagrams/quickStyle"): return "diagram_styles"
+            if path.startswith("ppt/diagrams/colors"): return "diagram_colors"
+            if path.startswith("ppt/media/"): return "media"
+            if path.startswith("ppt/embeddings/"): return "embed"
+            return "other"
+
+        def _add_override_from_src(self, tgt_path, src_ct_tree, src_path):
+            ctype = _src_content_type(src_ct_tree, src_path)
+            if ctype is None:
+                kind = self._classify(src_path)
+                if kind in ("slide", "layout", "master", "theme", "chart"):
+                    base_dir = P.dirname(src_path)
+                    if base_dir in FALLBACK_CT:
+                        ctype = FALLBACK_CT[base_dir]
+                if ctype is None:
+                    ext = P.splitext(src_path)[1].lower()
+                    if ext in FALLBACK_CT:
+                        ctype = FALLBACK_CT[ext]
+            if ctype:
+                _ensure_override_ct(self.out_ct, tgt_path, ctype)
+                ext = P.splitext(tgt_path)[1].lower()
+                if ext and ext in FALLBACK_CT:
+                    _ensure_default_ct(self.out_ct, ext, FALLBACK_CT[ext])
+
+        def _copy_part_recursive(self, src_zip_dict, src_ct_tree, src_zip_id, src_abs_part):
+            """
+            递归复制指定部件（以及其 .rels 里指向的部件），返回目标路径。
+            关键修复：在处理依赖之前，先把当前部件预登记到 part_map，打断 slideLayout<->slideMaster 等环。
+           """
+            key = (src_zip_id, src_abs_part)
+            if key in self.part_map:
+                return self.part_map[key]
+
+            # 1) 先分配目标路径，并“预登记”到 part_map —— 这是打断递归环的关键
+            kind = self._classify(src_abs_part)
+            tgt_path = self._alloc_path(kind, src_abs_part)
+            self.part_map[key] = tgt_path  # <-- pre-register to break cycles
+
+            # 2) 写入主体内容 + 内容类型
+            data = src_zip_dict[src_abs_part]
+            self.out_files[tgt_path] = data
+            self._add_override_from_src(tgt_path, src_ct_tree, src_abs_part)
+
+            # 3) 处理 .rels 中的依赖（相对路径 → 绝对路径 → 递归复制 → 新相对路径）
+            src_rels = self._rels_path_for(src_abs_part) if hasattr(self, "_rels_path_for") else None
+            # 兼容：如果 _rels_path_for 是外部函数
+            if src_rels is None:
+                # 外层函数名为 _rels_path_for
+                from posixpath import dirname, basename, join as pjoin
+                def _rels_path_for(part_path):
+                    return pjoin(dirname(part_path), "_rels", basename(part_path) + ".rels")
+                src_rels = _rels_path_for(src_abs_part)
+
+            if src_rels in src_zip_dict:
+                rels_xml = ET.fromstring(src_zip_dict[src_rels])
+                for rel in rels_xml.xpath("/rel:Relationships/rel:Relationship", namespaces=NS_REL):
+                    target = rel.get("Target")
+                    tmode = rel.get("TargetMode", "")
+                    if tmode == "External":
+                        # 外部链接不复制内容，只保留关系
+                        continue
+
+                    src_dir = P.dirname(src_abs_part)
+                    abs_src_target = P.normpath(P.join(src_dir, target))
+                    # 个别包会写成以 '/' 开头的绝对样式，zip 键没有前导斜杠，这里抹掉
+                    if abs_src_target.startswith("/"):
+                        abs_src_target = abs_src_target.lstrip("/")
+
+                    # 某些空引用或 Office 注入的占位可能不存在；直接跳过
+                    if abs_src_target not in src_zip_dict:
+                        continue
+
+                    # 递归复制依赖；由于已预登记，遇到环会直接返回
+                    new_abs_target = self._copy_part_recursive(
+                        src_zip_dict, src_ct_tree, src_zip_id, abs_src_target
+                    )
+
+                    # 回写新的相对路径
+                    tgt_dir = P.dirname(tgt_path)
+                    new_rel_target = P.relpath(new_abs_target, tgt_dir)
+                    rel.set("Target", new_rel_target)
+
+                # 写入更新后的 .rels
+                new_rels_path = self._rels_path_for(tgt_path) if hasattr(self, "_rels_path_for") else _rels_path_for(tgt_path)
+                self.out_files[new_rels_path] = ET.tostring(
+                    rels_xml, xml_declaration=True, encoding="UTF-8", standalone="yes"
+                )
+
+            return tgt_path
+
+        @staticmethod
+        def _first_slide_path_in(src_zip_dict):
+            pres = _parse_xml(src_zip_dict["ppt/presentation.xml"])
+            pres_rels = _parse_xml(src_zip_dict["ppt/_rels/presentation.xml.rels"])
+            sldId = pres.xpath("//p:sldId", namespaces=NS_P)
+            if not sldId:
+                raise RuntimeError("源文件未包含任何幻灯片")
+            rid = sldId[0].get("{%s}id" % NS_P["r"])
+            rel = pres_rels.xpath(f'/rel:Relationships/rel:Relationship[@Id="{rid}"]', namespaces=NS_REL)
+            if not rel:
+                raise RuntimeError("无法在源 rels 中解析到第一张幻灯片")
+            target = rel[0].get("Target")  # 如 slides/slide1.xml
+            return P.normpath(P.join("ppt", target))
+
+        def _append_slide_to_presentation(self, new_slide_path):
+            rid = f"rId{self.rid_base}"; self.rid_base += 1
+            rel_node = ET.Element("{%s}Relationship" % NS_REL["rel"])
+            rel_node.set("Id", rid)
+            rel_node.set("Type", "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide")
+            rel_node.set("Target", P.relpath(new_slide_path, "ppt"))
+            self.out_pres_rels.append(rel_node)
+
+            sldIdLst = self.out_pres.xpath("/p:presentation/p:sldIdLst", namespaces=NS_P)
+            if not sldIdLst:
+                pres = self.out_pres.xpath("/p:presentation", namespaces=NS_P)[0]
+                sldIdLst_elem = ET.Element("{%s}sldIdLst" % NS_P["p"])
+                pres.append(sldIdLst_elem)
+                sldIdLst = [sldIdLst_elem]
+            sld_id_val = str(self.sld_id_base); self.sld_id_base += 1
+            sldId_elem = ET.Element("{%s}sldId" % NS_P["p"])
+            sldId_elem.set("id", sld_id_val)
+            sldId_elem.set("{%s}id" % NS_P["r"], rid)
+            sldIdLst[0].append(sldId_elem)
+
+        def merge(self):
+            # 其余单页逐一追加第一张幻灯片
+            for idx, src in enumerate(self.inputs):
+                if idx == 0:
+                    continue
+                src_zip = _read_zip_to_dict(src)
+                src_ct = _get_ct_tree(src_zip)
+                slide_abs = self._first_slide_path_in(src_zip)
+                new_slide_path = self._copy_part_recursive(src_zip, src_ct, src_zip_id=idx, src_abs_part=slide_abs)
+                self._append_slide_to_presentation(new_slide_path)
+
+            # 写回三处关键XML
+            self.out_files["[Content_Types].xml"] = _xml_to_bytes(self.out_ct)
+            self.out_files["ppt/presentation.xml"] = _xml_to_bytes(self.out_pres)
+            self.out_files["ppt/_rels/presentation.xml.rels"] = _xml_to_bytes(self.out_pres_rels)
+            _write_dict_to_zip(self.out_files, self.output)
+
+    def _merge_sync(out_path, inputs):
+        merger = PptxDeepMerger(inputs, out_path)
+        merger.merge()
+
+    # 放到线程池，避免阻塞事件循环
+    await asyncio.to_thread(_merge_sync, final_ppt_path, input_files)
     return {"final_ppt_path": final_ppt_path}
 
-
-# async def compile_ppt(state: ReportState):
-#     """
-#     异步方式合并所有生成的pptx文件到一个pptx文件中，按照章节和幻灯片顺序合并。
-
-#     Args:
-#         state: 当前状态，包含所有完成的幻灯片信息。
-
-#     Returns:
-#         Dict: 更新后的状态，包含最终合并的PPT路径。
-#     """
-#     topic = state["topic"]
-#     ppt_sections = state["ppt_sections"]
-
-#     save_dir = os.path.join(".", "saves", topic)
-#     final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
-
-#     def merge_ppts_sync():
-#         final_presentation = Presentation()
-#         final_presentation.slide_width = Inches(20)
-#         final_presentation.slide_height = Inches(11.25)
-
-#         for section in ppt_sections:
-#             for slide_index, _ in enumerate(section.slides, start=1):
-#                 ppt_path = os.path.join(save_dir, f"{section.name}_slide_{slide_index}.pptx")
-#                 if not os.path.exists(ppt_path):
-#                     continue
-
-#                 with open(ppt_path, "rb") as ppt_file:
-#                     ppt_content = ppt_file.read()
-
-#                 presentation = Presentation(io.BytesIO(ppt_content))
-
-#                 for slide in presentation.slides:
-#                     slide_layout = final_presentation.slide_layouts[5]
-#                     new_slide = final_presentation.slides.add_slide(slide_layout)
-#                     for shape in slide.shapes:
-#                         new_slide.shapes._spTree.insert_element_before(shape.element, 'p:extLst')
-
-#         final_presentation.save(final_ppt_path)
-
-#     # 使用异步方式执行同步函数
-#     await asyncio.to_thread(merge_ppts_sync)
-
-#     return {"final_ppt_path": final_ppt_path}
 
 
 
@@ -2027,6 +3515,7 @@ section_builder.add_node("write_section", write_section)
 section_builder.add_edge(START, "generate_queries")
 section_builder.add_edge("generate_queries", "search_web")
 section_builder.add_edge("search_web", "write_section")
+# section_builder.add_edge("write_section", END)
 
 # Outer graph for initial report plan compiling results from each section -- 
 
@@ -2040,6 +3529,8 @@ builder.add_node("gather_completed_sections", gather_completed_sections)
 builder.add_node("write_final_sections", write_final_sections)
 builder.add_node("compile_final_report", compile_final_report)
 builder.add_node("generate_ppt_outline", generate_ppt_outline)
+builder.add_node("generate_ppt_styles", generate_ppt_styles)
+builder.add_node("manage_ppt_templates", manage_ppt_templates)
 builder.add_node("generate_ppt_sections", ppt_section_subgraph)
 builder.add_node("generate_cover_slide", generate_cover_slide)
 builder.add_node("generate_section_cover_slides", generate_section_cover_slides)
@@ -2055,12 +3546,14 @@ builder.add_conditional_edges("gather_completed_sections", initiate_final_sectio
 builder.add_edge("write_final_sections", "compile_final_report")
 # builder.add_edge("compile_final_report", END)
 builder.add_edge("compile_final_report", "generate_ppt_outline")
-# builder.add_edge("generate_ppt_outline", "generate_ppt_sections")
-# builder.add_edge("generate_ppt_sections", "compile_ppt")
-builder.add_edge("generate_ppt_sections", "generate_cover_slide")
+builder.add_edge("generate_ppt_outline", "generate_ppt_styles")
+builder.add_edge("generate_ppt_styles", "generate_cover_slide")
 builder.add_edge("generate_cover_slide", "generate_section_cover_slides")
 builder.add_edge("generate_section_cover_slides", "generate_end_slide")
-builder.add_edge("generate_end_slide", "compile_ppt")
+builder.add_edge("generate_end_slide", "manage_ppt_templates")
+# builder.add_edge("generate_ppt_outline", "generate_ppt_sections")
+# builder.add_edge("generate_ppt_sections", "compile_ppt")
+builder.add_edge("generate_ppt_sections", "compile_ppt")
 builder.add_edge("compile_ppt", END)
 
 graph = builder.compile()
