@@ -76,7 +76,7 @@ class Configuration:
     }
     openai_key: str = os.environ.get("OPENAI_API_KEY", "")
     coder_provider: str = "openai" # Defaults to Anthropic as provider
-    coder_model: str = "anthropic/claude-haiku-4.5" # Defaults to claude-3-5-sonnet-latest
+    coder_model: str = "anthropic/claude-sonnet-4.5" # Defaults to claude-3-5-sonnet-latest
     coder_base_url: str = os.environ.get("CODER_API_BASE", None)
     # coder_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for coder_model
     coder_model_kwargs = {
@@ -86,7 +86,7 @@ class Configuration:
         "reasoning_effort":"medium"
     }
     designer_provider: str = "openai" # Defaults to Anthropic as provider
-    designer_model: str = "anthropic/claude-haiku-4.5" # Defaults to claude-3-5-sonnet-latest
+    designer_model: str = "anthropic/claude-sonnet-4.5" # Defaults to claude-3-5-sonnet-latest
     designer_base_url: str = os.environ.get("DESIGNER_API_BASE", None)
     # designer_model_kwargs: Optional[Dict[str, Any]] = None # kwargs for designer_model
     designer_model_kwargs = {

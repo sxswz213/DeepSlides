@@ -45,7 +45,7 @@ async def run_one(row: dict):
         print(f"❌  [{row.get('Topic')}] 执行失败: {e}")
         traceback.print_exc()
 
-async def main(csv_path="data/unused_topics_with_pdf.csv", start=0, max_rows=100):
+async def main(csv_path="data/unused_topics_with_pdf.csv", start=0, max_rows=15):
     with open(csv_path, newline='', encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
@@ -56,7 +56,7 @@ async def main(csv_path="data/unused_topics_with_pdf.csv", start=0, max_rows=100
     print(f"👉 本次 CSV 共 {total} 条记录，将依次生成报告 …")
     # ★ 2. 在 for 循环外包一层 tqdm
     for row in tqdm(rows, desc="生成报告进度"):
-        out_dir = pathlib.Path("saves_test") / "outlines" / row["Topic"]
+        out_dir = pathlib.Path("saves_sonnet") / "outlines" / row["Topic"]
         if out_dir.exists():
             print(f"⚠️  [{row['Topic']}] 已存在目录，跳过。")
             continue

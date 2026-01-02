@@ -728,7 +728,7 @@ async def compile_final_report(state: ReportState):
     # Compile final report
     all_sections = "\n\n".join([s.content for s in sections])
 
-    save_dir = os.path.join(".", "saves_test", topic)
+    save_dir = os.path.join(".", "saves_sonnet", topic)
     await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
     outline_path = os.path.join(save_dir, "final_report.md")
 
@@ -953,7 +953,7 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig):
 
     ppt_sections = [PPTSection(**section) for section in ppt_sections_data]
     ppt_outline = PPTOutline(ppt_sections=PPTSections(sections=ppt_sections))
-    save_dir = os.path.join(".", "saves_test", "outlines", topic)
+    save_dir = os.path.join(".", "saves_sonnet", "outlines", topic)
     await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
     outline_path = os.path.join(save_dir, "ppt_outline.json")
 
@@ -1164,7 +1164,7 @@ async def save_image_from_url(image_url, image_name, topic, ppt_section_name, sl
 
             # 异步创建目录（避免阻塞）
             save_dir = os.path.join(
-                ".", "saves_test", topic, "images", ppt_section_name, f"slide_{slide_index+1}"
+                ".", "saves_sonnet", topic, "images", ppt_section_name, f"slide_{slide_index+1}"
             )
             await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
 
@@ -1425,7 +1425,7 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     # enriched_points = json.loads(enrichment_response.content.replace("```json", "").replace("```", "").strip())["enriched_points"]
     enriched_points = enrichment_response.content
 
-    save_dir = os.path.join(".", "saves_test", "outlines", topic)
+    save_dir = os.path.join(".", "saves_sonnet", "outlines", topic)
     await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
     safe_section_name = ppt_section.name.replace(" ", "_")
     file_path = os.path.join(save_dir, f"{safe_section_name}_slide{slide_index+1}.json")
@@ -1664,7 +1664,7 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
     slide_points = ppt_section.slides[slide_index].points
 
     # ✅ 使用 Path，避免 abspath/cwd；真正需要绝对路径时放到线程里 resolve
-    save_dir = Path("saves_test") / topic
+    save_dir = Path("saves_sonnet") / topic
     await asyncio.to_thread(save_dir.mkdir, parents=True, exist_ok=True)
 
     error_message = ""
@@ -2202,7 +2202,7 @@ async def generate_cover_slide(state, config):
     body_font_color = state.get("body_font_color", "#000000")
     font_name = state.get("font_name", "Arial")
 
-    save_dir = os.path.join(".", "saves_test", topic)
+    save_dir = os.path.join(".", "saves_sonnet", topic)
     cover_path = os.path.join(save_dir, "cover_slide.pptx")
     script_path = os.path.join(save_dir, "cover_slide.py")
 
@@ -2558,7 +2558,7 @@ async def generate_section_cover_slides(state, config):
     style_summary = state.get("style_summary", "")
     suggesstions = ""
 
-    save_dir = os.path.join(".", "saves_test", topic)
+    save_dir = os.path.join(".", "saves_sonnet", topic)
     # os.makedirs(save_dir, exist_ok=True)
     script_path = os.path.join(save_dir, "section_cover_slide.py")
 
@@ -2864,7 +2864,7 @@ async def generate_end_slide(state, config):
     style_summary = state.get("style_summary", "")
     suggestions = ""
 
-    save_dir = os.path.join(".", "saves_test", topic)
+    save_dir = os.path.join(".", "saves_sonnet", topic)
     # os.makedirs(save_dir, exist_ok=True)
     end_path = os.path.join(save_dir, "end_slide.pptx")
     script_path = os.path.join(save_dir, "end_slide.py")
@@ -3121,7 +3121,7 @@ async def compile_ppt(state, config):
     topic = state["topic"]
     ppt_sections = state["ppt_sections"]
 
-    save_dir = os.path.join(".", "saves_test", topic)
+    save_dir = os.path.join(".", "saves_sonnet", topic)
     # os.makedirs(save_dir, exist_ok=True)
     final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
 
