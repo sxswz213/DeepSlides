@@ -1,0 +1,172 @@
+{
+  "recommended_slides": 10,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 2,
+    "Conflict": 2,
+    "Resolution": 2,
+    "Outcome": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Decolonization",
+          "points": [
+            "Definition of decolonization",
+            "Importance in world histories",
+            "Focus on marginalized voices",
+            "Impact on global narratives",
+            "Re-evaluating historical perspectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Examine historical context",
+            "Analyze impact on global politics",
+            "Highlight case studies",
+            "Discuss narrative sovereignty",
+            "Promote inclusive education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Historical Context of Decolonization",
+          "points": [
+            "Post-WWII global landscape",
+            "Weakening of European powers",
+            "Rise of nationalist movements",
+            "Key events: Dien Bien Phu, Suez Crisis",
+            "Emergence of independent nation-states"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Political Dynamics",
+          "points": [
+            "New nations and international relations",
+            "Ethnic conflicts and border disputes",
+            "Economic disparities between Global North and South",
+            "Role of the United Nations",
+            "Shifts in power dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges of Decolonization",
+          "points": [
+            "Colonial legacies in contemporary society",
+            "Ongoing economic and political tensions",
+            "Struggles for identity and representation",
+            "Impact of Cold War politics",
+            "Resistance to narrative change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Marginalized Voices in History",
+          "points": [
+            "Eurocentric historical narratives",
+            "Importance of Indigenous perspectives",
+            "Consequences of sidelining diverse experiences",
+            "Need for narrative sovereignty",
+            "Fostering social justice through education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Strategies for Decolonization",
+          "points": [
+            "Promoting inclusive historical narratives",
+            "Engaging with Indigenous communities",
+            "Advocating for equitable representation",
+            "Implementing decolonized education frameworks",
+            "Encouraging critical thinking in historical discourse"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Decolonization",
+          "points": [
+            "India: Nonviolent resistance and partition",
+            "Algeria: Guerrilla warfare and independence",
+            "Ghana: Peaceful transition and challenges",
+            "Comparative analysis of strategies",
+            "Lessons learned from diverse outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Impact of Decolonization",
+          "points": [
+            "Reshaping global politics",
+            "Emergence of new identities",
+            "Complexities of post-colonial relationships",
+            "Continued advocacy for narrative sovereignty",
+            "Importance of recognizing colonial legacies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Continuing the dialogue on decolonization",
+            "Importance of inclusive education",
+            "Advocating for marginalized voices",
+            "Building equitable global relationships",
+            "Paving the way for a more just future"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

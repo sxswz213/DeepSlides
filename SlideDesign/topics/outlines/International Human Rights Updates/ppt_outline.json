@@ -1,0 +1,285 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction to International Human Rights": 2,
+    "Historical Context (Past)": 5,
+    "Key Developments (Present)": 7,
+    "Emerging Trends and Future Outlook": 5,
+    "Call to Action and Engagement": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction to International Human Rights",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Human Rights",
+          "points": [
+            "Definition of human rights",
+            "Importance of human rights",
+            "Global implications of violations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of Human Rights",
+          "points": [
+            "Overview of global violations",
+            "Focus on key regions",
+            "Role of international bodies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Historical Context (Past)",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Evolution of Human Rights",
+          "points": [
+            "Historical milestones",
+            "Key documents (UDHR, ICCPR)",
+            "Impact of historical events"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Major Human Rights Violations in History",
+          "points": [
+            "Genocides",
+            "Apartheid",
+            "Civil rights movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Formation of International Bodies",
+          "points": [
+            "UN establishment",
+            "Role of NGOs",
+            "International treaties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Past Violations",
+          "points": [
+            "Holocaust",
+            "Rwandan Genocide",
+            "Bosnian War"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from History",
+          "points": [
+            "Importance of accountability",
+            "Need for international cooperation",
+            "Role of education in prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Developments (Present)",
+      "allocated_slides": 7,
+      "slides": [
+        {
+          "title": "Current Violations in Ukraine",
+          "points": [
+            "Ongoing conflict",
+            "War crimes reported",
+            "Impact on civilians",
+            "International response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Human Rights Crisis in Ethiopia",
+          "points": [
+            "Tigray conflict overview",
+            "Ethnic cleansing allegations",
+            "International advocacy efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Suppression of Dissent in China",
+          "points": [
+            "Uyghur situation",
+            "Freedom of expression issues",
+            "Global reactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Responses from International Bodies",
+          "points": [
+            "UN investigations",
+            "Amnesty International's role",
+            "Sanctions and resolutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Trends in Advocacy",
+          "points": [
+            "Digital activism",
+            "Youth-led movements",
+            "Coalitions for accountability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Human Rights Advocacy",
+          "points": [
+            "Political will inconsistencies",
+            "Misinformation spread",
+            "Surveillance issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Success Stories in Advocacy",
+          "points": [
+            "Effective campaigns",
+            "Legislative changes",
+            "Community mobilization examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Emerging Trends and Future Outlook",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "The Role of Technology in Advocacy",
+          "points": [
+            "Social media impact",
+            "Digital tools for mobilization",
+            "Risks of misinformation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Youth Engagement in Human Rights",
+          "points": [
+            "Rise of youth movements",
+            "Importance of education",
+            "Global youth initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Challenges for Human Rights",
+          "points": [
+            "Authoritarianism resurgence",
+            "Climate change impacts",
+            "Global inequality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Advocacy Strategies",
+          "points": [
+            "Tech accountability coalitions",
+            "Collaborative platforms",
+            "Grassroots movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for the Future",
+          "points": [
+            "Strengthening international cooperation",
+            "Empowering local communities",
+            "Sustaining advocacy efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Call to Action and Engagement",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "How to Get Involved",
+          "points": [
+            "Support human rights organizations",
+            "Participate in advocacy campaigns",
+            "Educate others on human rights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Engaging with Policymakers",
+          "points": [
+            "Importance of lobbying",
+            "Building relationships with officials",
+            "Using data to support arguments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Creating a Culture of Human Rights",
+          "points": [
+            "Promoting awareness in communities",
+            "Encouraging dialogue",
+            "Fostering inclusivity and respect"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

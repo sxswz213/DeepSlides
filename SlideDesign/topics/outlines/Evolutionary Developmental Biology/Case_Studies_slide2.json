@@ -1,0 +1,25 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: Gene Duplication and Evolutionary Innovations in Hemoglobin ... ---\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5005275/\n\nSUMMARY:\nThe diversification of the vertebrate globin gene family provides an excellent example of the role of gene duplication in promoting evolutionary innovation. In\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: Review Gene duplication, genome duplication, and the functional ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S1055790312002709\n\nSUMMARY:\nThe vertebrate globin gene repertoire diversified via repeated rounds of gene duplication and divergence.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Evolution of Duplicated β-Globin Genes and the Structural Basis of ... ---\nURL: https://academic.oup.com/mbe/article/26/11/2521/1013415\n\nSUMMARY:\nIn some cases, identical gene duplicates may be retained in the genome because selection favors the production of increased quantities of the encoded RNA or\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: Gene duplication, genome duplication, and the functional ... ---\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC4306229/\n\nSUMMARY:\nIn the Hb gene lineage, a subsequent tandem gene duplication gave rise to the proto α- and β-globin genes, which permitted the formation of multimeric Hbs\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Rapid Rates of Lineage-Specific Gene Duplication and Deletion in ... ---\nURL: https://academic.oup.com/mbe/article/25/3/591/1061328\n\nSUMMARY:\nHere we report a comparative genomic analysis of the α-globin gene family in mammals that reveal a surprisingly high rate of lineage-specific gene duplication\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://image.slidesharecdn.com/genomeevolution-100917044938-phpapp02/95/genome-evolution-13-728.jpg?cb=1284699074\nDESCRIPTION: The image illustrates the evolutionary history of human globin genes, showing gene duplication events, mutations, and transpositions leading to the formation of alpha- and beta-globin gene families on chromosomes 16 and 11.\n\nIMAGE 2:\nURL: https://slideplayer.com/slide/17242241/99/images/69/Duplication+of+ancestral+gene.jpg\nDESCRIPTION: None\n\nIMAGE 3:\nURL: https://bio1152.nicerweb.com/Locked/media/ch21/21_13GeneFamilyEvolution-L.jpg\nDESCRIPTION: A phylogenetic tree illustrating gene duplication events in the evolution of globin genes, showing branches for α-globin and β-globin gene families and their respective duplication history.\n\nIMAGE 4:\nURL: https://image.slidesharecdn.com/eukaryoticgeneregulation-100215130808-phpapp01/95/eukaryotic-gene-regulation-11-728.jpg?cb=1266239313\nDESCRIPTION: The diagram illustrates the evolutionary timeline of the globin gene family, showing gene duplication events, mutations, and transpositions leading to the divergence of alpha and beta-globin genes on different chromosomes, with an inset depicting the structure of hemoglobin consisting of alpha and beta subunits.\n\nIMAGE 5:\nURL: https://slideplayer.com/slide/13787588/85/images/76/LE+Evolutionary+time+Ancestral+globin+gene+Duplication+of.jpg\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Gene Duplication Events",
+      "expanded_content": "The vertebrate globin gene family evolved through multiple gene duplication events, leading to an increase in gene copies and functional diversification, enhancing oxygen transport capabilities."
+    },
+    {
+      "point_title": "Myoglobin vs. Hemoglobin",
+      "expanded_content": "Myoglobin and hemoglobin serve distinct roles; myoglobin stores oxygen in muscles, while hemoglobin transports oxygen in the blood, showcasing evolutionary specialization from common ancestral genes."
+    },
+    {
+      "point_title": "Adaptation to Environments",
+      "expanded_content": "Globin gene variations reflect adaptations to different environmental oxygen levels, enabling species survival in diverse habitats, such as high-altitude or deep-sea environments."
+    },
+    {
+      "point_title": "Phylogenetic Analysis",
+      "expanded_content": "Phylogenetic studies reveal the evolutionary relationships among globin genes, illustrating how lineage-specific duplications shaped the diversity of globin proteins across vertebrate species."
+    },
+    {
+      "point_title": "Genetic Mechanisms",
+      "expanded_content": "The evolution of globin genes involves complex genetic mechanisms, including tandem duplications, mutations, and regulatory changes that enhance functional diversity and adaptability."
+    }
+  ]
+}

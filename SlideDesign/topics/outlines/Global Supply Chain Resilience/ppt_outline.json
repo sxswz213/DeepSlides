@@ -1,0 +1,328 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 5,
+    "Conflict": 5,
+    "Resolution": 5,
+    "Outcome": 4
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Global Supply Chain Resilience",
+          "points": [
+            "Definition of supply chain resilience",
+            "Importance in today's market",
+            "Key components of resilience",
+            "Operational continuity",
+            "Competitive advantage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape of Supply Chains",
+          "points": [
+            "Interconnectedness of global supply chains",
+            "Impact of recent disruptions",
+            "Need for resilience",
+            "Examples of disruptions",
+            "Future outlook"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore challenges to resilience",
+            "Discuss strategies for enhancement",
+            "Present real-world case studies",
+            "Highlight key insights",
+            "Encourage proactive approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Geopolitical Tensions",
+          "points": [
+            "Ongoing conflicts affecting supply chains",
+            "Impact of trade wars",
+            "Risks of tail dependency",
+            "Examples of affected industries",
+            "Need for strategic sourcing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Volatility",
+          "points": [
+            "Rising tariffs and trade barriers",
+            "Impact on profit margins",
+            "Fragmented regulatory environment",
+            "Challenges for multinational companies",
+            "Adaptation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Operational Disruptions",
+          "points": [
+            "Climate-related events",
+            "Logistical challenges",
+            "Frequency of disruptions",
+            "Need for scenario modeling",
+            "Diversified sourcing strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visibility and Transparency Issues",
+          "points": [
+            "Lack of visibility beyond immediate suppliers",
+            "Challenges in communication",
+            "Importance of data sharing",
+            "Building trust among stakeholders",
+            "Enhancing overall performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Need for Resilience",
+          "points": [
+            "Understanding the risks",
+            "Importance of proactive measures",
+            "Long-term sustainability",
+            "Competitive edge in the market",
+            "Call to action for organizations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Challenges in Building Resilience",
+          "points": [
+            "Identifying vulnerabilities",
+            "Resource allocation issues",
+            "Resistance to change",
+            "Balancing cost and resilience",
+            "Need for cultural shift"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Disruptions on Operations",
+          "points": [
+            "Production delays",
+            "Increased costs",
+            "Customer dissatisfaction",
+            "Loss of market share",
+            "Long-term implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Complexity of Global Supply Chains",
+          "points": [
+            "Multiple stakeholders involved",
+            "Diverse regulatory environments",
+            "Cultural differences",
+            "Technological disparities",
+            "Coordination challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Risk Management Shortcomings",
+          "points": [
+            "Inadequate risk assessments",
+            "Lack of contingency planning",
+            "Failure to adapt to new risks",
+            "Over-reliance on single suppliers",
+            "Need for comprehensive frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Urgency for Change",
+          "points": [
+            "Rising frequency of disruptions",
+            "Changing market dynamics",
+            "Need for innovation",
+            "Pressure from stakeholders",
+            "Importance of strategic foresight"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Strategies for Enhancing Resilience",
+          "points": [
+            "Diversification of suppliers",
+            "Adoption of advanced technologies",
+            "Robust risk management practices",
+            "Agile operations",
+            "Transparent communication"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technology Integration",
+          "points": [
+            "Use of AI and IoT",
+            "Real-time monitoring",
+            "Predictive analytics",
+            "Blockchain for transparency",
+            "Collaboration tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Building Strong Supplier Relationships",
+          "points": [
+            "Fostering trust and collaboration",
+            "Joint problem-solving efforts",
+            "Long-term partnerships",
+            "Shared goals and values",
+            "Improving efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comprehensive Risk Management",
+          "points": [
+            "Establishing governance frameworks",
+            "Regular risk assessments",
+            "Developing contingency plans",
+            "Scenario modeling",
+            "Continuous improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Success",
+          "points": [
+            "JD.com during COVID-19",
+            "Patagonia's sustainable practices",
+            "Walmart's supplier collaboration",
+            "Lessons learned",
+            "Best practices for resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Insights on Resilience",
+          "points": [
+            "Definition and importance",
+            "Challenges faced",
+            "Effective strategies",
+            "Real-world examples",
+            "Future considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Path Forward",
+          "points": [
+            "Prioritizing resilience",
+            "Implementing strategic flexibility",
+            "Embracing technology",
+            "Fostering collaboration",
+            "Continuous adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Summary of key points",
+            "Importance of proactive measures",
+            "Call to action for organizations",
+            "Encouragement for resilience-building",
+            "Final thoughts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Q&A Session",
+          "points": [
+            "Open floor for questions",
+            "Encourage discussion",
+            "Clarify any doubts",
+            "Engage with audience",
+            "Thank participants"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

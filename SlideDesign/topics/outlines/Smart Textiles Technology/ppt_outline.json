@@ -1,0 +1,299 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Technology Overview": 4,
+    "Applications": 4,
+    "Benefits and Challenges": 3,
+    "Future Trends": 3,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Smart Textiles?",
+          "points": [
+            "Definition of smart textiles",
+            "Fusion of fabric and technology",
+            "Importance in modern advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Smart Textiles",
+          "points": [
+            "Sensing and responding capabilities",
+            "Applications in various industries",
+            "Potential for user experience enhancement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore types of smart textiles",
+            "Discuss technological components",
+            "Highlight future trends and applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Types of Smart Textiles",
+          "points": [
+            "Passive smart textiles",
+            "Active smart textiles",
+            "Comparison of functionalities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Smart Textiles",
+          "points": [
+            "Sensors",
+            "Actuators",
+            "Power sources",
+            "Processing units"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Overview",
+          "points": [
+            "Current market trends",
+            "Growth projections",
+            "Consumer demand for smart textiles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Technology Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Passive Smart Textiles",
+          "points": [
+            "Sensing capabilities",
+            "Applications in activewear",
+            "Features like UV protection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Active Smart Textiles",
+          "points": [
+            "Interactivity with environment",
+            "Examples of temperature regulation",
+            "Color-changing fabrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Integration",
+          "points": [
+            "IoT capabilities",
+            "Miniaturization of electronics",
+            "Advancements in materials science"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Components in Action",
+          "points": [
+            "How sensors monitor conditions",
+            "Role of actuators in response",
+            "Energy sources for functionality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Healthcare Applications",
+          "points": [
+            "Patient monitoring",
+            "Wearable health sensors",
+            "Real-time data collection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sports and Fitness",
+          "points": [
+            "Performance tracking",
+            "Physiological response monitoring",
+            "Comfort during activities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Automotive Industry",
+          "points": [
+            "Temperature-adjusting seat covers",
+            "Humidity control in interiors",
+            "Enhanced passenger comfort"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fashion Innovations",
+          "points": [
+            "Interactive clothing",
+            "User preference-based designs",
+            "Environmental response features"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Benefits and Challenges",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Benefits of Smart Textiles",
+          "points": [
+            "Enhanced functionality",
+            "Improved user experience",
+            "Versatility across industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Adoption",
+          "points": [
+            "Cost of production",
+            "Consumer awareness",
+            "Integration with existing systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory and Safety Concerns",
+          "points": [
+            "Standards for smart textiles",
+            "Safety of embedded technologies",
+            "Data privacy issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Market Growth Projections",
+          "points": [
+            "Expected market size by 2034",
+            "CAGR estimates",
+            "Driving factors for growth"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations on the Horizon",
+          "points": [
+            "Self-cleaning textiles",
+            "Real-time monitoring advancements",
+            "Hybrid smart fabrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration Opportunities",
+          "points": [
+            "Cross-industry partnerships",
+            "Research and development initiatives",
+            "Consumer-driven innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Types of smart textiles",
+            "Diverse applications",
+            "Future growth potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of embracing innovations",
+            "Impact on user experience",
+            "Call to action for industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

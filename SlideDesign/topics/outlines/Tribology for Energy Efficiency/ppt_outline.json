@@ -1,0 +1,309 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Tribology": 3,
+    "Importance of Energy Efficiency": 2,
+    "Methodology": 4,
+    "Experimental Setup": 3,
+    "Results and Discussion": 4,
+    "Case Studies": 2,
+    "Future Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Tribology",
+          "points": [
+            "Definition of tribology",
+            "Importance in mechanical systems",
+            "Focus on energy efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Energy Challenges",
+          "points": [
+            "Rising energy demands",
+            "Impact of friction on energy loss",
+            "Need for sustainable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore tribology's role",
+            "Highlight applications in industries",
+            "Discuss innovations and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Tribology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "History of Tribology",
+          "points": [
+            "Ancient applications",
+            "Evolution of the field",
+            "Modern tribological principles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts in Tribology",
+          "points": [
+            "Friction",
+            "Wear",
+            "Lubrication",
+            "Surface interactions",
+            "Material properties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tribology and Energy Efficiency",
+          "points": [
+            "Energy losses due to friction",
+            "Importance in various sectors",
+            "Role in sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Importance of Energy Efficiency",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Energy Losses in Mechanical Systems",
+          "points": [
+            "Friction accounts for 25% of energy loss",
+            "Impact on global energy consumption",
+            "Significance in transportation and manufacturing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Improving Energy Efficiency",
+          "points": [
+            "Cost savings",
+            "Reduced emissions",
+            "Enhanced performance",
+            "Sustainability goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Data collection methods",
+            "Analysis techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Identifying Key Areas of Study",
+          "points": [
+            "Transportation",
+            "Energy production",
+            "Manufacturing",
+            "Material innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Framework",
+          "points": [
+            "Quantitative analysis",
+            "Qualitative insights",
+            "Comparative studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Scope of research",
+            "Data availability",
+            "Potential biases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Experimental Setup",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Tribological Testing Methods",
+          "points": [
+            "Friction tests",
+            "Wear tests",
+            "Lubrication assessments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Materials Used in Experiments",
+          "points": [
+            "Conventional lubricants",
+            "MXene-based nanomaterials",
+            "Low-friction coatings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Setup Configuration",
+          "points": [
+            "Equipment used",
+            "Testing conditions",
+            "Measurement techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from Experiments",
+          "points": [
+            "Reduction in friction coefficients",
+            "Wear rate comparisons",
+            "Performance of new materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Energy Efficiency",
+          "points": [
+            "Energy savings in transportation",
+            "Efficiency improvements in wind turbines",
+            "Manufacturing energy reductions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies Overview",
+          "points": [
+            "Transportation sector",
+            "Energy production",
+            "Manufacturing examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Discussion of Results",
+          "points": [
+            "Implications for industry",
+            "Challenges faced",
+            "Future research opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Transportation Sector Case Study",
+          "points": [
+            "Fuel efficiency improvements",
+            "Innovations in bearing design",
+            "Global impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Energy Production Case Study",
+          "points": [
+            "Wind turbine efficiency enhancements",
+            "Reduction in CO2 emissions",
+            "Sustainability benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Advancements in Tribology",
+          "points": [
+            "Focus on nanomaterials",
+            "Integration of AI in tribological research",
+            "Collaboration across industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

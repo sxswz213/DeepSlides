@@ -1,0 +1,421 @@
+Code,Minor Category,Topic
+1.01,Mathematics,Algebraic Topology Breakthroughs
+1.01,Mathematics,Stochastic Models in Finance
+1.01,Mathematics,Graph Theory for Social Networks
+1.01,Mathematics,Numerical Methods for PDEs
+1.01,Mathematics,Optimization in Machine Learning
+1.01,Mathematics,Mathematical Cryptography Trends
+1.01,Mathematics,Fractal Geometry Applications
+1.01,Mathematics,Mathematics of Climate Modeling
+1.01,Mathematics,Combinatorial Designs in Coding
+1.01,Mathematics,Quantum Computing Algorithms
+1.02,Computer and Information Sciences,Edge AI Architecture Design
+1.02,Computer and Information Sciences,Blockchain Security Protocols
+1.02,Computer and Information Sciences,Quantum Machine Learning
+1.02,Computer and Information Sciences,Big Data Stream Processing
+1.02,Computer and Information Sciences,Natural Language Understanding
+1.02,Computer and Information Sciences,Explainable AI Frameworks
+1.02,Computer and Information Sciences,Autonomous Systems Software
+1.02,Computer and Information Sciences,Cloud-Native Microservices
+1.02,Computer and Information Sciences,Cyber-Physical System Safety
+1.02,Computer and Information Sciences,Computing Ethics & Governance
+1.03,Physical Sciences,Dark Matter Detection Methods
+1.03,Physical Sciences,Topological Insulators Research
+1.03,Physical Sciences,Gravitational Wave Astronomy
+1.03,Physical Sciences,Plasma Physics in Fusion Reactors
+1.03,Physical Sciences,Photonics for Quantum Networks
+1.03,Physical Sciences,High-Energy Particle Colliders
+1.03,Physical Sciences,Condensed-Matter Superconductivity
+1.03,Physical Sciences,Neutrino Oscillation Experiments
+1.03,Physical Sciences,Astrophysical Fluid Dynamics
+1.03,Physical Sciences,Precision Metrology Advances
+1.04,Chemical Sciences,Green Catalysis for CO₂ Reduction
+1.04,Chemical Sciences,Organic Electronics Materials
+1.04,Chemical Sciences,Single-Atom Catalysts Study
+1.04,Chemical Sciences,Polymer Upcycling Techniques
+1.04,Chemical Sciences,Computational Drug Design
+1.04,Chemical Sciences,Photochemistry in Solar Fuels
+1.04,Chemical Sciences,Nanoporous Materials Synthesis
+1.04,Chemical Sciences,Chiral Chemistry Applications
+1.04,Chemical Sciences,Electrochemical Energy Storage
+1.04,Chemical Sciences,In-situ Spectroscopy Methods
+1.05,Earth and Related Environmental Sciences,Climate Change Attribution Science
+1.05,Earth and Related Environmental Sciences,Earthquake Early Warning Systems
+1.05,Earth and Related Environmental Sciences,Permafrost Carbon Feedbacks
+1.05,Earth and Related Environmental Sciences,Ocean Acidification Monitoring
+1.05,Earth and Related Environmental Sciences,Satellite Remote Sensing Advances
+1.05,Earth and Related Environmental Sciences,Urban Air Quality Modeling
+1.05,Earth and Related Environmental Sciences,Geo-thermal Energy Exploration
+1.05,Earth and Related Environmental Sciences,Cryosphere Dynamics Research
+1.05,Earth and Related Environmental Sciences,Paleo-climate Proxy Records
+1.05,Earth and Related Environmental Sciences,Hydro-meteorological Hazards
+1.06,Biological Sciences,CRISPR Gene Editing Ethics
+1.06,Biological Sciences,Microbiome-Host Interactions
+1.06,Biological Sciences,Synthetic Biology Circuits
+1.06,Biological Sciences,Single-Cell Omics Technologies
+1.06,Biological Sciences,Neurogenomics of Behavior
+1.06,Biological Sciences,Plant Stress Physiology
+1.06,Biological Sciences,Evolutionary Developmental Biology
+1.06,Biological Sciences,Bioinformatics for Rare Diseases
+1.06,Biological Sciences,Protein Folding Simulations
+1.06,Biological Sciences,Epigenetic Regulation Mechanisms
+1.07,Other Natural Sciences,Mathematical Physics Interfaces
+1.07,Other Natural Sciences,Astrobiology Life Detection
+1.07,Other Natural Sciences,Complex Systems & Chaos Theory
+1.07,Other Natural Sciences,Science of Science Metrics
+1.07,Other Natural Sciences,Computational Astrophysics Codes
+1.07,Other Natural Sciences,Geodesy for Space Navigation
+1.07,Other Natural Sciences,Radiation Science in Space Travel
+1.07,Other Natural Sciences,Isotope Analysis Techniques
+1.07,Other Natural Sciences,History & Philosophy of Science
+1.07,Other Natural Sciences,Citizen Science Data Quality
+2.01,Civil Engineering,Sustainable Concrete Composites
+2.01,Civil Engineering,Bridge Health Monitoring IoT
+2.01,Civil Engineering,Geo-Technics for Tunneling
+2.01,Civil Engineering,Smart City Infrastructure Planning
+2.01,Civil Engineering,Seismic Resilience Design Codes
+2.01,Civil Engineering,Flood-Resistant Urban Drainage
+2.01,Civil Engineering,High-Speed Rail Track Dynamics
+2.01,Civil Engineering,3D Printing in Construction
+2.01,Civil Engineering,Lifecycle Assessment of Buildings
+2.01,Civil Engineering,Digital Twins for Infrastructure
+2.02,"Electrical, Electronic and Information Engineering",Wide-Bandgap Power Electronics
+2.02,"Electrical, Electronic and Information Engineering",5G/6G Antenna Engineering
+2.02,"Electrical, Electronic and Information Engineering",Optoelectronic Device Integration
+2.02,"Electrical, Electronic and Information Engineering",Neuromorphic Hardware Design
+2.02,"Electrical, Electronic and Information Engineering",Energy-Efficient Data Centers
+2.02,"Electrical, Electronic and Information Engineering",Embedded Systems for IoT
+2.02,"Electrical, Electronic and Information Engineering",Robust Control in Robotics
+2.02,"Electrical, Electronic and Information Engineering",Photonics-Based Signal Processing
+2.02,"Electrical, Electronic and Information Engineering",Cybersecurity of Smart Grids
+2.02,"Electrical, Electronic and Information Engineering",VLSI Design Automation
+2.03,Mechanical Engineering,Additive Manufacturing Standards
+2.03,Mechanical Engineering,Robotics in Precision Agriculture
+2.03,Mechanical Engineering,Tribology for Energy Efficiency
+2.03,Mechanical Engineering,Smart Materials Actuators
+2.03,Mechanical Engineering,Dynamics of Autonomous Vehicles
+2.03,Mechanical Engineering,Human-Robot Collaboration Safety
+2.03,Mechanical Engineering,Thermal Management Systems
+2.03,Mechanical Engineering,Aeroelasticity in Wind Turbines
+2.03,Mechanical Engineering,Biomechanics of Prosthetics
+2.03,Mechanical Engineering,Lifecycle Design for Machinery
+2.04,Chemical Engineering,Green Hydrogen Production Reactors
+2.04,Chemical Engineering,Process Intensification Strategies
+2.04,Chemical Engineering,Biorefinery Design & Scale-Up
+2.04,Chemical Engineering,CO₂ Capture and Conversion
+2.04,Chemical Engineering,Digital Twins in Chemical Plants
+2.04,Chemical Engineering,Catalytic Reaction Engineering
+2.04,Chemical Engineering,Membrane Separation Technology
+2.04,Chemical Engineering,Sustainable Petrochemical Routes
+2.04,Chemical Engineering,Polymers Recycling Engineering
+2.04,Chemical Engineering,Safety Analytics in Process Control
+2.05,Materials Engineering,2D Materials Beyond Graphene
+2.05,Materials Engineering,Self-Healing Polymers Research
+2.05,Materials Engineering,Lightweight Alloys for Aerospace
+2.05,Materials Engineering,Biodegradable Packaging Films
+2.05,Materials Engineering,Functional Nanocomposites
+2.05,Materials Engineering,High-Entropy Alloys Mechanics
+2.05,Materials Engineering,Thermoelectric Materials Advances
+2.05,Materials Engineering,Photonic Crystals Fabrication
+2.05,Materials Engineering,Sustainable Cement Alternatives
+2.05,Materials Engineering,In-situ Characterization Methods
+2.06,Medical Engineering,Wearable Biosensors Development
+2.06,Medical Engineering,Robotic Surgery Instrumentation
+2.06,Medical Engineering,Implantable Neural Interfaces
+2.06,Medical Engineering,Medical Imaging Device AI
+2.06,Medical Engineering,Point-of-Care Diagnostic Tools
+2.06,Medical Engineering,3D-Printed Prosthetic Design
+2.06,Medical Engineering,Smart Drug Delivery Systems
+2.06,Medical Engineering,Telemedicine Device Standards
+2.06,Medical Engineering,Rehabilitation Exoskeletons
+2.06,Medical Engineering,Biocompatible Materials Testing
+2.07,Environmental Engineering,Advanced Wastewater Treatment
+2.07,Environmental Engineering,Air Pollution Control Technologies
+2.07,Environmental Engineering,Circular Economy Process Design
+2.07,Environmental Engineering,Sustainable Desalination Systems
+2.07,Environmental Engineering,Green Building Certification Metrics
+2.07,Environmental Engineering,Renewable Energy Microgrids
+2.07,Environmental Engineering,Life Cycle Assessment Frameworks
+2.07,Environmental Engineering,Plastic Waste Upcycling
+2.07,Environmental Engineering,Environmental Risk Modeling
+2.07,Environmental Engineering,Smart Sensors for Pollution
+2.08,Environmental Biotechnology,Bio-remediation Using Microbes
+2.08,Environmental Biotechnology,Algal Systems for Carbon Capture
+2.08,Environmental Biotechnology,Genome-Scale Metabolic Engineering
+2.08,Environmental Biotechnology,Bio-fertilizer Production Innovations
+2.08,Environmental Biotechnology,Lignocellulosic Biomass Degradation
+2.08,Environmental Biotechnology,Synthetic Biofuels Pathways
+2.08,Environmental Biotechnology,Bio-plastic Production Strains
+2.08,Environmental Biotechnology,Bioprocess Control & Optimization
+2.08,Environmental Biotechnology,Phytoremediation Field Trials
+2.08,Environmental Biotechnology,Microbial Electrosynthesis
+2.09,Industrial Biotechnology,Fermentation Scale-Up Challenges
+2.09,Industrial Biotechnology,Industrial Enzyme Engineering
+2.09,Industrial Biotechnology,Bioreactor Design for Biologics
+2.09,Industrial Biotechnology,Metabolic Pathway Optimization
+2.09,Industrial Biotechnology,Precision Fermentation for Food
+2.09,Industrial Biotechnology,Downstream Processing Innovations
+2.09,Industrial Biotechnology,Bio-based Chemicals Market Trends
+2.09,Industrial Biotechnology,Synthetic Biology Start-ups Case Studies
+2.09,Industrial Biotechnology,Regulatory Landscape for Biotech
+2.09,Industrial Biotechnology,Techno-Economic Analysis Tools
+2.10,Nano-technology,Nano-medicine Drug Carriers
+2.10,Nano-technology,Quantum Dots in Displays
+2.10,Nano-technology,Nanotoxicology Assessment Methods
+2.10,Nano-technology,Bottom-Up Nanofabrication Techniques
+2.10,Nano-technology,Nano-electronics Scaling Limits
+2.10,Nano-technology,Plasmonic Nanostructures Research
+2.10,Nano-technology,Nano-enabled Energy Harvesting
+2.10,Nano-technology,Standardization in Nanometrology
+2.10,Nano-technology,Public Perception of Nanotech
+2.10,Nano-technology,Intellectual Property in Nano-innovation
+2.11,Other Engineering and Technologies,Spacecraft Systems Engineering
+2.11,Other Engineering and Technologies,Automotive Lightweight Design
+2.11,Other Engineering and Technologies,Smart Textiles Technology
+2.11,Other Engineering and Technologies,Marine Renewable Energy Devices
+2.11,Other Engineering and Technologies,Unmanned Aerial Vehicle Standards
+2.11,Other Engineering and Technologies,Sports Engineering Biomechanics
+2.11,Other Engineering and Technologies,Fire Safety Engineering Advances
+2.11,Other Engineering and Technologies,Railway Signaling Technologies
+2.11,Other Engineering and Technologies,Hydrogen Fuel Infrastructure
+2.11,Other Engineering and Technologies,Cross-disciplinary Design Thinking
+3.01,Basic Medicine,Stem Cell Biology Mechanisms
+3.01,Basic Medicine,Molecular Pathways of Aging
+3.01,Basic Medicine,Host-Pathogen Interactions
+3.01,Basic Medicine,Cancer Genomics Insights
+3.01,Basic Medicine,Neurodegenerative Disease Models
+3.01,Basic Medicine,Regenerative Medicine Strategies
+3.01,Basic Medicine,Cell Signaling Network Analysis
+3.01,Basic Medicine,Pharmacogenomics for Precision Medicine
+3.01,Basic Medicine,Biomarkers Discovery Platforms
+3.01,Basic Medicine,Immunology of Vaccines
+3.02,Clinical Medicine,AI-Assisted Diagnostics in Radiology
+3.02,Clinical Medicine,Personalized Oncology Therapies
+3.02,Clinical Medicine,Tele-ICU Implementation Outcomes
+3.02,Clinical Medicine,Cardiovascular Intervention Advances
+3.02,Clinical Medicine,Gene Therapy Clinical Trials
+3.02,Clinical Medicine,Minimal-Invasive Surgical Techniques
+3.02,Clinical Medicine,Antimicrobial Stewardship Programs
+3.02,Clinical Medicine,Digital Health Record Integration
+3.02,Clinical Medicine,Post-COVID-19 Rehabilitation
+3.02,Clinical Medicine,Health Equity in Clinical Practice
+3.03,Health Sciences,Epidemiology of Emerging Diseases
+3.03,Health Sciences,Global Health Data Analytics
+3.03,Health Sciences,Mental Health Promotion Strategies
+3.03,Health Sciences,Nutritional Epidemiology Findings
+3.03,Health Sciences,Occupational Health Risk Assessment
+3.03,Health Sciences,Public Health Policy Evaluation
+3.03,Health Sciences,Health Systems Resilience Post-Pandemic
+3.03,Health Sciences,Community-Based Healthcare Models
+3.03,Health Sciences,Environmental Health Surveillance
+3.03,Health Sciences,One Health Approach Implementation
+3.04,Medical Biotechnology,CAR-T Cell Therapy Innovations
+3.04,Medical Biotechnology,Synthetic Antibodies Development
+3.04,Medical Biotechnology,CRISPR Diagnostics Platforms
+3.04,Medical Biotechnology,Bioinformatics in Drug Targeting
+3.04,Medical Biotechnology,RNA Therapeutics Manufacturing
+3.04,Medical Biotechnology,Bioprocessing for Cell Therapies
+3.04,Medical Biotechnology,Biosafety in Gene Editing Labs
+3.04,Medical Biotechnology,Regulatory Pathways for Biologics
+3.04,Medical Biotechnology,Affordable Biologics Production
+3.04,Medical Biotechnology,AI-Driven Protein Engineering
+3.05,Other Medical Sciences,Integrative Medicine Evidence Base
+3.05,Other Medical Sciences,Forensic Medicine Technology
+3.05,Other Medical Sciences,Sports Medicine Injury Prevention
+3.05,Other Medical Sciences,Medical Ethics in AI Era
+3.05,Other Medical Sciences,Aging Society Health Challenges
+3.05,Other Medical Sciences,Disaster Medicine Preparedness
+3.05,Other Medical Sciences,Tropical Medicine Case Studies
+3.05,Other Medical Sciences,Space Medicine Human Factors
+3.05,Other Medical Sciences,Veterans Healthcare Innovations
+3.05,Other Medical Sciences,Comparative Effectiveness Research
+4.01,"Agriculture, Forestry and Fisheries",Agroforestry for Carbon Sequestration
+4.01,"Agriculture, Forestry and Fisheries",Precision Aquaculture Technologies
+4.01,"Agriculture, Forestry and Fisheries",Climate-Smart Crop Breeding
+4.01,"Agriculture, Forestry and Fisheries",Sustainable Fisheries Management
+4.01,"Agriculture, Forestry and Fisheries",Remote Sensing for Yield Forecasts
+4.01,"Agriculture, Forestry and Fisheries",Agri-Robotics Field Deployment
+4.01,"Agriculture, Forestry and Fisheries",Water-Efficient Irrigation Systems
+4.01,"Agriculture, Forestry and Fisheries",Biodiversity in Agro-ecosystems
+4.01,"Agriculture, Forestry and Fisheries",Soil Health Monitoring Sensors
+4.01,"Agriculture, Forestry and Fisheries",Policy Incentives for Green Farming
+4.02,Animal and Dairy Science,Genomics of Dairy Cattle
+4.02,Animal and Dairy Science,Feed Efficiency Optimization
+4.02,Animal and Dairy Science,Animal Welfare Monitoring Tech
+4.02,Animal and Dairy Science,Probiotics in Poultry Nutrition
+4.02,Animal and Dairy Science,Smart Barn Environmental Control
+4.02,Animal and Dairy Science,Precision Livestock Farming
+4.02,Animal and Dairy Science,Alternative Protein Sources
+4.02,Animal and Dairy Science,Carbon Footprint of Ruminants
+4.02,Animal and Dairy Science,Disease Resistance Breeding
+4.02,Animal and Dairy Science,Blockchain in Supply Traceability
+4.03,Veterinary Science,Zoonotic Disease Surveillance
+4.03,Veterinary Science,Veterinary Telemedicine Platforms
+4.03,Veterinary Science,Novel Vaccines for Livestock
+4.03,Veterinary Science,Antimicrobial Resistance Mitigation
+4.03,Veterinary Science,Wildlife Health Monitoring
+4.03,Veterinary Science,Equine Sports Medicine Advances
+4.03,Veterinary Science,Veterinary Imaging Innovations
+4.03,Veterinary Science,Genetic Disorders in Companion Animals
+4.03,Veterinary Science,Regenerative Therapies in Veterinary
+4.03,Veterinary Science,Veterinary Public Health Policy
+4.04,Agricultural Biotechnology,GM Crops for Drought Tolerance
+4.04,Agricultural Biotechnology,CRISPR Editing in Horticulture
+4.04,Agricultural Biotechnology,Biopesticides Development Pipelines
+4.04,Agricultural Biotechnology,Microbial Inoculants for Soil Health
+4.04,Agricultural Biotechnology,Synthetic Biology in Ag-Biotech
+4.04,Agricultural Biotechnology,Plant-Made Pharmaceuticals
+4.04,Agricultural Biotechnology,Gene Drive Technologies Debate
+4.04,Agricultural Biotechnology,Omics-Guided Trait Discovery
+4.04,Agricultural Biotechnology,Regulation of New Breeding Techniques
+4.04,Agricultural Biotechnology,Start-Up Ecosystem in Ag-Biotech
+4.05,Other Agricultural Sciences,Vertical Farming Systems Analysis
+4.05,Other Agricultural Sciences,Urban Agriculture Economics
+4.05,Other Agricultural Sciences,Ag-Policy and Food Security
+4.05,Other Agricultural Sciences,Agro-ecological Transition Models
+4.05,Other Agricultural Sciences,Resilient Supply Chains Post-COVID
+4.05,Other Agricultural Sciences,Organic Certification Challenges
+4.05,Other Agricultural Sciences,Agricultural Waste Valorization
+4.05,Other Agricultural Sciences,Risk Management in Agribusiness
+4.05,Other Agricultural Sciences,Climate Risk Insurance Products
+4.05,Other Agricultural Sciences,Youth Engagement in Agriculture
+5.01,Psychology,Cognitive Biases in Decision Making
+5.01,Psychology,Neuroplasticity and Learning
+5.01,Psychology,AI Models of Human Cognition
+5.01,Psychology,Mental Health in Digital Age
+5.01,Psychology,Cross-Cultural Psychology Studies
+5.01,Psychology,Brain-Computer Interface Research
+5.01,Psychology,Developmental Disorders Interventions
+5.01,Psychology,Emotion Regulation Mechanisms
+5.01,Psychology,Psychological Resilience Building
+5.01,Psychology,Behavioral Insights for Policy
+5.02,Economics and Business,FinTech Disruption Analysis
+5.02,Economics and Business,Behavioral Economics in Marketing
+5.02,Economics and Business,Corporate Governance Reforms
+5.02,Economics and Business,Sustainable Finance Instruments
+5.02,Economics and Business,Entrepreneurship Ecosystem Metrics
+5.02,Economics and Business,Global Supply Chain Resilience
+5.02,Economics and Business,ESG Reporting Standards Evolution
+5.02,Economics and Business,AI Adoption in Finance Operations
+5.02,Economics and Business,Data-Driven Pricing Strategies
+5.02,Economics and Business,Family Business Succession Planning
+5.03,Educational Sciences,STEM Education Equity
+5.03,Educational Sciences,Gamification in Learning
+5.03,Educational Sciences,Competency-Based Curriculum Design
+5.03,Educational Sciences,Teacher Professional Development
+5.03,Educational Sciences,EdTech for Remote Learning
+5.03,Educational Sciences,Assessment Analytics Dashboards
+5.03,Educational Sciences,Lifelong Learning Frameworks
+5.03,Educational Sciences,Inclusive Education Policies
+5.03,Educational Sciences,AI Tutors and Learning Outcomes
+5.03,Educational Sciences,Cross-Disciplinary STEAM Education
+5.04,Sociology,Social Networks and Inequality
+5.04,Sociology,Migration and Urbanization Trends
+5.04,Sociology,Digital Sociology Methodologies
+5.04,Sociology,Aging Population Social Support
+5.04,Sociology,Climate Justice Movements
+5.04,Sociology,Gender Dynamics in Workplaces
+5.04,Sociology,Criminology & Restorative Justice
+5.04,Sociology,Big Data in Social Research
+5.04,Sociology,Community Resilience Post-Disaster
+5.04,Sociology,Health Disparities and Society
+5.05,Law,AI Regulation and Law
+5.05,Law,International Human Rights Updates
+5.05,Law,Environmental Law and Policy
+5.05,Law,Cybercrime Legal Frameworks
+5.05,Law,Intellectual Property in Digital Era
+5.05,Law,Comparative Constitutional Law
+5.05,Law,Corporate Liability in ESG Context
+5.05,Law,Dispute Resolution Innovation
+5.05,Law,Data Privacy Compliance Trends
+5.05,Law,Legal Tech Adoption Strategies
+5.06,Political Science,Populism and Democratic Erosion
+5.06,Political Science,Election Integrity Technologies
+5.06,Political Science,Geopolitics of Climate Change
+5.06,Political Science,Public Policy Design Thinking
+5.06,Political Science,Global Governance Reform Debates
+5.06,Political Science,Urban Politics and Smart Cities
+5.06,Political Science,Security Studies in Cyberspace
+5.06,Political Science,Influence of Social Media on Politics
+5.06,Political Science,Comparative Authoritarianism
+5.06,Political Science,Conflict Resolution Diplomacy
+5.07,Social and Economic Geography,Smart City Spatial Analytics
+5.07,Social and Economic Geography,Rural-Urban Migration Patterns
+5.07,Social and Economic Geography,Climate Resilient Urban Planning
+5.07,Social and Economic Geography,Economic Geography of Innovation
+5.07,Social and Economic Geography,Transport Networks Connectivity
+5.07,Social and Economic Geography,Land Use Change Modeling
+5.07,Social and Economic Geography,Urban Heat Island Mitigation
+5.07,Social and Economic Geography,Globalization and Local Economies
+5.07,Social and Economic Geography,GIS in Disaster Management
+5.07,Social and Economic Geography,Regional Development Strategies
+5.08,Media and Communications,Misinformation and Fact-Checking
+5.08,Media and Communications,Digital Journalism Business Models
+5.08,Media and Communications,Social Media Algorithm Impacts
+5.08,Media and Communications,Immersive Storytelling in VR
+5.08,Media and Communications,Media Literacy Education
+5.08,Media and Communications,Podcasting Audience Engagement
+5.08,Media and Communications,Streaming Platforms Economics
+5.08,Media and Communications,AI-Generated Content Ethics
+5.08,Media and Communications,Cross-Cultural Communication
+5.08,Media and Communications,Public Relations Crisis Management
+5.09,Other Social Sciences,Interdisciplinary Social Sciences Methods
+5.09,Other Social Sciences,Sustainability Transitions Research
+5.09,Other Social Sciences,Well-Being Indicators Frameworks
+5.09,Other Social Sciences,Citizen Science in Social Studies
+5.09,Other Social Sciences,Digital Twins for Social Systems
+5.09,Other Social Sciences,Gender & Technology Intersectionality
+5.09,Other Social Sciences,Global Health Social Determinants
+5.09,Other Social Sciences,Data Sovereignty Debates
+5.09,Other Social Sciences,Open Science in Humanities
+5.09,Other Social Sciences,Post-Pandemic Social Transformations
+6.01,History and Archaeology,Ancient DNA in Archaeology
+6.01,History and Archaeology,Digital Humanities for Archives
+6.01,History and Archaeology,Global History of Pandemics
+6.01,History and Archaeology,Maritime Silk Road Studies
+6.01,History and Archaeology,Cultural Heritage Conservation Tech
+6.01,History and Archaeology,Archaeological Remote Sensing
+6.01,History and Archaeology,Economic History Climate Impacts
+6.01,History and Archaeology,Public Archaeology and Community
+6.01,History and Archaeology,Historical GIS Applications
+6.01,History and Archaeology,Decolonizing World Histories
+6.02,Languages and Literature,Machine Translation Quality Advances
+6.02,Languages and Literature,Endangered Languages Documentation
+6.02,Languages and Literature,Digital Literature Analysis Tools
+6.02,Languages and Literature,Narrative Theory in Contemporary Fiction
+6.02,Languages and Literature,Corpus Linguistics for Social Media
+6.02,Languages and Literature,World Literature in Global Context
+6.02,Languages and Literature,Linguistic Landscape Studies
+6.02,Languages and Literature,Literary Adaptations in Film
+6.02,Languages and Literature,Language Policy and Planning
+6.02,Languages and Literature,Cognitive Linguistics of Metaphor
+6.03,"Philosophy, Ethics and Religion",Ethics of AI and Automation
+6.03,"Philosophy, Ethics and Religion",Comparative Religious Ethics
+6.03,"Philosophy, Ethics and Religion",Philosophy of Mind and Consciousness
+6.03,"Philosophy, Ethics and Religion",Virtue Ethics in Leadership
+6.03,"Philosophy, Ethics and Religion",Interfaith Dialogue Initiatives
+6.03,"Philosophy, Ethics and Religion",Environmental Philosophy Debates
+6.03,"Philosophy, Ethics and Religion",Neuro-Ethics Research Frontiers
+6.03,"Philosophy, Ethics and Religion",Digital Religion Communities
+6.03,"Philosophy, Ethics and Religion",Phenomenology in Modern Context
+6.03,"Philosophy, Ethics and Religion",Bioethics of Human Enhancement
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Digital Art Preservation
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Music AI Composition Tools
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Performing Arts in Virtual Worlds
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Art History of Climate Imagery
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Cultural Policy and Creative Economy
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Immersive Theatre Experiences
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Heritage and Museum Technologies
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Film Studies on Streaming Era
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Sound Design for Interactive Media
+6.04,"Arts (Arts, History of Arts, Performing Arts, Music)",Community Arts for Social Change
+6.05,Other Humanities,Humanities Data Visualization
+6.05,Other Humanities,Public Humanities Engagement
+6.05,Other Humanities,Cultural Memory in Digital Age
+6.05,Other Humanities,Ethnography of Online Communities
+6.05,Other Humanities,Intangible Cultural Heritage
+6.05,Other Humanities,Philosophy of Technology Studies
+6.05,Other Humanities,Arts-Based Research Methods
+6.05,Other Humanities,Humanities in STEM Integration
+6.05,Other Humanities,Critical Theory and Social Justice
+6.05,Other Humanities,Open Access in Humanities Research

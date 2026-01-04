@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Emerging Diseases": 3,
+    "Epidemiological Methods": 3,
+    "Case Studies": 5,
+    "Current Trends and Patterns": 4,
+    "Challenges in Epidemiology": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Emerging Diseases",
+          "points": [
+            "Definition of emerging diseases",
+            "Importance of studying epidemiology",
+            "Impact on global health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Key topics covered",
+            "Research methodology",
+            "Significance of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Identify trends",
+            "Analyze contributing factors",
+            "Discuss global responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Emerging Diseases",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Definition and Classification",
+          "points": [
+            "Newly emerging diseases",
+            "Re-emerging diseases",
+            "New manifestations of known agents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Notable emerging diseases",
+            "Impact of urbanization",
+            "Role of climate change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Pathogen Adaptation",
+          "points": [
+            "Microbial evolution",
+            "Antibiotic resistance",
+            "Human behavior influences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Epidemiological Methods",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveillance systems",
+            "Field studies",
+            "Laboratory testing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistical Analysis",
+          "points": [
+            "Epidemiological modeling",
+            "Trend analysis",
+            "Risk assessment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Definition and Classification",
+          "points": [
+            "Criteria for emerging diseases",
+            "Importance of accurate classification",
+            "Challenges in case identification"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "HIV/AIDS Epidemic",
+          "points": [
+            "Timeline of emergence",
+            "Global impact",
+            "Public health response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ebola Outbreaks",
+          "points": [
+            "Geographic hotspots",
+            "Transmission dynamics",
+            "Response strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Zika Virus Spread",
+          "points": [
+            "Vector-borne transmission",
+            "Impact on pregnancy",
+            "Global health initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "COVID-19 Pandemic",
+          "points": [
+            "Rapid global spread",
+            "Public health measures",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Dengue Fever Resurgence",
+          "points": [
+            "Geographic distribution",
+            "Climate change effects",
+            "Preventive measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Trends and Patterns",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Incidence Rates of Emerging Diseases",
+          "points": [
+            "Global statistics",
+            "Regional hotspots",
+            "Trends over time"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Climate Change",
+          "points": [
+            "Changing vector habitats",
+            "Emerging disease patterns",
+            "Public health implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Socioeconomic Factors",
+          "points": [
+            "Population density",
+            "Urbanization effects",
+            "Healthcare access disparities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Surveillance Efforts",
+          "points": [
+            "Role of WHO and CDC",
+            "Data sharing initiatives",
+            "Response coordination"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges in Epidemiology",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Data Limitations",
+          "points": [
+            "Inconsistent reporting",
+            "Underreporting of cases",
+            "Access to data in low-resource settings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health Infrastructure",
+          "points": [
+            "Need for strengthening systems",
+            "Training healthcare professionals",
+            "Resource allocation challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Enhancing Surveillance Systems",
+          "points": [
+            "Integration of technology",
+            "Real-time data collection",
+            "International collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting Public Health Education",
+          "points": [
+            "Community engagement",
+            "Awareness campaigns",
+            "Behavioral change strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

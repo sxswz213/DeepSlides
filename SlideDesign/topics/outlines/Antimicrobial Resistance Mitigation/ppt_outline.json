@@ -1,0 +1,305 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Understanding Antimicrobial Resistance": 4,
+    "Current Challenges": 3,
+    "Mitigation Strategies": 6,
+    "Case Studies": 3,
+    "Future Directions": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Antimicrobial Resistance (AMR)",
+          "points": [
+            "Definition of AMR",
+            "Global health threat",
+            "Importance of addressing AMR"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Problem",
+          "points": [
+            "Statistics on AMR prevalence",
+            "Impact on healthcare systems",
+            "Economic implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Understand AMR mechanisms",
+            "Explore mitigation strategies",
+            "Highlight successful interventions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Understanding Antimicrobial Resistance",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Mechanisms of AMR",
+          "points": [
+            "Enzymatic degradation",
+            "Alteration of drug targets",
+            "Efflux pumps",
+            "Genetic transfer"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Causes of AMR",
+          "points": [
+            "Overuse of antibiotics",
+            "Misuse in healthcare",
+            "Agricultural practices",
+            "Lack of regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consequences of AMR",
+          "points": [
+            "Increased morbidity",
+            "Higher mortality rates",
+            "Longer hospital stays",
+            "Rising healthcare costs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Response to AMR",
+          "points": [
+            "WHO initiatives",
+            "National action plans",
+            "Importance of global collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Challenges",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Rising Resistance Rates",
+          "points": [
+            "Statistics on resistance trends",
+            "Impact of COVID-19",
+            "Challenges in treatment options"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Burden of AMR",
+          "points": [
+            "Projected costs of AMR",
+            "Impact on productivity",
+            "Healthcare spending"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Disparities in AMR Impact",
+          "points": [
+            "Effects on low-income countries",
+            "Strain on healthcare resources",
+            "Need for equitable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Mitigation Strategies",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Antibiotic Stewardship Programs",
+          "points": [
+            "Definition and goals",
+            "Optimizing prescribing practices",
+            "Reducing unnecessary prescriptions",
+            "Improving patient outcomes",
+            "Evidence of effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health Initiatives",
+          "points": [
+            "Awareness campaigns",
+            "Monitoring antibiotic use",
+            "Collaboration across sectors",
+            "Community engagement",
+            "Education on AMR"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vaccination Efforts",
+          "points": [
+            "Role of vaccines in prevention",
+            "Reducing antibiotic demand",
+            "Examples of successful vaccination programs",
+            "Importance of immunization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research and Development",
+          "points": [
+            "Need for new antimicrobials",
+            "Innovative treatment approaches",
+            "Investment in research",
+            "Collaboration with pharmaceutical companies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Development",
+          "points": [
+            "Importance of regulations",
+            "Global and national policies",
+            "Incentives for responsible use",
+            "Monitoring and enforcement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Engagement",
+          "points": [
+            "Role of public awareness",
+            "Involvement of local organizations",
+            "Education initiatives",
+            "Encouraging responsible behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Kerala, India: A Successful Model",
+          "points": [
+            "Public-private partnership",
+            "Clinical guidelines development",
+            "Training healthcare professionals",
+            "State-wide strategy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Canada's Pan-Canadian Action Plan",
+          "points": [
+            "Ten priority actions",
+            "One Health perspective",
+            "Coordinated efforts in surveillance",
+            "Public awareness campaigns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from Interventions",
+          "points": [
+            "Importance of multi-faceted strategies",
+            "Stakeholder engagement",
+            "Continuous education",
+            "Policy development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Enhancing Global Collaboration",
+          "points": [
+            "Importance of international partnerships",
+            "Sharing best practices",
+            "Coordinated research efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Focus on Education and Awareness",
+          "points": [
+            "Targeting healthcare professionals",
+            "Community education programs",
+            "Promoting responsible antibiotic use"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Approaches to Combat AMR",
+          "points": [
+            "Investment in new technologies",
+            "Exploring alternative treatments",
+            "Strengthening surveillance systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

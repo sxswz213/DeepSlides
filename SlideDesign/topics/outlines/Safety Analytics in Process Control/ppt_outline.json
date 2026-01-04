@@ -1,0 +1,335 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 3,
+    "Methodology": 4,
+    "Data Collection": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Conclusion": 2,
+    "Future Work": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Safety Analytics",
+          "points": [
+            "Definition of safety analytics",
+            "Importance in process control",
+            "Key objectives",
+            "Scope of the report",
+            "Target audience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Safety in Industry",
+          "points": [
+            "Impact of industrial accidents",
+            "Regulatory requirements",
+            "Public safety concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Objectives",
+          "points": [
+            "Identify key principles",
+            "Explore analytics role",
+            "Highlight data visualization importance",
+            "Present case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Principles of Safety Management",
+          "points": [
+            "Hazard identification",
+            "Risk assessment",
+            "Control measures",
+            "Continuous improvement",
+            "Regulatory frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytics in Process Hazard Analysis",
+          "points": [
+            "Traditional vs. modern methods",
+            "Data-driven decision making",
+            "Risk prioritization",
+            "Comprehensive data analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Visualization Techniques",
+          "points": [
+            "Importance of visualization",
+            "Types of visual tools",
+            "Best practices",
+            "Impact on decision-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative vs. quantitative",
+            "Data sources",
+            "Analytical frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Surveys",
+            "Interviews",
+            "Case studies",
+            "Literature review"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Comparative analysis",
+            "Visualization tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Data availability",
+            "Scope constraints",
+            "Potential biases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Sources of Data",
+          "points": [
+            "Industry reports",
+            "Regulatory documents",
+            "Case studies",
+            "Surveys"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Process",
+          "points": [
+            "Sampling methods",
+            "Data validation",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Data Collection",
+          "points": [
+            "Access to data",
+            "Data quality issues",
+            "Time constraints"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from Literature",
+          "points": [
+            "Trends in safety analytics",
+            "Effectiveness of PHA",
+            "Role of data visualization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study Insights",
+          "points": [
+            "Chemical manufacturing example",
+            "Automotive sector improvements",
+            "Food processing compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistical Analysis Results",
+          "points": [
+            "Data trends",
+            "Risk patterns",
+            "Comparative metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visual Data Representation",
+          "points": [
+            "Graphs and charts",
+            "Dashboard examples",
+            "GIS applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Impact on safety culture",
+            "Operational efficiency",
+            "Regulatory compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration of Analytics in Safety Management",
+          "points": [
+            "Best practices",
+            "Challenges to implementation",
+            "Future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Organizations",
+          "points": [
+            "Adopt advanced analytics",
+            "Enhance training programs",
+            "Foster a proactive safety culture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Importance of safety analytics",
+            "Role of data visualization",
+            "Case study effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Need for continuous improvement",
+            "Call to action for organizations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Work",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Areas for Further Research",
+          "points": [
+            "Emerging technologies",
+            "Longitudinal studies",
+            "Cross-industry comparisons"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Potential Developments in Safety Analytics",
+          "points": [
+            "AI and machine learning",
+            "Real-time data monitoring",
+            "Enhanced visualization techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

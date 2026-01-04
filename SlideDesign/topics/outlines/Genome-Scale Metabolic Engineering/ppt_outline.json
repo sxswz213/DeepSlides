@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Future Directions": 2,
+    "References": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Genome-Scale Metabolic Engineering (GEM)",
+          "points": [
+            "Definition of GEM",
+            "Importance in biotechnology",
+            "Integration of genomic and biochemical data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "First GEM developed in 1999",
+            "Evolution of GEMs over time",
+            "Current status in research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore GEM structure",
+            "Discuss applications",
+            "Highlight case studies and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Structure of Genome-Scale Metabolic Models",
+          "points": [
+            "Comprehensive models of metabolic networks",
+            "Integration of genes, proteins, and reactions",
+            "Gene-protein-reaction (GPR) associations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of GEMs",
+          "points": [
+            "Metabolic pathways",
+            "Flux balance analysis (FBA)",
+            "Simulation of cellular behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Systems Biology",
+          "points": [
+            "Strain development",
+            "Drug targeting",
+            "Understanding metabolic interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Construction of GEMs",
+          "points": [
+            "Annotating genes with functions",
+            "Retrieving biochemical data",
+            "Applying optimization techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Integration Techniques",
+          "points": [
+            "Genomic data",
+            "Proteomic data",
+            "Biochemical data",
+            "Kinetic data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Simulation Techniques",
+          "points": [
+            "Flux balance analysis",
+            "Metabolic flux simulations",
+            "Predicting outcomes under various conditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study Selection Criteria",
+          "points": [
+            "Relevance to applications",
+            "Availability of data",
+            "Impact on research and industry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Strain Development Case Study: E. coli",
+          "points": [
+            "Overview of iML1515 model",
+            "Applications in bio-based chemical production",
+            "Optimization of metabolic pathways"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Drug Targeting Case Study: Mycobacterium tuberculosis",
+          "points": [
+            "Overview of iEK1101 model",
+            "Identifying drug targets",
+            "Understanding pathogen survival strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Industrial Application Case Study: Bacillus subtilis",
+          "points": [
+            "Enhancing enzyme production",
+            "Integration of thermodynamic data",
+            "Optimized production processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of GEMs",
+          "points": [
+            "Diversity of applications",
+            "Success rates in different organisms",
+            "Impact on metabolic engineering"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in GEM Implementation",
+          "points": [
+            "Incomplete genome data",
+            "Cryptic metabolic capacities",
+            "Integration of kinetic data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Significance of GEMs in Biotechnology",
+          "points": [
+            "Advancements in bio-based chemicals",
+            "Innovations in drug development",
+            "Understanding complex metabolic interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of Current GEMs",
+          "points": [
+            "Data quality issues",
+            "Model accuracy concerns",
+            "Need for comprehensive datasets"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Improving data integration",
+            "Enhancing model accuracy",
+            "Exploring microbial interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Potential Impact on Health and Industry",
+          "points": [
+            "Tailored biotherapeutics",
+            "Sustainable industrial processes",
+            "Broader applications in systems biology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Advancements in GEM Methodologies",
+          "points": [
+            "Innovative computational techniques",
+            "Integration of multi-omics data",
+            "Real-time modeling capabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Vision for GEMs",
+          "points": [
+            "Personalized medicine applications",
+            "Sustainable bioprocessing",
+            "Global health implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "References",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Key References",
+          "points": [
+            "List of cited articles and sources",
+            "Further reading recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

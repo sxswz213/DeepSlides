@@ -1,0 +1,329 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background on Green Building Certifications": 3,
+    "Certification Metrics Overview": 4,
+    "Methodology": 3,
+    "Results": 4,
+    "Case Studies": 3,
+    "Discussion": 2,
+    "Future Trends in Green Building Certifications": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Green Building Certification Metrics",
+          "points": [
+            "Definition of green building certification metrics",
+            "Importance in sustainable construction",
+            "Overview of presentation structure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Sustainability in Construction",
+          "points": [
+            "Impact of construction on the environment",
+            "Need for sustainable practices",
+            "Benefits of green building certifications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Green Building Certifications",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Certification Systems",
+          "points": [
+            "Introduction to LEED, BREEAM, and Living Building Challenge",
+            "Key focus areas of each system",
+            "Global recognition and applicability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "LEED Certification",
+          "points": [
+            "Developed by U.S. Green Building Council",
+            "Categories: energy, water, materials",
+            "Point-based system and certification levels"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "BREEAM Certification",
+          "points": [
+            "Originating in the UK",
+            "Assessment across nine categories",
+            "Weighted scoring system and certification levels"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Certification Metrics Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Metrics for Energy Efficiency",
+          "points": [
+            "Final and primary energy use",
+            "Measurement in kWh/m²/year",
+            "Importance of renewable energy integration",
+            "Comparison with local baselines",
+            "Impact on carbon emissions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Water Usage Metrics",
+          "points": [
+            "Total water consumption measurement",
+            "Importance of low-flow fixtures",
+            "Rainwater harvesting strategies",
+            "Reduction of potable water use",
+            "Long-term sustainability benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Waste Management Metrics",
+          "points": [
+            "Evaluation of construction waste",
+            "Percentage of waste minimized, reused, or recycled",
+            "Importance of waste management strategies",
+            "Impact on overall sustainability",
+            "Contribution to circular economy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Overview of Metrics",
+          "points": [
+            "Summary of key metrics across systems",
+            "Importance of metrics in achieving certification",
+            "Role in promoting resource efficiency",
+            "Long-term environmental impact",
+            "Stakeholder engagement in metrics application"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review of certification systems",
+            "Analysis of key metrics",
+            "Case study selection criteria"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Interviews with industry experts",
+            "Surveys of certified buildings",
+            "Review of certification documentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Comparative analysis of certification systems",
+            "Statistical evaluation of metrics",
+            "Identification of trends and patterns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Findings on LEED Certification",
+          "points": [
+            "Strengths and weaknesses identified",
+            "Impact on energy efficiency",
+            "Water conservation results",
+            "Waste management outcomes",
+            "Stakeholder feedback"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Findings on BREEAM Certification",
+          "points": [
+            "Adaptability to regional factors",
+            "Rigorous assessment results",
+            "Effectiveness in existing buildings",
+            "Stakeholder engagement",
+            "Long-term sustainability outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Living Building Challenge Insights",
+          "points": [
+            "Ambitious sustainability goals",
+            "Regenerative design principles",
+            "Challenges in implementation",
+            "Case study examples",
+            "Future potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overall Comparative Analysis",
+          "points": [
+            "Strengths and weaknesses of each system",
+            "Applicability to different building types",
+            "Stakeholder preferences",
+            "Trends in certification adoption",
+            "Recommendations for improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study: LEED Certified Building",
+          "points": [
+            "Overview of the project",
+            "Key metrics achieved",
+            "Stakeholder involvement",
+            "Lessons learned",
+            "Impact on community"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: BREEAM Certified Project",
+          "points": [
+            "Project background",
+            "Assessment results",
+            "Sustainability innovations",
+            "Challenges faced",
+            "Future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Living Building Challenge Example",
+          "points": [
+            "Project description",
+            "Regenerative design features",
+            "Successes and challenges",
+            "Community impact",
+            "Potential for replication"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Importance of certification metrics",
+            "Role in promoting sustainable practices",
+            "Challenges in implementation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Perspectives",
+          "points": [
+            "Feedback from industry professionals",
+            "Importance of ongoing monitoring",
+            "Future trends in certification"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends in Green Building Certifications",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Looking Ahead",
+          "points": [
+            "Emerging trends in certification systems",
+            "Integration of technology in assessments",
+            "Potential for new metrics",
+            "Importance of continuous improvement",
+            "Call to action for stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

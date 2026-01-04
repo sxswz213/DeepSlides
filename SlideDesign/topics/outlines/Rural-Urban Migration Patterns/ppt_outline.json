@@ -1,0 +1,310 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Literature Review": 3,
+    "Methodology": 3,
+    "Data Analysis": 4,
+    "Results": 4,
+    "Discussion": 3,
+    "Implications": 2,
+    "Future Research": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Rural-Urban Migration",
+          "points": [
+            "Definition of rural-urban migration",
+            "Importance of studying migration patterns",
+            "Global trends in migration",
+            "Impact on demographic landscapes",
+            "Relevance for policymakers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Drivers of Migration",
+          "points": [
+            "Economic opportunities in urban areas",
+            "Access to education and healthcare",
+            "Lifestyle changes and aspirations",
+            "Environmental factors pushing migration",
+            "Social dynamics influencing decisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Migration",
+          "points": [
+            "Evolution of migration patterns",
+            "Key historical events influencing migration",
+            "Comparative analysis of past and present trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Theoretical Frameworks",
+          "points": [
+            "Push-pull theory of migration",
+            "Economic theories related to migration",
+            "Social and cultural frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recent Studies and Findings",
+          "points": [
+            "Summary of key research studies",
+            "Findings on economic impacts",
+            "Social implications of migration",
+            "Case studies from different regions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative vs quantitative approaches",
+            "Data collection methods",
+            "Sampling techniques used"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Primary data collection",
+            "Secondary data analysis",
+            "Use of case studies and surveys"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytical Techniques",
+          "points": [
+            "Statistical analysis methods",
+            "Qualitative analysis approaches",
+            "Tools and software used for analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Demographic Trends",
+          "points": [
+            "Age distribution of migrants",
+            "Gender dynamics in migration",
+            "Urban vs rural population changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Impact Analysis",
+          "points": [
+            "Employment trends in urban areas",
+            "Economic contributions of migrants",
+            "Impact on local businesses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Dynamics and Integration",
+          "points": [
+            "Cultural integration challenges",
+            "Community responses to migration",
+            "Social networks and support systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Infrastructure and Service Demand",
+          "points": [
+            "Housing shortages in urban areas",
+            "Strain on public services",
+            "Transportation and mobility issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings on Economic Growth",
+          "points": [
+            "Increased productivity in urban centers",
+            "Economic decline in rural areas",
+            "Job creation vs job loss dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Implications of Migration",
+          "points": [
+            "Changes in community structures",
+            "Impact on cultural identity",
+            "Emergence of new social challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Infrastructure Challenges",
+          "points": [
+            "Overcrowding in urban areas",
+            "Inadequate housing solutions",
+            "Need for improved public services"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Case Studies",
+          "points": [
+            "Insights from India and South Africa",
+            "Lessons learned from Latin America",
+            "Regional differences in migration patterns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Interpreting the Results",
+          "points": [
+            "Linking findings to theoretical frameworks",
+            "Understanding the implications for policy",
+            "Addressing the challenges identified"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Strategies for urban planning",
+            "Support systems for migrants",
+            "Promoting rural development initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Research",
+          "points": [
+            "Identifying gaps in current research",
+            "Exploring new methodologies",
+            "Focus on long-term impacts of migration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Urban Areas",
+          "points": [
+            "Need for sustainable urban development",
+            "Enhancing social cohesion",
+            "Addressing infrastructure demands"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Rural Areas",
+          "points": [
+            "Strategies to retain population",
+            "Economic diversification efforts",
+            "Strengthening community ties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Research",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Research Priorities",
+          "points": [
+            "Focus on migration trends post-pandemic",
+            "Impact of climate change on migration",
+            "Longitudinal studies on migrant integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

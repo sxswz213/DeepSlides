@@ -1,0 +1,389 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Overview of Synthetic Biology": 3,
+    "Importance of Start-ups in Synthetic Biology": 2,
+    "Case Study 1: Start-up A": 3,
+    "Case Study 2: Start-up B": 3,
+    "Case Study 3: Start-up C": 3,
+    "Comparative Analysis of Case Studies": 2,
+    "Challenges Faced by Synthetic Biology Start-ups": 2,
+    "Future Trends in Synthetic Biology Start-ups": 2,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Synthetic Biology",
+          "points": [
+            "Definition of synthetic biology",
+            "Interdisciplinary nature",
+            "Importance in addressing global challenges",
+            "Growth of start-ups in the field",
+            "Potential for innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore case studies of start-ups",
+            "Highlight innovations and contributions",
+            "Discuss trends and future directions",
+            "Analyze challenges faced",
+            "Engage stakeholders in synthetic biology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Overview of Synthetic Biology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Components of Synthetic Biology",
+          "points": [
+            "Genetic engineering",
+            "Biological systems design",
+            "Bioinformatics",
+            "Metabolic engineering",
+            "Applications across industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape of Start-ups",
+          "points": [
+            "Diverse sectors: biofuels, therapeutics, agriculture",
+            "Focus on sustainability",
+            "Innovative technologies",
+            "Investment trends",
+            "Market growth projections"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Global Challenges",
+          "points": [
+            "Climate change solutions",
+            "Healthcare advancements",
+            "Food security improvements",
+            "Environmental sustainability",
+            "Economic growth opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Importance of Start-ups in Synthetic Biology",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Driving Innovation",
+          "points": [
+            "Agility and flexibility of start-ups",
+            "Rapid prototyping and testing",
+            "Collaboration with research institutions",
+            "Access to funding and resources",
+            "Focus on niche markets"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Contribution to Economic Growth",
+          "points": [
+            "Job creation",
+            "Attracting investments",
+            "Enhancing competitiveness",
+            "Fostering entrepreneurship",
+            "Building a sustainable economy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study 1: Cysbio",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Company Overview",
+          "points": [
+            "Founded in Denmark",
+            "Focus on biochemicals",
+            "Innovative bacterial cell factories",
+            "Patented sulfation technology",
+            "Applications in pharmaceuticals and food"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations and Technologies",
+          "points": [
+            "Production of amino acids",
+            "Enhanced functionality of biochemicals",
+            "Sustainable production methods",
+            "Environmental impact reduction",
+            "Market potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact and Future Directions",
+          "points": [
+            "Contribution to biofuels",
+            "Partnerships with industries",
+            "Expansion plans",
+            "Research and development focus",
+            "Long-term sustainability goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study 2: Siolta Therapeutics",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Company Overview",
+          "points": [
+            "Based in the U.S.",
+            "Focus on therapeutic microbial consortia",
+            "Targeting inflammatory diseases",
+            "Lead candidate STMC-103H",
+            "Restoring healthy microbiome"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations and Technologies",
+          "points": [
+            "Novel approach to chronic conditions",
+            "Personalized medicine potential",
+            "Clinical trial results",
+            "Collaboration with healthcare providers",
+            "Regulatory considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact and Future Directions",
+          "points": [
+            "Addressing allergic asthma",
+            "Expanding therapeutic applications",
+            "Research partnerships",
+            "Market positioning",
+            "Long-term health outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study 3: Kinnva",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Company Overview",
+          "points": [
+            "Located in Singapore",
+            "Focus on sustainable aquaculture",
+            "Integrated Methane Platform",
+            "Converting waste gases into protein",
+            "Reducing reliance on traditional feed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations and Technologies",
+          "points": [
+            "Fermentation processes",
+            "Environmental benefits",
+            "Economic impact on aquaculture",
+            "Collaboration with fisheries",
+            "Market demand for sustainable feed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact and Future Directions",
+          "points": [
+            "Addressing food security",
+            "Expanding product offerings",
+            "Research and development initiatives",
+            "Sustainability goals",
+            "Long-term industry impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Comparative Analysis of Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Similarities",
+          "points": [
+            "Focus on sustainability",
+            "Innovative technologies",
+            "Addressing global challenges",
+            "Collaboration with industries",
+            "Market growth potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Differences",
+          "points": [
+            "Sector focus (biochemicals vs therapeutics vs aquaculture)",
+            "Technological approaches",
+            "Market strategies",
+            "Regulatory challenges",
+            "Targeted customer base"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges Faced by Synthetic Biology Start-ups",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Regulatory and Ethical Challenges",
+          "points": [
+            "Navigating complex regulations",
+            "Ensuring safety and efficacy",
+            "Public perception and acceptance",
+            "Ethical considerations in genetic engineering",
+            "Balancing innovation with responsibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market and Financial Challenges",
+          "points": [
+            "Access to funding",
+            "Competition from established companies",
+            "Market volatility",
+            "Scaling production",
+            "Sustaining growth and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends in Synthetic Biology Start-ups",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Technological Advancements",
+          "points": [
+            "Integration of AI and machine learning",
+            "CRISPR and gene editing innovations",
+            "Biodegradable materials development",
+            "Personalized medicine advancements",
+            "Regenerative therapies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Growth Projections",
+          "points": [
+            "Expected market expansion",
+            "Investment trends",
+            "Emerging sectors",
+            "Global collaboration opportunities",
+            "Focus on sustainable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Dynamic landscape of synthetic biology start-ups",
+            "Innovative solutions for global challenges",
+            "Importance of sustainability and health",
+            "Investment opportunities for stakeholders",
+            "Future potential of the sector"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Engage with synthetic biology start-ups",
+            "Support research and development",
+            "Advocate for responsible innovation",
+            "Explore investment opportunities",
+            "Collaborate for sustainable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

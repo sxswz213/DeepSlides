@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Smart Materials": 3,
+    "Types of Smart Materials Actuators": 4,
+    "Mechanisms of Action": 3,
+    "Applications of Smart Materials Actuators": 4,
+    "Challenges and Limitations": 3,
+    "Future Trends and Research Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Smart Materials Actuators",
+          "points": [
+            "Definition of smart materials",
+            "Importance in actuator technology",
+            "Overview of presentation structure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Smart Materials",
+          "points": [
+            "Enhanced adaptability",
+            "Comparison with traditional actuators",
+            "Potential for innovation across industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Objectives",
+          "points": [
+            "Explore types of smart materials",
+            "Investigate actuation mechanisms",
+            "Analyze applications and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Smart Materials",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Smart Materials?",
+          "points": [
+            "Definition and characteristics",
+            "Types of stimuli responsiveness",
+            "Applications in various fields"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Development",
+          "points": [
+            "Early research and discoveries",
+            "Key milestones in smart materials",
+            "Evolution of actuator technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends",
+          "points": [
+            "Emerging materials and technologies",
+            "Research focus areas",
+            "Industry adoption rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Smart Materials Actuators",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Dielectric Elastomers",
+          "points": [
+            "Definition and properties",
+            "Mechanism of actuation",
+            "Applications in soft robotics",
+            "Advantages and limitations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Shape Memory Alloys",
+          "points": [
+            "Characteristics and behavior",
+            "Temperature-induced shape change",
+            "Use in biomedical devices",
+            "Challenges in implementation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Electrostrictive Materials",
+          "points": [
+            "Overview and properties",
+            "Comparison with dielectric elastomers",
+            "Applications in precision actuators",
+            "Future potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Other Smart Materials",
+          "points": [
+            "Overview of additional materials",
+            "Examples: piezoelectric and magnetostrictive",
+            "Applications and benefits",
+            "Research opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Mechanisms of Action",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Electrically Responsive Mechanisms",
+          "points": [
+            "How electric fields induce actuation",
+            "Applications in robotics",
+            "Advantages of electrical actuation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Thermally Responsive Mechanisms",
+          "points": [
+            "Temperature-induced actuation",
+            "Applications in medical devices",
+            "Challenges in thermal management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Magnetically and Photoresponsive Mechanisms",
+          "points": [
+            "Magnetic field-induced changes",
+            "Light-responsive actuation",
+            "Applications in smart systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of Smart Materials Actuators",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Robotics",
+          "points": [
+            "Soft robotics and biomimicry",
+            "Applications in prosthetics",
+            "Advantages of smart actuators in robotics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Biomedical Devices",
+          "points": [
+            "Use in minimally invasive devices",
+            "Shape memory alloys in stents",
+            "Future trends in biomedical applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Aerospace Innovations",
+          "points": [
+            "Morphing wings technology",
+            "Vibration control systems",
+            "Energy harvesting applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Other Industries",
+          "points": [
+            "Automotive applications",
+            "Consumer electronics",
+            "Potential in construction and architecture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Environmental Sensitivity",
+          "points": [
+            "Impact of temperature and humidity",
+            "Performance reliability concerns",
+            "Mitigation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration Complexity",
+          "points": [
+            "Challenges in system integration",
+            "Engineering considerations",
+            "Cost implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Durability Issues",
+          "points": [
+            "Long-term stability concerns",
+            "Material fatigue and wear",
+            "Research directions for improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Research Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Research Areas",
+          "points": [
+            "Novel smart materials development",
+            "Interdisciplinary approaches",
+            "Potential breakthroughs in actuator technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Summary of key findings",
+            "Importance of continued research",
+            "Encouragement for industry collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

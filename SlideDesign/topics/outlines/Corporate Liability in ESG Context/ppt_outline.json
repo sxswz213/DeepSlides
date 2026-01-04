@@ -1,0 +1,335 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 6,
+    "Case Studies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Corporate Liability in ESG",
+          "points": [
+            "Definition of Corporate Liability",
+            "Importance of ESG Factors",
+            "Stakeholder Expectations",
+            "Legal Responsibilities",
+            "Implications of Non-Compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in ESG Accountability",
+          "points": [
+            "Increased Scrutiny from Stakeholders",
+            "Growing Legal Frameworks",
+            "Impact of Globalization",
+            "Emerging ESG Standards",
+            "Corporate Governance Enhancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Understand Corporate Liability",
+            "Explore Recent Developments",
+            "Discuss D&O Liability Insurance",
+            "Identify Compliance Strategies",
+            "Highlight Case Studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "The Rise of ESG Factors",
+          "points": [
+            "Definition of ESG",
+            "Historical Context",
+            "Importance in Corporate Strategy",
+            "Stakeholder Influence",
+            "Global Trends in ESG"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Legal Frameworks Governing ESG",
+          "points": [
+            "Overview of Relevant Laws",
+            "Canada Business Corporations Act",
+            "Disclosure Requirements",
+            "Litigation Risks",
+            "Regulatory Bodies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Expectations",
+          "points": [
+            "Investors' Demand for Transparency",
+            "Consumer Awareness",
+            "Activist Influence",
+            "Corporate Reputation",
+            "Long-term Sustainability Goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consequences of Non-Compliance",
+          "points": [
+            "Legal Repercussions",
+            "Financial Penalties",
+            "Reputational Damage",
+            "Shareholder Lawsuits",
+            "Operational Risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in ESG Compliance",
+          "points": [
+            "Complexity of ESG Standards",
+            "Inconsistent Reporting Practices",
+            "Data Verification Issues",
+            "Global Operations Management",
+            "Resource Allocation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recent Case Law Developments",
+          "points": [
+            "Vedanta Resources Plc v. Lungowe",
+            "Okpabi v. Royal Dutch Shell",
+            "Implications for Parent Companies",
+            "Duty of Care Expansion",
+            "Litigation Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolving Role of D&O Liability Insurance",
+          "points": [
+            "Importance of D&O Insurance",
+            "Coverage for ESG Claims",
+            "Policy Adaptations",
+            "Risk Mitigation Strategies",
+            "Market Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Increased Litigation Risks",
+          "points": [
+            "Rise in ESG-related Lawsuits",
+            "Impact of New Regulations",
+            "Investor Activism",
+            "Legal Precedents",
+            "Corporate Accountability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are the Key Legal Responsibilities?",
+          "points": [
+            "Adherence to ESG Standards",
+            "Accurate Reporting",
+            "Transparency in Disclosures",
+            "Risk Management Practices",
+            "Stakeholder Engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How Can Companies Mitigate Risks?",
+          "points": [
+            "Implement Robust ESG Strategies",
+            "Regular Audits and Reviews",
+            "Enhance Governance Frameworks",
+            "Training and Awareness Programs",
+            "Engage with Stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What is the Future of Corporate Liability in ESG?",
+          "points": [
+            "Anticipated Regulatory Changes",
+            "Emerging Trends in Litigation",
+            "Impact of Global Standards",
+            "Role of Technology in Compliance",
+            "Corporate Governance Evolution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Understanding Corporate Liability",
+          "points": [
+            "Definition and Scope",
+            "Legal Frameworks Overview",
+            "Stakeholder Expectations",
+            "Consequences of Non-Compliance",
+            "Importance of Transparency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Insights from Recent Developments",
+          "points": [
+            "Landmark Cases Overview",
+            "Parent Company Accountability",
+            "D&O Insurance Adaptations",
+            "Litigation Trends",
+            "Regulatory Changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strategies for Effective ESG Compliance",
+          "points": [
+            "Establish Clear ESG Policies",
+            "Conduct Regular Audits",
+            "Ensure Accurate Reporting",
+            "Engage with Stakeholders",
+            "Monitor Regulatory Changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of D&O Liability Insurance",
+          "points": [
+            "Coverage for ESG Claims",
+            "Importance for Corporate Leaders",
+            "Policy Evolution",
+            "Risk Mitigation Strategies",
+            "Future Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies: Lessons Learned",
+          "points": [
+            "Vedanta Resources Case",
+            "Okpabi v. Royal Dutch Shell",
+            "Impact on Corporate Governance",
+            "Best Practices",
+            "Recommendations for Companies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Recommendations",
+          "points": [
+            "Summary of Key Findings",
+            "Importance of ESG Compliance",
+            "Proactive Risk Management",
+            "Future Outlook",
+            "Call to Action for Corporations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Case Study: Vedanta Resources Plc v. Lungowe",
+          "points": [
+            "Overview of the Case",
+            "Legal Implications",
+            "Impact on Corporate Liability",
+            "Lessons Learned",
+            "Recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Okpabi v. Royal Dutch Shell",
+          "points": [
+            "Overview of the Case",
+            "Legal Implications",
+            "Impact on Parent Company Liability",
+            "Lessons Learned",
+            "Recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

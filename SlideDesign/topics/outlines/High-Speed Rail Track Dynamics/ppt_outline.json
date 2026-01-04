@@ -1,0 +1,327 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 3,
+    "Methodology": 4,
+    "Data Collection": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Conclusion": 2,
+    "Future Work": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of High-Speed Rail Systems",
+          "points": [
+            "Definition of HSR",
+            "Importance of HSR in modern transportation",
+            "Key benefits of HSR"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "To analyze track dynamics",
+            "To evaluate materials used",
+            "To explore technological innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Report",
+          "points": [
+            "Focus on track dynamics",
+            "Safety and performance considerations",
+            "Future implications for rail systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Fundamentals of Track Dynamics",
+          "points": [
+            "Interaction between trains and tracks",
+            "Influence of track geometry",
+            "Dynamic theories and models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Materials in High-Speed Rail",
+          "points": [
+            "Concrete and steel usage",
+            "Innovative composites",
+            "Impact on durability and maintenance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Safety Analysis in HSR",
+          "points": [
+            "Track irregularities and derailments",
+            "Importance of monitoring",
+            "Case studies on safety incidents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative approaches",
+            "Data sources and literature",
+            "Analytical frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Dynamic Modeling Techniques",
+          "points": [
+            "Mass-spring-damper systems",
+            "Simulation methods",
+            "Validation of models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Field measurements",
+            "Sensor technologies",
+            "Data analysis tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Safety Assessment Procedures",
+          "points": [
+            "Risk analysis techniques",
+            "Monitoring protocols",
+            "Evaluation criteria"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Field Data Acquisition",
+          "points": [
+            "Types of data collected",
+            "Instruments used",
+            "Data collection timeline"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sensor Deployment",
+          "points": [
+            "Location of sensors",
+            "Types of sensors used",
+            "Data transmission methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Processing Techniques",
+          "points": [
+            "Data cleaning methods",
+            "Statistical analysis",
+            "Visualization tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Track Dynamics Findings",
+          "points": [
+            "Key interactions identified",
+            "Impact of speed on dynamics",
+            "Vibration analysis results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Material Performance Analysis",
+          "points": [
+            "Durability of materials",
+            "Maintenance frequency",
+            "Cost-benefit analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Safety Analysis Outcomes",
+          "points": [
+            "Incidence of derailments",
+            "Effectiveness of monitoring",
+            "Recommendations for safety improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Innovations Impact",
+          "points": [
+            "IoT applications",
+            "Predictive maintenance results",
+            "Operational efficiency improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Interpretation of Results",
+          "points": [
+            "Significance of findings",
+            "Comparison with existing literature",
+            "Implications for future research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in HSR Dynamics",
+          "points": [
+            "Technical limitations",
+            "Data collection challenges",
+            "Safety concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Stakeholders",
+          "points": [
+            "Policy implications",
+            "Investment in technology",
+            "Focus on safety enhancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Findings",
+          "points": [
+            "Dynamics of HSR tracks",
+            "Importance of materials and design",
+            "Role of technology in safety"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Need for continuous research",
+            "Future of high-speed rail systems",
+            "Call to action for stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Work",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Areas for Further Research",
+          "points": [
+            "Advanced modeling techniques",
+            "Long-term monitoring strategies",
+            "Integration of new materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Potential Innovations",
+          "points": [
+            "Emerging technologies in HSR",
+            "Sustainability initiatives",
+            "Global trends in rail transportation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

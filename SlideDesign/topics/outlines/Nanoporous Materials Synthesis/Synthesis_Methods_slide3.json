@@ -1,0 +1,25 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: Dealloyed nanoporous materials with interface-controlled behavior ---\nURL: https://link.springer.com/article/10.1557/mrs.2017.299\n\nSUMMARY:\nDealloying is the selective dissolution of less noble elements from an alloy, leaving behind a porous structure.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: Nanoporous Dealloyed Metal Materials Processing and Applications ... ---\nURL: https://pubs.acs.org/doi/abs/10.1021/acs.iecr.2c03952\n\nSUMMARY:\nDealloying is an innovative technique based on selective removal of a sacrificial metal from a metal alloy to engineer surface textures and\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Dealloyed nanoporous materials for electrochemical energy ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S258977802200001X\n\nSUMMARY:\nDealloying an alloy under appropriate conditions drives the spontaneous evolution of a 3D nanoporous structure. The fabricated 3D nanoporous materials have a\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: Electrochemical and chemical dealloying of nanoporous anode ... ---\nURL: https://www.tandfonline.com/doi/full/10.1080/14686996.2025.2451017?af=R\n\nSUMMARY:\nDealloying is described as corrosion process that involves selectively dissolving metal from the parent alloy and allow the remaining metals to reorganized, thus result in the formation of nanoporous surface . Nonequilibrium behaviour at the interface between alloy and etchant shows the fundamental of dealloying [22].\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Dealloying: An effective method for scalable fabrication of 0D, 1D ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S1748013221000190\n\nSUMMARY:\nDealloying method is a common process that the active compositions or elements in alloy precursor are selectively removed by chemical or electrochemical methods\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://www.researchgate.net/publication/349929463/figure/fig5/AS:1093412078002206@1637701162418/Scheme-showing-the-deposition-of-porous-Au-film-by-DHBT-method-Adapted-with_Q640.jpg\nDESCRIPTION: None\n\nIMAGE 2:\nURL: https://www.tandfonline.com/cms/asset/11fedcea-c57e-4b55-9405-34f9ea7171ae/tsta_a_2451017_uf0001_oc.jpg\nDESCRIPTION: None\n\nIMAGE 3:\nURL: https://www.mdpi.com/materials/materials-15-02111/article_deploy/html/images/materials-15-02111-g001.png\nDESCRIPTION: None\n\nIMAGE 4:\nURL: https://pubs.acs.org/cms/10.1021/acsanm.3c00320/asset/images/medium/an3c00320_0008.gif\nDESCRIPTION: None\n\nIMAGE 5:\nURL: https://www.researchgate.net/publication/363406669/figure/fig4/AS:11431281083822229@1662776424335/Molecular-dynamics-simulation-mechanism-of-dealloying-to-construct-nano-porous-copper.png\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Overview of Dealloying",
+      "expanded_content": "Dealloying selectively dissolves less noble metals from an alloy, resulting in a porous framework, optimizing surface characteristics for various applications."
+    },
+    {
+      "point_title": "Mechanism",
+      "expanded_content": "The process involves corrosion, where specific elements are dissolved, allowing remaining metals to reorganize, forming a three-dimensional nanoporous structure."
+    },
+    {
+      "point_title": "Advantages",
+      "expanded_content": "Dealloying enables scalable fabrication, customizable porosity, and enhanced surface area, making it ideal for applications in catalysis and energy storage."
+    },
+    {
+      "point_title": "Limitations",
+      "expanded_content": "Challenges include controlling pore size and distribution, potential alloy composition restrictions, and limited material compatibility."
+    },
+    {
+      "point_title": "Applications",
+      "expanded_content": "Dealloyed nanoporous materials are utilized in electrochemical energy storage, catalysis, sensors, and biomedical devices, benefiting from their unique structural properties."
+    }
+  ]
+}

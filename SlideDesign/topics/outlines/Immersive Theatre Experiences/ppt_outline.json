@@ -1,0 +1,172 @@
+{
+  "recommended_slides": 10,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 2,
+    "Conflict": 2,
+    "Resolution": 2,
+    "Outcome": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "What is Immersive Theatre?",
+          "points": [
+            "Transformative storytelling",
+            "Active audience participation",
+            "Breaks barriers between performers and spectators",
+            "Engages multiple senses",
+            "Creates unique experiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Immersive Theatre",
+          "points": [
+            "Redefines traditional theatre",
+            "Encourages emotional connections",
+            "Fosters community engagement",
+            "Innovative artistic expressions",
+            "Significant cultural impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Historical Roots of Immersive Theatre",
+          "points": [
+            "Ancient rituals and communal performances",
+            "Theatre of the Oppressed by Augusto Boal",
+            "Medieval mystery plays",
+            "Influence of experimental movements",
+            "Emergence of companies like Punchdrunk"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolution of Audience Engagement",
+          "points": [
+            "Shift from passive to active roles",
+            "Increased emotional and psychological engagement",
+            "Multi-sensory experiences",
+            "Exploration of narratives from multiple perspectives",
+            "Community-building through shared experiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges in Immersive Theatre",
+          "points": [
+            "Balancing creative vision with commercial viability",
+            "Ensuring psychological safety for participants",
+            "Addressing audience vulnerabilities",
+            "Maintaining engagement in diverse formats",
+            "Navigating technological integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Emotional Intensity",
+          "points": [
+            "Potential for overwhelming experiences",
+            "Need for responsible storytelling",
+            "Creating safe spaces for exploration",
+            "Understanding audience dynamics",
+            "Ethical considerations in immersive experiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Innovative Solutions for Creators",
+          "points": [
+            "Prioritizing emotional well-being",
+            "Utilizing feedback for improvement",
+            "Creating adaptable performance spaces",
+            "Integrating technology responsibly",
+            "Fostering community connections"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Immersive Theatre",
+          "points": [
+            "Growth of immersive entertainment market",
+            "Increased demand for community-focused experiences",
+            "Exploration of new storytelling formats",
+            "Emphasis on audience agency",
+            "Potential for cross-disciplinary collaborations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Takeaways from Immersive Theatre",
+          "points": [
+            "Redefines audience interaction",
+            "Encourages emotional engagement",
+            "Promotes innovative artistic expressions",
+            "Challenges traditional theatre norms",
+            "Offers unique community experiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Looking Ahead: The Future of Immersive Theatre",
+          "points": [
+            "Technological advancements shaping experiences",
+            "Growing audience demand for immersion",
+            "Potential for new artistic collaborations",
+            "Importance of emotional safety",
+            "Exciting possibilities for creative growth"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Graph Theory": 3,
+    "Social Networks Overview": 3,
+    "Methodology": 4,
+    "Results": 4,
+    "Case Studies": 3,
+    "Implications and Applications": 2,
+    "Future Research Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Graph Theory in Social Networks",
+          "points": [
+            "Definition of Graph Theory",
+            "Importance in Social Networks",
+            "Objectives of the Report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts",
+          "points": [
+            "Nodes and Edges",
+            "Directed vs Undirected Edges",
+            "Weighted Graphs",
+            "Applications in Social Media"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Study",
+          "points": [
+            "Understanding Social Interactions",
+            "Implications for Research",
+            "Enhancing User Engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Graph Theory",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Fundamentals of Graph Theory",
+          "points": [
+            "Vertices (Nodes)",
+            "Edges",
+            "Types of Graphs",
+            "Connected vs Disconnected"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Graph Representation",
+          "points": [
+            "Adjacency Matrix",
+            "Incidence Matrix",
+            "Graph Visualization Techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Origins of Graph Theory",
+            "Key Contributors",
+            "Evolution of Applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Social Networks Overview",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Definition of Social Networks",
+          "points": [
+            "Characteristics of Social Networks",
+            "Types of Social Networks",
+            "Importance in Modern Society"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of Social Networks",
+          "points": [
+            "Nodes as Individuals",
+            "Edges as Relationships",
+            "Network Density and Connectivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Dynamics of Social Interactions",
+          "points": [
+            "Information Spread",
+            "Influence and Engagement",
+            "Role of Technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Centrality Measures",
+          "points": [
+            "Definition of Centrality",
+            "Degree Centrality",
+            "Betweenness Centrality",
+            "Closeness Centrality",
+            "Eigenvector Centrality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Detection Algorithms",
+          "points": [
+            "Importance of Community Detection",
+            "Girvan-Newman Algorithm",
+            "Modularity Optimization",
+            "Strengths and Weaknesses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveys and Questionnaires",
+            "Web Scraping",
+            "APIs for Social Media Data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytical Tools and Software",
+          "points": [
+            "Graph Analysis Software",
+            "Statistical Tools",
+            "Visualization Tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Findings on Centrality Measures",
+          "points": [
+            "Influential Nodes Identified",
+            "Patterns of Influence",
+            "Comparison of Centrality Measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Structures Identified",
+          "points": [
+            "Clusters within Networks",
+            "Characteristics of Communities",
+            "Implications for Engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Social Media",
+          "points": [
+            "Enhanced Recommendation Systems",
+            "Information Spread Analysis",
+            "User Engagement Strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Encountered",
+          "points": [
+            "Scalability Issues",
+            "Data Privacy Concerns",
+            "Dynamic Nature of Networks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study 1: Facebook",
+          "points": [
+            "Graph Representation",
+            "Centrality Measures Applied",
+            "Community Detection Results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Twitter",
+          "points": [
+            "Influence Analysis",
+            "Information Spread Patterns",
+            "User Engagement Insights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: LinkedIn",
+          "points": [
+            "Professional Networking Analysis",
+            "Community Structures",
+            "Recommendations for Improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications and Applications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Practical Applications of Findings",
+          "points": [
+            "Improving User Experience",
+            "Targeted Marketing Strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Theoretical Implications",
+          "points": [
+            "Contributions to Graph Theory",
+            "Future Research Directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Research Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Innovative Methodologies",
+          "points": [
+            "Addressing Scalability",
+            "Enhancing Data Privacy",
+            "Adapting to Dynamic Networks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Expanding Applications",
+          "points": [
+            "New Social Media Platforms",
+            "Cross-Disciplinary Research",
+            "Longitudinal Studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

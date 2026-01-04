@@ -1,0 +1,273 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Historical Background": 3,
+    "Key Concepts of Phenomenology": 4,
+    "Phenomenology in Modern Context": 4,
+    "Applications of Phenomenology": 4,
+    "Case Studies": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Phenomenology?",
+          "points": [
+            "Philosophical movement initiated by Edmund Husserl",
+            "Focus on structures of consciousness",
+            "Explores human experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Phenomenology",
+          "points": [
+            "Enhances understanding of subjective experiences",
+            "Bridges gaps between disciplines",
+            "Relevance in contemporary contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Examine core concepts",
+            "Explore applications",
+            "Discuss relationships with other philosophies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Historical Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Foundations of Phenomenology",
+          "points": [
+            "Founded by Edmund Husserl",
+            "Key principles established in early 20th century",
+            "Influence of German idealism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Figures in Phenomenology",
+          "points": [
+            "Edmund Husserl",
+            "Martin Heidegger",
+            "Maurice Merleau-Ponty",
+            "Alfred Schutz"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolution of Phenomenological Thought",
+          "points": [
+            "Development through existentialism",
+            "Integration with hermeneutics",
+            "Impact on modern philosophy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Concepts of Phenomenology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Intentionality",
+          "points": [
+            "Consciousness directed towards objects",
+            "Every act of consciousness relates to something",
+            "Active engagement with the world"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Epoché",
+          "points": [
+            "Bracketing assumptions",
+            "Focusing on subjective experiences",
+            "Clear examination of phenomena"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Noema and Noesis",
+          "points": [
+            "Noesis: act of consciousness",
+            "Noema: content of that act",
+            "Dynamic interplay between perception and meaning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lifeworld",
+          "points": [
+            "Everyday context of experiences",
+            "Influence of social and cultural factors",
+            "Essential for understanding consciousness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Phenomenology in Modern Context",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Phenomenology in Psychology",
+          "points": [
+            "Focus on individual perspectives",
+            "Rich qualitative data",
+            "Uncovering meanings behind experiences",
+            "Challenges normative assumptions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Phenomenology in Sociology",
+          "points": [
+            "Understanding social interactions",
+            "Meanings attached to experiences",
+            "Insights into social navigation",
+            "Alfred Schutz's contributions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Phenomenology in Cognitive Science",
+          "points": [
+            "Bridging subjective and objective data",
+            "Neurophenomenology",
+            "Enhancing comprehension of consciousness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interdisciplinary Applications",
+          "points": [
+            "Richness of lived experiences",
+            "Complexities of human behavior",
+            "Collaboration across fields"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of Phenomenology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: Psychological Research",
+          "points": [
+            "Qualitative methods in psychology",
+            "Understanding trauma and recovery",
+            "Phenomenological interviews"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Sociological Insights",
+          "points": [
+            "Exploring community dynamics",
+            "Subjective experiences in social contexts",
+            "Phenomenological analysis of social phenomena"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Cognitive Science Integration",
+          "points": [
+            "Neurophenomenology in practice",
+            "First-person accounts in research",
+            "Enhancing understanding of perception"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Broader Implications",
+          "points": [
+            "Influence on therapy practices",
+            "Impact on educational methods",
+            "Relevance in technology and AI"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Phenomenology",
+          "points": [
+            "Integration with digital humanities",
+            "Exploration of virtual experiences",
+            "Phenomenology in AI and machine learning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Continued Relevance",
+          "points": [
+            "Ongoing philosophical discourse",
+            "Interdisciplinary collaborations",
+            "Enhancing understanding of consciousness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

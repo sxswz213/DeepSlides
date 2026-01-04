@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Quantum Dots": 4,
+    "Applications in Displays": 5,
+    "Advantages of Quantum Dots in Displays": 4,
+    "Challenges and Limitations": 3,
+    "Future Trends and Innovations": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Quantum Dots",
+          "points": [
+            "Definition of Quantum Dots",
+            "Importance in Display Technology",
+            "Brief History of Development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Quantum Dots",
+          "points": [
+            "Enhancement of Color Accuracy",
+            "Improvement in Brightness",
+            "Role in Modern Displays"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore Working Principles",
+            "Discuss Applications",
+            "Analyze Future Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Quantum Dots",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "What are Quantum Dots?",
+          "points": [
+            "Semiconductor Nanocrystals",
+            "Unique Optical Properties",
+            "Photoluminescence and Electroluminescence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Working Principle of Quantum Dots",
+          "points": [
+            "Absorption of Photons",
+            "Excitation of Electrons",
+            "Emission of Light at Specific Wavelengths",
+            "Applications in LCDs and LEDs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Quantum Dot Technologies",
+          "points": [
+            "QD-LCDs",
+            "QLEDs",
+            "QD-OLEDs",
+            "Comparison of Technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolution of Display Technologies",
+          "points": [
+            "From Traditional LCDs to QLEDs",
+            "Impact on Color Gamut",
+            "Achieving Rec. 2020 Color Space"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications in Displays",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Quantum Dots in QD-LCDs",
+          "points": [
+            "Replacement of Phosphor Coating",
+            "Wider Color Gamut",
+            "Improved Energy Efficiency",
+            "Visual Quality Enhancement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of QD-OLED Technology",
+          "points": [
+            "Self-Emissive Capabilities",
+            "Vibrant Colors and Deep Blacks",
+            "No Burn-In Risk",
+            "Setting New Standards in Performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "QLED Technology Overview",
+          "points": [
+            "Augmentation of LCD Technology",
+            "Higher Brightness Levels",
+            "Longer Lifespans",
+            "Ideal for Bright Environments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications Beyond Consumer Electronics",
+          "points": [
+            "Medical Imaging",
+            "AR/VR Devices",
+            "Portable Displays",
+            "Future Market Potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Display Technologies",
+          "points": [
+            "QD-LCD vs. Traditional LCD",
+            "QD-OLED vs. OLED",
+            "QLED vs. Other Technologies",
+            "Performance Metrics Overview"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Advantages of Quantum Dots in Displays",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Enhanced Color Accuracy",
+          "points": [
+            "Pure Color Production",
+            "Near 100% Rec. 2020 Color Space",
+            "Improved Visual Experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Increased Brightness and Efficiency",
+          "points": [
+            "Higher Peak Brightness",
+            "Energy Efficiency Benefits",
+            "Longer Lifespan of Displays"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Versatility in Applications",
+          "points": [
+            "Adaptability to Various Technologies",
+            "Use in Different Display Types",
+            "Potential for Future Innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Self-Emissive Capabilities of QD-OLED",
+          "points": [
+            "True Blacks and Infinite Contrast",
+            "Enhanced Color Reproduction",
+            "Competitive Edge Over Traditional OLED"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Stability Issues",
+          "points": [
+            "Challenges in MicroLED Applications",
+            "Longevity Concerns",
+            "Dynamic Environment Performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Compliance",
+          "points": [
+            "Materials Used in Production",
+            "Cadmium Concerns",
+            "Navigating Industry Regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cost Considerations",
+          "points": [
+            "Higher Production Costs",
+            "Market Accessibility",
+            "Balancing Quality and Affordability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Innovations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Emerging Applications",
+          "points": [
+            "AR and VR Technologies",
+            "Biomedical Imaging",
+            "Photovoltaic Systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advancements in Production Techniques",
+          "points": [
+            "Innovative UPD Method",
+            "Scalability Improvements",
+            "Quality Enhancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research and Development Focus",
+          "points": [
+            "Overcoming Stability Challenges",
+            "Exploring New Materials",
+            "Future Market Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Neurodegenerative Diseases": 3,
+    "Types of Disease Models": 4,
+    "Methodology": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Neurodegenerative Diseases",
+          "points": [
+            "Definition and significance",
+            "Impact on public health",
+            "Progressive nature of diseases",
+            "Emotional and financial burdens",
+            "Need for effective models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore disease models",
+            "Analyze research methodologies",
+            "Discuss implications for treatment",
+            "Highlight future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of the Report",
+          "points": [
+            "Introduction",
+            "Background",
+            "Types of Models",
+            "Methodology",
+            "Results",
+            "Discussion",
+            "Future Directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Neurodegenerative Diseases",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Common Neurodegenerative Diseases",
+          "points": [
+            "Alzheimer's disease",
+            "Parkinson's disease",
+            "Huntington's disease"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Alzheimer's Disease",
+          "points": [
+            "Affects memory and cognition",
+            "Symptoms: memory loss, confusion",
+            "Pathology: amyloid plaques, tau tangles",
+            "Prevalence in the U.S.: 6 million"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Parkinson's and Huntington's Diseases",
+          "points": [
+            "Parkinson's: motor control issues, 1 million affected",
+            "Huntington's: genetic disorder, mid-adulthood onset",
+            "Impact on movement, cognition, and emotions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Disease Models",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "In Vitro Models",
+          "points": [
+            "Cell cultures for experimentation",
+            "Detailed study of cellular processes",
+            "Useful for Alzheimer's and Parkinson's",
+            "Limitations: lack of organism complexity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "In Vivo Models",
+          "points": [
+            "Transgenic mice for disease replication",
+            "Mimics human disease progression",
+            "Captures genetic and environmental factors",
+            "Limitations: may not fully represent human symptoms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Computational Models",
+          "points": [
+            "Data-driven analysis of large datasets",
+            "Identifies patterns and predicts progression",
+            "Integrates findings from other models",
+            "Dependent on data quality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "CRISPR for gene editing",
+            "Stem cell research for personalized treatment",
+            "Potential for tailored therapeutic strategies",
+            "Still in developmental stages"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approaches",
+          "points": [
+            "In vitro experimentation",
+            "In vivo studies with animal models",
+            "Computational data analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Cell culture techniques",
+            "Transgenic model development",
+            "Neuroimaging and genetic studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Methods",
+          "points": [
+            "Statistical analysis of experimental data",
+            "Pattern recognition in computational models",
+            "Comparative analysis across model types"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Insights from In Vitro Models",
+          "points": [
+            "Cellular interactions observed",
+            "Drug response evaluations",
+            "Limitations in complexity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Findings from In Vivo Studies",
+          "points": [
+            "Disease progression mimicked",
+            "Therapeutic evaluations conducted",
+            "Challenges in symptom representation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Computational Model Outcomes",
+          "points": [
+            "Identified disease patterns",
+            "Predicted progression trajectories",
+            "Enhanced understanding of mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Technologies Impact",
+          "points": [
+            "CRISPR's potential in gene therapy",
+            "Stem cell applications in modeling",
+            "Personalized medicine advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Challenges in Modeling",
+          "points": [
+            "Reproducibility issues",
+            "Complexity of diseases",
+            "Translation to human conditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Future Research",
+          "points": [
+            "Need for improved model selection",
+            "Integration of advanced technologies",
+            "Focus on translational research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Key Findings",
+          "points": [
+            "Diverse models provide insights",
+            "Emerging technologies hold promise",
+            "Critical need for continued research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Advancements in Research Technologies",
+          "points": [
+            "CRISPR and gene editing",
+            "Stem cell research innovations",
+            "Potential for personalized treatments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Researchers",
+          "points": [
+            "Enhance model selection",
+            "Integrate findings across methodologies",
+            "Focus on bridging research and clinical application"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

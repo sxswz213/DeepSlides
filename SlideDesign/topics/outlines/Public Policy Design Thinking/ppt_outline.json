@@ -1,0 +1,296 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 6,
+    "Case Studies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Public Policy Design Thinking",
+          "points": [
+            "Definition of design thinking",
+            "Importance in public policy",
+            "Human-centered approach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore design thinking principles",
+            "Discuss applications in public policy",
+            "Identify challenges and solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of User Engagement",
+          "points": [
+            "Understanding user needs",
+            "Enhancing policy effectiveness",
+            "Building trust with communities",
+            "Fostering collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Public Policy",
+          "points": [
+            "Traditional approaches",
+            "Bureaucratic challenges",
+            "Limited user engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Complex Societal Challenges",
+          "points": [
+            "Healthcare access",
+            "Transportation inefficiencies",
+            "Digital service gaps",
+            "Environmental issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Innovative Solutions",
+          "points": [
+            "Rising citizen expectations",
+            "Demand for transparency",
+            "Importance of adaptability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Design Thinking",
+          "points": [
+            "Empathy-driven solutions",
+            "Iterative processes",
+            "Collaboration among stakeholders",
+            "Focus on user experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Resistance to Change",
+          "points": [
+            "Bureaucratic inertia",
+            "Fear of failure",
+            "Lack of understanding of design thinking"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Complexity of Policy Problems",
+          "points": [
+            "Diverse stakeholder interests",
+            "Political constraints",
+            "Interconnected issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Skill Gaps in Public Sector",
+          "points": [
+            "Need for design thinking training",
+            "Lack of creative problem-solving skills",
+            "Limited ethnographic research capabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Barriers",
+          "points": [
+            "Traditional mindsets",
+            "Risk-averse environments",
+            "Need for a collaborative culture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "How Can Design Thinking Transform Public Policy?",
+          "points": [
+            "What are the key principles?",
+            "How can it enhance user engagement?",
+            "What are the potential outcomes?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Challenges Must Be Overcome?",
+          "points": [
+            "How to address bureaucratic resistance?",
+            "What skills are needed?",
+            "How to foster a cultural shift?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Are the Best Practices?",
+          "points": [
+            "Examples of successful applications",
+            "Lessons learned from case studies",
+            "Strategies for effective implementation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Design Thinking Principles",
+          "points": [
+            "Empathize",
+            "Define",
+            "Ideate",
+            "Prototype",
+            "Test"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Applications in Canada",
+          "points": [
+            "Engagement with healthcare professionals",
+            "Streamlined processes",
+            "Improved service delivery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Estonia's Digital Transformation",
+          "points": [
+            "Citizen involvement in design",
+            "User-friendly platforms",
+            "Enhanced accessibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Transportation Innovations",
+          "points": [
+            "User engagement strategies",
+            "Tailored services",
+            "Increased efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Iterative Process Benefits",
+          "points": [
+            "Continuous feedback loops",
+            "Adaptability to user needs",
+            "Improved policy outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Shift for Design Thinking",
+          "points": [
+            "Encouraging experimentation",
+            "Building collaborative teams",
+            "Training and development opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Case Study: Canada",
+          "points": [
+            "Healthcare wait times",
+            "Stakeholder engagement",
+            "Results and impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Estonia",
+          "points": [
+            "Digital services design",
+            "Citizen participation",
+            "Outcomes and lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

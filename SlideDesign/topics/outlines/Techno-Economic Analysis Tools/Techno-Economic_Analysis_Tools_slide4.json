@@ -1,0 +1,21 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: Economic Analysis in AspenPlus - YouTube ---\nURL: https://www.youtube.com/watch?v=RSedanNo-10\n\nSUMMARY:\nEconomic Analysis in AspenPlus. 53K views · 7 years ago ...more ... Aspen Energy Analyzer Tutorial. Glenn Lipscomb•29K views · 20:15. Go to\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: Aspen Plus: Economic Analysis of the Production of Acetic Anhydrid ---\nURL: https://www.youtube.com/watch?v=J4XmEr47gGs\n\nSUMMARY:\nThis video shows an economic analysis of the production of acetic anhydrid with Aspen Plus. Source: Kamal I.M. Al-Malah.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: [PDF] Aspen Process Economic Analyzer User's Guide ---\nURL: https://esupport.aspentech.com/FileAttachment?id=a0g0B00000GfSoh\n\nSUMMARY:\nThis is a user's guide for Aspen Process Economic Analyzer, a software by AspenTech. This document is intended as a guide to using the software.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: Techno-Economic Assessment Template Walkthrough - AssessCCUS ---\nURL: https://www.youtube.com/watch?v=Hfmim5d1BwM\n\nSUMMARY:\n7:42 · Go to channel · Economic Analysis in AspenPlus. Christi Patton Luks•53K views · 22:15 · Go to channel · “The techno-economic assessment\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Techno-Economic Analysis in Chemical Process Design ---\nURL: https://www.numberanalytics.com/blog/techno-economic-analysis-chemical-process-design\n\nSUMMARY:\nThis guide provides an overview of the key principles and best practices in techno-economic analysis for chemical process design. It covers the\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://www.researchgate.net/profile/Xunmin-Ou/publication/276533937/figure/fig1/AS:294526158688269@1447231916917/Techno-economic-analysis-approach.png\nDESCRIPTION: None\n\nIMAGE 2:\nURL: https://wrtraining.org/wp-content/uploads/2020/06/3.jpg\nDESCRIPTION: The diagram depicts a material balance for a non-isothermal mixed flow reactor setup within ASPEN software, including various components such as a compressor, reactors, and separation units interconnected by streams labeled with product outputs.\n\nIMAGE 3:\nURL: https://chemicalengineeringguy.com/wp-content/uploads/2019/06/consult_1_1466172209.jpg\nDESCRIPTION: None\n\nIMAGE 4:\nURL: https://www.researchgate.net/profile/Xunmin-Ou/publication/276533937/figure/fig1/AS:294526158688269@1447231916917/Techno-economic-analysis-approach_Q320.jpg\nDESCRIPTION: None\n\nIMAGE 5:\nURL: https://www.researchgate.net/profile/Ioanna_Dimitriou/publication/282038006/figure/download/fig7/AS:415313398124546@1476029838115/Aspen-PlusR-model-used-for-preliminary-techno-economic-assessment-of-acetic-acid.png\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Aspen Plus for Modeling",
+      "expanded_content": "Aspen Plus enables detailed modeling of chemical processes, integrating economic assessments to provide insights into production costs and profitability (Source 2)."
+    },
+    {
+      "point_title": "MATLAB for Simulations",
+      "expanded_content": "MATLAB facilitates complex simulations, allowing users to manipulate variables and analyze dynamic systems, essential for optimizing economic performance (Source 5)."
+    },
+    {
+      "point_title": "Microsoft Excel for Data Analysis",
+      "expanded_content": "Excel is widely used for data analysis, offering powerful tools for statistical analysis, financial modeling, and visualization of techno-economic data (Source 4)."
+    },
+    {
+      "point_title": "Flexibility in Applications",
+      "expanded_content": "These tools provide flexibility across various applications, supporting diverse industries in conducting comprehensive techno-economic analyses tailored to specific project needs (Source 1)."
+    }
+  ]
+}

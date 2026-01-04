@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background of Forensic Medicine": 3,
+    "Technological Advances in Forensic Medicine": 5,
+    "Applications of Forensic Medicine Technology": 4,
+    "Challenges and Limitations": 3,
+    "Future Trends in Forensic Medicine Technology": 2,
+    "Case Studies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Forensic Medicine Technology",
+          "points": [
+            "Definition of forensic medicine",
+            "Importance in the legal system",
+            "Integration of medical knowledge and criminal investigations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Explore advancements in technology",
+            "Highlight challenges in implementation",
+            "Emphasize interdisciplinary collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of the Presentation",
+          "points": [
+            "Introduction",
+            "Background",
+            "Technological Advances",
+            "Applications",
+            "Challenges",
+            "Future Trends",
+            "Case Studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background of Forensic Medicine",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "History of Forensic Medicine",
+          "points": [
+            "Origins and evolution",
+            "Key milestones in forensic science",
+            "Influence of technology on forensic practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Forensic Medicine in Criminal Justice",
+          "points": [
+            "Evidence collection and analysis",
+            "Expert testimony in court",
+            "Impact on case outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interdisciplinary Nature of Forensic Medicine",
+          "points": [
+            "Collaboration among various fields",
+            "Importance of diverse expertise",
+            "Examples of interdisciplinary teams"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Technological Advances in Forensic Medicine",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Virtual Autopsy",
+          "points": [
+            "Definition and process",
+            "Benefits of non-invasive examination",
+            "Technologies used (CT, MRI)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Artificial Intelligence in Forensics",
+          "points": [
+            "AI applications in data analysis",
+            "Improving efficiency and accuracy",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Imaging Technologies",
+          "points": [
+            "3D imaging and printing",
+            "Integration with traditional methods",
+            "Case studies of successful applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Digital Forensics",
+          "points": [
+            "Role of technology in evidence collection",
+            "Challenges in digital evidence handling",
+            "Future of digital forensics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations in DNA Analysis",
+          "points": [
+            "Advancements in DNA technology",
+            "Impact on cold cases",
+            "Ethical implications of genetic data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of Forensic Medicine Technology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Crime Scene Investigation",
+          "points": [
+            "Use of imaging technologies",
+            "Enhancing evidence collection",
+            "Case examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Post-Mortem Analysis",
+          "points": [
+            "Virtual autopsy applications",
+            "AI in cause of death determination",
+            "Benefits for cultural sensitivities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Legal Proceedings",
+          "points": [
+            "Presentation of forensic evidence in court",
+            "Role of expert witnesses",
+            "Impact on jury decisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health and Safety",
+          "points": [
+            "Forensic medicine in epidemic investigations",
+            "Role in identifying public health threats",
+            "Collaboration with health agencies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Operational Challenges",
+          "points": [
+            "High costs of technology",
+            "Training gaps in forensic institutions",
+            "Resource disparities across regions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical and Legal Concerns",
+          "points": [
+            "Data privacy issues",
+            "Admissibility of digital evidence",
+            "Need for standardized protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resistance to Change",
+          "points": [
+            "Cultural attitudes towards technology",
+            "Challenges in adopting new methods",
+            "Importance of education and advocacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends in Forensic Medicine Technology",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Potential of blockchain in evidence tracking",
+            "Advancements in AI and machine learning",
+            "Future of virtual reality in forensic training"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Interdisciplinary Collaboration",
+          "points": [
+            "Importance of teamwork in innovation",
+            "Examples of successful collaborations",
+            "Future directions for interdisciplinary research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Successful Implementation of Virtual Autopsy",
+          "points": [
+            "Case overview",
+            "Technological integration",
+            "Outcomes and lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "AI in Solving Cold Cases",
+          "points": [
+            "Case overview",
+            "AI applications used",
+            "Impact on investigative practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

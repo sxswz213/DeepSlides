@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 5,
+    "Conflict": 5,
+    "Resolution": 5,
+    "Outcome": 4
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding STEM Education Equity",
+          "points": [
+            "Definition of STEM Education Equity",
+            "Importance of Diversity in STEM",
+            "Current Landscape of Disparities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Underrepresented Groups",
+          "points": [
+            "Women",
+            "Racial Minorities",
+            "Low-Income Students",
+            "Geographical Disparities",
+            "Institutional Barriers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Goals of the Presentation",
+          "points": [
+            "Examine Current Disparities",
+            "Analyze Barriers",
+            "Highlight Actionable Strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Current State of STEM Education",
+          "points": [
+            "Overview of STEM Fields",
+            "Access Issues",
+            "Quality of Education",
+            "Role of Socioeconomic Status",
+            "Geographical Challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Barriers Faced by Underrepresented Groups",
+          "points": [
+            "Inadequate Facilities",
+            "Lack of Qualified Teachers",
+            "Cultural Mismatches",
+            "Implicit Biases",
+            "Stereotype Threat"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Disparities",
+          "points": [
+            "Lower Participation Rates",
+            "Reduced Interest in STEM Careers",
+            "Long-Term Economic Implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visualizing the Disparities",
+          "points": [
+            "Statistics on Participation",
+            "Graphs of Access vs. Success",
+            "Case Studies of Affected Groups"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Need for Change",
+          "points": [
+            "Urgency of Addressing Inequities",
+            "Potential Benefits of Equity in STEM",
+            "Call to Action for Stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Challenges in Implementing Equity Initiatives",
+          "points": [
+            "Funding Limitations",
+            "Resistance to Change",
+            "Lack of Awareness",
+            "Insufficient Training for Educators",
+            "Fragmented Policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: FIRST Grants",
+          "points": [
+            "Overview of the Program",
+            "Success Stories",
+            "Challenges Faced",
+            "Lessons Learned",
+            "Future Directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural and Systemic Barriers",
+          "points": [
+            "Implicit Bias in Education",
+            "Cultural Mismatches",
+            "Lack of Representation",
+            "Stereotypes in STEM Fields"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Engagement Issues",
+          "points": [
+            "Limited Outreach",
+            "Insufficient Partnerships",
+            "Barriers to Participation",
+            "Need for Local Involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Policy",
+          "points": [
+            "Current Policies and Their Limitations",
+            "Need for Systemic Change",
+            "Examples of Effective Policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Actionable Strategies for Improvement",
+          "points": [
+            "Curriculum Changes",
+            "Community Engagement",
+            "Financial Support",
+            "Mentorship Programs",
+            "Professional Development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integrating Culturally Relevant Materials",
+          "points": [
+            "Importance of Representation",
+            "Examples of Culturally Relevant Curriculum",
+            "Impact on Student Engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Building Community Partnerships",
+          "points": [
+            "Benefits of Collaboration",
+            "Examples of Successful Partnerships",
+            "Strategies for Effective Outreach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Targeted Financial Support",
+          "points": [
+            "Scholarships and Fellowships",
+            "Grants for Underfunded Schools",
+            "Impact on Participation Rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Training Educators for Inclusivity",
+          "points": [
+            "Recognizing Bias",
+            "Implementing Inclusive Practices",
+            "Ongoing Professional Development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Expected Outcomes of Equity Initiatives",
+          "points": [
+            "Increased Participation Rates",
+            "Diverse Workforce Development",
+            "Enhanced Innovation in STEM"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-Term Benefits for Society",
+          "points": [
+            "Economic Growth",
+            "Social Equity",
+            "Improved Quality of Life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Stakeholders",
+          "points": [
+            "Importance of Commitment",
+            "Collaboration Across Sectors",
+            "Investing in Future Generations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Next Steps",
+          "points": [
+            "Summary of Key Findings",
+            "Importance of Continued Efforts",
+            "Vision for the Future of STEM Education Equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Community-Based Healthcare Models",
+          "points": [
+            "Definition and importance",
+            "Focus on local populations",
+            "Integration with community resources",
+            "Emphasis on health equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Principles of Community-Based Models",
+          "points": [
+            "Accessibility",
+            "Equity",
+            "Community involvement",
+            "Tailored healthcare solutions",
+            "Sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Healthcare Landscape",
+          "points": [
+            "Rising costs",
+            "Aging population",
+            "Need for innovative delivery systems",
+            "Challenges in traditional healthcare"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "The Need for Community-Based Models",
+          "points": [
+            "Addressing unique health needs",
+            "Focus on underserved groups",
+            "Integration of services",
+            "Improving health outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Community-Based Healthcare Models",
+          "points": [
+            "Comprehensive Community- and Home-based Health Care Model",
+            "Accountable Health Communities Model",
+            "Home-Based Primary Care",
+            "Focus on social determinants of health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Insights from Community-Based Models",
+          "points": [
+            "Accessibility ensures service availability",
+            "Equity aims to eliminate disparities",
+            "Community involvement fosters trust",
+            "Importance of tailored solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies Overview",
+          "points": [
+            "Health Access Nurturing Development Services Program",
+            "Transitional Respite Care Program",
+            "Eastern Virginia Care Transitions Partnership",
+            "Impact on health outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Implementation",
+          "points": [
+            "Funding limitations",
+            "Workforce shortages",
+            "Community engagement difficulties",
+            "High turnover rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Funding Limitations",
+          "points": [
+            "Disrupted funding streams",
+            "Impact on Federally Qualified Health Centers",
+            "Need for innovative funding strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Workforce Issues",
+          "points": [
+            "Shortage of trained professionals",
+            "Burnout among staff",
+            "Impact on service delivery",
+            "Need for workforce development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Engagement Barriers",
+          "points": [
+            "Lack of infrastructure",
+            "Resource constraints",
+            "Lower participation rates",
+            "Strategies for effective engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Effective Implementation Strategies",
+          "points": [
+            "Stakeholder engagement",
+            "Resource mobilization",
+            "Training community health workers",
+            "Continuous support",
+            "Participatory processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Engagement Importance",
+          "points": [
+            "Involving community members",
+            "Building trust",
+            "Ensuring services meet local needs",
+            "Enhancing accountability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resource Mobilization Techniques",
+          "points": [
+            "Securing funding from diverse sources",
+            "Partnerships with NGOs",
+            "Evidence of return on investment",
+            "Attracting support for community health programs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Training Community Health Workers",
+          "points": [
+            "Competency-based education",
+            "Tailored training programs",
+            "Continuous professional development",
+            "Addressing local health challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Solutions for Challenges",
+          "points": [
+            "Enhanced funding strategies",
+            "Workforce development initiatives",
+            "Improved community engagement practices",
+            "Sustainability of models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Success Stories from Community-Based Models",
+          "points": [
+            "Health Access Nurturing Development Services",
+            "Transitional Respite Care Program",
+            "Eastern Virginia Care Transitions Partnership",
+            "Impact on health disparities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Findings and Insights",
+          "points": [
+            "Importance of accessibility and equity",
+            "Role of community engagement",
+            "Effectiveness of tailored solutions",
+            "Sustainability challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Community-Based Healthcare",
+          "points": [
+            "Need for continued investment",
+            "Innovative strategies for overcoming barriers",
+            "Focus on health equity",
+            "Building healthier communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Emphasize community-based models",
+            "Address challenges collaboratively",
+            "Foster partnerships for health improvement",
+            "Commit to advancing health equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Innovative Funding Strategies",
+          "points": [
+            "Exploring new funding sources",
+            "Leveraging public-private partnerships",
+            "Investing in community health initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Community Engagement",
+          "points": [
+            "Building infrastructure for engagement",
+            "Empowering residents",
+            "Fostering collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

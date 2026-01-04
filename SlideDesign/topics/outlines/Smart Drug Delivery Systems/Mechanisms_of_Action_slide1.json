@@ -1,0 +1,25 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: The Enhanced Permeability and Retention (EPR) Effect ---\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC8402171/\n\nSUMMARY:\nThis review highlights the significance of the concept and mechanism of the EPR effect and discusses methods for better utilizing the EPR effect\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: Enhancement of EPR Effect for Passive Tumor Targeting - MDPI ---\nURL: https://www.mdpi.com/2076-3417/15/6/3189\n\nSUMMARY:\nThe Enhanced Permeability and Retention (EPR) effect is a key mechanism for passive tumor targeting, which involves the selective accumulation of\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Enhanced permeability and retention effect: A key facilitator for solid ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S1572100022002010\n\nSUMMARY:\nThis article reviews the fundamental studies to assess how the EPR effect plays an essential role in passive targeting.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: Recent Advances in Tumor Targeting via EPR Effect for Cancer ... ---\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC8234032/\n\nSUMMARY:\nPassive-targeting is mainly based on a diffusion mechanism. As a result, size is a crucial factor in the EPR-dependent delivery process. Studies\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Beyond the EPR effect: Intravital microscopy analysis of nanoparticle ... ---\nURL: https://www.sciencedirect.com/science/article/pii/S0169409X25000353\n\nSUMMARY:\nThis review presents analysis of the reasons for EPR heterogeneity in tumors and describes non-EPR based concepts for drug delivery.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://www.researchgate.net/profile/Reyhane-Masoudifar/publication/364416078/figure/fig3/AS:11431281090988537@1666277672751/The-mechanism-of-passive-targeting-drug-delivery-through-EPR-effect-versus_Q640.jpg\nDESCRIPTION: None\n\nIMAGE 2:\nURL: https://www.researchgate.net/profile/Reyhane-Masoudifar/publication/364416078/figure/fig3/AS:11431281090988537@1666277672751/The-mechanism-of-passive-targeting-drug-delivery-through-EPR-effect-versus.png\nDESCRIPTION: None\n\nIMAGE 3:\nURL: https://www.researchgate.net/publication/360245563/figure/fig3/AS:1160718640529408@1653748297026/Schematic-illustration-of-the-passive-targeting-EPR-effect-and-the-active-targeting.png\nDESCRIPTION: None\n\nIMAGE 4:\nURL: https://www.researchgate.net/publication/340407779/figure/fig1/AS:877615929913345@1586251351441/A-Passive-drug-targeting-by-enhanced-permeation-and-retention-EPR-effect-B-Active.ppm\nDESCRIPTION: None\n\nIMAGE 5:\nURL: https://www.researchgate.net/publication/332842709/figure/fig1/AS:754472032681990@1556891558952/Scheme-illustrating-the-passive-targeting-EPR-and-the-active-targeting-into-a-tumour.png\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "EPR effect explained",
+      "expanded_content": "The Enhanced Permeability and Retention (EPR) effect facilitates nanoparticles' accumulation in tumor tissues due to leaky vasculature and impaired lymphatic drainage."
+    },
+    {
+      "point_title": "Accumulation in tumor tissues",
+      "expanded_content": "Nanoparticles exploit the EPR effect, allowing higher drug concentration within tumors compared to normal tissues, enhancing therapeutic efficacy."
+    },
+    {
+      "point_title": "Advantages of passive targeting",
+      "expanded_content": "Passive targeting reduces systemic toxicity, improves drug bioavailability, and simplifies formulation processes, making it a favorable strategy for cancer therapy."
+    },
+    {
+      "point_title": "Limitations and challenges",
+      "expanded_content": "EPR heterogeneity across tumors and variable nanoparticle sizes can hinder effective targeting, necessitating optimization in drug delivery systems."
+    },
+    {
+      "point_title": "Examples of passive targeting in use",
+      "expanded_content": "Doxil and Abraxane are notable examples, utilizing the EPR effect to deliver chemotherapeutic agents effectively to tumors."
+    }
+  ]
+}

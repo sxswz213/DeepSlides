@@ -1,0 +1,362 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background on Additive Manufacturing": 3,
+    "Current Standards Overview": 4,
+    "Key Organizations and Their Roles": 3,
+    "Challenges in Standardization": 3,
+    "Future Trends in Additive Manufacturing Standards": 3,
+    "Case Studies and Applications": 3,
+    "Conclusion and Recommendations": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Additive Manufacturing",
+          "points": [
+            "Definition of Additive Manufacturing",
+            "Importance in modern production",
+            "Key benefits of AM technology",
+            "Applications across industries",
+            "Need for standards in AM"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "To explore current AM standards",
+            "Identify key organizations",
+            "Discuss challenges in standardization",
+            "Outline future directions",
+            "Highlight the importance of collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Additive Manufacturing",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Evolution of Additive Manufacturing",
+          "points": [
+            "Historical context",
+            "Technological advancements",
+            "Shift from prototyping to production",
+            "Emergence of new materials",
+            "Growth in industry adoption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Terminology in AM",
+          "points": [
+            "Additive vs. subtractive manufacturing",
+            "Common AM processes",
+            "Material types used",
+            "Quality assurance terms",
+            "Performance metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape of AM",
+          "points": [
+            "Market growth statistics",
+            "Industry sectors utilizing AM",
+            "Trends in AM technology",
+            "Global adoption rates",
+            "Impact on supply chains"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Standards Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Importance of Standards in AM",
+          "points": [
+            "Ensuring quality and safety",
+            "Facilitating interoperability",
+            "Establishing performance benchmarks",
+            "Guiding material selection",
+            "Enhancing customer trust"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "ISO/ASTM 52900 Series",
+          "points": [
+            "Framework for AM technologies",
+            "Key requirements for materials",
+            "Process and equipment standards",
+            "Quality assurance measures",
+            "Specific applications in aerospace and medical"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Notable AM Standards",
+          "points": [
+            "ASTM F3572-22",
+            "ISO/ASTM 52941-20",
+            "ISO/ASTM 52920",
+            "Guidelines for mechanical properties",
+            "Specifications for AM file formats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Standards on Industry",
+          "points": [
+            "Improved product reliability",
+            "Consistency in manufacturing processes",
+            "Reduction in production errors",
+            "Enhanced market acceptance",
+            "Support for innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Organizations and Their Roles",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "ASTM International",
+          "points": [
+            "History and mission",
+            "Committee on Additive Manufacturing Technologies (F42)",
+            "Global membership and collaboration",
+            "Key standards developed",
+            "Focus on quality and functionality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "International Organization for Standardization (ISO)",
+          "points": [
+            "Role in global standardization",
+            "Collaboration with ASTM",
+            "Joint standards development",
+            "Focus on safety and usability",
+            "Impact on international trade"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Other Contributing Organizations",
+          "points": [
+            "National and regional standards bodies",
+            "Industry associations",
+            "Research institutions",
+            "Collaborative initiatives",
+            "Role in advancing AM standards"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges in Standardization",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Regulatory Hurdles",
+          "points": [
+            "Lack of specific regulations",
+            "Complex approval processes",
+            "Inconsistencies in quality",
+            "Impact on critical sectors",
+            "Need for tailored regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Challenges",
+          "points": [
+            "Rapid evolution of AM technologies",
+            "Material property variations",
+            "Process control issues",
+            "Quality assurance difficulties",
+            "Need for adaptive standards"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Industry-Specific Issues",
+          "points": [
+            "Fragmentation across sectors",
+            "Unique needs of different industries",
+            "Challenges in creating universal standards",
+            "Collaboration among stakeholders",
+            "Importance of sector-specific guidelines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends in Additive Manufacturing Standards",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Hybrid Manufacturing",
+          "points": [
+            "Integration of AM with traditional methods",
+            "New standards for compatibility",
+            "Enhanced production capabilities",
+            "Efficiency improvements",
+            "Impact on manufacturing processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Growth of multi-material printing",
+            "Advancements in metal additive manufacturing",
+            "Need for updated material standards",
+            "AI and automation in AM",
+            "Optimizing production and quality control"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Adaptation",
+          "points": [
+            "Evolving regulatory frameworks",
+            "Focus on safety in critical applications",
+            "Collaboration among industry stakeholders",
+            "Ensuring compliance and quality",
+            "Fostering innovation while maintaining safety"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies and Applications",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Aerospace Applications",
+          "points": [
+            "Use of AM in aircraft components",
+            "Benefits of weight reduction",
+            "Customization for specific needs",
+            "Case study examples",
+            "Impact on production timelines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Medical Device Manufacturing",
+          "points": [
+            "Personalized implants and prosthetics",
+            "Regulatory challenges in AM",
+            "Case studies of successful applications",
+            "Importance of material standards",
+            "Future potential in healthcare"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Automotive Industry Innovations",
+          "points": [
+            "Rapid prototyping for parts",
+            "Customization for performance",
+            "Case studies of AM in automotive",
+            "Impact on supply chain efficiency",
+            "Future trends in automotive AM"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion and Recommendations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Importance of AM standards",
+            "Role of ASTM and ISO",
+            "Challenges in standardization",
+            "Future trends and innovations",
+            "Need for collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Stakeholders",
+          "points": [
+            "Engage in standard development",
+            "Adopt existing standards",
+            "Collaborate across industries",
+            "Invest in research and innovation",
+            "Stay informed on regulatory changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

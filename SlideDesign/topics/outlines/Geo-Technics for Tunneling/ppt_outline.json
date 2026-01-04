@@ -1,0 +1,349 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Literature Review": 3,
+    "Methodology": 4,
+    "Geotechnical Investigations": 3,
+    "Tunneling Techniques": 4,
+    "Results and Analysis": 3,
+    "Case Studies": 2,
+    "Future Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Geo-Technics in Tunneling",
+          "points": [
+            "Importance of geotechnics",
+            "Role in tunnel stability",
+            "Impact on construction methods",
+            "Safety considerations",
+            "Project success factors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "To analyze geotechnical challenges",
+            "To review tunneling methods",
+            "To assess groundwater management",
+            "To present case studies",
+            "To propose future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Geotechnical Principles",
+          "points": [
+            "Soil mechanics fundamentals",
+            "Rock properties and behavior",
+            "Groundwater dynamics",
+            "Importance of geological assessments",
+            "Historical context of tunneling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tunneling Methods Overview",
+          "points": [
+            "TBMs and their applications",
+            "Cut-and-cover technique",
+            "New Austrian Tunneling Method (NATM)",
+            "Comparison of methods",
+            "Selection criteria based on geology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Groundwater Management Techniques",
+          "points": [
+            "Dewatering methods",
+            "Groundwater depressurization",
+            "Grouting techniques",
+            "Monitoring groundwater levels",
+            "Case studies of groundwater control"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Qualitative and quantitative analysis",
+            "Data collection methods",
+            "Field studies and observations",
+            "Literature synthesis",
+            "Case study selection criteria"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geotechnical Investigations",
+          "points": [
+            "Site characterization techniques",
+            "Soil sampling methods",
+            "Laboratory testing procedures",
+            "In-situ testing methods",
+            "Data analysis and interpretation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Groundwater Assessment",
+          "points": [
+            "Hydrogeological surveys",
+            "Piezometer installation",
+            "Groundwater flow modeling",
+            "Risk assessment for flooding",
+            "Monitoring strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Statistical analysis methods",
+            "Geotechnical software tools",
+            "Modeling ground behavior",
+            "Real-time monitoring systems",
+            "Integration of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Geotechnical Investigations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Importance of Geotechnical Investigations",
+          "points": [
+            "Foundation for tunneling design",
+            "Identification of potential risks",
+            "Cost estimation accuracy",
+            "Influence on construction methods",
+            "Regulatory compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Geotechnical Investigations",
+          "points": [
+            "Accessing remote sites",
+            "Variability in geological conditions",
+            "Limitations of testing methods",
+            "Data interpretation complexities",
+            "Time constraints"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Investigation Techniques",
+          "points": [
+            "Use of geophysical methods",
+            "Advancements in drilling technology",
+            "Remote sensing applications",
+            "Real-time data acquisition",
+            "Integration of AI in analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Tunneling Techniques",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Tunnel Boring Machines (TBMs)",
+          "points": [
+            "Design and components",
+            "Operational efficiency",
+            "Advantages in urban settings",
+            "Limitations and challenges",
+            "Case studies of TBM use"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cut-and-Cover Method",
+          "points": [
+            "Process overview",
+            "Suitability for shallow tunnels",
+            "Impact on surface infrastructure",
+            "Cost considerations",
+            "Environmental impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "New Austrian Tunneling Method (NATM)",
+          "points": [
+            "Principles of NATM",
+            "Flexibility in varying conditions",
+            "Support system utilization",
+            "Case studies of NATM application",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Tunneling Methods",
+          "points": [
+            "Criteria for method selection",
+            "Cost vs. efficiency",
+            "Geological adaptability",
+            "Safety considerations",
+            "Future trends in tunneling technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Analysis",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings from Geotechnical Investigations",
+          "points": [
+            "Soil and rock behavior insights",
+            "Groundwater impact on stability",
+            "Cost implications of geological conditions",
+            "Adaptation of methods based on findings",
+            "Recommendations for future projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Effectiveness of Tunneling Techniques",
+          "points": [
+            "Success rates of TBMs",
+            "Challenges in cut-and-cover",
+            "NATM performance in mixed ground",
+            "Cost-benefit analysis",
+            "Lessons learned from case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Groundwater Management Outcomes",
+          "points": [
+            "Success of dewatering systems",
+            "Impact on project timelines",
+            "Environmental considerations",
+            "Innovative solutions implemented",
+            "Future recommendations for groundwater control"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Crossrail Project in London",
+          "points": [
+            "Mixed geological conditions faced",
+            "Adaptation of tunneling methods",
+            "Groundwater management strategies",
+            "Challenges and solutions",
+            "Impact on project timeline"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Port of Miami Tunnel",
+          "points": [
+            "High groundwater levels challenges",
+            "Advanced management systems used",
+            "Safety measures implemented",
+            "Environmental impact considerations",
+            "Lessons learned for future projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Innovations in Tunneling",
+          "points": [
+            "Emerging technologies in geotechnics",
+            "Integration of AI and machine learning",
+            "Sustainability in tunneling practices",
+            "Future research areas",
+            "Collaboration between disciplines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

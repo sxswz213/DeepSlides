@@ -1,0 +1,167 @@
+{
+  "recommended_slides": 10,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 2,
+    "Conflict": 2,
+    "Resolution": 2,
+    "Outcome": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Community Arts",
+          "points": [
+            "Definition of community arts",
+            "Importance in social change",
+            "Engagement through artistic expression",
+            "Fostering activism",
+            "Creating inclusive spaces"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Community Arts",
+          "points": [
+            "Catalyst for dialogue",
+            "Empowerment of marginalized voices",
+            "Building social cohesion",
+            "Raising awareness of social issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Theoretical Frameworks",
+          "points": [
+            "Collective action theory",
+            "Symbolic interactionism",
+            "Critical theory",
+            "Interconnectedness of theories",
+            "Art as a medium for change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mechanisms of Change",
+          "points": [
+            "Fostering dialogue",
+            "Building social cohesion",
+            "Raising awareness",
+            "Empowering marginalized voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges in Community Arts",
+          "points": [
+            "Accessibility issues",
+            "Funding instability",
+            "Ethical considerations",
+            "Underrepresentation of marginalized groups",
+            "Impact on project effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Barriers to Engagement",
+          "points": [
+            "Physical and economic obstacles",
+            "Social divides",
+            "Need for inclusivity",
+            "Risk of co-optation",
+            "Maintaining community integrity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Best Practices for Community Arts",
+          "points": [
+            "Community-led approaches",
+            "Sustainability of projects",
+            "Collaboration with local organizations",
+            "Respecting cultural diversity",
+            "Regular reflection and evaluation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Project Effectiveness",
+          "points": [
+            "Engaging local members from the outset",
+            "Securing ongoing funding",
+            "Creating relevant and impactful art",
+            "Building strong community ties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Impact of Community Arts",
+          "points": [
+            "Fostering dialogue and understanding",
+            "Building social cohesion",
+            "Empowering diverse voices",
+            "Driving meaningful social transformation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Prioritizing inclusivity",
+            "Addressing ethical engagement",
+            "Ensuring sustainability",
+            "Maximizing community impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 6,
+    "Implications for Social Justice": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Critical Theory",
+          "points": [
+            "Definition of Critical Theory",
+            "Historical Context",
+            "Key Figures: Horkheimer, Adorno, Marcuse"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Social Justice",
+          "points": [
+            "Definition of Social Justice",
+            "Historical Evolution",
+            "Key Movements and Figures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "Explore Interconnection",
+            "Highlight Importance",
+            "Implications for Activism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Foundations of Critical Theory",
+          "points": [
+            "Origin in Frankfurt School",
+            "Focus on Power Structures",
+            "Cultural Narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts of Critical Theory",
+          "points": [
+            "Emancipation of Marginalized Groups",
+            "Critique of Traditional Ideologies",
+            "Interdisciplinary Approach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context of Social Justice",
+          "points": [
+            "19th Century Origins",
+            "Key Theorists: Taparelli",
+            "Evolution of Definitions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape of Social Justice",
+          "points": [
+            "Diverse Movements",
+            "Intersectionality",
+            "Challenges Faced Today"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Systemic Oppression",
+          "points": [
+            "Definition and Examples",
+            "Impact on Marginalized Groups",
+            "Role of Power Dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Social Justice Movements",
+          "points": [
+            "Fragmentation of Movements",
+            "Resistance to Change",
+            "Misunderstandings of Social Justice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Critical Theory's Critique of Society",
+          "points": [
+            "Questioning Dominant Narratives",
+            "Uncovering Mechanisms of Oppression",
+            "Need for Comprehensive Understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Intersectionality and Its Importance",
+          "points": [
+            "Understanding Multiple Identities",
+            "Fostering Solidarity",
+            "Enhancing Activism Effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "How Do Critical Theory and Social Justice Intersect?",
+          "points": [
+            "Shared Goals",
+            "Complementary Frameworks",
+            "Importance of Contextual Understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Are the Implications for Activism?",
+          "points": [
+            "Need for Integrated Approaches",
+            "Addressing Systemic Issues",
+            "Empowering Marginalized Voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How Can We Foster Meaningful Change?",
+          "points": [
+            "Engaging in Praxis",
+            "Policy-Making Considerations",
+            "Building Inclusive Movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Key Insights from Critical Theory",
+          "points": [
+            "Critique of Power Structures",
+            "Emphasis on Cultural Narratives",
+            "Framework for Understanding Oppression"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Justice Frameworks",
+          "points": [
+            "Critical Social Justice",
+            "Focus on Fairness and Equality",
+            "Addressing Intersectional Issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Activism",
+          "points": [
+            "Mobilizing Communities",
+            "Creating Awareness",
+            "Advocating for Policy Changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integrating Theory and Practice",
+          "points": [
+            "Importance of Praxis",
+            "Real-World Applications",
+            "Case Studies of Successful Movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Social Justice",
+          "points": [
+            "Evolving Definitions",
+            "Emerging Movements",
+            "Need for Continued Advocacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Recap of Key Points",
+            "Importance of Collaboration",
+            "Encouragement to Engage in Activism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications for Social Justice",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Integrating Insights into Activism",
+          "points": [
+            "Utilizing Critical Theory",
+            "Addressing Systemic Injustices",
+            "Promoting Equity and Inclusion"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy-Making Considerations",
+          "points": [
+            "Informed Decision-Making",
+            "Engaging Diverse Voices",
+            "Creating Sustainable Change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

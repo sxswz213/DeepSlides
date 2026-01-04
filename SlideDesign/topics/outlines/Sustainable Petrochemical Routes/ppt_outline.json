@@ -1,0 +1,314 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Sustainable Petrochemical Routes",
+          "points": [
+            "Importance of sustainability",
+            "Current industry challenges",
+            "Need for innovative solutions",
+            "Global climate goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore current production methods",
+            "Identify sustainable alternatives",
+            "Discuss emerging technologies",
+            "Highlight market trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of the Petrochemical Industry",
+          "points": [
+            "Economic impact",
+            "Role in everyday products",
+            "Environmental implications",
+            "Future sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Petrochemical Production",
+          "points": [
+            "Reliance on fossil fuels",
+            "Greenhouse gas emissions",
+            "Energy-intensive processes",
+            "Environmental pollution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Consequences",
+          "points": [
+            "Air and water pollution",
+            "Health risks to communities",
+            "Impact on local ecosystems",
+            "Regulatory scrutiny"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Carbon capture and storage (CCS)",
+            "Sustainable feedstocks",
+            "Innovative production methods",
+            "Regulatory frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Dynamics",
+          "points": [
+            "Volatile pricing",
+            "Overcapacity issues",
+            "Consumer demand for sustainability",
+            "Economic pressures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Transitioning to Sustainability",
+          "points": [
+            "Regulatory complexities",
+            "Technological barriers",
+            "Economic viability",
+            "Outdated facilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "High Costs of Sustainable Practices",
+          "points": [
+            "Investment in new technologies",
+            "Cost recovery issues",
+            "Price sensitivity of consumers",
+            "Financial strain on companies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resistance to Change",
+          "points": [
+            "Cultural inertia in organizations",
+            "Short-term profit focus",
+            "Lack of consumer awareness",
+            "Need for industry collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Competition and Market Pressures",
+          "points": [
+            "Geopolitical tensions",
+            "Supply chain disruptions",
+            "Need for innovation",
+            "Balancing sustainability with profitability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Investing in Innovative Technologies",
+          "points": [
+            "Carbon capture utilization (CCU)",
+            "Green chemistry principles",
+            "Advanced recycling technologies",
+            "Renewable energy integration",
+            "Circular economy practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Exploring Sustainable Feedstock Options",
+          "points": [
+            "Biomass utilization",
+            "Recycled plastics",
+            "Carbon capture from the atmosphere",
+            "Benefits of sustainable feedstocks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Adapting to Market Trends",
+          "points": [
+            "Growing demand for eco-friendly products",
+            "Consumer behavior shifts",
+            "Emerging economies' role",
+            "Sustainable product innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaborative Efforts and Partnerships",
+          "points": [
+            "Industry collaboration",
+            "Government support",
+            "Research and development initiatives",
+            "Public-private partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Frameworks and Support",
+          "points": [
+            "Streamlining regulations",
+            "Incentives for sustainable practices",
+            "Global cooperation",
+            "Long-term sustainability goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Insights from the Report",
+          "points": [
+            "Current reliance on fossil fuels",
+            "Potential of sustainable feedstocks",
+            "Importance of innovative technologies",
+            "Market dynamics and consumer demand"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of the Petrochemical Industry",
+          "points": [
+            "Transitioning to sustainable practices",
+            "Aligning with global climate goals",
+            "Economic viability of sustainable products",
+            "Long-term industry resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Industry Stakeholders",
+          "points": [
+            "Invest in sustainable technologies",
+            "Collaborate for innovation",
+            "Engage consumers in sustainability",
+            "Advocate for supportive regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Next Steps",
+          "points": [
+            "Summary of findings",
+            "Importance of immediate action",
+            "Future research directions",
+            "Commitment to sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Sustainability",
+          "points": [
+            "Advancements in technology",
+            "Increased consumer awareness",
+            "Regulatory changes",
+            "Global sustainability initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for a Sustainable Petrochemical Future",
+          "points": [
+            "Integration of sustainable practices",
+            "Circular economy adoption",
+            "Collaboration across sectors",
+            "Commitment to environmental stewardship"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

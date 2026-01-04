@@ -1,0 +1,300 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 4,
+    "Discussion": 4,
+    "Applications": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Energy Harvesting",
+          "points": [
+            "Definition of energy harvesting",
+            "Importance in modern technology",
+            "Role in IoT",
+            "Sustainability aspect",
+            "Nano-enabled advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore energy harvesting fundamentals",
+            "Investigate nanostructured materials",
+            "Examine flexible and wearable devices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Nano-Enabled Technologies",
+          "points": [
+            "Transformative potential",
+            "Impact on energy solutions",
+            "Future applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Fundamentals of Energy Harvesting",
+          "points": [
+            "Definition and process",
+            "Types of ambient energy sources",
+            "Importance for low-power devices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Mechanisms of Energy Harvesting",
+          "points": [
+            "Piezoelectric",
+            "Triboelectric",
+            "Thermoelectric",
+            "Comparison of mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Nanostructured Materials",
+          "points": [
+            "Definition of nanostructured materials",
+            "Properties enhancing efficiency",
+            "Examples: Graphene and CNTs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Experimental studies",
+            "Data analysis methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Energy Harvesting Techniques",
+          "points": [
+            "Overview of techniques",
+            "Selection criteria for materials",
+            "Integration methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Metrics",
+          "points": [
+            "Efficiency measurements",
+            "Durability assessments",
+            "Real-world applicability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies",
+          "points": [
+            "Successful implementations",
+            "Comparative analysis",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Performance of Energy Harvesting Systems",
+          "points": [
+            "Efficiency rates",
+            "Output comparisons",
+            "Impact of nanostructured materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advancements in Flexible Devices",
+          "points": [
+            "Power conversion efficiencies",
+            "Integration into wearables",
+            "User feedback"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Healthcare",
+          "points": [
+            "Continuous monitoring",
+            "Energy requirements",
+            "User experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Identified",
+          "points": [
+            "Scalability issues",
+            "Durability concerns",
+            "Integration hurdles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Impact on energy solutions",
+            "Potential for self-powered devices",
+            "Sustainability benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison with Traditional Methods",
+          "points": [
+            "Advantages of nano-enabled systems",
+            "Limitations of conventional techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Focus on hybrid systems",
+            "Exploration of new materials",
+            "Long-term stability studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Broader Applications",
+          "points": [
+            "Consumer electronics",
+            "Industrial applications",
+            "Smart cities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Wearable Technology",
+          "points": [
+            "Health monitoring devices",
+            "Energy harvesting from body heat",
+            "User convenience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consumer Electronics",
+          "points": [
+            "Integration in smartphones",
+            "Smart home devices",
+            "Sustainable power solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Energy Harvesting",
+          "points": [
+            "Hybrid energy systems",
+            "Advancements in nanomaterials",
+            "Integration with IoT"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges and Opportunities",
+          "points": [
+            "Addressing scalability",
+            "Enhancing durability",
+            "Innovative applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Integrative Medicine": 3,
+    "Methodology": 4,
+    "Evidence Review": 5,
+    "Case Studies": 3,
+    "Discussion": 3,
+    "Future Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Integrative Medicine",
+          "points": [
+            "Definition of integrative medicine",
+            "Importance of holistic approach",
+            "Focus on mind, body, and spirit"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transformative Healthcare Model",
+          "points": [
+            "Combines conventional and complementary therapies",
+            "Patient-centered care",
+            "Enhances overall well-being"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Explore principles and therapies",
+            "Review evidence base",
+            "Discuss benefits and risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Integrative Medicine",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Core Principles",
+          "points": [
+            "Whole person focus",
+            "Patient-centered care",
+            "Integration of therapies",
+            "Prevention and wellness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Therapies",
+          "points": [
+            "Acupuncture",
+            "Chiropractic care",
+            "Massage therapy",
+            "Nutritional counseling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Holistic Perspective",
+          "points": [
+            "Addresses root causes",
+            "Enhances patient outcomes",
+            "Promotes supportive environment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Clinical trials analysis",
+            "Case studies examination"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "National Center for Complementary and Integrative Health",
+            "Peer-reviewed journals",
+            "Healthcare institutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Effectiveness of therapies",
+            "Patient satisfaction",
+            "Safety and risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Variability in therapy application",
+            "Limited sample sizes",
+            "Need for further research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Evidence Review",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Clinical Trials Overview",
+          "points": [
+            "Importance of rigorous trials",
+            "Support from NCCIH",
+            "Focus on safety and efficacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Acupuncture Evidence",
+          "points": [
+            "Effectiveness for chronic pain",
+            "Research on anxiety and depression",
+            "Validation through clinical studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Chiropractic Care Findings",
+          "points": [
+            "Benefits for musculoskeletal disorders",
+            "Impact on pain management",
+            "Research support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mindfulness and Emotional Wellness",
+          "points": [
+            "Mindfulness-based interventions",
+            "Reduction in anxiety and depression",
+            "Evidence from clinical trials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overall Efficacy of Integrative Therapies",
+          "points": [
+            "Improved quality of life",
+            "Symptom management",
+            "Preventive care benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study 1: Cancer Patient",
+          "points": [
+            "Digital integrative medicine program",
+            "Improvements in fatigue",
+            "Enhanced quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Chronic Pain Management",
+          "points": [
+            "Use of acupuncture and yoga",
+            "Reduction in opioid reliance",
+            "Patient testimonials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: Nutritional Counseling Impact",
+          "points": [
+            "Dietary changes and health outcomes",
+            "Patient engagement",
+            "Long-term benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Benefits of Integrative Medicine",
+          "points": [
+            "Holistic approach",
+            "Improved patient outcomes",
+            "Enhanced quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Risks and Considerations",
+          "points": [
+            "Potential interactions with conventional treatments",
+            "Importance of communication",
+            "Need for informed decision-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Healthcare Providers",
+          "points": [
+            "Facilitating open discussions",
+            "Encouraging patient engagement",
+            "Integrating therapies into practice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Continuing Research and Integration",
+          "points": [
+            "Need for more clinical trials",
+            "Validation of integrative practices",
+            "Incorporating findings into standard care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

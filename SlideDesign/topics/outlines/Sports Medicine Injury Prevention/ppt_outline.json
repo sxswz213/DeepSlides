@@ -1,0 +1,356 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Understanding Sports Injuries": 3,
+    "Common Types of Sports Injuries": 3,
+    "Risk Factors for Sports Injuries": 3,
+    "Importance of Injury Prevention": 2,
+    "Preventive Strategies": 4,
+    "Role of Sports Medicine Professionals": 2,
+    "Case Studies and Success Stories": 2,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Sports Medicine",
+          "points": [
+            "Definition of sports medicine",
+            "Importance of injury prevention",
+            "Target audience: athletes and active individuals",
+            "Goals of the presentation",
+            "Structure of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Need for Injury Prevention",
+          "points": [
+            "Statistics on sports injuries",
+            "Impact on athlete performance",
+            "Long-term health implications",
+            "Economic costs of injuries",
+            "The role of education in prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Understanding Sports Injuries",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Types of Sports Injuries",
+          "points": [
+            "Acute vs. chronic injuries",
+            "Common acute injuries: sprains, strains, fractures",
+            "Common chronic injuries: tendonitis, bursitis",
+            "Symptoms and diagnosis",
+            "Importance of early detection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mechanisms of Injury",
+          "points": [
+            "Overuse injuries vs. traumatic injuries",
+            "Role of improper technique",
+            "Environmental factors contributing to injuries",
+            "Impact of fatigue on injury risk",
+            "Psychological factors in injury occurrence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Risk Factors for Sports Injuries",
+          "points": [
+            "Age and experience level",
+            "Previous injury history",
+            "Physical conditioning and strength",
+            "Sport-specific risks",
+            "Biomechanical factors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Common Types of Sports Injuries",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Sprains and Strains",
+          "points": [
+            "Definition of sprains and strains",
+            "Common sites: ankle, knee, wrist",
+            "Symptoms and treatment options",
+            "Prevention strategies",
+            "Case examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fractures and Concussions",
+          "points": [
+            "Types of fractures: acute vs. stress fractures",
+            "Understanding concussions and their effects",
+            "Signs and symptoms",
+            "Importance of proper diagnosis",
+            "Recovery protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tendonitis and Bursitis",
+          "points": [
+            "Definition and causes",
+            "Common sports associated with tendonitis",
+            "Symptoms and treatment options",
+            "Preventive measures",
+            "Long-term management strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Risk Factors for Sports Injuries",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Intrinsic Risk Factors",
+          "points": [
+            "Genetic predisposition",
+            "Physical fitness levels",
+            "Previous injuries",
+            "Flexibility and strength imbalances",
+            "Psychological readiness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Extrinsic Risk Factors",
+          "points": [
+            "Environmental conditions",
+            "Equipment quality and fit",
+            "Coaching and training practices",
+            "Sport-specific demands",
+            "Competition level"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Identifying and Mitigating Risks",
+          "points": [
+            "Assessment tools for risk identification",
+            "Creating a risk management plan",
+            "Role of coaches and trainers",
+            "Importance of communication",
+            "Continuous monitoring and adjustment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Importance of Injury Prevention",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Benefits of Injury Prevention",
+          "points": [
+            "Enhanced athlete performance",
+            "Reduced healthcare costs",
+            "Increased participation rates",
+            "Long-term athlete health",
+            "Improved mental well-being"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Creating a Culture of Safety",
+          "points": [
+            "Role of education and awareness",
+            "Involvement of all stakeholders",
+            "Encouraging open communication",
+            "Establishing safety protocols",
+            "Promoting a positive sporting environment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Preventive Strategies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Warm-Up and Conditioning",
+          "points": [
+            "Importance of warm-up routines",
+            "Types of effective warm-up exercises",
+            "Conditioning programs for strength and endurance",
+            "Gradual increase in activity levels",
+            "Monitoring athlete readiness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Nutrition and Hydration",
+          "points": [
+            "Role of nutrition in injury prevention",
+            "Balanced diet for athletes",
+            "Hydration strategies",
+            "Timing of meals and snacks",
+            "Supplements and their impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Proper Equipment Usage",
+          "points": [
+            "Importance of sport-specific gear",
+            "Fit and comfort considerations",
+            "Regular equipment checks and maintenance",
+            "Use of protective gear",
+            "Education on equipment safety"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Injury Prevention Programs",
+          "points": [
+            "Overview of successful programs",
+            "Components of effective injury prevention programs",
+            "Role of technology in monitoring",
+            "Case studies of program success",
+            "Future directions for injury prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Role of Sports Medicine Professionals",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Collaboration in Injury Prevention",
+          "points": [
+            "Role of sports medicine physicians",
+            "Importance of physical therapists",
+            "Collaboration with coaches and trainers",
+            "Involvement of nutritionists",
+            "Creating a multidisciplinary approach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Education and Training",
+          "points": [
+            "Importance of ongoing education for professionals",
+            "Workshops and seminars",
+            "Staying updated with research",
+            "Community outreach programs",
+            "Empowering athletes through knowledge"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies and Success Stories",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Successful Injury Prevention Programs",
+          "points": [
+            "Overview of notable programs",
+            "Key strategies implemented",
+            "Results and impact on athlete health",
+            "Lessons learned",
+            "Future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Athlete Testimonials",
+          "points": [
+            "Personal stories of injury prevention success",
+            "Impact on performance and health",
+            "Role of support systems",
+            "Encouragement for peers",
+            "Inspiring future athletes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Importance of understanding sports injuries",
+            "Implementing preventive measures",
+            "Role of biomechanics and technology",
+            "Collaboration among stakeholders",
+            "Commitment to athlete safety and performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

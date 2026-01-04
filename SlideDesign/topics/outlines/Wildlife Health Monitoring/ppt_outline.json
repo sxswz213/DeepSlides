@@ -1,0 +1,331 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Data Collection": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Implications for Conservation": 2,
+    "Future Research Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Wildlife Health Monitoring",
+          "points": [
+            "Definition and significance",
+            "Role in conservation",
+            "Impact on public health",
+            "Connection to biodiversity",
+            "Framework for disease surveillance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore importance",
+            "Discuss core components",
+            "Identify challenges",
+            "Highlight successful case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Report",
+          "points": [
+            "Focus on wildlife health",
+            "Emphasis on disease dynamics",
+            "Integration with ecosystem management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Importance of Wildlife Health Monitoring",
+          "points": [
+            "Supports biodiversity",
+            "Early disease detection",
+            "Public health implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Core Components of Surveillance",
+          "points": [
+            "Detection",
+            "Identification",
+            "Analysis",
+            "Information management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interconnectedness of Health",
+          "points": [
+            "Wildlife, livestock, and human health",
+            "One Health approach",
+            "Ecosystem stability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Detection Methods",
+          "points": [
+            "Sample collection techniques",
+            "Laboratory analysis",
+            "Pathogen identification"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Statistical methods",
+            "Trend identification",
+            "Disease pattern analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Information Management Systems",
+          "points": [
+            "Data storage solutions",
+            "Collaboration platforms",
+            "Data sharing protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Engagement Strategies",
+          "points": [
+            "Workshops and training",
+            "Partnership development",
+            "Community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Types of Data Collected",
+          "points": [
+            "Health assessments",
+            "Pathogen prevalence",
+            "Population dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Data Collection",
+          "points": [
+            "Resource limitations",
+            "Geographic barriers",
+            "Data accuracy issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Innovations",
+          "points": [
+            "Use of AI",
+            "Remote sensing",
+            "Mobile data collection tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from Monitoring",
+          "points": [
+            "Emerging disease trends",
+            "At-risk species identification",
+            "Impact of environmental changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Thailand Wildlife Health Network",
+          "points": [
+            "Partnerships established",
+            "Capacity building efforts",
+            "Outcomes achieved"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Canadian Wildlife Health Cooperative",
+          "points": [
+            "Collaborative model",
+            "Funding secured",
+            "Educational initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Impact on Results",
+          "points": [
+            "AI-driven predictions",
+            "Satellite tracking success",
+            "Improved conservation outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Implications for Conservation",
+          "points": [
+            "Biodiversity preservation",
+            "Ecosystem management",
+            "Public health protection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Challenges",
+          "points": [
+            "Need for increased funding",
+            "Training programs for personnel",
+            "Collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Wildlife Health Monitoring",
+          "points": [
+            "Enhancing surveillance systems",
+            "Integrating new technologies",
+            "Expanding global partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications for Conservation",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Long-term Benefits of Monitoring",
+          "points": [
+            "Sustainable ecosystems",
+            "Informed policy-making",
+            "Enhanced public awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Stakeholders",
+          "points": [
+            "Government agencies",
+            "NGOs",
+            "Local communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Research Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Research Areas",
+          "points": [
+            "Zoonotic disease dynamics",
+            "Climate change impacts",
+            "Technological advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call for Collaborative Efforts",
+          "points": [
+            "Interdisciplinary research",
+            "Global health initiatives",
+            "Shared data platforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

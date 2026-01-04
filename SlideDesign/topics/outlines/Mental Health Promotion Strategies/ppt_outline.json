@@ -1,0 +1,323 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Understanding Mental Health": 3,
+    "Current Challenges in Mental Health": 3,
+    "Mental Health Promotion Strategies": 8,
+    "Case Studies and Success Stories": 3,
+    "Future Directions and Recommendations": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Importance of Mental Health",
+          "points": [
+            "Mental health influences thoughts, feelings, and actions.",
+            "Critical for overall well-being.",
+            "Affects individuals and communities.",
+            "Proactive measures are essential.",
+            "Focus on prevention rather than treatment."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Mental Health Promotion",
+          "points": [
+            "Definition of mental health promotion.",
+            "Goals: enhance well-being and reduce stigma.",
+            "Importance in public health agendas.",
+            "Holistic approach to health.",
+            "Integration with physical health."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Understanding Mental Health",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Mental Health Promotion?",
+          "points": [
+            "Proactive approach to mental well-being.",
+            "Focus on emotional, psychological, and social health.",
+            "Aims to prevent mental disorders.",
+            "Encourages positive mental health for all.",
+            "Addresses social determinants of health."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance in Public Health",
+          "points": [
+            "Reduces stigma associated with mental health.",
+            "Improves access to mental health resources.",
+            "Leads to healthier communities.",
+            "Enhances quality of life.",
+            "Recognizes mental health as integral to overall health."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Mental Health",
+          "points": [
+            "Stress management techniques.",
+            "Building social connections.",
+            "Promoting a healthy lifestyle.",
+            "Encouraging open discussions.",
+            "Access to mental health resources."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Challenges in Mental Health",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Stigma and Misconceptions",
+          "points": [
+            "Stigma prevents help-seeking behavior.",
+            "Negative attitudes towards mental illness.",
+            "Lack of mental health literacy.",
+            "Perpetuates misconceptions.",
+            "Impacts treatment accessibility."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resource Limitations",
+          "points": [
+            "Shortage of trained mental health professionals.",
+            "Inadequate infrastructure in many regions.",
+            "Funding constraints for mental health services.",
+            "Limited access in low-income areas.",
+            "Need for innovative care delivery models."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Access to Care Issues",
+          "points": [
+            "Over 70% of individuals in need do not receive care.",
+            "Barriers to accessing mental health services.",
+            "Geographical disparities in service availability.",
+            "Cultural insensitivity in existing services.",
+            "Importance of community-based solutions."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Mental Health Promotion Strategies",
+      "allocated_slides": 8,
+      "slides": [
+        {
+          "title": "Community Engagement",
+          "points": [
+            "Fostering supportive environments.",
+            "Peer support groups and training.",
+            "Empowering individuals to share experiences.",
+            "Normalizing mental health conversations.",
+            "Building community resilience."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Education Initiatives",
+          "points": [
+            "Incorporating mental health into school curricula.",
+            "Public awareness campaigns.",
+            "Programs to encourage help-seeking behavior.",
+            "Dismantling stigma through education.",
+            "Engaging youth in mental health discussions."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Advocacy",
+          "points": [
+            "Integrating mental health into public health frameworks.",
+            "Supporting mental health legislation.",
+            "Funding for mental health services.",
+            "Ensuring culturally sensitive resources.",
+            "Collaboration with educational institutions."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Stigma",
+          "points": [
+            "Campaigns to reduce stigma.",
+            "Promoting help-seeking behavior.",
+            "Engaging media in mental health discussions.",
+            "Highlighting personal stories of recovery.",
+            "Creating a culture of acceptance."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resource Allocation Strategies",
+          "points": [
+            "Innovative approaches to enhance access.",
+            "Utilizing community health workers.",
+            "Integrating mental health into primary care.",
+            "Expanding telehealth services.",
+            "Developing local mental health resources."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaborative Approaches",
+          "points": [
+            "Engaging stakeholders in mental health promotion.",
+            "Partnerships between government and community organizations.",
+            "Shared responsibility for mental health initiatives.",
+            "Creating inclusive environments.",
+            "Leveraging community strengths."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Success Stories",
+          "points": [
+            "Examples of effective mental health programs.",
+            "Case studies demonstrating impact.",
+            "Lessons learned from successful initiatives.",
+            "Scaling successful strategies.",
+            "Inspiring community involvement."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Prioritizing mental health in public health agendas.",
+            "Addressing emerging mental health challenges.",
+            "Innovating mental health service delivery.",
+            "Fostering global collaboration.",
+            "Ensuring sustainability of mental health initiatives."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies and Success Stories",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Community-Based Initiatives",
+          "points": [
+            "Successful peer support programs.",
+            "Impact of local awareness campaigns.",
+            "Engagement of youth in mental health advocacy."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Educational Programs",
+          "points": [
+            "Case studies of schools implementing mental health curricula.",
+            "Outcomes of public awareness initiatives.",
+            "Success in reducing stigma through education."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Impact",
+          "points": [
+            "Examples of effective mental health legislation.",
+            "Success stories from integrated health systems.",
+            "Impact of funding on mental health services."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions and Recommendations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Prioritizing Mental Health",
+          "points": [
+            "Integrating mental health into all health policies.",
+            "Advocating for increased funding.",
+            "Promoting mental health literacy across communities."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Strategies",
+          "points": [
+            "Utilizing technology for mental health support.",
+            "Expanding access through telehealth.",
+            "Developing community-based mental health resources."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaborative Efforts",
+          "points": [
+            "Engaging diverse stakeholders.",
+            "Building partnerships for mental health promotion.",
+            "Creating a unified approach to mental health challenges."
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

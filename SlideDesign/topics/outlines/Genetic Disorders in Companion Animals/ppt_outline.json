@@ -1,0 +1,340 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Overview of Genetic Disorders": 4,
+    "Common Genetic Disorders in Dogs": 4,
+    "Common Genetic Disorders in Cats": 4,
+    "Diagnosis and Testing": 3,
+    "Management and Treatment": 3,
+    "Future Research Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Importance of Genetic Disorders in Companion Animals",
+          "points": [
+            "Overview of companion animals",
+            "Significance of health in pets",
+            "Impact of genetic disorders on quality of life",
+            "Emotional and financial burdens on owners",
+            "Need for awareness and education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Highlight common genetic disorders",
+            "Discuss implications for breeding practices",
+            "Emphasize responsible pet ownership",
+            "Promote awareness and genetic testing",
+            "Encourage healthier future generations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Report",
+          "points": [
+            "Focus on dogs and cats",
+            "Examine prevalence of disorders",
+            "Explore management strategies",
+            "Discuss future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Overview of Genetic Disorders",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Definition of Genetic Disorders",
+          "points": [
+            "Hereditary conditions",
+            "Caused by genetic mutations",
+            "Can affect various body systems",
+            "Impact on health and behavior",
+            "Importance of early detection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Prevalence in Companion Animals",
+          "points": [
+            "Common in specific breeds",
+            "Statistics on affected populations",
+            "Impact on pet health",
+            "Role of breeding practices",
+            "Need for genetic awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Genetic Disorders",
+          "points": [
+            "Single-gene disorders",
+            "Multifactorial disorders",
+            "Chromosomal abnormalities",
+            "Examples in dogs and cats",
+            "Importance of breed-specific knowledge"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consequences of Genetic Disorders",
+          "points": [
+            "Health complications",
+            "Reduced quality of life",
+            "Increased veterinary costs",
+            "Emotional impact on owners",
+            "Ethical considerations in breeding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Common Genetic Disorders in Dogs",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Hip Dysplasia",
+          "points": [
+            "Common in large breeds",
+            "Symptoms include pain and difficulty moving",
+            "Affected breeds: German Shepherds, Bulldogs",
+            "Management strategies: regular check-ups",
+            "Importance of responsible breeding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Progressive Retinal Atrophy (PRA)",
+          "points": [
+            "Degenerative eye condition",
+            "Leads to blindness",
+            "Common in Cocker Spaniels and Labradors",
+            "Early signs: night blindness",
+            "Genetic testing for early detection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hereditary Cancers",
+          "points": [
+            "Common in breeds like Golden Retrievers",
+            "Types include hemangiosarcoma and lymphoma",
+            "Regular check-ups for early detection",
+            "Impact on treatment options",
+            "Importance of breed awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Other Notable Disorders",
+          "points": [
+            "Elbow dysplasia",
+            "Brachycephalic obstructive airway syndrome",
+            "Patellar luxation",
+            "Importance of genetic counseling",
+            "Role of veterinarians in education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Common Genetic Disorders in Cats",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Polycystic Kidney Disease (PKD)",
+          "points": [
+            "Common in Persians",
+            "Leads to renal failure",
+            "Symptoms include increased thirst and urination",
+            "Importance of genetic testing",
+            "Management strategies for affected cats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hypertrophic Cardiomyopathy (HCM)",
+          "points": [
+            "Common in Maine Coons and Ragdolls",
+            "Causes thickening of heart muscle",
+            "Risk of heart failure",
+            "Genetic screening for at-risk breeds",
+            "Importance of early intervention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Progressive Retinal Atrophy (PRA)",
+          "points": [
+            "Affects various breeds including Abyssinians",
+            "Leads to gradual vision loss",
+            "No cure available",
+            "Management strategies for owners",
+            "Awareness of genetic predisposition"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Other Genetic Disorders in Cats",
+          "points": [
+            "Feline leukemia virus (FeLV)",
+            "Feline immunodeficiency virus (FIV)",
+            "Gingival hyperplasia",
+            "Importance of regular veterinary care",
+            "Role of breeders in health management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Diagnosis and Testing",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Importance of Genetic Testing",
+          "points": [
+            "Identifies carriers of genetic disorders",
+            "Informs breeding decisions",
+            "Early detection of health issues",
+            "Improves management strategies",
+            "Promotes responsible pet ownership"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Genetic Tests Available",
+          "points": [
+            "DNA tests for specific disorders",
+            "Health screening panels",
+            "Breed-specific tests",
+            "Importance of veterinary guidance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interpreting Test Results",
+          "points": [
+            "Understanding genetic predispositions",
+            "Consultation with veterinarians",
+            "Making informed decisions",
+            "Impact on breeding practices",
+            "Role of pet owners in health management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Management and Treatment",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Management Strategies for Affected Animals",
+          "points": [
+            "Regular veterinary check-ups",
+            "Tailored care plans",
+            "Nutritional support",
+            "Physical therapy options",
+            "Importance of owner education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Treatment Options for Genetic Disorders",
+          "points": [
+            "Medications for symptom management",
+            "Surgical interventions",
+            "Lifestyle modifications",
+            "Supportive care",
+            "Role of veterinary specialists"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Preventive Measures",
+          "points": [
+            "Responsible breeding practices",
+            "Genetic counseling for breeders",
+            "Awareness campaigns for pet owners",
+            "Encouraging health over appearance",
+            "Long-term health monitoring"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Research Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Advancements in Genetic Research",
+          "points": [
+            "Focus on gene therapy",
+            "Improved genetic testing methods",
+            "Understanding breed-specific disorders",
+            "Collaboration between veterinarians and researchers",
+            "Promoting healthier companion animals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

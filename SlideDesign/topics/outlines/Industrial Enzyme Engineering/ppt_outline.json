@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Enzymes": 3,
+    "Enzyme Engineering Techniques": 4,
+    "Applications in Industry": 4,
+    "Case Studies": 4,
+    "Future Trends and Challenges": 2,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Industrial Enzymes",
+          "points": [
+            "Definition of industrial enzymes",
+            "Role as biological catalysts",
+            "Importance in manufacturing processes",
+            "Focus on efficiency and sustainability",
+            "Applications across various industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Enzyme Engineering",
+          "points": [
+            "Enhancing product quality",
+            "Reducing environmental impact",
+            "Driving innovation",
+            "Meeting industry demands",
+            "Supporting sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore characteristics of industrial enzymes",
+            "Discuss engineering techniques",
+            "Highlight applications",
+            "Identify challenges",
+            "Emphasize future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Enzymes",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Characteristics of Industrial Enzymes",
+          "points": [
+            "Derived from microorganisms, plants, or animals",
+            "Specificity and efficiency",
+            "Role in food production",
+            "Economic benefits",
+            "Environmental advantages"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Industrial Enzymes",
+          "points": [
+            "Amylases in baking and brewing",
+            "Proteases in meat and cheese production",
+            "Lipases in dairy products",
+            "Cellulases for fiber breakdown",
+            "Diverse applications in various sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainability and Enzymes",
+          "points": [
+            "Eco-friendly alternatives to chemicals",
+            "Reduction of waste",
+            "Minimizing energy consumption",
+            "Enhancing food quality",
+            "Supporting sustainable manufacturing practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Enzyme Engineering Techniques",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Rational Design",
+          "points": [
+            "Systematic approach",
+            "Requires detailed knowledge",
+            "Specific mutations to improve properties",
+            "Limitations in applicability",
+            "Examples of successful applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Directed Evolution",
+          "points": [
+            "Mimics natural selection",
+            "Introduces random mutations",
+            "Selection for desirable traits",
+            "Time-consuming screening process",
+            "Benefits in generating diverse enzyme libraries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Semi-Rational Design",
+          "points": [
+            "Combines rational design and directed evolution",
+            "Utilizes computational tools",
+            "Guides mutation selection",
+            "Allows for random variations",
+            "High-quality enzyme variants"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Techniques",
+          "points": [
+            "Strengths and limitations of each method",
+            "Choosing the right technique",
+            "Impact on enzyme performance",
+            "Case studies of successful engineering",
+            "Future directions in enzyme engineering"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications in Industry",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Pharmaceutical Applications",
+          "points": [
+            "Enzymes in drug synthesis",
+            "Active ingredients in supplements",
+            "Improving therapeutic outcomes",
+            "Reducing side effects",
+            "Examples of enzyme use in pharmaceuticals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Food Industry Applications",
+          "points": [
+            "Amylases and cellulases for texture and flavor",
+            "Reducing processing time",
+            "Energy savings",
+            "Enhancing product quality",
+            "Sustainable food production practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Detergent Industry Applications",
+          "points": [
+            "Enzymes enhance cleaning power",
+            "Breaking down stains at lower temperatures",
+            "Promoting energy savings",
+            "Examples of enzyme-based detergents",
+            "Market trends in enzyme detergents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Applications",
+          "points": [
+            "Role in bioremediation",
+            "Degrading pollutants",
+            "Heavy metals and organic contaminants",
+            "Sustainability in environmental cleanup",
+            "Future potential in environmental applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: Enzymes in Food Production",
+          "points": [
+            "Use of amylases in baking",
+            "Proteases in cheese production",
+            "Impact on flavor and texture",
+            "Economic benefits for manufacturers",
+            "Sustainability outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Enzymes in Pharmaceuticals",
+          "points": [
+            "Proteases in drug synthesis",
+            "Lipases in enzyme-based supplements",
+            "Improving drug efficacy",
+            "Reducing side effects",
+            "Market impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Enzymes in Detergents",
+          "points": [
+            "Enzyme-based cleaning products",
+            "Consumer preferences",
+            "Environmental benefits",
+            "Cost-effectiveness",
+            "Future trends in detergent formulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Enzymes in Bioremediation",
+          "points": [
+            "Successful degradation of pollutants",
+            "Case examples of environmental cleanup",
+            "Role of enzymes in sustainability",
+            "Challenges faced",
+            "Future perspectives in bioremediation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Challenges",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges in Enzyme Engineering",
+          "points": [
+            "Stability and pH adaptability issues",
+            "Narrow optimal pH ranges",
+            "Need for modifications",
+            "Techniques to enhance robustness",
+            "Current research focus"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Trends in Enzyme Engineering",
+          "points": [
+            "Advancements in bioinformatics",
+            "Role of AI and machine learning",
+            "Predicting enzyme properties",
+            "Streamlining design processes",
+            "Potential impact on industrial applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Importance of industrial enzymes",
+            "Diverse applications across sectors",
+            "Engineering techniques and their impact",
+            "Challenges and future perspectives",
+            "Significance in sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Integration of advanced technologies",
+            "Overcoming existing challenges",
+            "Maximizing potential of engineered enzymes",
+            "Driving innovation in industries",
+            "Commitment to sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

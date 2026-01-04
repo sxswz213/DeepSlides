@@ -1,0 +1,330 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction to 2D Materials": 3,
+    "Overview of Graphene": 2,
+    "Emergence of 2D Materials Beyond Graphene": 3,
+    "Types of 2D Materials": 4,
+    "Synthesis Methods": 3,
+    "Characterization Techniques": 3,
+    "Applications of 2D Materials": 3,
+    "Future Directions and Challenges": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction to 2D Materials",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are 2D Materials?",
+          "points": [
+            "Definition of 2D materials",
+            "Unique properties",
+            "Importance in modern technology",
+            "Comparison with bulk materials",
+            "Applications in various fields"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Discovery of graphene",
+            "Initial excitement and research focus",
+            "Transition to exploring other 2D materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of 2D Materials",
+          "points": [
+            "Potential to revolutionize industries",
+            "Role in nanotechnology",
+            "Impact on electronics and energy sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Overview of Graphene",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Properties of Graphene",
+          "points": [
+            "Exceptional electrical conductivity",
+            "High mechanical strength",
+            "Thermal conductivity",
+            "Optical properties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications of Graphene",
+          "points": [
+            "Electronics",
+            "Energy storage",
+            "Biomedical applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Emergence of 2D Materials Beyond Graphene",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Introduction to New 2D Materials",
+          "points": [
+            "Transition metal dichalcogenides (TMDs)",
+            "Hexagonal boron nitride (hBN)",
+            "MXenes",
+            "Transition metal oxides (TMOs)",
+            "Comparison with graphene"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Trends",
+          "points": [
+            "Increased funding and interest",
+            "Collaborative research efforts",
+            "Emerging applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Research",
+          "points": [
+            "Synthesis difficulties",
+            "Characterization challenges",
+            "Scalability issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of 2D Materials",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Transition Metal Dichalcogenides (TMDs)",
+          "points": [
+            "Examples: MoS2, WS2",
+            "Direct bandgap properties",
+            "Applications in optoelectronics",
+            "Potential in energy storage",
+            "Biosensing capabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hexagonal Boron Nitride (hBN)",
+          "points": [
+            "Electrical insulator",
+            "Thermal stability",
+            "Applications in electronics",
+            "Role in nanocomposites",
+            "High-temperature applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "MXenes",
+          "points": [
+            "Derived from transition metal carbides",
+            "High electrical conductivity",
+            "Tunable surface chemistry",
+            "Applications in EMI shielding",
+            "Potential in laser technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transition Metal Oxides (TMOs)",
+          "points": [
+            "Unique optical and electronic properties",
+            "Applications in drug delivery",
+            "Biosensing capabilities",
+            "Enhanced electron transfer",
+            "Potential in personalized medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Synthesis Methods",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Top-Down Approaches",
+          "points": [
+            "Mechanical exfoliation",
+            "Liquid-phase exfoliation",
+            "Chemical vapor deposition (CVD)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Bottom-Up Approaches",
+          "points": [
+            "Chemical vapor deposition",
+            "Solvothermal synthesis",
+            "Molecular beam epitaxy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Synthesis",
+          "points": [
+            "Quality control",
+            "Scalability",
+            "Cost-effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Characterization Techniques",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Microscopy Techniques",
+          "points": [
+            "Transmission electron microscopy (TEM)",
+            "Scanning electron microscopy (SEM)",
+            "Atomic force microscopy (AFM)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Spectroscopy Techniques",
+          "points": [
+            "Raman spectroscopy",
+            "X-ray photoelectron spectroscopy (XPS)",
+            "Infrared spectroscopy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Electrical Characterization",
+          "points": [
+            "Field-effect transistors (FETs)",
+            "Conductivity measurements",
+            "Charge carrier mobility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of 2D Materials",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Electronics and Optoelectronics",
+          "points": [
+            "Transistors",
+            "Photodetectors",
+            "Solar cells",
+            "Flexible electronics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Energy Storage",
+          "points": [
+            "Batteries",
+            "Supercapacitors",
+            "Hydrogen storage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Biomedical Applications",
+          "points": [
+            "Biosensors",
+            "Drug delivery systems",
+            "Cancer diagnostics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions and Challenges",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Optimizing material properties",
+            "Exploring new synthesis methods",
+            "Integrating 2D materials into devices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Ahead",
+          "points": [
+            "Commercialization hurdles",
+            "Regulatory considerations",
+            "Environmental impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

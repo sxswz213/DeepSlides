@@ -1,0 +1,323 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction to Stem Cells": 3,
+    "Types of Stem Cells": 3,
+    "Stem Cell Mechanisms": 4,
+    "Stem Cell Differentiation": 3,
+    "Stem Cell Niche": 3,
+    "Applications of Stem Cell Research": 3,
+    "Ethical Considerations in Stem Cell Research": 2,
+    "Future Directions in Stem Cell Biology": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction to Stem Cells",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Stem Cells?",
+          "points": [
+            "Undifferentiated cells",
+            "Self-renewal capability",
+            "Differentiation potential",
+            "Role in development",
+            "Importance in medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Stem Cell Research",
+          "points": [
+            "Advancements in regenerative medicine",
+            "Potential for disease treatment",
+            "Understanding developmental biology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Stem Cell Biology",
+          "points": [
+            "Rapidly evolving field",
+            "Key mechanisms",
+            "Clinical applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Stem Cells",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Pluripotent Stem Cells",
+          "points": [
+            "Can differentiate into any cell type",
+            "Includes embryonic stem cells",
+            "Induced pluripotent stem cells (iPSCs)",
+            "Versatile for research and therapy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Adult Stem Cells",
+          "points": [
+            "Typically multipotent",
+            "Tissue-specific differentiation",
+            "Examples: hematopoietic stem cells",
+            "Role in tissue maintenance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Stem Cell Types",
+          "points": [
+            "Pluripotent vs. multipotent",
+            "Sources and ethical considerations",
+            "Applications in medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Stem Cell Mechanisms",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Self-Renewal Mechanisms",
+          "points": [
+            "Intrinsic factors: transcription factors",
+            "Extrinsic factors: stem cell niche",
+            "Balance between self-renewal and differentiation",
+            "Importance for genomic integrity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Intrinsic Factors in Detail",
+          "points": [
+            "Role of proto-oncogenes",
+            "Function of tumor suppressors",
+            "Signaling pathways involved",
+            "Impact on stem cell behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Extrinsic Factors and the Niche",
+          "points": [
+            "Supportive microenvironment",
+            "Signals from surrounding cells",
+            "Influence on stem cell fate",
+            "Adaptation to physiological demands"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Mechanisms Overview",
+          "points": [
+            "Complex interplay of factors",
+            "Importance for regenerative medicine",
+            "Potential for therapeutic applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Stem Cell Differentiation",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Process of Differentiation",
+          "points": [
+            "Transition from stem cell to specialized cell",
+            "Influence of intrinsic and extrinsic factors",
+            "Stages of differentiation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Factors Influencing Differentiation",
+          "points": [
+            "Signaling pathways",
+            "Transcription factors",
+            "Microenvironment cues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications of Differentiated Cells",
+          "points": [
+            "Tissue repair",
+            "Cell replacement therapies",
+            "Drug testing and development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Stem Cell Niche",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding the Stem Cell Niche",
+          "points": [
+            "Microenvironment surrounding stem cells",
+            "Role in maintaining stem cell properties",
+            "Interaction with other cell types"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Components of the Niche",
+          "points": [
+            "Extracellular matrix",
+            "Signaling molecules",
+            "Supportive cells"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Niche on Stem Cell Behavior",
+          "points": [
+            "Influence on self-renewal",
+            "Regulation of differentiation",
+            "Adaptation to tissue needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of Stem Cell Research",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Current Medical Applications",
+          "points": [
+            "Treatments for leukemia",
+            "Heart disease therapies",
+            "Neurodegenerative disorders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Research Areas",
+          "points": [
+            "Immunotherapy",
+            "Artificial organ development",
+            "Drug testing for safety and efficacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient-Specific Therapies",
+          "points": [
+            "Use of iPSCs",
+            "Reduction of immune rejection",
+            "Personalized medicine potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Ethical Considerations in Stem Cell Research",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Ethical Issues Surrounding Stem Cells",
+          "points": [
+            "Use of human embryonic stem cells",
+            "Moral status of embryos",
+            "Public perception and debate"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Alternatives to Embryonic Stem Cells",
+          "points": [
+            "Induced pluripotent stem cells",
+            "Ethical advantages",
+            "Research implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions in Stem Cell Biology",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Enhancing Safety and Efficacy",
+          "points": [
+            "Rigorous testing protocols",
+            "Regulatory frameworks",
+            "Addressing tumorigenicity concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Education and Ethical Considerations",
+          "points": [
+            "Promoting informed consent",
+            "Addressing misconceptions",
+            "Balancing advancement with ethics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

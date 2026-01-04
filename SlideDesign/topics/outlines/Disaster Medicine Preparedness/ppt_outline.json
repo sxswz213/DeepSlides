@@ -1,0 +1,333 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 6,
+    "Outcome": 4,
+    "Future Preparedness": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Disaster Medicine Preparedness",
+          "points": [
+            "Definition of disaster medicine",
+            "Importance of preparedness",
+            "Increasing frequency of disasters",
+            "Scope of healthcare delivery during emergencies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore critical components",
+            "Highlight roles of health organizations",
+            "Identify challenges",
+            "Discuss recommendations for improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Understanding Disaster Medicine",
+          "points": [
+            "Focus on health impacts",
+            "Phases of disaster management",
+            "Prevention and mitigation",
+            "Response and recovery",
+            "Collaboration among sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Preparedness",
+          "points": [
+            "Training for responders",
+            "Resource allocation",
+            "Community involvement",
+            "Scenario-based exercises",
+            "Technological tools for communication"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Health Organizations",
+          "points": [
+            "Risk communication",
+            "Incident management",
+            "Continuity of care",
+            "Coordination among agencies",
+            "Public health as first responders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of Disaster Preparedness",
+          "points": [
+            "Existing frameworks",
+            "Training programs",
+            "Resource distribution",
+            "Community engagement",
+            "Partnerships for collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Disaster Medicine Preparedness",
+          "points": [
+            "Resource limitations",
+            "Inadequate infrastructure",
+            "Insufficient medical supplies",
+            "Financial constraints",
+            "Failures in emergency response systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Communication Barriers",
+          "points": [
+            "Importance of effective communication",
+            "Gaps in information dissemination",
+            "Impact of misinformation",
+            "Challenges in public health messaging",
+            "Coordination issues among agencies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Training Gaps Among Healthcare Professionals",
+          "points": [
+            "Lack of preparedness for unique demands",
+            "Need for specialized training",
+            "Importance of scenario-based exercises",
+            "Enhancing decision-making skills",
+            "Building confidence in responders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Challenges on Response Efforts",
+          "points": [
+            "Suboptimal patient care",
+            "Delayed response times",
+            "Increased morbidity and mortality",
+            "Community distrust",
+            "Long-term health impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Enhancing Training Programs",
+          "points": [
+            "Develop comprehensive training modules",
+            "Incorporate simulations and drills",
+            "Focus on interdisciplinary collaboration",
+            "Regularly update training content",
+            "Evaluate training effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Improving Resource Allocation",
+          "points": [
+            "Assess current resource needs",
+            "Strengthen supply chains",
+            "Invest in infrastructure",
+            "Utilize technology for resource management",
+            "Establish emergency stockpiles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fostering Community Involvement",
+          "points": [
+            "Engage local populations in planning",
+            "Conduct community training sessions",
+            "Promote volunteer programs",
+            "Build strong community ties",
+            "Encourage local leadership in preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strengthening Coordination Among Health Organizations",
+          "points": [
+            "Implement Incident Command System (ICS)",
+            "Conduct joint training exercises",
+            "Enhance communication protocols",
+            "Establish clear roles and responsibilities",
+            "Facilitate information sharing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Communication Barriers",
+          "points": [
+            "Develop clear messaging strategies",
+            "Utilize multiple communication channels",
+            "Train spokespersons for public health",
+            "Engage community leaders in messaging",
+            "Monitor and evaluate communication effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Building Long-term Resilience",
+          "points": [
+            "Create a culture of preparedness",
+            "Encourage continuous learning",
+            "Invest in research and development",
+            "Promote public health initiatives",
+            "Strengthen policy frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from the Report",
+          "points": [
+            "Importance of training for responders",
+            "Critical need for resource allocation",
+            "Role of community involvement",
+            "Challenges in communication and training",
+            "Interconnectedness of health organizations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Future Preparedness",
+          "points": [
+            "Enhance training programs",
+            "Improve infrastructure and supply chains",
+            "Engage local populations",
+            "Strengthen collaboration among organizations",
+            "Address communication barriers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Expected Outcomes of Improved Preparedness",
+          "points": [
+            "Faster response times",
+            "Better patient care",
+            "Increased community resilience",
+            "Enhanced public trust",
+            "Reduced health impacts during disasters"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Summary of key insights",
+            "Importance of proactive measures",
+            "Call to action for stakeholders",
+            "Commitment to continuous improvement",
+            "Vision for a resilient healthcare system"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Preparedness",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Next Steps in Disaster Medicine Preparedness",
+          "points": [
+            "Implement recommendations",
+            "Monitor progress",
+            "Evaluate effectiveness",
+            "Engage stakeholders",
+            "Foster a culture of preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Disaster medicine is a shared responsibility",
+            "Collaboration is key to success",
+            "Preparedness saves lives",
+            "Investing in training and resources is essential",
+            "Together, we can build resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

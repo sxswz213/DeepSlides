@@ -1,0 +1,304 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Air Pollution Overview": 3,
+    "Types of Air Pollutants": 3,
+    "Impact of Air Pollution": 3,
+    "Air Pollution Control Technologies": 6,
+    "Case Studies of Successful Implementation": 3,
+    "Future Trends in Air Pollution Control": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Air Pollution",
+          "points": [
+            "Definition of air pollution",
+            "Importance of addressing air pollution",
+            "Overview of control technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Highlight air pollution issues",
+            "Explore control technologies",
+            "Discuss future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Air Pollution Overview",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Types of Air Pollutants",
+          "points": [
+            "Particulate matter",
+            "Gaseous pollutants",
+            "Sources of emissions",
+            "Health impacts",
+            "Environmental effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Air Quality Statistics",
+          "points": [
+            "Current air quality data",
+            "Regions most affected",
+            "Trends over the years"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Framework",
+          "points": [
+            "International agreements",
+            "National regulations",
+            "Local initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Air Pollutants",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Particulate Matter (PM)",
+          "points": [
+            "Definition and types",
+            "Sources of PM",
+            "Health effects",
+            "Control methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Gaseous Pollutants",
+          "points": [
+            "Common gaseous pollutants",
+            "Sources and impacts",
+            "Control technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Pollutants",
+          "points": [
+            "Particulate vs. gaseous pollutants",
+            "Health risks",
+            "Environmental impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Impact of Air Pollution",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Health Impacts",
+          "points": [
+            "Respiratory diseases",
+            "Cardiovascular issues",
+            "Long-term effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Consequences",
+          "points": [
+            "Acid rain",
+            "Climate change",
+            "Biodiversity loss"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Costs",
+          "points": [
+            "Healthcare costs",
+            "Loss of productivity",
+            "Impact on industries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Air Pollution Control Technologies",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Overview of Control Technologies",
+          "points": [
+            "Importance of control technologies",
+            "Categories of technologies",
+            "Mechanisms of action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Particulate Control Technologies",
+          "points": [
+            "Cyclones",
+            "Electrostatic precipitators",
+            "Baghouse filters",
+            "Effectiveness and cost"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Gaseous Control Technologies",
+          "points": [
+            "Scrubbers",
+            "Absorption",
+            "Adsorption",
+            "Incineration",
+            "Effectiveness and cost"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Technologies",
+          "points": [
+            "Effectiveness",
+            "Cost considerations",
+            "Applicability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Successful Implementation",
+          "points": [
+            "Industry examples",
+            "Results achieved",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Trends in Air Pollution Control",
+          "points": [
+            "Emerging technologies",
+            "Regulatory changes",
+            "Public awareness and engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies of Successful Implementation",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study 1: Industrial Application",
+          "points": [
+            "Overview of the industry",
+            "Technologies used",
+            "Results and impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Urban Air Quality Improvement",
+          "points": [
+            "City overview",
+            "Implemented strategies",
+            "Outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: Innovative Solutions",
+          "points": [
+            "Description of innovation",
+            "Implementation process",
+            "Results and scalability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends in Air Pollution Control",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Technological Innovations",
+          "points": [
+            "Advancements in control technologies",
+            "Integration of AI and IoT",
+            "Potential for cost reduction"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy and Regulation Changes",
+          "points": [
+            "Emerging regulations",
+            "Global cooperation",
+            "Role of public engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

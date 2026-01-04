@@ -1,0 +1,319 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Current Situation of Aging Society": 4,
+    "Health Challenges Faced by the Aging Population": 5,
+    "Conflict: Impact of Health Challenges on Society": 4,
+    "Resolution: Strategies to Address Health Challenges": 4,
+    "Outcome: Future Implications and Solutions": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Aging Society",
+          "points": [
+            "Global aging trends",
+            "Significance of the aging population",
+            "Implications for healthcare systems",
+            "Need for urgent attention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "Explore health challenges",
+            "Discuss impact on society",
+            "Identify strategies for healthy aging",
+            "Propose solutions for stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Situation of Aging Society",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Demographics of Aging Population",
+          "points": [
+            "Statistics on aging population",
+            "Projected growth by 2050",
+            "Regional variations",
+            "Impact on workforce and economy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Health Status of Older Adults",
+          "points": [
+            "Prevalence of chronic diseases",
+            "Mental health issues",
+            "Comorbidities in older adults",
+            "Quality of life considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Determinants of Health",
+          "points": [
+            "Economic stability",
+            "Education and health literacy",
+            "Social connections",
+            "Access to healthcare services",
+            "Impact of isolation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Healthcare System Challenges",
+          "points": [
+            "Increased demand for services",
+            "Shortage of geriatric specialists",
+            "Financial implications",
+            "Need for policy reforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Health Challenges Faced by the Aging Population",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Chronic Diseases in Older Adults",
+          "points": [
+            "High prevalence of heart disease",
+            "Diabetes and its complications",
+            "Cancer rates among older adults",
+            "Management of multiple comorbidities",
+            "Impact on healthcare resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mental Health Issues",
+          "points": [
+            "Depression prevalence",
+            "Cognitive decline and dementia",
+            "Impact of isolation on mental health",
+            "Need for mental health services",
+            "Stigma surrounding mental health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Barriers to Healthcare Access",
+          "points": [
+            "Transportation issues",
+            "Financial constraints",
+            "Insurance coverage gaps",
+            "Lack of awareness about services",
+            "Cultural and language barriers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Aging on Quality of Life",
+          "points": [
+            "Loss of independence",
+            "Social isolation effects",
+            "Physical limitations",
+            "Emotional well-being",
+            "Need for supportive environments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Healthcare System Strain",
+          "points": [
+            "Rising healthcare costs",
+            "Increased hospitalizations",
+            "Need for long-term care",
+            "Workforce challenges",
+            "Sustainability concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict: Impact of Health Challenges on Society",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Economic Impact of Aging Population",
+          "points": [
+            "Increased healthcare expenditures",
+            "Impact on social security systems",
+            "Workforce implications",
+            "Economic productivity concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Implications of Health Challenges",
+          "points": [
+            "Increased caregiver burden",
+            "Impact on families and communities",
+            "Social isolation effects",
+            "Need for community support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Healthcare System Challenges",
+          "points": [
+            "Resource allocation issues",
+            "Need for specialized care",
+            "Increased demand for services",
+            "Financial sustainability concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health Concerns",
+          "points": [
+            "Rising prevalence of chronic diseases",
+            "Mental health crisis",
+            "Need for preventive measures",
+            "Impact on overall population health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution: Strategies to Address Health Challenges",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Integrated Healthcare Models",
+          "points": [
+            "Coordinated care approaches",
+            "Focus on preventive healthcare",
+            "Collaboration among providers",
+            "Patient-centered care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Support Initiatives",
+          "points": [
+            "Programs to reduce isolation",
+            "Social engagement opportunities",
+            "Support for caregivers",
+            "Access to resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Preventive Healthcare Strategies",
+          "points": [
+            "Regular health screenings",
+            "Vaccination programs",
+            "Health education initiatives",
+            "Promotion of healthy lifestyles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Reforms for Sustainable Funding",
+          "points": [
+            "Innovative funding models",
+            "Investment in geriatric training",
+            "Support for long-term care solutions",
+            "Advocacy for aging population needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome: Future Implications and Solutions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Improving Health Outcomes",
+          "points": [
+            "Integrated care models",
+            "Enhanced access to services",
+            "Promotion of healthy aging",
+            "Community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainable Healthcare Systems",
+          "points": [
+            "Innovative funding solutions",
+            "Workforce development",
+            "Policy advocacy",
+            "Focus on preventive care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Stakeholders",
+          "points": [
+            "Collaboration among healthcare providers",
+            "Engagement with communities",
+            "Investment in research and innovation",
+            "Commitment to improving quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

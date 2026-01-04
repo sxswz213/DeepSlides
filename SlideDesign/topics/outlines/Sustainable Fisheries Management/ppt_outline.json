@@ -1,0 +1,293 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Sustainable Fisheries Management?",
+          "points": [
+            "Definition and importance",
+            "Balancing ecology and economy",
+            "Social responsibility in fisheries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Principles of Sustainable Fisheries",
+          "points": [
+            "Avoiding overexploitation",
+            "Maintaining healthy fish populations",
+            "Protecting critical habitats",
+            "Implementing quotas and closures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Importance of Sustainability",
+          "points": [
+            "Long-term viability of fisheries",
+            "Preservation of marine ecosystems",
+            "Support for fishing communities",
+            "Commitment to environmental stewardship"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Fisheries",
+          "points": [
+            "90% of marine fisheries fully exploited",
+            "Impact on food security",
+            "Economic reliance on fishing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overfishing: A Global Crisis",
+          "points": [
+            "Definition of overfishing",
+            "Consequences for fish populations",
+            "Examples of affected species"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Habitat Destruction and Its Effects",
+          "points": [
+            "Causes of habitat destruction",
+            "Impact on marine biodiversity",
+            "Examples of affected habitats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Climate Change and Pollution",
+          "points": [
+            "Effects of climate change on fisheries",
+            "Pollution sources and impacts",
+            "Need for adaptive management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Sustainable Fisheries Management",
+          "points": [
+            "Overfishing and stock depletion",
+            "Habitat loss and degradation",
+            "Climate change impacts",
+            "Pollution and its effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Pressures on Fisheries",
+          "points": [
+            "Demand for fish products",
+            "Competition among fishers",
+            "Illegal fishing practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social and Cultural Conflicts",
+          "points": [
+            "Community reliance on fishing",
+            "Conflicts between conservation and livelihoods",
+            "Need for stakeholder engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory and Governance Issues",
+          "points": [
+            "Lack of enforcement",
+            "Inconsistent policies",
+            "Need for international cooperation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Ecosystem-Based Fisheries Management",
+          "points": [
+            "Definition and principles",
+            "Importance of ecosystem health",
+            "Integrating species interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Frameworks for Sustainability",
+          "points": [
+            "Science-based harvest strategies",
+            "Eliminating illegal fishing",
+            "Establishing marine protected areas"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Involvement in Fisheries Management",
+          "points": [
+            "Engaging local fishers",
+            "Promoting equitable access",
+            "Fostering stewardship and responsibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Strategies for Implementation",
+          "points": [
+            "Adaptive management practices",
+            "Stakeholder collaboration",
+            "Monitoring and evaluation systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Success",
+          "points": [
+            "Lyme Bay Fisheries Reserve",
+            "Ra’ui in the Cook Islands",
+            "Lessons learned from successful initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Benefits of Sustainable Fisheries Management",
+          "points": [
+            "Healthy fish populations",
+            "Resilient marine ecosystems",
+            "Economic stability for communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Viability of Fisheries",
+          "points": [
+            "Ensuring food security",
+            "Supporting local economies",
+            "Preserving marine biodiversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Empowerment and Engagement",
+          "points": [
+            "Increased compliance with regulations",
+            "Strengthened local governance",
+            "Enhanced community resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Implications of Sustainable Practices",
+          "points": [
+            "International cooperation",
+            "Shared responsibility for marine resources",
+            "Future of global fisheries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Holistic Approaches to Fisheries Management",
+          "points": [
+            "Integrating stakeholder participation",
+            "Adapting to environmental changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Sustainable Practices",
+          "points": [
+            "Prioritizing sustainability",
+            "Investing in research and innovation",
+            "Collaborating for a sustainable future"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

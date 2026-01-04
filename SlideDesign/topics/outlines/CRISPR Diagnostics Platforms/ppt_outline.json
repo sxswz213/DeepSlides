@@ -1,0 +1,321 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on CRISPR Technology": 3,
+    "CRISPR Diagnostics Platforms Overview": 4,
+    "Methodology": 3,
+    "Applications of CRISPR Diagnostics": 3,
+    "Case Studies": 3,
+    "Challenges and Limitations": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of CRISPR Diagnostics",
+          "points": [
+            "Introduction to CRISPR technology",
+            "Importance in molecular diagnostics",
+            "Objectives of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of CRISPR in Healthcare",
+          "points": [
+            "Transformative potential",
+            "Speed and accuracy of detection",
+            "Impact on patient outcomes",
+            "Accessibility in healthcare settings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Report",
+          "points": [
+            "Mechanisms of CRISPR technology",
+            "Types of diagnostic platforms",
+            "Comparative analysis",
+            "Challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on CRISPR Technology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is CRISPR?",
+          "points": [
+            "Definition of CRISPR",
+            "Components: Cas proteins and gRNA",
+            "Types of Cas proteins: Cas9, Cas12, Cas13"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mechanism of CRISPR Systems",
+          "points": [
+            "Stages: Adaptation, Expression, Interference",
+            "Role of Cas proteins",
+            "Target recognition and cleavage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications of CRISPR Technology",
+          "points": [
+            "Gene editing",
+            "Pathogen detection",
+            "Potential in therapeutics",
+            "Role in diagnostics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "CRISPR Diagnostics Platforms Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Introduction to CRISPR Diagnostics",
+          "points": [
+            "Definition and purpose",
+            "Key advantages over traditional methods",
+            "Rapid and sensitive detection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "SHERLOCK Platform",
+          "points": [
+            "Utilizes Cas13 protein",
+            "High sensitivity and multiplexing",
+            "Paper-based format for ease of use",
+            "Applications in infectious diseases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "DETECTR Platform",
+          "points": [
+            "Employs Cas12 protein",
+            "Rapid response and high sensitivity",
+            "Point-of-care testing capabilities",
+            "Applications in cancer biomarkers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Platforms",
+          "points": [
+            "Key features of SHERLOCK and DETECTR",
+            "Strengths and weaknesses",
+            "Overall impact on diagnostics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Analysis of existing CRISPR diagnostic platforms",
+            "Evaluation of case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection",
+          "points": [
+            "Sources of information",
+            "Criteria for platform selection",
+            "Assessment of performance metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Comparative analysis",
+            "Statistical evaluation",
+            "Identification of trends and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of CRISPR Diagnostics",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Infectious Disease Detection",
+          "points": [
+            "Rapid detection of pathogens",
+            "Examples: SARS-CoV-2",
+            "Impact on public health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cancer Biomarkers",
+          "points": [
+            "Detection of circulating tumor DNA",
+            "Role in early diagnosis",
+            "Potential for personalized medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Point-of-Care Testing",
+          "points": [
+            "Accessibility in resource-limited settings",
+            "User-friendly formats",
+            "Importance in emergency situations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study: SHERLOCK in Action",
+          "points": [
+            "Implementation in COVID-19 testing",
+            "Results and impact",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: DETECTR for Cancer Detection",
+          "points": [
+            "Use in clinical trials",
+            "Outcomes and effectiveness",
+            "Future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Case Analysis",
+          "points": [
+            "Success stories of both platforms",
+            "Challenges faced",
+            "Recommendations for future use"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Regulatory Hurdles",
+          "points": [
+            "Complex approval processes",
+            "Impact on clinical implementation",
+            "Need for streamlined regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technical Limitations",
+          "points": [
+            "Off-target effects",
+            "Delivery challenges",
+            "Stability of CRISPR components"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Innovations in CRISPR Diagnostics",
+          "points": [
+            "Emerging technologies",
+            "Improved delivery systems",
+            "Enhanced precision and efficacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for Widespread Adoption",
+          "points": [
+            "Addressing challenges",
+            "Collaboration between stakeholders",
+            "Potential impact on global health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Materials Overview": 4,
+    "Properties of Lightweight Alloys": 4,
+    "Applications in Aerospace": 3,
+    "Challenges and Limitations": 3,
+    "Future Trends and Research Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Lightweight Alloys in Aerospace",
+          "points": [
+            "Importance of lightweight materials",
+            "Impact on performance and efficiency",
+            "Sustainability goals in aerospace"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Research Report",
+          "points": [
+            "Explore types of lightweight alloys",
+            "Analyze properties and applications",
+            "Discuss future trends and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of the Study",
+          "points": [
+            "Addressing industry demands",
+            "Enhancing fuel efficiency",
+            "Contributing to technological advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Lightweight Alloys",
+          "points": [
+            "Evolution of materials in aerospace",
+            "Key milestones in alloy development",
+            "Shift towards lightweight solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Aerospace Materials",
+          "points": [
+            "Growing demand for fuel-efficient aircraft",
+            "Innovations in alloy technology",
+            "Regulatory influences on material selection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Methodology",
+          "points": [
+            "Literature review",
+            "Comparative analysis of alloys",
+            "Case studies on applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Materials Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Aluminum Alloys",
+          "points": [
+            "High strength-to-weight ratio",
+            "Corrosion resistance",
+            "Common series: 2xxx, 6xxx, 7xxx",
+            "Applications in fuselages and wings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Titanium Alloys",
+          "points": [
+            "Exceptional strength",
+            "High-temperature resistance",
+            "Applications in engine parts",
+            "Cost considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Magnesium Alloys",
+          "points": [
+            "Lightest structural metal",
+            "Applications in weight-sensitive components",
+            "Challenges in corrosion resistance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Alloys and Composites",
+          "points": [
+            "Aluminum-lithium alloys",
+            "Carbon-fiber-reinforced polymers",
+            "Benefits of advanced composites",
+            "Future potential in aerospace"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Properties of Lightweight Alloys",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Mechanical Properties",
+          "points": [
+            "Strength-to-weight ratio",
+            "Fatigue resistance",
+            "Impact toughness",
+            "Ductility and machinability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Thermal Properties",
+          "points": [
+            "Temperature resistance",
+            "Thermal conductivity",
+            "Heat treatment effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Corrosion Resistance",
+          "points": [
+            "Importance in aerospace applications",
+            "Comparison of alloy performance",
+            "Protective coatings and treatments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recyclability and Sustainability",
+          "points": [
+            "Environmental impact of alloys",
+            "Recycling processes",
+            "Sustainability in material selection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications in Aerospace",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Structural Components",
+          "points": [
+            "Use of aluminum in fuselages",
+            "Titanium in landing gear",
+            "Magnesium in engine casings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Engine Components",
+          "points": [
+            "High-performance requirements",
+            "Material selection for efficiency",
+            "Case studies of successful applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Designs and Manufacturing",
+          "points": [
+            "Additive manufacturing techniques",
+            "Complex geometries in aerospace",
+            "Benefits of lightweight designs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Cost Considerations",
+          "points": [
+            "High production costs of titanium",
+            "Economic feasibility of advanced alloys",
+            "Balancing performance and cost"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Material Limitations",
+          "points": [
+            "Corrosion issues with magnesium",
+            "Fatigue performance of aluminum",
+            "Trade-offs in material selection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory and Safety Standards",
+          "points": [
+            "Compliance with aerospace regulations",
+            "Testing and certification processes",
+            "Impact on material choice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Research Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Advancements in additive manufacturing",
+            "Integration of nanomaterials",
+            "Potential for new alloy compositions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainability and Innovation",
+          "points": [
+            "Focus on eco-friendly materials",
+            "Recycling advancements",
+            "Future research priorities in lightweight alloys"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

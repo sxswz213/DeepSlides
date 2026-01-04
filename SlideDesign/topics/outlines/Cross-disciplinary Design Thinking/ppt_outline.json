@@ -1,0 +1,292 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Implications": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Cross-disciplinary Design Thinking?",
+          "points": [
+            "Definition and significance",
+            "Integration of diverse fields",
+            "Holistic problem-solving approach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance in Modern Society",
+          "points": [
+            "Enhances innovation",
+            "Fosters collaboration",
+            "Addresses complex challenges",
+            "Cultivates creativity and adaptability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Presentation",
+          "points": [
+            "Situation-Conflict-Resolution-Outcome framework",
+            "Key insights and case studies",
+            "Future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Challenges in Innovation",
+          "points": [
+            "Complex societal issues",
+            "Need for diverse perspectives",
+            "Limitations of traditional approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Design Thinking",
+          "points": [
+            "Human-centered approach",
+            "Encourages empathy",
+            "Promotes iterative processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cross-disciplinary Collaboration",
+          "points": [
+            "Bridging gaps between fields",
+            "Leveraging strengths of various disciplines",
+            "Creating a richer creative environment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Real-world Examples",
+          "points": [
+            "Healthcare innovations",
+            "Educational advancements",
+            "Product design improvements",
+            "Service design enhancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Barriers to Collaboration",
+          "points": [
+            "Differences in language",
+            "Divergent methodologies",
+            "Misunderstandings between disciplines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Healthcare",
+          "points": [
+            "Challenges in pediatric care",
+            "Need for user-centered solutions",
+            "Resistance to change in traditional practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Education",
+          "points": [
+            "Siloed academic disciplines",
+            "Difficulty in integrating design thinking",
+            "Need for interdisciplinary courses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Conflicts",
+          "points": [
+            "Suboptimal outcomes",
+            "Reduced innovation potential",
+            "Frustration among team members"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Embracing Differences",
+          "points": [
+            "Valuing diverse perspectives",
+            "Encouraging open communication",
+            "Building trust among team members"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Frameworks for Success",
+          "points": [
+            "Stanford d.school model",
+            "Empathize, Define, Ideate, Prototype, Test",
+            "Iterative feedback loops"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fostering Empathy",
+          "points": [
+            "Understanding user experiences",
+            "Creating user-centered solutions",
+            "Enhancing collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Iterative Design Process",
+          "points": [
+            "Continuous adaptation",
+            "Prototyping and testing",
+            "Learning from failures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Case Studies",
+          "points": [
+            "GE Healthcare's pediatric MRI",
+            "PillPack's medication management",
+            "Interdisciplinary design courses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Impact on Innovation",
+          "points": [
+            "Enhanced creativity",
+            "Improved problem-solving",
+            "User-centered solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Shift in Organizations",
+          "points": [
+            "Adoption of design thinking",
+            "Encouragement of collaboration",
+            "Focus on empathy and user needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Benefits",
+          "points": [
+            "Sustainable innovations",
+            "Adaptability to change",
+            "Preparation for future challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Integration of disciplines is vital",
+            "Empathy drives effective design",
+            "Iterative processes lead to success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Prioritizing Cross-disciplinary Approaches",
+          "points": [
+            "Encouraging collaboration across sectors",
+            "Investing in design thinking education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Maximizing Potential",
+          "points": [
+            "Overcoming communication barriers",
+            "Emphasizing empathy and iterative processes",
+            "Driving impactful innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

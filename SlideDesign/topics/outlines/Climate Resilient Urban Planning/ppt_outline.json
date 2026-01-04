@@ -1,0 +1,278 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Call to Action": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Climate Resilience",
+          "points": [
+            "Definition of climate resilience",
+            "Importance for urban areas",
+            "Impact of climate change on cities",
+            "Need for integrated planning",
+            "Overview of presentation structure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Urban Challenges",
+          "points": [
+            "Increasing extreme weather events",
+            "Rising sea levels",
+            "Urban heat islands",
+            "Infrastructure vulnerability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Urban Planning",
+          "points": [
+            "Definition of urban planning",
+            "Connection to climate resilience",
+            "Benefits of proactive planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Climate Change Impacts on Urban Areas",
+          "points": [
+            "Flooding",
+            "Heatwaves",
+            "Droughts",
+            "Air quality issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Cape Town",
+          "points": [
+            "Integrated Development Plan",
+            "Climate priority programs",
+            "Focus on inclusive growth",
+            "Addressing drought and flooding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Copenhagen",
+          "points": [
+            "Innovative stormwater management",
+            "Climate streets concept",
+            "Integration of green spaces",
+            "Enhancing urban livability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Singapore",
+          "points": [
+            "Kampung Admiralty project",
+            "Sustainable water management",
+            "Social inclusion in urban design",
+            "Environmental sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Climate Resilient Planning",
+          "points": [
+            "Financial constraints",
+            "Technical barriers",
+            "Social inequalities",
+            "Lack of community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Financial Barriers",
+          "points": [
+            "Insufficient funding",
+            "Urban climate finance flows",
+            "Impact on developing countries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technical Challenges",
+          "points": [
+            "Institutional barriers",
+            "Capacity issues",
+            "Resistance to change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Factors",
+          "points": [
+            "Inequality in climate impacts",
+            "Overlooking marginalized communities",
+            "Need for inclusive governance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Strategies for Implementation",
+          "points": [
+            "Urban greening initiatives",
+            "Community involvement",
+            "Strategic planning",
+            "Leveraging frameworks like ESSS",
+            "Integrating sustainability into urban development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Urban Greening",
+          "points": [
+            "Parks and green roofs",
+            "Community gardens",
+            "Mitigating urban heat",
+            "Stormwater management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Engagement",
+          "points": [
+            "Participatory design processes",
+            "Involving local residents",
+            "Aligning projects with community needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strategic Planning",
+          "points": [
+            "Aligning green infrastructure with urban goals",
+            "Long-term sustainability",
+            "Examples from successful cities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration and Governance",
+          "points": [
+            "Inclusive governance models",
+            "Stakeholder collaboration",
+            "Building partnerships for resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Benefits of Climate Resilient Urban Planning",
+          "points": [
+            "Enhanced quality of life",
+            "Sustainable urban environments",
+            "Improved infrastructure resilience",
+            "Community empowerment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Case Studies Recap",
+          "points": [
+            "Cape Town's IDP",
+            "Copenhagen's climate streets",
+            "Singapore's Kampung Admiralty",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Prioritizing funding",
+            "Expanding community engagement",
+            "Innovating green infrastructure",
+            "Addressing social inequalities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Implement climate resilience strategies",
+            "Engage communities in planning",
+            "Collaborate across sectors",
+            "Ensure equitable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

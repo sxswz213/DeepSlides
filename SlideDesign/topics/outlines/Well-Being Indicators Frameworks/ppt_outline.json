@@ -1,0 +1,349 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Framework Overview": 4,
+    "Key Indicators": 4,
+    "Case Studies": 3,
+    "Implications and Recommendations": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Well-Being Indicators",
+          "points": [
+            "Definition of well-being indicators",
+            "Importance in societal progress",
+            "Shift from GDP to multidimensional measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Explore historical context",
+            "Examine global frameworks",
+            "Identify common principles and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of the Presentation",
+          "points": [
+            "Overview of sections",
+            "Key themes to be discussed",
+            "Expected outcomes of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Well-Being Frameworks",
+          "points": [
+            "Influence of the Stiglitz-Sen-Fitoussi Report",
+            "Evolution of frameworks post-2009",
+            "Global initiatives promoting well-being"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Milestones in Well-Being Measurement",
+          "points": [
+            "Introduction of HDI",
+            "Development of GPI",
+            "Bhutan's GNH Index"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Relevance in Frameworks",
+          "points": [
+            "Indigenous perspectives",
+            "Integration of nature and services",
+            "Culturally relevant measures in Australia"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Analysis of existing frameworks",
+            "Interviews with experts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveys",
+            "Case studies",
+            "Focus groups"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Framework Evaluation Criteria",
+          "points": [
+            "Relevance",
+            "Comprehensiveness",
+            "Applicability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Scope of frameworks analyzed",
+            "Potential biases in data collection",
+            "Challenges in measuring subjective well-being"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Framework Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Global Well-Being Frameworks",
+          "points": [
+            "OECD Better Life Index",
+            "UNDP Human Development Index",
+            "Genuine Progress Indicator"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Bhutan's Gross National Happiness Index",
+          "points": [
+            "Holistic development focus",
+            "Cultural significance",
+            "Policy implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Frameworks",
+          "points": [
+            "Strengths and weaknesses",
+            "Common themes",
+            "Diverse methodologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration of Indicators",
+          "points": [
+            "Objective vs. subjective measures",
+            "Health, education, and environment",
+            "Interconnectedness of domains"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Indicators",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Subjective Well-Being Indicators",
+          "points": [
+            "Life satisfaction",
+            "Emotional well-being",
+            "Perceived quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objective Well-Being Indicators",
+          "points": [
+            "Income levels",
+            "Health outcomes",
+            "Educational attainment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Indicators",
+          "points": [
+            "Air and water quality",
+            "Access to green spaces",
+            "Sustainability measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Indicators",
+          "points": [
+            "Community engagement",
+            "Social support networks",
+            "Safety and security measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study: Australia",
+          "points": [
+            "Indigenous well-being frameworks",
+            "Socio-economic measures",
+            "Cultural integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Bhutan",
+          "points": [
+            "Implementation of GNH Index",
+            "Impact on policy-making",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: OECD Countries",
+          "points": [
+            "Comparative analysis of well-being",
+            "Best practices",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications and Recommendations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Policy Implications",
+          "points": [
+            "Need for holistic policies",
+            "Integration of well-being indicators",
+            "Focus on sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Framework Development",
+          "points": [
+            "Tailoring to local contexts",
+            "Participatory approaches",
+            "Continuous evaluation and adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Engaging Stakeholders",
+          "points": [
+            "Involving communities",
+            "Building trust",
+            "Fostering collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Well-Being Measurement",
+          "points": [
+            "Technological advancements",
+            "Data analytics",
+            "Global collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Encouraging research",
+            "Promoting awareness",
+            "Advocating for policy change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

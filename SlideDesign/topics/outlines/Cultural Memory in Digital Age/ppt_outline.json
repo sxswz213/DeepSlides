@@ -1,0 +1,325 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Cultural Memory Defined": 3,
+    "Digital Age Impact": 4,
+    "Complications in Cultural Memory": 4,
+    "Key Questions": 3,
+    "Strategies for Preservation": 3,
+    "Case Studies": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Cultural Memory in the Digital Age",
+          "points": [
+            "Definition of cultural memory",
+            "Importance in societal identity",
+            "Overview of digital transformation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Evolution of Cultural Memory",
+          "points": [
+            "Traditional forms of cultural memory",
+            "Impact of technology on memory",
+            "Shift from stability to fluidity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore implications of digitization",
+            "Discuss transnational exchanges",
+            "Highlight politics of cultural memory"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Cultural Memory Defined",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Cultural Memory",
+          "points": [
+            "Collective knowledge shaping identity",
+            "Role of monuments and literature",
+            "Scholarly perspectives (Assmann)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Traditional vs. Digital Memory",
+          "points": [
+            "Stable and canonized vs. fluid and ephemeral",
+            "Mechanisms of preservation",
+            "Cultural narratives through time"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Memory Institutions",
+          "points": [
+            "Museums and libraries adapting",
+            "Digitization for access and preservation",
+            "Challenges faced in the digital landscape"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Digital Age Impact",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Transformations in Cultural Memory",
+          "points": [
+            "Access to cultural heritage",
+            "Global engagement through digital platforms",
+            "Democratization of information"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Digitization",
+          "points": [
+            "Improved preservation of fragile documents",
+            "Increased public access",
+            "Facilitating broader public engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges of Digitization",
+          "points": [
+            "Selection bias in digitization",
+            "Technological obsolescence",
+            "Funding and sustainability issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Digitization",
+          "points": [
+            "Successful digitization projects",
+            "Impact on cultural memory",
+            "Lessons learned from failures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complications in Cultural Memory",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Transnational Cultural Memory",
+          "points": [
+            "Global narrative exchange",
+            "Impact of migration on identity",
+            "Role of diasporic communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Concerns in Digital Memory",
+          "points": [
+            "Cultural appropriation issues",
+            "Reinforcement of stereotypes",
+            "Need for critical digital literacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Politics of Access and Ownership",
+          "points": [
+            "Shifts in ownership models",
+            "Control over digital representations",
+            "Power dynamics in cultural narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Erasure Risks",
+          "points": [
+            "Potential loss of context",
+            "Importance of inclusive practices",
+            "Recognition of diverse voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Questions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is the Future of Cultural Memory?",
+          "points": [
+            "How will digital technologies evolve?",
+            "What role will memory institutions play?",
+            "How can we ensure inclusivity?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How to Address Ethical Challenges?",
+          "points": [
+            "What frameworks can guide digitization?",
+            "How to balance access and ownership?",
+            "What practices promote ethical representation?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Strategies for Preservation?",
+          "points": [
+            "Best practices for digitization",
+            "Engaging communities in preservation",
+            "Leveraging technology for sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Strategies for Preservation",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Inclusive Digitization Practices",
+          "points": [
+            "Engaging diverse communities",
+            "Recognizing marginalized narratives",
+            "Collaborative digitization efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Innovations in Preservation",
+          "points": [
+            "Use of AI and machine learning",
+            "3D modeling for artifacts",
+            "Data science in cultural heritage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Sustainability Plans",
+          "points": [
+            "Funding models for digital archives",
+            "Partnerships with tech companies",
+            "Continuous community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Successful Digital Archives",
+          "points": [
+            "Example 1: National Archives",
+            "Example 2: Community-driven projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons from Failed Projects",
+          "points": [
+            "Case study 1: Lack of funding",
+            "Case study 2: Poor community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Cultural Memory",
+          "points": [
+            "Increased focus on digital literacy",
+            "Growth of virtual reality experiences",
+            "Integration of social media in memory sharing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Advocate for inclusive practices",
+            "Support ethical digitization",
+            "Engage in ongoing dialogue about cultural memory"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

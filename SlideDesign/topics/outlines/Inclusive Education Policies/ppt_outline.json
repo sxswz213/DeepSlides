@@ -1,0 +1,309 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Implications": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Inclusive Education Policies",
+          "points": [
+            "Definition of inclusive education",
+            "Importance in today's educational landscape",
+            "Global commitment to equity and participation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of Inclusive Education",
+          "points": [
+            "Global trends in inclusive education",
+            "Diverse needs of learners",
+            "Tailored strategies for support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Examine global implementation",
+            "Identify barriers",
+            "Highlight successful strategies",
+            "Provide actionable recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Global Overview of Inclusive Education",
+          "points": [
+            "Growing recognition of inclusive education",
+            "Data from 35 member countries",
+            "Alignment with UNESCO frameworks",
+            "Importance of tailored policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Progress in the Global North",
+          "points": [
+            "Critical policy analysis",
+            "Challenges in implementation",
+            "Integration of marginalized groups",
+            "Focus on students with disabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Holistic Approach Advocated by the World Bank",
+          "points": [
+            "Systemic changes needed",
+            "Involvement of multiple sectors",
+            "Creating inclusive educational systems",
+            "Addressing diverse learner needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visual Representation of Key Areas",
+          "points": [
+            "Advocacy",
+            "Awareness-Raising",
+            "Capacity-Building",
+            "Implementation Support",
+            "Infographic on promoting inclusive education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Barriers to Inclusive Education",
+          "points": [
+            "Societal attitudes and prejudices",
+            "Inadequate funding and resources",
+            "Systemic obstacles in education",
+            "Rigid curriculum frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Negative Perceptions",
+          "points": [
+            "Discrimination against students with disabilities",
+            "Exclusion from educational opportunities",
+            "Challenges in fostering inclusive environments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Financial Constraints",
+          "points": [
+            "Lack of specialized services",
+            "Need for assistive technologies",
+            "Shortage of trained personnel",
+            "Impact on diverse learners"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Systemic Challenges",
+          "points": [
+            "Standardized testing issues",
+            "Rigid curriculum limitations",
+            "Need for tailored education",
+            "Importance of addressing these barriers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Successful Implementation Strategies",
+          "points": [
+            "Commitment to teacher training",
+            "Equipping teachers with inclusive skills",
+            "Creating inclusive classrooms",
+            "Recognizing barriers to learning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Universal Design for Learning (UDL) Principles",
+          "points": [
+            "Multiple means of representation",
+            "Engagement and expression",
+            "Enhancing learning experiences",
+            "Promoting collaboration among students"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Strong School Leadership",
+          "points": [
+            "Prioritizing inclusive values",
+            "Creating supportive atmospheres",
+            "Encouraging teacher and student engagement",
+            "Improving educational outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration Among Stakeholders",
+          "points": [
+            "Involvement of educators and policymakers",
+            "Community engagement",
+            "Resource allocation",
+            "Shared responsibility for inclusivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Actionable Recommendations",
+          "points": [
+            "Promote awareness and positive perceptions",
+            "Increase financial support for schools",
+            "Invest in comprehensive training programs",
+            "Encourage inclusive values in leadership"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from the Report",
+          "points": [
+            "Significant progress in policies",
+            "Persistent challenges in implementation",
+            "Need for targeted actions",
+            "Collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Inclusive Education",
+          "points": [
+            "Focus on sustainable practices",
+            "Enhancing resource allocation",
+            "Strengthening community involvement",
+            "Continuous evaluation of strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visual Summary of Key Findings",
+          "points": [
+            "Barriers to inclusion",
+            "Successful strategies",
+            "Recommendations for improvement",
+            "Infographic summarizing findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Importance of inclusive education",
+            "Commitment to equity and participation",
+            "Call to action for stakeholders",
+            "Vision for future inclusive practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Broader Implications for Society",
+          "points": [
+            "Impact on social equity",
+            "Long-term benefits of inclusive education",
+            "Fostering diverse and inclusive communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of ongoing commitment",
+            "Need for continuous improvement",
+            "Encouragement for collaboration and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

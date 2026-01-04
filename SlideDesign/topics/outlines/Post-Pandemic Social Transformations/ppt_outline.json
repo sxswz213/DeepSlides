@@ -1,0 +1,309 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 4,
+    "Outcome": 4,
+    "Future Implications": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Post-Pandemic Transformations",
+          "points": [
+            "Introduction to the COVID-19 pandemic",
+            "Impact on global society",
+            "Need for understanding transformations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Areas of Transformation",
+          "points": [
+            "Health Systems",
+            "Economic Practices",
+            "Social Inequalities",
+            "Technological Advancements",
+            "Education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "Explore interconnected transformations",
+            "Highlight implications for future",
+            "Encourage adaptive policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Health Systems Before the Pandemic",
+          "points": [
+            "Traditional healthcare models",
+            "Limited telehealth usage",
+            "Access disparities",
+            "In-person visit reliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Landscape Pre-COVID",
+          "points": [
+            "Standard work practices",
+            "Consumer behavior trends",
+            "Supply chain stability",
+            "Global economic interdependence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Inequalities Overview",
+          "points": [
+            "Existing disparities",
+            "Marginalized communities",
+            "Access to resources",
+            "Health outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Adoption Pre-Pandemic",
+          "points": [
+            "Digital tools in workplaces",
+            "E-commerce growth",
+            "Education technology usage",
+            "Barriers to access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Health Systems",
+          "points": [
+            "Rapid telemedicine adoption",
+            "Digital literacy gaps",
+            "Disrupted essential services",
+            "Increased morbidity rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Disruptions Caused by COVID-19",
+          "points": [
+            "Shift to remote work",
+            "Supply chain vulnerabilities",
+            "Consumer behavior changes",
+            "Job losses and economic instability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Exacerbation of Social Inequalities",
+          "points": [
+            "Higher infection rates in marginalized groups",
+            "Mental health impacts",
+            "Economic hardships",
+            "Need for targeted support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Barriers During the Pandemic",
+          "points": [
+            "Increased reliance on digital tools",
+            "Access issues for low-income families",
+            "Engagement challenges in education",
+            "Technostress among employees"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Adapting Health Systems",
+          "points": [
+            "Integrating telemedicine",
+            "Addressing access disparities",
+            "Enhancing digital literacy",
+            "Improving patient outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Adaptations Post-Pandemic",
+          "points": [
+            "Embracing hybrid work models",
+            "Investing in e-commerce",
+            "Reevaluating supply chains",
+            "Fostering innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Social Inequalities",
+          "points": [
+            "Implementing targeted social protection",
+            "Enhancing community support",
+            "Promoting equitable recovery",
+            "Investing in marginalized communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Advancements and Solutions",
+          "points": [
+            "Expanding digital access",
+            "Training for effective online engagement",
+            "Leveraging technology for education",
+            "Building resilient systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Insights from Transformations",
+          "points": [
+            "Health systems are more digital",
+            "Work culture has shifted permanently",
+            "Social inequalities remain critical",
+            "Technology is central to future operations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Implications for Society",
+          "points": [
+            "Need for adaptive policies",
+            "Focus on equity and resilience",
+            "Importance of innovation",
+            "Sustainable practices in all sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from the Pandemic",
+          "points": [
+            "Importance of preparedness",
+            "Value of community support",
+            "Need for inclusive policies",
+            "Role of technology in recovery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Vision for Society",
+          "points": [
+            "Equitable access to healthcare",
+            "Resilient economic structures",
+            "Inclusive education systems",
+            "Technological integration in daily life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Implications",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Strategies for Resilience",
+          "points": [
+            "Investing in health equity",
+            "Promoting digital literacy",
+            "Encouraging flexible work environments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Targeted support for marginalized groups",
+            "Investment in technology infrastructure",
+            "Focus on sustainable economic practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Engage communities in recovery",
+            "Foster collaboration across sectors",
+            "Prioritize inclusivity in future planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

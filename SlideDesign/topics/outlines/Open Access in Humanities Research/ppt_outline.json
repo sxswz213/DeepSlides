@@ -1,0 +1,303 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Findings": 4,
+    "Discussion": 4,
+    "Implications": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Open Access?",
+          "points": [
+            "Definition of Open Access",
+            "Importance in Scholarly Publishing",
+            "Focus on Humanities Research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transformative Impact of OA",
+          "points": [
+            "Enhances Visibility",
+            "Increases Accessibility",
+            "Fosters Collaboration",
+            "Democratizes Knowledge",
+            "Encourages Innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of the Presentation",
+          "points": [
+            "Objectives of the Report",
+            "Key Topics Covered",
+            "Significance for Humanities Researchers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Current State of OA in Humanities",
+          "points": [
+            "18% of Humanities Journals are OA",
+            "Comparison with STEM Fields",
+            "Challenges in Adoption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context of OA",
+          "points": [
+            "Origins in the Late 1980s",
+            "Budapest Open Access Initiative",
+            "Berlin Declaration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "OA Models Explained",
+          "points": [
+            "Gold OA",
+            "Green OA",
+            "Diamond OA",
+            "Emerging Trends",
+            "Impact on Accessibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature Review",
+            "Data Collection Methods",
+            "Analysis of Current Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Academic Journals",
+            "Institutional Repositories",
+            "Interviews with Researchers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Adoption Rates",
+            "Quality of OA Journals",
+            "Financial Implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Scope of Research",
+            "Potential Biases",
+            "Data Availability Issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Findings",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Benefits of Open Access",
+          "points": [
+            "Increased Visibility",
+            "Higher Citation Rates",
+            "Broader Audience Engagement",
+            "Democratization of Knowledge",
+            "Compliance with Funder Policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Faced by Researchers",
+          "points": [
+            "Quality Concerns",
+            "Predatory Journals",
+            "Financial Burdens of APCs",
+            "Limited Awareness",
+            "Complex Self-Archiving Processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Adoption Rates Comparison",
+          "points": [
+            "Humanities vs. STEM",
+            "Current Statistics",
+            "Trends Over Time"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging OA Models",
+          "points": [
+            "Diamond OA Growth",
+            "Community-Driven Initiatives",
+            "Potential for Increased Accessibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications for Humanities Research",
+          "points": [
+            "Need for Increased OA Adoption",
+            "Impact on Research Visibility",
+            "Role in Knowledge Democratization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strategies for Researchers",
+          "points": [
+            "Engaging with OA Publishing",
+            "Leveraging Institutional Support",
+            "Staying Informed on OA Models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of OA in Humanities",
+          "points": [
+            "Potential Growth Areas",
+            "Impact of Technology",
+            "Collaboration Opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Successful OA Implementation",
+          "points": [
+            "Examples from Leading Institutions",
+            "Impact on Research Output",
+            "Lessons Learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Broader Impact of OA",
+          "points": [
+            "Influence on Policy Making",
+            "Engagement with Public Audiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Humanities Scholars",
+          "points": [
+            "Advocate for OA",
+            "Participate in OA Initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Trends to Watch in OA",
+          "points": [
+            "Technological Advancements",
+            "Policy Changes",
+            "Increased Funding Opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of OA for Humanities",
+            "Encouragement to Embrace OA Publishing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

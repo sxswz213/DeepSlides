@@ -1,0 +1,329 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Biomechanics Principles": 4,
+    "Types of Prosthetics": 3,
+    "Research Methodology": 3,
+    "Results and Findings": 4,
+    "Discussion": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Biomechanics in Prosthetics",
+          "points": [
+            "Definition of biomechanics",
+            "Importance in prosthetic design",
+            "Impact on rehabilitation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Explore biomechanics principles",
+            "Discuss prosthetic components",
+            "Highlight challenges and innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Target Audience",
+          "points": [
+            "Healthcare professionals",
+            "Engineers and designers",
+            "Amputees and their families",
+            "Researchers in biomechanics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "History of Prosthetics",
+          "points": [
+            "Early prosthetic devices",
+            "Evolution of materials and design",
+            "Significance of biomechanics in history"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of Prosthetic Technology",
+          "points": [
+            "Overview of modern prosthetics",
+            "Types of prosthetic limbs",
+            "Role of technology in advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Biomechanics",
+          "points": [
+            "Understanding human movement",
+            "Application in prosthetic design",
+            "Enhancing user experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Biomechanics Principles",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Fundamental Concepts",
+          "points": [
+            "Center of mass",
+            "Force distribution",
+            "Torque and joint mechanics",
+            "Movement mechanics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mathematical Models in Biomechanics",
+          "points": [
+            "Torque calculation",
+            "Force analysis",
+            "Impact on design decisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interaction with Human Body",
+          "points": [
+            "Prosthetic fit and comfort",
+            "Force transfer to residual limb",
+            "Importance of alignment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Myoelectric Sensors",
+          "points": [
+            "Detection of muscle signals",
+            "Integration with control systems",
+            "Enhancing natural movement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Components of Prosthetic Limbs",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Components Overview",
+          "points": [
+            "Biosensors",
+            "Controllers",
+            "Actuators",
+            "Power sources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Function of Biosensors",
+          "points": [
+            "Detection of EMG signals",
+            "Data conversion",
+            "User control through muscle movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Actuators and Movement",
+          "points": [
+            "Mechanics of movement",
+            "Types of actuators",
+            "Role in functionality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Research Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative methods",
+            "Data collection techniques",
+            "Sample selection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Comparative studies",
+            "User feedback evaluation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Sample size constraints",
+            "Potential biases",
+            "Generalizability of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Findings",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings on Biomechanics",
+          "points": [
+            "Impact of biomechanics on design",
+            "User satisfaction levels",
+            "Functional outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "User Experience Insights",
+          "points": [
+            "Comfort and usability",
+            "Adaptation to prosthetics",
+            "Feedback from amputees"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Advancements",
+          "points": [
+            "Emerging technologies",
+            "Integration of AI",
+            "Future trends in prosthetics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Prosthetic Types",
+          "points": [
+            "Performance metrics",
+            "User preferences",
+            "Cost-effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Importance of biomechanics in design",
+            "Potential for improved user outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Implementation",
+          "points": [
+            "Cost barriers",
+            "Training requirements",
+            "Access to technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Opportunities",
+          "points": [
+            "Further studies on user experience",
+            "Exploration of new materials",
+            "Advancements in control systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for Prosthetic Development",
+          "points": [
+            "Focus on affordability",
+            "Enhancing accessibility",
+            "Integration of sensory feedback"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

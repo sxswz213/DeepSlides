@@ -1,0 +1,244 @@
+{
+  "recommended_slides": 15,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background": 2,
+    "Methodology": 3,
+    "Data Analysis": 3,
+    "Results": 3,
+    "Implications": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "The Impact of Social Media on Language",
+          "points": [
+            "Revolutionized communication",
+            "User-generated content",
+            "Real-time language analysis",
+            "New research opportunities",
+            "Challenges for linguists"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Corpus Linguistics",
+          "points": [
+            "Definition and scope",
+            "Traditional methodologies",
+            "Evolution in the digital age",
+            "Importance of data analysis",
+            "Interdisciplinary approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Evolution of Corpus Linguistics",
+          "points": [
+            "Shift from traditional to digital corpora",
+            "Access to vast datasets",
+            "Real-time linguistic phenomena",
+            "Integration of metadata",
+            "Challenges to existing theories"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Media Platforms as Data Sources",
+          "points": [
+            "Facebook, Twitter, TikTok",
+            "User-generated content dynamics",
+            "Participatory nature of discourse",
+            "Diverse language use",
+            "Emerging trends in communication"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Web scraping tools",
+            "Extracting text from platforms",
+            "Ethical concerns",
+            "Data ownership issues",
+            "Efficiency in compiling datasets"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Processing Steps",
+          "points": [
+            "Cleaning raw data",
+            "Converting to machine-readable format",
+            "Annotating with metadata",
+            "Using Python and XML",
+            "Preparing for analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytical Methods in Corpus Linguistics",
+          "points": [
+            "Frequency analysis",
+            "Collocation studies",
+            "Sentiment analysis",
+            "Identifying language patterns",
+            "Emerging trends in discourse"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study: Political Communication",
+          "points": [
+            "Mapping linguistic divergence",
+            "Language use across political groups",
+            "Public sentiment tracking",
+            "Impact of polarization",
+            "Insights into societal trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Health Discussions",
+          "points": [
+            "Language shaping health identities",
+            "Impact during crises like COVID-19",
+            "Corpus-based discourse studies",
+            "Understanding online health communication",
+            "Emerging health-related trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Identity Construction",
+          "points": [
+            "Analysis of neopronouns",
+            "Language evolution reflecting social identities",
+            "Contexts of neopronoun usage",
+            "Significance in online communities",
+            "Insights into gender identity discussions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Insights from Social Media Linguistics",
+          "points": [
+            "Transformative impact on linguistic research",
+            "Real-time analysis of language",
+            "Diverse applications in various fields",
+            "Emerging trends in communication",
+            "Importance of interdisciplinary approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Considerations in Research",
+          "points": [
+            "Privacy and consent issues",
+            "Informed consent challenges",
+            "Duty of care for researchers",
+            "Evolving ethical frameworks",
+            "Balancing knowledge pursuit with user rights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Research",
+          "points": [
+            "Refining methodologies",
+            "Addressing ethical challenges",
+            "Enhancing relevance of studies",
+            "Incorporating interdisciplinary insights",
+            "Expanding the scope of corpus linguistics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Significance of Corpus Linguistics in Digital Age",
+          "points": [
+            "Understanding contemporary language dynamics",
+            "Real-time insights into communication",
+            "Influence on linguistic theories",
+            "Potential for future research",
+            "Role in social change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Summary",
+          "points": [
+            "Transformative impact of social media",
+            "Adaptation of methodologies",
+            "Importance of ethical considerations",
+            "Diverse applications in research",
+            "Future focus on user privacy and rights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

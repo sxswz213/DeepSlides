@@ -1,0 +1,304 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Implications for Policy and Practice": 2,
+    "Future Research Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Sustainability Transitions Research",
+          "points": [
+            "Definition of sustainability transitions",
+            "Importance in addressing global challenges",
+            "Interdisciplinary nature of the field"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Drivers of Sustainability Transitions",
+          "points": [
+            "Climate change",
+            "Resource depletion",
+            "Social inequality",
+            "Technological innovation",
+            "Policy frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Research Report",
+          "points": [
+            "Synthesize insights from various studies",
+            "Identify key frameworks and methodologies",
+            "Highlight future directions and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Foundational Theories and Frameworks",
+          "points": [
+            "Multi-Level Perspective (MLP)",
+            "Governance mechanisms",
+            "Innovation systems",
+            "Role of niche innovations",
+            "Socio-technical regimes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Dimensions of Sustainability Transitions",
+          "points": [
+            "Incumbent peripheral actors (IPAs)",
+            "Power dynamics among actors",
+            "Core vs. peripheral actor roles",
+            "Influence on transition dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Collaborative Efforts",
+          "points": [
+            "Stakeholder engagement",
+            "Cross-sector collaboration",
+            "Integration of diverse perspectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Methodologies Overview",
+          "points": [
+            "Diverse methodologies in sustainability transitions",
+            "Multi-Level Perspective (MLP)",
+            "Strategic Niche Management (SNM)",
+            "Transition Management (TM)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Modeling Techniques",
+          "points": [
+            "Integrated Assessment Models (IAMs)",
+            "Agent-based models",
+            "Simulation of socio-technical systems",
+            "Exploring technology-behavior co-evolution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Reflexivity in Research",
+          "points": [
+            "Importance of researcher involvement",
+            "Adaptability of methodologies",
+            "Sensitivity to real-world complexities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Frameworks for Analysis",
+          "points": [
+            "Combining methodologies for comprehensive understanding",
+            "Addressing complexities in sustainability transitions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Insights from Research",
+          "points": [
+            "Foundational theories guide understanding",
+            "Diverse actor roles shape dynamics",
+            "Methodologies enrich analysis",
+            "Technological advancements influence transitions",
+            "Governance mechanisms are crucial"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Incumbent Peripheral Actors",
+          "points": [
+            "Influence on sustainability initiatives",
+            "Flexibility to support innovations",
+            "Shifting power dynamics during transitions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Technologies Impact",
+          "points": [
+            "AI and application-specific semiconductors",
+            "Optimizing resource use",
+            "Reducing emissions",
+            "Enhancing sustainability efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Policy Landscape",
+          "points": [
+            "Navigating regulatory requirements",
+            "Balancing competitiveness and sustainability",
+            "Need for adaptive strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Demand for Green Talent",
+          "points": [
+            "Importance of leadership in sustainability",
+            "Fostering a culture of sustainability",
+            "Building trust with stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications for Policy and Practice",
+          "points": [
+            "Integrating insights into policy frameworks",
+            "Encouraging stakeholder collaboration",
+            "Promoting innovative governance mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Research",
+          "points": [
+            "Focus on scaling sustainability initiatives",
+            "Addressing complex challenges collaboratively",
+            "Exploring new technological advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Transparency and Accountability",
+          "points": [
+            "Building trust with stakeholders",
+            "Ensuring long-term success",
+            "Prioritizing ethical practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion of Findings",
+          "points": [
+            "Multifaceted nature of sustainability transitions",
+            "Key frameworks and methodologies identified",
+            "Need for ongoing research and adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications for Policy and Practice",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Enhance collaboration among stakeholders",
+            "Integrate diverse perspectives into strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Practical Applications",
+          "points": [
+            "Implement innovative governance mechanisms",
+            "Foster partnerships across sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Research Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Emerging Trends and Challenges",
+          "points": [
+            "Focus on technological adaptation",
+            "Addressing the demand for green talent"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

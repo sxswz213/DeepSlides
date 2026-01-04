@@ -1,0 +1,343 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Types of Regenerative Therapies": 4,
+    "Methodology": 3,
+    "Case Studies": 4,
+    "Results": 3,
+    "Future Directions": 2,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Regenerative Therapies",
+          "points": [
+            "Definition of regenerative therapies",
+            "Importance in veterinary medicine",
+            "Harnessing natural healing mechanisms",
+            "Scope of the presentation",
+            "Transformative potential for animal health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Regenerative Medicine",
+          "points": [
+            "Innovative treatment options",
+            "Addressing chronic conditions",
+            "Enhancing recovery processes",
+            "Improving quality of life",
+            "Future implications for veterinary practice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore types of therapies",
+            "Discuss applications in veterinary medicine",
+            "Examine regulatory landscape",
+            "Identify challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of veterinary medicine",
+            "Introduction of regenerative therapies",
+            "Key milestones in research",
+            "Impact on treatment protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Veterinary Medicine",
+          "points": [
+            "Growing demand for effective treatments",
+            "Shift towards minimally invasive procedures",
+            "Integration of technology in therapies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Understanding Regenerative Mechanisms",
+          "points": [
+            "Role of stem cells",
+            "Healing processes in animals",
+            "Importance of growth factors",
+            "Cellular interactions in tissue repair"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Regenerative Therapies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Stem Cell Therapy",
+          "points": [
+            "Definition and types of stem cells",
+            "Applications in osteoarthritis",
+            "Mechanism of action",
+            "Benefits and limitations",
+            "Current research findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Platelet-Rich Plasma (PRP)",
+          "points": [
+            "What is PRP?",
+            "Preparation process",
+            "Applications in musculoskeletal injuries",
+            "Mechanism of action",
+            "Clinical outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Autologous Conditioned Serum (ACS)",
+          "points": [
+            "Definition and preparation",
+            "Use in managing osteoarthritis",
+            "Mechanism of action",
+            "Benefits over traditional treatments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Therapies",
+          "points": [
+            "Effectiveness of each therapy",
+            "Cost considerations",
+            "Patient suitability",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Overview of study design",
+            "Data collection methods",
+            "Sample selection criteria"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Statistical methods used",
+            "Qualitative vs quantitative analysis",
+            "Interpretation of results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Considerations",
+          "points": [
+            "Animal welfare standards",
+            "Informed consent in veterinary practice",
+            "Regulatory compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study 1: Stem Cell Therapy in Dogs",
+          "points": [
+            "Background of the case",
+            "Treatment protocol",
+            "Outcomes observed",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: PRP for Equine Injuries",
+          "points": [
+            "Overview of the case",
+            "Treatment details",
+            "Results and recovery timeline",
+            "Impact on performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: ACS in Chronic Conditions",
+          "points": [
+            "Patient background",
+            "Therapy application",
+            "Results achieved",
+            "Follow-up assessments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Outcomes of Case Studies",
+          "points": [
+            "Summary of findings",
+            "Effectiveness across therapies",
+            "Patient responses and recovery rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings from Research",
+          "points": [
+            "Efficacy of therapies",
+            "Patient recovery rates",
+            "Statistical significance of results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Veterinary Practice",
+          "points": [
+            "Adoption of regenerative therapies",
+            "Changes in treatment protocols",
+            "Feedback from veterinary professionals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Opportunities",
+          "points": [
+            "Identified gaps in current research",
+            "Potential areas for exploration",
+            "Collaboration opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Advancements in Regenerative Medicine",
+          "points": [
+            "Emerging technologies",
+            "Potential for new therapies",
+            "Integration of AI in treatment planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaborative Research Initiatives",
+          "points": [
+            "Importance of interdisciplinary collaboration",
+            "Partnerships with research institutions",
+            "Funding opportunities for studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Points",
+          "points": [
+            "Overview of therapies discussed",
+            "Significance of findings",
+            "Implications for veterinary practice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Encouragement for further research",
+            "Importance of regulatory compliance",
+            "Advocacy for animal health advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

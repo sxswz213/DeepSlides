@@ -1,0 +1,318 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Market Overview": 3,
+    "Business Models": 3,
+    "Revenue Streams": 3,
+    "Cost Structure": 3,
+    "User Engagement and Retention": 3,
+    "Competitive Landscape": 3,
+    "Future Trends": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Streaming Platforms",
+          "points": [
+            "Definition of streaming platforms",
+            "Importance in digital media",
+            "Evolution of content consumption",
+            "Key players in the market",
+            "Purpose of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Analyze economic models",
+            "Examine cost structures",
+            "Explore competitive dynamics",
+            "Identify future trends",
+            "Provide actionable insights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Market Overview",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Current State of the Streaming Market",
+          "points": [
+            "Market size and growth",
+            "Key statistics on user engagement",
+            "Diversity of content offerings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consumer Behavior Trends",
+          "points": [
+            "Shifts in viewing habits",
+            "Impact of mobile streaming",
+            "Rise of binge-watching culture",
+            "Subscription fatigue among users"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Market Dynamics",
+          "points": [
+            "Regional differences in streaming adoption",
+            "Emerging markets and opportunities",
+            "Impact of local content regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Business Models",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Revenue Models",
+          "points": [
+            "SVOD: Subscription Video on Demand",
+            "AVOD: Advertising Video on Demand",
+            "TVOD: Transactional Video on Demand",
+            "Hybrid models emerging"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advantages and Challenges of SVOD",
+          "points": [
+            "Predictable revenue stream",
+            "High customer loyalty",
+            "Challenges with content churn",
+            "Need for continuous content updates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advantages and Challenges of AVOD",
+          "points": [
+            "Wider audience reach",
+            "Lower entry barriers for users",
+            "Revenue volatility",
+            "Viewer dissatisfaction with ads"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Revenue Streams",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Detailed Analysis of SVOD",
+          "points": [
+            "Examples: Netflix, Disney+",
+            "Subscription pricing strategies",
+            "User retention techniques",
+            "Content investment strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Exploring AVOD Revenue Potential",
+          "points": [
+            "Examples: YouTube, Tubi",
+            "Ad placement strategies",
+            "Challenges in user experience",
+            "Revenue per user metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "TVOD and Its Market Position",
+          "points": [
+            "Ideal for exclusive content",
+            "Revenue volatility issues",
+            "Comparison with SVOD and AVOD",
+            "Consumer willingness to pay"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Cost Structure",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Cost Components",
+          "points": [
+            "Content production costs",
+            "Licensing fees",
+            "Operational expenses",
+            "Marketing and user acquisition costs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Cost Management",
+          "points": [
+            "Rising content acquisition costs",
+            "Inflation impacts on operations",
+            "Balancing quality and budget"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Netflix's Cost Strategy",
+          "points": [
+            "Investment in original content",
+            "Ad-supported tier success",
+            "Profitability metrics",
+            "Comparison with legacy media companies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "User Engagement and Retention",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Strategies for User Engagement",
+          "points": [
+            "Personalization through AI",
+            "Content recommendations",
+            "Interactive features and live streaming"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Retention Techniques in Streaming",
+          "points": [
+            "Bundling services",
+            "Exclusive content offerings",
+            "Loyalty programs and incentives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Measuring User Satisfaction",
+          "points": [
+            "User feedback mechanisms",
+            "Churn rate analysis",
+            "Impact of content variety on retention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Competitive Landscape",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Competitors in the Market",
+          "points": [
+            "Netflix vs. Disney+",
+            "Amazon Prime Video's positioning",
+            "Emerging players like HBO Max"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Pricing Strategies in a Competitive Market",
+          "points": [
+            "Dynamic pricing models",
+            "Bundling strategies",
+            "Consumer price sensitivity trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations Driving Competition",
+          "points": [
+            "Technological advancements",
+            "Content exclusivity",
+            "User experience enhancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Streaming",
+          "points": [
+            "Growth of ad-supported models",
+            "Technological innovations like AI and 5G",
+            "Rise of live streaming"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Predictions for the Future",
+          "points": [
+            "Increased competition and consolidation",
+            "Evolving consumer preferences",
+            "Need for agility in business models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

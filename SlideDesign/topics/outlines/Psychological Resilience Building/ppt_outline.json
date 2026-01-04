@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Understanding Psychological Resilience": 4,
+    "The Importance of Resilience": 3,
+    "Common Challenges to Resilience": 3,
+    "Building Psychological Resilience": 4,
+    "Practical Strategies for Resilience": 3,
+    "Case Study: Resilience in Action": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Psychological Resilience?",
+          "points": [
+            "Definition of resilience",
+            "Importance in mental health",
+            "Adaptation to adversity",
+            "Dynamic process of growth",
+            "Influence of individual traits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Need for Resilience Today",
+          "points": [
+            "Increasing life challenges",
+            "Impact of stress on well-being",
+            "Role in personal growth",
+            "Community resilience",
+            "Long-term benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Presentation",
+          "points": [
+            "Understanding resilience",
+            "Importance and challenges",
+            "Building strategies",
+            "Case study",
+            "Conclusion and takeaways"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Understanding Psychological Resilience",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Defining Psychological Resilience",
+          "points": [
+            "Ability to adapt",
+            "Bouncing back vs. thriving",
+            "Influencing factors",
+            "Not a fixed trait",
+            "Dynamic process"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Theories of Resilience",
+          "points": [
+            "Biological perspectives",
+            "Psychological theories",
+            "Ecological systems theory",
+            "Socio-cultural influences",
+            "Comprehensive framework"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Resilience",
+          "points": [
+            "Emotional resilience",
+            "Social connections",
+            "Coping mechanisms",
+            "Positive outlook",
+            "Supportive relationships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resilience in Mental Health",
+          "points": [
+            "Managing stress effectively",
+            "Recovering from setbacks",
+            "Maintaining positivity",
+            "Importance in fast-paced world",
+            "Enhancing overall well-being"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "The Importance of Resilience",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Benefits of Resilience",
+          "points": [
+            "Improved mental health",
+            "Better stress management",
+            "Faster recovery from adversity",
+            "Enhanced personal growth",
+            "Stronger relationships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resilience and Community",
+          "points": [
+            "Collective resilience",
+            "Support systems",
+            "Cultural influences",
+            "Role in community well-being",
+            "Building resilient communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resilience in the Workplace",
+          "points": [
+            "Adaptability to change",
+            "Employee well-being",
+            "Team dynamics",
+            "Productivity and performance",
+            "Creating a resilient work culture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Common Challenges to Resilience",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Barriers to Building Resilience",
+          "points": [
+            "Negative thought patterns",
+            "Lack of social support",
+            "Stressful environments",
+            "Cultural stigma",
+            "Fear of failure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Trauma on Resilience",
+          "points": [
+            "Understanding trauma",
+            "Long-term effects",
+            "Resilience in trauma recovery",
+            "Support systems",
+            "Importance of professional help"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overcoming Challenges",
+          "points": [
+            "Identifying personal barriers",
+            "Seeking support",
+            "Developing coping strategies",
+            "Building a growth mindset",
+            "Embracing change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Building Psychological Resilience",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Emotional Intelligence and Resilience",
+          "points": [
+            "Recognizing emotions",
+            "Managing emotional responses",
+            "Self-reflection techniques",
+            "Mindfulness practices",
+            "Empathy and relationships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Nurturing Social Connections",
+          "points": [
+            "Importance of support networks",
+            "Building meaningful relationships",
+            "Engaging in community",
+            "Effective communication",
+            "Creating a sense of belonging"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Effective Coping Mechanisms",
+          "points": [
+            "Breaking down challenges",
+            "Practicing gratitude",
+            "Challenging negative thoughts",
+            "Mindfulness techniques",
+            "Maintaining a positive outlook"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integrating Resilience Strategies",
+          "points": [
+            "Daily practices for resilience",
+            "Setting realistic goals",
+            "Continuous self-improvement",
+            "Learning from experiences",
+            "Encouraging resilience in others"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Practical Strategies for Resilience",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Daily Practices for Building Resilience",
+          "points": [
+            "Mindfulness exercises",
+            "Journaling for reflection",
+            "Engaging in physical activity",
+            "Practicing gratitude",
+            "Setting achievable goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Positive Psychology",
+          "points": [
+            "Focus on strengths",
+            "Understanding the PERMA model",
+            "Cultivating a growth mindset",
+            "Importance of grit",
+            "Enhancing overall well-being"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community and Resilience",
+          "points": [
+            "Building supportive networks",
+            "Engaging in community activities",
+            "Sharing experiences",
+            "Creating safe spaces",
+            "Promoting collective resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study: Resilience in Action",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Real-Life Example of Resilience",
+          "points": [
+            "Overview of the case",
+            "Challenges faced",
+            "Strategies used",
+            "Outcome and lessons learned",
+            "Implications for resilience building"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Takeaways from the Case Study",
+          "points": [
+            "Importance of support systems",
+            "Role of emotional intelligence",
+            "Adaptability in adversity",
+            "Community involvement",
+            "Practical applications for others"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

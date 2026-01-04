@@ -1,0 +1,336 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background": 3,
+    "Technology Overview": 4,
+    "Methodology": 3,
+    "Applications in Construction": 4,
+    "Benefits and Challenges": 3,
+    "Case Studies": 3,
+    "Future Trends": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of 3D Printing in Construction",
+          "points": [
+            "Definition of 3D printing",
+            "Importance in construction",
+            "Current trends",
+            "Impact on the industry",
+            "Future potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore benefits",
+            "Identify challenges",
+            "Examine case studies",
+            "Discuss future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "History of 3D Printing",
+          "points": [
+            "Origins of additive manufacturing",
+            "Evolution in construction",
+            "Key milestones"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of the Industry",
+          "points": [
+            "Market size",
+            "Key players",
+            "Technological advancements",
+            "Adoption rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Facing the Industry",
+          "points": [
+            "Labor shortages",
+            "Environmental concerns",
+            "Regulatory issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Technology Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "How 3D Printing Works",
+          "points": [
+            "Layer-by-layer construction",
+            "Materials used",
+            "Printing techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Technologies in 3D Printing",
+          "points": [
+            "Extrusion",
+            "Powder bonding",
+            "Additive welding",
+            "CAD and BIM integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Materials for 3D Printing",
+          "points": [
+            "Concrete",
+            "Plastics",
+            "Metals",
+            "Composites",
+            "Recycled materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Design Flexibility and Customization",
+          "points": [
+            "Complex designs",
+            "Customization options",
+            "Rapid prototyping"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case study analysis",
+            "Interviews with industry experts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Surveys",
+            "Field observations",
+            "Secondary data sources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Qualitative analysis",
+            "Quantitative analysis",
+            "Comparative analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications in Construction",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Residential Construction",
+          "points": [
+            "3D-printed homes",
+            "Cost savings",
+            "Time efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Commercial Projects",
+          "points": [
+            "Office buildings",
+            "Retail spaces",
+            "Design flexibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Infrastructure Development",
+          "points": [
+            "Bridges",
+            "Roads",
+            "Public facilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Architectural Designs",
+          "points": [
+            "Unique structures",
+            "Artistic applications",
+            "Sustainability features"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Benefits and Challenges",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Benefits of 3D Printing",
+          "points": [
+            "Cost efficiency",
+            "Time savings",
+            "Sustainability",
+            "Design flexibility",
+            "Reduced waste"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Adoption",
+          "points": [
+            "Regulatory hurdles",
+            "Material limitations",
+            "Quality control issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Challenges",
+          "points": [
+            "Collaboration among stakeholders",
+            "Research and development",
+            "Standardization of materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Tecla House in Italy",
+          "points": [
+            "Sustainable design",
+            "Construction time",
+            "Materials used"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "House Zero in Austin",
+          "points": [
+            "Biophilic design",
+            "Rapid assembly",
+            "Innovative features"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Milestone Project in Netherlands",
+          "points": [
+            "First 3D-printed homes",
+            "Design integration",
+            "Regulatory compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Market Growth Projections",
+          "points": [
+            "Expected market size",
+            "Growth drivers",
+            "Investment opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations on the Horizon",
+          "points": [
+            "Hybrid manufacturing",
+            "AI integration",
+            "Emerging materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Recommendations": 2,
+    "Future Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Veterinary Public Health",
+          "points": [
+            "Definition of veterinary public health",
+            "Importance of animal health in human health",
+            "Focus on zoonotic diseases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Health Threats",
+          "points": [
+            "Increase in zoonotic diseases",
+            "Global health implications",
+            "Need for integrated approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore the intersection of veterinary and public health",
+            "Highlight collaborative efforts",
+            "Discuss policy implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Definition and Scope",
+          "points": [
+            "Veterinary public health defined",
+            "Focus on zoonotic disease management",
+            "Role in food safety and public health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Zoonotic Diseases Overview",
+          "points": [
+            "Statistics on zoonotic diseases",
+            "Examples of significant zoonoses",
+            "Impact on public health systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "One Health Approach",
+          "points": [
+            "Definition of One Health",
+            "Interconnectedness of health sectors",
+            "Importance of collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative methods",
+            "Data collection techniques",
+            "Stakeholder interviews"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Literature review",
+            "Case studies",
+            "Public health reports"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Thematic analysis",
+            "Comparative studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Resource constraints",
+            "Geographic limitations",
+            "Potential biases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Findings on Zoonotic Diseases",
+          "points": [
+            "60% of emerging diseases are zoonotic",
+            "Economic impact of zoonoses",
+            "Public health challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Effectiveness of One Health Initiatives",
+          "points": [
+            "Success stories from integrated approaches",
+            "Improved surveillance outcomes",
+            "Community engagement examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implementation Strategies",
+          "points": [
+            "Community-based approaches",
+            "Training programs for veterinarians",
+            "Policy recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Identified",
+          "points": [
+            "Resource limitations",
+            "Access barriers",
+            "Need for stakeholder collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Health Threats",
+          "points": [
+            "Emerging zoonotic diseases",
+            "Antimicrobial resistance",
+            "Global health security implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Importance of Collaboration",
+          "points": [
+            "Integrating veterinary and public health",
+            "Role of policymakers",
+            "Engagement of local communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Resource Limitations",
+          "points": [
+            "Funding opportunities",
+            "Capacity building",
+            "Partnerships with NGOs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Surveillance Systems",
+          "points": [
+            "Use of technology",
+            "Data sharing among sectors",
+            "Real-time monitoring"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting One Health Education",
+          "points": [
+            "Curriculum development",
+            "Training for health professionals",
+            "Public awareness campaigns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Recommendations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Strengthen veterinary public health policies",
+            "Increase funding for One Health initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Focus on emerging zoonotic diseases",
+            "Evaluate effectiveness of integrated approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Towards a Resilient Health System",
+          "points": [
+            "Fostering partnerships",
+            "Investing in training and resources",
+            "Adapting to emerging health threats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

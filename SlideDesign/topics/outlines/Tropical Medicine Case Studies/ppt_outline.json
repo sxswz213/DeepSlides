@@ -1,0 +1,371 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Tropical Medicine": 3,
+    "Case Study 1: Malaria": 3,
+    "Case Study 2: Dengue Fever": 3,
+    "Case Study 3: Zika Virus": 3,
+    "Methodology": 2,
+    "Results and Discussion": 3,
+    "Implications for Public Health": 2,
+    "Future Directions in Tropical Medicine": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Tropical Medicine",
+          "points": [
+            "Definition and scope",
+            "Importance in global health",
+            "Focus on tropical and subtropical regions",
+            "Key challenges faced",
+            "Objectives of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Case Studies",
+          "points": [
+            "Real-world implications",
+            "Understanding disease impact",
+            "Informing public health strategies",
+            "Highlighting research gaps",
+            "Encouraging community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of the Presentation",
+          "points": [
+            "Introduction",
+            "Background on Tropical Medicine",
+            "Case Studies",
+            "Methodology",
+            "Results and Discussion",
+            "Implications for Public Health",
+            "Future Directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Tropical Medicine",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Development",
+          "points": [
+            "Emergence in the late 19th century",
+            "Influence of colonial interests",
+            "Key figures in the field",
+            "Establishment of research institutions",
+            "Evolution of public health approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Major Tropical Diseases",
+          "points": [
+            "Malaria",
+            "Dengue fever",
+            "Schistosomiasis",
+            "Leishmaniasis",
+            "Impact on public health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Neglected Tropical Diseases (NTDs)",
+          "points": [
+            "Definition and examples",
+            "Global burden",
+            "Socioeconomic impact",
+            "Challenges in addressing NTDs",
+            "Need for increased attention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study 1: Malaria",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Malaria",
+          "points": [
+            "Caused by Plasmodium species",
+            "Transmission through Anopheles mosquitoes",
+            "Symptoms and complications",
+            "Global prevalence",
+            "High-risk populations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health Interventions",
+          "points": [
+            "Vector control measures",
+            "Use of insecticide-treated nets",
+            "Vaccination efforts",
+            "Community education programs",
+            "Challenges in implementation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study Insights",
+          "points": [
+            "Success stories in malaria control",
+            "Lessons learned from interventions",
+            "Impact on morbidity and mortality",
+            "Role of international organizations",
+            "Future directions for research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study 2: Dengue Fever",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Dengue Fever",
+          "points": [
+            "Caused by dengue virus",
+            "Spread by Aedes mosquitoes",
+            "Symptoms and severity",
+            "Geographic distribution",
+            "Vulnerable populations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Control Strategies",
+          "points": [
+            "Vector control initiatives",
+            "Community awareness campaigns",
+            "Vaccination development",
+            "Monitoring and surveillance",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Dengue Control Efforts",
+          "points": [
+            "Reduction in incidence rates",
+            "Community engagement success stories",
+            "Economic implications",
+            "Lessons learned",
+            "Future research needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Study 3: Zika Virus",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Zika Virus Overview",
+          "points": [
+            "Transmission by Aedes mosquitoes",
+            "Symptoms and complications",
+            "Global outbreaks",
+            "Impact on pregnancy",
+            "Public health response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health Strategies",
+          "points": [
+            "Vector control measures",
+            "Community education and awareness",
+            "Surveillance and monitoring",
+            "Collaboration with international agencies",
+            "Challenges in response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons from Zika Virus Outbreaks",
+          "points": [
+            "Impact on health systems",
+            "Importance of rapid response",
+            "Community involvement",
+            "Research gaps identified",
+            "Future directions for prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Qualitative and quantitative methods",
+            "Data collection techniques",
+            "Case study selection criteria",
+            "Analysis of health outcomes",
+            "Stakeholder engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Public health records",
+            "Research articles",
+            "Interviews with health professionals",
+            "Community surveys",
+            "Collaboration with NGOs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings",
+          "points": [
+            "Impact of interventions on disease prevalence",
+            "Community engagement outcomes",
+            "Barriers to effective implementation",
+            "Comparative analysis of case studies",
+            "Recommendations for future action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Discussion of Results",
+          "points": [
+            "Interplay of social and health factors",
+            "Importance of a multisectoral approach",
+            "Lessons learned from case studies",
+            "Implications for policy and practice",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Identified",
+          "points": [
+            "Limited resources",
+            "Access to healthcare",
+            "Environmental factors",
+            "Socioeconomic barriers",
+            "Need for sustained efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications for Public Health",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Public Health Recommendations",
+          "points": [
+            "Strengthening healthcare systems",
+            "Enhancing community engagement",
+            "Integrating education and health initiatives",
+            "Addressing social determinants of health",
+            "Promoting research and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Need for continued research",
+            "Focus on neglected diseases",
+            "Collaboration among stakeholders",
+            "Investment in public health infrastructure",
+            "Global health partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions in Tropical Medicine",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Looking Ahead",
+          "points": [
+            "Importance of ongoing research",
+            "Need for innovative solutions",
+            "Focus on health equity",
+            "Collaboration across sectors",
+            "Commitment to global health improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

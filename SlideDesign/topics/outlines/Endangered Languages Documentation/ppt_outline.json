@@ -1,0 +1,337 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Endangered Languages": 3,
+    "Importance of Documentation": 3,
+    "Methodology": 4,
+    "Findings": 4,
+    "Case Studies": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Endangered Languages",
+          "points": [
+            "Definition of endangered languages",
+            "Importance of linguistic diversity",
+            "Cultural implications of language loss",
+            "Global statistics on language endangerment",
+            "Urgency of documentation efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore causes of language endangerment",
+            "Classify endangered languages",
+            "Highlight documentation importance",
+            "Discuss roles of linguists and communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Focus on global perspective",
+            "Inclusion of case studies",
+            "Future directions for preservation efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Endangered Languages",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Causes of Language Endangerment",
+          "points": [
+            "Political instability and violence",
+            "Economic pressures and globalization",
+            "Negative perceptions of minority languages",
+            "Migration and language shift",
+            "Lack of institutional support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "UNESCO Classification System",
+          "points": [
+            "Safe",
+            "Vulnerable",
+            "Definitely Endangered",
+            "Severely Endangered",
+            "Critically Endangered",
+            "Extinct"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Impact of Language Loss",
+          "points": [
+            "Loss of cultural heritage",
+            "Impact on identity",
+            "Reduction of knowledge systems",
+            "Threat to biodiversity",
+            "Consequences for future generations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Importance of Documentation",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Cultural Heritage Preservation",
+          "points": [
+            "Language as a cultural repository",
+            "Unique worldviews embedded in languages",
+            "Traditions and narratives at risk",
+            "Role of language in community identity",
+            "Empowerment through language preservation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Methods of Documentation",
+          "points": [
+            "Audio recordings",
+            "Transcriptions",
+            "Creation of dictionaries",
+            "Grammar documentation",
+            "Digital archiving"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration with Communities",
+          "points": [
+            "Involvement of indigenous speakers",
+            "Community knowledge enhancement",
+            "Technology as a tool for accessibility",
+            "Building trust and partnerships",
+            "Long-term sustainability of efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative approaches",
+            "Fieldwork and interviews",
+            "Data collection methods",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Linguistic databases",
+            "Community archives",
+            "Academic publications",
+            "Government reports",
+            "NGO resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Thematic analysis",
+            "Statistical analysis",
+            "Comparative studies",
+            "Case study approach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Access to remote communities",
+            "Language barriers",
+            "Resource constraints",
+            "Potential biases in data collection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Findings",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings on Language Endangerment",
+          "points": [
+            "Major factors contributing to endangerment",
+            "Trends in language loss",
+            "Impact of globalization",
+            "Community responses to language decline",
+            "Role of education in preservation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Success Stories in Documentation",
+          "points": [
+            "Effective case studies",
+            "Community-led initiatives",
+            "Technological innovations",
+            "Collaborative projects",
+            "Positive outcomes for language revitalization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Documentation Efforts",
+          "points": [
+            "Funding and resource limitations",
+            "Political and social barriers",
+            "Technological access issues",
+            "Resistance from communities",
+            "Need for ongoing support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Future Research",
+          "points": [
+            "Focus on under-researched languages",
+            "Longitudinal studies",
+            "Incorporate community perspectives",
+            "Explore new technologies",
+            "Strengthen partnerships with NGOs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study 1: Language Revitalization in New Zealand",
+          "points": [
+            "Māori language initiatives",
+            "Community involvement",
+            "Government support",
+            "Educational programs",
+            "Cultural impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Documentation of Indigenous Languages in Canada",
+          "points": [
+            "Collaborative projects",
+            "Use of technology",
+            "Community engagement",
+            "Success metrics",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: Endangered Languages in Australia",
+          "points": [
+            "Aboriginal language preservation",
+            "Role of linguists",
+            "Community-led efforts",
+            "Cultural significance",
+            "Future challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Enhancing Collaboration",
+          "points": [
+            "Strengthening ties between linguists and communities",
+            "Leveraging technology for documentation",
+            "Creating accessible resources",
+            "Empowering language speakers",
+            "Fostering intergenerational transmission"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Support language preservation initiatives",
+            "Advocate for policy changes",
+            "Raise awareness about endangered languages",
+            "Encourage community involvement",
+            "Invest in research and resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

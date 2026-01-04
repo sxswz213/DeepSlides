@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Understanding Hydro-meteorological Hazards": 4,
+    "Types of Hydro-meteorological Hazards": 4,
+    "Impact of Hydro-meteorological Hazards": 3,
+    "Case Studies": 4,
+    "Mitigation Strategies": 3,
+    "Future Outlook": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Hydro-meteorological Hazards",
+          "points": [
+            "Definition of hydro-meteorological hazards",
+            "Importance in the context of climate change",
+            "Impact on human life and ecosystems",
+            "Need for effective disaster management",
+            "Goals of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Climate Change and Hydro-meteorological Hazards",
+          "points": [
+            "Increasing frequency and intensity",
+            "Examples of recent events",
+            "Vulnerability of communities",
+            "Global implications",
+            "Call to action for preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Understand types of hazards",
+            "Explore impacts on society and environment",
+            "Discuss mitigation strategies",
+            "Highlight case studies",
+            "Future outlook on hydro-meteorological hazards"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Understanding Hydro-meteorological Hazards",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "What are Hydro-meteorological Hazards?",
+          "points": [
+            "Natural events driven by atmospheric processes",
+            "Hydrological and oceanographic influences",
+            "Examples: floods, droughts, hurricanes",
+            "Significance in disaster risk management",
+            "Interconnectedness with climate change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Characteristics of Hydro-meteorological Hazards",
+          "points": [
+            "Sudden vs. gradual onset",
+            "Intensity and duration",
+            "Geographical variations",
+            "Socio-economic factors",
+            "Environmental impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Climate Change",
+          "points": [
+            "Impact on hazard frequency",
+            "Changing weather patterns",
+            "Increased severity of events",
+            "Long-term implications for communities",
+            "Need for adaptive strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Understanding Hazards",
+          "points": [
+            "Foundation for risk reduction",
+            "Informs policy and planning",
+            "Enhances community resilience",
+            "Guides resource allocation",
+            "Promotes public awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Hydro-meteorological Hazards",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Floods: An Overview",
+          "points": [
+            "Definition and causes",
+            "Types of floods: flash, river, coastal",
+            "Characteristics and warning signs",
+            "Historical examples",
+            "Impact on communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Droughts: Understanding the Slow Onset",
+          "points": [
+            "Definition and causes",
+            "Indicators of drought",
+            "Impact on agriculture and water supply",
+            "Long-term socio-economic effects",
+            "Case studies of severe droughts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hurricanes: The Power of Nature",
+          "points": [
+            "Definition and formation",
+            "Characteristics: wind, rain, storm surge",
+            "Historical impact examples",
+            "Preparedness and response measures",
+            "Future trends with climate change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Hazards",
+          "points": [
+            "Frequency and intensity of floods vs. droughts",
+            "Economic impacts of hurricanes",
+            "Social implications of each hazard",
+            "Geographical distribution",
+            "Mitigation challenges for each type"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Impact of Hydro-meteorological Hazards",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Social Impacts",
+          "points": [
+            "Loss of life and injuries",
+            "Displacement of populations",
+            "Health issues and mental health effects",
+            "Disruption of community cohesion",
+            "Long-term recovery challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Impacts",
+          "points": [
+            "Cost of recovery and rebuilding",
+            "Impact on livelihoods and employment",
+            "Insurance and financial implications",
+            "Economic instability in affected regions",
+            "Investment in mitigation vs. recovery costs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Impacts",
+          "points": [
+            "Habitat destruction",
+            "Changes in land use",
+            "Impact on biodiversity",
+            "Soil degradation and water quality",
+            "Long-term ecological consequences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: 2010 Pakistan Floods",
+          "points": [
+            "Overview of the event",
+            "Immediate impacts on communities",
+            "Response and recovery efforts",
+            "Lessons learned",
+            "Long-term implications for disaster management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: California Drought (2012-2016)",
+          "points": [
+            "Overview of the drought",
+            "Impact on agriculture and water supply",
+            "Community response and adaptation",
+            "Policy changes and water management",
+            "Future outlook for drought resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Hurricane Katrina (2005)",
+          "points": [
+            "Overview of the hurricane",
+            "Impact on New Orleans and surrounding areas",
+            "Response and recovery challenges",
+            "Lessons learned for future preparedness",
+            "Changes in policy and infrastructure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Typhoon Haiyan (2013)",
+          "points": [
+            "Overview of the typhoon",
+            "Impact on the Philippines",
+            "International response and aid",
+            "Community resilience and recovery",
+            "Future preparedness strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Mitigation Strategies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Early Warning Systems",
+          "points": [
+            "Importance of timely information",
+            "Examples of successful EWS",
+            "Technological advancements",
+            "Community engagement in EWS",
+            "Challenges in implementation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Preparedness",
+          "points": [
+            "Training and education programs",
+            "Involvement of marginalized groups",
+            "Building local capacities",
+            "Importance of trust in warning systems",
+            "Examples of successful initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resilient Infrastructure",
+          "points": [
+            "Investment in flood defenses",
+            "Sustainable urban planning",
+            "Adaptation of existing infrastructure",
+            "Role of government and private sector",
+            "Long-term benefits of resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Outlook",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Looking Ahead: Challenges and Opportunities",
+          "points": [
+            "Increasing frequency of hazards",
+            "Need for global collaboration",
+            "Importance of research and innovation",
+            "Role of policy in disaster risk reduction",
+            "Call to action for communities and governments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

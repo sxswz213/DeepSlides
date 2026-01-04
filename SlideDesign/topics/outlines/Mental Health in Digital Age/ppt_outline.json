@@ -1,0 +1,328 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 5,
+    "Conflict": 5,
+    "Resolution": 5,
+    "Outcome": 4
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Mental Health in the Digital Age",
+          "points": [
+            "Definition of mental health",
+            "Impact of technology on daily life",
+            "Importance of addressing mental health",
+            "Overview of digital age challenges",
+            "Purpose of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Dual Nature of Technology",
+          "points": [
+            "Positive contributions to mental health",
+            "Negative consequences of technology use",
+            "Role of teletherapy and online support",
+            "Emergence of mental health apps",
+            "Need for balanced perspective"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Statistics and Trends",
+          "points": [
+            "Increase in teletherapy usage",
+            "Rise of social media and its effects",
+            "Statistics on mental health issues",
+            "Impact of COVID-19 on mental health services",
+            "Trends in digital mental health interventions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Positive Effects of Technology",
+          "points": [
+            "Teletherapy increases access to care",
+            "Online support groups foster community",
+            "Mental health apps for self-management",
+            "Digital interventions reduce symptoms",
+            "Accessibility during crises like COVID-19"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Teletherapy: A Game Changer",
+          "points": [
+            "Convenience of remote sessions",
+            "Increased patient engagement",
+            "Effectiveness in treatment adherence",
+            "Role during the pandemic",
+            "Challenges in personal connection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Online Support Groups",
+          "points": [
+            "Community building and shared experiences",
+            "Empowerment through shared stories",
+            "Accessibility for marginalized groups",
+            "Potential for anonymity",
+            "Risks of negative interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mental Health Apps",
+          "points": [
+            "Tools for tracking mental health",
+            "Self-management strategies",
+            "Accessibility of resources",
+            "Potential for over-reliance",
+            "Privacy concerns with data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Digital Interventions Overview",
+          "points": [
+            "Definition of digital mental health interventions",
+            "Types of interventions available",
+            "Effectiveness in reducing symptoms",
+            "Challenges in implementation",
+            "Need for ongoing research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Negative Effects of Technology",
+          "points": [
+            "Social media addiction and its impact",
+            "Increased anxiety and depression",
+            "Feelings of loneliness and isolation",
+            "Cyberbullying prevalence",
+            "Comparison culture leading to inadequacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Dark Side of Social Media",
+          "points": [
+            "Curated images and highlight reels",
+            "Impact on self-esteem",
+            "Connection to self-harm and suicidal thoughts",
+            "Addictive features of social media",
+            "Disruption of sleep patterns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cyberbullying and Its Consequences",
+          "points": [
+            "Definition and prevalence of cyberbullying",
+            "Emotional scars and long-term effects",
+            "Impact on mental health of victims",
+            "Role of anonymity in online harassment",
+            "Need for awareness and prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Digital Dependency",
+          "points": [
+            "Addiction to technology and social media",
+            "Impact on daily functioning",
+            "Challenges in breaking the cycle",
+            "Need for digital detox strategies",
+            "Awareness of screen time effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Balancing Technology Use",
+          "points": [
+            "Importance of setting boundaries",
+            "Mindful social media use",
+            "Engaging in offline activities",
+            "Seeking professional support when needed",
+            "Promoting healthy digital habits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Promoting Healthy Digital Habits",
+          "points": [
+            "Setting screen time limits",
+            "Encouraging offline interactions",
+            "Utilizing mental health apps wisely",
+            "Engaging in mindfulness practices",
+            "Creating a balanced digital environment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Leveraging Digital Resources",
+          "points": [
+            "Using teletherapy effectively",
+            "Participating in online support groups",
+            "Exploring mental health apps",
+            "Accessing educational resources",
+            "Staying informed about digital interventions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Digital Literacy",
+          "points": [
+            "Importance of digital literacy in mental health",
+            "Training for effective technology use",
+            "Resources for improving digital skills",
+            "Community programs for support",
+            "Empowering individuals to seek help"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Digital Mental Health",
+          "points": [
+            "Research on effectiveness of DMHIs",
+            "Innovations in mental health technology",
+            "Addressing privacy and security concerns",
+            "Cultural adaptation of digital resources",
+            "Ensuring equitable access to care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Encouraging Open Conversations",
+          "points": [
+            "Importance of discussing mental health",
+            "Creating safe spaces for dialogue",
+            "Engaging communities in mental health awareness",
+            "Promoting understanding of digital impacts",
+            "Encouraging help-seeking behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Summary of Key Points",
+          "points": [
+            "Technology's dual role in mental health",
+            "Positive effects of digital interventions",
+            "Negative consequences of excessive use",
+            "Importance of balanced technology use",
+            "Need for ongoing research and adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Promote healthy digital habits",
+            "Engage in open discussions about mental health",
+            "Utilize available digital resources wisely",
+            "Support initiatives for mental health awareness",
+            "Encourage community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Navigating mental health in the digital age",
+            "Embracing technology as a tool for good",
+            "Recognizing the importance of self-care",
+            "Staying informed about mental health resources",
+            "Fostering a supportive community"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Questions and Discussion",
+          "points": [
+            "Open the floor for questions",
+            "Encourage sharing of experiences",
+            "Discuss strategies for healthy technology use",
+            "Explore further resources",
+            "Thank the audience for participation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

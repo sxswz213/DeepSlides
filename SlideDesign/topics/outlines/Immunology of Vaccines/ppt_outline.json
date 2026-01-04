@@ -1,0 +1,341 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction to Immunology": 3,
+    "Types of Vaccines": 3,
+    "Mechanism of Action": 4,
+    "Immune Response to Vaccination": 4,
+    "Adjuvants and Their Role": 3,
+    "Current Research and Developments": 3,
+    "Challenges in Vaccine Development": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction to Immunology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Importance of Vaccination",
+          "points": [
+            "Prevention of infectious diseases",
+            "Role in public health",
+            "Impact on global health",
+            "Reduction of disease outbreaks",
+            "Contribution to herd immunity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Immune System",
+          "points": [
+            "Components of the immune system",
+            "Innate vs adaptive immunity",
+            "Role of antigens",
+            "Activation of immune responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "History of Vaccination",
+          "points": [
+            "Ancient practices of variolation",
+            "Edward Jenner's cowpox experiment",
+            "Louis Pasteur's rabies vaccine",
+            "Milestones in vaccine development",
+            "Modern vaccination programs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Vaccines",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Live Attenuated Vaccines",
+          "points": [
+            "Weakened pathogens",
+            "Strong immune response",
+            "Examples: MMR, oral polio",
+            "Long-lasting immunity",
+            "Not suitable for immunocompromised"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Inactivated Vaccines",
+          "points": [
+            "Killed pathogens",
+            "Safer for vulnerable populations",
+            "Multiple doses required",
+            "Examples: Inactivated polio, influenza",
+            "Lower risk of adverse reactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Subunit and mRNA Vaccines",
+          "points": [
+            "Subunit: specific parts of pathogens",
+            "Examples: Hepatitis B",
+            "mRNA: instructs cells to produce proteins",
+            "Examples: Pfizer-BioNTech, Moderna",
+            "Rapid development capabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Mechanism of Action",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Introduction to Immune Response",
+          "points": [
+            "Antigen introduction",
+            "Activation of B cells and T cells",
+            "Primary immune response",
+            "Role of antibodies",
+            "Elimination of pathogens"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "B Cells and Antibody Production",
+          "points": [
+            "B cell activation",
+            "Antibody types and functions",
+            "Neutralization of pathogens",
+            "Memory B cells",
+            "Long-term immunity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "T Cells in Immune Response",
+          "points": [
+            "Types of T cells: Helper and Cytotoxic",
+            "Role in eliminating infected cells",
+            "Support for B cell activation",
+            "Memory T cells",
+            "Rapid response upon re-exposure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Establishment of Immunological Memory",
+          "points": [
+            "Formation of memory cells",
+            "Long-lasting immunity",
+            "Faster response to subsequent exposures",
+            "Importance in vaccine effectiveness",
+            "Prevention of illness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Immune Response to Vaccination",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Initial Immune Response",
+          "points": [
+            "First exposure to antigen",
+            "Activation and proliferation of immune cells",
+            "Characteristics of primary response",
+            "Duration of response",
+            "Importance of booster doses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Secondary Immune Response",
+          "points": [
+            "Faster and stronger response",
+            "Role of memory cells",
+            "Antibody production upon re-exposure",
+            "Prevention of disease",
+            "Clinical implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Factors Influencing Immune Response",
+          "points": [
+            "Age and health status",
+            "Genetic factors",
+            "Type of vaccine",
+            "Timing of vaccination",
+            "Adjuvants and their role"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Monitoring Vaccine Effectiveness",
+          "points": [
+            "Surveillance of disease incidence",
+            "Antibody titer testing",
+            "Long-term studies",
+            "Impact on public health policy",
+            "Adjustments in vaccination strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Adjuvants and Their Role",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Adjuvants?",
+          "points": [
+            "Substances that enhance immune response",
+            "Used in conjunction with vaccines",
+            "Mechanisms of action",
+            "Types of adjuvants",
+            "Importance in vaccine efficacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Examples of Adjuvants",
+          "points": [
+            "Alum: most common adjuvant",
+            "MF59: oil-in-water emulsion",
+            "AS03: squalene-based",
+            "CpG: synthetic DNA",
+            "Role in COVID-19 vaccines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Adjuvant Research",
+          "points": [
+            "Innovations in adjuvant technology",
+            "Personalized vaccines",
+            "Improving vaccine responses in vulnerable populations",
+            "Potential for new vaccine platforms",
+            "Challenges in development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Research and Developments",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Advancements in Vaccine Technology",
+          "points": [
+            "mRNA vaccine breakthroughs",
+            "Vaccine platforms for emerging diseases",
+            "Nanoparticle vaccines",
+            "Universal flu vaccine research",
+            "Global collaboration in vaccine development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Clinical Trials and Safety Monitoring",
+          "points": [
+            "Phases of vaccine trials",
+            "Importance of safety data",
+            "Post-marketing surveillance",
+            "Adverse event reporting",
+            "Regulatory oversight"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Vaccination Initiatives",
+          "points": [
+            "COVAX and equitable access",
+            "Vaccination campaigns in low-income countries",
+            "Public health partnerships",
+            "Impact of global vaccination efforts",
+            "Future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges in Vaccine Development",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Vaccine Hesitancy",
+          "points": [
+            "Definition and impact",
+            "Factors contributing to hesitancy",
+            "Misinformation and distrust",
+            "Strategies to address hesitancy",
+            "Importance of public education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolving Pathogens and Technological Needs",
+          "points": [
+            "Rapid mutation of viruses",
+            "Challenges in vaccine adaptation",
+            "Need for innovative technologies",
+            "Regulatory hurdles",
+            "Investment in research and infrastructure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

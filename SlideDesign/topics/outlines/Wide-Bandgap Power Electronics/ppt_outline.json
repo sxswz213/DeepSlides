@@ -1,0 +1,353 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Materials and Technologies": 4,
+    "Device Design and Fabrication": 4,
+    "Performance Analysis": 4,
+    "Applications": 3,
+    "Future Trends": 2,
+    "Conclusion": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Wide-Bandgap Power Electronics",
+          "points": [
+            "Definition of WBG semiconductors",
+            "Importance in modern technology",
+            "Key materials: SiC and GaN"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of WBG Technology",
+          "points": [
+            "Enhanced efficiency",
+            "Higher power density",
+            "Improved thermal management",
+            "Applications in various sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore properties of WBG materials",
+            "Discuss applications",
+            "Identify challenges and future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Introduction to Semiconductors",
+          "points": [
+            "Role of semiconductors in electronics",
+            "Comparison of silicon vs. WBG materials",
+            "Historical context of semiconductor development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Properties of Wide-Bandgap Semiconductors",
+          "points": [
+            "Bandgap energy of SiC and GaN",
+            "Thermal conductivity",
+            "Electron mobility",
+            "Voltage and temperature capabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Trends and Growth",
+          "points": [
+            "Current market size",
+            "Projected growth rates",
+            "Key players in the WBG market"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Materials and Technologies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Silicon Carbide (SiC)",
+          "points": [
+            "Bandgap of ~3.3 eV",
+            "High thermal conductivity",
+            "Applications in high-power systems",
+            "Challenges in cost and reliability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Gallium Nitride (GaN)",
+          "points": [
+            "Bandgap of ~3.4 eV",
+            "Superior electron mobility",
+            "Ideal for high-frequency applications",
+            "Integration challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of SiC and GaN",
+          "points": [
+            "Performance characteristics",
+            "Key applications",
+            "Advantages and disadvantages"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging WBG Materials",
+          "points": [
+            "New materials under research",
+            "Potential benefits",
+            "Future applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Device Design and Fabrication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Design Considerations for WBG Devices",
+          "points": [
+            "Thermal management strategies",
+            "Electrical performance optimization",
+            "Reliability factors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fabrication Techniques",
+          "points": [
+            "Crystal growth methods",
+            "Doping processes",
+            "Device packaging technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Device Fabrication",
+          "points": [
+            "Defect density issues",
+            "Cost implications",
+            "Scaling production"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations in WBG Device Design",
+          "points": [
+            "Advanced packaging solutions",
+            "Integration with existing technologies",
+            "Research collaborations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Performance Analysis",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Efficiency Metrics",
+          "points": [
+            "Comparative efficiency of SiC and GaN",
+            "Impact on overall system performance",
+            "Measurement techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Thermal Performance",
+          "points": [
+            "Heat dissipation characteristics",
+            "Thermal cycling tests",
+            "Reliability under extreme conditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Switching Performance",
+          "points": [
+            "Switching speeds of SiC vs. GaN",
+            "Impact on application performance",
+            "Measurement and testing methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Reliability Studies",
+          "points": [
+            "Failure modes",
+            "Reliability testing protocols",
+            "Field performance data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Automotive Applications",
+          "points": [
+            "Use in electric vehicles",
+            "Benefits for traction inverters",
+            "Impact on cooling system design"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Renewable Energy Systems",
+          "points": [
+            "Role in solar inverters",
+            "Wind energy applications",
+            "Efficiency improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consumer Electronics",
+          "points": [
+            "Compact power supplies",
+            "Faster charging solutions",
+            "Market trends in consumer devices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Market Projections",
+          "points": [
+            "Growth forecasts for WBG technology",
+            "Emerging applications",
+            "Investment trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Innovations",
+          "points": [
+            "Advancements in materials",
+            "New fabrication techniques",
+            "Potential for integration in smart grids"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Advantages of WBG over silicon",
+            "Current challenges faced",
+            "Future outlook for WBG technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Industry",
+          "points": [
+            "Need for adaptation in manufacturing",
+            "Importance of research and development",
+            "Potential for sustainable energy solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Encouragement for industry adoption",
+            "Investment in WBG research",
+            "Collaboration across sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

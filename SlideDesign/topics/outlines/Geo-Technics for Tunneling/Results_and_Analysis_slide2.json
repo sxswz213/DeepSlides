@@ -1,0 +1,25 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: Success and challenges in predicting TBM penetration rate using ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S0886779822003686\n\nSUMMARY:\nForecasting TBM performance, if successful, would play a significant role in project time management and cost control during tunnel construction.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: A Visual Survey of Tunnel Boring Machine (TBM) Performance in ... ---\nURL: https://www.mdpi.com/2076-3417/14/11/4512\n\nSUMMARY:\nThis study employs scientometric analysis to investigate the current trajectory of research on tunnel boring machine (TBM) performance and collaborative\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Assessment for shallow and large tunnel construction in weak ... ---\nURL: https://onlinelibrary.wiley.com/doi/10.1002/dug2.12083\n\nSUMMARY:\nConsequently, the purpose of this study is to present a successful application of TBM in weak ground conditions and to explain the engineering\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: Tunnel boring machines (TBM) performance prediction: A case ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S0886779820305903\n\nSUMMARY:\nThis work explores the potential for predicting TBM performance using deep learning. It focuses on a 17.5-km-long tunnel excavated for the Yingsong Water\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Tunnel Boring Machines: Prufrock versus Herrenknecht ---\nURL: https://resource-erectors.com/tbm-machines-prufrock-vs-herrenknecht/\n\nSUMMARY:\nThe Boring Company's Prufrock line, developed in-house, is designed to reduce tunneling costs and dramatically increase project completion speed.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://www.abtunnelling.com/wp-content/uploads/2025/04/TBM-projects-2-AB-Tunneling.jpg\nDESCRIPTION: Two engineers wearing yellow safety helmets and vests are inspecting a large tunnel boring machine (TBM) cutter head inside an underground construction site.\n\nIMAGE 2:\nURL: https://tunnelingonline.com/wp-content/uploads/2022/12/tunnel-under-construction.jpg\nDESCRIPTION: A large tunnel with mounted lighting and structural supports, indicating the progress and success rates of tunneling projects, possibly related to TBM (Tunnel Boring Machine) operations.\n\nIMAGE 3:\nURL: https://tunnelingworld.com/wp-content/uploads/2022/01/First-Success-of-TBM-on-Mumbai-Coastal-Road-Project-800x400.jpg\nDESCRIPTION: The image displays a tunnel excavation site equipped with tunnel boring machines (TBMs), with workers gathered on one side, and banners indicating successful tunneling progress in relation to the project.\n\nIMAGE 4:\nURL: https://tunnelingonline.com/wp-content/uploads/2022/10/aecom-pawtucket-tunnel-diagram.jpg\nDESCRIPTION: A 3D technical illustration of a tunnel boring machine (TBM) with various components, including the cutter head, conveyor system, and support structures, highlighting aspects that influence tunneling project success rates.\n\nIMAGE 5:\nURL: https://tunnelingworld.com/wp-content/uploads/2022/11/Balfour-Beatty-Vincis-Dorothy-TBM-in-HS2-Project.jpg\nDESCRIPTION: A large tunnel boring machine (TBM) is positioned at a construction site with workers and equipment around it, illustrating a project with high success rates in tunneling activities.\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Success rates of TBMs",
+      "expanded_content": "Tunnel Boring Machines (TBMs) exhibit high success rates, especially in favorable ground conditions, significantly enhancing project efficiency and reducing excavation time."
+    },
+    {
+      "point_title": "Challenges in cut-and-cover",
+      "expanded_content": "Cut-and-cover tunneling faces challenges like ground stability, environmental impact, and urban disruption, often leading to increased costs and project delays."
+    },
+    {
+      "point_title": "NATM performance in mixed ground",
+      "expanded_content": "The New Austrian Tunneling Method (NATM) demonstrates adaptability in mixed ground conditions, balancing excavation efficiency with structural integrity through continuous monitoring."
+    },
+    {
+      "point_title": "Cost-benefit analysis",
+      "expanded_content": "Conducting a thorough cost-benefit analysis reveals that while initial investments in TBMs may be high, long-term savings from reduced labor and time are substantial."
+    },
+    {
+      "point_title": "Lessons learned from case studies",
+      "expanded_content": "Case studies highlight critical lessons in TBM selection, advance planning, and risk management, ultimately guiding future projects toward improved success rates."
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 5,
+    "Conflict": 5,
+    "Resolution": 5,
+    "Outcome": 5
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Climate Justice",
+          "points": [
+            "Definition of climate justice",
+            "Connection to social and racial injustices",
+            "Importance of equitable solutions",
+            "Focus on marginalized communities",
+            "Link between environmental sustainability and social equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Climate Justice Movements",
+          "points": [
+            "Advocacy for vulnerable populations",
+            "Historical context of movements",
+            "Integration of social equity in climate action",
+            "Need for inclusive policy-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Historical Context of Climate Justice Movements",
+          "points": [
+            "Roots in 1960s and 1970s environmental movements",
+            "Influence of Rachel Carson's *Silent Spring*",
+            "Establishment of organizations like Greenpeace",
+            "Formation of UNFCCC in the 1990s",
+            "Emergence of grassroots movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Issues in Climate Justice",
+          "points": [
+            "Systemic inequality in environmental decision-making",
+            "Impacts of colonialism on marginalized communities",
+            "Disproportionate effects of climate change",
+            "Need for reparative justice",
+            "Holistic approach integrating social and environmental justice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Principles of Climate Justice",
+          "points": [
+            "Respect for human rights",
+            "Equitable sharing of resources",
+            "Participatory governance",
+            "Just transition to renewable energy",
+            "Focus on frontline communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Major Movements and Milestones",
+          "points": [
+            "Fridays for Future and youth activism",
+            "Indigenous Climate Action Network",
+            "Response to Hurricane Katrina",
+            "Global climate negotiations and agreements",
+            "Power imbalances in climate action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape of Climate Justice",
+          "points": [
+            "Ongoing advocacy for marginalized communities",
+            "Integration of climate justice in policy-making",
+            "Global movements pushing for equity",
+            "Role of technology and innovation",
+            "Importance of community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Systemic Inequality and Exclusion",
+          "points": [
+            "Marginalized groups excluded from decision-making",
+            "Policies failing to protect vulnerable communities",
+            "Historical injustices shaping current vulnerabilities",
+            "Need for inclusive representation",
+            "Impact of systemic racism on climate action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Colonial Legacies and Environmental Degradation",
+          "points": [
+            "Historical context of colonialism",
+            "Racial and gender hierarchies in climate impacts",
+            "Indigenous and Afro-descendant populations affected",
+            "Need for acknowledgment of historical responsibilities",
+            "Calls for reparative justice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Climate Negotiations",
+          "points": [
+            "Power imbalances between developed and developing nations",
+            "Disparities in climate action commitments",
+            "Resistance to equitable solutions",
+            "Need for global solidarity",
+            "Importance of grassroots movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Climate Change on Vulnerable Communities",
+          "points": [
+            "Extreme weather events disproportionately affecting marginalized groups",
+            "Rising sea levels threatening low-income areas",
+            "Health impacts of climate change",
+            "Economic vulnerabilities exacerbated by climate crises",
+            "Urgent need for adaptive strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resistance to Climate Justice Principles",
+          "points": [
+            "Opposition from fossil fuel industries",
+            "Political resistance to equitable policies",
+            "Misunderstanding of climate justice concepts",
+            "Need for public awareness and education",
+            "Role of media in shaping narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Advocating for Equitable Solutions",
+          "points": [
+            "Integrating climate justice in policy-making",
+            "Prioritizing needs of frontline communities",
+            "Promoting participatory governance",
+            "Encouraging community-led initiatives",
+            "Building coalitions for climate justice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Empowering Marginalized Communities",
+          "points": [
+            "Supporting grassroots movements",
+            "Providing resources for advocacy",
+            "Encouraging local leadership",
+            "Fostering resilience and adaptation strategies",
+            "Recognizing Indigenous knowledge in solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting Global Solidarity",
+          "points": [
+            "Encouraging international cooperation",
+            "Sharing best practices and lessons learned",
+            "Building alliances across movements",
+            "Addressing global power imbalances",
+            "Fostering a collective response to climate change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implementing Just Transition Strategies",
+          "points": [
+            "Shifting economies from fossil fuels to renewables",
+            "Supporting workers in transitioning industries",
+            "Ensuring equitable distribution of resources",
+            "Promoting sustainable development",
+            "Engaging communities in transition planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Raising Awareness and Education",
+          "points": [
+            "Importance of public education on climate justice",
+            "Utilizing media to amplify voices",
+            "Engaging youth in climate advocacy",
+            "Creating educational resources and programs",
+            "Fostering a culture of sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Impact of Climate Justice Movements",
+          "points": [
+            "Increased awareness of climate justice issues",
+            "Policy changes prioritizing marginalized communities",
+            "Strengthened grassroots movements",
+            "Global solidarity in climate action",
+            "Recognition of historical injustices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Climate Justice",
+          "points": [
+            "Continued advocacy for equitable solutions",
+            "Integration of climate justice in all climate policies",
+            "Focus on intersectionality in climate action",
+            "Building resilience in vulnerable communities",
+            "Encouraging youth leadership in movements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from Case Studies",
+          "points": [
+            "Importance of community engagement",
+            "Need for inclusive decision-making processes",
+            "Value of integrating traditional knowledge",
+            "Impact of youth-led movements",
+            "Role of international cooperation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Support climate justice initiatives",
+            "Engage in local advocacy efforts",
+            "Educate others about climate justice",
+            "Participate in global movements",
+            "Hold leaders accountable for equitable policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Recap of the significance of climate justice",
+            "Emphasis on the need for equitable solutions",
+            "Call for continued advocacy and action",
+            "Importance of integrating climate justice in future policies",
+            "Vision for a just and sustainable future"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

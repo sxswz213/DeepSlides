@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Future Directions": 2,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Plant-Made Pharmaceuticals",
+          "points": [
+            "Definition of PMPs",
+            "Importance in drug production",
+            "Utilization of genetically modified plants"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advantages of PMPs",
+          "points": [
+            "Cost-effectiveness",
+            "Safety compared to traditional methods",
+            "Scalability for mass production",
+            "Potential for global health impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Emergence in the early 1990s",
+            "First PMPs: antibodies and antigens",
+            "Expansion to various therapeutic proteins"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Production Methods Overview",
+          "points": [
+            "Stable transformation",
+            "Transient expression",
+            "Role of *Agrobacterium tumefaciens*"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Advancements",
+          "points": [
+            "Enhanced scalability",
+            "Efficiency improvements",
+            "Complex post-translational modifications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Applications",
+          "points": [
+            "Diagnostics",
+            "Veterinary medicine",
+            "Examples: human serum albumin, insulin"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Stable Transformation Techniques",
+          "points": [
+            "Integration of foreign genes",
+            "Long-term expression",
+            "Effective species: tobacco"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transient Expression Techniques",
+          "points": [
+            "Rapid protein production",
+            "No stable integration needed",
+            "Response to urgent health needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Safety and Contamination Risks",
+          "points": [
+            "Controlled environments",
+            "Reduced contamination risks",
+            "Comparison with mammalian systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Framework Overview",
+          "points": [
+            "FDA, USDA, EPA roles",
+            "Safety and efficacy assessments",
+            "Permit requirements for field testing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Regulatory Framework Details",
+          "points": [
+            "FDA's role in safety",
+            "USDA's environmental regulations",
+            "EPA's pest-resistant traits oversight",
+            "Good Manufacturing Practices (GMP)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Market Applications",
+          "points": [
+            "Veterinary vaccines",
+            "Human therapeutics",
+            "Diagnostic tools",
+            "Examples of successful PMPs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of PMPs",
+          "points": [
+            "Newcastle disease vaccine",
+            "Gaucher's disease treatment",
+            "Human insulin production"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Production",
+          "points": [
+            "Public perception",
+            "Regulatory hurdles",
+            "Technical limitations",
+            "Market competition"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Prospects for PMPs",
+          "points": [
+            "Enhancing therapeutic efficacy",
+            "Broader applications in human medicine",
+            "Potential for combating viral infections"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Impact on Global Health",
+          "points": [
+            "Addressing pressing health challenges",
+            "Improving accessibility to treatments",
+            "Potential for rapid response to pandemics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Investment and Innovation Needs",
+          "points": [
+            "Funding for research",
+            "Collaboration between sectors",
+            "Importance of public-private partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Considerations",
+          "points": [
+            "Public trust in biotechnology",
+            "Environmental impacts",
+            "Regulatory transparency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration into Mainstream Medicine",
+          "points": [
+            "Potential for widespread adoption",
+            "Education and awareness",
+            "Future healthcare models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Focus Areas",
+          "points": [
+            "Enhancing protein stability",
+            "Developing multi-protein systems",
+            "Exploring new therapeutic targets"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Vision for PMPs",
+          "points": [
+            "Mainstream acceptance in healthcare",
+            "Global health equity",
+            "Sustainable production methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "PMPs as a transformative approach",
+            "Safer and cost-effective alternatives",
+            "Potential to revolutionize healthcare"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

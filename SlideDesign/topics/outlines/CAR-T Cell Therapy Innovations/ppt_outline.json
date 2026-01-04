@@ -1,0 +1,220 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction to CAR-T Cell Therapy": 3,
+    "Mechanism of Action": 3,
+    "Current Innovations in CAR-T Therapy": 4,
+    "Clinical Trials and Results": 4,
+    "Challenges and Limitations": 3,
+    "Future Directions and Research": 3,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction to CAR-T Cell Therapy",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of CAR-T Cell Therapy",
+          "points": [
+            "Definition of CAR-T therapy",
+            "Historical context",
+            "Importance in cancer treatment",
+            "Targeting cancer cells",
+            "Current landscape of oncology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mechanism of CAR-T Cell Therapy",
+          "points": [
+            "Extraction of T cells",
+            "Genetic modification process",
+            "CAR structure and function",
+            "Activation of T cells",
+            "Targeting specific cancer antigens"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of CAR-T Innovations",
+          "points": [
+            "Transformative potential",
+            "Impact on patient outcomes",
+            "Role in hematological malignancies",
+            "Expansion into solid tumors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Innovations in CAR-T Therapy",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Tandem CAR-T Cells",
+          "points": [
+            "Introduction to TanCAR-T",
+            "Dual-targeting mechanism",
+            "Benefits in reducing antigen escape",
+            "Applications in hematological and solid tumors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Combination Therapies",
+          "points": [
+            "Overview of combination strategies",
+            "Synergistic effects with chemotherapy",
+            "Use with immune checkpoint inhibitors",
+            "Enhancing CAR-T cell infiltration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Novel Target Exploration",
+          "points": [
+            "Identifying new tumor-specific antigens",
+            "Addressing challenges in solid tumors",
+            "Potential for improved efficacy",
+            "Research on tumor microenvironment targets"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Clinical Trials and Innovations",
+          "points": [
+            "Recent trial outcomes",
+            "Innovative CAR-T designs",
+            "Patient response rates",
+            "Future trial directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Tumor Microenvironment Challenges",
+          "points": [
+            "Immunosuppressive nature",
+            "Impact on T cell function",
+            "Strategies to overcome TME",
+            "Importance of T cell infiltration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Antigen Heterogeneity Issues",
+          "points": [
+            "Variability in tumor antigens",
+            "Antigen escape phenomenon",
+            "Challenges in targeting",
+            "Need for personalized approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Off-Target Effects and Safety Concerns",
+          "points": [
+            "Risks associated with CAR-T therapy",
+            "Importance of specificity",
+            "Research on minimizing side effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions and Research",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Innovative Design Strategies",
+          "points": [
+            "Optimizing CAR structures",
+            "Genetic modifications for efficacy",
+            "Enhancing persistence in solid tumors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interdisciplinary Approaches",
+          "points": [
+            "Collaboration across fields",
+            "Integration of new technologies",
+            "Potential for novel therapies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Development of Off-the-Shelf CAR-T Products",
+          "points": [
+            "Benefits of allogeneic cells",
+            "Streamlining manufacturing processes",
+            "Improving patient accessibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "CAR-T therapy's effectiveness",
+            "Innovations addressing challenges",
+            "Future potential in oncology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Importance of ongoing research",
+            "Collaboration in the field",
+            "Maximizing patient outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

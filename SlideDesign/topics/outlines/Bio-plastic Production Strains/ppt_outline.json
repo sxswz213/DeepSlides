@@ -1,0 +1,305 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Bio-plastics": 3,
+    "Production Strains Overview": 4,
+    "Methodology": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Bio-plastics",
+          "points": [
+            "Definition of bio-plastics",
+            "Importance of sustainable materials",
+            "Environmental concerns with traditional plastics",
+            "Potential of bio-plastics in reducing pollution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Examine microbial strains for bio-plastic production",
+            "Highlight advancements in synthetic biology",
+            "Discuss challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Focus on yeast and bacterial strains",
+            "Applications in bio-plastic production",
+            "Impact on sustainability and the bioeconomy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Bio-plastics",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Bio-plastics?",
+          "points": [
+            "Derived from renewable resources",
+            "Biodegradable and compostable options",
+            "Comparison with conventional plastics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Bio-plastics",
+          "points": [
+            "Polylactic acid (PLA)",
+            "Polyhydroxyalkanoates (PHA)",
+            "Other emerging bio-plastics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Market Trends",
+          "points": [
+            "Growing demand for sustainable materials",
+            "Market projections for bio-plastics",
+            "Key industries adopting bio-plastics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Production Strains Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Microbial Strains in Bio-plastic Production",
+          "points": [
+            "Role of bacteria and yeast",
+            "Advantages of using microbial strains",
+            "Overview of production processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Yeast Strains",
+          "points": [
+            "*Saccharomyces cerevisiae*",
+            "*Yarrowia lipolytica*",
+            "Production of PLA and PHA",
+            "Robustness and scalability",
+            "Applications in industry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Bacterial Strains",
+          "points": [
+            "*Pseudomonas*",
+            "*Cupriavidus necator*",
+            "Efficiency in utilizing waste substrates",
+            "Production of PHAs",
+            "Challenges in industrial conditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Yeast and Bacteria",
+          "points": [
+            "Advantages of yeast strains",
+            "Advantages of bacterial strains",
+            "Key differences in production capabilities",
+            "Future potential of both types"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review of current studies",
+            "Analysis of microbial strain capabilities",
+            "Evaluation of synthetic biology techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Synthetic Biology Techniques",
+          "points": [
+            "Metabolic engineering",
+            "Protein engineering",
+            "Adaptive evolution",
+            "Computational tools in strain development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Life Cycle Assessment (LCA)",
+          "points": [
+            "Definition and importance of LCA",
+            "Evaluation of environmental impacts",
+            "Comparison with conventional plastics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings on Yeast Strains",
+          "points": [
+            "Robustness against environmental stresses",
+            "Scalability in production",
+            "Efficiency in converting resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Findings on Bacterial Strains",
+          "points": [
+            "High efficiency in waste utilization",
+            "Production capabilities of PHAs",
+            "Challenges faced in industrial settings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Synthetic Biology",
+          "points": [
+            "Enhanced production efficiency",
+            "Improved strain robustness",
+            "Potential for new bio-plastic materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Benefits of Bio-plastics",
+          "points": [
+            "Lower carbon footprint",
+            "Reduction in greenhouse gas emissions",
+            "Sustainable agricultural practices required"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Challenges in Bio-plastic Production",
+          "points": [
+            "Strain robustness issues",
+            "Scalability of production processes",
+            "Economic viability of bio-plastics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Research",
+          "points": [
+            "Advancements in synthetic biology",
+            "Development of resilient microbial strains",
+            "Innovations in production techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Implications",
+          "points": [
+            "Significance of bio-plastics in sustainability",
+            "Role of microbial strains in production",
+            "Call for continued research and development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Innovations on the Horizon",
+          "points": [
+            "Emerging technologies in bio-plastic production",
+            "Potential for new microbial strains",
+            "Integration of circular economy principles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy and Industry Support",
+          "points": [
+            "Need for supportive regulations",
+            "Incentives for sustainable practices",
+            "Collaboration between academia and industry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

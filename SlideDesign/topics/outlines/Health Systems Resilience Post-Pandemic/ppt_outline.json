@@ -1,0 +1,290 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Health Systems Resilience",
+          "points": [
+            "Definition of health systems resilience",
+            "Importance in the context of COVID-19",
+            "Goals of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Impact of COVID-19",
+          "points": [
+            "Global health challenges faced",
+            "Need for resilient systems",
+            "Lessons learned from the pandemic"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts",
+          "points": [
+            "Integrated governance",
+            "Community engagement",
+            "Innovative service delivery strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Health Systems",
+          "points": [
+            "Overview of global health systems",
+            "Strengths and weaknesses",
+            "Impact of COVID-19 on services"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Governance Challenges",
+          "points": [
+            "Political leadership during crises",
+            "Coordination across sectors",
+            "Public trust and compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Engagement",
+          "points": [
+            "Role of local communities",
+            "Examples of successful engagement",
+            "Trust-building strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Workforce Mobilization",
+          "points": [
+            "Health worker challenges during the pandemic",
+            "Importance of training and support",
+            "Strategies for workforce resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Inequities in Healthcare Access",
+          "points": [
+            "Disparities in service delivery",
+            "Vulnerable populations affected",
+            "Need for equitable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strain on Health Workers",
+          "points": [
+            "Burnout and mental health issues",
+            "Retention and recruitment challenges",
+            "Impact on service delivery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Inadequate Infrastructure",
+          "points": [
+            "Challenges in health system capacity",
+            "Need for investment in infrastructure",
+            "Lessons from COVID-19"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Health Messaging",
+          "points": [
+            "Importance of clear communication",
+            "Misinformation challenges",
+            "Strategies for effective messaging"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Strengthening Governance",
+          "points": [
+            "Political leadership and accountability",
+            "Transparent communication strategies",
+            "Coordination across sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Community Engagement",
+          "points": [
+            "Empowering local leaders",
+            "Utilizing community health workers",
+            "Tailoring services to local needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Workforce Support Strategies",
+          "points": [
+            "Mental health resources for workers",
+            "Training and development programs",
+            "Flexible workforce models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transforming Service Delivery",
+          "points": [
+            "Implementing telemedicine",
+            "Flexible care pathways",
+            "Meeting both COVID-19 and non-COVID needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Investing in Health Infrastructure",
+          "points": [
+            "Long-term investment strategies",
+            "Building resilient systems",
+            "Ensuring equitable access to care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Insights from the Report",
+          "points": [
+            "Definition of resilience",
+            "Importance of governance and community engagement",
+            "Workforce mobilization strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Preparedness",
+          "points": [
+            "Proactive public health strategies",
+            "Building robust health infrastructures",
+            "Ensuring equitable healthcare access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned",
+          "points": [
+            "Importance of integrated governance",
+            "Community involvement in health responses",
+            "Adaptability of health systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Invest in health systems resilience",
+            "Prioritize community engagement",
+            "Prepare for future health emergencies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Next Steps for Health Systems",
+          "points": [
+            "Implementing recommended strategies",
+            "Monitoring and evaluation frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Summary of key points",
+            "Importance of resilience in health systems",
+            "Vision for the future"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

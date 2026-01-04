@@ -1,0 +1,332 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Cultural Policy Overview": 4,
+    "Creative Economy Overview": 4,
+    "Situation Analysis": 3,
+    "Conflict Identification": 3,
+    "Resolution Strategies": 3,
+    "Case Studies": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Cultural Policy",
+          "points": [
+            "Definition and importance",
+            "Framework for creative industries",
+            "Historical evolution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Cultural Policy",
+          "points": [
+            "Promotes creativity",
+            "Supports economic growth",
+            "Enhances community vitality",
+            "Addresses social inequalities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of the Creative Economy",
+          "points": [
+            "Definition and scope",
+            "Key sectors involved",
+            "Impact on job creation",
+            "Cultural engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Cultural Policy Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Historical Context of Cultural Policy",
+          "points": [
+            "Shift from elite to community focus",
+            "Inclusion of diverse cultural expressions",
+            "Impact of societal values"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Cultural Policy",
+          "points": [
+            "Funding mechanisms",
+            "Regulatory frameworks",
+            "Cultural institutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholders in Cultural Policy",
+          "points": [
+            "Government bodies",
+            "Cultural organizations",
+            "Public involvement",
+            "Collaborative efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Cultural Policy",
+          "points": [
+            "Balancing economic and social objectives",
+            "Equitable access to the arts",
+            "Technological advancements impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Creative Economy Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Defining the Creative Economy",
+          "points": [
+            "Dynamic sector",
+            "Individual and collective creativity",
+            "Contribution to GDP"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Components of the Creative Economy",
+          "points": [
+            "Performing arts",
+            "Visual arts",
+            "Design",
+            "Media",
+            "Cultural heritage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of the Creative Economy",
+          "points": [
+            "Job creation",
+            "Revenue generation",
+            "Cultural engagement",
+            "Innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Policies Supporting the Creative Economy",
+          "points": [
+            "Investment in cultural districts",
+            "Support for artist workspaces",
+            "Integration into economic strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation Analysis",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Current State of Cultural Policy",
+          "points": [
+            "Global trends",
+            "Regional variations",
+            "Impact of COVID-19"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Impact of Cultural Policy",
+          "points": [
+            "Job creation statistics",
+            "Cultural exports growth",
+            "Investment returns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Impact of Cultural Policy",
+          "points": [
+            "Community engagement",
+            "Access to cultural resources",
+            "Cultural identity preservation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict Identification",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Economic vs. Social Objectives",
+          "points": [
+            "Prioritization of economic outcomes",
+            "Marginalization of certain communities",
+            "Access disparities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Singapore",
+          "points": [
+            "Democratizing access to the arts",
+            "Criticism of consumption-oriented policies",
+            "Balancing access and quality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis: UK vs. Brazil",
+          "points": [
+            "UK's focus on economic growth",
+            "Brazil's emphasis on cultural diversity",
+            "Socio-political context influence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution Strategies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Balancing Economic and Social Goals",
+          "points": [
+            "Inclusive cultural policies",
+            "Equitable access initiatives",
+            "Community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Best Practices from Around the World",
+          "points": [
+            "Successful cultural districts",
+            "Support for diverse cultural expressions",
+            "Collaborative funding models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Cultural Policy",
+          "points": [
+            "Emphasis on sustainability",
+            "Integration of technology",
+            "Focus on social equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Flanders, Belgium",
+          "points": [
+            "Vibrant creative sector",
+            "Cultural exports growth",
+            "Employment impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Policy in Action",
+          "points": [
+            "Successful initiatives",
+            "Community engagement examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Strategic Recommendations",
+          "points": [
+            "Prioritize inclusivity",
+            "Foster innovation",
+            "Support diverse cultural expressions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Importance of cultural policy",
+            "Need for balanced approaches",
+            "Engagement of all stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

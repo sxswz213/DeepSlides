@@ -1,0 +1,25 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: Contrasting biophysical and social impacts of hydro-meteorological ... ---\nURL: https://www.researchgate.net/publication/356887655_Contrasting_biophysical_and_social_impacts_of_hydro-meteorological_extremes\n\nSUMMARY:\nExtreme hydrological and meteorological conditions can severely affect ecosystems, parts of the economy, and consequently society. These impacts\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: Identifying the Impact-Related Data Uses and Gaps for ... ---\nURL: https://journals.ametsoc.org/view/journals/wcas/14/1/WCAS-D-21-0093.1.xml\n\nSUMMARY:\nImpact forecasts and warnings (IFW) are key to resilience for hydrometeorological hazards. Communicating the potential social, economic, and environmental\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Contrasting biophysical and societal impacts of hydro ... - IOP Science ---\nURL: https://iopscience.iop.org/article/10.1088/1748-9326/ac4139\n\nSUMMARY:\nExtreme hydrological and meteorological conditions can severely affect ecosystems, parts of the economy, and consequently society. These impacts are expected to\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: A review of hydro-meteorological hazard, vulnerability, and risk ... ---\nURL: https://www.sciencedirect.com/science/article/pii/S221242092030282X\n\nSUMMARY:\nThe vulnerability of the SES has four domains: social susceptibility, ecosystem susceptibility, ecosystem robustness, and coping and adaptation capacities of\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Hydrometeorological Extremes and Its Local Impacts on Human ... ---\nURL: https://www.mdpi.com/journal/atmosphere/special_issues/hydrometeorological_extremes_impacts\n\nSUMMARY:\nExtreme events of tropical typhoons in summer cause a number of casualties as well as a tremendous amount of social and financial loss. Such climate changes are\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://thecolumn.ahacentre.org/wp-content/uploads/2022/03/1-1.jpg\nDESCRIPTION: The image illustrates the classification of natural hazards into hydrometeorological, geological, and biological types, showing how each can be influenced by climate factors such as heatwaves, drought, thunderstorms, tropical cyclones, and floods, with an emphasis on the interconnected impact on risks like landslides, wildfires, and epidemics.\n\nIMAGE 2:\nURL: https://image.slidesharecdn.com/hydrometeorology-170818035155/95/hydrometeorological-hazards-4-638.jpg?cb=1503028418\nDESCRIPTION: The image illustrates the social impacts of hydro-meteorological hazards, including photographs of flooding, damaged infrastructure, and displaced people, alongside a definition from UNISDR explaining that such phenomena cause loss of life, injury, property damage, and economic disruption.\n\nIMAGE 3:\nURL: http://image.slidesharecdn.com/global-hazards-patterns-1221389576997901-9/95/global-hazards-patterns-9-728.jpg?cb=1221364377\nDESCRIPTION: The image illustrates the global distribution and seasonal patterns of tropical cyclones, highlighting regions affected by hurricanes, cyclones, and typhoons, along with their average frequencies and tracks.\n\nIMAGE 4:\nURL: https://sp-uploads.s3.amazonaws.com/uploads/services/12444323/20240612085442_666962522f378_hydrometeorological_hazardspage0.jpg\nDESCRIPTION: None\n\nIMAGE 5:\nURL: https://slideplayer.com/slide/14140881/86/images/1/Topic+1:+Hydro-meteorological+hazards.jpg\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Loss of life and injuries",
+      "expanded_content": "Hydro-meteorological hazards, such as floods and storms, can lead to significant casualties, causing injuries and fatalities that deeply affect communities."
+    },
+    {
+      "point_title": "Displacement of populations",
+      "expanded_content": "Extreme weather events often force communities to evacuate, resulting in temporary or permanent displacement and creating challenges for shelter and resettlement."
+    },
+    {
+      "point_title": "Health issues and mental health effects",
+      "expanded_content": "Disasters lead to increased health risks, including waterborne diseases and mental health issues, as survivors cope with trauma and loss."
+    },
+    {
+      "point_title": "Disruption of community cohesion",
+      "expanded_content": "Displacement and loss can fracture social ties, disrupting community networks and support systems essential for recovery post-hazard."
+    },
+    {
+      "point_title": "Long-term recovery challenges",
+      "expanded_content": "Communities face prolonged recovery processes, with economic and infrastructural challenges that hinder rebuilding efforts and long-term resilience."
+    }
+  ]
+}

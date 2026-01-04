@@ -1,0 +1,172 @@
+{
+  "recommended_slides": 10,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 2,
+    "Conflict": 2,
+    "Resolution": 2,
+    "Outcome": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Criminology & Restorative Justice",
+          "points": [
+            "Definition of Criminology",
+            "Overview of Restorative Justice",
+            "Importance of the Topic",
+            "Shift from Punishment to Healing",
+            "Goals of the Presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Principles of Restorative Justice",
+          "points": [
+            "Healing over Punishment",
+            "Involvement of Victims and Offenders",
+            "Community Engagement",
+            "Focus on Accountability",
+            "Transformative Potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Current State of Criminal Justice",
+          "points": [
+            "Overview of Traditional Justice Systems",
+            "Focus on Punishment",
+            "High Recidivism Rates",
+            "Victim Disengagement",
+            "Community Alienation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Introduction to Restorative Justice",
+          "points": [
+            "Definition and Origins",
+            "Core Principles: Encounter, Repair, Transform",
+            "Role of Stakeholders",
+            "Benefits for Victims and Offenders",
+            "Community Involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges of Traditional Justice",
+          "points": [
+            "Limited Victim Involvement",
+            "Focus on Deterrence",
+            "Lack of Rehabilitation",
+            "Public Safety Concerns",
+            "Perpetuation of Harm Cycles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Critiques of Restorative Justice",
+          "points": [
+            "Suitability for Serious Crimes",
+            "Risk of Re-traumatization",
+            "Power Imbalances",
+            "Need for Balance with Punitive Measures",
+            "Public Perception Issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Benefits of Restorative Justice",
+          "points": [
+            "Lower Recidivism Rates",
+            "Higher Victim Satisfaction",
+            "Empowerment of Stakeholders",
+            "Community Responsibility",
+            "Fostering Empathy and Understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integrating Restorative Practices",
+          "points": [
+            "Combining with Traditional Systems",
+            "Training for Facilitators",
+            "Community Awareness Programs",
+            "Policy Recommendations",
+            "Future Directions for Research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Transformative Potential of Restorative Justice",
+          "points": [
+            "Healing Relationships",
+            "Strengthening Community Bonds",
+            "Promoting Personal Growth",
+            "Addressing Root Causes of Crime",
+            "Creating a Just Society"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Future Outlook",
+          "points": [
+            "Summary of Key Points",
+            "Importance of Healing and Accountability",
+            "Call for Integration of Practices",
+            "Vision for a Compassionate Justice System",
+            "Final Thoughts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

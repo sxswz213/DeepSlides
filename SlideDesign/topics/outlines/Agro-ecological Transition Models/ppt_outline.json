@@ -1,0 +1,349 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Agro-ecological Transition Models": 4,
+    "Methodology": 3,
+    "Case Studies": 4,
+    "Results": 3,
+    "Discussion": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Agro-ecological Transition",
+          "points": [
+            "Definition of agro-ecology",
+            "Importance of transition",
+            "Goals of sustainable agriculture",
+            "Key principles involved",
+            "Relevance to current challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore transition models",
+            "Identify key dimensions",
+            "Highlight participatory approaches",
+            "Showcase successful case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of the Presentation",
+          "points": [
+            "Introduction",
+            "Background",
+            "Agro-ecological Transition Models",
+            "Methodology",
+            "Case Studies",
+            "Results",
+            "Discussion",
+            "Future Directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Agriculture",
+          "points": [
+            "Conventional practices overview",
+            "Impact on environment",
+            "Need for sustainable alternatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Principles of Agroecology",
+          "points": [
+            "Biodiversity promotion",
+            "Soil health enhancement",
+            "Sustainable resource management",
+            "Nutrient recycling",
+            "Crop diversification"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Current Agricultural Systems",
+          "points": [
+            "Climate change effects",
+            "Food security issues",
+            "Economic pressures on farmers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Agro-ecological Transition Models",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Understanding Transition Models",
+          "points": [
+            "Definition of transition models",
+            "Key components",
+            "Ecological sustainability",
+            "Social equity",
+            "Economic viability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Frameworks for Transition",
+          "points": [
+            "Interconnectedness of components",
+            "Role of governance",
+            "Stakeholder collaboration",
+            "Local knowledge integration",
+            "Adaptability to changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Dimensions of Transition",
+          "points": [
+            "Diversity of agricultural models",
+            "Effective governance structures",
+            "Stakeholder roles",
+            "Community engagement",
+            "Policy support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visualizing Transition Models",
+          "points": [
+            "Model representation",
+            "Levels of transition",
+            "Importance of input efficiency",
+            "Building a just food system"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Qualitative analysis",
+            "Case study selection",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Participatory Action Research",
+          "points": [
+            "Definition of PAR",
+            "Role in agro-ecology",
+            "Benefits of community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Thematic analysis",
+            "Stakeholder feedback",
+            "Comparative case study analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Danish Conservation Agriculture Network",
+          "points": [
+            "Reduced soil tillage",
+            "Crop diversification",
+            "Improved soil health",
+            "Economic viability",
+            "Collaborative knowledge exchange"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Farmer-led Initiatives in Africa",
+          "points": [
+            "Local knowledge integration",
+            "Food security enhancement",
+            "Climate change adaptation",
+            "Community engagement",
+            "Diverse agroecological practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons from Successful Transitions",
+          "points": [
+            "Adaptability of practices",
+            "Importance of local context",
+            "Scalability of models",
+            "Role of education and training"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Case Studies",
+          "points": [
+            "Common themes",
+            "Diverse approaches",
+            "Impact on sustainability",
+            "Stakeholder involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings from Case Studies",
+          "points": [
+            "Effectiveness of agro-ecological practices",
+            "Resilience against challenges",
+            "Community empowerment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Food Systems",
+          "points": [
+            "Improved food security",
+            "Sustainable resource use",
+            "Economic benefits for farmers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Perspectives",
+          "points": [
+            "Importance of collaboration",
+            "Diverse viewpoints",
+            "Trust-building in communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Policy and Practice",
+          "points": [
+            "Need for supportive policies",
+            "Encouraging stakeholder collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges and Limitations",
+          "points": [
+            "Barriers to adoption",
+            "Need for ongoing research",
+            "Cultural considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Recommendations for Agro-ecological Transition",
+          "points": [
+            "Strengthening collaboration",
+            "Promoting inclusive governance",
+            "Leveraging local knowledge"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for Sustainable Agriculture",
+          "points": [
+            "Long-term goals",
+            "Role of innovation",
+            "Building resilient food systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: Vehicle-to-everything (V2X) in the autonomous ... ---\nURL: https://www.sciencedirect.com/science/article/pii/S2590198223002270\n\nSUMMARY:\nby SA Yusuf · 2024 · Cited by 123 — AV technology integrating advanced sensors and communication systems is improving safety for vulnerable road users (VRUs). •. Advanced communication systems\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: A journey towards fully autonomous driving - fueled by a ... ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S2214209622000237\n\nSUMMARY:\nby MA Khan · 2022 · Cited by 33 — Advancements in sensors, computation, and communication technologies coupled with the rapid evolution of Artificial Intelligence (AI) approaches have pushed\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Towards Autonomous Driving: Technologies and Data for ... ---\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC11174970/\n\nSUMMARY:\nby V Ušinskis · 2024 · Cited by 10 — In this work review of vehicular communication systems is presented. The main focus is the researched sensors, communication standards, devices, machine\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: A Critical AI View on Autonomous Vehicle Navigation ---\nURL: https://www.mdpi.com/2079-9292/13/18/3660\n\nSUMMARY:\nby T Miller · 2024 · Cited by 15 — Central to the operation of AVs is the integration of artificial intelligence (AI), which enables these vehicles to navigate complex environments with minimal\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Sensor work: enabling the interoperation of autonomous ... ---\nURL: https://academic.oup.com/jcmc/article/28/5/zmad014/7248794\n\nSUMMARY:\nby S Hind · 2023 · Cited by 6 — This article examines the work carried out on sensor data in the development of autonomous vehicles.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://knowhow.distrelec.com/wp-content/uploads/2021/11/sensor-tech-image1-2-1024x576.jpg\nDESCRIPTION: The diagram outlines various sensing systems essential for autonomous vehicles, including technologies such as Lidar, video cameras, adaptive cruise control, and radar systems, all interconnected to enhance vehicle safety and navigation.\n\nIMAGE 2:\nURL: https://www.embedded.com/wp-content/uploads/2020/07/07ah1_f1.jpg\nDESCRIPTION: None\n\nIMAGE 3:\nURL: https://blogs.synopsys.com/optical-solutions/files/2022/06/autonomous-car-sensing.jpg\nDESCRIPTION: None\n\nIMAGE 4:\nURL: https://scwcontent.affino.com/AcuCustom/Sitename/DAM/014/Autonomous-vehicle-AdobeStock_174958313_rm.png\nDESCRIPTION: Autonomous vehicles equipped with AI are depicted communicating and navigating their surroundings, while ensuring pedestrian safety with distance measurements indicated.\n\nIMAGE 5:\nURL: https://www.eetimes.com/wp-content/uploads/ADAS-sensors-lidar-radar.jpg\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Integration of Sensors",
+      "expanded_content": "Autonomous vehicles utilize various sensors like Lidar, radar, and cameras to perceive their environment, enhancing navigation and safety for all road users."
+    },
+    {
+      "point_title": "Role of AI in Decision Making",
+      "expanded_content": "AI algorithms process sensor data, enabling AVs to make real-time decisions in complex environments, significantly improving navigation and operational efficiency."
+    },
+    {
+      "point_title": "Communication Systems (V2X)",
+      "expanded_content": "Vehicle-to-everything (V2X) communication allows AVs to interact with other vehicles and infrastructure, improving situational awareness and enhancing safety measures for vulnerable road users."
+    },
+    {
+      "point_title": "Safety Enhancements through Technology",
+      "expanded_content": "Technological advancements in AVs, such as advanced sensors and AI, bolster safety protocols, reducing accidents and fatalities on the road."
+    }
+  ]
+}

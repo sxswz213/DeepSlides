@@ -1,0 +1,310 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 4,
+    "Theoretical Framework": 3,
+    "Methodology": 3,
+    "Analysis": 5,
+    "Discussion": 3,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Narrative Theory",
+          "points": [
+            "Definition of narrative theory",
+            "Importance in contemporary fiction",
+            "Key themes explored"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "To analyze narrative techniques",
+            "To understand reader engagement",
+            "To explore implications for identity and memory"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Study",
+          "points": [
+            "Focus on contemporary fiction",
+            "Examination of key narrative aspects",
+            "Relevance to modern storytelling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Fragmented Narratives",
+          "points": [
+            "Definition and characteristics",
+            "Examples: *A Visit from the Goon Squad*, *Cloud Atlas*",
+            "Impact on storytelling",
+            "Themes of interconnectedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Postmodernism in Literature",
+          "points": [
+            "Key features of postmodern narratives",
+            "Ambiguity and multiplicity",
+            "Influence on reader engagement",
+            "Notable works: *Cloud Atlas*"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Trauma Theory",
+          "points": [
+            "Overview of trauma theory",
+            "Impact on narrative structure",
+            "Examples: *A Pale View of Hills*, *The Secret Scripture*",
+            "Reflection of identity and memory"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Reader-Response Theory",
+          "points": [
+            "Definition and significance",
+            "Role of the reader in meaning-making",
+            "Engagement with fragmented narratives",
+            "Influence on contemporary fiction"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Theoretical Framework",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Theorists and Concepts",
+          "points": [
+            "Jean-François Lyotard on postmodernism",
+            "Wolfgang Iser on reader-response",
+            "Trauma theory scholars"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Narrative Techniques",
+          "points": [
+            "Fragmentation",
+            "Non-linear storytelling",
+            "Intertextuality",
+            "Multiplicity of voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Engagement Strategies",
+          "points": [
+            "Active reading",
+            "Co-creation of meaning",
+            "Navigating gaps in narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative analysis",
+            "Textual analysis of selected works",
+            "Focus on narrative techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection",
+          "points": [
+            "Selection of contemporary novels",
+            "Review of critical literature",
+            "Analysis of reader responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytical Framework",
+          "points": [
+            "Thematic analysis",
+            "Comparative analysis of narrative forms",
+            "Integration of theoretical perspectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Analysis",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Fragmented Narratives in Detail",
+          "points": [
+            "Characteristics of fragmentation",
+            "Case studies: Egan and Mitchell",
+            "Themes of time and memory",
+            "Reader engagement strategies",
+            "Impact on identity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Postmodern Techniques",
+          "points": [
+            "Ambiguity and its effects",
+            "Multiplicity of perspectives",
+            "Case study: *Cloud Atlas*",
+            "Reader's role in interpretation",
+            "Challenging traditional narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Trauma Representation",
+          "points": [
+            "Narrative fragmentation reflecting trauma",
+            "Case studies: Ishiguro and Barry",
+            "Impact on character development",
+            "Authenticity in survivor narratives",
+            "Cultural implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Reader-Response Engagement",
+          "points": [
+            "Active participation in meaning-making",
+            "Navigating disjointed narratives",
+            "Influence of narrative structure on reader experience",
+            "Examples from contemporary works"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Synthesis of Findings",
+          "points": [
+            "Interconnections between narrative techniques",
+            "Reflection of modern life complexities",
+            "Implications for future literary studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Implications for Readers",
+          "points": [
+            "Enhanced engagement with texts",
+            "Active role in interpretation",
+            "Understanding of identity and memory complexities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Writers",
+          "points": [
+            "Adoption of innovative narrative techniques",
+            "Reflection of societal changes",
+            "Encouragement of diverse storytelling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Exploration of emerging narrative forms",
+            "Impact of digital storytelling",
+            "Cultural studies perspectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Narrative theory's role in contemporary fiction",
+            "Reflection of modern realities",
+            "Importance of reader engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

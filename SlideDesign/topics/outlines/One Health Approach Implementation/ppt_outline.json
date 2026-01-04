@@ -1,0 +1,299 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is One Health?",
+          "points": [
+            "Definition of One Health",
+            "Interconnectedness of health domains",
+            "Historical evolution of the concept"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of One Health",
+          "points": [
+            "Addressing complex health challenges",
+            "Enhancing disease prevention",
+            "Promoting sustainable health outcomes",
+            "Collaboration across sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Presentation",
+          "points": [
+            "Situation: Current health landscape",
+            "Conflict: Challenges in implementation",
+            "Resolution: Strategies for success",
+            "Outcome: Future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Health Landscape",
+          "points": [
+            "Rising zoonotic diseases",
+            "Environmental degradation",
+            "Impact of climate change on health",
+            "Global health threats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Origins of One Health concept",
+            "Evolution from 'One Medicine'",
+            "Key milestones in One Health development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interdependence of Health Domains",
+          "points": [
+            "Human health and zoonoses",
+            "Animal health and food security",
+            "Environmental health and ecosystem stability",
+            "Case studies highlighting interconnections"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Integrated Approaches",
+          "points": [
+            "Limitations of siloed health strategies",
+            "Benefits of collaborative frameworks",
+            "Examples of successful integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Implementation",
+          "points": [
+            "Lack of political will",
+            "Financial constraints",
+            "Communication barriers",
+            "Weak governance structures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: COVID-19 Pandemic",
+          "points": [
+            "Impact on global health systems",
+            "Lessons learned about zoonotic transmission",
+            "Need for coordinated response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Barriers to Effective Collaboration",
+          "points": [
+            "Misunderstandings between sectors",
+            "Lack of shared objectives",
+            "Insufficient training programs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Resource Allocation Issues",
+          "points": [
+            "Funding gaps for One Health initiatives",
+            "Prioritization of health sectors",
+            "Need for sustainable investment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Strategies for Successful Implementation",
+          "points": [
+            "Enhancing political commitment",
+            "Improving resource allocation",
+            "Fostering stakeholder collaboration",
+            "Developing comprehensive training programs",
+            "Creating integrated surveillance systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "National Frameworks",
+          "points": [
+            "U.S. National One Health Framework",
+            "Global initiatives by Quadripartite",
+            "Local success stories"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Building Partnerships",
+          "points": [
+            "Collaboration among healthcare providers",
+            "Engagement with policymakers",
+            "Involvement of community stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Communication and Education",
+          "points": [
+            "Raising awareness about One Health",
+            "Training programs for professionals",
+            "Public engagement strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Monitoring and Evaluation",
+          "points": [
+            "Establishing metrics for success",
+            "Regular assessment of strategies",
+            "Adapting approaches based on feedback"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Expected Outcomes of One Health Implementation",
+          "points": [
+            "Improved public health",
+            "Enhanced animal health",
+            "Sustainable environmental practices",
+            "Resilience against health threats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Benefits",
+          "points": [
+            "Economic stability through healthy ecosystems",
+            "Reduction in disease outbreaks",
+            "Strengthened global health security"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Success",
+          "points": [
+            "Examples of effective One Health initiatives",
+            "Impact on local communities",
+            "Lessons learned from successful implementations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Prioritize One Health in policy agendas",
+            "Invest in collaborative frameworks",
+            "Engage all stakeholders for a unified approach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Next Steps for One Health",
+          "points": [
+            "Enhancing political commitment",
+            "Increasing funding for initiatives",
+            "Developing regional strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for the Future",
+          "points": [
+            "A sustainable health ecosystem",
+            "Global collaboration for health security",
+            "Empowered communities and stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

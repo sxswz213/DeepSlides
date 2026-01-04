@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Future Directions": 2,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Disease Resistance Breeding",
+          "points": [
+            "Definition of disease resistance breeding",
+            "Importance in modern agriculture",
+            "Impact on food security"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Challenges in Agriculture",
+          "points": [
+            "Rising global food demand",
+            "Evolving plant pathogens",
+            "Need for resilient crop varieties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore breeding techniques",
+            "Discuss types of disease resistance",
+            "Highlight molecular approaches and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Breeding Techniques Overview",
+          "points": [
+            "Traditional methods: pedigree and backcross breeding",
+            "Modern techniques: molecular breeding and gene pyramiding",
+            "Integration of techniques for robust varieties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Disease Resistance",
+          "points": [
+            "Vertical resistance: complete protection",
+            "Horizontal resistance: durable, partial protection",
+            "Implications for breeding strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Disease Resistance",
+          "points": [
+            "Role in sustainable agriculture",
+            "Impact on crop yield and quality",
+            "Contribution to environmental health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Traditional Breeding Methods",
+          "points": [
+            "Pedigree breeding: selecting desirable traits",
+            "Backcross breeding: enhancing specific traits",
+            "Time-consuming but effective"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Molecular Breeding Techniques",
+          "points": [
+            "Marker-assisted selection (MAS)",
+            "Use of genetic markers for trait identification",
+            "Speeding up the breeding process"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Gene Pyramiding",
+          "points": [
+            "Stacking multiple resistance genes",
+            "Broader spectrum of protection",
+            "Reducing resistance breakdown risk"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration of Techniques",
+          "points": [
+            "Combining traditional and modern methods",
+            "Enhancing breeding efficiency",
+            "Developing robust crop varieties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Findings on Resistance Types",
+          "points": [
+            "Vertical resistance: immediate but less durable",
+            "Horizontal resistance: long-lasting and broad",
+            "Importance of both in breeding strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Molecular Approaches Impact",
+          "points": [
+            "Efficiency of marker-assisted selection",
+            "Transgenic methods for enhanced resistance",
+            "Gene pyramiding for durability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Disease Resistance Breeding",
+          "points": [
+            "Evolving pathogens and resistance breakdown",
+            "Need for continuous innovation",
+            "Balancing immediate and long-term strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Successful Breeding",
+          "points": [
+            "Examples of crops with improved resistance",
+            "Impact on yield and sustainability",
+            "Lessons learned from successful programs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Prospects in Breeding",
+          "points": [
+            "Emerging technologies in genetic engineering",
+            "Potential of CRISPR/Cas9 in breeding",
+            "Importance of genomic studies for resistance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications for Food Security",
+          "points": [
+            "Role of disease-resistant crops in food supply",
+            "Impact on global agricultural practices",
+            "Addressing climate change challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainability in Agriculture",
+          "points": [
+            "Long-term benefits of disease resistance breeding",
+            "Reducing reliance on chemical treatments",
+            "Promoting biodiversity in crops"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration and Research Needs",
+          "points": [
+            "Importance of interdisciplinary research",
+            "Collaboration between public and private sectors",
+            "Funding and support for innovative projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Perception and Acceptance",
+          "points": [
+            "Challenges in GMO acceptance",
+            "Education on benefits of disease resistance",
+            "Engaging stakeholders in breeding initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Advancements in Genetic Technologies",
+          "points": [
+            "CRISPR/Cas9 and its applications",
+            "Potential for rapid development of resistant crops",
+            "Targeting multiple genes for enhanced resistance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Understanding Pathogen Dynamics",
+          "points": [
+            "Importance of studying pathogen evolution",
+            "Informing breeding strategies for durability",
+            "Adapting to changing agricultural landscapes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Importance of disease resistance breeding",
+            "Integration of traditional and modern techniques",
+            "Future directions for sustainable agriculture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

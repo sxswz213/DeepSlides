@@ -1,0 +1,336 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Oncology": 3,
+    "Personalized Medicine Overview": 3,
+    "Methodology": 4,
+    "Case Studies": 4,
+    "Results and Findings": 3,
+    "Challenges and Limitations": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Personalized Oncology",
+          "points": [
+            "Definition of personalized oncology",
+            "Importance in cancer treatment",
+            "Shift from traditional methods",
+            "Focus on individual patient characteristics",
+            "Potential to improve outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Personalized Therapies",
+          "points": [
+            "Tailored treatment strategies",
+            "Utilization of genetic profiling",
+            "Impact on patient survival rates",
+            "Reduction of side effects",
+            "Revolutionizing cancer care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore principles of personalized oncology",
+            "Discuss technological advancements",
+            "Present case studies",
+            "Identify challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Oncology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Traditional Oncology Approaches",
+          "points": [
+            "One-size-fits-all treatment",
+            "Limited role of genetic profiling",
+            "Variable patient outcomes",
+            "Challenges in treatment efficacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emergence of Personalized Medicine",
+          "points": [
+            "Definition and principles",
+            "Role of genetic and molecular profiling",
+            "Advancements in technology",
+            "Shift towards targeted therapies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts in Personalized Oncology",
+          "points": [
+            "Genetic mutations and their implications",
+            "Biochemical factors influencing treatment",
+            "Lifestyle factors affecting patient response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Personalized Medicine Overview",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Principles of Personalized Oncology",
+          "points": [
+            "Tailored treatment based on genetic makeup",
+            "Identification of specific mutations",
+            "Targeted therapies for improved efficacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Integration",
+          "points": [
+            "Role of AI and ML in oncology",
+            "Advanced imaging techniques",
+            "Data analysis for treatment pathways",
+            "Predictive modeling for patient outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient-Centric Approach",
+          "points": [
+            "Involvement of patients in treatment decisions",
+            "Understanding patient preferences",
+            "Enhancing patient engagement and adherence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative analysis",
+            "Case study selection criteria",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Genomic databases",
+            "Clinical trial results",
+            "Patient records",
+            "Literature review"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical analysis of outcomes",
+            "Comparative analysis of case studies",
+            "Ethical considerations in data usage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Potential biases in data",
+            "Generalizability of findings",
+            "Challenges in accessing diverse patient populations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: Imatinib for CML",
+          "points": [
+            "Targeted therapy for BCR-ABL mutation",
+            "Significant improvement in survival rates",
+            "Comparison with traditional chemotherapy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Erlotinib in Lung Cancer",
+          "points": [
+            "Use in patients with EGFR mutations",
+            "Clinical trial outcomes",
+            "Benefits over standard chemotherapy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tumor-Agnostic Therapies",
+          "points": [
+            "Approval of pembrolizumab for high TMB",
+            "Broader application across cancer types",
+            "Impact on treatment paradigms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from Case Studies",
+          "points": [
+            "Importance of genetic profiling",
+            "Efficacy of targeted therapies",
+            "Need for ongoing research and adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Findings",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings from Case Studies",
+          "points": [
+            "Improved patient outcomes with personalized therapies",
+            "Reduction in adverse effects",
+            "Enhanced treatment adherence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Technology on Personalized Oncology",
+          "points": [
+            "Increased diagnostic accuracy",
+            "Streamlined treatment planning",
+            "Role of AI in predictive modeling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient Perspectives on Personalized Care",
+          "points": [
+            "Increased satisfaction with tailored treatments",
+            "Desire for involvement in decision-making",
+            "Importance of clear communication with healthcare providers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Ethical Considerations",
+          "points": [
+            "Data privacy concerns",
+            "Algorithmic bias risks",
+            "Equitable distribution of therapies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Accessibility Issues",
+          "points": [
+            "Socioeconomic barriers",
+            "Geographic limitations",
+            "Need for policy changes to improve access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Advancements in Research",
+          "points": [
+            "Ongoing studies in genetic profiling",
+            "Development of new targeted therapies",
+            "Integration of AI in clinical practice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ensuring Equitable Access",
+          "points": [
+            "Strategies to overcome socioeconomic barriers",
+            "Collaboration among stakeholders",
+            "Policy recommendations for improved access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

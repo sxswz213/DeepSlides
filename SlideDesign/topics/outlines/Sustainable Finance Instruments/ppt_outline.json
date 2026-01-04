@@ -1,0 +1,307 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Perspectives": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Sustainable Finance Instruments",
+          "points": [
+            "Definition of sustainable finance instruments",
+            "Importance in addressing climate change",
+            "Role in responsible investment practices",
+            "Overview of key instruments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Growing Demand for Sustainability",
+          "points": [
+            "Global economic shift towards sustainability",
+            "Investor interest in ESG initiatives",
+            "Impact of climate change on investment strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Sustainable Finance Instruments",
+          "points": [
+            "Green bonds",
+            "Social bonds",
+            "Sustainability-linked loans",
+            "Green loans",
+            "Market growth statistics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Sustainable Finance",
+          "points": [
+            "Market valuation in 2024",
+            "Projected growth rates",
+            "Key players in the market",
+            "Record issuance of green bonds"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Facing Sustainable Finance",
+          "points": [
+            "Greenwashing concerns",
+            "Lack of standardization",
+            "Transparency issues in ESG reporting",
+            "Investor skepticism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Landscape",
+          "points": [
+            "EU Green Deal objectives",
+            "Global regulatory frameworks",
+            "Impact on sustainable investments",
+            "Need for clear guidelines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Perspectives",
+          "points": [
+            "Institutional vs. retail investors",
+            "Investor motivations",
+            "Importance of aligning investments with values"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "The Greenwashing Dilemma",
+          "points": [
+            "Definition of greenwashing",
+            "Examples of misleading claims",
+            "Impact on investor trust",
+            "Consequences for companies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Standardization Challenges",
+          "points": [
+            "Inconsistency in ESG metrics",
+            "Difficulty in assessing sustainability",
+            "Investor confusion",
+            "Need for universal standards"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transparency Issues",
+          "points": [
+            "Importance of clear ESG reporting",
+            "Current reporting frameworks",
+            "Challenges in data accuracy",
+            "Investor demand for transparency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Dynamics and Risks",
+          "points": [
+            "Regulatory uncertainties",
+            "Impact of greenwashing on market growth",
+            "Need for robust frameworks",
+            "Potential for investor backlash"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Enhancing Transparency in Sustainable Finance",
+          "points": [
+            "Importance of clear communication",
+            "Role of technology in reporting",
+            "Data analytics for ESG factors",
+            "Building investor confidence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Developing Standardized Frameworks",
+          "points": [
+            "Need for universal ESG metrics",
+            "Collaboration among stakeholders",
+            "Examples of successful frameworks",
+            "Benefits of standardization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Innovations",
+          "points": [
+            "Emerging regulations supporting sustainable finance",
+            "Impact of the EU Green Deal",
+            "Global initiatives for accountability",
+            "Future regulatory trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting Genuine Sustainable Practices",
+          "points": [
+            "Encouraging responsible corporate behavior",
+            "Incentives for sustainable investments",
+            "Role of investors in driving change",
+            "Case studies of successful projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration Among Stakeholders",
+          "points": [
+            "Importance of partnerships",
+            "Engagement between investors and companies",
+            "Role of NGOs and governments",
+            "Collective efforts for sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "The Future of Sustainable Finance",
+          "points": [
+            "Projected market growth",
+            "Increased investment in green projects",
+            "Role of technology in shaping the future",
+            "Emerging trends in sustainable finance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Significance of sustainable finance instruments",
+            "Challenges to address for credibility",
+            "Importance of collaboration and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Stakeholders",
+          "points": [
+            "Encouraging responsible investment",
+            "Advocating for transparency",
+            "Supporting regulatory initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Summary of key points",
+            "The role of sustainable finance in achieving global goals",
+            "Future outlook for sustainable investments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Perspectives",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Sustainable Finance",
+          "points": [
+            "Technological advancements",
+            "Increased focus on social impact",
+            "Integration of ESG factors in investment decisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for a Sustainable Future",
+          "points": [
+            "Long-term goals for sustainable finance",
+            "Role of innovation in driving change",
+            "Collective responsibility for a sustainable world"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Types of Minimal-Invasive Surgical Techniques": 4,
+    "Advantages and Disadvantages": 3,
+    "Methodology": 3,
+    "Results": 3,
+    "Future Trends": 2,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Minimally Invasive Surgery",
+          "points": [
+            "Definition of minimally invasive surgery",
+            "Importance in modern medicine",
+            "Comparison with traditional surgery",
+            "Patient safety and efficiency",
+            "Technological advancements driving change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of surgical techniques",
+            "Key milestones in minimally invasive surgery",
+            "Impact on patient care",
+            "Current trends in surgical practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "To explore types of minimally invasive techniques",
+            "To analyze benefits and risks",
+            "To discuss technological advancements",
+            "To highlight future trends in surgery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Minimally Invasive Surgery?",
+          "points": [
+            "Definition and characteristics",
+            "Common procedures involved",
+            "Comparison with open surgery",
+            "Patient demographics and suitability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Minimally Invasive Techniques",
+          "points": [
+            "Reduction in recovery time",
+            "Lower complication rates",
+            "Enhanced patient satisfaction",
+            "Cost-effectiveness for healthcare systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape of Surgical Practices",
+          "points": [
+            "Statistics on surgical outcomes",
+            "Trends in patient preferences",
+            "Integration of technology in surgery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Minimal-Invasive Surgical Techniques",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Laparoscopic Surgery",
+          "points": [
+            "Small incisions",
+            "Use of camera and instruments",
+            "Benefits: less pain, quicker recovery",
+            "Common applications",
+            "Limitations and risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Robotic Surgery",
+          "points": [
+            "Robotic-assisted techniques",
+            "Enhanced precision and dexterity",
+            "Benefits: reduced hospital stay",
+            "Examples of robotic systems",
+            "Challenges and costs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Endoluminal Techniques",
+          "points": [
+            "Access through natural openings",
+            "Applications in gastrointestinal surgeries",
+            "Benefits: no external incisions",
+            "Limitations and specific use cases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Techniques",
+          "points": [
+            "Overview of key techniques",
+            "Benefits and risks of each",
+            "Suitability for different conditions",
+            "Future potential of each technique"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Advantages and Disadvantages",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Benefits of Minimally Invasive Surgery",
+          "points": [
+            "Reduced postoperative pain",
+            "Shorter recovery times",
+            "Lower complication rates",
+            "Improved patient outcomes",
+            "Cost savings for healthcare systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Risks and Limitations",
+          "points": [
+            "Not suitable for all cases",
+            "Potential for complications",
+            "Learning curve for surgeons",
+            "Higher initial costs",
+            "Need for advanced technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient Considerations",
+          "points": [
+            "Individual patient assessment",
+            "Informed consent process",
+            "Discussion of risks and benefits",
+            "Importance of surgeon experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review of current studies",
+            "Analysis of surgical outcomes",
+            "Surveys of patient experiences",
+            "Interviews with surgical professionals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Qualitative and quantitative methods",
+            "Use of case studies",
+            "Statistical analysis of outcomes",
+            "Patient feedback mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Criteria for assessing surgical techniques",
+            "Metrics for patient outcomes",
+            "Comparison of traditional vs. minimally invasive methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings",
+          "points": [
+            "Improved recovery times",
+            "Lower rates of complications",
+            "Patient satisfaction levels",
+            "Cost-effectiveness analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistical Analysis",
+          "points": [
+            "Data on surgical outcomes",
+            "Comparative analysis of techniques",
+            "Trends in patient demographics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies",
+          "points": [
+            "Examples of successful minimally invasive surgeries",
+            "Patient testimonials",
+            "Long-term outcomes and follow-ups"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Technological Innovations",
+          "points": [
+            "Emerging robotic systems",
+            "Advancements in imaging technology",
+            "Integration of AI in surgery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Minimally Invasive Surgery",
+          "points": [
+            "Potential for new techniques",
+            "Expansion of applications",
+            "Ongoing research and development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Points",
+          "points": [
+            "Overview of minimally invasive techniques",
+            "Benefits and risks discussed",
+            "Technological advancements highlighted"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of personalized surgical approaches",
+            "Future of minimally invasive surgery",
+            "Call for continued research and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

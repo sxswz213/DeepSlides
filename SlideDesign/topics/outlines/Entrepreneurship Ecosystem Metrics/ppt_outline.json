@@ -1,0 +1,355 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 3,
+    "Methodology": 4,
+    "Key Metrics of Entrepreneurship Ecosystem": 4,
+    "Data Analysis": 4,
+    "Results": 2,
+    "Discussion": 2,
+    "Recommendations": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Entrepreneurship Ecosystems",
+          "points": [
+            "Definition of entrepreneurship ecosystems",
+            "Importance in economic growth",
+            "Role in innovation",
+            "Stakeholders involved",
+            "Objectives of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Metrics",
+          "points": [
+            "Understanding ecosystem health",
+            "Informing policy decisions",
+            "Enhancing local environments",
+            "Stimulating economic development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Report Structure",
+          "points": [
+            "Introduction to metrics",
+            "Key categories of metrics",
+            "Case studies and examples",
+            "Conclusion and recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Defining Entrepreneurship Ecosystem Metrics",
+          "points": [
+            "Quantifiable measures",
+            "Focus on interactions",
+            "Differences from general economic indicators",
+            "Importance for stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Categories of Metrics",
+          "points": [
+            "Innovation",
+            "Centers of commerce",
+            "Small business hubs",
+            "Importance of each category"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Indicators of Vibrancy",
+          "points": [
+            "Density",
+            "Fluidity",
+            "Connectivity",
+            "Diversity",
+            "Impact on ecosystem health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Qualitative and quantitative methods",
+            "Data collection techniques",
+            "Sources of information",
+            "Analysis framework"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Metric Selection Criteria",
+          "points": [
+            "Relevance to entrepreneurship",
+            "Availability of data",
+            "Ability to inform policy",
+            "Comparative analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Academic journals",
+            "Government reports",
+            "Case studies",
+            "Surveys and interviews"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Comparative metrics",
+            "Case study evaluation",
+            "Visualization of data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Metrics of Entrepreneurship Ecosystem",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Innovation Metrics",
+          "points": [
+            "Patents",
+            "High-tech density",
+            "Educational attainment",
+            "Impact on productivity",
+            "Correlation with economic growth"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Centers of Commerce Metrics",
+          "points": [
+            "High-growth firms",
+            "Business environments",
+            "Presence of universities",
+            "Employment impact",
+            "Gross regional product"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Small Business Hubs Metrics",
+          "points": [
+            "Employment share in new firms",
+            "Population flux",
+            "Local economic impact",
+            "Comparison with other metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Key Metrics",
+          "points": [
+            "Categorization of metrics",
+            "Importance of each category",
+            "Interconnectedness of metrics",
+            "Implications for stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Analysis of Innovation Metrics",
+          "points": [
+            "Trends in patents",
+            "High-tech industry growth",
+            "Regional comparisons",
+            "Impact on startup success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis of Centers of Commerce",
+          "points": [
+            "Growth of high-growth firms",
+            "Business environment assessments",
+            "Role of universities",
+            "Economic contributions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis of Small Business Hubs",
+          "points": [
+            "Employment trends in new firms",
+            "Sectoral analysis",
+            "Local economic contributions",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overall Ecosystem Health Assessment",
+          "points": [
+            "Integration of metrics",
+            "Strengths and weaknesses",
+            "Comparative analysis across regions",
+            "Recommendations for improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Findings from Data Analysis",
+          "points": [
+            "Summary of trends",
+            "Impact of metrics on ecosystem health",
+            "Regional variations",
+            "Policy implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies Overview",
+          "points": [
+            "Pomorskie region",
+            "Roanoke-Blacksburg ecosystem",
+            "Singapore's entrepreneurial environment",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Stakeholders",
+          "points": [
+            "Policy recommendations",
+            "Strategies for enhancing ecosystems",
+            "Importance of tailored approaches",
+            "Collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Longitudinal studies",
+            "Impact of emerging technologies",
+            "Comparative studies across regions",
+            "Focus on sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Recommendations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Strategies for Enhancing Ecosystems",
+          "points": [
+            "Investment in innovation",
+            "Support for high-growth firms",
+            "Development of small business hubs",
+            "Fostering connectivity and diversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Next Steps",
+          "points": [
+            "Summary of key insights",
+            "Call to action for stakeholders",
+            "Importance of continuous measurement",
+            "Vision for future entrepreneurship ecosystems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

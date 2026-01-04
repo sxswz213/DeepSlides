@@ -1,0 +1,293 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Conclusion": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Social Determinants of Health",
+          "points": [
+            "Definition of SDOH",
+            "Importance in global health",
+            "Impact on health outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts in SDOH",
+          "points": [
+            "Economic stability",
+            "Education",
+            "Healthcare access",
+            "Neighborhood environment",
+            "Social context"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Examine SDOH",
+            "Highlight health disparities",
+            "Discuss global initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding SDOH",
+          "points": [
+            "Conditions of life",
+            "Influence on health outcomes",
+            "Contribution to health disparities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistics on SDOH Impact",
+          "points": [
+            "80-90% of health outcomes from SDOH",
+            "Comparison with medical care",
+            "Socioeconomic status and health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of SDOH concept",
+            "Global recognition",
+            "Role of WHO"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Data analysis",
+            "Case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "WHO reports",
+            "Public health databases",
+            "Peer-reviewed articles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Qualitative analysis",
+            "Quantitative metrics",
+            "Comparative studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Engagement",
+          "points": [
+            "Interviews with experts",
+            "Community surveys",
+            "Policy analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Findings on Economic Stability",
+          "points": [
+            "Access to healthcare",
+            "Nutrition and health",
+            "Financial security impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Education and Health Outcomes",
+          "points": [
+            "Job opportunities",
+            "Health literacy",
+            "Chronic disease rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Healthcare Access Barriers",
+          "points": [
+            "Insurance coverage",
+            "Geographic disparities",
+            "Timeliness of care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Neighborhood Environment Effects",
+          "points": [
+            "Safety and health behaviors",
+            "Access to healthy food",
+            "Community resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Context and Community Support",
+          "points": [
+            "Mental health implications",
+            "Social networks",
+            "Community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Need for policy change",
+            "Importance of community engagement",
+            "Focus on health equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Initiatives Overview",
+          "points": [
+            "WHO's Special Initiative",
+            "Sustainable Development Goals",
+            "Intersectoral collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Addressing SDOH",
+          "points": [
+            "Socio-economic disparities",
+            "Political barriers",
+            "Data limitations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Targeted interventions",
+            "Cross-sector collaboration",
+            "Community-driven solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Summary of Key Points",
+          "points": [
+            "Role of SDOH in health outcomes",
+            "Global initiatives",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Engage stakeholders",
+            "Implement policies",
+            "Promote health equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of addressing SDOH",
+            "Vision for healthier communities",
+            "Commitment to equity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

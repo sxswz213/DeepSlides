@@ -1,0 +1,330 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 3,
+    "Methodology": 4,
+    "Materials Tested": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Conclusion": 2,
+    "Future Work": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Biocompatibility Testing",
+          "points": [
+            "Definition of biocompatibility",
+            "Importance in medical devices",
+            "Key objectives of testing",
+            "Regulatory implications",
+            "Market relevance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Biocompatibility",
+          "points": [
+            "Ensures patient safety",
+            "Facilitates market access",
+            "Reduces risk of adverse reactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "ISO 10993 Standards",
+          "points": [
+            "Overview of ISO 10993",
+            "Importance of compliance",
+            "Framework for testing methodologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Biocompatibility Testing",
+          "points": [
+            "Evolution of testing methods",
+            "Key milestones in biocompatibility",
+            "Impact of regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Testing",
+          "points": [
+            "Shift towards in vitro methods",
+            "Emerging technologies",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Biocompatibility Testing",
+          "points": [
+            "Regulatory complexities",
+            "Standardization issues",
+            "Adoption of new methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Testing Methodologies Overview",
+          "points": [
+            "Types of biocompatibility tests",
+            "Importance of risk management",
+            "ISO 10993 framework"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Big Three Tests",
+          "points": [
+            "Cytotoxicity testing",
+            "Irritation testing",
+            "Sensitization testing",
+            "Additional tests (genotoxicity, hemocompatibility)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "In Vitro vs. In Vivo Testing",
+          "points": [
+            "Advantages of in vitro testing",
+            "Limitations of in vivo testing",
+            "Regulatory acceptance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis and Interpretation",
+          "points": [
+            "Statistical methods used",
+            "Evaluating test results",
+            "Reporting findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Materials Tested",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Types of Materials in Medical Devices",
+          "points": [
+            "Metals",
+            "Polymers",
+            "Ceramics",
+            "Composites"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Selection Criteria for Testing",
+          "points": [
+            "Material properties",
+            "Intended use",
+            "Contact duration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Tested Materials",
+          "points": [
+            "Examples of successful biocompatible materials",
+            "Lessons learned from failures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Summary of Testing Outcomes",
+          "points": [
+            "Overview of results",
+            "Key findings from the Big Three tests",
+            "Comparison of materials tested"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistical Analysis of Results",
+          "points": [
+            "Data visualization techniques",
+            "Interpretation of statistical significance",
+            "Trends observed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Compliance Outcomes",
+          "points": [
+            "Success rates of submissions",
+            "Common reasons for non-compliance",
+            "Impact on market access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Trends in Results",
+          "points": [
+            "Shift towards digital technologies",
+            "Increased focus on personalized medicine",
+            "Future implications for testing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Impact on patient safety",
+            "Influence on regulatory practices",
+            "Market implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of Current Testing",
+          "points": [
+            "Challenges in methodology",
+            "Need for standardization",
+            "Ethical concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Biocompatibility Testing",
+          "points": [
+            "Integration of innovative methods",
+            "Focus on personalized approaches",
+            "Collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Importance of biocompatibility testing",
+            "Role of the Big Three tests",
+            "Regulatory frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Future of biocompatibility testing",
+            "Need for continuous improvement",
+            "Call to action for industry stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Work",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Opportunities",
+          "points": [
+            "Exploration of new materials",
+            "Development of alternative testing methods",
+            "Long-term studies on biocompatibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration and Standardization Efforts",
+          "points": [
+            "Importance of harmonizing standards",
+            "Engagement with regulatory bodies",
+            "Industry partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

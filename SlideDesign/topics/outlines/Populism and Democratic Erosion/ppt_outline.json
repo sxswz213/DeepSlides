@@ -1,0 +1,316 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 5,
+    "Question": 3,
+    "Answer": 5,
+    "Case Studies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Populism",
+          "points": [
+            "Definition of populism",
+            "Dichotomy: 'the people' vs 'the elite'",
+            "Forms of populism: left-wing and right-wing",
+            "Historical context and rise in contemporary politics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Democratic Erosion Overview",
+          "points": [
+            "Definition of democratic erosion",
+            "Importance of democratic norms",
+            "Impact of populism on democracy",
+            "Need for analysis of this relationship"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "Explore the relationship between populism and democratic erosion",
+            "Analyze various forms of populism",
+            "Examine case studies",
+            "Discuss implications for future governance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Political Landscape",
+          "points": [
+            "Rise of populism globally",
+            "Challenges to established democracies",
+            "Mobilization of citizens",
+            "Impact on political engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Forms of Populism",
+          "points": [
+            "Left-wing populism: social justice and equality",
+            "Right-wing populism: nationalism and exclusion",
+            "Differences in defining 'the people'",
+            "Electoral strategies and bases of support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Institutional Resilience",
+          "points": [
+            "Established democracies vs emerging democracies",
+            "Role of strong institutions",
+            "Examples of resilience in Western democracies",
+            "Consequences of weak institutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Civil Liberties",
+          "points": [
+            "Polarization and distrust in established democracies",
+            "Centralization of power in emerging democracies",
+            "Suppression of dissent",
+            "Erosion of media freedoms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Populism's Threat to Democratic Norms",
+          "points": [
+            "Undermining checks and balances",
+            "Concentration of power in executive",
+            "Attacks on judiciary and media",
+            "Erosion of civil liberties",
+            "Impact on political rights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Hungary",
+          "points": [
+            "Viktor Orbán's Fidesz party",
+            "Judicial reforms and media control",
+            "Establishment of 'illiberal democracy'",
+            "Marginalization of dissenting voices",
+            "Consequences for civil liberties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: United States",
+          "points": [
+            "Rise of populism under Trump",
+            "Attacks on judiciary and media",
+            "Polarization and distrust in institutions",
+            "Exploitation of societal divisions",
+            "Impact on democratic integrity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Venezuela",
+          "points": [
+            "Nicolás Maduro's regime",
+            "Consolidation of power",
+            "Suppression of dissent",
+            "Erosion of democratic processes",
+            "Impact on civil society"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Populism's Effects",
+          "points": [
+            "Established vs emerging democracies",
+            "Resistance from strong institutions",
+            "Varying impacts on civil liberties",
+            "Political culture's role",
+            "Legitimate grievances vs populist exploitation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Questions to Consider",
+          "points": [
+            "How does populism mobilize citizens?",
+            "What are the implications for democratic governance?",
+            "How can democratic institutions be strengthened?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Ahead",
+          "points": [
+            "Balancing responsiveness to popular demands",
+            "Preserving democratic norms and values",
+            "Addressing grievances without undermining democracy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Democracy",
+          "points": [
+            "Potential outcomes of ongoing populism",
+            "Role of civil society",
+            "Importance of institutional resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Strengthening Democratic Institutions",
+          "points": [
+            "Importance of institutional frameworks",
+            "Promoting civic engagement",
+            "Addressing root causes of populism",
+            "Encouraging political pluralism",
+            "Fostering public trust in institutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons from Case Studies",
+          "points": [
+            "Understanding the dynamics of populism",
+            "Recognizing the signs of democratic erosion",
+            "Learning from successful resistance",
+            "Importance of international support",
+            "Role of education in promoting democracy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion: The Path Forward",
+          "points": [
+            "Vigilance in protecting democratic norms",
+            "Addressing legitimate grievances",
+            "Strengthening checks and balances",
+            "Promoting inclusive political dialogue",
+            "Ensuring the integrity of governance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Engage in civic activities",
+            "Support democratic institutions",
+            "Advocate for transparency and accountability",
+            "Participate in political processes",
+            "Foster community discussions on democracy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Populism's dual nature: mobilization vs erosion",
+            "The need for a balanced approach",
+            "Future implications for global democracy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Case Studies",
+          "points": [
+            "Hungary: illiberal democracy",
+            "United States: populism and polarization",
+            "Venezuela: authoritarianism under populism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Insights",
+          "points": [
+            "Impact of institutional strength",
+            "Role of political culture",
+            "Lessons learned from different contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

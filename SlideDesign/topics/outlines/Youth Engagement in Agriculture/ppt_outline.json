@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 4,
+    "Outcome": 3,
+    "Call to Action": 2,
+    "Future Perspectives": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "The Importance of Youth in Agriculture",
+          "points": [
+            "Youth as key drivers of innovation",
+            "Addressing food security challenges",
+            "Revitalizing rural economies",
+            "Promoting sustainable practices",
+            "Harnessing technology for modern farming"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Global Context",
+          "points": [
+            "Growing global population",
+            "Increased demand for food",
+            "Need for sustainable agricultural practices",
+            "Youth demographics in agriculture",
+            "Potential for transformation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore youth engagement significance",
+            "Identify challenges faced",
+            "Highlight successful initiatives",
+            "Discuss technology's role",
+            "Propose actionable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Youth Engagement",
+          "points": [
+            "Limited youth participation in agriculture",
+            "Perception of agriculture as unattractive",
+            "Barriers to entry for young farmers",
+            "Need for skill development",
+            "Importance of inclusive policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Youth Demographics",
+          "points": [
+            "Youth as a significant portion of the population",
+            "Potential to influence agricultural practices",
+            "Diverse backgrounds and experiences",
+            "Role in driving change",
+            "Engagement in sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Impact of Youth in Agriculture",
+          "points": [
+            "Youth entrepreneurship opportunities",
+            "Job creation in rural areas",
+            "Contribution to local economies",
+            "Innovation in agricultural practices",
+            "Sustainable development goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Societal Perceptions of Agriculture",
+          "points": [
+            "Negative stereotypes surrounding farming",
+            "Societal norms affecting career choices",
+            "Need for positive narratives",
+            "Importance of role models",
+            "Changing perceptions through education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Barriers to Youth Engagement",
+          "points": [
+            "Limited access to resources",
+            "Inadequate training and education",
+            "Financial constraints",
+            "Negative societal perceptions",
+            "Lack of mentorship opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Skill Development",
+          "points": [
+            "Insufficient training programs",
+            "Need for practical experience",
+            "Access to modern agricultural techniques",
+            "Importance of hands-on learning",
+            "Role of educational institutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Perception vs. Reality",
+          "points": [
+            "Misconceptions about agricultural careers",
+            "Comparison with other employment options",
+            "Need for awareness campaigns",
+            "Highlighting success stories",
+            "Engaging youth through social media"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Climate Change",
+          "points": [
+            "Challenges posed by climate change",
+            "Need for sustainable practices",
+            "Youth's role in climate resilience",
+            "Innovative solutions from young farmers",
+            "Importance of adaptive strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Successful Initiatives",
+          "points": [
+            "World Food Forum's Youth Assembly",
+            "Ambokili Farm training programs",
+            "Cooperative models in Nepal",
+            "Global youth networks",
+            "Empowerment through education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Technology in Engagement",
+          "points": [
+            "Digital tools for information access",
+            "Mobile applications for farmers",
+            "Precision farming technologies",
+            "Connecting youth with markets",
+            "Innovative agritech startups"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Targeted policies for youth engagement",
+            "Access to resources and training",
+            "Promoting positive perceptions of agriculture",
+            "Support for youth-led initiatives",
+            "Investment in agricultural education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Involvement and Support",
+          "points": [
+            "Engaging local communities",
+            "Building partnerships with organizations",
+            "Encouraging mentorship programs",
+            "Creating supportive networks",
+            "Fostering a culture of innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Benefits of Youth Engagement",
+          "points": [
+            "Enhanced food security",
+            "Revitalized rural economies",
+            "Sustainable agricultural practices",
+            "Increased innovation and efficiency",
+            "Empowered youth as change agents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Impact on Agriculture",
+          "points": [
+            "Resilient food systems",
+            "Sustainable practices for future generations",
+            "Youth as leaders in agriculture",
+            "Transforming perceptions of farming",
+            "Contributing to global food security"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call for Continued Support",
+          "points": [
+            "Importance of ongoing investment",
+            "Need for collaborative efforts",
+            "Encouraging youth participation",
+            "Promoting agricultural careers",
+            "Building a sustainable future"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Call to Action",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Engage with Youth Initiatives",
+          "points": [
+            "Support local programs",
+            "Participate in youth assemblies",
+            "Mentor young farmers",
+            "Advocate for policy changes",
+            "Share success stories"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Invest in the Future of Agriculture",
+          "points": [
+            "Support educational initiatives",
+            "Encourage technology adoption",
+            "Promote sustainable practices",
+            "Foster entrepreneurship",
+            "Build a resilient agricultural sector"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Perspectives",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "The Evolving Role of Youth",
+          "points": [
+            "Youth as innovators in agriculture",
+            "Adapting to changing global challenges",
+            "Embracing technology for sustainability",
+            "Leading the way in food security",
+            "Shaping the future of farming"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for Sustainable Agriculture",
+          "points": [
+            "A collaborative approach to farming",
+            "Empowered youth driving change",
+            "Sustainable practices for all",
+            "Resilient food systems for future generations",
+            "A thriving agricultural community"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

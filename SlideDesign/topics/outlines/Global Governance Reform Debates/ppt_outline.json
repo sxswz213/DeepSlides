@@ -1,0 +1,375 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background": 3,
+    "Current Global Governance Framework": 3,
+    "Key Reform Debates": 4,
+    "Case Studies": 4,
+    "Challenges to Reform": 3,
+    "Future Directions": 3,
+    "Recommendations": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Global Governance Reform",
+          "points": [
+            "Definition of global governance",
+            "Importance of reform",
+            "Key institutions involved",
+            "Current global challenges",
+            "Purpose of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Synthesize current debates",
+            "Highlight arguments for reform",
+            "Propose changes",
+            "Assess potential impacts",
+            "Encourage stakeholder engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Global Governance",
+          "points": [
+            "Formation of key institutions",
+            "Evolution of global governance",
+            "Impact of globalization",
+            "Emergence of new challenges",
+            "Role of developing nations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Global Governance Framework",
+          "points": [
+            "Overview of UN, IMF, World Bank",
+            "Functions of each institution",
+            "Challenges faced by these institutions",
+            "Criticism of existing structures",
+            "Need for adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Issues in Global Governance",
+          "points": [
+            "Poverty and economic inequality",
+            "Climate change and environmental sustainability",
+            "Health crises and pandemics",
+            "Geopolitical tensions",
+            "Resource scarcity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Global Governance Framework",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Roles of Major Institutions",
+          "points": [
+            "UN's role in peacekeeping",
+            "IMF's role in economic stability",
+            "World Bank's focus on poverty alleviation",
+            "Interconnectedness of these roles",
+            "Challenges in coordination"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Effectiveness of Current Framework",
+          "points": [
+            "Successes and failures",
+            "Perceived biases towards developed nations",
+            "Impact on developing countries",
+            "Legitimacy issues",
+            "Need for reform"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Alternatives",
+          "points": [
+            "Rise of new financial institutions",
+            "Impact of BRICS and G20",
+            "Challenges to Bretton Woods system",
+            "Potential for collaboration",
+            "Future of global governance landscape"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Reform Debates",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Arguments for Reform",
+          "points": [
+            "Need for enhanced representation",
+            "Importance of transparency",
+            "Accountability mechanisms",
+            "Integration of developing countries' perspectives",
+            "Addressing interconnected global issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Proposed Changes in Voting Structures",
+          "points": [
+            "Current voting power distribution",
+            "Reallocation proposals",
+            "Impact on decision-making",
+            "Equity in representation",
+            "Examples of successful reforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Leadership Selection Reforms",
+          "points": [
+            "Current selection practices",
+            "Calls for merit-based processes",
+            "Diversity in leadership roles",
+            "Impact on institutional legitimacy",
+            "Examples of proposed changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Operational Transparency",
+          "points": [
+            "Current transparency issues",
+            "Proposals for formalizing processes",
+            "Public accessibility of decision-making",
+            "Impact on accountability",
+            "Examples of best practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: UN Reforms",
+          "points": [
+            "Recent reforms in UN structure",
+            "Impact on global governance",
+            "Challenges faced",
+            "Success stories",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: IMF Governance Changes",
+          "points": [
+            "Overview of recent changes",
+            "Impact on member countries",
+            "Criticism and support",
+            "Future directions",
+            "Key stakeholders involved"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: World Bank Initiatives",
+          "points": [
+            "Recent initiatives for reform",
+            "Impact on poverty alleviation",
+            "Challenges in implementation",
+            "Success metrics",
+            "Stakeholder engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: New Development Bank",
+          "points": [
+            "Formation and purpose",
+            "Comparison with traditional institutions",
+            "Impact on global governance",
+            "Challenges faced",
+            "Future potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges to Reform",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Resistance from Established Powers",
+          "points": [
+            "Interests of developed nations",
+            "Fear of losing influence",
+            "Political dynamics",
+            "Impact on reform efforts",
+            "Examples of resistance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Complexity of Global Issues",
+          "points": [
+            "Interconnectedness of challenges",
+            "Difficulty in consensus-building",
+            "Need for coordinated responses",
+            "Impact on reform feasibility",
+            "Examples of complex issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implementation Barriers",
+          "points": [
+            "Institutional inertia",
+            "Lack of political will",
+            "Resource constraints",
+            "Public perception and trust",
+            "Examples of failed reforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Emerging Trends in Global Governance",
+          "points": [
+            "Increased multilateralism",
+            "Role of technology",
+            "Focus on sustainability",
+            "Youth engagement",
+            "Shift in power dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Potential for Collaborative Solutions",
+          "points": [
+            "Importance of partnerships",
+            "Role of civil society",
+            "Engagement of private sector",
+            "Innovative governance models",
+            "Examples of successful collaborations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for Reformed Global Governance",
+          "points": [
+            "Equitable representation",
+            "Enhanced accountability",
+            "Sustainable development focus",
+            "Inclusive decision-making",
+            "Long-term stability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Recommendations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Prioritizing Key Reforms",
+          "points": [
+            "Focus on voting power reallocation",
+            "Implement merit-based leadership selection",
+            "Enhance operational transparency",
+            "Engage stakeholders in the process",
+            "Monitor and evaluate reforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Stakeholders",
+          "points": [
+            "Encourage collaboration among nations",
+            "Promote awareness of reform needs",
+            "Support grassroots movements",
+            "Engage in dialogue with institutions",
+            "Advocate for inclusive policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

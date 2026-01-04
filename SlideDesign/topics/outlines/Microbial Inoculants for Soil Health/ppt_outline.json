@@ -1,0 +1,325 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Microbial Inoculants": 3,
+    "Importance of Soil Health": 3,
+    "Methodology": 4,
+    "Types of Microbial Inoculants": 3,
+    "Results and Findings": 3,
+    "Discussion": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Microbial Inoculants",
+          "points": [
+            "Definition of microbial inoculants",
+            "Importance in sustainable agriculture",
+            "Role in enhancing soil health",
+            "Challenges in conventional agriculture",
+            "Need for sustainable alternatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore significance of microbial inoculants",
+            "Identify types and applications",
+            "Assess impact on soil health",
+            "Evaluate benefits for agricultural productivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Focus on soil health",
+            "Impact on human health",
+            "Case studies and applications",
+            "Future directions in research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Microbial Inoculants",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Microbial Inoculants?",
+          "points": [
+            "Types of microorganisms involved",
+            "Functionality in soil ecosystems",
+            "Interaction with plants",
+            "Examples of common inoculants"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of agricultural practices",
+            "Shift from traditional to modern methods",
+            "Emergence of microbial solutions",
+            "Research advancements in microbial technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Agriculture",
+          "points": [
+            "Increased adoption of organic farming",
+            "Regulatory changes favoring sustainable practices",
+            "Consumer demand for chemical-free produce"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Importance of Soil Health",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Defining Soil Health",
+          "points": [
+            "Soil fertility and structure",
+            "Microbial diversity",
+            "Nutrient cycling",
+            "Water retention capacity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Soil Degradation",
+          "points": [
+            "Consequences of chemical inputs",
+            "Loss of biodiversity",
+            "Reduced crop yields",
+            "Environmental pollution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Healthy Soil",
+          "points": [
+            "Enhanced plant growth",
+            "Improved resilience to climate change",
+            "Sustainable food production",
+            "Support for ecosystem services"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative approaches",
+            "Field studies and laboratory experiments",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Selection of Case Studies",
+          "points": [
+            "Criteria for selecting successful applications",
+            "Geographical diversity",
+            "Crop variety considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Statistical methods used",
+            "Comparative analysis of results",
+            "Interpretation of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Scope of research",
+            "Potential biases",
+            "Challenges in data collection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Microbial Inoculants",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Bacterial Inoculants",
+          "points": [
+            "Role of nitrogen-fixing bacteria",
+            "Examples: Rhizobium, Azospirillum",
+            "Benefits for legumes and other crops"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fungal Inoculants",
+          "points": [
+            "Mycorrhizal fungi and their functions",
+            "Enhancing nutrient uptake",
+            "Improving soil structure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Algal Inoculants",
+          "points": [
+            "Contribution to nutrient cycling",
+            "Moisture retention",
+            "Stimulation of microbial activity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Findings",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Impact on Crop Yields",
+          "points": [
+            "Statistical increase in yields",
+            "Comparison with conventional methods",
+            "Long-term benefits observed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Soil Health Improvements",
+          "points": [
+            "Enhanced nutrient availability",
+            "Increased microbial diversity",
+            "Better soil structure and moisture retention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study Highlights",
+          "points": [
+            "Successful applications in various regions",
+            "Diverse crop types and conditions",
+            "Positive feedback from farmers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Sustainable Agriculture",
+          "points": [
+            "Reduction in chemical inputs",
+            "Long-term soil health benefits",
+            "Economic advantages for farmers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges and Considerations",
+          "points": [
+            "Need for education and training",
+            "Regulatory hurdles",
+            "Market acceptance of microbial products"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Opportunities",
+          "points": [
+            "Exploration of new microbial strains",
+            "Integration with other sustainable practices",
+            "Longitudinal studies on soil health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Support for microbial inoculant research",
+            "Incentives for farmers adopting sustainable practices",
+            "Public awareness campaigns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

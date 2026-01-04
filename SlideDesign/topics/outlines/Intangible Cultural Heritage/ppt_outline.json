@@ -1,0 +1,330 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Understanding Intangible Cultural Heritage": 4,
+    "Current Challenges and Conflicts": 4,
+    "Case Studies of Intangible Cultural Heritage": 4,
+    "Strategies for Preservation and Promotion": 4,
+    "Future Outlook and Importance": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Intangible Cultural Heritage?",
+          "points": [
+            "Definition of ICH",
+            "Importance of ICH",
+            "UNESCO's role",
+            "Cultural identity and diversity",
+            "Living traditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of ICH",
+          "points": [
+            "Fosters community identity",
+            "Promotes cultural diversity",
+            "Encourages creativity",
+            "Transmitted through generations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Presentation",
+          "points": [
+            "Understanding ICH",
+            "Current challenges",
+            "Case studies",
+            "Strategies for preservation",
+            "Future outlook"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Understanding Intangible Cultural Heritage",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Domains of ICH",
+          "points": [
+            "Oral traditions",
+            "Performing arts",
+            "Social practices",
+            "Knowledge of nature",
+            "Traditional craftsmanship"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Oral Traditions and Expressions",
+          "points": [
+            "Forms of spoken art",
+            "Transmission of cultural values",
+            "Role of storytellers",
+            "Collective memory",
+            "Cultural identity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Performing Arts",
+          "points": [
+            "Music, dance, and theatre",
+            "Cultural reflection",
+            "Medium for storytelling",
+            "Community expression",
+            "Ritual significance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Practices and Rituals",
+          "points": [
+            "Community life shaping",
+            "Significant events",
+            "Sense of belonging",
+            "Cultural continuity",
+            "Festive events"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Challenges and Conflicts",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Globalization and Cultural Homogenization",
+          "points": [
+            "Erosion of local identities",
+            "Dominance of global cultures",
+            "Loss of cultural diversity",
+            "Impact on unique traditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Urbanization and Economic Development",
+          "points": [
+            "Prioritization of infrastructure",
+            "Destruction of historic sites",
+            "Displacement of communities",
+            "Cultural heritage at risk"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Commercialization of Cultural Practices",
+          "points": [
+            "Tourism impact",
+            "Dilution of original meanings",
+            "Cultural practices as commodities",
+            "Challenges in authenticity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Community Involvement",
+          "points": [
+            "Ownership and pride",
+            "Engagement in preservation",
+            "Relevance of cultural practices",
+            "Support and resources needed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies of Intangible Cultural Heritage",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study 1: Oral Traditions in Africa",
+          "points": [
+            "Importance of storytelling",
+            "Cultural transmission",
+            "Community gatherings",
+            "Preservation efforts",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Traditional Craftsmanship in Asia",
+          "points": [
+            "Skills passed down generations",
+            "Economic sustainability",
+            "Cultural expression",
+            "Modern challenges",
+            "Community initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: Performing Arts in Latin America",
+          "points": [
+            "Cultural festivals",
+            "Role in identity",
+            "Global recognition",
+            "Preservation strategies",
+            "Impact of globalization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 4: Social Practices in Indigenous Communities",
+          "points": [
+            "Rituals and ceremonies",
+            "Connection to nature",
+            "Cultural significance",
+            "Challenges in urban settings",
+            "Community-led initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Strategies for Preservation and Promotion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Engaging Local Communities",
+          "points": [
+            "Importance of community involvement",
+            "Fostering ownership",
+            "Cultural pride",
+            "Collaborative efforts",
+            "Sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integrating ICH into Development Strategies",
+          "points": [
+            "Cultural heritage in urban planning",
+            "Balancing development and preservation",
+            "Policy recommendations",
+            "Community benefits",
+            "Long-term sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting Awareness and Education",
+          "points": [
+            "Cultural education programs",
+            "Workshops and training",
+            "Raising awareness",
+            "Involving youth",
+            "Utilizing technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Supporting Sustainable Practices",
+          "points": [
+            "Eco-friendly initiatives",
+            "Cultural tourism",
+            "Responsible practices",
+            "Community-led projects",
+            "Global partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Outlook and Importance",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "The Role of ICH in Global Culture",
+          "points": [
+            "Enriching cultural landscape",
+            "Fostering understanding",
+            "Respect among diverse populations",
+            "Cultural exchange",
+            "Global collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Ahead",
+          "points": [
+            "Continued globalization",
+            "Need for ongoing support",
+            "Balancing modernization and tradition",
+            "Community resilience",
+            "Policy implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Importance of safeguarding ICH",
+            "Community engagement",
+            "Sustainable practices",
+            "Preserving for future generations",
+            "Collective responsibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

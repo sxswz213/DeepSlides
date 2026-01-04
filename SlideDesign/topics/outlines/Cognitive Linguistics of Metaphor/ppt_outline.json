@@ -1,0 +1,244 @@
+{
+  "recommended_slides": 15,
+  "section_distribution": {
+    "Introduction": 2,
+    "Theoretical Background": 3,
+    "Methodology": 3,
+    "Findings": 3,
+    "Discussion": 2,
+    "Implications": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Metaphor in Cognitive Linguistics",
+          "points": [
+            "Definition of metaphor",
+            "Importance in language and thought",
+            "Overview of cognitive linguistics",
+            "Metaphors as cognitive mechanisms",
+            "Purpose of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Metaphor",
+          "points": [
+            "Metaphors shape abstract concepts",
+            "Influence on human cognition",
+            "Role in communication",
+            "Examples of common metaphors",
+            "Research objectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Theoretical Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Conceptual Metaphor Theory",
+          "points": [
+            "Introduced by Lakoff and Johnson",
+            "Metaphors as fundamental cognitive structures",
+            "Mappings from concrete to abstract",
+            "Example: 'Life is a journey'",
+            "Impact on psychology and linguistics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Embodiment in Metaphor",
+          "points": [
+            "Role of physical experiences",
+            "Influence on conceptual frameworks",
+            "Example: 'Life is a journey'",
+            "Neuroscientific support",
+            "Right Hemisphere Hypothesis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Relevance Theory Overview",
+          "points": [
+            "Developed by Sperber and Wilson",
+            "Focus on contextual relevance",
+            "Metaphors as 'loose talk'",
+            "Cognitive effort in interpretation",
+            "Importance of contextual clues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Qualitative analysis of metaphor usage",
+            "Literature review of key theories",
+            "Case studies on metaphor comprehension",
+            "Interviews with linguists and psychologists",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Techniques",
+          "points": [
+            "Thematic analysis of interview data",
+            "Comparative analysis of theories",
+            "Identification of key patterns",
+            "Use of software tools for analysis",
+            "Validation of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Cultural variations in metaphor comprehension",
+            "Subjectivity in qualitative analysis",
+            "Limited sample size",
+            "Potential biases in data collection",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Findings",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Insights from Conceptual Metaphor Theory",
+          "points": [
+            "Metaphors structure understanding",
+            "Concrete mappings enhance comprehension",
+            "Cultural influences on metaphor use",
+            "Examples from various languages",
+            "Implications for education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Embodiment and Neural Mechanisms",
+          "points": [
+            "Physical experiences shape cognition",
+            "Neural activation patterns in metaphor processing",
+            "Role of sensory and motor areas",
+            "Evidence from neuroscientific studies",
+            "Integration of embodiment in metaphor theory"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Insights from Relevance Theory",
+          "points": [
+            "Contextual relevance enhances meaning",
+            "Cognitive effort in metaphor interpretation",
+            "Differences from cognitive linguistics",
+            "Examples of pragmatic interpretation",
+            "Implications for communication"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Interplay Between Theories",
+          "points": [
+            "Cognitive linguistics vs. relevance theory",
+            "Complementary frameworks for understanding",
+            "Structural vs. contextual perspectives",
+            "Implications for metaphor research",
+            "Future research opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Broader Implications of Findings",
+          "points": [
+            "Impact on education and pedagogy",
+            "Applications in psychology and therapy",
+            "Enhancing communication strategies",
+            "Cultural sensitivity in metaphor use",
+            "Encouraging interdisciplinary research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Exploring neural dimensions of metaphor",
+            "Investigating cultural variations",
+            "Longitudinal studies on metaphor comprehension",
+            "Interdisciplinary approaches",
+            "Potential applications in AI and linguistics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Metaphors are essential to cognition",
+            "Cognitive linguistics provides valuable insights",
+            "Embodiment and relevance theory enhance understanding",
+            "Implications for various fields",
+            "Call for continued research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

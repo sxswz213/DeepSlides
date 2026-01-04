@@ -1,0 +1,317 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Problem Statement": 4,
+    "Current Cement Production Impact": 3,
+    "Sustainable Alternatives Overview": 4,
+    "Case Studies of Sustainable Alternatives": 4,
+    "Benefits of Sustainable Cement Alternatives": 2,
+    "Future Directions and Innovations": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Cement Production",
+          "points": [
+            "Importance of cement in construction",
+            "Traditional cement production process",
+            "Environmental concerns associated with cement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Sustainable Practices",
+          "points": [
+            "Growing demand for eco-friendly materials",
+            "Impact of climate change",
+            "Regulatory pressures on the construction industry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore sustainable cement alternatives",
+            "Highlight benefits and challenges",
+            "Discuss future innovations in cement technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Problem Statement",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Environmental Impact of Traditional Cement",
+          "points": [
+            "8% of global CO2 emissions",
+            "4 billion tonnes of CO2 annually",
+            "Resource depletion and air pollution",
+            "Calcination and fossil fuel combustion contributions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Cement Production",
+          "points": [
+            "High energy consumption",
+            "Dependence on fossil fuels",
+            "Limited recycling of materials",
+            "Increasing demand for construction materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Alternatives",
+          "points": [
+            "Rising awareness of sustainability",
+            "Pressure from consumers and governments",
+            "Potential for innovation in materials",
+            "Economic benefits of sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Limitations of Traditional Cement",
+          "points": [
+            "Performance variability",
+            "Regulatory hurdles",
+            "Market resistance to change",
+            "Lack of awareness about alternatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Cement Production Impact",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Sources of Carbon Emissions",
+          "points": [
+            "Clinker production",
+            "Thermal emissions",
+            "Fossil fuel combustion",
+            "Calcination process"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Cement Demand Trends",
+          "points": [
+            "Increasing demand in developing regions",
+            "Projected growth in construction",
+            "Impact on carbon emissions",
+            "Need for sustainable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Challenges",
+          "points": [
+            "Barriers to adopting new technologies",
+            "Economic feasibility of alternatives",
+            "Need for research and development",
+            "Integration with existing practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Sustainable Alternatives Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Fly Ash",
+          "points": [
+            "Byproduct of coal combustion",
+            "Enhances workability and durability",
+            "Reduces water demand",
+            "Carbon reduction potential of 30-50%"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ground Granulated Blast-Furnace Slag (GGBS)",
+          "points": [
+            "Produced from steel manufacturing",
+            "High chemical resistance",
+            "Extends lifespan of structures",
+            "Significant carbon footprint reduction"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hempcrete",
+          "points": [
+            "Bio-composite made from hemp fibers",
+            "Excellent insulation properties",
+            "Carbon sequestration capabilities",
+            "Ideal for non-load-bearing applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geopolymer Concrete",
+          "points": [
+            "Made from industrial byproducts",
+            "Up to 80% reduction in CO2 emissions",
+            "Superior durability and fire resistance",
+            "Potential for various structural applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies of Sustainable Alternatives",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: Fly Ash in Construction",
+          "points": [
+            "Successful projects using fly ash",
+            "Performance metrics and outcomes",
+            "Cost savings achieved",
+            "Environmental impact assessments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: GGBS Applications",
+          "points": [
+            "Notable projects utilizing GGBS",
+            "Long-term durability results",
+            "Regulatory compliance and certifications",
+            "Stakeholder feedback"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Hempcrete Usage",
+          "points": [
+            "Innovative designs incorporating hempcrete",
+            "Energy efficiency improvements",
+            "Challenges faced during implementation",
+            "Future potential in residential construction"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Geopolymer Concrete Success",
+          "points": [
+            "Projects demonstrating geopolymer concrete",
+            "Comparative analysis with traditional concrete",
+            "Sustainability metrics",
+            "Industry acceptance and growth"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Benefits of Sustainable Cement Alternatives",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Environmental Benefits",
+          "points": [
+            "Significant reduction in carbon emissions",
+            "Lower energy consumption",
+            "Resource conservation",
+            "Enhanced sustainability of construction practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Advantages",
+          "points": [
+            "Cost-effectiveness of using byproducts",
+            "Long-term savings on maintenance",
+            "Potential for government incentives",
+            "Market competitiveness of sustainable materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions and Innovations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Bacterial concrete for self-healing",
+            "Magnesium-based cements",
+            "Carbon capture and storage methods",
+            "Innovative recycling techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Path Forward for the Industry",
+          "points": [
+            "Need for regulatory support",
+            "Collaboration between stakeholders",
+            "Investment in research and development",
+            "Education and awareness initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

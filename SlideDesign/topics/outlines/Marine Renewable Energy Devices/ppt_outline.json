@@ -1,0 +1,305 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Marine Renewable Energy": 3,
+    "Types of Marine Renewable Energy Devices": 4,
+    "Methodology": 3,
+    "Case Studies": 4,
+    "Results and Discussion": 3,
+    "Future Trends and Challenges": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Marine Renewable Energy",
+          "points": [
+            "Definition of marine renewable energy",
+            "Importance in sustainable energy",
+            "Global energy demand context",
+            "Potential of ocean resources",
+            "Transition from fossil fuels"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore various marine energy technologies",
+            "Assess environmental impacts",
+            "Identify challenges and opportunities",
+            "Provide recommendations for future development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Marine Energy",
+          "points": [
+            "Role in reducing carbon emissions",
+            "Contribution to energy security",
+            "Economic benefits for coastal communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Marine Renewable Energy",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context",
+          "points": [
+            "Early developments in marine energy",
+            "Key milestones in technology",
+            "Evolution of marine energy policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of Marine Energy",
+          "points": [
+            "Global capacity and installations",
+            "Leading countries in marine energy",
+            "Technological advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Outlook",
+          "points": [
+            "Predicted growth in marine energy sector",
+            "Potential for innovation",
+            "Integration with other renewable sources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Marine Renewable Energy Devices",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Tidal Energy",
+          "points": [
+            "Mechanism of tidal energy generation",
+            "Advantages of predictability",
+            "Current projects and installations",
+            "Environmental considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Wave Energy",
+          "points": [
+            "Types of wave energy converters",
+            "Kinetic energy capture methods",
+            "Challenges in deployment",
+            "Case studies of successful projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ocean Thermal Energy Conversion (OTEC)",
+          "points": [
+            "Principle of temperature gradient utilization",
+            "Applications in tropical regions",
+            "Technical challenges and solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Offshore Wind Energy",
+          "points": [
+            "Benefits of offshore wind",
+            "Comparison with onshore wind",
+            "Current trends and future projects",
+            "Environmental impacts and mitigation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review of existing studies",
+            "Data collection methods",
+            "Analysis of case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Criteria for Technology Assessment",
+          "points": [
+            "Technical feasibility",
+            "Economic viability",
+            "Environmental impact considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Engagement",
+          "points": [
+            "Involvement of industry experts",
+            "Consultation with environmental organizations",
+            "Public opinion surveys"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: Tidal Energy in the UK",
+          "points": [
+            "Overview of the project",
+            "Energy output and efficiency",
+            "Environmental monitoring results",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Wave Energy in Australia",
+          "points": [
+            "Description of technology used",
+            "Economic impact on local communities",
+            "Challenges faced during implementation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: OTEC in Hawaii",
+          "points": [
+            "Technical specifications",
+            "Energy generation capacity",
+            "Environmental assessments conducted"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Offshore Wind in Denmark",
+          "points": [
+            "Scale of offshore wind farms",
+            "Integration with national grid",
+            "Impact on marine ecosystems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings from the Report",
+          "points": [
+            "Summary of technology assessments",
+            "Environmental impact highlights",
+            "Economic benefits identified"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Marine Energy Development",
+          "points": [
+            "Technical hurdles",
+            "Economic barriers",
+            "Regulatory issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Opportunities for Growth",
+          "points": [
+            "Job creation potential",
+            "Investment in innovation",
+            "Collaboration between sectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Challenges",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Advancements in marine energy devices",
+            "Potential for hybrid systems",
+            "Role of digital technology in monitoring"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Need for supportive regulations",
+            "Encouragement of public-private partnerships",
+            "Investment in research and development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

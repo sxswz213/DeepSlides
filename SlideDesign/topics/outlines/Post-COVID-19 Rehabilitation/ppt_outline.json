@@ -1,0 +1,293 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Post-COVID-19 Rehabilitation",
+          "points": [
+            "Definition of post-COVID-19 rehabilitation",
+            "Importance of addressing long COVID",
+            "Impact on global health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Understanding Long COVID",
+          "points": [
+            "Definition of long COVID",
+            "Prevalence of symptoms",
+            "Variability in patient experiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Rehabilitation Strategies",
+          "points": [
+            "Challenges faced by patients",
+            "Importance of tailored approaches",
+            "Role of healthcare providers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Symptoms of Long COVID",
+          "points": [
+            "Fatigue",
+            "Cognitive difficulties",
+            "Respiratory issues",
+            "Neurological symptoms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Daily Life",
+          "points": [
+            "Hindered daily activities",
+            "Social isolation",
+            "Work-related challenges",
+            "Emotional distress"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Understanding of Long COVID",
+          "points": [
+            "Ongoing research",
+            "Theories behind symptoms",
+            "Need for comprehensive care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistics on Long COVID",
+          "points": [
+            "Percentage of affected individuals",
+            "Duration of symptoms",
+            "Demographic variations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Rehabilitation",
+          "points": [
+            "Diverse symptoms",
+            "Prolonged hospitalization effects",
+            "Lack of standardized protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Psychological Impact",
+          "points": [
+            "Anxiety and depression",
+            "Coping mechanisms",
+            "Need for mental health support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Physical Rehabilitation Barriers",
+          "points": [
+            "Muscle weakness",
+            "Fatigue management",
+            "Need for gradual progression"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Healthcare System Strain",
+          "points": [
+            "Increased demand for services",
+            "Resource allocation issues",
+            "Need for multidisciplinary teams"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Multidisciplinary Approach",
+          "points": [
+            "Collaboration among professionals",
+            "Integration of services",
+            "Holistic care model"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tailored Rehabilitation Strategies",
+          "points": [
+            "Personalized exercise programs",
+            "Psychological support integration",
+            "Nutritional guidance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Therapies",
+          "points": [
+            "Robotic-assisted rehabilitation",
+            "Telehealth options",
+            "Emerging treatment modalities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Education and Awareness",
+          "points": [
+            "Patient education on symptoms",
+            "Support resources",
+            "Community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Monitoring and Evaluation",
+          "points": [
+            "Regular assessments",
+            "Adjusting treatment plans",
+            "Feedback mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Improved Recovery Outcomes",
+          "points": [
+            "Enhanced quality of life",
+            "Increased functional capacity",
+            "Better mental health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient Testimonials",
+          "points": [
+            "Real-life recovery stories",
+            "Impact of rehabilitation",
+            "Importance of support systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Post-COVID-19 Rehabilitation",
+          "points": [
+            "Ongoing research",
+            "Potential advancements",
+            "Need for continuous adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Prioritize rehabilitation strategies",
+            "Support multidisciplinary teams",
+            "Enhance patient resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Personalized Rehabilitation Programs",
+          "points": [
+            "Focus on individual needs",
+            "Incorporation of technology",
+            "Long-term follow-up strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Research and Development",
+          "points": [
+            "Exploration of new therapies",
+            "Collaboration with research institutions",
+            "Funding for rehabilitation initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Biopesticides": 3,
+    "Development Pipeline Overview": 4,
+    "Research Methodology": 3,
+    "Key Findings": 4,
+    "Case Studies": 3,
+    "Future Trends and Challenges": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Biopesticides",
+          "points": [
+            "Definition of biopesticides",
+            "Importance in sustainable agriculture",
+            "Growing consumer demand",
+            "Environmental benefits",
+            "Regulatory support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "Explore current state of development",
+            "Highlight research contributions",
+            "Discuss commercialization efforts",
+            "Identify challenges",
+            "Outline future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Biopesticides",
+          "points": [
+            "Alternatives to synthetic pesticides",
+            "Impact on food security",
+            "Role in integrated pest management",
+            "Support for organic farming",
+            "Contribution to biodiversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Biopesticides",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Types of Biopesticides",
+          "points": [
+            "Microbial biopesticides",
+            "Plant-based biopesticides",
+            "Biochemical pesticides",
+            "Natural enemies",
+            "Role in pest management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Overview",
+          "points": [
+            "Current market value",
+            "Projected growth rates",
+            "Key players in the market",
+            "Regional market dynamics",
+            "Consumer trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Landscape",
+          "points": [
+            "Overview of regulations",
+            "EPA and EU initiatives",
+            "Impact on biopesticide adoption",
+            "Challenges in regulatory processes",
+            "Future regulatory trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Development Pipeline Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research-for-Development Initiatives",
+          "points": [
+            "Role of icipe",
+            "Focus on microbial formulations",
+            "Innovative methodologies",
+            "Partnerships with private sector",
+            "Impact on local agriculture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Microbial Strains",
+          "points": [
+            "Metarhizium anisopliae strains",
+            "Efficacy against pests",
+            "Commercial availability",
+            "Application in sub-Saharan Africa",
+            "Integration with other pest management strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Commercialization Efforts",
+          "points": [
+            "Public-private partnerships",
+            "Market penetration strategies",
+            "Success stories in Africa",
+            "Challenges in commercialization",
+            "Importance of farmer education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Penetration Challenges",
+          "points": [
+            "High production costs",
+            "Regulatory complexities",
+            "Limited shelf life",
+            "Awareness among farmers",
+            "Need for harmonized regulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Research Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case studies analysis",
+            "Interviews with stakeholders",
+            "Data collection methods",
+            "Analysis of market trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Industry reports",
+            "Academic publications",
+            "Government regulations",
+            "Market surveys",
+            "Expert interviews"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Effectiveness of biopesticides",
+            "Market growth potential",
+            "Regulatory compliance",
+            "Farmer adoption rates",
+            "Sustainability impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Findings",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Market Growth Insights",
+          "points": [
+            "Current market value: USD 7.75 billion",
+            "Projected growth to USD 25.82 billion by 2032",
+            "CAGR of 14.07%",
+            "Drivers of market growth",
+            "Impact of regulations on growth"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Contributions",
+          "points": [
+            "icipe's R4D initiatives",
+            "Development of effective microbial biopesticides",
+            "Integration of plant endophytes",
+            "Focus on sustainable practices",
+            "Impact on food security"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Commercialization Challenges",
+          "points": [
+            "High production costs",
+            "Regulatory hurdles",
+            "Limited awareness among farmers",
+            "Need for education programs",
+            "Market share growth potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Improving formulations",
+            "Streamlining regulations",
+            "Enhancing farmer education",
+            "Fostering public-private partnerships",
+            "Expanding research initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Successful Biopesticide Implementation",
+          "points": [
+            "Case study of icipe and Real IPM",
+            "Impact on sub-Saharan agriculture",
+            "Lessons learned",
+            "Scalability of solutions",
+            "Future prospects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Success Stories",
+          "points": [
+            "South Africa's regulatory framework",
+            "Integration into IPM programs",
+            "Benefits observed",
+            "Challenges faced",
+            "Recommendations for other regions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Farmer Adoption Case Study",
+          "points": [
+            "Awareness campaigns",
+            "Training programs",
+            "Impact on small-scale farmers",
+            "Barriers to adoption",
+            "Strategies for improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Challenges",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Biopesticides",
+          "points": [
+            "Increased investment in R&D",
+            "Technological advancements",
+            "Growing consumer awareness",
+            "Shift towards organic farming",
+            "Global market expansion"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Challenges Ahead",
+          "points": [
+            "Reducing production costs",
+            "Simplifying regulatory processes",
+            "Enhancing farmer education",
+            "Building partnerships",
+            "Promoting sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

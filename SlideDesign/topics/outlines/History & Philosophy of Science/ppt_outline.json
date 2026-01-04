@@ -1,0 +1,325 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Ancient Science": 4,
+    "Medieval Science": 3,
+    "Renaissance and Enlightenment": 4,
+    "19th Century Developments": 3,
+    "20th Century Advances": 3,
+    "Contemporary Science": 2,
+    "Future of Science": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of the History & Philosophy of Science",
+          "points": [
+            "Definition and significance",
+            "Interdisciplinary connections",
+            "Evolution of scientific thought",
+            "Key themes in the study"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore historical milestones",
+            "Examine philosophical foundations",
+            "Discuss paradigms in science",
+            "Consider future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Ancient Science",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Early Scientific Practices",
+          "points": [
+            "Mesopotamia: Astronomy and mathematics",
+            "Egypt: Medicine and engineering",
+            "India: Early mathematics",
+            "China: Natural philosophy",
+            "Mayan and Japanese contributions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Influential Figures in Ancient Science",
+          "points": [
+            "Aristotle: Empirical observation",
+            "Ptolemy: Geocentric model",
+            "Hippocrates: Medical ethics",
+            "Archimedes: Principles of physics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Context of Ancient Science",
+          "points": [
+            "Role of religion",
+            "Impact of trade and communication",
+            "Preservation of knowledge through texts",
+            "Influence of mythology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transition to the Middle Ages",
+          "points": [
+            "Decline of ancient civilizations",
+            "Rise of religious institutions",
+            "Preservation of knowledge in monasteries",
+            "Emergence of new scientific inquiries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Medieval Science",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Science in the Middle Ages",
+          "points": [
+            "Interplay between science and religion",
+            "Contributions of Islamic scholars",
+            "Al-Razi and Ibn al-Haytham's advancements",
+            "Translation movements in Europe"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges to Scientific Inquiry",
+          "points": [
+            "Restrictions imposed by the Church",
+            "Focus on theology over natural philosophy",
+            "Limited access to ancient texts",
+            "Impact on scientific progress"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emergence of New Ideas",
+          "points": [
+            "Scholasticism and its influence",
+            "Integration of Aristotelian thought",
+            "Early universities and education",
+            "Shift towards empirical observation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Renaissance and Enlightenment",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Revival of Classical Knowledge",
+          "points": [
+            "Humanism and its impact",
+            "Rediscovery of ancient texts",
+            "Advancements in art and science",
+            "Influence of printing technology",
+            "Key figures: Copernicus, Galileo"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scientific Revolution",
+          "points": [
+            "Shift from geocentric to heliocentric models",
+            "Development of the scientific method",
+            "Role of experimentation and observation",
+            "Impact of Newton's laws"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Philosophical Foundations",
+          "points": [
+            "Empiricism vs. rationalism",
+            "Francis Bacon's inductive reasoning",
+            "Descartes' deductive approach",
+            "Influence on scientific inquiry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interdisciplinary Connections",
+          "points": [
+            "Impact of technology on science",
+            "Ethics in scientific practice",
+            "Social implications of scientific discoveries",
+            "Cultural shifts in understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "19th Century Developments",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Advancements in Scientific Fields",
+          "points": [
+            "Darwin's theory of evolution",
+            "Advances in chemistry and physics",
+            "Emergence of social sciences",
+            "Development of scientific societies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Philosophical Shifts",
+          "points": [
+            "Positivism and its influence",
+            "Kant's synthesis of empiricism and rationalism",
+            "Ethical considerations in science",
+            "Impact of industrialization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Paradigms",
+          "points": [
+            "Kuhn's early ideas on paradigms",
+            "Normal science vs. revolutionary science",
+            "Influence of societal factors on scientific progress"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "20th Century Advances",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Major Scientific Breakthroughs",
+          "points": [
+            "Theory of relativity",
+            "Quantum mechanics",
+            "Advancements in medicine",
+            "Technological innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Philosophical Developments",
+          "points": [
+            "Logical positivism",
+            "Falsifiability and scientific theories",
+            "Ethics in scientific research",
+            "Interdisciplinary approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of World Events",
+          "points": [
+            "World Wars and scientific advancements",
+            "Cold War and space race",
+            "Globalization of scientific knowledge"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Contemporary Science",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Current Trends in Science",
+          "points": [
+            "Interdisciplinary research",
+            "Ethical implications of technology",
+            "Public engagement with science",
+            "Global challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Philosophical Reflections",
+          "points": [
+            "Ongoing debates in philosophy of science",
+            "Role of science in society",
+            "Future directions for scientific inquiry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future of Science",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Looking Ahead",
+          "points": [
+            "Emerging technologies",
+            "Ethical considerations in future research",
+            "The role of science in addressing global issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 5,
+    "Conflict": 5,
+    "Resolution": 5,
+    "Outcome": 4
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of GIS in Disaster Management",
+          "points": [
+            "Definition of GIS",
+            "Importance in disaster management",
+            "Integration of spatial data",
+            "Key phases of disaster management",
+            "Enhancing community resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore GIS applications",
+            "Highlight case studies",
+            "Discuss benefits and challenges",
+            "Emphasize future developments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Structure of the Presentation",
+          "points": [
+            "Introduction",
+            "Situation",
+            "Conflict",
+            "Resolution",
+            "Outcome"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Current Disaster Risks",
+          "points": [
+            "Increasing frequency of disasters",
+            "Impact of climate change",
+            "Vulnerable communities",
+            "Need for effective management",
+            "Role of technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "GIS in Risk Assessment",
+          "points": [
+            "Creation of hazard maps",
+            "Identification of vulnerabilities",
+            "Spatial data analysis",
+            "Integration of demographic data",
+            "Risk-informed policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "GIS in Preparedness Planning",
+          "points": [
+            "Mapping high-risk zones",
+            "Resource allocation",
+            "Training for responders",
+            "Evacuation planning",
+            "Enhancing readiness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "GIS in Real-Time Response",
+          "points": [
+            "Data visualization during emergencies",
+            "Resource management",
+            "Coordination among agencies",
+            "Situational awareness",
+            "Timely decision-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "GIS in Recovery Operations",
+          "points": [
+            "Damage assessment",
+            "Resource deployment",
+            "Long-term recovery planning",
+            "Community resilience",
+            "Case study examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Challenges in Disaster Management",
+          "points": [
+            "Limited resources",
+            "Ineffective communication",
+            "Data accessibility issues",
+            "Coordination among agencies",
+            "Public awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "GIS Limitations",
+          "points": [
+            "Data quality concerns",
+            "Technical expertise required",
+            "Cost of implementation",
+            "Integration with existing systems",
+            "Dependence on technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Hurricane Harvey",
+          "points": [
+            "Impact of flooding",
+            "GIS role in mapping flood zones",
+            "Coordination of rescue operations",
+            "Response time improvements",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Nepal Earthquake",
+          "points": [
+            "Immediate response challenges",
+            "GIS for damage assessment",
+            "Resource allocation",
+            "Real-time data usage",
+            "Recovery planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Australian Bushfires",
+          "points": [
+            "Fire spread analysis",
+            "Risk assessment",
+            "Evacuation strategies",
+            "Community safety measures",
+            "GIS technology in action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Enhancing GIS Capabilities",
+          "points": [
+            "Investing in technology",
+            "Training for responders",
+            "Improving data quality",
+            "Collaboration among agencies",
+            "Public engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integrating GIS into Emergency Planning",
+          "points": [
+            "Developing comprehensive plans",
+            "Utilizing real-time data",
+            "Creating effective communication channels",
+            "Involving community stakeholders",
+            "Continuous improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of GIS in Disaster Management",
+          "points": [
+            "Emerging technologies",
+            "Predictive modeling",
+            "Artificial intelligence integration",
+            "Enhanced data analytics",
+            "Global collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Best Practices for GIS Implementation",
+          "points": [
+            "Establishing clear objectives",
+            "Regular training sessions",
+            "Data sharing protocols",
+            "Feedback mechanisms",
+            "Monitoring and evaluation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion of Resolution Phase",
+          "points": [
+            "Importance of GIS in disaster management",
+            "Need for ongoing investment",
+            "Collaboration for effective response",
+            "Building community resilience",
+            "Commitment to continuous improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "GIS enhances disaster management",
+            "Critical role in all phases",
+            "Improves situational awareness",
+            "Supports recovery efforts",
+            "Facilitates informed decision-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Expanding GIS applications",
+            "Integrating with new technologies",
+            "Strengthening community partnerships",
+            "Enhancing training programs",
+            "Promoting public awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Invest in GIS technology",
+            "Support training initiatives",
+            "Encourage community involvement",
+            "Foster collaboration among agencies",
+            "Commit to resilience building"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Q&A Session",
+          "points": [
+            "Open floor for questions",
+            "Encourage discussion",
+            "Clarify any doubts",
+            "Gather feedback",
+            "Thank the audience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

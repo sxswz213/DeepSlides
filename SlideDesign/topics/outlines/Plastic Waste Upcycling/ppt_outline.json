@@ -1,0 +1,305 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "The Problem of Plastic Waste": 4,
+    "Impact of Plastic Waste": 3,
+    "What is Upcycling?": 2,
+    "Upcycling Methods": 4,
+    "Successful Upcycling Projects": 3,
+    "Benefits of Upcycling Plastic Waste": 2,
+    "Call to Action": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Plastic Waste",
+          "points": [
+            "Global plastic production statistics",
+            "Current plastic waste crisis",
+            "Importance of addressing plastic waste"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What is Upcycling?",
+          "points": [
+            "Definition of upcycling",
+            "Difference between upcycling and recycling",
+            "Benefits of upcycling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "Explore upcycling methods",
+            "Highlight successful initiatives",
+            "Discuss challenges and innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "The Problem of Plastic Waste",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Scale of Plastic Waste",
+          "points": [
+            "Annual plastic waste generation",
+            "Impact on oceans and wildlife",
+            "Long-term environmental effects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sources of Plastic Waste",
+          "points": [
+            "Single-use plastics",
+            "Industrial waste",
+            "Consumer behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Waste Management",
+          "points": [
+            "Ineffective recycling systems",
+            "Landfill overflow",
+            "Pollution and health risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Sustainable Solutions",
+          "points": [
+            "Rising awareness of environmental issues",
+            "Demand for innovative waste management",
+            "Role of upcycling in sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Impact of Plastic Waste",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Environmental Impact",
+          "points": [
+            "Ecosystem disruption",
+            "Microplastics in food chain",
+            "Climate change contributions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Consequences",
+          "points": [
+            "Cost of waste management",
+            "Impact on tourism and fisheries",
+            "Loss of biodiversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Implications",
+          "points": [
+            "Health risks from pollution",
+            "Community awareness and activism",
+            "Global inequality in waste management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "What is Upcycling?",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Upcycling",
+          "points": [
+            "Definition and process",
+            "Creative transformation of waste",
+            "Examples of upcycled products"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Upcycling",
+          "points": [
+            "Reduces landfill waste",
+            "Conserves resources",
+            "Encourages creativity and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Upcycling Methods",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Mechanical Upcycling",
+          "points": [
+            "Sorting and cleaning",
+            "Shredding and melting",
+            "Remolding into new products"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Chemical Upcycling",
+          "points": [
+            "Breaking down plastics chemically",
+            "Recovery of raw materials",
+            "Examples of chemical processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Biological Upcycling",
+          "points": [
+            "Use of microorganisms",
+            "Research and development",
+            "Potential for sustainable solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hybrid Approaches",
+          "points": [
+            "Combining methods for efficiency",
+            "Emerging technologies",
+            "Case studies of hybrid upcycling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Successful Upcycling Projects",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Rothy's: Transforming Bottles into Footwear",
+          "points": [
+            "Overview of Rothy's",
+            "Process of upcycling bottles",
+            "Impact on sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Bureo: Fishing Nets to Skateboards",
+          "points": [
+            "Bureo's mission",
+            "Community engagement",
+            "Product range and success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Looptworks: Reducing Textile Waste",
+          "points": [
+            "Collaboration with brands",
+            "Innovative clothing solutions",
+            "Environmental impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Benefits of Upcycling Plastic Waste",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Environmental Benefits",
+          "points": [
+            "Reduces plastic waste",
+            "Conserves natural resources",
+            "Supports biodiversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic and Social Benefits",
+          "points": [
+            "Stimulates local economies",
+            "Creates job opportunities",
+            "Promotes community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Call to Action",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Join the Upcycling Movement",
+          "points": [
+            "Support local upcycling initiatives",
+            "Educate others about upcycling",
+            "Advocate for sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

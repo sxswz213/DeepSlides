@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 4,
+    "Implications": 2,
+    "Call to Action": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Social Networks",
+          "points": [
+            "Definition of social networks",
+            "Importance in society",
+            "Role in shaping experiences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Inequality",
+          "points": [
+            "Definition of inequality",
+            "Types of inequality",
+            "Impact on communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Interconnection of Networks and Inequality",
+          "points": [
+            "How networks influence access",
+            "Inequality as a systemic issue",
+            "Purpose of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Social Networks",
+          "points": [
+            "Prevalence of online and offline networks",
+            "Diversity in network composition",
+            "Access to resources through networks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Health Disparities and Social Networks",
+          "points": [
+            "Influence on health outcomes",
+            "Examples of health disparities",
+            "Role of social support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Capital and Inequality",
+          "points": [
+            "Definition of social capital",
+            "Impact on marginalized groups",
+            "Access to opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Digital Divide in Social Networks",
+          "points": [
+            "Access to technology",
+            "Digital literacy gaps",
+            "Impact on social connections"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Homophily and Social Isolation",
+          "points": [
+            "Definition of homophily",
+            "Effects on network diversity",
+            "Reinforcement of existing inequalities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Triadic Closure and Echo Chambers",
+          "points": [
+            "Concept of triadic closure",
+            "Impact on social interactions",
+            "Consequences for marginalized groups"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Algorithmic Bias in Online Networks",
+          "points": [
+            "Role of algorithms in content promotion",
+            "Impact on exposure to diversity",
+            "Reinforcement of social divides"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limited Access to Resources",
+          "points": [
+            "Barriers for marginalized communities",
+            "Consequences for health and well-being",
+            "Need for inclusive practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "How Do Social Networks Perpetuate Inequality?",
+          "points": [
+            "Mechanisms of inequality",
+            "Role of social structures",
+            "Impact on individual outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Are the Implications for Health?",
+          "points": [
+            "Health outcomes influenced by networks",
+            "Need for supportive environments",
+            "Potential for policy interventions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How Can We Address These Disparities?",
+          "points": [
+            "Importance of inclusive networking",
+            "Strategies for bridging gaps",
+            "Role of community leaders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Promoting Inclusive Networking Practices",
+          "points": [
+            "Encouraging diverse connections",
+            "Building supportive communities",
+            "Fostering digital literacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Targeted Interventions for Marginalized Groups",
+          "points": [
+            "Access to resources",
+            "Support systems for health",
+            "Community engagement initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Bridging Online and Offline Networks",
+          "points": [
+            "Creating hybrid networking opportunities",
+            "Leveraging technology for access",
+            "Encouraging cross-community interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Addressing systemic barriers",
+            "Investing in community resources",
+            "Monitoring and evaluation of initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Broader Societal Impacts",
+          "points": [
+            "Understanding social structures",
+            "Implications for social mobility",
+            "Long-term effects on communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Exploring new networking models",
+            "Impact of technology on inequality",
+            "Need for interdisciplinary approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Call to Action",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Engaging Stakeholders",
+          "points": [
+            "Involvement of policymakers",
+            "Role of community organizations",
+            "Importance of individual action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fostering Change",
+          "points": [
+            "Encouraging inclusive practices",
+            "Building awareness of inequalities",
+            "Promoting equitable access to resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Conclusion": 2,
+    "Future Work": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Plasmonic Nanostructures",
+          "points": [
+            "Definition and significance",
+            "Interaction of light with free electrons",
+            "Applications in various fields"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Research",
+          "points": [
+            "Advancements in technology",
+            "Role in sensing and imaging",
+            "Potential in energy applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Illuminate significance",
+            "Explore fundamental principles",
+            "Discuss fabrication techniques and applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Fundamentals of Plasmonic Nanostructures",
+          "points": [
+            "Collective oscillations of conduction electrons",
+            "Surface plasmon resonance (SPR)",
+            "Localized surface plasmon resonance (LSPR)",
+            "Tailored optical responses based on geometry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Optical Properties",
+          "points": [
+            "Negative dielectric constant in metals",
+            "High reflectivity",
+            "Sustaining surface plasmons",
+            "Manipulation of light at nanoscale"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications Overview",
+          "points": [
+            "Biosensing",
+            "Medical diagnostics",
+            "Energy harvesting",
+            "Photothermal devices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Fabrication Techniques Overview",
+          "points": [
+            "Lithography",
+            "Chemical synthesis",
+            "Self-assembly",
+            "Soft lithography and nanosphere lithography"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lithography Techniques",
+          "points": [
+            "Electron beam lithography (EBL)",
+            "Nanoimprint lithography",
+            "Precision control over size and shape",
+            "Time-consuming and costly"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Chemical Synthesis Methods",
+          "points": [
+            "Reduction of metal salts",
+            "Production of nanoparticles",
+            "Specific sizes and shapes",
+            "Simpler processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Self-Assembly Techniques",
+          "points": [
+            "Block copolymer self-assembly",
+            "Natural organization of molecules",
+            "Efficient large area production",
+            "Combination with other methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Applications in Sensing",
+          "points": [
+            "Plasmonic biosensors",
+            "Detection of cancer markers",
+            "Enhanced sensitivity",
+            "Early diagnosis and monitoring"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Imaging",
+          "points": [
+            "Localized surface plasmon resonance (LSPR)",
+            "Dark field microscopy",
+            "Prism-based techniques",
+            "Cost-effective healthcare solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advancements in Energy Applications",
+          "points": [
+            "Solar energy harvesting",
+            "Reduction of thermalization losses",
+            "Improved energy conversion rates",
+            "Integration into solar cell architectures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Energy Storage Solutions",
+          "points": [
+            "Enhancement of battery performance",
+            "Improved supercapacitors",
+            "Longer-lasting energy solutions",
+            "Versatility of plasmonic materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Key Findings",
+          "points": [
+            "Unique properties of plasmonic nanostructures",
+            "Diverse applications across fields",
+            "Significant advancements in technology",
+            "Potential for future innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Plasmonic Nanostructures",
+          "points": [
+            "Scalability of synthesis methods",
+            "Reproducibility issues",
+            "Stability and durability concerns",
+            "Interactions with biological systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Standardized synthesis protocols",
+            "Exploration of new materials",
+            "Hybrid structures for improved stability",
+            "Integration of AI in material design"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Diagnostics and Therapeutics",
+          "points": [
+            "Revolutionizing medical diagnostics",
+            "Rapid and sensitive disease detection",
+            "Potential for personalized medicine",
+            "Environmental monitoring applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainable Energy Solutions",
+          "points": [
+            "Role in renewable energy technologies",
+            "Advancements in energy efficiency",
+            "Contribution to sustainable development",
+            "Future potential in energy applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Transformative potential of plasmonic nanostructures",
+            "Significance across multiple domains",
+            "Challenges to be addressed for advancement",
+            "Future directions for research and development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of continued research",
+            "Unlocking full potential in applications",
+            "Collaboration across disciplines",
+            "Vision for future innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Work",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Next Steps in Research",
+          "points": [
+            "Focus on scalability and reproducibility",
+            "Investigation of novel materials",
+            "Integration of advanced technologies",
+            "Collaboration with industry partners"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Neutrinos": 3,
+    "Neutrino Oscillation Theory": 3,
+    "Experimental Methods": 4,
+    "Key Experiments": 4,
+    "Results and Findings": 3,
+    "Implications and Future Research": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Neutrinos",
+          "points": [
+            "Definition of neutrinos",
+            "Importance in particle physics",
+            "Historical context of neutrino research",
+            "Introduction to oscillation phenomenon"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explain neutrino oscillation",
+            "Discuss experimental methods",
+            "Highlight key findings",
+            "Explore future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Neutrino Research",
+          "points": [
+            "Implications for the Standard Model",
+            "Understanding fundamental particles",
+            "Role in cosmology",
+            "Potential for new physics discoveries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Neutrinos",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Neutrinos?",
+          "points": [
+            "Elementary particles",
+            "Types of neutrinos: electron, muon, tau",
+            "Properties: neutral charge, small mass",
+            "Production sources: solar, cosmic, reactors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Discoveries",
+          "points": [
+            "First detection in 1956",
+            "Role in nuclear reactions",
+            "Solar neutrino problem",
+            "Development of neutrino detectors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Neutrino Mass and Flavor",
+          "points": [
+            "Concept of flavor states",
+            "Mass eigenstates explained",
+            "Mixing angles and PMNS matrix",
+            "Significance of mass in particle physics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Neutrino Oscillation Theory",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Oscillation",
+          "points": [
+            "Quantum mechanical phenomenon",
+            "Flavor change during travel",
+            "Superposition of states",
+            "Probability of flavor detection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Theoretical Framework",
+          "points": [
+            "Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix",
+            "Mass differences and oscillation probability",
+            "Energy and distance dependence",
+            "Implications for neutrino mass"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Experimental Evidence",
+          "points": [
+            "Solar neutrinos confirming oscillation",
+            "Atmospheric neutrinos and muon disappearance",
+            "Reactor neutrinos and electron antineutrino disappearance",
+            "Accelerator experiments observing νμ to νe"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Experimental Methods",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Types of Neutrino Experiments",
+          "points": [
+            "Solar experiments: SNO",
+            "Atmospheric experiments: Super-Kamiokande",
+            "Reactor experiments: Daya Bay",
+            "Accelerator experiments: T2K and NOvA"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Solar Neutrino Experiments",
+          "points": [
+            "Focus on solar neutrinos",
+            "Measurement techniques",
+            "Key findings from SNO",
+            "Flavor oscillation confirmation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Atmospheric Neutrino Experiments",
+          "points": [
+            "Detection of cosmic ray interactions",
+            "Super-Kamiokande's role",
+            "Muon neutrino disappearance",
+            "Event ratio measurements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Reactor and Accelerator Experiments",
+          "points": [
+            "Reactor neutrinos and distance measurements",
+            "Accelerator neutrinos from proton collisions",
+            "Key results from Daya Bay and T2K",
+            "Implications for mixing parameters"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Experiments",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Super-Kamiokande Experiment",
+          "points": [
+            "Operational since 1996",
+            "Evidence of atmospheric neutrino oscillations",
+            "Muon neutrino disappearance",
+            "Significance in confirming mass"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sudbury Neutrino Observatory (SNO)",
+          "points": [
+            "Focus on solar neutrinos",
+            "Resolution of solar neutrino problem",
+            "Flavor oscillation measurements",
+            "Impact on understanding neutrino properties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Daya Bay Reactor Experiment",
+          "points": [
+            "Measurement of electron antineutrino disappearance",
+            "Extraction of mixing parameters",
+            "Confirmation of oscillation theory",
+            "Contribution to neutrino mass understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "T2K and NOvA Accelerator Experiments",
+          "points": [
+            "Long-baseline neutrino experiments",
+            "Observation of νμ to νe oscillation",
+            "Testing three-flavor mixing model",
+            "Future implications for neutrino physics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Findings",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Summary of Key Findings",
+          "points": [
+            "Confirmation of neutrino mass",
+            "Existence of flavor mixing",
+            "Parameters for mixing angles and mass differences",
+            "Impact on the Standard Model"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significant Experimental Results",
+          "points": [
+            "Super-Kamiokande's atmospheric results",
+            "SNO's solar neutrino findings",
+            "Daya Bay's reactor measurements",
+            "T2K's accelerator observations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Particle Physics",
+          "points": [
+            "Challenges to the Standard Model",
+            "New physics possibilities",
+            "Understanding matter-antimatter asymmetry",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications and Future Research",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Future Directions in Neutrino Research",
+          "points": [
+            "Deep Underground Neutrino Experiment (DUNE)",
+            "Search for sterile neutrinos",
+            "Collaborative efforts with Hyper-Kamiokande",
+            "Potential for new discoveries"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Summary",
+          "points": [
+            "Recap of neutrino oscillation significance",
+            "Key experimental contributions",
+            "Future research potential",
+            "Importance for understanding the universe"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

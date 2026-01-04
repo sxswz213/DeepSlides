@@ -1,0 +1,308 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Livestock Vaccination": 3,
+    "Types of Novel Vaccines": 4,
+    "Research Methodology": 3,
+    "Results and Findings": 4,
+    "Case Studies": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Importance of Livestock Vaccination",
+          "points": [
+            "Enhances animal health",
+            "Prevents diseases",
+            "Improves productivity",
+            "Ensures food security",
+            "Supports economic stability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Novel Vaccines",
+          "points": [
+            "Definition of novel vaccines",
+            "Significance in agriculture",
+            "Current trends in vaccine development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore advancements in vaccine technology",
+            "Discuss challenges in implementation",
+            "Highlight successful case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Livestock Vaccination",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of livestock vaccination",
+            "Impact of diseases on livestock",
+            "Role of vaccines in disease prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Vaccination Practices",
+          "points": [
+            "Traditional vs. novel vaccines",
+            "Commonly used vaccines",
+            "Vaccination schedules and protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Impact of Livestock Diseases",
+          "points": [
+            "Food security concerns",
+            "Economic implications",
+            "Public health risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Novel Vaccines",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Recombinant Protein Vaccines",
+          "points": [
+            "Genetically engineered proteins",
+            "Multi-epitope targeting",
+            "Enhanced immune response",
+            "Examples of use in livestock"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Viral Vector Vaccines",
+          "points": [
+            "Use of harmless viruses",
+            "Delivery of genetic material",
+            "Applications in complex diseases",
+            "Case studies of effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "mRNA Vaccines",
+          "points": [
+            "Rapid development capabilities",
+            "High efficacy potential",
+            "Applications in livestock",
+            "Comparison with traditional vaccines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparison of Vaccine Types",
+          "points": [
+            "Advantages and disadvantages",
+            "Cost-effectiveness",
+            "Ease of administration",
+            "Regulatory considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Research Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Study Design",
+          "points": [
+            "Literature review",
+            "Case study analysis",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Peer-reviewed journals",
+            "Industry reports",
+            "Field studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Qualitative analysis",
+            "Quantitative metrics",
+            "Comparative studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Findings",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Advancements in Vaccine Technology",
+          "points": [
+            "Emergence of recombinant vaccines",
+            "Success of viral vector vaccines",
+            "Potential of mRNA vaccines",
+            "Impact on livestock health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Implementation",
+          "points": [
+            "Regulatory hurdles",
+            "High costs",
+            "Public perception issues",
+            "Logistical barriers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Insights from Case Studies",
+          "points": [
+            "PLSHL-1 program outcomes",
+            "Goat disease vaccine trials",
+            "Effective delivery models",
+            "Cost-effective strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overall Impact on Livestock Management",
+          "points": [
+            "Improved health outcomes",
+            "Increased productivity",
+            "Enhanced food security",
+            "Economic benefits for farmers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "PLSHL-1 Program Overview",
+          "points": [
+            "Geographic scope",
+            "Vaccination models used",
+            "Results and impact on disease incidence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Goat Disease Vaccines",
+          "points": [
+            "Development process",
+            "Trial results",
+            "Cost-effective vaccination strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from Case Studies",
+          "points": [
+            "Importance of local context",
+            "Stakeholder engagement",
+            "Adaptation of strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Addressing Implementation Challenges",
+          "points": [
+            "Streamlining regulatory processes",
+            "Reducing vaccine costs",
+            "Enhancing public awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations on the Horizon",
+          "points": [
+            "Emerging vaccine technologies",
+            "Potential for global collaboration",
+            "Focus on sustainability in livestock health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

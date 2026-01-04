@@ -1,0 +1,312 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 4,
+    "Examples of Citizen Science": 2,
+    "Benefits of Citizen Science in Social Studies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Citizen Science?",
+          "points": [
+            "Definition of citizen science",
+            "Role of non-professionals",
+            "Importance in research",
+            "Focus on social studies",
+            "Empowerment of communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Relevance of Citizen Science",
+          "points": [
+            "Engagement in societal issues",
+            "Enhancing understanding of dynamics",
+            "Fostering critical thinking",
+            "Promoting civic engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of the Presentation",
+          "points": [
+            "SCQA framework",
+            "Key topics to be covered",
+            "Importance of citizen science in education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Landscape of Citizen Science",
+          "points": [
+            "Growing trend in research",
+            "Diverse fields of application",
+            "Increased public interest",
+            "Integration in educational settings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Citizen Science in Social Studies",
+          "points": [
+            "Focus on community engagement",
+            "Addressing social issues",
+            "Cultural understanding",
+            "Empowerment through participation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Citizen Science",
+          "points": [
+            "Enhances civic engagement",
+            "Builds social capital",
+            "Promotes collaborative learning",
+            "Produces actionable insights",
+            "Fosters a sense of ownership"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies Overview",
+          "points": [
+            "Blue Thumb project",
+            "WeCount initiative",
+            "Citizen Social Science in Germany",
+            "Impact on local communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Citizen Science",
+          "points": [
+            "Funding disparities",
+            "Public skepticism",
+            "Limited visibility of SSH projects",
+            "Perception of social sciences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Barriers to Participation",
+          "points": [
+            "Skepticism about methodologies",
+            "Underrepresentation in research",
+            "Need for inclusivity",
+            "Interdisciplinary collaboration issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Barriers",
+          "points": [
+            "Reduced public involvement",
+            "Limited project sustainability",
+            "Challenges in achieving educational goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing the Challenges",
+          "points": [
+            "Need for increased funding",
+            "Raising public awareness",
+            "Promoting interdisciplinary approaches",
+            "Building community trust"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "How Can We Enhance Citizen Science?",
+          "points": [
+            "What strategies can be implemented?",
+            "How to secure funding?",
+            "Ways to improve public perception"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Role Do Educators Play?",
+          "points": [
+            "Integrating citizen science in curricula",
+            "Encouraging student participation",
+            "Fostering critical thinking skills"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How to Measure Success?",
+          "points": [
+            "Defining success in citizen science",
+            "Evaluating community impact",
+            "Assessing educational outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Strategies for Success",
+          "points": [
+            "Prioritize funding for SSH",
+            "Promote interdisciplinary collaboration",
+            "Engage communities in research",
+            "Utilize technology for outreach"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Case Studies",
+          "points": [
+            "Highlighting effective projects",
+            "Lessons learned from Blue Thumb",
+            "Impact of WeCount on policy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Educators",
+          "points": [
+            "Incorporate citizen science in lessons",
+            "Encourage critical discussions",
+            "Facilitate community partnerships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Citizen Science in Social Studies",
+          "points": [
+            "Potential for growth",
+            "Importance of inclusivity",
+            "Vision for a more engaged citizenry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Examples of Citizen Science",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Case Study: Blue Thumb",
+          "points": [
+            "Focus on water quality",
+            "Community involvement",
+            "Educational outreach",
+            "Environmental awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: WeCount",
+          "points": [
+            "Crowdsourced traffic data",
+            "Influencing local policies",
+            "Engaging over 1,000 participants",
+            "Promoting sustainable urban mobility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Benefits of Citizen Science in Social Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Enhancing Civic Engagement",
+          "points": [
+            "Active participation in research",
+            "Building social capital",
+            "Fostering community ownership"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting Critical Thinking",
+          "points": [
+            "Encouraging inquiry-based learning",
+            "Developing analytical skills",
+            "Understanding societal challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

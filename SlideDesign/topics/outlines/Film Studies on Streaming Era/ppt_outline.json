@@ -1,0 +1,305 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background of Streaming Era": 3,
+    "Research Objectives": 2,
+    "Methodology": 3,
+    "Data Analysis": 4,
+    "Key Findings": 3,
+    "Impact on Film Studies": 3,
+    "Future Trends": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of the Streaming Era",
+          "points": [
+            "Definition of streaming services",
+            "Key players in the market",
+            "Impact on traditional film industry",
+            "Emergence of new viewing habits",
+            "Importance of studying this transformation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "To analyze the impact of streaming on film",
+            "To explore changes in distribution and production",
+            "To understand audience consumption trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background of Streaming Era",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of film distribution",
+            "Rise of digital technology",
+            "Introduction of streaming platforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Developments in Streaming",
+          "points": [
+            "Launch of Netflix and its impact",
+            "Advent of Amazon Prime and Disney+",
+            "Growth of subscription models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Landscape",
+          "points": [
+            "Market share of major platforms",
+            "Diversity of content available",
+            "Global reach of streaming services"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Research Objectives",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Main Research Questions",
+          "points": [
+            "How has streaming changed film distribution?",
+            "What are the new business models?",
+            "How does streaming affect content creation?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Goals of the Study",
+          "points": [
+            "To identify trends in audience behavior",
+            "To assess the impact on filmmakers",
+            "To explore future implications for the industry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative approaches",
+            "Data collection methods",
+            "Sample selection criteria"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Industry reports",
+            "Surveys and interviews",
+            "Streaming platform analytics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Content analysis",
+            "Comparative studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Impact on Film Distribution",
+          "points": [
+            "Decline in theater attendance",
+            "Rise of direct-to-streaming releases",
+            "Access to niche markets"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Changing Business Models",
+          "points": [
+            "Shift from box office to subscriptions",
+            "Revenue-sharing challenges",
+            "Investment in original content"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Filmmaker Opportunities",
+          "points": [
+            "Greater creative freedom",
+            "Diverse storytelling",
+            "Challenges in financial success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Audience Engagement Trends",
+          "points": [
+            "Increase in binge-watching",
+            "On-demand viewing preferences",
+            "Emergence of subscription fatigue"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Findings",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Significant shifts in distribution channels",
+            "New revenue models impacting profitability",
+            "Diversity in content creation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Filmmakers",
+          "points": [
+            "Need for adaptation to new models",
+            "Balancing theatrical and streaming releases",
+            "Exploring innovative narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Audience Behavior Changes",
+          "points": [
+            "Preference for home viewing",
+            "Impact of social media on engagement",
+            "Challenges of content saturation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Impact on Film Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Transforming Film Analysis",
+          "points": [
+            "New frameworks for understanding film",
+            "Inclusion of streaming data in studies",
+            "Impact on film criticism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Film Studies",
+          "points": [
+            "Emerging research areas",
+            "Interdisciplinary approaches",
+            "Role of technology in film analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Educational Implications",
+          "points": [
+            "Curriculum changes in film studies",
+            "Focus on digital literacy",
+            "Preparing students for industry shifts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Predicted Developments in Streaming",
+          "points": [
+            "Further diversification of content",
+            "Innovative audience engagement strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Implications for the Film Industry",
+          "points": [
+            "Sustainability of subscription models",
+            "Potential for new distribution channels"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

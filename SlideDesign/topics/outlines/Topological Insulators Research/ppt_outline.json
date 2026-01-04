@@ -1,0 +1,296 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Future Directions": 2,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Topological Insulators",
+          "points": [
+            "Definition of Topological Insulators",
+            "Significance in Modern Physics",
+            "Unique Electronic Properties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Objectives",
+          "points": [
+            "Explore Fundamentals",
+            "Classifications of TIs",
+            "Applications and Challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of TIs in Technology",
+          "points": [
+            "Revolutionizing Electronics",
+            "Potential in Quantum Computing",
+            "Impact on Future Innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Fundamentals of Topological Insulators",
+          "points": [
+            "Insulating Bulk, Conductive Surface States",
+            "Role of Spin-Orbit Coupling",
+            "Time-Reversal Symmetry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Band Structure of TIs",
+          "points": [
+            "Energy Gap between Bands",
+            "Surface States Connection",
+            "Topological Invariants"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Topological Insulators",
+          "points": [
+            "2D vs 3D TIs",
+            "Magnetic TIs",
+            "Higher-Order TIs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature Review",
+            "Experimental Techniques",
+            "Theoretical Models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Material Selection",
+          "points": [
+            "Criteria for TIs",
+            "Sourcing High-Quality Materials",
+            "Characterization Techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection",
+          "points": [
+            "Experimental Results",
+            "Simulation Data",
+            "Comparative Analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical Methods",
+            "Graphical Representations",
+            "Interpretation of Results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Findings on TIs",
+          "points": [
+            "Unique Conductive Properties",
+            "Robustness Against Impurities",
+            "Material Performance Metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of TIs",
+          "points": [
+            "2D vs 3D Performance",
+            "Magnetic vs Non-Magnetic TIs",
+            "Higher-Order TIs Characteristics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Spintronics",
+          "points": [
+            "Efficient Spin Injection",
+            "Reduced Critical Current Density",
+            "Potential for MRAM Technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Quantum Computing",
+          "points": [
+            "Fault-Tolerant Qubits",
+            "Integration with Superconductors",
+            "Reduced Error Rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Identified",
+          "points": [
+            "Material Quality Issues",
+            "Scalability Concerns",
+            "Theoretical Gaps in Understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Impact on Electronics",
+            "Role in Future Technologies",
+            "Interdisciplinary Research Opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Challenges",
+          "points": [
+            "Improving Material Quality",
+            "Developing Scalable Production Methods",
+            "Enhancing Theoretical Models"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Exploring New Materials",
+            "Innovative Fabrication Techniques",
+            "AI Integration in Research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Broader Impact of TIs",
+          "points": [
+            "Influence on Material Science",
+            "Potential for Sustainable Technologies",
+            "Global Research Collaborations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Next Steps in Research",
+          "points": [
+            "Focus on Material Innovations",
+            "Collaborative Research Initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-Term Vision for TIs",
+          "points": [
+            "Integration in Commercial Technologies",
+            "Advancements in Quantum Computing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Unique Properties of TIs",
+            "Significance in Spintronics and Quantum Computing",
+            "Future Research Importance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 6,
+    "Examples of Cognitive Biases": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Cognitive Biases",
+          "points": [
+            "Definition of cognitive biases",
+            "Importance in decision-making",
+            "Overview of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Cognitive Biases",
+          "points": [
+            "Systematic deviations from rationality",
+            "Impact on personal and professional decisions",
+            "Examples of common biases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Why Study Cognitive Biases?",
+          "points": [
+            "Enhancing decision quality",
+            "Reducing irrational outcomes",
+            "Improving outcomes in various fields"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Landscape of Decision Making",
+          "points": [
+            "Complexity of modern decisions",
+            "Influence of cognitive biases",
+            "Need for awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cognitive Biases in Finance",
+          "points": [
+            "Overconfidence bias",
+            "Sunk cost fallacy",
+            "Anchoring bias",
+            "Impact on investment decisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cognitive Biases in Healthcare",
+          "points": [
+            "Confirmation bias",
+            "Impact on diagnoses",
+            "Consequences for patient care",
+            "Need for bias awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cognitive Biases in Crisis Management",
+          "points": [
+            "Urgency and uncertainty",
+            "Framing effect",
+            "Bias blind spot",
+            "Impact on decision quality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Recognizing Biases",
+          "points": [
+            "Bias blind spot",
+            "Difficulty in self-assessment",
+            "Cognitive dissonance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consequences of Ignoring Biases",
+          "points": [
+            "Poor decision outcomes",
+            "Financial losses",
+            "Negative health impacts",
+            "Ineffective crisis responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Real-World Examples of Bias Impact",
+          "points": [
+            "Case studies in finance",
+            "Healthcare misdiagnoses",
+            "Crisis management failures",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Need for Mitigation Strategies",
+          "points": [
+            "Importance of addressing biases",
+            "Potential for improved outcomes",
+            "Call to action for organizations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Questions to Consider",
+          "points": [
+            "What are the most common cognitive biases?",
+            "How do they affect decision-making?",
+            "What strategies can mitigate their impact?"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Why Do We Fall Victim to Biases?",
+          "points": [
+            "Heuristics in decision-making",
+            "Emotional influences",
+            "Social pressures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How Can We Improve Decision-Making?",
+          "points": [
+            "Recognizing biases",
+            "Implementing structured processes",
+            "Encouraging diverse perspectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Understanding Key Biases",
+          "points": [
+            "Confirmation bias",
+            "Anchoring bias",
+            "Availability heuristic",
+            "Framing effect",
+            "Overconfidence bias"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strategies for Awareness Training",
+          "points": [
+            "Workshops and seminars",
+            "Online courses",
+            "Interactive exercises",
+            "Real-life scenarios"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implementing Structured Decision-Making",
+          "points": [
+            "Decision frameworks",
+            "Blind assessments",
+            "Consider the opposite technique",
+            "Formal procedures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Delaying Decisions for Objectivity",
+          "points": [
+            "Importance of reflection",
+            "Reducing impulsive reactions",
+            "Encouraging thorough evaluation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fostering Diverse Perspectives",
+          "points": [
+            "Encouraging team discussions",
+            "Incorporating varied viewpoints",
+            "Challenging assumptions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Research and Practice",
+          "points": [
+            "Continued study of biases",
+            "Development of new strategies",
+            "Integration into organizational practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Examples of Cognitive Biases",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Real-Life Examples of Biases",
+          "points": [
+            "Case study: Financial decision-making",
+            "Case study: Medical diagnosis",
+            "Case study: Crisis response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visualizing Cognitive Biases",
+          "points": [
+            "Infographics on biases",
+            "Charts showing impact",
+            "Illustrations of decision-making processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

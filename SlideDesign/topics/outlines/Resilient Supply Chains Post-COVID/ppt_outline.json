@@ -1,0 +1,313 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 6,
+    "Outcome": 4,
+    "Future Considerations": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "The Importance of Resilient Supply Chains",
+          "points": [
+            "Overview of supply chain resilience",
+            "Impact of COVID-19 on global supply chains",
+            "Need for adaptability in business strategies",
+            "Introduction to key themes of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore the impact of COVID-19",
+            "Identify strategies for resilience",
+            "Examine successful case studies",
+            "Discuss future trends in supply chain management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "COVID-19 Disruptions",
+          "points": [
+            "Global supply chain vulnerabilities exposed",
+            "Raw material shortages and production halts",
+            "Transportation delays due to lockdowns",
+            "Impact on small and medium-sized enterprises (SMEs)"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Pre-existing Supply Chain Issues",
+          "points": [
+            "Need for enhanced visibility",
+            "Challenges in risk management",
+            "Dependence on single suppliers",
+            "Geopolitical tensions affecting supply chains"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Accelerated Digital Transformation",
+          "points": [
+            "Shift towards technology adoption",
+            "Importance of real-time data",
+            "Collaboration among supply chain partners",
+            "Emergence of multi-sourcing strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Statistics on Supply Chain Impact",
+          "points": [
+            "Two-thirds of SMEs faced significant impacts",
+            "40% of larger firms affected",
+            "Increased focus on operational continuity",
+            "Need for strategic reassessment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges Faced by Businesses",
+          "points": [
+            "Inability to meet consumer demand",
+            "Supply chain disruptions leading to losses",
+            "Increased operational costs",
+            "Difficulty in maintaining inventory levels"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vulnerabilities in Supply Chain Management",
+          "points": [
+            "Lack of diversification",
+            "Limited technological integration",
+            "Inflexibility in operations",
+            "Inadequate risk management strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Global Trade",
+          "points": [
+            "Disruption of international logistics",
+            "Increased shipping costs",
+            "Delays in product delivery",
+            "Changes in consumer behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Immediate Action",
+          "points": [
+            "Urgent need for strategic pivots",
+            "Importance of resilience in recovery",
+            "Collaboration with stakeholders",
+            "Investment in technology and infrastructure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Supplier Diversification Strategies",
+          "points": [
+            "Engaging multiple suppliers",
+            "Geographical diversification",
+            "Reducing dependency on single sources",
+            "Fostering competition for better pricing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Investing in Digital Technologies",
+          "points": [
+            "Utilizing AI and IoT for visibility",
+            "Real-time monitoring of inventory",
+            "Predictive analytics for disruption management",
+            "Enhancing operational efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fostering Collaboration",
+          "points": [
+            "Sharing information among partners",
+            "Creating agile supply chain networks",
+            "Enhancing overall efficiency",
+            "Building trust and transparency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Ford's Adaptation",
+          "points": [
+            "Pivoting to PPE production",
+            "Repurposing manufacturing capabilities",
+            "Collaboration with healthcare supply chains",
+            "Demonstrating flexibility in crisis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: JD.com's Resilience",
+          "points": [
+            "Leveraging integrated supply chain structure",
+            "Adapting to surges in demand",
+            "Investments in technology and infrastructure",
+            "Showcasing effective operational strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: 3M's Response",
+          "points": [
+            "Rapid scaling of N95 mask production",
+            "Utilizing vertically integrated processes",
+            "Real-time inventory monitoring",
+            "Ensuring steady supply of critical supplies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Insights from the Report",
+          "points": [
+            "Resilience is essential for operational continuity",
+            "Diversification and technology are critical",
+            "Collaboration enhances supply chain agility",
+            "Adaptability is key to future success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Actionable Recommendations",
+          "points": [
+            "Diversify suppliers across regions",
+            "Invest in AI and IoT technologies",
+            "Enhance partnerships and information sharing",
+            "Focus on sustainability and risk management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Implications for Businesses",
+          "points": [
+            "Need for ongoing assessment of supply chains",
+            "Importance of building robust networks",
+            "Emphasis on sustainability and digital innovation",
+            "Preparation for future disruptions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "COVID-19 as a catalyst for change",
+            "Resilience as a competitive advantage",
+            "Commitment to continuous improvement",
+            "Future-proofing supply chains for uncertainties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Considerations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Supply Chain Management",
+          "points": [
+            "Focus on sustainability",
+            "Integration of advanced technologies",
+            "Enhanced risk management practices",
+            "Collaboration with stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Preparing for Future Disruptions",
+          "points": [
+            "Continuous monitoring of supply chain dynamics",
+            "Investment in training and development",
+            "Building a culture of resilience",
+            "Adapting to changing market conditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

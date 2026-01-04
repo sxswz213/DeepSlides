@@ -1,0 +1,294 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 4,
+    "Methodology": 4,
+    "Results": 4,
+    "Discussion": 4,
+    "Implications": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Competency-Based Curriculum Design",
+          "points": [
+            "Definition of CBC",
+            "Importance in modern education",
+            "Shift from traditional learning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Principles of CBC",
+          "points": [
+            "Mastery-based learning",
+            "Personalized learning paths",
+            "Flexible assessment methods",
+            "Real-world applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore principles",
+            "Discuss implementation steps",
+            "Highlight benefits and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Historical Context of CBC",
+          "points": [
+            "Evolution of educational models",
+            "Shift towards competency-based approaches",
+            "Influence of technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in CBC",
+          "points": [
+            "Adoption in various educational institutions",
+            "Integration with technology",
+            "Focus on student-centered learning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis",
+          "points": [
+            "CBC vs Traditional Curriculum",
+            "Assessment methods",
+            "Student engagement levels",
+            "Real-world relevance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Findings",
+          "points": [
+            "Impact on student outcomes",
+            "Faculty perspectives",
+            "Institutional challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative vs Quantitative methods",
+            "Data collection techniques",
+            "Sample selection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Competency Identification Process",
+          "points": [
+            "Stakeholder involvement",
+            "Criteria for competency selection",
+            "Validation of competencies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Curriculum Development Steps",
+          "points": [
+            "Organizing competencies",
+            "Creating learning experiences",
+            "Assessment strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Methods",
+          "points": [
+            "Formative assessments",
+            "Summative assessments",
+            "Feedback mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from Implementation",
+          "points": [
+            "Increased student engagement",
+            "Improved mastery of competencies",
+            "Positive feedback from faculty"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Assessment Outcomes",
+          "points": [
+            "Performance metrics",
+            "Comparison with traditional methods",
+            "Retention rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Student Perspectives",
+          "points": [
+            "Feedback on learning experience",
+            "Perceived relevance to career goals",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Institutional Impact",
+          "points": [
+            "Changes in faculty training",
+            "Resource allocation",
+            "Support from administration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Benefits of CBC",
+          "points": [
+            "Flexibility in learning",
+            "Personalized education",
+            "Alignment with workforce needs",
+            "Enhanced engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Implementation",
+          "points": [
+            "Need for faculty training",
+            "Innovative assessment methods",
+            "Institutional support requirements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of CBC",
+          "points": [
+            "Trends in education",
+            "Potential for scalability",
+            "Integration with lifelong learning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Institutions",
+          "points": [
+            "Invest in faculty development",
+            "Adapt assessment strategies",
+            "Foster a supportive culture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Impact on Educational Outcomes",
+          "points": [
+            "Improved student performance",
+            "Better preparation for careers",
+            "Increased retention rates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Support for CBC initiatives",
+            "Funding for training programs",
+            "Encouragement of innovative practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion",
+          "points": [
+            "Summary of key findings",
+            "Importance of adopting CBC",
+            "Call to action for educational institutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

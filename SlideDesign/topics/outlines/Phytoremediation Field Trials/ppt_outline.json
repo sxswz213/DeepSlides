@@ -1,0 +1,321 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Field Trials": 4,
+    "Results": 4,
+    "Discussion": 3,
+    "Future Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Phytoremediation",
+          "points": [
+            "Definition of phytoremediation",
+            "Importance in environmental cleanup",
+            "Sustainable approach to pollution",
+            "Utilization of plant mechanisms",
+            "Enhancement of biodiversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore mechanisms of phytoremediation",
+            "Identify types of contaminants",
+            "Review field trials and case studies",
+            "Discuss advantages and limitations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Research",
+          "points": [
+            "Addressing environmental pollution",
+            "Restoring ecosystems",
+            "Innovative solutions for remediation",
+            "Potential for future applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Mechanisms of Phytoremediation",
+          "points": [
+            "Phytoextraction",
+            "Phytostabilization",
+            "Phytodegradation",
+            "Rhizofiltration",
+            "Versatility of plant processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Contaminants",
+          "points": [
+            "Heavy metals (lead, cadmium)",
+            "Organic pollutants (pesticides, pharmaceuticals)",
+            "Emerging contaminants (microplastics, PFAS)",
+            "Impact on human health and ecosystems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Development of phytoremediation techniques",
+            "Key milestones in research",
+            "Evolution of field applications",
+            "Global recognition and adoption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Field Trial Design",
+          "points": [
+            "Selection of plant species",
+            "Site characterization",
+            "Contaminant analysis",
+            "Monitoring protocols",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Water Hyacinth",
+          "points": [
+            "Use in wastewater treatment",
+            "Contaminant reduction rates",
+            "Bioaccumulation capabilities",
+            "Scalability of application"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Willow and Herbaceous Species",
+          "points": [
+            "Zinc-contaminated soils",
+            "Extraction efficiency",
+            "Restoration of agricultural lands",
+            "Long-term monitoring results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Constructed Wetlands Approach",
+          "points": [
+            "Design and implementation",
+            "Pollutant removal efficiencies",
+            "Nutrient management",
+            "Ecological benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Field Trials",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Successful Applications",
+          "points": [
+            "Overview of various field trials",
+            "Species used in different environments",
+            "Results and findings",
+            "Impact on local ecosystems",
+            "Community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Faced",
+          "points": [
+            "Environmental conditions",
+            "Depth of contamination",
+            "Species selection issues",
+            "Time requirements for remediation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis",
+          "points": [
+            "Effectiveness of different species",
+            "Cost analysis of phytoremediation vs. traditional methods",
+            "Long-term sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Field Trials",
+          "points": [
+            "Proposed locations for new trials",
+            "Innovative species selection",
+            "Integration with other remediation technologies",
+            "Collaboration with local stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from Field Trials",
+          "points": [
+            "Effectiveness of phytoremediation mechanisms",
+            "Reduction in contaminant levels",
+            "Biodiversity enhancement",
+            "Soil health improvements",
+            "Community benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistical Analysis",
+          "points": [
+            "Data interpretation methods",
+            "Graphs and charts of results",
+            "Comparative statistics",
+            "Significance of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study Outcomes",
+          "points": [
+            "Specific results from water hyacinth trial",
+            "Zinc extraction rates from willow species",
+            "Overall success metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned",
+          "points": [
+            "Best practices identified",
+            "Common pitfalls to avoid",
+            "Recommendations for future trials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Advantages of Phytoremediation",
+          "points": [
+            "Cost-effectiveness",
+            "Environmental benefits",
+            "Enhancement of biodiversity",
+            "Improvement of soil health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations and Challenges",
+          "points": [
+            "Time-consuming nature",
+            "Variability in effectiveness",
+            "Depth of contamination issues",
+            "Need for further research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Environmental Policy",
+          "points": [
+            "Integration into remediation strategies",
+            "Support for sustainable practices",
+            "Potential for regulatory frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Next Steps in Phytoremediation Research",
+          "points": [
+            "Further optimization of techniques",
+            "Exploration of new plant species",
+            "Collaboration with technology sectors",
+            "Broader implementation in diverse contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

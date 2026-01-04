@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Gene Therapy": 3,
+    "Types of Gene Therapy": 3,
+    "Clinical Trial Phases": 3,
+    "Current Clinical Trials": 4,
+    "Challenges and Considerations": 3,
+    "Future Directions": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Gene Therapy",
+          "points": [
+            "Definition of gene therapy",
+            "Importance in modern medicine",
+            "Potential to treat genetic disorders",
+            "Direct gene modification",
+            "Transformative impact on healthcare"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "To explore clinical trials",
+            "Highlight historical context",
+            "Discuss current trends",
+            "Examine regulatory landscape",
+            "Identify challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Gene Therapy",
+          "points": [
+            "Addressing untreatable conditions",
+            "Innovative treatment approaches",
+            "Advancements in genetic research",
+            "Patient-centered care",
+            "Future of personalized medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Gene Therapy",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Milestones",
+          "points": [
+            "Inception in the 1960s",
+            "First clinical trial in 1990",
+            "FDA approval of Luxturna in 2017",
+            "Development of AAVs",
+            "Impact of CRISPR technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Discoveries in Genetics",
+          "points": [
+            "Watson and Crick's DNA structure",
+            "Foundational genetic research",
+            "Evolution of gene therapy concepts",
+            "Significant breakthroughs",
+            "Integration of technology in therapy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolution of Clinical Trials",
+          "points": [
+            "Surge in trials during the 1990s",
+            "Setbacks and safety concerns",
+            "Regulatory scrutiny post-1999",
+            "Advancements in vector technology",
+            "Current landscape of gene therapy trials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Gene Therapy",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Ex-Vivo Gene Therapy",
+          "points": [
+            "Definition and process",
+            "Cell modification outside the body",
+            "Reintroduction of modified cells",
+            "Applications in blood disorders",
+            "Safety and efficacy profile"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "In-Vivo Gene Therapy",
+          "points": [
+            "Definition and process",
+            "Direct delivery of genetic material",
+            "Current trends in in-vivo approaches",
+            "Advantages and challenges",
+            "Emerging technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vector Types in Gene Therapy",
+          "points": [
+            "Role of vectors in gene delivery",
+            "Lentiviral vectors",
+            "Adeno-associated viruses (AAVs)",
+            "Comparison of vector types",
+            "Future developments in vector technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Clinical Trial Phases",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Preclinical Studies",
+          "points": [
+            "Initial laboratory research",
+            "Animal testing for safety",
+            "Efficacy assessments",
+            "Regulatory requirements",
+            "Transition to clinical trials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Phase I Trials",
+          "points": [
+            "Focus on safety and dosage",
+            "Small participant groups",
+            "Monitoring for adverse effects",
+            "Initial efficacy observations",
+            "Data collection for further phases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Phase II and III Trials",
+          "points": [
+            "Larger participant groups",
+            "Efficacy and side effects evaluation",
+            "Comparative studies with existing treatments",
+            "Regulatory submissions for approval",
+            "Importance of data integrity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Clinical Trials",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Trends in Trials",
+          "points": [
+            "68.5% targeting cancer",
+            "Focus on rare genetic disorders",
+            "Emerging non-oncology applications",
+            "Increased use of ex-vivo methods",
+            "Growth of in-vivo techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recent Advancements",
+          "points": [
+            "CRISPR technology applications",
+            "Innovative gene editing techniques",
+            "Success stories in clinical trials",
+            "Regulatory approvals in recent years",
+            "Impact on treatment paradigms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Landscape of Trials",
+          "points": [
+            "Distribution of trials worldwide",
+            "Collaboration between institutions",
+            "Diversity in patient populations",
+            "Regulatory differences across regions",
+            "Global health implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Successful Trials",
+          "points": [
+            "Luxturna for retinal disease",
+            "Zolgensma for spinal muscular atrophy",
+            "CAR-T therapies for leukemia",
+            "Innovative approaches in hemophilia",
+            "Lessons learned from trial outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Considerations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Safety Concerns",
+          "points": [
+            "Potential adverse effects",
+            "Unintended genetic modifications",
+            "Long-term monitoring requirements",
+            "Regulatory oversight",
+            "Patient safety protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Dilemmas",
+          "points": [
+            "Informed consent complexities",
+            "Germline modifications implications",
+            "Equity in access to therapies",
+            "Public perception and acceptance",
+            "Balancing innovation with ethics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Accessibility Issues",
+          "points": [
+            "High costs of gene therapies",
+            "Socioeconomic disparities",
+            "Global healthcare resource distribution",
+            "Need for sustainable pricing models",
+            "Importance of public education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Advancements in Technology",
+          "points": [
+            "Continued evolution of gene editing",
+            "Integration of AI in research",
+            "Potential for personalized therapies",
+            "Emerging delivery methods",
+            "Future of gene therapy applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Adaptations",
+          "points": [
+            "Need for updated frameworks",
+            "Expedited approval processes",
+            "Balancing safety and innovation",
+            "Global regulatory harmonization",
+            "Engagement with stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Education and Awareness",
+          "points": [
+            "Importance of informed public discourse",
+            "Enhancing understanding of gene therapy",
+            "Addressing misconceptions",
+            "Promoting equitable access",
+            "Fostering community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

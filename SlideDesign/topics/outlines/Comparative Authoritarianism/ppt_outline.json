@@ -1,0 +1,324 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 4,
+    "Methodology": 3,
+    "Comparative Analysis": 6,
+    "Case Studies": 4,
+    "Results": 2,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Comparative Authoritarianism",
+          "points": [
+            "Definition of comparative authoritarianism",
+            "Importance of studying hybrid regimes",
+            "Overview of competitive authoritarianism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Features of Competitive Authoritarianism",
+          "points": [
+            "Manipulated elections",
+            "Restricted political freedoms",
+            "Media control",
+            "State resource misuse",
+            "Coercive tactics against opposition"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Objectives",
+          "points": [
+            "Examine defining features",
+            "Analyze historical context",
+            "Compare with other governance types",
+            "Explore implications for stability and democratization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Historical Context of Competitive Authoritarianism",
+          "points": [
+            "Emergence post-Cold War",
+            "Regional trends in Africa, Asia, Latin America",
+            "Influence of Western ties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Theorists and Contributions",
+          "points": [
+            "Levitsky and Way's framework",
+            "Comparative studies on regime types",
+            "Impact of external pressures on democratization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Authoritarianism vs. Other Regimes",
+          "points": [
+            "Differences from full authoritarianism",
+            "Contrasts with democratic systems",
+            "Implications for political stability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recent Developments in Research",
+          "points": [
+            "COVID-19's impact on regimes",
+            "Evolving nature of competitive authoritarianism",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative analysis",
+            "Case study approach",
+            "Comparative framework"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Academic journals",
+            "Government reports",
+            "NGO publications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytical Framework",
+          "points": [
+            "Criteria for regime classification",
+            "Indicators of political stability",
+            "Measuring democratization efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Comparative Analysis",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Defining Characteristics of Competitive Authoritarianism",
+          "points": [
+            "Regular elections",
+            "Limited political opposition",
+            "Media manipulation",
+            "State resource allocation",
+            "Coercive measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Ghana",
+          "points": [
+            "Transition to democracy",
+            "Role of civil society",
+            "Impact of external pressures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Belarus",
+          "points": [
+            "Enduring authoritarianism",
+            "Suppression of opposition",
+            "Media censorship"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Mexico",
+          "points": [
+            "Electoral reforms",
+            "Political party dynamics",
+            "Challenges to incumbents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Zimbabwe",
+          "points": [
+            "Historical context",
+            "Impact of ruling party cohesion",
+            "International responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Summary of Case Studies",
+          "points": [
+            "Divergence in political trajectories",
+            "Influence of regional context",
+            "Lessons learned for democratization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Ghana: A Success Story",
+          "points": [
+            "Democratic transitions",
+            "Role of civil society",
+            "International support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Belarus: Authoritarian Resilience",
+          "points": [
+            "Political repression",
+            "Media control",
+            "Opposition challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Mexico: Navigating Hybrid Governance",
+          "points": [
+            "Electoral reforms",
+            "Political party dynamics",
+            "Public engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Zimbabwe: The Struggle for Democracy",
+          "points": [
+            "Historical context",
+            "Impact of ruling party",
+            "International responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Findings",
+          "points": [
+            "Characteristics of competitive authoritarianism",
+            "Comparative insights from case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Future Research",
+          "points": [
+            "Need for ongoing analysis",
+            "Focus on evolving dynamics",
+            "Potential for democratization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Nature of competitive authoritarianism",
+            "Comparative analysis outcomes",
+            "Importance of context in regime stability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Research on transitions",
+            "Impact of global influences",
+            "Continued relevance of competitive authoritarianism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

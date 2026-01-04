@@ -1,0 +1,293 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on New Breeding Techniques": 4,
+    "Regulatory Framework": 5,
+    "Case Studies": 4,
+    "Comparative Analysis": 3,
+    "Future Perspectives": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of New Breeding Techniques",
+          "points": [
+            "Definition of New Breeding Techniques (NBTs)",
+            "Importance in agricultural biotechnology",
+            "Addressing global challenges: food security and sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Regulation",
+          "points": [
+            "Need for safety in agricultural innovation",
+            "Impact of regulations on NBT adoption",
+            "Balancing innovation with public concerns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore methodologies of NBTs",
+            "Analyze regulatory frameworks",
+            "Assess applications and implications for agriculture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on New Breeding Techniques",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "CRISPR Technology",
+          "points": [
+            "Mechanism of action: guide RNA and Cas9",
+            "Precision in genome editing",
+            "Applications in enhancing crop traits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "TALEN Technology",
+          "points": [
+            "Functionality of engineered proteins",
+            "Targeted modifications in crops",
+            "Success stories in disease resistance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cisgenesis",
+          "points": [
+            "Definition and process of cisgenesis",
+            "Maintaining genetic integrity",
+            "Public acceptance compared to traditional GMOs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advantages of NBTs",
+          "points": [
+            "Higher precision and efficiency",
+            "Reduced unintended consequences",
+            "Potential for sustainable agricultural practices",
+            "Addressing climate change impacts",
+            "Enhancing food security"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Regulatory Framework",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Regulatory Landscape Overview",
+          "points": [
+            "Variability across regions: EU, US, Canada",
+            "Impact of regulations on NBT adoption",
+            "Importance of harmonized frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "EU Regulations on NBTs",
+          "points": [
+            "2018 ruling classifying genome-edited plants as GMOs",
+            "Stringent pre-market assessments",
+            "Recent proposals for regulatory reform"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "US Approach to NBTs",
+          "points": [
+            "Permissive regulatory environment",
+            "USDA's stance on gene-edited products",
+            "Market entry without rigorous scrutiny"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Canada's Regulatory Framework",
+          "points": [
+            "Case-by-case assessment approach",
+            "Less restrictive than EU regulations",
+            "Encouraging agricultural innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications of Regulatory Differences",
+          "points": [
+            "Influence on investment and research",
+            "Challenges for international collaboration",
+            "Need for public engagement and education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Drought-Resistant Rice",
+          "points": [
+            "Application of CRISPR technology",
+            "Importance in water-scarce regions",
+            "Impact on crop yields and sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Genomics-Assisted Speed Breeding",
+          "points": [
+            "Accelerating breeding cycles",
+            "Development of climate-resilient varieties",
+            "Ensuring food security"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Precision Agriculture Integration",
+          "points": [
+            "Optimizing resource use",
+            "Enhancing crop resilience",
+            "Contributing to sustainable farming practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Case Studies",
+          "points": [
+            "Demonstrating NBTs' potential",
+            "Addressing food security challenges",
+            "Promoting sustainable agricultural practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Comparative Analysis",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "NBTs vs Traditional GMOs",
+          "points": [
+            "Methodological differences",
+            "Regulatory challenges faced",
+            "Public perception and acceptance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory Approaches Comparison",
+          "points": [
+            "EU's stringent regulations vs US permissiveness",
+            "Canada's case-by-case assessments",
+            "Impact on innovation and market access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Public Perception Insights",
+          "points": [
+            "Favorability of NBTs",
+            "Opposition to traditional GMOs",
+            "Importance of effective communication"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Perspectives",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Harmonizing Regulatory Frameworks",
+          "points": [
+            "Balancing safety and innovation",
+            "Encouraging responsible use of NBTs",
+            "Facilitating international collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Public Understanding",
+          "points": [
+            "Educational initiatives on NBTs",
+            "Addressing misconceptions about GMOs",
+            "Building trust in biotechnology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Maximizing Benefits of NBTs",
+          "points": [
+            "Utilizing NBTs for sustainable agriculture",
+            "Addressing global food security challenges",
+            "Future research directions and innovations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

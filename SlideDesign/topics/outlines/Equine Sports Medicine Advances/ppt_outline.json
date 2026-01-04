@@ -1,0 +1,298 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Advancements in Diagnostics": 4,
+    "Innovations in Treatment": 4,
+    "Rehabilitation Techniques": 3,
+    "Case Studies": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Equine Sports Medicine",
+          "points": [
+            "Importance of equine athletes",
+            "Growth in equine sports",
+            "Need for advanced medical practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Highlight recent advancements",
+            "Discuss impact on equine health",
+            "Explore future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Report",
+          "points": [
+            "Focus on diagnostics",
+            "Innovative treatments",
+            "Rehabilitation and prevention strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "History of Equine Sports Medicine",
+          "points": [
+            "Evolution of veterinary practices",
+            "Emergence of specialized care",
+            "Impact of competitive sports"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Equine Sports Medicine",
+          "points": [
+            "Increased demand for performance",
+            "Integration of technology",
+            "Focus on preventive care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Equine Sports Medicine",
+          "points": [
+            "Injury prevalence",
+            "Need for research",
+            "Balancing performance and health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Advancements in Diagnostics",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Overview of Diagnostic Imaging",
+          "points": [
+            "Importance in injury detection",
+            "Types of imaging technologies",
+            "Role in treatment planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "MRI in Equine Medicine",
+          "points": [
+            "High-resolution imaging",
+            "Soft tissue injury detection",
+            "Benefits over traditional methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "CT and PET Technologies",
+          "points": [
+            "Bone structure visualization",
+            "Fracture diagnosis",
+            "Minimized anesthesia risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Diagnostic Imaging",
+          "points": [
+            "Emerging technologies",
+            "Potential for real-time imaging",
+            "Integration with treatment protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Innovations in Treatment",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Regenerative Therapies Overview",
+          "points": [
+            "Stem cell therapy",
+            "Platelet-rich plasma (PRP)",
+            "Natural healing processes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Shockwave and Laser Therapies",
+          "points": [
+            "Mechanisms of action",
+            "Benefits for recovery",
+            "Complementary to regenerative methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies in Orthopedic Treatments",
+          "points": [
+            "Successful recovery stories",
+            "Performance improvements",
+            "Long-term health benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Treatment",
+          "points": [
+            "Ongoing research",
+            "Potential new therapies",
+            "Integration of technology in treatment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Rehabilitation Techniques",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Controlled Exercise Programs",
+          "points": [
+            "Importance in recovery",
+            "Types of exercises",
+            "Gradual intensity increase"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Alternative Therapies in Rehabilitation",
+          "points": [
+            "Acupuncture benefits",
+            "Hydrotherapy advantages",
+            "Shockwave therapy applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comprehensive Recovery Strategies",
+          "points": [
+            "Holistic approach",
+            "Monitoring progress",
+            "Tailored rehabilitation plans"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study 1: Successful Recovery",
+          "points": [
+            "Horse profile",
+            "Injury details",
+            "Treatment and outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Innovative Treatment",
+          "points": [
+            "Horse profile",
+            "Regenerative therapy used",
+            "Performance post-treatment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: Rehabilitation Success",
+          "points": [
+            "Horse profile",
+            "Rehabilitation techniques applied",
+            "Long-term health results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Equine Sports Medicine",
+          "points": [
+            "Increased focus on prevention",
+            "Advancements in technology",
+            "Collaboration in research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Summary",
+          "points": [
+            "Recap of advancements",
+            "Importance of continued research",
+            "Future outlook for equine athletes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

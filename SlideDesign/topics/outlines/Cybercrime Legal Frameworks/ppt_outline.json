@@ -1,0 +1,308 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background on Cybercrime": 3,
+    "Legal Frameworks Overview": 4,
+    "International Treaties and Agreements": 3,
+    "National Legislation Examples": 4,
+    "Challenges in Cybercrime Legislation": 3,
+    "Case Studies": 2,
+    "Future Trends and Recommendations": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Cybercrime",
+          "points": [
+            "Definition of Cybercrime",
+            "Impact on Society",
+            "Importance of Legal Frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore Legal Frameworks",
+            "Analyze International Treaties",
+            "Discuss Challenges and Future Directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Cybercrime",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "The Rise of Cybercrime",
+          "points": [
+            "Statistics on Cybercrime Incidents",
+            "Types of Cybercrime",
+            "Global Trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cybercrime Threats to Stakeholders",
+          "points": [
+            "Individuals",
+            "Businesses",
+            "Governments",
+            "Critical Infrastructure"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Evolution and Cybercrime",
+          "points": [
+            "Emerging Technologies",
+            "Changing Tactics of Cybercriminals",
+            "Need for Adaptation in Laws"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Legal Frameworks Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Importance of Legal Frameworks",
+          "points": [
+            "Establishing Jurisdiction",
+            "Defining Cyber Offenses",
+            "Facilitating International Cooperation",
+            "Protecting Data Privacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Cybercrime Laws",
+          "points": [
+            "Definitions of Cybercrime",
+            "Procedural Tools",
+            "Enforcement Mechanisms",
+            "International Collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current State of Cybercrime Legislation",
+          "points": [
+            "Global Overview",
+            "Variations in National Laws",
+            "Significance of Harmonization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of International Organizations",
+          "points": [
+            "United Nations Initiatives",
+            "Council of Europe",
+            "Private Sector Involvement",
+            "Global Cybersecurity Strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "International Treaties and Agreements",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Budapest Convention on Cybercrime",
+          "points": [
+            "First International Treaty",
+            "Key Provisions",
+            "Significance for Member States"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Malabo Convention",
+          "points": [
+            "Focus on Africa",
+            "Data Protection and Cybersecurity",
+            "Regional Cooperation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Global Cybercrime Treaty",
+          "points": [
+            "Objectives",
+            "Expected Impact",
+            "Role of UN Member States"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "National Legislation Examples",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "United States Cybercrime Laws",
+          "points": [
+            "Computer Fraud and Abuse Act",
+            "Stored Communications Act",
+            "CLOUD Act"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "European Union Cybercrime Legislation",
+          "points": [
+            "General Data Protection Regulation (GDPR)",
+            "Directive on Attacks Against Information Systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Asia-Pacific Cybercrime Laws",
+          "points": [
+            "Australia's Cybercrime Act",
+            "Singapore's Computer Misuse Act",
+            "Regional Cooperation Efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of National Laws",
+          "points": [
+            "Strengths and Weaknesses",
+            "Enforcement Challenges",
+            "Best Practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges in Cybercrime Legislation",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Jurisdictional Conflicts",
+          "points": [
+            "Cross-Border Issues",
+            "Varying Legal Definitions",
+            "Enforcement Difficulties"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Inconsistencies in Legal Frameworks",
+          "points": [
+            "Non-Signatory Countries",
+            "Gaps in Cooperation",
+            "Impact on Prosecution"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Challenges",
+          "points": [
+            "Rapid Technological Advancements",
+            "Need for Legislative Updates",
+            "Adapting to New Cyber Threats"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Microsoft Corp. v. United States",
+          "points": [
+            "Background of the Case",
+            "Jurisdictional Implications",
+            "Impact on Data Privacy Laws"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Schrems II Case",
+          "points": [
+            "Overview of the Case",
+            "Invalidation of Privacy Shield",
+            "Consequences for Data Transfers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends and Recommendations",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Towards a Unified Cybercrime Framework",
+          "points": [
+            "Need for International Collaboration",
+            "Adapting Laws to Emerging Technologies",
+            "Recommendations for Policymakers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

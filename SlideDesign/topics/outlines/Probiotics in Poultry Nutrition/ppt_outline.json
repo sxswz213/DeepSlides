@@ -1,0 +1,316 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Probiotics": 3,
+    "Importance of Probiotics in Poultry Nutrition": 3,
+    "Methodology": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Conclusion": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Probiotics in Poultry Nutrition",
+          "points": [
+            "Definition of probiotics",
+            "Importance in poultry farming",
+            "Shift from antibiotics to probiotics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Research",
+          "points": [
+            "To evaluate the benefits of probiotics",
+            "To analyze key strains",
+            "To identify challenges in application"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of the Study",
+          "points": [
+            "Addressing antibiotic resistance",
+            "Enhancing poultry health",
+            "Supporting sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Probiotics",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What are Probiotics?",
+          "points": [
+            "Live microorganisms",
+            "Health benefits to the host",
+            "Types: bacterial and yeast"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Classification of Probiotics",
+          "points": [
+            "Single-species vs multi-species",
+            "Spore-forming vs non-spore-forming",
+            "Origin-based classification"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role in Poultry Nutrition",
+          "points": [
+            "Direct-fed microbials (DFMs)",
+            "Enhancing gut health",
+            "Improving nutrient absorption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Importance of Probiotics in Poultry Nutrition",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Enhancing Gut Health",
+          "points": [
+            "Modulating gut microbiome",
+            "Reducing pathogenic bacteria",
+            "Improving nutrient absorption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Boosting Immune Function",
+          "points": [
+            "Strengthening immune response",
+            "Reducing disease susceptibility",
+            "Stimulating immunoglobulin production"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Improving Performance",
+          "points": [
+            "Feed conversion ratios",
+            "Growth rates",
+            "Egg production"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Literature review",
+            "Field studies",
+            "Experimental trials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Surveys of poultry farms",
+            "Performance metrics",
+            "Health assessments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Comparative studies",
+            "Meta-analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Impact on Gut Health",
+          "points": [
+            "Improved microbiota balance",
+            "Reduced pathogen loads",
+            "Enhanced nutrient absorption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Effects on Immune Function",
+          "points": [
+            "Increased IgA levels",
+            "Enhanced immune cell activity",
+            "Lower disease incidence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Performance Metrics",
+          "points": [
+            "Higher growth rates",
+            "Better feed efficiency",
+            "Increased egg production"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Benefits",
+          "points": [
+            "Reduced antibiotic use",
+            "Lower waste output",
+            "Sustainable farming practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings",
+          "points": [
+            "Probiotics enhance gut health",
+            "Boost immune function",
+            "Improve overall productivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Identified",
+          "points": [
+            "Strain specificity",
+            "Cost-effectiveness",
+            "Need for tailored formulations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Poultry Farming",
+          "points": [
+            "Shift towards probiotics",
+            "Sustainable practices",
+            "Consumer demand for antibiotic-free products"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Findings",
+          "points": [
+            "Probiotics improve gut health",
+            "Enhance immune function",
+            "Increase productivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Probiotics as a viable alternative",
+            "Need for further research",
+            "Importance of sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Opportunities",
+          "points": [
+            "Targeted probiotic solutions",
+            "Innovative delivery methods",
+            "Customization for specific poultry systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Industry Implications",
+          "points": [
+            "Adoption of probiotics in feed",
+            "Education for poultry farmers",
+            "Regulatory considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

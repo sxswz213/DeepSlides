@@ -1,0 +1,25 @@
+{
+  "query_results": "Search results: \n\n\n\n--- SOURCE 1: energy storage technologies comparison: Top 5 Powerful Winners ... ---\nURL: https://compassenergystorage.com/energy-storage-technologies-comparison/\n\nSUMMARY:\nThe tradeoff? Energy density. Supercapacitors store just 6-10 Wh/kg compared to lithium-ion's 100-265 Wh/kg. But they more than make up\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 2: Review on Comparison of Different Energy Storage Technologies ... ---\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC8428241/\n\nSUMMARY:\nIn micro-grids, the best choice for storage is supercapacitors, because of their temperature range, high energy density, and fast charging/discharging.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 3: Selected Technologies of Electrochemical Energy Storage—A Review ---\nURL: https://www.mdpi.com/1996-1073/16/13/5034\n\nSUMMARY:\nThe aim of this paper is to review the currently available electrochemical technologies of energy storage, their parameters, properties and applicability.\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 4: The comparison of energy density and power ... - ResearchGate ---\nURL: https://www.researchgate.net/figure/The-comparison-of-energy-density-and-power-density-for-different-energy-storage-devices_fig1_339185370\n\nSUMMARY:\nThere are various factors for selecting the appropriate energy storage devices such as energy density (W$h/kg), power density (W/kg), cycle efficiency (%), self\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- SOURCE 5: Electrochemical storage systems for renewable energy integration ---\nURL: https://www.sciencedirect.com/science/article/abs/pii/S0378775325006688\n\nSUMMARY:\nThis comprehensive review systematically analyzes recent developments in grid-scale battery storage technologies, examining fundamental materials advancement,\n\n\n\n--------------------------------------------------------------------------------\n\n\n--- IMAGES ---\n\nIMAGE 1:\nURL: https://www.seas.ucla.edu/~pilon/images/supercapacitors/Power+vs+Energy.png\nDESCRIPTION: None\n\nIMAGE 2:\nURL: https://www.researchgate.net/profile/Ferry-Iskandar/publication/348187185/figure/fig1/AS:976246351593473@1609766676210/Ragone-plot-for-several-types-of-electrochemical-energy-storage-devices-adapted-from.png\nDESCRIPTION: None\n\nIMAGE 3:\nURL: https://www.bestmag.co.uk/wp-content/uploads/2022/10/Fig-1-Ragonne-plot-for-various-electrochemical-energy-storage-technologies-scaled.jpg\nDESCRIPTION: A graph comparing the power density and energy density of various electrochemical systems.\n\nIMAGE 4:\nURL: https://www.researchgate.net/publication/359534164/figure/fig1/AS:11431281181861095@1692204362328/A-Ragone-plot-of-electrical-energy-storage-technologies-with-the-performances-of-power.png\nDESCRIPTION: None\n\nIMAGE 5:\nURL: https://www.researchgate.net/profile/Eklas_Hossain/publication/317935388/figure/fig16/AS:668656979701776@1536431655767/Comparison-of-various-electrochemical-storage-devices-in-Energy-Density-Power-Density.jpg\nDESCRIPTION: None\n\n--------------------------------------------------------------------------------\n",
+  "enriched_points": [
+    {
+      "point_title": "Energy Density Comparison",
+      "expanded_content": "Lithium-ion batteries exhibit energy densities of 100-265 Wh/kg, substantially higher than supercapacitors' 6-10 Wh/kg, making them more suitable for long-duration applications."
+    },
+    {
+      "point_title": "Cycle Life Analysis",
+      "expanded_content": "Supercapacitors offer superior cycle life, lasting over a million cycles, while lithium-ion batteries typically endure 500-2000 cycles, affecting their longevity in various applications."
+    },
+    {
+      "point_title": "Application Suitability",
+      "expanded_content": "Lithium-ion batteries are ideal for electric vehicles and renewable energy storage, while supercapacitors excel in applications requiring rapid charge/discharge, such as in micro-grids."
+    },
+    {
+      "point_title": "Performance Metrics",
+      "expanded_content": "Key performance metrics include energy density, power density, cycle efficiency, and self-discharge rates, which vary significantly across electrochemical storage technologies."
+    },
+    {
+      "point_title": "Future Potential of Each Technology",
+      "expanded_content": "Lithium-ion technology continues to innovate with enhanced materials, while supercapacitors are advancing towards integration with renewable sources, expanding their usage in grid applications."
+    }
+  ]
+}

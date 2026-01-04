@@ -1,0 +1,296 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 3,
+    "Future Directions": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of 3D Printing in Prosthetics",
+          "points": [
+            "Definition of 3D printing",
+            "Importance in prosthetic design",
+            "Customization capabilities",
+            "Rapid production advantages",
+            "Cost-effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Transformative Impact",
+          "points": [
+            "Enhancing patient comfort",
+            "Improving functionality",
+            "Increasing accessibility",
+            "Supporting diverse user needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Presentation Goals",
+          "points": [
+            "Explore types of 3D-printed prosthetics",
+            "Discuss benefits of 3D printing",
+            "Compare digital vs. traditional methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Prosthetics",
+          "points": [
+            "Traditional manufacturing methods",
+            "Challenges faced by amputees",
+            "Limitations of generic designs",
+            "Need for personalized solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient Experiences",
+          "points": [
+            "Discomfort with traditional prosthetics",
+            "Long wait times for production",
+            "High costs of custom solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Advancements",
+          "points": [
+            "Emergence of 3D printing",
+            "Potential for innovation",
+            "Growing interest in personalized medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Market Demand",
+          "points": [
+            "Increasing number of amputees",
+            "Need for affordable solutions",
+            "Desire for improved quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Limitations of Traditional Methods",
+          "points": [
+            "Labor-intensive processes",
+            "Long production times",
+            "High material waste",
+            "Generic fit issues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Patient Dissatisfaction",
+          "points": [
+            "Inadequate comfort",
+            "Functional limitations",
+            "Frequent adjustments needed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cost Barriers",
+          "points": [
+            "High costs of traditional prosthetics",
+            "Limited access for low-income patients",
+            "Inequities in healthcare"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Change",
+          "points": [
+            "Demand for faster solutions",
+            "Desire for personalized care",
+            "Pressure on manufacturers to innovate"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Introduction of 3D Printing",
+          "points": [
+            "Overview of 3D printing technology",
+            "How it works in prosthetics",
+            "Benefits of rapid prototyping"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Customization Capabilities",
+          "points": [
+            "Patient-specific designs",
+            "Enhanced comfort and fit",
+            "Integration of advanced materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cost-Effectiveness",
+          "points": [
+            "Lower material waste",
+            "Reduced labor costs",
+            "Affordable solutions for patients"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Improved Production Times",
+          "points": [
+            "Production in hours/days",
+            "Quick turnaround for urgent needs",
+            "Adaptability for changing requirements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies and Success Stories",
+          "points": [
+            "Real-life examples of 3D-printed prosthetics",
+            "Patient testimonials",
+            "Impact on quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Enhanced Patient Outcomes",
+          "points": [
+            "Improved comfort",
+            "Better functionality",
+            "Increased user satisfaction"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Broader Accessibility",
+          "points": [
+            "More affordable options",
+            "Wider reach for underserved populations",
+            "Potential for global impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Prosthetic Design",
+          "points": [
+            "Continued advancements in 3D printing",
+            "Integration of new materials",
+            "Focus on user-centered design"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Innovations on the Horizon",
+          "points": [
+            "Emerging technologies in 3D printing",
+            "Potential for smart prosthetics",
+            "Integration of AI and machine learning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research and Development Needs",
+          "points": [
+            "Focus on material science",
+            "User feedback for design improvements",
+            "Collaboration between engineers and healthcare professionals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for the Future",
+          "points": [
+            "Making prosthetics accessible for all",
+            "Enhancing quality of life for amputees",
+            "Transforming the healthcare landscape"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

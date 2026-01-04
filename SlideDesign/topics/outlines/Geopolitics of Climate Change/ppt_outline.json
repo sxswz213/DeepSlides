@@ -1,0 +1,294 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 5,
+    "Question": 3,
+    "Answer": 5,
+    "Implications": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Climate Change and Geopolitics",
+          "points": [
+            "Definition of climate change",
+            "Importance of geopolitics",
+            "Interconnection between climate and global relations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Global Climate Trends",
+          "points": [
+            "Rising global temperatures",
+            "Increased frequency of extreme weather events",
+            "Impact on ecosystems and biodiversity",
+            "Global responses to climate change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of the Topic",
+          "points": [
+            "Why geopolitics matters in climate discussions",
+            "Potential for conflict and cooperation",
+            "Urgency of addressing climate impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Resource Scarcity and Geopolitical Tensions",
+          "points": [
+            "Competition for water and arable land",
+            "Historical context of resource conflicts",
+            "Case studies of affected regions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Climate-Induced Migration",
+          "points": [
+            "Definition and causes of climate migration",
+            "Impact on host countries",
+            "Political and social tensions arising from migration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Impacts of Climate Change",
+          "points": [
+            "Projected GDP losses",
+            "Disproportionate effects on low-income countries",
+            "Economic instability and resource competition"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Energy Transition Dynamics",
+          "points": [
+            "Shift from fossil fuels to renewables",
+            "Emergence of new energy players",
+            "Impact on traditional power structures",
+            "Global energy independence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Climate Change as a Threat Multiplier",
+          "points": [
+            "Exacerbation of existing conflicts",
+            "Vulnerability of regions like the Middle East and Africa",
+            "Cycle of conflict and environmental degradation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Disparities and Climate Vulnerability",
+          "points": [
+            "Impact on global income distribution",
+            "Challenges for developing nations",
+            "Need for adaptive capacity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geopolitical Conflicts Over Resources",
+          "points": [
+            "Historical examples of resource wars",
+            "Current hotspots for potential conflict",
+            "Role of international diplomacy"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Energy Transition",
+          "points": [
+            "Need for infrastructure investment",
+            "Resource dependencies in renewables",
+            "Geopolitical implications of energy shifts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social and Political Tensions",
+          "points": [
+            "Strain on social services due to migration",
+            "Political backlash against climate policies",
+            "Rise of nationalism and protectionism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What Are the Key Geopolitical Risks?",
+          "points": [
+            "Resource competition",
+            "Climate-induced migration",
+            "Economic instability",
+            "Energy transition challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How Can Nations Collaborate?",
+          "points": [
+            "Importance of international agreements",
+            "Role of NGOs and civil society",
+            "Examples of successful collaborations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Strategies Are Needed for Adaptation?",
+          "points": [
+            "Integrated resource management",
+            "Investment in renewable technologies",
+            "Conflict resolution frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Collaborative Approaches to Resource Management",
+          "points": [
+            "Shared water agreements",
+            "Transboundary resource management",
+            "Regional cooperation initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Interventions for Economic Resilience",
+          "points": [
+            "Investment in adaptive infrastructure",
+            "Support for vulnerable economies",
+            "Global financial mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fostering New Energy Alliances",
+          "points": [
+            "Partnerships in renewable technology",
+            "Diversification of energy sources",
+            "Global energy trade agreements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Addressing Climate-Induced Conflicts",
+          "points": [
+            "Conflict resolution strategies",
+            "Community-based adaptation programs",
+            "International peacekeeping efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Summary of key findings",
+            "Importance of proactive measures",
+            "Encouragement for global cooperation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Global Governance",
+          "points": [
+            "Need for integrated climate policies",
+            "Role of international organizations",
+            "Importance of multilateralism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Outlook and Recommendations",
+          "points": [
+            "Long-term strategies for sustainability",
+            "Investment in research and innovation",
+            "Building resilient communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

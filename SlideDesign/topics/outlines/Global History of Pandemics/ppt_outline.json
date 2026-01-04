@@ -1,0 +1,314 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Historical Pandemics": 6,
+    "Modern Pandemics": 6,
+    "Current Pandemic Situation": 4,
+    "Future Implications and Preparedness": 4
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Pandemics",
+          "points": [
+            "Definition of pandemics",
+            "Historical significance",
+            "Impact on societies",
+            "Importance of studying pandemics",
+            "Objectives of the presentation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Timeline of Pandemics",
+          "points": [
+            "Ancient to modern pandemics",
+            "Key events in history",
+            "Lessons learned",
+            "Global health implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Historical Pandemics",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Plague of Athens (430-426 BCE)",
+          "points": [
+            "Estimated deaths: 75,000-100,000",
+            "Impact on Athenian society",
+            "Psychological effects",
+            "Thucydides' documentation",
+            "Spread through port of Piraeus"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Antonine Plague (165-180 CE)",
+          "points": [
+            "Estimated deaths: 5 million",
+            "Causes: smallpox or measles",
+            "Impact on the Roman Empire",
+            "Societal changes",
+            "Historical context"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Justinian Plague (541-542 CE)",
+          "points": [
+            "Estimated deaths: 25-50 million",
+            "Caused by Yersinia pestis",
+            "Impact on Byzantine Empire",
+            "Economic and social upheaval",
+            "Spread across Europe"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Black Death (1347-1351)",
+          "points": [
+            "Estimated deaths: 25 million",
+            "Labor shortages and economic changes",
+            "Social structure transformation",
+            "Public health responses",
+            "Cultural impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Spanish Flu (1918)",
+          "points": [
+            "Estimated deaths: 50 million",
+            "Affected young adults disproportionately",
+            "Global spread and response",
+            "Public health measures",
+            "Long-term effects on health systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Historical Pandemics",
+          "points": [
+            "Key takeaways from historical pandemics",
+            "Patterns of societal impact",
+            "Lessons for modern health systems",
+            "Importance of historical context"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Modern Pandemics",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "HIV/AIDS Pandemic",
+          "points": [
+            "Emergence in late 20th century",
+            "Estimated deaths: 36 million",
+            "Global health challenges",
+            "Impact on sub-Saharan Africa",
+            "Advancements in treatment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "SARS Outbreak (2002-2003)",
+          "points": [
+            "Global spread and response",
+            "774 deaths worldwide",
+            "Lessons learned for future outbreaks",
+            "Impact on public health policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "COVID-19 Pandemic",
+          "points": [
+            "Emergence in late 2019",
+            "Estimated deaths: 7 million+",
+            "Global economic disruption",
+            "Social changes and adaptations",
+            "Public health responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Modern Pandemics",
+          "points": [
+            "Similarities and differences",
+            "Impact on global health systems",
+            "Lessons learned from responses",
+            "Importance of preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Global Health Landscape",
+          "points": [
+            "Ongoing health challenges",
+            "Emerging infectious diseases",
+            "Need for global cooperation",
+            "Role of technology in health responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Modern Pandemics",
+          "points": [
+            "Key insights from modern pandemics",
+            "Impact on society and economy",
+            "Importance of coordinated responses",
+            "Future implications for health systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Pandemic Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Status of COVID-19",
+          "points": [
+            "Ongoing cases and variants",
+            "Vaccination efforts",
+            "Public health measures",
+            "Global disparities in response"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons from COVID-19",
+          "points": [
+            "Importance of rapid response",
+            "Role of communication",
+            "Impact of misinformation",
+            "Need for public trust"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Health Initiatives",
+          "points": [
+            "WHO's role in pandemic response",
+            "International collaborations",
+            "Funding and resource allocation",
+            "Focus on equitable access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Preparedness Strategies",
+          "points": [
+            "Surveillance systems",
+            "Research and development",
+            "Public health infrastructure",
+            "Community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Implications and Preparedness",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Factors Contributing to Future Pandemics",
+          "points": [
+            "Zoonotic transmission",
+            "Climate change effects",
+            "Human behavior and urbanization",
+            "Global travel and trade"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Strategies for Future Preparedness",
+          "points": [
+            "Strengthening global health systems",
+            "Investing in research",
+            "Enhancing surveillance",
+            "Promoting public health education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Technology in Pandemic Response",
+          "points": [
+            "Telemedicine advancements",
+            "Data analytics for tracking",
+            "Vaccine development technologies",
+            "Public health communication tools"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Call to Action",
+          "points": [
+            "Importance of learning from history",
+            "Need for global cooperation",
+            "Commitment to public health",
+            "Preparedness for future outbreaks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 4,
+    "Outcome": 3,
+    "Future Directions": 2,
+    "Call to Action": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Public Archaeology?",
+          "points": [
+            "Definition and importance",
+            "Bridging research and community",
+            "Fostering cultural heritage appreciation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Goals of Public Archaeology",
+          "points": [
+            "Community engagement",
+            "Promoting inclusivity",
+            "Ensuring ethical practices",
+            "Empowering local narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Overview of Presentation",
+          "points": [
+            "Situation: Current state of public archaeology",
+            "Conflict: Challenges faced",
+            "Resolution: Strategies for improvement",
+            "Outcome: Benefits of community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Landscape of Public Archaeology",
+          "points": [
+            "Growing interest in community involvement",
+            "Increased awareness of cultural heritage",
+            "Diverse methodologies being employed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Principles of Public Archaeology",
+          "points": [
+            "Community engagement",
+            "Ethical practices",
+            "Mutual benefit",
+            "Long-term commitment",
+            "Empowerment of local voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Vems Historia?",
+          "points": [
+            "Focus on immigrant integration",
+            "Engagement through excavation",
+            "Exhibition of findings",
+            "Fostering belonging"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Anthracite Heritage Project",
+          "points": [
+            "Bridging divides between communities",
+            "Mentorship programs",
+            "Shared experiences of migration",
+            "Promoting mutual respect"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Public Archaeology",
+          "points": [
+            "Funding limitations",
+            "Balancing academic research with public interest",
+            "Lack of community participation",
+            "Disconnect between archaeologists and communities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Funding Limitations",
+          "points": [
+            "Restricts project scope",
+            "Limits outreach efforts",
+            "Affects sustainability of initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Balancing Research and Community Needs",
+          "points": [
+            "Aligning academic goals with community interests",
+            "Importance of participatory approaches",
+            "Potential for exclusion in decision-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Community Voices and Perspectives",
+          "points": [
+            "Need for equitable participation",
+            "Respecting indigenous rights",
+            "Transforming researcher-public relationships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Strategies for Effective Engagement",
+          "points": [
+            "Fostering collaboration between archaeologists and communities",
+            "Prioritizing participatory approaches",
+            "Integrating community narratives into research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Securing Diverse Funding Sources",
+          "points": [
+            "Exploring grants and sponsorships",
+            "Building partnerships with local organizations",
+            "Engaging in crowdfunding initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Public Understanding",
+          "points": [
+            "Educational workshops",
+            "Community digs",
+            "Collaborative projects",
+            "Utilizing digital platforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Considerations in Practice",
+          "points": [
+            "Respecting community rights",
+            "Ensuring transparency",
+            "Building trust with local populations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Benefits of Community Engagement",
+          "points": [
+            "Empowerment of local communities",
+            "Preservation of cultural heritage",
+            "Fostering social cohesion",
+            "Enhancing public appreciation of archaeology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Case Studies Recap",
+          "points": [
+            "Vems Historia? outcomes",
+            "Anthracite Heritage Project results",
+            "Lessons learned from community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of Public Archaeology",
+          "points": [
+            "Sustaining community partnerships",
+            "Innovative engagement strategies",
+            "Continued focus on inclusivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Next Steps for Public Archaeology",
+          "points": [
+            "Encouraging ongoing collaboration",
+            "Expanding outreach efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for the Future",
+          "points": [
+            "A more inclusive archaeological practice",
+            "Empowered communities preserving their heritage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Call to Action",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Get Involved in Public Archaeology",
+          "points": [
+            "Participate in local projects",
+            "Support community initiatives",
+            "Advocate for funding and resources"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Join the Movement",
+          "points": [
+            "Engage with local heritage",
+            "Share your story",
+            "Help preserve cultural narratives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

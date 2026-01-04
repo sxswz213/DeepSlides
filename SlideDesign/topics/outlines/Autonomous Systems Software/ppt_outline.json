@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Key Technologies": 4,
+    "Applications": 3,
+    "Challenges": 3,
+    "Future Trends": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Autonomous Systems Software",
+          "points": [
+            "Definition of autonomous systems",
+            "Importance of independent operation",
+            "Impact on various industries",
+            "Technological advancements driving growth",
+            "Purpose of the report"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Autonomous Systems",
+          "points": [
+            "Enhancing efficiency",
+            "Reducing human error",
+            "Transforming job roles",
+            "Driving innovation",
+            "Societal implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore key characteristics",
+            "Identify types of systems",
+            "Examine technological components",
+            "Discuss applications",
+            "Address challenges and future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Definition and Characteristics",
+          "points": [
+            "Independent operation",
+            "Use of AI and sensors",
+            "Perception, decision-making, action",
+            "Adaptability and learning",
+            "Examples of autonomous systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Autonomous Systems",
+          "points": [
+            "Fully autonomous systems",
+            "Semi-autonomous systems",
+            "Supervised systems",
+            "Examples of each type",
+            "Importance of understanding types"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Components Overview",
+          "points": [
+            "Profile: identity and purpose",
+            "Memory: learning from experiences",
+            "Planning: strategic thinking",
+            "Action: executing decisions",
+            "Integration of AI and sensors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case studies",
+            "Expert interviews",
+            "Data analysis",
+            "Comparative analysis of systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveys and questionnaires",
+            "Field observations",
+            "Secondary data sources",
+            "Interviews with industry experts",
+            "Analysis of existing reports"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Framework",
+          "points": [
+            "SWOT analysis",
+            "PESTLE analysis",
+            "Comparative metrics",
+            "Evaluation of case studies",
+            "Identification of trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Scope of research",
+            "Data availability",
+            "Potential biases",
+            "Technological changes",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Technologies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Core Components of Autonomous Systems",
+          "points": [
+            "Profile: defining system behavior",
+            "Memory: storing experiences",
+            "Planning: goal formulation",
+            "Action: executing plans",
+            "Role of AI and ML"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sensors and Perception Technologies",
+          "points": [
+            "Types of sensors used",
+            "Data collection methods",
+            "Importance of real-time data",
+            "Integration with AI",
+            "Examples of sensor applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Decision-Making Algorithms",
+          "points": [
+            "Types of algorithms",
+            "Machine learning techniques",
+            "Importance of data analysis",
+            "Real-time decision-making",
+            "Examples of applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Communication and Connectivity",
+          "points": [
+            "Role of IoT in autonomous systems",
+            "Real-time data sharing",
+            "Impact on decision-making",
+            "Future of connectivity",
+            "Examples of connected systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Transportation Applications",
+          "points": [
+            "Self-driving vehicles",
+            "Logistics and supply chain",
+            "Impact on traffic management",
+            "Safety improvements",
+            "Future trends in transportation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Healthcare Applications",
+          "points": [
+            "Robotic surgical assistants",
+            "Remote diagnostics",
+            "Patient monitoring systems",
+            "Efficiency in healthcare delivery",
+            "Future potential in healthcare"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Manufacturing and Agriculture",
+          "points": [
+            "Autonomous robots in production",
+            "Precision farming techniques",
+            "Impact on labor costs",
+            "Safety improvements",
+            "Future trends in manufacturing and agriculture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Safety and Reliability Concerns",
+          "points": [
+            "Importance of rigorous testing",
+            "Potential malfunctions",
+            "Impact on public trust",
+            "Regulatory requirements",
+            "Examples of safety incidents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical and Legal Challenges",
+          "points": [
+            "Accountability in autonomous systems",
+            "Liability issues",
+            "Public perception and trust",
+            "Regulatory frameworks",
+            "Need for ethical guidelines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration and Acceptance Issues",
+          "points": [
+            "Challenges in workforce adaptation",
+            "Public acceptance of technology",
+            "Regulatory hurdles",
+            "Need for education and training",
+            "Future implications for society"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Trends",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "Advancements in AI",
+            "Integration with IoT",
+            "Quantum computing potential",
+            "Agentic AI developments",
+            "Impact on system capabilities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Societal and Economic Implications",
+          "points": [
+            "Job market transformations",
+            "Need for new skills",
+            "Impact on industries",
+            "Regulatory adaptations",
+            "Future outlook for autonomous systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

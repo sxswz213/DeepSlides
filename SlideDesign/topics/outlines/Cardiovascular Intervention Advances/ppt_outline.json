@@ -1,0 +1,314 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Recent Advances in Cardiovascular Interventions": 5,
+    "Methodology": 3,
+    "Results": 4,
+    "Case Studies": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Cardiovascular Interventions",
+          "points": [
+            "Definition of cardiovascular interventions",
+            "Importance in modern medicine",
+            "Focus on recent advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Highlight key innovations",
+            "Discuss impact on patient outcomes",
+            "Emphasize ongoing research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore recent advancements",
+            "Analyze their significance",
+            "Guide future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Current State of Cardiovascular Health",
+          "points": [
+            "Prevalence of cardiovascular diseases",
+            "Challenges in treatment",
+            "Need for innovative solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context of Interventions",
+          "points": [
+            "Evolution of cardiovascular treatments",
+            "Key milestones in intervention techniques",
+            "Impact of technology on treatment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research and Development in Cardiovascular Care",
+          "points": [
+            "Role of clinical trials",
+            "Importance of innovation",
+            "Collaboration between researchers and clinicians"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Recent Advances in Cardiovascular Interventions",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Percutaneous Coronary Intervention (PCI)",
+          "points": [
+            "Bioresorbable vascular scaffolds",
+            "Drug-eluting stents advancements",
+            "Advanced imaging technologies",
+            "Improved patient outcomes",
+            "Future potential of PCI techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Endovascular Thrombectomy for Stroke Treatment",
+          "points": [
+            "Overview of EVT",
+            "Significant recovery improvements",
+            "Reduction in mortality rates",
+            "Underutilization of EVT",
+            "Importance of addressing disparities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations in Hypertension Management",
+          "points": [
+            "Introduction of Zilebesiran",
+            "Mechanism of action",
+            "Long-lasting effects on blood pressure",
+            "Improved patient adherence",
+            "Potential to transform hypertension treatment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advancements in Imaging Techniques",
+          "points": [
+            "Role of OCT and IVUS",
+            "High-resolution imaging benefits",
+            "Hybrid imaging systems",
+            "Improved plaque characterization",
+            "Impact on clinical decision-making"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Recent Advances",
+          "points": [
+            "Key innovations in PCI, EVT, hypertension, and imaging",
+            "Overall impact on patient care",
+            "Future research directions",
+            "Importance of continued innovation",
+            "Call to action for healthcare professionals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review of recent studies",
+            "Analysis of clinical trial data",
+            "Expert interviews and insights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Sources of information",
+            "Criteria for selecting studies",
+            "Methods of data analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation of Innovations",
+          "points": [
+            "Criteria for assessing advancements",
+            "Impact on patient outcomes",
+            "Long-term implications for cardiovascular care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Impact of PCI Innovations",
+          "points": [
+            "Improved procedural success rates",
+            "Enhanced patient recovery",
+            "Reduction in complications",
+            "Long-term health benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Outcomes of Endovascular Thrombectomy",
+          "points": [
+            "Increased functional independence",
+            "Lower mortality rates",
+            "Patient satisfaction improvements",
+            "Regional disparities in access"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hypertension Management Results",
+          "points": [
+            "Efficacy of Zilebesiran",
+            "Patient adherence rates",
+            "Long-term blood pressure control",
+            "Potential for widespread adoption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Imaging Techniques Outcomes",
+          "points": [
+            "Enhanced diagnostic accuracy",
+            "Better treatment planning",
+            "Improved patient outcomes",
+            "Future implications for clinical practice"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Case Study: Successful PCI with Bioresorbable Scaffolds",
+          "points": [
+            "Patient background",
+            "Procedure details",
+            "Outcomes and follow-up",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: EVT in Acute Ischemic Stroke",
+          "points": [
+            "Patient demographics",
+            "Treatment approach",
+            "Recovery results",
+            "Impact on quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies in Cardiovascular Care",
+          "points": [
+            "Potential future innovations",
+            "Role of artificial intelligence",
+            "Integration of telemedicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Research Priorities for Cardiovascular Interventions",
+          "points": [
+            "Focus on patient-centered outcomes",
+            "Need for diverse clinical trials",
+            "Collaboration across disciplines"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

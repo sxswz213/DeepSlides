@@ -1,0 +1,310 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Technology Overview": 4,
+    "Methodology": 3,
+    "Results": 4,
+    "Case Studies": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Rehabilitation Exoskeletons",
+          "points": [
+            "Definition and purpose",
+            "Target population",
+            "Importance in neurorehabilitation",
+            "Technological advancements",
+            "Impact on quality of life"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Rehabilitation Exoskeletons",
+          "points": [
+            "Enhancing mobility",
+            "Promoting independence",
+            "Supporting recovery",
+            "Clinical relevance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore design and functionality",
+            "Discuss applications and effectiveness",
+            "Identify challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context",
+          "points": [
+            "Evolution of rehabilitation technologies",
+            "Introduction of exoskeletons",
+            "Key milestones in development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Rehabilitation Exoskeletons",
+          "points": [
+            "Lower-limb exoskeletons",
+            "Upper-limb exoskeletons",
+            "Hybrid systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Neurorehabilitation",
+          "points": [
+            "Integration of robotics",
+            "Patient-centered approaches",
+            "Emerging technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Technology Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Components of Rehabilitation Exoskeletons",
+          "points": [
+            "Rigid structures",
+            "Compliant mechanisms",
+            "Sensors and actuators",
+            "Control systems",
+            "User interface"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Functionality and Operation",
+          "points": [
+            "User intention detection",
+            "Force assistance",
+            "Safety features",
+            "Comfort considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advancements in Technology",
+          "points": [
+            "Improved interaction",
+            "Adaptive control systems",
+            "Wearable technology integration",
+            "Real-time feedback"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Examples of Rehabilitation Exoskeletons",
+          "points": [
+            "ReWalk™",
+            "Ekso™",
+            "Other notable models",
+            "Clinical trial results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Clinical trials",
+            "Case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Surveys",
+            "Interviews",
+            "Performance metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical analysis",
+            "Comparative studies",
+            "Qualitative assessments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Effectiveness of Rehabilitation Exoskeletons",
+          "points": [
+            "Improved walking speed",
+            "Enhanced balance",
+            "Increased endurance",
+            "Patient engagement",
+            "Statistical significance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Clinical Applications",
+          "points": [
+            "Gait training",
+            "Rehabilitation protocols",
+            "Patient outcomes",
+            "Integration with traditional therapies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "User Experience and Acceptance",
+          "points": [
+            "Patient feedback",
+            "Healthcare professional perspectives",
+            "Usability studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Effectiveness",
+          "points": [
+            "Exoskeletons vs. traditional therapies",
+            "Long-term benefits",
+            "Cost-effectiveness analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study 1: Stroke Rehabilitation",
+          "points": [
+            "Patient background",
+            "Exoskeleton used",
+            "Outcomes observed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 2: Spinal Cord Injury Recovery",
+          "points": [
+            "Patient background",
+            "Exoskeleton used",
+            "Outcomes observed"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study 3: Long-term Follow-up",
+          "points": [
+            "Patient background",
+            "Exoskeleton used",
+            "Sustained improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges to Overcome",
+          "points": [
+            "High costs",
+            "Technical difficulties",
+            "User acceptance",
+            "Implementation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Solutions and Research Focus",
+          "points": [
+            "Adaptable control systems",
+            "User-centered design",
+            "Cost-effective solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

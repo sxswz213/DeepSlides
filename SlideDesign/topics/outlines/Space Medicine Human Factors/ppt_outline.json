@@ -1,0 +1,299 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Human Factors in Space Medicine": 4,
+    "Methodology": 3,
+    "Results": 4,
+    "Case Studies": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Space Medicine",
+          "points": [
+            "Definition of space medicine",
+            "Importance of human factors",
+            "Challenges in space exploration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Synthesize key aspects",
+            "Highlight significance",
+            "Focus on astronaut health"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Human factors engineering",
+            "Crew selection",
+            "Human-computer interaction",
+            "Medical systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "History of Space Medicine",
+          "points": [
+            "Early space missions",
+            "Development of medical protocols",
+            "Evolution of astronaut health monitoring"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Human Factors in Space Exploration",
+          "points": [
+            "Definition of human factors",
+            "Role in mission success",
+            "Impact on astronaut performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Space Medicine",
+          "points": [
+            "Advancements in technology",
+            "Focus on long-duration missions",
+            "Integration of telemedicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Human Factors in Space Medicine",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Human Factors Engineering (HFE)",
+          "points": [
+            "Definition of HFE",
+            "Importance in spacecraft design",
+            "Enhancing astronaut safety"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Crew Training and Simulations",
+          "points": [
+            "Realistic training environments",
+            "Skill development in microgravity",
+            "Psychological support during training"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Psychological Considerations",
+          "points": [
+            "Mental well-being in space",
+            "Designing private and communal spaces",
+            "Impact on team dynamics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ergonomics in Spacecraft Design",
+          "points": [
+            "Human-centered layouts",
+            "Control panel accessibility",
+            "Reducing physical strain"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case studies",
+            "Expert interviews"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveys of astronauts",
+            "Analysis of mission reports",
+            "Observational studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Effectiveness of HFE",
+            "Crew performance metrics",
+            "Health outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings on HFE",
+          "points": [
+            "Improved spacecraft design",
+            "Enhanced crew training",
+            "Reduction in errors during missions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Crew Selection Insights",
+          "points": [
+            "Importance of psychological traits",
+            "Team dynamics impact",
+            "Physiological health considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Human-Computer Interaction Outcomes",
+          "points": [
+            "Intuitive interface design",
+            "Reduced cognitive load",
+            "Increased operational efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Medical Systems Effectiveness",
+          "points": [
+            "Telemedicine integration",
+            "Challenges in medical care",
+            "Innovative health monitoring systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study: ISS Missions",
+          "points": [
+            "Crew selection process",
+            "HFE applications",
+            "Medical care challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Mars Mission Preparations",
+          "points": [
+            "Psychological assessments",
+            "Training simulations",
+            "Telemedicine strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Apollo Program",
+          "points": [
+            "Historical perspective",
+            "Lessons learned",
+            "Impact on current practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research and Development Needs",
+          "points": [
+            "Focus on long-duration missions",
+            "Integration of new technologies",
+            "Continuous evaluation of human factors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Preparing for Future Missions",
+          "points": [
+            "Training for autonomous medical care",
+            "Enhancing crew selection processes",
+            "Improving human-computer interfaces"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

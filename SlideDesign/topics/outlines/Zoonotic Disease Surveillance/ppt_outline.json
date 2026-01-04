@@ -1,0 +1,320 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Zoonotic Diseases": 3,
+    "Objectives of Surveillance": 2,
+    "Methodology": 4,
+    "Data Collection": 3,
+    "Results": 3,
+    "Discussion": 3,
+    "Implications for Public Health": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Zoonotic Diseases",
+          "points": [
+            "Definition of zoonotic diseases",
+            "Significance in public health",
+            "Statistics on emerging infectious diseases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Surveillance",
+          "points": [
+            "Need for effective monitoring",
+            "Impact on public health and economy",
+            "Role of surveillance in outbreak prevention"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore zoonotic disease nature",
+            "Identify emergence factors",
+            "Discuss surveillance strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Zoonotic Diseases",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Transmission Pathways",
+          "points": [
+            "Direct contact with animals",
+            "Food and water contamination",
+            "Vector-borne transmission",
+            "Airborne routes",
+            "Statistics on transmission methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Common Zoonotic Diseases",
+          "points": [
+            "Rabies",
+            "Ebola",
+            "Lyme disease",
+            "West Nile virus",
+            "Zika virus"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Trends",
+          "points": [
+            "Increase in zoonotic outbreaks",
+            "Role of wildlife in disease emergence",
+            "Impact of globalization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Objectives of Surveillance",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Goals of Zoonotic Disease Surveillance",
+          "points": [
+            "Early detection of outbreaks",
+            "Monitoring disease patterns",
+            "Informing public health responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "One Health Approach",
+          "points": [
+            "Integration of human, animal, and environmental health",
+            "Collaboration among sectors",
+            "Importance of interdisciplinary research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Design",
+          "points": [
+            "Qualitative and quantitative methods",
+            "Data sources",
+            "Study population"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Surveillance Framework",
+          "points": [
+            "Integrated surveillance systems",
+            "Syndromic surveillance",
+            "Laboratory capacity strengthening"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Field surveys",
+            "Laboratory testing",
+            "Public health records"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Engagement",
+          "points": [
+            "Collaboration with health sectors",
+            "Community involvement",
+            "Partnerships with NGOs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Data Sources",
+          "points": [
+            "Human health data",
+            "Animal health data",
+            "Environmental data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Methods",
+          "points": [
+            "Statistical analysis",
+            "Geospatial mapping",
+            "Trend analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Data Collection",
+          "points": [
+            "Data accessibility",
+            "Quality of data",
+            "Resource limitations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings",
+          "points": [
+            "Prevalence of zoonotic diseases",
+            "Emerging hotspots",
+            "Impact of environmental changes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Surveillance Effectiveness",
+          "points": [
+            "Success stories",
+            "Areas for improvement",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Impact Analysis",
+          "points": [
+            "Cost of outbreaks",
+            "Economic losses in agriculture",
+            "Healthcare costs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Interpreting the Results",
+          "points": [
+            "Significance of findings",
+            "Implications for public health",
+            "Comparison with previous studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Need for enhanced surveillance",
+            "Investment in research",
+            "Policy recommendations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Data constraints",
+            "Generalizability of findings",
+            "Potential biases"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications for Public Health",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Public Health Strategies",
+          "points": [
+            "Strengthening surveillance systems",
+            "Community education and awareness",
+            "Intersectoral collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Conclusion and Recommendations",
+          "points": [
+            "Summary of key insights",
+            "Call to action for stakeholders",
+            "Future research priorities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

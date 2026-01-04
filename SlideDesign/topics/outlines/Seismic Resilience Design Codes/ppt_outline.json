@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Seismic Resilience Design Codes Overview": 4,
+    "Methodology": 3,
+    "Case Studies": 4,
+    "Results and Discussion": 3,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Seismic Resilience Design Codes",
+          "points": [
+            "Definition and importance",
+            "Purpose of design codes",
+            "Impact on safety and property"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Seismic Risks and Challenges",
+          "points": [
+            "Earthquake frequency",
+            "Potential damages",
+            "Need for resilient structures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Highlight key principles",
+            "Discuss international codes",
+            "Present case studies and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Seismic Codes",
+          "points": [
+            "Evolution of building codes",
+            "Major earthquakes influencing codes",
+            "Global response to seismic risks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Principles of Seismic Design",
+          "points": [
+            "Ductility",
+            "Energy dissipation",
+            "Load path continuity",
+            "Base isolation",
+            "Importance of these principles"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaboration in Code Development",
+          "points": [
+            "Role of engineers",
+            "Involvement of architects",
+            "Engagement of regulatory bodies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Seismic Resilience Design Codes Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "International Seismic Design Codes",
+          "points": [
+            "USA: IBC and ASCE 7",
+            "Japan: Building Standard Law",
+            "Chile: NCh433",
+            "Comparative analysis of codes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Performance-Based Design Approach",
+          "points": [
+            "Risk categorization",
+            "Seismic design coefficients",
+            "Focus on expected performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implementation of Design Codes",
+          "points": [
+            "Requirements for materials",
+            "Structural systems",
+            "Detailing for resilience",
+            "Regular updates and revisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Advancements in Codes",
+          "points": [
+            "Integration of new materials",
+            "Innovative design practices",
+            "Impact on building safety"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Analysis of case studies",
+            "Interviews with experts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveys of building performance",
+            "Review of seismic events",
+            "Compilation of code variations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Effectiveness of design codes",
+            "Comparison of international practices",
+            "Assessment of resilience outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Retrofitting in California",
+          "points": [
+            "Northridge earthquake impact",
+            "Updated building codes",
+            "Enhanced seismic features"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "San Francisco International Airport",
+          "points": [
+            "New terminal design",
+            "Flexible structural systems",
+            "Energy dissipation techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons from Japan's Building Standards",
+          "points": [
+            "Post-earthquake improvements",
+            "Ductility considerations",
+            "Non-linear analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Chile's Seismic Resilience Strategies",
+          "points": [
+            "Influence of U.S. practices",
+            "Response to the 2010 Maule earthquake",
+            "Comparative analysis with U.S. codes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Key Findings from Case Studies",
+          "points": [
+            "Successes in retrofitting",
+            "Innovative design implementations",
+            "Impact on community resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Seismic Design",
+          "points": [
+            "Variability of ground conditions",
+            "Complexity of building codes",
+            "Balancing safety and cost"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in Seismic Resilience",
+          "points": [
+            "Integration of advanced technologies",
+            "Need for continuous updates",
+            "Focus on urban safety"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Technologies in Seismic Design",
+          "points": [
+            "Smart materials",
+            "Real-time monitoring systems",
+            "Predictive modeling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Policy and Practice",
+          "points": [
+            "Strengthening building codes",
+            "Encouraging innovative designs",
+            "Promoting community awareness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

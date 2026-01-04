@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Results": 5,
+    "Discussion": 4,
+    "Future Directions": 2,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Cancer Genomics",
+          "points": [
+            "Definition of cancer genomics",
+            "Importance in understanding cancer",
+            "Role in personalized medicine",
+            "Current trends in research",
+            "Impact on patient outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Genetic Insights",
+          "points": [
+            "Genetic alterations in cancer",
+            "Understanding tumor behavior",
+            "Identifying at-risk individuals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore implications for diagnosis",
+            "Discuss treatment advancements",
+            "Highlight future directions in research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Cancer Genomics?",
+          "points": [
+            "Study of genetic alterations",
+            "Focus on DNA changes",
+            "Types of mutations involved"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Terms in Cancer Genomics",
+          "points": [
+            "Genomics",
+            "Genetic testing",
+            "Role of DNA in cancer"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Genetic Variants",
+          "points": [
+            "Germline variants",
+            "Somatic variants",
+            "Impact on cancer risk"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Data analysis",
+            "Case studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Genomic Data Collection",
+          "points": [
+            "Sources of genomic data",
+            "Techniques used in analysis",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis of Genetic Variants",
+          "points": [
+            "Identification of mutations",
+            "Classification of variants",
+            "Clinical relevance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration into Clinical Practice",
+          "points": [
+            "Collaboration with healthcare professionals",
+            "Implementation of genomic testing",
+            "Monitoring treatment responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Key Findings on Genetic Variants",
+          "points": [
+            "Germline vs. somatic variants",
+            "Prevalence of inherited mutations",
+            "Impact on treatment decisions",
+            "Case examples"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Clinical Applications of Genomics",
+          "points": [
+            "Personalized medicine",
+            "Targeted therapies",
+            "Improved patient outcomes",
+            "Real-time monitoring"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Success Stories in Treatment",
+          "points": [
+            "Case studies of targeted therapies",
+            "Response rates in clinical trials",
+            "Patient testimonials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Implementation",
+          "points": [
+            "Data interpretation issues",
+            "Access to genomic testing",
+            "Integration into clinical workflows"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Potential of Cancer Genomics",
+          "points": [
+            "Advancements in technology",
+            "Interdisciplinary collaboration",
+            "Broader applications in cancer care"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Implications for Healthcare Professionals",
+          "points": [
+            "Need for genomic literacy",
+            "Integration of genomics in practice",
+            "Patient education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Considerations",
+          "points": [
+            "Privacy concerns",
+            "Informed consent",
+            "Equitable access to treatments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Emerging technologies",
+            "Longitudinal studies",
+            "Global collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Transformative role of genomics",
+            "Impact on treatment strategies",
+            "Importance of continued research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Advancements in Genomic Technologies",
+          "points": [
+            "Next-generation sequencing",
+            "Bioinformatics tools",
+            "Integration with AI"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for Personalized Cancer Care",
+          "points": [
+            "Tailored therapies",
+            "Improved patient outcomes",
+            "Broader access to genomic testing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Final Thoughts on Cancer Genomics",
+          "points": [
+            "Significance of genomic insights",
+            "Transformative potential for treatment",
+            "Call to action for healthcare integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

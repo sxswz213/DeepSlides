@@ -1,0 +1,343 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Literature Review": 3,
+    "Methodology": 4,
+    "Data Collection": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Conclusion": 2,
+    "Future Research": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Linguistic Landscape Studies",
+          "points": [
+            "Definition of LLS",
+            "Importance of language visibility",
+            "Insights into social dynamics",
+            "Cultural identity representation",
+            "Power relations in multilingual contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Emergence in the 1990s",
+            "Pioneering scholars: Landry and Bourhis",
+            "Expansion of methodologies",
+            "Establishment of *Linguistic Landscape* journal in 2015"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Synthesize key aspects of LLS",
+            "Explore theoretical frameworks",
+            "Analyze research methodologies",
+            "Discuss implications for language policy and education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Literature Review",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Development of LLS",
+          "points": [
+            "Initial focus on language visibility",
+            "Social dynamics and power relations",
+            "Foundational studies by Gorter and Spolsky",
+            "Impact of globalization and technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Theoretical Frameworks",
+          "points": [
+            "Sociolinguistics",
+            "Semiotics",
+            "Geosemiotics",
+            "Metrolingualism",
+            "Interdisciplinary approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Studies and Findings",
+          "points": [
+            "Diverse methodologies",
+            "Visual analysis significance",
+            "Cultural and social context interpretation",
+            "Emerging trends in LLS research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Methods Overview",
+          "points": [
+            "Qualitative vs. quantitative methods",
+            "Mixed methods approach",
+            "Importance of visual analysis",
+            "Contextual insights from data"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Quantitative Methods",
+          "points": [
+            "Counting and categorizing signs",
+            "Use of digital tools",
+            "Statistical data compilation",
+            "Pattern recognition in language use"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Qualitative Methods",
+          "points": [
+            "Ethnographic research",
+            "Interviews and case studies",
+            "Understanding motivations and ideologies",
+            "Contextual meanings of signs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visual Analysis Techniques",
+          "points": [
+            "Interpreting significance of signs",
+            "Cultural and social context",
+            "Dynamics of identity and power",
+            "Community representation in signage"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Data Collection Strategies",
+          "points": [
+            "Field observations",
+            "Photographic documentation",
+            "Sign categorization",
+            "Community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sampling Techniques",
+          "points": [
+            "Random sampling of public spaces",
+            "Targeted sampling in multilingual areas",
+            "Diverse urban environments",
+            "Consideration of socio-political contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Process",
+          "points": [
+            "Coding and categorizing data",
+            "Identifying patterns and themes",
+            "Comparative analysis across contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Key Findings from LLS Research",
+          "points": [
+            "Diversity of languages in public spaces",
+            "Representation of minority languages",
+            "Impact of signage on community identity",
+            "Power dynamics reflected in language visibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study Insights",
+          "points": [
+            "Specific examples from urban environments",
+            "Cultural implications of language use",
+            "Community responses to linguistic landscapes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Statistical Analysis Results",
+          "points": [
+            "Patterns in language presence",
+            "Trends in multilingual signage",
+            "Correlation with socio-economic factors"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Visual Representation of Findings",
+          "points": [
+            "Graphs and charts illustrating data",
+            "Photographic examples of linguistic landscapes",
+            "Comparative visuals of different contexts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Implications for Language Policy",
+          "points": [
+            "Influence of linguistic landscapes on policy",
+            "Assessment of language representation",
+            "Support for minority languages",
+            "Creating inclusive educational environments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Language Education",
+          "points": [
+            "Authentic contexts for language learning",
+            "Engagement with multilingualism",
+            "Fostering belonging among minority speakers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions in LLS Research",
+          "points": [
+            "Exploring globalization effects",
+            "Technological advancements in data collection",
+            "Continued analysis of language visibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Summary of Key Insights",
+          "points": [
+            "Historical development of LLS",
+            "Theoretical frameworks and methodologies",
+            "Impact on language policy and education"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Final Thoughts",
+          "points": [
+            "Importance of linguistic landscapes",
+            "Reflection of societal values",
+            "Need for ongoing research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Research",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research Gaps and Opportunities",
+          "points": [
+            "Underexplored contexts",
+            "Emerging trends in multilingualism",
+            "Technological integration in research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call for Collaborative Studies",
+          "points": [
+            "Interdisciplinary approaches",
+            "Engagement with communities",
+            "Global perspectives on linguistic landscapes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 4,
+    "Outcome": 3,
+    "Case Studies": 2,
+    "Future Considerations": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Community Resilience",
+          "points": [
+            "Definition of community resilience",
+            "Importance in disaster recovery",
+            "Components of resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Trends in Disasters",
+          "points": [
+            "Increasing frequency of natural disasters",
+            "Impact on communities",
+            "Need for resilience strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Explore resilience components",
+            "Identify influencing factors",
+            "Discuss effective strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "The State of Community Resilience",
+          "points": [
+            "Overview of community resilience",
+            "Key statistics",
+            "Importance of social networks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Faced by Communities",
+          "points": [
+            "Resource limitations",
+            "Inequities in access",
+            "Communication barriers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Examples of Disasters",
+          "points": [
+            "Hurricanes",
+            "Wildfires",
+            "Floods",
+            "Earthquakes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Disasters on Communities",
+          "points": [
+            "Disruption of social ties",
+            "Economic consequences",
+            "Health impacts",
+            "Long-term recovery challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Barriers to Resilience",
+          "points": [
+            "Lack of funding",
+            "Insufficient planning",
+            "Limited community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vulnerable Populations",
+          "points": [
+            "Elderly",
+            "Low-income families",
+            "Disabled individuals",
+            "Cultural minorities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ineffective Communication Strategies",
+          "points": [
+            "Misinformation",
+            "Language barriers",
+            "Lack of tailored messaging"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Consequences of Poor Resilience",
+          "points": [
+            "Increased recovery time",
+            "Higher economic costs",
+            "Loss of community trust"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Strategies for Building Resilience",
+          "points": [
+            "Localized planning",
+            "Community engagement",
+            "Disaster preparedness training",
+            "Resource allocation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Social Connectedness",
+          "points": [
+            "Building networks",
+            "Fostering collaboration",
+            "Creating support systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Effective Communication Approaches",
+          "points": [
+            "Tailored messaging",
+            "Utilizing technology",
+            "Community workshops"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Local Governance",
+          "points": [
+            "Policy development",
+            "Resource management",
+            "Community involvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Measuring Community Resilience",
+          "points": [
+            "Key indicators",
+            "Assessment tools",
+            "Feedback mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Benefits of Resilience",
+          "points": [
+            "Faster recovery",
+            "Stronger community ties",
+            "Improved preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Prioritize resilience initiatives",
+            "Engage stakeholders",
+            "Foster a culture of preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Hillsborough County, Florida",
+          "points": [
+            "Post-disaster recovery plan",
+            "Community engagement",
+            "Resource management"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Kangaroo Valley, Australia",
+          "points": [
+            "Grassroots initiatives",
+            "Communication networks",
+            "Recovery support systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Considerations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Resilience",
+          "points": [
+            "Technological advancements",
+            "Policy changes",
+            "Community-led initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Next Steps for Communities",
+          "points": [
+            "Implementing strategies",
+            "Monitoring progress",
+            "Continuous improvement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

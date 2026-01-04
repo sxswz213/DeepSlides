@@ -1,0 +1,312 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Conflict": 4,
+    "Resolution": 5,
+    "Outcome": 4,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Transport Networks Connectivity",
+          "points": [
+            "Definition of transport networks",
+            "Importance in urban planning",
+            "Components: roads, railways, airports, ports"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of Connectivity",
+          "points": [
+            "Facilitates movement of people and goods",
+            "Supports economic growth",
+            "Enhances social equity",
+            "Promotes sustainable development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Transport Networks",
+          "points": [
+            "Roads: flexibility and access",
+            "Railways: bulk freight and mass transit",
+            "Airports: global market access",
+            "Ports: international trade hubs",
+            "Integration of components"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current State of Transport Networks",
+          "points": [
+            "Overview of existing transport systems",
+            "Urban mobility trends",
+            "Economic impact of transport connectivity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Transport Connectivity",
+          "points": [
+            "Public transport: buses and trains",
+            "Private transport: automobiles",
+            "Multimodal systems: integration of transport modes",
+            "Accessibility and sustainability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Urban Development",
+          "points": [
+            "Economic productivity",
+            "Access to jobs and services",
+            "Revitalization of urban areas",
+            "Case studies of successful transport projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Faced by Transport Networks",
+          "points": [
+            "Congestion and travel delays",
+            "Funding and investment issues",
+            "Environmental sustainability concerns",
+            "Aging infrastructure and capacity constraints"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conflict",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "The Congestion Crisis",
+          "points": [
+            "Economic costs of congestion",
+            "Impact on travel times",
+            "Environmental implications",
+            "Public frustration and demand for solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Funding Dilemmas",
+          "points": [
+            "Declining traditional revenue sources",
+            "Need for innovative funding mechanisms",
+            "Challenges in implementing congestion pricing",
+            "Balancing public and private transport funding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Challenges",
+          "points": [
+            "Transportation's role in greenhouse gas emissions",
+            "Need for cleaner technologies",
+            "Public health implications",
+            "Sustainable practices in transport planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Social Equity Issues",
+          "points": [
+            "Disparities in access to transport",
+            "Impact on disadvantaged populations",
+            "Need for inclusive transport policies",
+            "Case studies highlighting inequities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Resolution",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Innovative Solutions to Congestion",
+          "points": [
+            "Enhancing public transport systems",
+            "Implementing smart traffic management",
+            "Promoting carpooling and ride-sharing",
+            "Encouraging non-motorized transport options",
+            "Investing in infrastructure improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Funding Strategies for Transport Networks",
+          "points": [
+            "Exploring congestion pricing",
+            "Per-mile user fees",
+            "Public-private partnerships",
+            "Leveraging federal and state funding",
+            "Community engagement in funding decisions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainable Transport Practices",
+          "points": [
+            "Investing in electric vehicle infrastructure",
+            "Promoting active transportation (walking, cycling)",
+            "Implementing green public transport solutions",
+            "Encouraging mixed-use developments",
+            "Integrating land use and transport planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Enhancing Social Equity in Transport",
+          "points": [
+            "Targeted investments in underserved areas",
+            "Improving access to public transport",
+            "Community involvement in transport planning",
+            "Policies to reduce transport costs for low-income populations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies of Successful Resolutions",
+          "points": [
+            "Examples of cities improving transport connectivity",
+            "Impact of multimodal systems",
+            "Lessons learned from successful projects",
+            "Future implications for urban planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Outcome",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Benefits of Improved Transport Connectivity",
+          "points": [
+            "Enhanced economic growth",
+            "Increased accessibility for all",
+            "Reduction in environmental impact",
+            "Improved quality of life for residents"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Long-term Sustainability of Transport Networks",
+          "points": [
+            "Importance of ongoing investment",
+            "Adapting to changing urban needs",
+            "Emphasizing resilience in transport planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Trends in Transport Connectivity",
+          "points": [
+            "Technological advancements in transport",
+            "Shift towards sustainable practices",
+            "Integration of smart city concepts",
+            "Emerging transport modes and solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action for Urban Planners",
+          "points": [
+            "Prioritize transport infrastructure investments",
+            "Adopt innovative solutions",
+            "Engage communities in planning processes",
+            "Foster collaboration among stakeholders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Vision for Future Transport Networks",
+          "points": [
+            "Seamless integration of transport modes",
+            "Focus on sustainability and equity",
+            "Leveraging technology for efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Next Steps for Implementation",
+          "points": [
+            "Developing comprehensive transport plans",
+            "Engaging stakeholders in decision-making",
+            "Monitoring and evaluating transport initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Background": 3,
+    "Methodology": 3,
+    "Current Trends in Digital Journalism": 4,
+    "Business Models Overview": 4,
+    "Case Studies": 3,
+    "Challenges and Opportunities": 2,
+    "Future Outlook": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "The Evolution of Digital Journalism",
+          "points": [
+            "Overview of digital journalism",
+            "Impact of digitalization",
+            "Need for new business models",
+            "Importance of audience engagement",
+            "Technological advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore current business models",
+            "Analyze trends and challenges",
+            "Highlight successful case studies",
+            "Provide future insights"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Context of Journalism",
+          "points": [
+            "Traditional journalism models",
+            "Transition to digital",
+            "Emergence of online news platforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Faced by News Organizations",
+          "points": [
+            "Declining print revenue",
+            "Competition with tech giants",
+            "Changing audience preferences"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Technological Advancements in Journalism",
+          "points": [
+            "Role of AI",
+            "Automation in news production",
+            "Impact on audience engagement",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Qualitative analysis",
+            "Case study examination",
+            "Data collection methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sources of Information",
+          "points": [
+            "Industry reports",
+            "Academic journals",
+            "Interviews with experts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Framework",
+          "points": [
+            "Business model categorization",
+            "Trend identification",
+            "Impact assessment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Trends in Digital Journalism",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Rise of Subscription Models",
+          "points": [
+            "Direct reader relationships",
+            "Examples of successful subscriptions",
+            "Impact on revenue generation",
+            "Challenges faced"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hybrid Business Models",
+          "points": [
+            "Combination of free and premium content",
+            "Benefits of hybrid models",
+            "Case studies of hybrid success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Advertising Strategies",
+          "points": [
+            "Native ads and sponsored content",
+            "Balancing revenue and integrity",
+            "Examples of innovative ads"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "AI Integration in Journalism",
+          "points": [
+            "Personalization of content",
+            "Automation of reporting",
+            "Challenges and opportunities",
+            "Future implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Business Models Overview",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Subscription-Based Models",
+          "points": [
+            "Direct revenue from readers",
+            "Examples: The Guardian",
+            "Benefits and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Hybrid Models",
+          "points": [
+            "Free vs. premium content",
+            "Example: Iltalehti's IL-Palat",
+            "Audience reach and engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Advertising",
+          "points": [
+            "Native advertising explained",
+            "Case study: JP/Politiken's super articles",
+            "Impact on user experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "AI-Driven Models",
+          "points": [
+            "Automation in content delivery",
+            "Personalization strategies",
+            "Examples of AI integration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Iltalehti's IL-Palat",
+          "points": [
+            "Focus on short videos",
+            "Increased audience engagement",
+            "Digital strategy success"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "NTM's Digital Transformation",
+          "points": [
+            "Shift from print to digital",
+            "Culture of accountability",
+            "Increased subscriptions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "JP/Politiken's Super Articles",
+          "points": [
+            "Combining text and visuals",
+            "Enhanced storytelling",
+            "Improved engagement metrics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Opportunities",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Challenges in Digital Journalism",
+          "points": [
+            "Revenue generation issues",
+            "Audience engagement difficulties",
+            "Competition with tech platforms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Opportunities for Growth",
+          "points": [
+            "Embracing AI technology",
+            "Innovative content strategies",
+            "Building direct reader relationships"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Outlook",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "The Future of Digital Journalism",
+          "points": [
+            "Need for adaptability",
+            "Importance of ethical considerations",
+            "Focus on audience needs and trust"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

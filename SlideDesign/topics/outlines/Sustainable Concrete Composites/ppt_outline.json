@@ -1,0 +1,308 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Materials and Methods": 4,
+    "Results and Discussion": 6,
+    "Case Studies": 3,
+    "Future Directions": 2,
+    "Conclusion": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Sustainable Concrete Composites",
+          "points": [
+            "Definition of sustainable concrete composites",
+            "Importance in modern construction",
+            "Addressing environmental challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Need for Sustainable Practices",
+          "points": [
+            "Construction's contribution to carbon emissions",
+            "Urbanization and resource consumption",
+            "Role of sustainable materials in climate neutrality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore materials used",
+            "Discuss innovative techniques",
+            "Highlight real-world applications",
+            "Identify challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Definition and Significance",
+          "points": [
+            "Innovative materials minimizing environmental impact",
+            "Reduction of reliance on Portland cement",
+            "Potential for eco-friendly construction practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Impact of Traditional Concrete",
+          "points": [
+            "CO2 emissions from cement production",
+            "Global greenhouse gas contributions",
+            "Need for alternative solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Sustainable Concrete Composites",
+          "points": [
+            "Lower carbon footprint",
+            "Enhanced durability and longevity",
+            "Reduced maintenance costs",
+            "Resource conservation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Materials and Methods",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Recycled Materials in Concrete",
+          "points": [
+            "Use of recycled aggregates",
+            "Impact on carbon footprint",
+            "Examples of effective replacements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Industrial By-Products as Binders",
+          "points": [
+            "Biomass bottom ash and wheat straw ash",
+            "Pozzolanic properties",
+            "Waste reduction benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Natural Fibers in Concrete Composites",
+          "points": [
+            "Coconut fiber for flexibility",
+            "Enhancing toughness and resilience",
+            "Synergistic effects with other materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Techniques Overview",
+          "points": [
+            "Self-healing concrete",
+            "Fiber reinforcement",
+            "Nanomaterials for improved properties",
+            "Sustainability through technology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Discussion",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Self-Healing Concrete",
+          "points": [
+            "Biological agents for crack repair",
+            "Durability enhancement",
+            "Reduction in maintenance needs",
+            "Lower carbon footprint"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Fiber Reinforcement Techniques",
+          "points": [
+            "Improved tensile strength",
+            "Ductility enhancement",
+            "Control of crack propagation",
+            "Overall structural integrity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Nanomaterials in Concrete",
+          "points": [
+            "Nano-silica for mechanical properties",
+            "Filling microscopic voids",
+            "Creating denser materials",
+            "Extending lifespan of structures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Real-World Applications: Dawlish Seafront",
+          "points": [
+            "Low-carbon concrete mix",
+            "CO2 emissions reduction",
+            "Durability and restoration benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Real-World Applications: Istrian Y Motorway",
+          "points": [
+            "Holcim's ECOPact concrete",
+            "30% reduction in CO2 emissions",
+            "Reuse of tunnel excavation materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Adoption",
+          "points": [
+            "Technical limitations",
+            "Economic factors",
+            "Lack of awareness",
+            "Need for standardization",
+            "Perceived risks of new materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Milan M4 Metro Line",
+          "points": [
+            "Low-carbon pozzolanic cement",
+            "30% reduction in CO2 emissions",
+            "Utilization of onsite excavation materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Successful Projects Overview",
+          "points": [
+            "Dawlish Seafront",
+            "Istrian Y Motorway",
+            "Milan M4 Metro Line",
+            "Impact on sustainable construction practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Lessons Learned from Case Studies",
+          "points": [
+            "Importance of innovative materials",
+            "Collaboration among stakeholders",
+            "Potential for broader adoption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Research and Development Needs",
+          "points": [
+            "Enhancing material performance",
+            "Advanced technologies for sustainability",
+            "Innovative solutions to existing challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Promoting Awareness and Acceptance",
+          "points": [
+            "Education for industry professionals",
+            "Establishing guidelines and standards",
+            "Collaboration among researchers and policymakers"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Sustainable concrete composites reduce carbon emissions",
+            "Innovative techniques enhance performance",
+            "Real-world applications demonstrate effectiveness",
+            "Future research is essential for broader adoption"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

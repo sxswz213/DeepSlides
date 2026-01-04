@@ -1,0 +1,300 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Historical Background": 3,
+    "Key Concepts in Philosophy of Mind": 4,
+    "Theories of Consciousness": 4,
+    "Mind-Body Problem": 3,
+    "Contemporary Perspectives": 3,
+    "Implications and Applications": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Philosophy of Mind",
+          "points": [
+            "Definition of Philosophy of Mind",
+            "Importance of Consciousness",
+            "Interrelation of Mind and Body"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore key concepts",
+            "Examine historical perspectives",
+            "Analyze contemporary theories"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of the Study",
+          "points": [
+            "Implications for understanding human experience",
+            "Relevance to neuroscience",
+            "Contribution to philosophical discourse"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Historical Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Early Philosophical Perspectives",
+          "points": [
+            "Plato's dualism",
+            "Aristotle's hylomorphism",
+            "Medieval scholasticism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Rationalism and Empiricism",
+          "points": [
+            "Descartes' dualism",
+            "Locke's tabula rasa",
+            "Hume's skepticism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "20th Century Developments",
+          "points": [
+            "Behaviorism",
+            "Functionalism",
+            "Emergentism"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Concepts in Philosophy of Mind",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Mind-Body Problem",
+          "points": [
+            "Definition of the mind-body problem",
+            "Dualism vs. physicalism",
+            "Interaction challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Understanding Consciousness",
+          "points": [
+            "Phenomenal vs. access consciousness",
+            "Qualia and subjective experience",
+            "Cognitive implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Hard Problem of Consciousness",
+          "points": [
+            "Definition of the hard problem",
+            "Chalmers' contributions",
+            "Mary's Room thought experiment"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Theories of Consciousness",
+          "points": [
+            "Representationalism",
+            "Higher-order theories",
+            "Cognitive theories",
+            "Strengths and weaknesses of each theory"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Theories of Consciousness",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Representationalism",
+          "points": [
+            "Definition and key proponents",
+            "First-order vs. higher-order representations",
+            "Critiques and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Higher-Order Theories",
+          "points": [
+            "Overview of HOT",
+            "Importance of awareness",
+            "Limitations of HOT"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cognitive Theories",
+          "points": [
+            "Link between consciousness and cognition",
+            "Functional roles of mental states",
+            "Examples of cognitive theories"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Theories",
+          "points": [
+            "Strengths of each theory",
+            "Interplay between theories",
+            "Future directions for research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Mind-Body Problem",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Dualism vs. Physicalism",
+          "points": [
+            "Definitions of dualism and physicalism",
+            "Historical context",
+            "Current debates"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Functionalism and Emergentism",
+          "points": [
+            "Definitions and key ideas",
+            "How they address the mind-body problem",
+            "Critiques of these perspectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Neuroscience and Philosophy",
+          "points": [
+            "Interdisciplinary approaches",
+            "Recent advancements",
+            "Implications for understanding consciousness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Contemporary Perspectives",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Current Debates in Philosophy of Mind",
+          "points": [
+            "Emerging theories",
+            "Philosophical implications",
+            "Interdisciplinary collaborations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Neuroscience Contributions",
+          "points": [
+            "Neuroscientific findings",
+            "Impact on philosophical theories",
+            "Challenges to traditional views"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions",
+          "points": [
+            "Need for interdisciplinary research",
+            "Potential breakthroughs",
+            "Ethical considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications and Applications",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Human Experience",
+          "points": [
+            "Understanding consciousness enhances self-awareness",
+            "Influence on mental health",
+            "Impact on artificial intelligence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Various Fields",
+          "points": [
+            "Philosophy",
+            "Cognitive science",
+            "Neuroscience",
+            "Ethics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

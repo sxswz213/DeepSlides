@@ -1,0 +1,291 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Situation": 4,
+    "Complication": 4,
+    "Question": 3,
+    "Answer": 6,
+    "Case Studies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Understanding Virtue Ethics",
+          "points": [
+            "Definition of virtue ethics",
+            "Importance in leadership",
+            "Overview of key concepts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Aristotle's contributions",
+            "Evolution of virtue ethics",
+            "Relevance in modern leadership"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Presentation",
+          "points": [
+            "Explore virtue ethics",
+            "Discuss its application",
+            "Highlight impact on organizations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Situation",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Current Leadership Challenges",
+          "points": [
+            "Ethical dilemmas in decision-making",
+            "Need for character-driven leadership",
+            "Impact of poor ethical standards"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "The Role of Character in Leadership",
+          "points": [
+            "Definition of character",
+            "Importance of moral virtues",
+            "Examples of virtuous leaders"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts of Virtue Ethics",
+          "points": [
+            "Eudaimonia",
+            "Golden mean",
+            "Cardinal virtues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Benefits of Virtuous Leadership",
+          "points": [
+            "Enhances ethical behavior",
+            "Fosters team motivation",
+            "Creates positive organizational climate"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Complication",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Challenges in Implementing Virtue Ethics",
+          "points": [
+            "Resistance to change",
+            "Misalignment with organizational goals",
+            "Lack of training and development"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Decision-Making Dilemmas",
+          "points": [
+            "Complexity of ethical choices",
+            "Balancing competing interests",
+            "Consequences of unethical behavior"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact of Leadership Failures",
+          "points": [
+            "Case studies of unethical leadership",
+            "Consequences for organizations",
+            "Loss of trust and credibility"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cultural Barriers to Virtue Ethics",
+          "points": [
+            "Diverse organizational cultures",
+            "Conflicting values",
+            "Need for a unified ethical framework"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Question",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "How Can Leaders Integrate Virtue Ethics?",
+          "points": [
+            "Identify personal virtues",
+            "Model ethical behavior",
+            "Encourage team engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "What Are the Key Virtues for Leaders?",
+          "points": [
+            "Courage",
+            "Integrity",
+            "Wisdom"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "How Does Virtue Ethics Transform Organizations?",
+          "points": [
+            "Fosters ethical climate",
+            "Enhances employee satisfaction",
+            "Promotes accountability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Answer",
+      "allocated_slides": 6,
+      "slides": [
+        {
+          "title": "Foundational Principles of Virtue Ethics",
+          "points": [
+            "Character as the core",
+            "Golden mean concept",
+            "Interconnected virtues"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Application in Leadership",
+          "points": [
+            "Cultivating courage and integrity",
+            "Enhancing decision-making",
+            "Inspiring teams towards ethical goals"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Virtue Ethics in Healthcare Leadership",
+          "points": [
+            "Modeling virtuous behavior",
+            "Prioritizing patient care",
+            "Building trust among staff"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Virtue Ethics in Business Leadership",
+          "points": [
+            "Promoting accountability",
+            "Navigating ethical dilemmas",
+            "Sustainable practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Impact on Organizational Culture",
+          "points": [
+            "Creating an ethical climate",
+            "Encouraging employee engagement",
+            "Aligning values with actions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Recommendations for Leaders",
+          "points": [
+            "Cultivate personal virtues",
+            "Promote transparency",
+            "Encourage ethical discussions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Case Study: Ethical Leadership in Healthcare",
+          "points": [
+            "Overview of the case",
+            "Key virtues demonstrated",
+            "Impact on organizational culture"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Business Leadership and Virtue Ethics",
+          "points": [
+            "Overview of the case",
+            "Challenges faced",
+            "Lessons learned"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

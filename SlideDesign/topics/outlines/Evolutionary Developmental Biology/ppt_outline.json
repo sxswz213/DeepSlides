@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Key Concepts in Evolutionary Developmental Biology": 3,
+    "Results": 4,
+    "Case Studies": 3,
+    "Implications and Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Evolutionary Developmental Biology?",
+          "points": [
+            "Definition of evo-devo",
+            "Interdisciplinary nature",
+            "Importance in biology",
+            "Focus on development and evolution",
+            "Framework for understanding diversity"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Emergence in late 20th century",
+            "Roots in classical embryology",
+            "Influence of Darwin and Haeckel",
+            "Rediscovery of Mendelian genetics",
+            "Gould's impact on the field"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore historical development",
+            "Discuss core concepts",
+            "Present case studies",
+            "Highlight implications for evolutionary biology",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Historical Development of Evo-Devo",
+          "points": [
+            "19th-century origins",
+            "Darwin's observations",
+            "Haeckel's recapitulation theory",
+            "Shift in focus due to genetics",
+            "Resurgence in the late 20th century"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Figures in Evo-Devo",
+          "points": [
+            "Charles Darwin",
+            "Ernst Haeckel",
+            "Stephen J. Gould",
+            "Discovery of homeotic genes",
+            "Influence of modern genetics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evolutionary Significance",
+          "points": [
+            "Understanding common ancestry",
+            "Role of embryonic development",
+            "Integration of genetics and evolution",
+            "Impacts on biodiversity",
+            "Framework for future studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case study analysis",
+            "Integration of genetic and developmental data",
+            "Comparative analysis across species",
+            "Focus on key concepts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Sources",
+          "points": [
+            "Scientific journals",
+            "Research articles",
+            "Historical texts",
+            "Case studies from various organisms",
+            "Interdisciplinary studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analytical Framework",
+          "points": [
+            "Deep homology",
+            "Gene regulatory networks",
+            "Developmental plasticity",
+            "Evolutionary implications",
+            "Ecological interactions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Limitations of the Study",
+          "points": [
+            "Scope of literature",
+            "Potential biases in case studies",
+            "Complexity of genetic interactions",
+            "Variability in developmental processes",
+            "Need for further research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Key Concepts in Evolutionary Developmental Biology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Deep Homology",
+          "points": [
+            "Conservation of genetic pathways",
+            "Shared ancestral genes",
+            "Similar traits across species",
+            "Evolutionary significance",
+            "Examples in various organisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Gene Regulatory Networks",
+          "points": [
+            "Role in development",
+            "Spatial and temporal gene expression",
+            "Influence on trait formation",
+            "Variations leading to diversity",
+            "Importance in evolutionary change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Developmental Plasticity",
+          "points": [
+            "Ability to adapt to environments",
+            "Rapid changes in development",
+            "Impact on evolutionary processes",
+            "Examples of ecological niches",
+            "Significance in adaptation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Case Study: Vertebrate Brain Evolution",
+          "points": [
+            "Centralized nervous system development",
+            "Neural tube significance",
+            "Cognitive abilities enhancement",
+            "Evolutionary innovations",
+            "Comparative analysis of species"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Globin Gene Diversification",
+          "points": [
+            "Role of gene duplication",
+            "Evolution of myoglobin and hemoglobin",
+            "Adaptations to different environments",
+            "Genetic mechanisms in trait evolution",
+            "Phylogenetic implications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Illustrative Examples of Evo-Devo",
+          "points": [
+            "Conserved developmental patterns",
+            "Impact of environmental factors",
+            "Evolutionary trends across species",
+            "Case studies in various taxa",
+            "Integration of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Key Findings",
+          "points": [
+            "Historical evolution of evo-devo",
+            "Core concepts and their significance",
+            "Insights from case studies",
+            "Implications for evolutionary biology",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Vertebrate Brain Evolution",
+          "points": [
+            "Structural changes in brain",
+            "Cognitive abilities",
+            "Neural tube development",
+            "Comparative studies",
+            "Evolutionary significance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Globin Gene Evolution",
+          "points": [
+            "Gene duplication events",
+            "Myoglobin vs. hemoglobin",
+            "Adaptation to environments",
+            "Phylogenetic analysis",
+            "Genetic mechanisms"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Other Notable Case Studies",
+          "points": [
+            "Examples from invertebrates",
+            "Developmental changes in response to environment",
+            "Evolutionary implications",
+            "Diversity of life forms",
+            "Integration of evo-devo findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications and Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implications for Evolutionary Biology",
+          "points": [
+            "Integration of development and evolution",
+            "Influence of genetic mechanisms",
+            "Role of environmental factors",
+            "Understanding biodiversity",
+            "Framework for future studies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Exploring genetic-environment interactions",
+            "Investigating epigenetic factors",
+            "Understanding developmental processes",
+            "Enhancing biodiversity studies",
+            "Collaborative interdisciplinary research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

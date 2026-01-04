@@ -1,0 +1,335 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Historical Economic Impacts of Climate (Past)": 5,
+    "Current Economic Impacts of Climate (Present)": 5,
+    "Future Projections and Implications (Future)": 5,
+    "Case Studies": 3,
+    "Policy Responses and Adaptation Strategies": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Understanding Economic History and Climate Impacts",
+          "points": [
+            "Definition of economic history",
+            "Importance of climate impacts",
+            "Interconnectedness of climate and economy",
+            "Overview of presentation structure",
+            "Urgency of addressing climate change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Presentation",
+          "points": [
+            "Examine historical impacts",
+            "Analyze current economic implications",
+            "Project future economic scenarios",
+            "Highlight case studies",
+            "Discuss policy responses"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Historical Economic Impacts of Climate (Past)",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Major Climate Events and Economic Consequences",
+          "points": [
+            "Droughts, floods, and heatwaves",
+            "Impact on agriculture and infrastructure",
+            "Case study: Greece wildfires 2021",
+            "Case study: Austria flooding",
+            "Long-term economic instability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Temperature Increases and Economic Output",
+          "points": [
+            "Projected global output reduction",
+            "Impact on poorer regions",
+            "Historical emissions and future damages",
+            "Economic commitment of climate change",
+            "Need for adaptation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Patterns of Economic Losses",
+          "points": [
+            "Significant losses from past events",
+            "Vulnerable regions affected",
+            "Agricultural sector's role",
+            "Infrastructure damage costs",
+            "Rising costs of recovery efforts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Societal Structures and Climate Change",
+          "points": [
+            "Influence on societal growth",
+            "Changes in productivity",
+            "Economic inequality exacerbated",
+            "Historical case studies",
+            "Lessons learned for future resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Historical Impacts",
+          "points": [
+            "Key takeaways from historical analysis",
+            "Importance of understanding past events",
+            "Link to current and future implications",
+            "Need for robust climate policies",
+            "Call for immediate action"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Economic Impacts of Climate (Present)",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Rising Costs of Climate-Related Disasters",
+          "points": [
+            "Cumulative losses from 2014-2023",
+            "$2 trillion in economic losses",
+            "Disproportionate effects on vulnerable regions",
+            "Strain on public resources",
+            "Need for disaster relief funding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sector-Specific Impacts",
+          "points": [
+            "Agriculture: crop devastation",
+            "Infrastructure: supply chain disruptions",
+            "Health: increased healthcare costs",
+            "Economic inequality exacerbated",
+            "Vulnerable populations at risk"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regional Economic Disparities",
+          "points": [
+            "Africa's projected GDP loss",
+            "North America's economic outlook",
+            "Southern U.S. coastal states at risk",
+            "Global economic inequality trends",
+            "Need for targeted adaptation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Current Policy Responses",
+          "points": [
+            "Overview of existing policies",
+            "Adaptation and mitigation strategies",
+            "Role of governments and organizations",
+            "Challenges in implementation",
+            "Importance of international cooperation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Current Impacts",
+          "points": [
+            "Key insights from current analysis",
+            "Urgency for action highlighted",
+            "Link to future projections",
+            "Need for comprehensive strategies",
+            "Call for stakeholder engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Projections and Implications (Future)",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Projected Economic Losses by 2050",
+          "points": [
+            "Up to 19% reduction in global income",
+            "Impact of temperature changes",
+            "Disproportionate effects on lower-income regions",
+            "Regional variations in economic losses",
+            "Need for proactive measures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vulnerable Regions and Future Risks",
+          "points": [
+            "Africa facing 4.7% GDP loss",
+            "North America: 1.1% GDP loss",
+            "Southern U.S. coastal states at higher risk",
+            "Long-term economic implications",
+            "Importance of resilience planning"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Scenarios Based on Emission Trends",
+          "points": [
+            "Different scenarios based on global warming levels",
+            "Impact of policy choices on future outcomes",
+            "Need for sustainable practices",
+            "Role of technology in adaptation",
+            "Importance of global cooperation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Urgency for Effective Climate Policies",
+          "points": [
+            "Mitigation and adaptation strategies",
+            "Importance of immediate action",
+            "Engagement of stakeholders",
+            "Investment in sustainable development",
+            "Long-term economic stability"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Summary of Future Projections",
+          "points": [
+            "Key insights from future analysis",
+            "Link to historical and current impacts",
+            "Need for comprehensive strategies",
+            "Call for global action",
+            "Vision for a sustainable future"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Case Study: Greece Wildfires 2021",
+          "points": [
+            "Overview of the event",
+            "Economic impacts on agriculture",
+            "Infrastructure damage",
+            "Long-term recovery challenges",
+            "Lessons learned for future resilience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Study: Austria Flooding",
+          "points": [
+            "Overview of the event",
+            "Economic losses in key sectors",
+            "Impact on public resources",
+            "Community response and recovery",
+            "Importance of preparedness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis of Regional Impacts",
+          "points": [
+            "Comparison of Greece and Austria",
+            "Different economic structures affected",
+            "Lessons for vulnerable regions",
+            "Importance of tailored strategies",
+            "Call for international support"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Policy Responses and Adaptation Strategies",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Current Policy Frameworks",
+          "points": [
+            "Overview of existing policies",
+            "Strengths and weaknesses",
+            "Role of international agreements",
+            "Importance of local initiatives",
+            "Need for policy coherence"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Directions for Policy Development",
+          "points": [
+            "Focus on mitigation and adaptation",
+            "Engagement of diverse stakeholders",
+            "Investment in research and technology",
+            "Importance of public awareness",
+            "Vision for sustainable economic policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background on Thermoelectric Materials": 4,
+    "Recent Advances in Thermoelectric Materials": 5,
+    "Methodology": 3,
+    "Results and Discussion": 4,
+    "Applications of Thermoelectric Materials": 2,
+    "Future Directions": 1
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Thermoelectric Materials",
+          "points": [
+            "Definition and significance",
+            "Energy conversion principles",
+            "Applications in energy harvesting and refrigeration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Thermoelectric Materials",
+          "points": [
+            "Sustainable energy solutions",
+            "Role in modern technology",
+            "Potential for reducing carbon footprint"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore recent advancements",
+            "Highlight biomedical applications",
+            "Discuss challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background on Thermoelectric Materials",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Principles of Thermoelectric Materials",
+          "points": [
+            "Seebeck effect explained",
+            "Peltier effect overview",
+            "Figure of merit (ZT) significance",
+            "Factors affecting thermoelectric performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Properties of Thermoelectric Materials",
+          "points": [
+            "Electrical conductivity",
+            "Thermal conductivity",
+            "Seebeck coefficient",
+            "ZT value optimization"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Traditional Thermoelectric Materials",
+          "points": [
+            "Bismuth telluride (Bi2Te3)",
+            "Lead telluride (PbTe)",
+            "Silver selenide (Ag2Se)",
+            "Limitations of traditional materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Emerging Materials in Thermoelectrics",
+          "points": [
+            "Organic polymers",
+            "Nanocomposites",
+            "2D materials",
+            "Potential for improved performance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Recent Advances in Thermoelectric Materials",
+      "allocated_slides": 5,
+      "slides": [
+        {
+          "title": "Advancements in Bismuth Telluride",
+          "points": [
+            "High ZT values",
+            "Applications in wearables",
+            "Recent research findings",
+            "Future potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Silver Selenide Developments",
+          "points": [
+            "Low thermal conductivity",
+            "High power factor",
+            "Flexible device applications",
+            "Recent breakthroughs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Role of Nanocomposites",
+          "points": [
+            "Integration with carbon nanotubes",
+            "Enhanced thermoelectric performance",
+            "Applications in energy harvesting",
+            "Stretchable thermoelectric films"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Low-Temperature Thermoelectric Generators",
+          "points": [
+            "Energy harvesting from body heat",
+            "Materials used (Bi2Te3, Mg2Si)",
+            "Applications in medical devices",
+            "Efficiency improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovations in Organic Thermoelectric Materials",
+          "points": [
+            "Lightweight and flexible properties",
+            "Potential for wearable applications",
+            "Recent research highlights",
+            "Future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Material characterization techniques",
+            "Experimental setups for testing"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Methods",
+          "points": [
+            "Performance metrics",
+            "Efficiency measurements",
+            "Comparative analysis of materials"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Techniques",
+          "points": [
+            "Statistical methods",
+            "Modeling and simulation",
+            "Interpretation of results"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results and Discussion",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Performance Metrics of Materials",
+          "points": [
+            "Comparison of ZT values",
+            "Efficiency of different materials",
+            "Impact of nanocomposites"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Applications in Biomedicine",
+          "points": [
+            "Wearable medical devices",
+            "Energy harvesting systems",
+            "Self-sustaining technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Current Research",
+          "points": [
+            "Low efficiency of devices",
+            "Material sustainability concerns",
+            "Need for non-toxic alternatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Optimizing material properties",
+            "Exploring new classes of materials",
+            "Enhancing device interfaces"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Applications of Thermoelectric Materials",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Energy Harvesting Applications",
+          "points": [
+            "Wearable devices",
+            "Remote sensors",
+            "Industrial applications"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Refrigeration and Cooling",
+          "points": [
+            "Thermoelectric coolers",
+            "Applications in electronics",
+            "Potential for sustainable cooling solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 1,
+      "slides": [
+        {
+          "title": "Conclusion and Future Outlook",
+          "points": [
+            "Summary of key findings",
+            "Importance of sustainable materials",
+            "Call for continued research and innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

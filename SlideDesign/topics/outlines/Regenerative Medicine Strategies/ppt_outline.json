@@ -1,0 +1,342 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Types of Regenerative Medicine": 4,
+    "Methodologies and Techniques": 4,
+    "Current Research and Innovations": 4,
+    "Challenges and Limitations": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Regenerative Medicine",
+          "points": [
+            "Definition and significance",
+            "Transformative potential",
+            "Focus on healing and restoration",
+            "Addressing untreatable conditions",
+            "Enhancing patient outcomes"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Historical Context",
+          "points": [
+            "Origins of regenerative medicine",
+            "Key milestones in research",
+            "Evolution of therapies",
+            "Impact on healthcare",
+            "Future outlook"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Explore current strategies",
+            "Highlight significance",
+            "Discuss future implications",
+            "Identify challenges",
+            "Encourage innovation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "What is Regenerative Medicine?",
+          "points": [
+            "Field focused on repair and replacement",
+            "Utilizes natural healing processes",
+            "Involves various strategies",
+            "Aims to improve quality of life",
+            "Addresses a range of conditions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts in Regenerative Medicine",
+          "points": [
+            "Cellular therapies",
+            "Tissue engineering",
+            "Extracellular vesicles",
+            "Biomaterials",
+            "3D bioengineering"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance of Regenerative Medicine",
+          "points": [
+            "Potential to revolutionize treatment",
+            "Addressing chronic diseases",
+            "Reducing healthcare costs",
+            "Improving patient recovery",
+            "Enhancing life quality"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Regenerative Medicine",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Cell-Based Therapies",
+          "points": [
+            "Utilizes stem cells",
+            "Types: ESCs, ASCs, iPSCs",
+            "Applications in heart disease",
+            "Spinal cord injuries",
+            "Challenges in clinical application"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tissue Engineering",
+          "points": [
+            "Combines cells and biomaterials",
+            "Creates scaffolds for support",
+            "Advancements in engineered biomaterials",
+            "Patient-specific therapies",
+            "3D bioengineering techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Extracellular Vesicles",
+          "points": [
+            "Role in intercellular communication",
+            "Types: exosomes, microvesicles",
+            "Transport bioactive molecules",
+            "Promote tissue repair",
+            "Potential for drug delivery"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Biomaterials in Regenerative Medicine",
+          "points": [
+            "Types of biomaterials",
+            "Importance in tissue engineering",
+            "Enhancing cell behavior",
+            "Customization for specific needs",
+            "Future developments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodologies and Techniques",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Cell Sourcing and Processing",
+          "points": [
+            "Methods of obtaining stem cells",
+            "Processing techniques",
+            "Standardization challenges",
+            "Safety and efficacy considerations",
+            "Regulatory compliance"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "3D Bioengineering Techniques",
+          "points": [
+            "Creating complex tissue structures",
+            "Mimicking natural tissues",
+            "Applications in regenerative medicine",
+            "Enhancing functional outcomes",
+            "Future research directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Innovative Biomaterials",
+          "points": [
+            "Types of advanced biomaterials",
+            "Biochemical and biophysical properties",
+            "Impact on cell behavior",
+            "Applications in tissue engineering",
+            "Future trends"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Extracellular Vesicle Isolation and Characterization",
+          "points": [
+            "Methods for isolating EVs",
+            "Characterization techniques",
+            "Understanding EV functions",
+            "Therapeutic applications",
+            "Challenges in research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Research and Innovations",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Recent Advances in Cellular Therapies",
+          "points": [
+            "New stem cell applications",
+            "Clinical trials and outcomes",
+            "Innovative treatment protocols",
+            "Challenges and solutions",
+            "Future research opportunities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Tissue Engineering Breakthroughs",
+          "points": [
+            "Recent innovations in scaffolding",
+            "Patient-specific tissue constructs",
+            "Integration with cellular therapies",
+            "Regulatory advancements",
+            "Future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Extracellular Vesicles in Therapy",
+          "points": [
+            "Current research on EVs",
+            "Therapeutic applications",
+            "Challenges in clinical translation",
+            "Potential for drug delivery",
+            "Future research needs"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaborative Research Efforts",
+          "points": [
+            "Importance of interdisciplinary collaboration",
+            "Partnerships between academia and industry",
+            "Regulatory bodies' role",
+            "Funding opportunities",
+            "Global research initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Ethical Considerations",
+          "points": [
+            "Debates on stem cell use",
+            "Public perception",
+            "Regulatory frameworks",
+            "Impact on research funding",
+            "Navigating ethical dilemmas"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Regulatory and Standardization Challenges",
+          "points": [
+            "Lengthy approval processes",
+            "Need for consistent protocols",
+            "Impact on therapy accessibility",
+            "Balancing innovation and safety",
+            "Future regulatory landscape"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Emerging Trends in Regenerative Medicine",
+          "points": [
+            "Advancements in cellular therapies",
+            "Innovations in biomaterials",
+            "Integration of AI and technology",
+            "Personalized medicine approaches",
+            "Global collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for the Future",
+          "points": [
+            "Transforming treatment paradigms",
+            "Addressing unmet medical needs",
+            "Enhancing patient care",
+            "Navigating ethical and regulatory challenges",
+            "Long-term outlook for regenerative medicine"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

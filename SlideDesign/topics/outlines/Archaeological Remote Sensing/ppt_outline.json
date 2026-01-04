@@ -1,0 +1,329 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Technologies Used": 3,
+    "Case Studies": 4,
+    "Results": 3,
+    "Discussion": 2,
+    "Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Archaeological Remote Sensing",
+          "points": [
+            "Definition and significance",
+            "Non-invasive exploration",
+            "Technological advancements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Importance in Archaeology",
+          "points": [
+            "Enhances site discovery",
+            "Preserves cultural heritage",
+            "Facilitates historical understanding",
+            "Reduces excavation impact"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Objectives of the Report",
+          "points": [
+            "Examine remote sensing techniques",
+            "Highlight case studies",
+            "Discuss future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Evolution of Remote Sensing",
+          "points": [
+            "Historical context",
+            "Technological milestones",
+            "Integration into archaeology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Concepts in Remote Sensing",
+          "points": [
+            "Electromagnetic spectrum",
+            "Data acquisition methods",
+            "Image processing techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges in Traditional Archaeology",
+          "points": [
+            "Invasive excavation",
+            "Site preservation issues",
+            "Limitations of ground surveys"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case study analysis",
+            "Comparative evaluation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Satellite imagery",
+            "Aerial surveys",
+            "Ground-based methods",
+            "Field validation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Analysis Methods",
+          "points": [
+            "Image processing software",
+            "Statistical analysis",
+            "Geospatial mapping"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Evaluation Criteria",
+          "points": [
+            "Effectiveness of techniques",
+            "Cost-benefit analysis",
+            "Applicability to different sites"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Technologies Used",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Optical Remote Sensing",
+          "points": [
+            "High-resolution imagery",
+            "Surface feature identification",
+            "Applications in dense vegetation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "LiDAR Technology",
+          "points": [
+            "3D mapping capabilities",
+            "Vegetation stripping",
+            "Case studies in urban archaeology"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Thermal Infrared Imaging",
+          "points": [
+            "Temperature variation detection",
+            "Subsurface feature identification",
+            "Limitations and challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Ancient Egyptian Tombs",
+          "points": [
+            "Use of optical remote sensing",
+            "Discovery of unmarked sites",
+            "Impact on archaeological understanding"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Roman Villas via NIR",
+          "points": [
+            "Vegetation health analysis",
+            "Identification of agricultural systems",
+            "Significance of findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Maya Lowlands Mapping",
+          "points": [
+            "LiDAR application",
+            "Revealing ancient city layouts",
+            "Insights into past human activities"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Bronze Age Settlements",
+          "points": [
+            "Thermal infrared application",
+            "Temperature differences analysis",
+            "Revealing subsurface structures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Summary of Findings",
+          "points": [
+            "Effectiveness of each technique",
+            "Key discoveries from case studies",
+            "Impact on archaeological practices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis",
+          "points": [
+            "Strengths and limitations of techniques",
+            "Contextual effectiveness",
+            "Recommendations for future research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Implications for Heritage Management",
+          "points": [
+            "Non-invasive methods for site preservation",
+            "Real-time monitoring capabilities",
+            "Integration into cultural heritage policies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Current Trends in Remote Sensing",
+          "points": [
+            "AI integration",
+            "Emerging technologies",
+            "Collaborative approaches"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future Research Directions",
+          "points": [
+            "Focus on AI and machine learning",
+            "Expanding applications in archaeology",
+            "Enhancing data interpretation methods"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Technological Innovations",
+          "points": [
+            "Advancements in satellite technology",
+            "Drone applications",
+            "Potential for real-time data collection"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Collaborative Efforts",
+          "points": [
+            "Partnerships between archaeologists and technologists",
+            "Interdisciplinary research",
+            "Global heritage management initiatives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

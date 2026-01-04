@@ -1,0 +1,335 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 3,
+    "Background": 3,
+    "Methodology": 4,
+    "Data Collection": 3,
+    "Results": 4,
+    "Discussion": 3,
+    "Future Directions": 2,
+    "Conclusion": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Overview of Geothermal Energy",
+          "points": [
+            "Definition of geothermal energy",
+            "Importance in renewable energy",
+            "Global potential",
+            "Sustainability aspects",
+            "Role in energy transition"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Purpose of the Report",
+          "points": [
+            "To explore geothermal energy exploration",
+            "To assess methods and technologies",
+            "To evaluate environmental and economic impacts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Scope of the Presentation",
+          "points": [
+            "Focus on exploration methods",
+            "Types of power plants",
+            "Challenges and future directions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Geothermal Energy Basics",
+          "points": [
+            "Heat from Earth's core",
+            "Types of geothermal resources",
+            "Applications of geothermal energy",
+            "Environmental benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geothermal Resource Categories",
+          "points": [
+            "Hydrothermal resources",
+            "Enhanced geothermal systems (EGS)",
+            "Advanced geothermal systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Geothermal Potential",
+          "points": [
+            "Current capacity",
+            "Future projections",
+            "Regional hotspots"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Exploration Techniques Overview",
+          "points": [
+            "Geological methods",
+            "Geophysical methods",
+            "Geochemical methods",
+            "Combination of techniques"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geological Methods",
+          "points": [
+            "Surface feature analysis",
+            "Rock formation studies",
+            "Inferences about geothermal systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geophysical Methods",
+          "points": [
+            "Seismic surveys",
+            "Gravity surveys",
+            "Resistivity methods",
+            "Mapping subsurface structures"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Geochemical Methods",
+          "points": [
+            "Chemical composition analysis",
+            "Sampling hot springs",
+            "Understanding reservoir characteristics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Data Sources and Techniques",
+          "points": [
+            "Field surveys",
+            "Laboratory analysis",
+            "Remote sensing technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Interpretation",
+          "points": [
+            "Analyzing geological data",
+            "Evaluating geophysical results",
+            "Understanding geochemical findings"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Case Studies",
+          "points": [
+            "Successful geothermal projects",
+            "Lessons learned from exploration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Types of Geothermal Power Plants",
+          "points": [
+            "Dry steam plants",
+            "Flash steam plants",
+            "Binary cycle plants",
+            "Comparison of efficiencies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Environmental Impacts",
+          "points": [
+            "Low emissions",
+            "Water use concerns",
+            "Land disruption",
+            "Mitigation strategies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Economic Benefits",
+          "points": [
+            "Job creation",
+            "Energy independence",
+            "Local economic development",
+            "Cost-effectiveness"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Challenges Identified",
+          "points": [
+            "High costs",
+            "Regulatory hurdles",
+            "Technological limitations",
+            "Public perception"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Discussion",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Implications of Findings",
+          "points": [
+            "Importance of exploration methods",
+            "Role of technology in efficiency",
+            "Environmental considerations"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis",
+          "points": [
+            "Geothermal vs. other renewables",
+            "Long-term sustainability",
+            "Investment potential"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Stakeholder Perspectives",
+          "points": [
+            "Government policies",
+            "Industry involvement",
+            "Community engagement"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Innovations in Geothermal Technology",
+          "points": [
+            "Advanced drilling techniques",
+            "Supercritical fluid extraction",
+            "Closed-loop systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy Recommendations",
+          "points": [
+            "Supportive regulations",
+            "Incentives for investment",
+            "Public awareness campaigns"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Key Takeaways",
+          "points": [
+            "Geothermal energy's potential",
+            "Importance of exploration",
+            "Economic and environmental benefits"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Call to Action",
+          "points": [
+            "Invest in geothermal research",
+            "Support policy changes",
+            "Engage communities in geothermal projects"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

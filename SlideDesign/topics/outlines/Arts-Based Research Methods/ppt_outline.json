@@ -1,0 +1,172 @@
+{
+  "recommended_slides": 10,
+  "section_distribution": {
+    "Introduction": 2,
+    "Overview of Arts-Based Research Methods": 2,
+    "Methodology": 2,
+    "Case Studies and Examples": 2,
+    "Implications and Future Directions": 2
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "What is Arts-Based Research?",
+          "points": [
+            "Dynamic approach to inquiry",
+            "Integrates artistic practices",
+            "Explores complex human experiences",
+            "Conveys findings innovatively",
+            "Enhances qualitative research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Significance of ABR",
+          "points": [
+            "Fosters deeper understanding",
+            "Promotes empathy",
+            "Engages diverse audiences",
+            "Encourages inclusivity",
+            "Transforms traditional research"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Overview of Arts-Based Research Methods",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Types of Arts-Based Research Methods",
+          "points": [
+            "Visual arts: painting, photography",
+            "Performing arts: theater, dance",
+            "Literary arts: poetry, narrative writing",
+            "Multimodal approach",
+            "Captures richness of human experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Integration of Artistic Forms",
+          "points": [
+            "Enhances research narratives",
+            "Facilitates dialogue",
+            "Promotes community connections",
+            "Adds emotional depth",
+            "Broadens scope of inquiry"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Implementing ABR in Research",
+          "points": [
+            "Identify research questions",
+            "Select appropriate artistic methods",
+            "Engage participants creatively",
+            "Analyze artistic outputs",
+            "Reflect on findings collaboratively"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Ethical Considerations in ABR",
+          "points": [
+            "Maintain participant confidentiality",
+            "Ensure informed consent",
+            "Address power dynamics",
+            "Respect cultural sensitivities",
+            "Promote inclusivity in participation"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Case Studies and Examples",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "ABR in Education",
+          "points": [
+            "Photo-elicitation enhances engagement",
+            "Collaborative arts projects foster understanding",
+            "Performance arts deepen narrative comprehension",
+            "Multimodal representations enrich learning",
+            "Empowers student voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "ABR in Health Research",
+          "points": [
+            "Drawing to express complex emotions",
+            "Artistic methods reveal participant needs",
+            "Facilitates communication in sensitive contexts",
+            "Promotes healing through creative expression",
+            "Amplifies marginalized voices"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Implications and Future Directions",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Challenges in Arts-Based Research",
+          "points": [
+            "Credibility and validation concerns",
+            "Subjectivity in artistic interpretation",
+            "Technical skills may limit participation",
+            "Ethical dilemmas in sharing outputs",
+            "Need for rigorous methodological design"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Future of ABR",
+          "points": [
+            "Refine methodologies for better outcomes",
+            "Address ethical challenges proactively",
+            "Enhance training for researchers",
+            "Promote interdisciplinary collaboration",
+            "Maximize potential for social change"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}

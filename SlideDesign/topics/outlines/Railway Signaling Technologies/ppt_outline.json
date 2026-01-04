@@ -1,0 +1,318 @@
+{
+  "recommended_slides": 22,
+  "section_distribution": {
+    "Introduction": 2,
+    "Overview of Railway Signaling Technologies": 4,
+    "Types of Signaling Systems": 4,
+    "Methodology": 3,
+    "Current Trends and Innovations": 3,
+    "Challenges and Limitations": 3,
+    "Future Directions": 3
+  },
+  "ppt_outline": [
+    {
+      "name": "Introduction",
+      "allocated_slides": 2,
+      "slides": [
+        {
+          "title": "Overview of Railway Signaling Technologies",
+          "points": [
+            "Importance of signaling technologies",
+            "Evolution of signaling systems",
+            "Impact on safety and efficiency",
+            "Stakeholder relevance",
+            "Research objectives"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Signaling Technologies in Context",
+          "points": [
+            "Historical context",
+            "Current state of rail networks",
+            "Need for modernization",
+            "Challenges faced",
+            "Future outlook"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Overview of Railway Signaling Technologies",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Definition and Purpose",
+          "points": [
+            "Ensuring safe train operations",
+            "Preventing collisions",
+            "Maintaining train schedules",
+            "Facilitating communication",
+            "Enhancing operational efficiency"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Key Components of Signaling Systems",
+          "points": [
+            "Trackside signals",
+            "Cab signaling",
+            "Control centers",
+            "Communication systems",
+            "Monitoring technologies"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Types of Signaling Systems",
+          "points": [
+            "Traditional trackside signaling",
+            "Modern cab signaling",
+            "Automatic train protection",
+            "Centralized traffic control",
+            "Interlocking systems"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Signaling System Functionality",
+          "points": [
+            "Signal indications",
+            "Block systems",
+            "Speed control mechanisms",
+            "Data transmission methods",
+            "Safety protocols"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Types of Signaling Systems",
+      "allocated_slides": 4,
+      "slides": [
+        {
+          "title": "Trackside Signaling",
+          "points": [
+            "Color light signals",
+            "Mechanical signals",
+            "Fixed block systems",
+            "Advantages and limitations",
+            "Usage in conventional rail"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Cab Signaling",
+          "points": [
+            "Direct communication to train cab",
+            "Automatic speed control",
+            "Higher operational speeds",
+            "Safety enhancements",
+            "Implementation in high-speed rail"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Advanced Signaling Systems",
+          "points": [
+            "ERTMS overview",
+            "CBTC applications",
+            "PTC functionalities",
+            "Interoperability benefits",
+            "Capacity management improvements"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Comparative Analysis",
+          "points": [
+            "Traditional vs. advanced systems",
+            "Safety features comparison",
+            "Interoperability challenges",
+            "Capacity management differences",
+            "Future trends in signaling"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Methodology",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Research Approach",
+          "points": [
+            "Literature review",
+            "Case studies",
+            "Interviews with industry experts"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Data Collection Techniques",
+          "points": [
+            "Surveys",
+            "Field observations",
+            "Technical documentation analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Analysis Framework",
+          "points": [
+            "Qualitative analysis",
+            "Quantitative metrics",
+            "Comparative assessments"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Current Trends and Innovations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Technological Advancements",
+          "points": [
+            "Integration of AI",
+            "IoT applications",
+            "Real-time data analytics"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Sustainability Initiatives",
+          "points": [
+            "Electric and hydrogen trains",
+            "Energy-efficient signaling",
+            "Reducing carbon footprint"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Global Standardization Efforts",
+          "points": [
+            "ERTMS implementation",
+            "Cross-border interoperability",
+            "Regulatory frameworks"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Challenges and Limitations",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Interoperability Issues",
+          "points": [
+            "Legacy system compatibility",
+            "Vendor-specific technologies",
+            "Integration challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Financial Constraints",
+          "points": [
+            "High upgrade costs",
+            "Budget limitations",
+            "Cost-benefit analysis"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Skilled Personnel Shortages",
+          "points": [
+            "Training requirements",
+            "Expertise gaps",
+            "Retention challenges"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "allocated_slides": 3,
+      "slides": [
+        {
+          "title": "Emerging Technologies",
+          "points": [
+            "AI-driven predictive maintenance",
+            "Enhanced IoT connectivity",
+            "Smart signaling solutions"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Policy and Regulatory Changes",
+          "points": [
+            "Support for modernization",
+            "Funding opportunities",
+            "International collaboration"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        },
+        {
+          "title": "Vision for the Future",
+          "points": [
+            "Sustainable rail transport",
+            "Increased capacity and efficiency",
+            "Enhanced passenger experience"
+          ],
+          "codes": [],
+          "detail": "",
+          "enriched_points": ""
+        }
+      ]
+    }
+  ]
+}
