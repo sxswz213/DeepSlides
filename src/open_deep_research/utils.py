@@ -85,7 +85,7 @@ async def generate_image_caption(image_path: str) -> str:
         }
 
         payload = {
-            "model": "gpt-4o",  # dtyxs TODO: make it configurable
+            "model": "gpt-4o",  # TODO: make it configurable
             "response_format": {"type": "json_object"},
             "messages": [
                 {

@@ -11,3 +11,6 @@ saves_old/
 saves_data/
 saves*
 **/images/
+.DS_Store
+**/.DS_Store
+0.11.6

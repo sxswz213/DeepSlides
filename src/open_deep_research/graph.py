@@ -83,7 +83,12 @@ from open_deep_research.utils import (
     generate_image_caption_v3
 )
 MODE="openai" # ["openai","azure"]
-COMP_MODE="llm" # ["llm","tools"] 
+COMP_MODE="llm" # ["llm","tools"]
+# Ablation study switches — set via env vars: ABLATE_DESIGN=1 / ABLATE_SCORING=1
+ABLATE_DESIGN  = os.getenv("ABLATE_DESIGN",  "0") == "1"
+ABLATE_SCORING = os.getenv("ABLATE_SCORING", "0") == "1"
+# Save root directory — set via env var: SAVES_ROOT=saves_ablation_design
+SAVES_ROOT = os.getenv("SAVES_ROOT", "saves_sonnet")
 ## Nodes -- 
 
 async def process_image_input(state: ReportState, config: RunnableConfig):
@@ -445,9 +450,9 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
     
     # 提取图像信息
     images_data = []
-    # dtyxs TODO: make it configurable
+    # TODO: make it configurable
     max_images = 6  # 最大图像数量限制
-    
+
     if "--- IMAGES ---" in source_str:
         try:
             # 提取图像部分
@@ -518,7 +523,7 @@ async def write_section(state: SectionState, config: RunnableConfig) -> Command[
         max_tokens=2048
     )
 
-    # dtyxs TODO: Native image input
+    # TODO: Native image input
     section_content = await writer_model.ainvoke([SystemMessage(content=section_writer_instructions),
                                            HumanMessage(content=section_writer_inputs_formatted)])
     
@@ -728,7 +733,7 @@ async def compile_final_report(state: ReportState):
     # Compile final report
     all_sections = "\n\n".join([s.content for s in sections])
 
-    save_dir = os.path.join(".", "saves_sonnet", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, topic)
     await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
     outline_path = os.path.join(save_dir, "final_report.md")
 
@@ -953,7 +958,7 @@ async def generate_ppt_outline(state: ReportState, config: RunnableConfig):
 
     ppt_sections = [PPTSection(**section) for section in ppt_sections_data]
     ppt_outline = PPTOutline(ppt_sections=PPTSections(sections=ppt_sections))
-    save_dir = os.path.join(".", "saves_sonnet", "outlines", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, "outlines", topic)
     await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
     outline_path = os.path.join(save_dir, "ppt_outline.json")
 
@@ -1164,7 +1169,7 @@ async def save_image_from_url(image_url, image_name, topic, ppt_section_name, sl
 
             # 异步创建目录（避免阻塞）
             save_dir = os.path.join(
-                ".", "saves_sonnet", topic, "images", ppt_section_name, f"slide_{slide_index+1}"
+                ".", SAVES_ROOT, topic, "images", ppt_section_name, f"slide_{slide_index+1}"
             )
             await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
 
@@ -1295,9 +1300,9 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
 
     # 提取图像信息
     images_data = []
-    # dtyxs TODO: make it configurable
+    # TODO: make it configurable
     max_images = 6  # 最大图像数量限制
-    
+
     if "--- IMAGES ---" in source_str:
         try:
             # 提取图像部分
@@ -1425,7 +1430,7 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     # enriched_points = json.loads(enrichment_response.content.replace("```json", "").replace("```", "").strip())["enriched_points"]
     enriched_points = enrichment_response.content
 
-    save_dir = os.path.join(".", "saves_sonnet", "outlines", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, "outlines", topic)
     await asyncio.to_thread(os.makedirs, save_dir, exist_ok=True)
     safe_section_name = ppt_section.name.replace(" ", "_")
     file_path = os.path.join(save_dir, f"{safe_section_name}_slide{slide_index+1}.json")
@@ -1524,34 +1529,42 @@ async def enrich_slide_content(state: PPTSlideState, config: RunnableConfig):
     """
 
 
-    try:
-        detail_response = await asyncio.wait_for(
-            designer_model.ainvoke([
-            SystemMessage(content=detail_prompt),
-            HumanMessage(content="Please output the JSON for the slide layout. Return JSON only, no additional text.")
-            ]),
-            timeout=300
-        )
-    except Exception as e:
-        print(f"[WARN] Azure coder_model failed: {e}, fallback to OpenAI API.")
-        if openai_model:
-            try:
-                detail_response = await asyncio.wait_for(
-                    openai_model.ainvoke([
-                    SystemMessage(content=detail_prompt),
-                    HumanMessage(content="Please output the JSON for the slide layout. Return JSON only, no additional text.")
-                    ]),
-                    timeout=300
-                )
-            except Exception as e2:
-                print(f"[ERROR] Both Azure and OpenAI failed: {e2}")
+    # [Ablation 1] ABLATE_DESIGN: skip designer model, use empty slide_detail
+    if not ABLATE_DESIGN:
+        try:
+            detail_response = await asyncio.wait_for(
+                designer_model.ainvoke([
+                SystemMessage(content=detail_prompt),
+                HumanMessage(content="Please output the JSON for the slide layout. Return JSON only, no additional text.")
+                ]),
+                timeout=300
+            )
+        except Exception as e:
+            print(f"[WARN] Azure coder_model failed: {e}, fallback to OpenAI API.")
+            if openai_model:
+                try:
+                    detail_response = await asyncio.wait_for(
+                        openai_model.ainvoke([
+                        SystemMessage(content=detail_prompt),
+                        HumanMessage(content="Please output the JSON for the slide layout. Return JSON only, no additional text.")
+                        ]),
+                        timeout=300
+                    )
+                except Exception as e2:
+                    print(f"[ERROR] Both Azure and OpenAI failed: {e2}")
+                    slide_detail = ""
+            else:
                 slide_detail = ""
         else:
-            slide_detail = ""
+            slide_detail = detail_response.content
     else:
-        slide_detail = detail_response.content
+        print("[Ablation] ABLATE_DESIGN=True: skipping design step, slide_detail set to empty.")
+        slide_detail = ""
 
-    design_prompt = f"""
+    # [Ablation 2] ABLATE_SCORING / ABLATE_DESIGN: skip design quality scoring
+    design_score = 0.0
+    if not ABLATE_DESIGN and not ABLATE_SCORING:
+        design_prompt = f"""
 Requirements:
     Title: {slide_title}
     Detailed points: {enriched_points}
@@ -1571,40 +1584,39 @@ Here are some images may optionally be used in the PPT:
     </Image list>
 
 Agent's design:
-{slide_detail}    
+{slide_detail}
 
 {evaluation_design}
 """
-    planner_model_kwargs = configurable.planner_model_kwargs or {}
-    planner_provider = get_config_value(configurable.planner_provider)
-    planner_model_name = get_config_value(configurable.planner_model)
-    if MODE == "openai":
-        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+        planner_model_kwargs = configurable.planner_model_kwargs or {}
+        planner_provider = get_config_value(configurable.planner_provider)
+        planner_model_name = get_config_value(configurable.planner_model)
+        if MODE == "openai":
+            planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+        else:
+            planner_model = AzureChatOpenAI(
+            model=configurable.planner_model,
+            azure_endpoint=planner_model_kwargs["openai_api_base"],
+            deployment_name=planner_model_kwargs["azure_deployment"],
+            openai_api_version=planner_model_kwargs["openai_api_version"],
+            max_tokens=4096
+        )
+        design_score_resp = await planner_model.ainvoke([
+            SystemMessage(content=design_prompt),
+            HumanMessage(content=f"Please evaluate its design quality.")
+        ])
+
+        design_score_value = design_score_resp.content.strip().split("```json")[-1].split("```")[0]
+        try:
+            design_score_json = json.loads(design_score_value)
+            design_score = design_score_json.get("Total Score", 0)
+            design_suggestions = design_score_json.get("Suggestions", "")
+        except Exception as e:
+            print(f"[WARN] Error parsing design score JSON: {e}")
     else:
-        planner_model = AzureChatOpenAI(
-        model=configurable.planner_model,
-        azure_endpoint=planner_model_kwargs["openai_api_base"],
-        deployment_name=planner_model_kwargs["azure_deployment"],
-        openai_api_version=planner_model_kwargs["openai_api_version"],
-        max_tokens=4096
-    )
-    design_score =  await planner_model.ainvoke([
-        SystemMessage(content=design_prompt),
-        HumanMessage(content=f"Please evaluate its design quality.")
-    ])
+        print(f"[Ablation] Skipping design scoring (ABLATE_DESIGN={ABLATE_DESIGN}, ABLATE_SCORING={ABLATE_SCORING}).")
 
-    design_score_value = design_score.content.strip().split("```json")[-1].split("```")[0]
-    design_socre = 0.0
-    try:
-        design_score_json = json.loads(design_score_value)
-        design_score = design_score_json.get("Total Score", 0)
-        design_suggestions = design_score_json.get("Suggestions", "")
-    except Exception as e:
-        print(f"[WARN] Error parsing design score JSON: {e}")
-
-
-
-    return {"enriched_points": enriched_points, 
+    return {"enriched_points": enriched_points,
             "slide_detail": slide_detail,
             "design_score": design_score,
             "design_suggestions": design_suggestions,
@@ -1664,7 +1676,7 @@ async def generate_slide_code_and_execute(state: PPTSlideState, config: Runnable
     slide_points = ppt_section.slides[slide_index].points
 
     # ✅ 使用 Path，避免 abspath/cwd；真正需要绝对路径时放到线程里 resolve
-    save_dir = Path("saves_sonnet") / topic
+    save_dir = Path(SAVES_ROOT) / topic
     await asyncio.to_thread(save_dir.mkdir, parents=True, exist_ok=True)
 
     error_message = ""
@@ -1819,20 +1831,24 @@ Code will be save in utf-8 encoding.
             "completeness_score": 0.0,
         }
 
-    planner_model_kwargs = configurable.planner_model_kwargs or {}
-    planner_provider = get_config_value(configurable.planner_provider)
-    planner_model_name = get_config_value(configurable.planner_model)
-    if MODE == "openai":
-        planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
-    else:
-        planner_model = AzureChatOpenAI(
-        model=configurable.planner_model,
-        azure_endpoint=planner_model_kwargs["openai_api_base"],
-        deployment_name=planner_model_kwargs["azure_deployment"],
-        openai_api_version=planner_model_kwargs["openai_api_version"],
-        max_tokens=4096
-    )
-    completeness_prompt = f"""
+    # [Ablation 2] ABLATE_SCORING: skip completeness scoring
+    completeness_score = 0.0
+    completeness_suggestions = ""
+    if not ABLATE_SCORING:
+        planner_model_kwargs = configurable.planner_model_kwargs or {}
+        planner_provider = get_config_value(configurable.planner_provider)
+        planner_model_name = get_config_value(configurable.planner_model)
+        if MODE == "openai":
+            planner_model = init_chat_model(model=planner_model_name, model_provider=planner_provider, model_kwargs={})
+        else:
+            planner_model = AzureChatOpenAI(
+            model=configurable.planner_model,
+            azure_endpoint=planner_model_kwargs["openai_api_base"],
+            deployment_name=planner_model_kwargs["azure_deployment"],
+            openai_api_version=planner_model_kwargs["openai_api_version"],
+            max_tokens=4096
+        )
+        completeness_prompt = f"""
 # Design:
 {slide_detail}
 
@@ -1841,19 +1857,20 @@ Code will be save in utf-8 encoding.
 
 # Task:
 {evaluation_complete}"""
-    completeness_response = await planner_model.ainvoke([
-        SystemMessage(content=completeness_prompt),
-        HumanMessage(content="Please evaluate the completeness of the generated slide.")
-    ])
-    completeness_value = completeness_response.content.strip().split("```json")[-1].split("```")[0]
-    completeness_score = 0.0
-    completeness_suggestions = ""   
-    try:
-        completeness_json = json.loads(completeness_value)
-        completeness_score = completeness_json.get("Total Score", 0.0)
-        completeness_suggestions = completeness_json.get("Suggestions", "")
-    except Exception as e:
-        print(f"[WARN] Error parsing completeness score JSON: {e}")
+        completeness_response = await planner_model.ainvoke([
+            SystemMessage(content=completeness_prompt),
+            HumanMessage(content="Please evaluate the completeness of the generated slide.")
+        ])
+        completeness_value = completeness_response.content.strip().split("```json")[-1].split("```")[0]
+        try:
+            completeness_json = json.loads(completeness_value)
+            completeness_score = completeness_json.get("Total Score", 0.0)
+            completeness_suggestions = completeness_json.get("Suggestions", "")
+        except Exception as e:
+            print(f"[WARN] Error parsing completeness score JSON: {e}")
+    else:
+        print("[Ablation] ABLATE_SCORING=True: skipping completeness scoring.")
+        completeness_score = 5.0
 
     pptx_path = save_dir / f"{ppt_section.name}_slide_{slide_index + 1}.pptx"
     # ✅ 绝对路径解析（会触发 cwd），放在线程里执行以避免阻塞
@@ -2034,6 +2051,19 @@ async def ppt_slide_to_image_and_validate(state, config):
         return Command(update={"conversion_failed": True, "retry_count": retry_count + 1}, goto="enrich_slide_content")
     print(f"The slide transition to image was successful. The saved path is: {image_path}")
 
+    # [Ablation 2] ABLATE_SCORING: skip image review and retry, accept first result
+    if ABLATE_SCORING:
+        print("[Ablation] ABLATE_SCORING=True: skipping aesthetics scoring, accepting slide as-is.")
+        generated_slide = PPTSlide(
+            title=title,
+            points=points,
+            codes=codes,
+            enriched_points=enriched_points,
+            detail=slide_detail,
+            layout=layout
+        )
+        return Command(update={"completed_slides": [generated_slide]}, goto=END)
+
     # ---- 审查评分：>60 通过，否则 retry ----
     def _extract_json_dict(text: str):
         """从模型返回中提取JSON（兼容 ```json 代码块``` 或纯JSON）；失败时尽量解析 Total Score。"""
@@ -2202,7 +2232,7 @@ async def generate_cover_slide(state, config):
     body_font_color = state.get("body_font_color", "#000000")
     font_name = state.get("font_name", "Arial")
 
-    save_dir = os.path.join(".", "saves_sonnet", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, topic)
     cover_path = os.path.join(save_dir, "cover_slide.pptx")
     script_path = os.path.join(save_dir, "cover_slide.py")
 
@@ -2446,6 +2476,11 @@ Code will be save in utf-8 encoding.
             previous_code = python_code
             continue
 
+        # [Ablation 2] ABLATE_SCORING: skip review scoring, accept first successful result
+        if ABLATE_SCORING:
+            print("[Ablation] ABLATE_SCORING=True: skipping cover slide scoring.")
+            return {"cover_slide_path": cover_path, "cover_layout_description": layout_description, "style_summary": style_summary}
+
         # ----------------- review with scoring -----------------
         REVIEW_PROMPT = f"""
 Topic: {topic}
@@ -2558,7 +2593,7 @@ async def generate_section_cover_slides(state, config):
     style_summary = state.get("style_summary", "")
     suggesstions = ""
 
-    save_dir = os.path.join(".", "saves_sonnet", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, topic)
     # os.makedirs(save_dir, exist_ok=True)
     script_path = os.path.join(save_dir, "section_cover_slide.py")
 
@@ -2761,6 +2796,11 @@ To ensure the integrity of the overall structure, you can initially use "{chapte
             error_message = f"幻灯片转图片失败: {e}"
             previous_code = python_code
             continue
+
+        # [Ablation 2] ABLATE_SCORING: skip review scoring, accept first successful result
+        if ABLATE_SCORING:
+            print("[Ablation] ABLATE_SCORING=True: skipping section cover slide scoring.")
+            return {"section_slides_path": save_dir, "layout_description": layout_description}
         REVIEW_PROMPT = f"""
 Topic: {topic}
 Slide style: {style}
@@ -2864,7 +2904,7 @@ async def generate_end_slide(state, config):
     style_summary = state.get("style_summary", "")
     suggestions = ""
 
-    save_dir = os.path.join(".", "saves_sonnet", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, topic)
     # os.makedirs(save_dir, exist_ok=True)
     end_path = os.path.join(save_dir, "end_slide.pptx")
     script_path = os.path.join(save_dir, "end_slide.py")
@@ -3048,6 +3088,11 @@ async def generate_end_slide(state, config):
             previous_code = python_code
             continue
 
+        # [Ablation 2] ABLATE_SCORING: skip review scoring, accept first successful result
+        if ABLATE_SCORING:
+            print("[Ablation] ABLATE_SCORING=True: skipping end slide scoring.")
+            return {"end_slide_path": end_path, "end_layout_description": layout_description}
+
         # === 使用新的审查 Prompt 进行评分 ===
         REVIEW_PROMPT = f"""
 Topic: {topic}
@@ -3121,7 +3166,7 @@ async def compile_ppt(state, config):
     topic = state["topic"]
     ppt_sections = state["ppt_sections"]
 
-    save_dir = os.path.join(".", "saves_sonnet", topic)
+    save_dir = os.path.join(".", SAVES_ROOT, topic)
     # os.makedirs(save_dir, exist_ok=True)
     final_ppt_path = os.path.join(save_dir, f"{topic}_final.pptx")
 
