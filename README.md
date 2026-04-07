@@ -1,4 +1,6 @@
-# DeepSlides
+# Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation
+
+> ACL 2026 Findings — Official Implementation (**DeepSlides**)
 
 **DeepSlides** is an AI-powered presentation generation system that takes a topic (and optional image or style spec) and produces a fully formatted `.pptx` file. It extends the [Open Deep Research](https://github.com/langchain-ai/open_deep_research) architecture with a multi-stage pipeline for research, content writing, slide planning, and automated visual design.
 
@@ -196,3 +198,18 @@ sudo apt install libreoffice
 ## License
 
 MIT
+
+---
+
+## Citation
+
+If you find this work useful, please cite our paper:
+
+```bibtex
+@inproceedings{cui2026design,
+  title     = {Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation},
+  author    = {Cui, Zhiyao and Wang, Chenxu and Hu, Shuyue and Zhang, Yiqun and Shao, Wenqi and Zhang, Qiaosheng and Wang, Zhen},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026}
+}
+```

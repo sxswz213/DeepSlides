@@ -1,4 +1,6 @@
-# DeepSlides
+# Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation
+
+> ACL 2026 Findings — 官方实现（**DeepSlides**）
 
 **DeepSlides** 是一个 AI 驱动的演示文稿自动生成系统。输入一个主题（以及可选的图片或风格描述），即可自动产出完整排版的 `.pptx` 文件。它在 [Open Deep Research](https://github.com/langchain-ai/open_deep_research) 架构基础上扩展了研究、写作、幻灯片规划和视觉设计全流程。
 
@@ -196,3 +198,18 @@ sudo apt install libreoffice
 ## 开源协议
 
 MIT
+
+---
+
+## 引用
+
+如果本工作对你有帮助，请引用我们的论文：
+
+```bibtex
+@inproceedings{cui2026design,
+  title     = {Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation},
+  author    = {Cui, Zhiyao and Wang, Chenxu and Hu, Shuyue and Zhang, Yiqun and Shao, Wenqi and Zhang, Qiaosheng and Wang, Zhen},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026}
+}
+```
