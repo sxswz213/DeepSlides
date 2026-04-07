@@ -2,6 +2,8 @@
 
 > ACL 2026 Findings — 官方实现（**DeepSlides**）
 
+![DeepSlides case overview](case.png)
+
 **DeepSlides** 是一个 AI 驱动的演示文稿自动生成系统。输入一个主题（以及可选的图片或风格描述），即可自动产出完整排版的 `.pptx` 文件。它在 [Open Deep Research](https://github.com/langchain-ai/open_deep_research) 架构基础上扩展了研究、写作、幻灯片规划和视觉设计全流程。
 
 [English README](README.md)
@@ -52,6 +54,12 @@ DeepSlides 采用图（Graph）驱动的规划-执行工作流，核心逻辑在
 - **LLM 自动评分** — 每张幻灯片从设计、美观、完整度三个维度打分，低分幻灯片自动重新生成。
 - **自动生成封面 / 章节页 / 结尾页** — 独立 LLM 调用生成这些框架页面，风格与正文保持统一。
 - **并行执行** — 同一章节内的幻灯片通过 LangGraph 的 `Send()` API 并发生成。
+
+---
+
+## 示例输出
+
+![Full case comparison](full_case.png)
 
 ---
 

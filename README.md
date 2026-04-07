@@ -2,6 +2,8 @@
 
 > ACL 2026 Findings — Official Implementation (**DeepSlides**)
 
+![DeepSlides case overview](case.png)
+
 **DeepSlides** is an AI-powered presentation generation system that takes a topic (and optional image or style spec) and produces a fully formatted `.pptx` file. It extends the [Open Deep Research](https://github.com/langchain-ai/open_deep_research) architecture with a multi-stage pipeline for research, content writing, slide planning, and automated visual design.
 
 [中文文档](README_zh.md)
@@ -52,6 +54,12 @@ Output: presentation.pptx  (+ optional PNG export via LibreOffice)
 - **LLM-based scoring** — each slide is scored on design, aesthetics, and completeness; low-scoring slides are regenerated automatically.
 - **Automatic cover / chapter / end slides** — dedicated LLM calls generate these framing slides with matched styling.
 - **Parallel execution** — slides within a section are generated concurrently via LangGraph's `Send()` API.
+
+---
+
+## Example outputs
+
+![Full case comparison](full_case.png)
 
 ---
 
