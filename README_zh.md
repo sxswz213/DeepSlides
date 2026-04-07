@@ -195,14 +195,6 @@ sudo apt install libreoffice
 
 ---
 
-## 隐私与安全
-
-- **不要提交 `.env` 文件。** 它已被 `.gitignore` 默认排除。
-- 所有 API 密钥均从环境变量读取，源码中没有任何硬编码密钥。
-- 可通过设置 `ABLATE_DESIGN=1` 或 `ABLATE_SCORING=1` 环境变量，在消融实验中关闭评分/优化步骤。
-
----
-
 ## 开源协议
 
 MIT

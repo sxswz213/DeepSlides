@@ -195,14 +195,6 @@ sudo apt install libreoffice
 
 ---
 
-## Notes on privacy
-
-- **Never commit your `.env` file.** It is listed in `.gitignore` by default.
-- All API keys are read exclusively from environment variables — no keys are hardcoded in the source.
-- The `ABLATE_DESIGN` and `ABLATE_SCORING` env vars can disable the scoring/refinement passes for ablation experiments.
-
----
-
 ## License
 
 MIT
