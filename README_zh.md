@@ -1,6 +1,6 @@
 # Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation
 
-> ACL 2026 Findings — 官方实现（**DeepSlides**）
+> ACL 2026 Findings
 
 ![DeepSlides case overview](case.png)
 
