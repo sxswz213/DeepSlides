@@ -1,6 +1,6 @@
 # Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation
 
-> ACL 2026 Findings
+> ACL 2026 Findings &nbsp;|&nbsp; [📄 论文](paper.pdf)
 
 ![DeepSlides case overview](case.png)
 
@@ -203,7 +203,7 @@ MIT
 
 ## 引用
 
-如果本工作对你有帮助，请引用我们的论文：
+如果本工作对你有帮助，请引用我们的论文（[PDF](paper.pdf)）：
 
 ```bibtex
 @inproceedings{cui2026design,
