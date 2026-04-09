@@ -1,21 +1,47 @@
-# Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation
+<div align="center">
 
-> ACL 2026 Findings &nbsp;|&nbsp; [📄 Paper](paper.pdf)
+# Design First, Code Later
+### Aesthetically Pleasing Template-Free Slides Generation
+
+[![ACL 2026 Findings](https://img.shields.io/badge/ACL-2026%20Findings-blue?style=flat-square)](paper.pdf)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Paper](https://img.shields.io/badge/📄_Paper-PDF-red?style=flat-square)](paper.pdf)
+[![中文文档](https://img.shields.io/badge/文档-中文-orange?style=flat-square)](README_zh.md)
+
+<br/>
+
+*A hierarchical, design-first framework that decouples slide-level style design from page-level code implementation — no templates required.*
+
+<br/>
 
 ![DeepSlides case overview](case.png)
 
-**DeepSlides** is a hierarchical, design-first framework for automated presentation generation. It explicitly decouples *slide-level style design* from *page-level code implementation*, enabling visually coherent and aesthetically engaging `.pptx` presentations without relying on any predefined template. Given a topic (and optional image or style spec), DeepSlides conducts deep web research, synthesizes a structured report, and produces a fully formatted PowerPoint file.
-
-[中文文档](README_zh.md)
+</div>
 
 ---
 
 ## Highlights
 
-- 🏆 **76.5% Top-1 human preference** against all open-source baselines, exceeding the second-best method (9.5%) by **68.0%**
-- 🏆 **52.0% win rate** against commercial systems (Kimi, Manus), exceeding the second-best (19.5%) by **32.5%**
-- 📊 Highest VLM-judge average score (**3.78**) across Layout, Hierarchy, Color, Clarity, and Coherence dimensions
-- 🎨 Human evaluators rate DeepSlides **4.25–4.29** on Clarity & Structure and **3.84–3.98** on Visual Design & Aesthetics
+| | |
+|:---:|:---|
+| 🏆 | **76.5%** Top-1 human preference vs all open-source baselines — exceeding the second-best (9.5%) by **68.0 pp** |
+| 🏆 | **52.0%** win rate vs commercial systems (Kimi, Manus) — exceeding the second-best (19.5%) by **32.5 pp** |
+| 📊 | Highest VLM-judge average score **3.78** across Layout, Hierarchy, Color, Clarity, and Coherence |
+| 🎨 | Human eval: Clarity & Structure **4.25–4.29** · Visual Design & Aesthetics **3.84–3.98** |
+
+---
+
+## Comparison with Existing Methods
+
+| Method | Output | Full Deck | Template-Free |
+|:---|:---:|:---:|:---:|
+| EvoPresent | HTML | ✅ | ❌ |
+| AutoSlides | LaTeX/PDF | ✅ | ❌ |
+| SlideGen / SlideCoder | PPTX | ❌ | ❌ |
+| Kimi | PPTX/PDF | ✅ | ✅ |
+| Manus | PPTX/PDF | ✅ | ✅ |
+| **DeepSlides (ours)** | **PPTX/Image** | ✅ | ✅ |
 
 ---
 
@@ -23,81 +49,67 @@
 
 DeepSlides operates at two levels:
 
-### Slides-level Design
-Given the topic and user requirements, the system first determines the global visual identity of the entire deck — tone, color palette, font colors, decorative shapes, and layout diversity guidelines. Pages are categorized into **functional pages** (cover, section dividers, end page) and **content pages**, each receiving tailored style instructions.
+**Slides-level Design** — determines the global visual identity of the entire deck: tone, color palette, font colors, decorative shapes, and layout diversity guidelines. Pages are categorized into *functional pages* (cover, section dividers, end page) and *content pages*, each receiving tailored style instructions.
 
-### Page-level Generation
-Each slide is generated through three stages:
+**Page-level Generation** — each slide is generated through four stages:
 
 ```
-[Content Expansion]   ← web search retrieves supporting text and images per slide
-        │
-        ▼
-[Design]              ← three-layer design:
-                          Background layer  (textures, decorative elements)
-                          Layout layer      (block arrangement, spatial positions)
-                          Content layer     (exact text snippets and images)
-        │
-        ▼
-[Implementation]      ← LLM coder translates the design spec into executable Python/PPTX code
-        │
-        ▼
-[Evaluation & Refinement]  ← scored on Completeness · Compliance · Aesthetics
-                              low-scoring slides are revised with targeted feedback
+Content Expansion  →  Design  →  Implementation  →  Evaluation & Refinement
+  (web search)       (3-layer)    (Python/PPTX)     (completeness · compliance · aesthetics)
 ```
+
+The three design layers per slide:
+- **Background layer** — textures, decorative elements, patterns
+- **Layout layer** — block arrangement, spatial positions, structural boundaries
+- **Content layer** — exact text snippets, images, visual elements
 
 The full pipeline in `graph.py`:
 
 ```
 Input (topic / image / style)
   │
-  ▼
-[Image Analysis]            ← optional: infer research intent from a figure or screenshot
+  ├─[Image Analysis]          optional: infer research intent from a figure
   │
-  ▼
-[Report Planning]           ← planner LLM outlines sections and search queries
+  ├─[Report Planning]         outline sections and search queries
   │
-  ▼
-[Research & Writing]        ← parallel web search + section writing per topic
+  ├─[Research & Writing]      parallel web search + writing per section
   │
-  ▼
-[Slides-level Design]       ← global style, colors, shapes, tone
+  ├─[Slides-level Design]     global style, colors, shapes, tone
   │
-  ▼
-[Cover / Chapter / End]     ← functional pages generated with matched styling
+  ├─[Cover / Chapter / End]   functional pages with matched styling
   │
-  ▼
-[Page-level Generation]     ← parallel per slide: expand → design → code → evaluate → refine
-  │
-  ▼
-Output: presentation.pptx   (+ optional PNG export via LibreOffice)
+  └─[Page-level Generation]   parallel per slide:
+        expand → design (3 layers) → code → evaluate → refine
+                                                            │
+                                                            ▼
+                                               presentation.pptx
 ```
 
 ---
 
-## Key features
+## Key Features
 
-- **Template-free** — no predefined layouts; each slide's structure is designed from scratch to match its content, preventing visual fatigue across the deck.
-- **Design–implementation decoupling** — a dedicated *designer* module reasons in a high-level semantic design space; a dedicated *coder* module translates the spec into stable PPTX code. This limits error propagation and preserves aesthetic intent.
-- **Deep research integration** — built on [Open Deep Research](https://github.com/langchain-ai/open_deep_research); automatically retrieves and synthesises web content, images, and academic sources per slide.
-- **Three-dimension evaluation** — each slide is scored on *completeness*, *compliance*, and *aesthetics*; low-scoring slides are iteratively refined before assembly.
-- **Multi-model support** — planner, writer, designer, and coder roles can each use a different LLM. Works with OpenAI, Azure OpenAI, Anthropic Claude, and any OpenAI-compatible endpoint.
-- **Multi-search backend** — Tavily, Perplexity, Exa, DuckDuckGo, arXiv, PubMed, Google Search, LinkUp.
-- **Image input** — provide a figure or screenshot; a vision model analyses it to infer the research direction automatically.
-- **Parallel execution** — slides within a section are generated concurrently via LangGraph's `Send()` API.
+- **Template-free** — each slide's layout is designed from scratch to match its content, preventing visual fatigue across the deck
+- **Design–implementation decoupling** — a *designer* module reasons in a semantic design space; a *coder* module translates specs into stable PPTX code, limiting error propagation
+- **Deep research integration** — built on [Open Deep Research](https://github.com/langchain-ai/open_deep_research), automatically retrieves web content, images, and academic sources per slide
+- **Three-dimension evaluation** — each slide is scored on *completeness*, *compliance*, and *aesthetics*; low-scoring slides are iteratively refined before assembly
+- **Multi-model support** — planner, writer, designer, and coder roles each use a configurable LLM (OpenAI, Azure, Anthropic Claude, or any OpenAI-compatible endpoint)
+- **Multi-search backend** — Tavily · Perplexity · Exa · DuckDuckGo · arXiv · PubMed · Google Search · LinkUp
+- **Image input** — provide a figure or screenshot; a vision model infers the research direction automatically
+- **Parallel execution** — slides within a section are generated concurrently via LangGraph's `Send()` API
 
 ---
 
-## Example outputs
+## Example Outputs
 
 ![Full case comparison](full_case.png)
 
 ---
 
-## Key files
+## Key Files
 
 | File | Purpose |
-|---|---|
+|:---|:---|
 | `src/open_deep_research/graph.py` | Main workflow graph (all nodes and edges) |
 | `src/open_deep_research/configuration.py` | All configurable parameters and defaults |
 | `src/open_deep_research/prompts.py` | Prompt templates for every stage |
@@ -107,7 +119,7 @@ Output: presentation.pptx   (+ optional PNG export via LibreOffice)
 
 ---
 
-## Quick start
+## Quick Start
 
 ### 1. Clone and install
 
@@ -116,80 +128,83 @@ git clone https://github.com/sxswz213/DeepSlides
 cd DeepSlides
 
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -e .
-```
-
-If you use the local `pptx_tools` helper package (recommended for PPT rendering):
-
-```bash
 cd pptx_tools && pip install -e . && cd -
 ```
 
 ### 2. Configure environment variables
 
-Copy the example env file and fill in your keys:
-
 ```bash
 cp .env.example .env
+# edit .env and fill in your keys
 ```
 
-Minimum required variables:
+Minimum required:
 
 ```dotenv
-# LLM provider
 OPENAI_API_KEY=sk-...
 OPENAI_API_BASE=https://api.openai.com/v1   # or your proxy / Azure endpoint
-
-# Search (pick at least one)
 TAVILY_API_KEY=tvly-...
-
-# Optional: separate key/endpoint for the designer model
-DESIGNER_API_BASE=https://...
 ```
 
-Other supported variables: `AZURE_OPENAI_API_VERSION`, `AZURE_OPENAI_DEPLOYMENT`, `CODER_API_BASE`, `EXA_API_KEY`, `GOOGLE_API_KEY`, `GOOGLE_CX`, `LANGCHAIN_API_KEY`.
+<details>
+<summary>All supported variables</summary>
+
+| Variable | Purpose |
+|:---|:---|
+| `OPENAI_API_KEY` | Primary LLM key |
+| `OPENAI_API_BASE` | Custom base URL / proxy |
+| `TAVILY_API_KEY` | Tavily search |
+| `EXA_API_KEY` | Exa search |
+| `GOOGLE_API_KEY` / `GOOGLE_CX` | Google Custom Search |
+| `AZURE_OPENAI_API_VERSION` | Azure OpenAI version |
+| `AZURE_OPENAI_DEPLOYMENT` | Azure deployment name |
+| `CODER_API_BASE` | Separate endpoint for coder model |
+| `DESIGNER_API_BASE` | Separate endpoint for designer model |
+| `LANGCHAIN_API_KEY` | LangSmith tracing (optional) |
+
+</details>
 
 ### 3. Run
 
-**Option A — LangGraph dev server (interactive UI)**
+**Option A — Interactive UI (LangGraph Studio)**
 
 ```bash
 langgraph dev --no-reload
+# open http://localhost:8123
 ```
-
-This starts the LangGraph Studio UI at `http://localhost:8123`. You can submit inputs, inspect graph state, and replay individual nodes interactively.
 
 ![LangGraph Studio](web.png)
 
-The left panel shows the live workflow graph; the right panel shows the execution log per node. Fill in **Topic**, **Presentation Minutes**, **Style**, etc. in the bottom input form and click **Submit**.
+Fill in **Topic**, **Presentation Minutes**, **Style** in the input form and click **Submit**. The left panel shows the live workflow graph; the right panel streams execution logs per node.
 
-**Option B — Batch runner (CSV input)**
+**Option B — Batch runner (CSV)**
 
 ```bash
 python src/open_deep_research/run.py
 ```
 
-Edit the `csv_path`, `start`, and `max_rows` arguments inside `run.py` to point at your input file. The CSV must have at minimum a `Topic` column. Optional columns: `image_path`, `style`, `presentation_minutes`.
+Edit `csv_path`, `start`, and `max_rows` in `run.py`. The CSV must have a `Topic` column; optional columns: `image_path`, `style`, `presentation_minutes`.
 
 ---
 
-## Configuration reference
+## Configuration Reference
 
-All parameters live in `Configuration` (`configuration.py`). Key fields:
+All parameters are in `Configuration` (`configuration.py`):
 
 | Parameter | Default | Description |
-|---|---|---|
-| `planner_model` | `openai/gpt-4o-mini-2024-07-18` | Model for report outline generation |
-| `writer_model` | `openai/gpt-4o-mini-2024-07-18` | Model for section content writing |
-| `coder_model` | `anthropic/claude-haiku-4.5` | Model for PPTX code generation |
-| `designer_model` | `anthropic/claude-haiku-4.5` | Model for slide layout design |
-| `search_api` | `tavily` | Search backend (`tavily`, `exa`, `duckduckgo`, `arxiv`, `pubmed`, `googlesearch`, `perplexity`, `linkup`) |
-| `max_search_depth` | `5` | Max reflection + search iterations per section |
+|:---|:---|:---|
+| `planner_model` | `openai/gpt-4o-mini-2024-07-18` | Report outline generation |
+| `writer_model` | `openai/gpt-4o-mini-2024-07-18` | Section content writing |
+| `coder_model` | `anthropic/claude-haiku-4.5` | PPTX code generation |
+| `designer_model` | `anthropic/claude-haiku-4.5` | Slide layout design |
+| `search_api` | `tavily` | Search backend |
+| `max_search_depth` | `5` | Max search iterations per section |
 | `number_of_queries` | `2` | Search queries per section |
-| `number_of_queries_for_ppt` | `1` | Additional search queries during slide enrichment |
+| `number_of_queries_for_ppt` | `1` | Extra queries during slide enrichment |
 
-Override any field by passing it in the `configurable` dict:
+Override via `configurable` dict:
 
 ```python
 from langchain_core.runnables import RunnableConfig
@@ -206,29 +221,26 @@ result = asyncio.run(graph.ainvoke(state, config=config))
 
 ## Dependencies
 
-Core dependencies (see `pyproject.toml` for the full list):
-
-- `langgraph` — graph execution engine
-- `langchain-openai`, `langchain-anthropic` — LLM integrations
-- `python-pptx` — PPTX rendering (via `pptx_tools`)
-- `tavily-python`, `exa-py`, `duckduckgo-search`, `linkup-sdk` — search backends
-- `google-cloud-vision` — optional vision API for image captioning
-- `langsmith` — optional tracing
+```
+langgraph · langchain-openai · langchain-anthropic    # LLM / graph engine
+python-pptx (via pptx_tools)                          # PPTX rendering
+tavily-python · exa-py · duckduckgo-search            # search backends
+google-cloud-vision                                   # optional image captioning
+langsmith                                             # optional tracing
+```
 
 Optional system dependency for PNG export:
 
 ```bash
-# macOS
-brew install libreoffice
-# Ubuntu
-sudo apt install libreoffice
+brew install libreoffice      # macOS
+sudo apt install libreoffice  # Ubuntu
 ```
 
 ---
 
 ## License
 
-MIT
+MIT © 2026 DeepSlides Authors
 
 ---
 
@@ -239,7 +251,8 @@ If you find this work useful, please cite our paper ([PDF](paper.pdf)):
 ```bibtex
 @inproceedings{cui2026design,
   title     = {Design First, Code Later: Aesthetically Pleasing Template-Free Slides Generation},
-  author    = {Cui, Zhiyao and Wang, Chenxu and Hu, Shuyue and Zhang, Yiqun and Shao, Wenqi and Zhang, Qiaosheng and Wang, Zhen},
+  author    = {Cui, Zhiyao and Wang, Chenxu and Hu, Shuyue and Zhang, Yiqun and
+               Shao, Wenqi and Zhang, Qiaosheng and Wang, Zhen},
   booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
   year      = {2026}
 }
