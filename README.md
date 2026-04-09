@@ -4,55 +4,86 @@
 
 ![DeepSlides case overview](case.png)
 
-**DeepSlides** is an AI-powered presentation generation system that takes a topic (and optional image or style spec) and produces a fully formatted `.pptx` file. It extends the [Open Deep Research](https://github.com/langchain-ai/open_deep_research) architecture with a multi-stage pipeline for research, content writing, slide planning, and automated visual design.
+**DeepSlides** is a hierarchical, design-first framework for automated presentation generation. It explicitly decouples *slide-level style design* from *page-level code implementation*, enabling visually coherent and aesthetically engaging `.pptx` presentations without relying on any predefined template. Given a topic (and optional image or style spec), DeepSlides conducts deep web research, synthesizes a structured report, and produces a fully formatted PowerPoint file.
 
 [中文文档](README_zh.md)
 
 ---
 
+## Highlights
+
+- 🏆 **76.5% Top-1 human preference** against all open-source baselines, exceeding the second-best method (9.5%) by **68.0%**
+- 🏆 **52.0% win rate** against commercial systems (Kimi, Manus), exceeding the second-best (19.5%) by **32.5%**
+- 📊 Highest VLM-judge average score (**3.78**) across Layout, Hierarchy, Color, Clarity, and Coherence dimensions
+- 🎨 Human evaluators rate DeepSlides **4.25–4.29** on Clarity & Structure and **3.84–3.98** on Visual Design & Aesthetics
+
+---
+
 ## How it works
 
-DeepSlides follows a graph-based plan-and-execute workflow implemented in `src/open_deep_research/graph.py`:
+DeepSlides operates at two levels:
+
+### Slides-level Design
+Given the topic and user requirements, the system first determines the global visual identity of the entire deck — tone, color palette, font colors, decorative shapes, and layout diversity guidelines. Pages are categorized into **functional pages** (cover, section dividers, end page) and **content pages**, each receiving tailored style instructions.
+
+### Page-level Generation
+Each slide is generated through three stages:
+
+```
+[Content Expansion]   ← web search retrieves supporting text and images per slide
+        │
+        ▼
+[Design]              ← three-layer design:
+                          Background layer  (textures, decorative elements)
+                          Layout layer      (block arrangement, spatial positions)
+                          Content layer     (exact text snippets and images)
+        │
+        ▼
+[Implementation]      ← LLM coder translates the design spec into executable Python/PPTX code
+        │
+        ▼
+[Evaluation & Refinement]  ← scored on Completeness · Compliance · Aesthetics
+                              low-scoring slides are revised with targeted feedback
+```
+
+The full pipeline in `graph.py`:
 
 ```
 Input (topic / image / style)
   │
   ▼
-[Image Analysis]       ← optional: understand research intent from an image
+[Image Analysis]            ← optional: infer research intent from a figure or screenshot
   │
   ▼
-[Report Planning]      ← planner LLM outlines sections and search queries
+[Report Planning]           ← planner LLM outlines sections and search queries
   │
   ▼
-[Research & Writing]   ← parallel: web search + section writing per topic
+[Research & Writing]        ← parallel web search + section writing per topic
   │
   ▼
-[PPT Planning]         ← allocate slides per section, generate slide outlines
+[Slides-level Design]       ← global style, colors, shapes, tone
   │
   ▼
-[Slide Generation]     ← parallel per slide: enrich content → design layout → render PPTX
+[Cover / Chapter / End]     ← functional pages generated with matched styling
   │
   ▼
-[Scoring & Refinement] ← LLM scores design, aesthetics, completeness; retries if needed
+[Page-level Generation]     ← parallel per slide: expand → design → code → evaluate → refine
   │
   ▼
-[Cover / Chapter / End slides]
-  │
-  ▼
-Output: presentation.pptx  (+ optional PNG export via LibreOffice)
+Output: presentation.pptx   (+ optional PNG export via LibreOffice)
 ```
 
 ---
 
 ## Key features
 
-- **End-to-end automation** — input a topic string and get a `.pptx` back, no manual editing required.
-- **Multi-model support** — configure separate LLMs for the planner, writer, coder, and designer roles. Works with OpenAI, Azure OpenAI, Anthropic Claude, and any OpenAI-compatible endpoint.
+- **Template-free** — no predefined layouts; each slide's structure is designed from scratch to match its content, preventing visual fatigue across the deck.
+- **Design–implementation decoupling** — a dedicated *designer* module reasons in a high-level semantic design space; a dedicated *coder* module translates the spec into stable PPTX code. This limits error propagation and preserves aesthetic intent.
+- **Deep research integration** — built on [Open Deep Research](https://github.com/langchain-ai/open_deep_research); automatically retrieves and synthesises web content, images, and academic sources per slide.
+- **Three-dimension evaluation** — each slide is scored on *completeness*, *compliance*, and *aesthetics*; low-scoring slides are iteratively refined before assembly.
+- **Multi-model support** — planner, writer, designer, and coder roles can each use a different LLM. Works with OpenAI, Azure OpenAI, Anthropic Claude, and any OpenAI-compatible endpoint.
 - **Multi-search backend** — Tavily, Perplexity, Exa, DuckDuckGo, arXiv, PubMed, Google Search, LinkUp.
-- **Image input** — provide a figure or screenshot; the system analyses it with a vision model to infer the research direction.
-- **Style control** — pass a style description, color palette, or template path; the designer model applies it consistently across all slides.
-- **LLM-based scoring** — each slide is scored on design, aesthetics, and completeness; low-scoring slides are regenerated automatically.
-- **Automatic cover / chapter / end slides** — dedicated LLM calls generate these framing slides with matched styling.
+- **Image input** — provide a figure or screenshot; a vision model analyses it to infer the research direction automatically.
 - **Parallel execution** — slides within a section are generated concurrently via LangGraph's `Send()` API.
 
 ---
@@ -81,8 +112,8 @@ Output: presentation.pptx  (+ optional PNG export via LibreOffice)
 ### 1. Clone and install
 
 ```bash
-git clone <your-repo-url>
-cd multimodal_open_deep_research
+git clone https://github.com/sxswz213/DeepSlides
+cd DeepSlides
 
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
