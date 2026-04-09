@@ -172,7 +172,7 @@ TAVILY_API_KEY=tvly-...
 
 ```bash
 langgraph dev --no-reload
-# 访问 http://localhost:8123
+# Studio 访问地址会打印在终端输出中
 ```
 
 ![LangGraph Studio](web.png)

@@ -172,7 +172,7 @@ TAVILY_API_KEY=tvly-...
 
 ```bash
 langgraph dev --no-reload
-# open http://localhost:8123
+# the Studio URL will be printed in the terminal output
 ```
 
 ![LangGraph Studio](web.png)
